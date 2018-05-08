@@ -1,0 +1,1404 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Jan 18 18:37:24 2018
+# Process ID: 7768
+# Current directory: /home/sean/vivado_workspace/sap_dt/sap_dt.runs/synth_1
+# Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/sean/vivado_workspace/sap_dt/sap_dt.runs/synth_1/top.vds
+# Journal file: /home/sean/vivado_workspace/sap_dt/sap_dt.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7794 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1048.211 ; gain = 163.137 ; free physical = 7136 ; free virtual = 29925
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'random_pulse_generator' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_random_pulse_generator/Sources/hdl/random_pulse_generator.v:36]
+	Parameter LN2_PERIOD bound to: 4 - type: integer 
+	Parameter MASK bound to: 4'b0000 
+INFO: [Synth 8-638] synthesizing module 'pseudo_random' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_random_pulse_generator/Sources/hdl/random_pulse_generator.v:20]
+INFO: [Synth 8-256] done synthesizing module 'pseudo_random' (1#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_random_pulse_generator/Sources/hdl/random_pulse_generator.v:20]
+INFO: [Synth 8-256] done synthesizing module 'random_pulse_generator' (2#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_random_pulse_generator/Sources/hdl/random_pulse_generator.v:36]
+INFO: [Synth 8-638] synthesizing module 'sap' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/ooc_sap/ooc_sap_impl.v:17]
+INFO: [Synth 8-638] synthesizing module 'FDCE' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE' (3#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+INFO: [Synth 8-638] synthesizing module 'FDCE__parameterized0' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b1 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE__parameterized0' (3#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+INFO: [Synth 8-638] synthesizing module 'FDCE__parameterized1' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b1 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE__parameterized1' (3#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+INFO: [Synth 8-638] synthesizing module 'FDCE__parameterized2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b1 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE__parameterized2' (3#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+INFO: [Synth 8-638] synthesizing module 'FDCE__parameterized3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b1 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE__parameterized3' (3#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+INFO: [Synth 8-638] synthesizing module 'GND' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:4827]
+INFO: [Synth 8-256] done synthesizing module 'GND' (4#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:4827]
+INFO: [Synth 8-638] synthesizing module 'LUT4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1000000110010001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4' (5#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LDCE' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:19897]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_G_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'LDCE' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:19897]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized0' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized0' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized1' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized1' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized2' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1011111011111100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized3' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'FDCE__parameterized4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b1 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE__parameterized4' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+INFO: [Synth 8-638] synthesizing module 'FDCE__parameterized5' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b1 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE__parameterized5' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+INFO: [Synth 8-638] synthesizing module 'FDCE__parameterized6' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b1 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE__parameterized6' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+INFO: [Synth 8-638] synthesizing module 'FDCE__parameterized7' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b1 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE__parameterized7' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized4' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized5' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1111110111100111 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized5' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized6' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1110101110111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized6' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized7' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1111111001101110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized7' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized8' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1101110111010111 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized8' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized9' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1100100110010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized9' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized10' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1100111010011010 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized10' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized11' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1111100000100110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized11' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'VCC' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:44675]
+INFO: [Synth 8-256] done synthesizing module 'VCC' (7#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:44675]
+INFO: [Synth 8-638] synthesizing module 'LUT1' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20116]
+	Parameter INIT bound to: 2'b01 
+INFO: [Synth 8-256] done synthesizing module 'LUT1' (8#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20116]
+INFO: [Synth 8-638] synthesizing module 'LUT2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2' (9#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b01101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT3' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized12' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized12' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized13' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110101010101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized13' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized14' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000011100010 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized14' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT6' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0001000100010001000100010001000110111011101110110011001100111100 
+INFO: [Synth 8-256] done synthesizing module 'LUT6' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized0' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1111111011111111000000000000010011111111111111111111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized0' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized15' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000011100010 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized15' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized1' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0110011001100110011001100110010011101110111001101110111011101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized1' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1010101010101011101010001010101011111111111111111111111111011111 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized2' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized16' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000011100010 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized16' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1010101010101010000000101010100000000000000000100000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized3' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1110111011101110111011101110011111101110111011001110010010101110 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized4' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized0' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized0' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized5' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000010000000000000010000000001000100000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized5' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized17' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000010000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized17' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized18' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized18' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized19' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized19' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized0' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized0' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized6' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1111111111111111111110001000100011111000100010001111100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized6' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized1' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized1' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized2' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized7' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1111111111111111111110001000100011111000100010001111100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized7' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized3' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized4' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized8' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1111111111111111111110001000100011111000100010001111100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized8' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized5' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized5' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized6' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized6' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized9' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1111111111111111111110001000100011111000100010001111100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized9' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized7' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized7' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized20' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized20' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized21' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized21' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized22' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1111100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized22' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized23' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1111100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized23' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized24' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1111100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized24' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized25' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001001000001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized25' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized10' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0101011001010101010101010101010110101001101010101010101010101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized10' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized11' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0101011001010101010101010101010110101001101010101010101010101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized11' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized26' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized26' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized12' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0101011001010101010101010101010110101001101010101010101010101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized12' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized13' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0101011001010101010101010101010110101001101010101010101010101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized13' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized14' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0101011001010101010101010101010110101001101010101010101010101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized14' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized27' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1111100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized27' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized28' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001010000010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized28' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized29' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000001100000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized29' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized15' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0101011001010101010101010101010110101001101010101010101010101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized15' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized16' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0101011001010101010101010101010110101001101010101010101010101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized16' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (12#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:961]
+WARNING: [Synth 8-350] instance 'q_alu_reg[7]_i_5' of module 'CARRY4' requires 6 connections, but only 5 given [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/ooc_sap/ooc_sap_impl.v:1003]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized30' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized30' (12#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-256] done synthesizing module 'sap' (13#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/ooc_sap/ooc_sap_impl.v:17]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/new/top.v:51]
+INFO: [Synth 8-638] synthesizing module 'sha3_high_throughput' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/sha3_high_throughput.v:26]
+INFO: [Synth 8-638] synthesizing module 'padder_h' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/padder_h.v:21]
+INFO: [Synth 8-638] synthesizing module 'padder1_h' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/padder1_h.v:17]
+INFO: [Synth 8-256] done synthesizing module 'padder1_h' (14#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/padder1_h.v:17]
+INFO: [Synth 8-256] done synthesizing module 'padder_h' (15#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/padder_h.v:21]
+INFO: [Synth 8-638] synthesizing module 'f_permutation_h' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/f_permutation_h.v:19]
+INFO: [Synth 8-638] synthesizing module 'rconst2in1' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/rconst2in1.v:18]
+INFO: [Synth 8-256] done synthesizing module 'rconst2in1' (16#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/rconst2in1.v:18]
+INFO: [Synth 8-638] synthesizing module 'round2in1' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/round2in1.v:25]
+INFO: [Synth 8-256] done synthesizing module 'round2in1' (17#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/round2in1.v:25]
+INFO: [Synth 8-256] done synthesizing module 'f_permutation_h' (18#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/f_permutation_h.v:19]
+INFO: [Synth 8-256] done synthesizing module 'sha3_high_throughput' (19#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/sha3_high_throughput.v:26]
+INFO: [Synth 8-638] synthesizing module 'sha3_low_throughput' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/sha3_low_throughput.v:26]
+INFO: [Synth 8-638] synthesizing module 'padder_l' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/padder_l.v:21]
+INFO: [Synth 8-638] synthesizing module 'padder1_l' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/padder1_l.v:25]
+INFO: [Synth 8-256] done synthesizing module 'padder1_l' (20#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/padder1_l.v:25]
+INFO: [Synth 8-256] done synthesizing module 'padder_l' (21#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/padder_l.v:21]
+INFO: [Synth 8-638] synthesizing module 'f_permutation_l' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/f_permutation_l.v:19]
+INFO: [Synth 8-638] synthesizing module 'rconst' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/rconst.v:18]
+INFO: [Synth 8-256] done synthesizing module 'rconst' (22#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/rconst.v:18]
+INFO: [Synth 8-638] synthesizing module 'round' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/round.v:25]
+INFO: [Synth 8-256] done synthesizing module 'round' (23#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/round.v:25]
+INFO: [Synth 8-256] done synthesizing module 'f_permutation_l' (24#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/f_permutation_l.v:19]
+INFO: [Synth 8-256] done synthesizing module 'sha3_low_throughput' (25#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/sha3_low_throughput.v:26]
+INFO: [Synth 8-638] synthesizing module 'simon_core' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/hdl/simon_core.v:21]
+INFO: [Synth 8-638] synthesizing module 'simon_datapath_shiftreg' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/hdl/Simon_bit_serial_datapath_FPGA.v:21]
+INFO: [Synth 8-256] done synthesizing module 'simon_datapath_shiftreg' (26#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/hdl/Simon_bit_serial_datapath_FPGA.v:21]
+INFO: [Synth 8-638] synthesizing module 'simon_key_expansion_shiftreg' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/hdl/Simon_bit_serial_key_expansion_FPGA.v:22]
+INFO: [Synth 8-256] done synthesizing module 'simon_key_expansion_shiftreg' (27#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/hdl/Simon_bit_serial_key_expansion_FPGA.v:22]
+INFO: [Synth 8-256] done synthesizing module 'simon_core' (28#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/hdl/simon_core.v:21]
+INFO: [Synth 8-256] done synthesizing module 'top' (29#1) [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/new/top.v:23]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[62]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[61]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[60]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[59]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[58]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[57]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[56]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[55]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[54]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[53]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[52]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[51]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[50]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[49]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[48]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[47]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[46]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[45]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[44]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[43]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[42]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[41]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[40]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[39]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[38]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[37]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[36]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[35]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[34]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[33]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[32]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[30]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[29]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[28]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[27]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[26]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[25]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[24]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[23]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[22]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[21]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[20]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[19]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[18]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[17]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[16]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[14]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[13]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[12]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[11]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[10]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[9]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[8]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[6]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[5]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[4]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[2]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[7]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[6]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[5]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[4]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[3]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[2]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[1]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[0]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[62]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[61]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[60]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[59]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[58]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[57]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[56]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[55]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[54]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[53]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[52]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[51]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[50]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[49]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[48]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[47]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[46]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[45]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[44]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[43]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[42]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[41]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[40]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[39]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[38]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[37]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[36]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[35]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[34]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[33]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[32]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[30]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[29]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[28]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[27]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1105.648 ; gain = 220.574 ; free physical = 7075 ; free virtual = 29865
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1105.648 ; gain = 220.574 ; free physical = 7074 ; free virtual = 29864
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1508.422 ; gain = 0.000 ; free physical = 6862 ; free virtual = 29652
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1508.422 ; gain = 623.348 ; free physical = 6857 ; free virtual = 29647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1508.422 ; gain = 623.348 ; free physical = 6857 ; free virtual = 29647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for sap_0/\Accumulator/q_alu_reg[0] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\Accumulator/q_alu_reg[1] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\Accumulator/q_alu_reg[2] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\Accumulator/q_alu_reg[3] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\Accumulator/q_alu_reg[4] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\Accumulator/q_alu_reg[5] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\Accumulator/q_alu_reg[6] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\Accumulator/q_alu_reg[7] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\BReg/q_reg[0] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\BReg/q_reg[1] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\BReg/q_reg[2] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\BReg/q_reg[3] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\BReg/q_reg[4] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\BReg/q_reg[5] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\BReg/q_reg[6] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\BReg/q_reg[7] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\CPU/current_state_reg[0] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\CPU/current_state_reg[1] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\CPU/current_state_reg[2] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\CPU/current_state_reg[3] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/GND. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/GND_1. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/__0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[0] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[0]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[1] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[1]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[2] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[2]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[3] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[5] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[5]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRReg/q_c_reg[0] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRReg/q_c_reg[1] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRReg/q_c_reg[2] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\IRReg/q_c_reg[3] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\MemoryAddressReg/Q_reg[0] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\MemoryAddressReg/Q_reg[1] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\MemoryAddressReg/Q_reg[2] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\MemoryAddressReg/Q_reg[3] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\OReg/q_reg[0] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\OReg/q_reg[1] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\OReg/q_reg[2] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\OReg/q_reg[3] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\OReg/q_reg[4] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\OReg/q_reg[5] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\OReg/q_reg[6] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\OReg/q_reg[7] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ProgramCounter/count_reg[0] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ProgramCounter/count_reg[1] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ProgramCounter/count_reg[2] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ProgramCounter/count_reg[3] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\Q[3]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[0]_i_4 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[1]_i_4 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[2]_i_4 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[3]_i_4 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[4]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[5]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[7]_i_3 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/VCC. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/VCC_1. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\count[0]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\count[1]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\count[2]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\count[3]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\count[3]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[0]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[0]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[0]_i_3 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[1]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[1]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[1]_i_3 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[2]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[2]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[2]_i_3 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[3]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[3]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\instruction_reg[3]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q[7]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q[7]_i_1__0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[0]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[0]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[0]_i_3 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[1]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[1]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[1]_i_3 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[2]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[2]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[2]_i_3 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[3]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[3]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[3]_i_3 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[3]_i_5 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[3]_i_6 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[4]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[5]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[6]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_10 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_11 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_12 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_13 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_14 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_15 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_2 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_4 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_6 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_8 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_9 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu_reg[7]_i_5 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu_reg[7]_i_7 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/\q_c[3]_i_1 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 1).
+Applied set_property DONT_TOUCH = true for sap_0/hlt. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q3[7]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q3[6]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q3[5]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q3[4]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q3[3]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q3[2]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q3[1]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q3[0]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/clk. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/clr. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\<const0>__0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\<const1>__0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/A[7]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/A[6]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/A[5]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/A[4]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/A[3]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/A[2]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/A[1]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/A[0]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/B[7]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/B[6]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/B[5]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/B[4]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/B[3]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/B[2]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/B[1]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/B[0]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\CPU/current_state [3]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\CPU/current_state [2]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\CPU/current_state [1]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\CPU/current_state [0]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/Eu. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/GND_2. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/__0_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[0]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[1]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[2]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\IRDecoder/instruction_reg[5]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\MemoryAddressReg/Q_reg_n_0_[0] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\MemoryAddressReg/Q_reg_n_0_[1] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\MemoryAddressReg/Q_reg_n_0_[2] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\MemoryAddressReg/Q_reg_n_0_[3] . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ProgramCounter/count_reg__0 [3]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ProgramCounter/count_reg__0 [2]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ProgramCounter/count_reg__0 [1]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ProgramCounter/count_reg__0 [0]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\Q[3]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[0]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[1]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[2]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[3]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[4]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[5]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\ROM/q_alu[7]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/VCC_2. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/W[7]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/W[6]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/W[5]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/W[4]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/W[3]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/W[2]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/W[1]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/W[0]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/add. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\count[0]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\count[1]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\count[2]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\count[3]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[0]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[0]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[0]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[1]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[1]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[1]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[2]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[2]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[2]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[3]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\current_state[3]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/ep. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\instruction_reg[3]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/lda. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\output . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q[7]_i_1__0_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q[7]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[0]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[0]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[1]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[1]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[2]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[2]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[3]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[3]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[3]_i_6_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_10_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_11_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_12_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_13_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_14_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_15_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_8_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu[7]_i_9_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu_reg[7]_i_5_n_4 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu_reg[7]_i_7_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_alu_reg[7]_i_7_n_4 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q_c[3]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q_c[2]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q_c[1]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/q_c[0]. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/\q_c[3]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/sel. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0/sub. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 2).
+Applied set_property DONT_TOUCH = true for sap_0. (constraint file  /home/sean/vivado_workspace/sap_dt/sap_dt.srcs/constrs_1/imports/constrs_1/imports/new/constr.xdc, line 3).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1508.422 ; gain = 623.348 ; free physical = 6857 ; free virtual = 29647
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "q" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "round_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1508.422 ; gain = 623.348 ; free physical = 6857 ; free virtual = 29647
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/f_permutation_h.v:56]
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/f_permutation_l.v:56]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input    576 Bit         XORs := 2     
+	   5 Input     64 Bit         XORs := 15    
+	   3 Input     64 Bit         XORs := 75    
+	   2 Input     64 Bit         XORs := 75    
+	  16 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 21    
+	   4 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	             1600 Bit    Registers := 2     
+	              576 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               60 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               23 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 40    
++---Muxes : 
+	   2 Input   1600 Bit        Muxes := 2     
+	   2 Input    576 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/f_permutation_h.v:56]
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/f_permutation_l.v:56]
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module pseudo_random 
+Detailed RTL Component Info : 
++---XORs : 
+	  16 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module random_pulse_generator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+Module padder_h 
+Detailed RTL Component Info : 
++---Registers : 
+	              576 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    576 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+Module round2in1 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     64 Bit         XORs := 10    
+	   3 Input     64 Bit         XORs := 50    
+	   2 Input     64 Bit         XORs := 50    
+	   2 Input      1 Bit         XORs := 14    
+Module f_permutation_h 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    576 Bit         XORs := 1     
++---Registers : 
+	             1600 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   1600 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sha3_high_throughput 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module padder1_l 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module padder_l 
+Detailed RTL Component Info : 
++---Registers : 
+	              576 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    576 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+Module round 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     64 Bit         XORs := 5     
+	   3 Input     64 Bit         XORs := 25    
+	   2 Input     64 Bit         XORs := 25    
+	   2 Input      1 Bit         XORs := 7     
+Module f_permutation_l 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    576 Bit         XORs := 1     
++---Registers : 
+	             1600 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   1600 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sha3_low_throughput 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module simon_datapath_shiftreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module simon_key_expansion_shiftreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               60 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1508.422 ; gain = 623.348 ; free physical = 6857 ; free virtual = 29647
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'state_reg' into 'padder_h_/state_reg' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/sha3_high_throughput.v:57]
+INFO: [Synth 8-4471] merging register 'state_reg' into 'padder_l_/state_reg' [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/vivado_workspace/ooc_sha3_low_throughput/Sources/hdl/sha3_low_throughput.v:58]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1508.422 ; gain = 623.348 ; free physical = 6855 ; free virtual = 29645
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1508.422 ; gain = 623.348 ; free physical = 6855 ; free virtual = 29645
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[22]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[23]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[28]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[29]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[30]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[31]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[25]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[26]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[27] )
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[46]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[47]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[47]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[41]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[41]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[49]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[49]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[42]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[111]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[105]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[42]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[43]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[175]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[43]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[45]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[105]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[106]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[110]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[106]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[45]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[44]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[174]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_high_throughput_0/padder_h_/out_reg[44] )
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/state_reg' (FDRE) to 'sha3_high_throughput_0/padder_h_/state_reg'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[54]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[55]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[57]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[58]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[59]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[60]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[61]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[62]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[63]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[86]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[87]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[89]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[90]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[91]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[92]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[93]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[94]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[95]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[118]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[119]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[119]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[123]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[124]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[125]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[126]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[127]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[121]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[122] )
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[150]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[151]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[183]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[182]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[157]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[158]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[159]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[191]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[182]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[153]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[154]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[182]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[185]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[155]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[156]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[185]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[186]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[106]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[298]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[107]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[298]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[108]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[298]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[109]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[298]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[113]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[298]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[298]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[170]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[171]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[172]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[173]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[177]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[234]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[235]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[186]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[187]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[236]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[299]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[187]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[188]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[237]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[300]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[233]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[188]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[189]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[241]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[238]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[233]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[301]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[233]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[189]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[190]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[239]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[233]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[302]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[297]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[362]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[233]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[303]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[297]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[233]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[305]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[363]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[305]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[365]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[297]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_high_throughput_0/padder_h_/out_reg[169] )
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[364]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[297]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[214]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[215]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[215]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[217]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[220]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[217]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[221]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[217]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[222]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[217]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[223]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[217]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[217]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[218]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[218]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[219]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[122] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_high_throughput_0/padder_h_/out_reg[297] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[122] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_high_throughput_0/padder_h_/out_reg[489] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[251] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[251] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[251] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[379] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[379] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[539] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[539] )
+WARNING: [Synth 8-3332] Sequential element (out_ready_reg) is unused and will be removed from module f_permutation_h.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[561]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[559]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[558]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[557]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[556]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[555]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[554]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[553]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[497]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[495]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[494]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[493]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[492]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[491]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[490]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[489]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[433]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[431]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[430]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[429]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[428]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[427]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[426]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[425]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[369]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[367]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[366]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[365]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[364]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[363]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[362]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[361]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[305]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[303]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[302]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[301]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[300]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[299]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[298]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[297]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[241]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[239]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[238]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[237]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[236]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[235]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[234]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[233]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[177]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[175]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[174]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[173]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[172]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[171]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[170]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[169]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[113]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[111]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[110]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[109]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[108]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[107]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[106]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[105]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[49]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[47]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[46]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[45]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[44]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[43]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[42]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[41]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (out_ready_reg) is unused and will be removed from module f_permutation_l.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[575]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[574]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[573]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[572]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[571]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[570]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[569]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[567]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[566]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[543]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[542]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[541]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[540]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[539]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[538]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[537]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[535]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[534]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[511]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[510]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[509]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[508]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[507]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[506]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[505]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[503]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:16:35 ; elapsed = 00:16:38 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3869 ; free virtual = 26683
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:16:35 ; elapsed = 00:16:38 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3869 ; free virtual = 26683
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:16:41 ; elapsed = 00:16:44 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3875 ; free virtual = 26689
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: sap_0/\q_alu[0]_i_1 /O (LUT2)
+     1: sap_0/\q_alu[0]_i_1 /I0 (LUT2)
+      : sap_0/q_alu_inferred__16/out
+      : sap_0/q_alu_inferred__16/in0
+      : sap_0/q_alu_inferred__15/out
+      : sap_0/q_alu_inferred__15/in0
+     2: sap_0/\q_alu[0]_i_2 /O (LUT6)
+     3: sap_0/\q_alu[0]_i_2 /I4 (LUT6)
+      : sap_0/W_inferred__14/out
+      : sap_0/W_inferred__14/in0
+      : sap_0/W_inferred__13/out
+      : sap_0/W_inferred__13/in0
+     4: sap_0/\q_alu[0]_i_1 /O (LUT2)
+WARNING: [Synth 8-295] found timing loop. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/ooc_sap/ooc_sap_impl.v:17]
+Found timing loop:
+     0: sap_0/\q_alu[1]_i_1 /O (LUT2)
+     1: sap_0/\q_alu[1]_i_1 /I0 (LUT2)
+      : sap_0/q_alu_inferred__12/out
+      : sap_0/q_alu_inferred__12/in0
+      : sap_0/q_alu_inferred__11/out
+      : sap_0/q_alu_inferred__11/in0
+     2: sap_0/\q_alu[1]_i_2 /O (LUT6)
+     3: sap_0/\q_alu[1]_i_2 /I4 (LUT6)
+      : sap_0/W_inferred__12/out
+      : sap_0/W_inferred__12/in0
+      : sap_0/W_inferred__11/out
+      : sap_0/W_inferred__11/in0
+     4: sap_0/\q_alu[1]_i_1 /O (LUT2)
+WARNING: [Synth 8-295] found timing loop. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/ooc_sap/ooc_sap_impl.v:17]
+Found timing loop:
+     0: sap_0/\q_alu[2]_i_1 /O (LUT2)
+     1: sap_0/\q_alu[2]_i_1 /I0 (LUT2)
+      : sap_0/q_alu_inferred__8/out
+      : sap_0/q_alu_inferred__8/in0
+      : sap_0/q_alu_inferred__7/out
+      : sap_0/q_alu_inferred__7/in0
+     2: sap_0/\q_alu[2]_i_2 /O (LUT6)
+     3: sap_0/\q_alu[2]_i_2 /I4 (LUT6)
+      : sap_0/W_inferred__10/out
+      : sap_0/W_inferred__10/in0
+      : sap_0/W_inferred__9/out
+      : sap_0/W_inferred__9/in0
+     4: sap_0/\q_alu[2]_i_1 /O (LUT2)
+WARNING: [Synth 8-295] found timing loop. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/ooc_sap/ooc_sap_impl.v:17]
+Found timing loop:
+     0: sap_0/\q_alu[3]_i_1 /O (LUT2)
+     1: sap_0/\q_alu[3]_i_1 /I0 (LUT2)
+      : sap_0/q_alu_inferred__4/out
+      : sap_0/q_alu_inferred__4/in0
+      : sap_0/q_alu_inferred__3/out
+      : sap_0/q_alu_inferred__3/in0
+     2: sap_0/\q_alu[3]_i_2 /O (LUT6)
+     3: sap_0/\q_alu[3]_i_2 /I4 (LUT6)
+      : sap_0/W_inferred__8/out
+      : sap_0/W_inferred__8/in0
+      : sap_0/W_inferred__7/out
+      : sap_0/W_inferred__7/in0
+     4: sap_0/\q_alu[3]_i_1 /O (LUT2)
+WARNING: [Synth 8-295] found timing loop. [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/ooc_sap/ooc_sap_impl.v:17]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sap_0/\q_alu[0]_i_1 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sap_0/\q_alu[1]_i_1 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sap_0/\q_alu[2]_i_1 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sap_0/\q_alu[3]_i_1 /O'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:17:17 ; elapsed = 00:17:21 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3869 ; free virtual = 26683
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:17:43 ; elapsed = 00:17:47 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3873 ; free virtual = 26688
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:17:43 ; elapsed = 00:17:47 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3873 ; free virtual = 26688
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:17:43 ; elapsed = 00:17:47 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3873 ; free virtual = 26688
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/sean/vivado_workspace/sap_dt/sap_dt.srcs/sources_1/imports/ooc_sap/ooc_sap_impl.v:293]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:17:45 ; elapsed = 00:17:49 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3871 ; free virtual = 26685
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:17:45 ; elapsed = 00:17:49 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3871 ; free virtual = 26685
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:17:47 ; elapsed = 00:17:51 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3869 ; free virtual = 26683
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | simon_core_0/datapath/fifo_ff56_reg   | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | simon_core_0/datapath/lut_ff56_reg    | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | simon_core_0/datapath/shifter1_reg[0] | 56     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top         | simon_core_0/datapath/shifter2_reg[0] | 64     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top         | simon_core_0/key_exp/lut_ff0_reg      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | simon_core_0/key_exp/fifo_ff0_reg     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | simon_core_0/key_exp/shifter1_reg[0]  | 60     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top         | simon_core_0/key_exp/shifter2_reg[0]  | 64     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top         | sha3_high_throughput_0/i_reg[10]      | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top         | sha3_low_throughput_0/i_reg[22]       | 23     | 1     | YES          | NO                 | YES               | 0      | 1       | 
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    45|
+|3     |GND     |     2|
+|4     |LUT1    |     5|
+|5     |LUT2    |   697|
+|6     |LUT3    |  1348|
+|7     |LUT4    |   819|
+|8     |LUT5    |  1312|
+|9     |LUT6    |  5716|
+|10    |SRL16E  |     5|
+|11    |SRLC32E |     9|
+|12    |VCC     |     2|
+|13    |FDCE    |    56|
+|14    |FDPE    |    16|
+|15    |FDRE    |  4243|
+|16    |LDCE    |     5|
+|17    |IBUF    |    42|
+|18    |OBUF    |    13|
+|19    |OBUFT   |     3|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 14339|
+|2     |  sap_0  |sap    |   113|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:17:47 ; elapsed = 00:17:51 . Memory (MB): peak = 4880.719 ; gain = 3995.645 ; free physical = 3869 ; free virtual = 26683
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 306 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:17:39 ; elapsed = 00:17:43 . Memory (MB): peak = 4880.719 ; gain = 3503.730 ; free physical = 3863 ; free virtual = 26677
+Synthesis Optimization Complete : Time (s): cpu = 00:17:47 ; elapsed = 00:17:51 . Memory (MB): peak = 4880.727 ; gain = 3995.652 ; free physical = 3865 ; free virtual = 26679
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+330 Infos, 228 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:17:51 ; elapsed = 00:17:54 . Memory (MB): peak = 4912.734 ; gain = 3951.105 ; free physical = 3871 ; free virtual = 26686
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.23 . Memory (MB): peak = 4944.750 ; gain = 0.000 ; free physical = 3868 ; free virtual = 26687
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 18 18:55:28 2018...

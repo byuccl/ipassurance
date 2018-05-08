@@ -1,0 +1,1103 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Jan 19 13:57:24 2018
+# Process ID: 7628
+# Current directory: /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.runs/synth_1
+# Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.runs/synth_1/top.vds
+# Journal file: /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1 -flatten_hierarchy full
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7633 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1039.742 ; gain = 154.137 ; free physical = 19707 ; free virtual = 123202
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'PowerSequencer' [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/sources_1/imports/opencores/powerSequencer/src/PowerSequencer.vhd:59]
+	Parameter ticks bound to: 16 - type: integer 
+	Parameter last_in_chain bound to: 0 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'retrigg_timer' [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/sources_1/imports/opencores/powerSequencer/src/retrigg_timer.vhd:35]
+	Parameter ticks bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'retrigg_timer' (1#1) [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/sources_1/imports/opencores/powerSequencer/src/retrigg_timer.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'PowerSequencer' (2#1) [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/sources_1/imports/opencores/powerSequencer/src/PowerSequencer.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'wb_lcd' [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/sources_1/imports/ooc_wb_lcd/ooc_wb_lcd_impl.v:17]
+INFO: [Synth 8-638] synthesizing module 'LUT6' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000010000000001010101010101010101010101010101 
+INFO: [Synth 8-256] done synthesizing module 'LUT6' (3#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b10000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3' (4#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT5' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000001000011110000000011110000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5' (5#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000001101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT4' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized0' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000000000000000110101010101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized0' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized1' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b01000000000000100000001000000010 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized1' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized0' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000111000000100010111000000110001011110000001000101110101011101 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized0' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized1' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000011111011111110110000100011001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized1' (6#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'MUXF7' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21361]
+INFO: [Synth 8-256] done synthesizing module 'MUXF7' (7#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21361]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b11000000111111110011111000000010 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized2' (7#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized0' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1011110001001100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized0' (7#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized1' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1110101000101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized1' (7#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000000000000000000000010000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized3' (7#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized2' (7#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized3' (7#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized4' (7#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'GND' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:4827]
+INFO: [Synth 8-256] done synthesizing module 'GND' (8#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:4827]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b11111111100110000000000000011000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized4' (8#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001111100010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized2' (8#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized5' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000000000000000000000000110110 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized5' (8#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized0' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b10111000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized0' (8#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized6' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b11111111110000111111110111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized6' (8#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000110110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized3' (8#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized5' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000011110 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized5' (8#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized7' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000001000100011010101010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized7' (8#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'VCC' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:44675]
+INFO: [Synth 8-256] done synthesizing module 'VCC' (9#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:44675]
+INFO: [Synth 8-638] synthesizing module 'LUT2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b0001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized8' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b10101010101010101100110000001111 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized8' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000011000101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized4' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized9' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b10101010101010101100110000001111 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized9' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized5' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1100110000000101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized5' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized1' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized1' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized6' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1100110000000101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized6' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized7' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1100110000000101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized7' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized8' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1100110000000101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized8' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized9' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1010000010100011 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized9' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized2' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized10' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1100110000000101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized10' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized11' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1100110000000101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized11' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized10' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b10101010101010101111000000110011 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized10' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized11' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b10101010101010101111000000110011 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized11' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized12' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b10101010101010101100110000001111 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized12' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized13' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b10101010101010101100110000001111 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized13' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized3' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized14' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b10101010101010101111000000110011 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized14' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized15' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b10101010101010101111000000110011 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized15' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized16' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b10101010101010101111000000110011 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized16' (10#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (11#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:961]
+WARNING: [Synth 8-350] instance 'counter_reg[16]_i_1' of module 'CARRY4' requires 6 connections, but only 5 given [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/sources_1/imports/ooc_wb_lcd/ooc_wb_lcd_impl.v:744]
+INFO: [Synth 8-638] synthesizing module 'FDCE' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE' (12#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3749]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3965]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3965]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized12' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0010111100100000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized12' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized13' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0010111100100000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized13' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized14' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0010111100100000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized14' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized15' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0010111100100000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized15' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized16' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001111100010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized16' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b01110100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized4' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized5' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b10111000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized5' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized6' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b10111000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized6' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized6' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0101010101000100000000000010101000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized6' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized7' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0101010101000100000000000010101000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized7' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized7' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00001101 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized7' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized8' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized8' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized9' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00111000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized9' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized0' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b0010 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized0' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized8' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000001000000010000000000000100000001000100000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized8' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized9' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0100010101010101010000000100010101000000010101010100000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized9' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized17' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0010000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized17' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized10' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000100000000000000000000000100000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized10' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized11' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000001101 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized11' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized12' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000001101 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized12' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized13' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0001000000000000000000000000000000000000000000000000000000010001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized13' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized14' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000100000001000000000000010000000000000001000000010 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized14' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized10' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00001101 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized10' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized18' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized18' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized15' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0001000000010000000100000001000000000000000100000001000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized15' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized16' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1000100010001000100010001000101110001011100010111000100010001011 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized16' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized17' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1010111011101110111011101110111011101110111011101110111011101110 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized17' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized18' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1011111111111111111111111111111111111111111111111111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized18' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized17' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized17' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized19' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1011100010001000101110111011101110111000100010001000100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized19' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized18' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000000010000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized18' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized20' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0100000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized20' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized1' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized1' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized21' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000010000000000010001000000000001000100000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized21' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized22' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000100000000000000000000000000000001000000000001000100000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized22' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized23' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000010000000000000000000000000000000100000001000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized23' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized24' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1000100010001011100010001000100010001000100010001000100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized24' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized19' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000001000000000101010101010101 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized19' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized25' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1000100010001011100010001000100010001000100010001000100010001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized25' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized20' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000001000000000101010101010101 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized20' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized21' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b01000111010001000100010001000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized21' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized22' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000001000000000101010101010101 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized22' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized26' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000010000111111111111111100000000000100000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized26' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized23' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000010000000001111001011110010 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized23' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized27' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000011000000000000100000000000000000000000000000001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized27' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized28' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000010000111111111111111100000000000100000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized28' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized24' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00010001010100010000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized24' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized29' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000011000000000000100000000000000000000000000000001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized29' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized30' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000001101000100001000110001001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized30' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized25' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b00000000000100010001000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized25' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized31' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0010111100100000111111111111111100101111001000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized31' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized32' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1000000000000000111111111111111110000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized32' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized19' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000001111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized19' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized2' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized2' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized33' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000110011000000001111111000000010 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized33' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized11' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized11' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized34' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b1111111111111111111111111111110000000000000000000000000010000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized34' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized3' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized3' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized26' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+	Parameter INIT bound to: 32'b11111111111111111111111111111101 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized26' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20270]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized35' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized35' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized4' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized4' (13#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-256] done synthesizing module 'wb_lcd' (14#1) [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/sources_1/imports/ooc_wb_lcd/ooc_wb_lcd_impl.v:17]
+INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1081.180 ; gain = 195.574 ; free physical = 19664 ; free virtual = 123159
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1081.180 ; gain = 195.574 ; free physical = 19664 ; free virtual = 123159
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1454.711 ; gain = 0.000 ; free physical = 19491 ; free virtual = 122986
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19490 ; free virtual = 122985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19490 ; free virtual = 122985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[0]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[0]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[1]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[2]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[3]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[4]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[4]_i_3 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[4]_i_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state_reg[4]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[0]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[1]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[2]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[2]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[2]_i_3 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[2]_i_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[2]_i_5 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/GND. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_E0_i_1. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_E1_i_1. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_E1_i_2. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_E_INST_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_RS_INST_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\SF_D0[3]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\SF_D1[1]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\SF_D[1]_INST_0_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/VCC. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_3 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_5 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_6 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_7 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_8 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_9 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_3 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_5 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_6 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_7 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_8 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_9 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_3 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_5 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_6 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_7 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_8 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_3 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_5 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_6 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_7 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_8 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_9 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_3 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_5 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_6 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_7 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_8 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_9 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[0]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[12]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[16]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[4]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[8]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/FSM_sequential_display_state_reg[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/FSM_sequential_display_state_reg[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/FSM_sequential_display_state_reg[2] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/FSM_sequential_display_state_reg[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/FSM_sequential_display_state_reg[4] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/FSM_sequential_tx_state_reg[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/FSM_sequential_tx_state_reg[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/FSM_sequential_tx_state_reg[2] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/LCD_E0_reg . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/LCD_E1_reg . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0[0]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0[1]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0[2]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0[3]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0_reg[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0_reg[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0_reg[2] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0_reg[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D1[0]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D1[1]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D1_reg[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D1_reg[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D[0]_INST_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D[1]_INST_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D[2]_INST_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D[3]_INST_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[10] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[11] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[12] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[13] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[14] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[15] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[16] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[17] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[18] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[19] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[2] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[4] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[5] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[6] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[7] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[8] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg[9] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_load_reg . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[10] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[12] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[13] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[14] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[16] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[4] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[5] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[6] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[7] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[8] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg[9] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg[2] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg[4] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg[5] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg[6] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg[7] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_load_reg . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value[1]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value[3]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value[4]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value[5]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value_reg[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value_reg[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value_reg[4] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value_reg[5] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value_reg[6] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_done_reg . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_init . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg[2] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg[4] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg[5] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg[6] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat_reg[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat_reg[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat_reg[2] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat_reg[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat_reg[4] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat_reg[5] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat_reg[6] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat_reg[7] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/main_delay_load_i_1. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/main_delay_load_i_2. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/main_delay_load_i_3. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[10]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[12]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[13]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[14]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[16]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[16]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[1]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[3]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[4]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[4]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[4]_i_3 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[5]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[6]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[6]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[6]_i_3 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[6]_i_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[6]_i_5 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[6]_i_6 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[7]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[8]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[9]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[0]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[0]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[1]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[1]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[2]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[2]_i_3 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[3]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[3]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[4]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[5]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[5]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[6]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[7]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[7]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte_reg[2]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_load_i_1. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_load_i_2. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_load_i_3. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_load_i_4. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_delay_value[6]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_delay_value[6]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_done_i_1. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/wb_ack_o_INST_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\wb_dat_o[0]_INST_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\wr_addr[6]_i_1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\wr_addr[6]_i_2 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 1).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_RW. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/wb_dat_o[0]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/wb_ack_o. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/SF_D[3]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/SF_D[2]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/SF_D[1]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/SF_D[0]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_E. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_RS. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/wb_clk_i. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/wb_rst_i. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/wb_dat_i[7]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/wb_adr_i[6]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/wb_we_i. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/wb_cyc_i. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/wb_stb_i. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\<const1>__0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[0]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[1]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[2]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[3]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[4]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[4]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state[4]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_display_state_reg[4]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[0]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[1]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[2]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[2]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[2]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\FSM_sequential_tx_state[2]_i_5_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_E0_i_1_n_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_E1_i_1_n_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/LCD_E1_i_2_n_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\SF_D0[3]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\SF_D1[1]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_5_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_6_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_7_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_8_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[0]_i_9_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_5_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_6_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_7_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_8_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[12]_i_9_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_5_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_6_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_7_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[16]_i_8_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_5_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_6_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_7_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_8_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[4]_i_9_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_5_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_6_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_7_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_8_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter[8]_i_9_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[0]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[0]_i_1_n_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[12]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[12]_i_1_n_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[16]_i_1_n_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[4]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[4]_i_1_n_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[8]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\counter_reg[8]_i_1_n_4 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/LCD_E0_reg_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/LCD_E1_reg_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0 [3]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0 [2]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0 [1]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0 [0]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0_reg_n_0_[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0_reg_n_0_[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0_reg_n_0_[2] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D0_reg_n_0_[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D1 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D1[0]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D1[1]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D1_reg_n_0_[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/SF_D1_reg_n_0_[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [19]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [18]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [17]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [16]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [15]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [14]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [13]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [12]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [11]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [10]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [9]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [8]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [7]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [6]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [5]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [4]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [3]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [2]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [1]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_counter/counter_reg [0]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/delay_done . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/display_state [4]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/display_state [3]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/display_state [2]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/display_state [1]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/display_state [0]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_load . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_load_reg_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [16]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [14]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [13]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [12]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [10]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [9]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [8]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [7]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [6]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [5]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [4]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [3]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value [1]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[10] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[12] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[13] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[14] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[16] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[4] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[5] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[6] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[7] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[8] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/main_delay_value_reg_n_0_[9] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/output_selector . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte [7]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte [6]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte [5]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte [4]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte [3]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte [2]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte [1]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte [0]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg_n_0_[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg_n_0_[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg_n_0_[2] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg_n_0_[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg_n_0_[4] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg_n_0_[5] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg_n_0_[6] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_byte_reg_n_0_[7] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_load_reg_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value [5]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value [4]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value [3]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_delay_value [1]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_done_reg_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_init__0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_state [2]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_state [1]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/tx_state [0]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg_n_0_[0] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg_n_0_[1] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg_n_0_[2] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg_n_0_[3] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg_n_0_[4] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg_n_0_[5] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_addr_reg_n_0_[6] . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat [7]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat [6]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat [5]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat [4]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat [3]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat [2]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat [1]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\lcd/wr_dat [0]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/lcd_we. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/main_delay_load_i_2_n_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/main_delay_load_i_3_n_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[16]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[4]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[4]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[6]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[6]_i_4_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[6]_i_5_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\main_delay_value[6]_i_6_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[0]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[1]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[2]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[2]_i_3_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[3]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[5]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_byte[7]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_load_i_1_n_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_load_i_2_n_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_load_i_3_n_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_load_i_4_n_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_value[6]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_value[5]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_value[4]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_value[3]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_delay_value[1]. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_delay_value[6]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\tx_delay_value[6]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/tx_done_i_1_n_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\wr_addr[6]_i_1_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0/\wr_addr[6]_i_2_n_0 . (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 2).
+Applied set_property DONT_TOUCH = true for wb_lcd_0. (constraint file  /home/sean/vivado_workspace/wb_lcd_dt/wb_lcd_dt.srcs/constrs_1/new/top.xdc, line 3).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19490 ; free virtual = 122985
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'PowerSequencer'
+INFO: [Synth 8-5544] ROM "timer_do" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "supply_ena" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                             0000 |                             0000
+       s_powerup_trigger |                             0001 |                             0001
+            s_do_powerup |                             0010 |                             0010
+                 s_check |                             0011 |                             0011
+              s_ena_next |                             0100 |                             0100
+             s_operating |                             0101 |                             0101
+       s_retreat_trigger |                             0110 |                             0110
+               s_retreat |                             0111 |                             0111
+              s_complain |                             1000 |                             1000
+                  iSTATE |                             1001 |                             1111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'PowerSequencer'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19475 ; free virtual = 122970
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 8     
++---Registers : 
+	                5 Bit    Registers := 8     
+	                1 Bit    Registers := 72    
++---Muxes : 
+	   3 Input      5 Bit        Muxes := 8     
+	  13 Input      4 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 16    
+	  10 Input      1 Bit        Muxes := 80    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module retrigg_timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module PowerSequencer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19475 ; free virtual = 122970
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19475 ; free virtual = 122970
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19475 ; free virtual = 122970
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\powerSequencer_0/pu_chain_out_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\powerSequencer_0/supply_good_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\powerSequencer_1/supply_good_reg )
+WARNING: [Synth 8-3332] Sequential element (powerSequencer_0/supply_good_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (powerSequencer_1/ena_next_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (powerSequencer_0/pu_chain_out_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (powerSequencer_1/supply_good_reg) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19463 ; free virtual = 122958
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19463 ; free virtual = 122958
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19426 ; free virtual = 122921
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19425 ; free virtual = 122920
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19405 ; free virtual = 122901
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19405 ; free virtual = 122901
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19405 ; free virtual = 122901
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19405 ; free virtual = 122900
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19405 ; free virtual = 122900
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19405 ; free virtual = 122900
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |GND    |     1|
+|4     |LUT2   |    68|
+|5     |LUT3   |    51|
+|6     |LUT4   |    45|
+|7     |LUT5   |    77|
+|8     |LUT6   |   112|
+|9     |MUXF7  |     2|
+|10    |VCC    |     1|
+|11    |FDCE   |    22|
+|12    |FDRE   |   198|
+|13    |IBUF   |    18|
+|14    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+-------+------+
+|      |Instance   |Module |Cells |
++------+-----------+-------+------+
+|1     |top        |       |   617|
+|2     |  wb_lcd_0 |wb_lcd |   215|
++------+-----------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19405 ; free virtual = 122900
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1454.711 ; gain = 108.434 ; free physical = 19405 ; free virtual = 122900
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1454.711 ; gain = 569.105 ; free physical = 19406 ; free virtual = 122901
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+253 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1454.711 ; gain = 494.551 ; free physical = 19394 ; free virtual = 122890
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1486.727 ; gain = 0.000 ; free physical = 19394 ; free virtual = 122889
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 19 13:57:42 2018...
