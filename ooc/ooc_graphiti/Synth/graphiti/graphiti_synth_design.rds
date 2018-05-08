@@ -1,0 +1,544 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top graphiti -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18765 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1048.215 ; gain = 163.137 ; free physical = 4282 ; free virtual = 30289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'graphiti' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:30]
+	Parameter TAPS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'myfir' declared at '/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:19' bound to instance 'I_4' of component 'myfir' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'myfir' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:32]
+	Parameter TAPS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'myfir' (1#1) [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:32]
+	Parameter TAPS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'myfir' declared at '/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:19' bound to instance 'I_5' of component 'myfir' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:166]
+	Parameter TAPS bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'delay' declared at '/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/delay.vhd:17' bound to instance 'I_6' of component 'delay' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/delay.vhd:30]
+	Parameter TAPS bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay' (2#1) [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/delay.vhd:30]
+INFO: [Synth 8-3491] module 'paltimer' declared at '/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:15' bound to instance 'I_0' of component 'paltimer' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'paltimer' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'paltimer' (3#1) [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:33]
+INFO: [Synth 8-3491] module 'dds' declared at '/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:15' bound to instance 'I_1' of component 'dds' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'dds' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:23]
+INFO: [Synth 8-3491] module 'dds_sinus' declared at '/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:15' bound to instance 'I_O' of component 'dds_sinus' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'dds_sinus' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:22]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'dds_sinus' (4#1) [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:22]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:64]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:76]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'dds' (5#1) [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:23]
+INFO: [Synth 8-3491] module 'dds' declared at '/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:15' bound to instance 'I_2' of component 'dds' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:209]
+INFO: [Synth 8-3491] module 'rgb2yuv' declared at '/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:15' bound to instance 'I_3' of component 'rgb2yuv' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'rgb2yuv' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:22]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:44]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:80]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:116]
+INFO: [Synth 8-256] done synthesizing module 'rgb2yuv' (6#1) [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'graphiti' (7#1) [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:30]
+WARNING: [Synth 8-3331] design dds_sinus has unconnected port clk
+WARNING: [Synth 8-3331] design dds_sinus has unconnected port reset
+WARNING: [Synth 8-3331] design paltimer has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.652 ; gain = 204.574 ; free physical = 4142 ; free virtual = 30156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.652 ; gain = 204.574 ; free physical = 4138 ; free virtual = 30152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1097.656 ; gain = 212.578 ; free physical = 4137 ; free virtual = 30151
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-4471] merging register 'phase_reg' into 'i_phase_reg' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:78]
+INFO: [Synth 8-4471] merging register 'readmem_reg' into 'i_readmem_reg' [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:81]
+WARNING: [Synth 8-3936] Found unconnected internal register 'modvs_reg' and it is trimmed from '29' to '27' bits. [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:293]
+WARNING: [Synth 8-3936] Found unconnected internal register 'modv_reg' and it is trimmed from '28' to '27' bits. [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:288]
+WARNING: [Synth 8-3936] Found unconnected internal register 'modus_reg' and it is trimmed from '29' to '27' bits. [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:292]
+WARNING: [Synth 8-3936] Found unconnected internal register 'modu_reg' and it is trimmed from '28' to '27' bits. [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:287]
+WARNING: [Synth 8-3936] Found unconnected internal register 'modys_reg' and it is trimmed from '29' to '27' bits. [/home/sean/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:294]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1134.703 ; gain = 249.625 ; free physical = 4137 ; free virtual = 30153
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 8     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 6     
+	   2 Input     12 Bit       Adders := 16    
+	   3 Input     12 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 43    
+	                9 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input     12 Bit        Muxes := 3     
+	   3 Input     12 Bit        Muxes := 1     
+	   9 Input     10 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module graphiti 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 3     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module myfir 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 8     
++---Registers : 
+	               12 Bit    Registers := 16    
+Module delay 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 8     
+Module paltimer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   9 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 1     
+Module dds 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 4     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module rgb2yuv 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1192.703 ; gain = 307.625 ; free physical = 4025 ; free virtual = 30044
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP I_3/multOp, operation Mode is: A*(B:0x3a1).
+DSP Report: operator I_3/multOp is absorbed into DSP I_3/multOp.
+DSP Report: Generating DSP I_5/multOp, operation Mode is: A*(B:0x170).
+DSP Report: operator I_5/multOp is absorbed into DSP I_5/multOp.
+DSP Report: Generating DSP I_5/plusOp, operation Mode is: PCIN+A*(B:0x3fffa).
+DSP Report: operator I_5/plusOp is absorbed into DSP I_5/plusOp.
+DSP Report: operator I_5/multOp is absorbed into DSP I_5/plusOp.
+DSP Report: Generating DSP I_5/plusOp, operation Mode is: PCIN+A*(B:0x132).
+DSP Report: operator I_5/plusOp is absorbed into DSP I_5/plusOp.
+DSP Report: operator I_5/multOp is absorbed into DSP I_5/plusOp.
+DSP Report: Generating DSP I_5/plusOp, operation Mode is: PCIN+A*(B:0xd0).
+DSP Report: operator I_5/plusOp is absorbed into DSP I_5/plusOp.
+DSP Report: operator I_5/multOp is absorbed into DSP I_5/plusOp.
+DSP Report: Generating DSP I_5/plusOp, operation Mode is: PCIN+A*(B:0x6e).
+DSP Report: operator I_5/plusOp is absorbed into DSP I_5/plusOp.
+DSP Report: operator I_5/multOp is absorbed into DSP I_5/plusOp.
+DSP Report: Generating DSP I_5/plusOp, operation Mode is: PCIN+A*(B:0x27).
+DSP Report: operator I_5/plusOp is absorbed into DSP I_5/plusOp.
+DSP Report: operator I_5/multOp is absorbed into DSP I_5/plusOp.
+DSP Report: Generating DSP modv_reg, operation Mode is: (A*B)'.
+DSP Report: register modv_reg is absorbed into DSP modv_reg.
+DSP Report: operator multOp is absorbed into DSP modv_reg.
+DSP Report: Generating DSP modvs_reg, operation Mode is: ((A:0x7530)*B)'.
+DSP Report: register modvs_reg is absorbed into DSP modvs_reg.
+DSP Report: operator multOp is absorbed into DSP modvs_reg.
+DSP Report: Generating DSP I_3/multOp, operation Mode is: A*(B:0x205).
+DSP Report: operator I_3/multOp is absorbed into DSP I_3/multOp.
+DSP Report: Generating DSP I_4/multOp, operation Mode is: A*(B:0x170).
+DSP Report: operator I_4/multOp is absorbed into DSP I_4/multOp.
+DSP Report: Generating DSP I_4/plusOp, operation Mode is: PCIN+A*(B:0x3fffa).
+DSP Report: operator I_4/plusOp is absorbed into DSP I_4/plusOp.
+DSP Report: operator I_4/multOp is absorbed into DSP I_4/plusOp.
+DSP Report: Generating DSP I_4/plusOp, operation Mode is: PCIN+A*(B:0x132).
+DSP Report: operator I_4/plusOp is absorbed into DSP I_4/plusOp.
+DSP Report: operator I_4/multOp is absorbed into DSP I_4/plusOp.
+DSP Report: Generating DSP I_4/plusOp, operation Mode is: PCIN+A*(B:0xd0).
+DSP Report: operator I_4/plusOp is absorbed into DSP I_4/plusOp.
+DSP Report: operator I_4/multOp is absorbed into DSP I_4/plusOp.
+DSP Report: Generating DSP I_4/plusOp, operation Mode is: PCIN+A*(B:0x6e).
+DSP Report: operator I_4/plusOp is absorbed into DSP I_4/plusOp.
+DSP Report: operator I_4/multOp is absorbed into DSP I_4/plusOp.
+DSP Report: Generating DSP I_4/plusOp, operation Mode is: PCIN+A*(B:0x27).
+DSP Report: operator I_4/plusOp is absorbed into DSP I_4/plusOp.
+DSP Report: operator I_4/multOp is absorbed into DSP I_4/plusOp.
+DSP Report: Generating DSP modu_reg, operation Mode is: (A*B)'.
+DSP Report: register modu_reg is absorbed into DSP modu_reg.
+DSP Report: operator multOp is absorbed into DSP modu_reg.
+DSP Report: Generating DSP modus_reg, operation Mode is: ((A:0x7530)*B)'.
+DSP Report: register modus_reg is absorbed into DSP modus_reg.
+DSP Report: operator multOp is absorbed into DSP modus_reg.
+DSP Report: Generating DSP modys_reg, operation Mode is: ((A:0x8e38)*B2)'.
+DSP Report: register mody_reg is absorbed into DSP modys_reg.
+DSP Report: register modys_reg is absorbed into DSP modys_reg.
+DSP Report: operator multOp is absorbed into DSP modys_reg.
+WARNING: [Synth 8-3331] design paltimer has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1219.742 ; gain = 334.664 ; free physical = 3964 ; free virtual = 29988
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1219.742 ; gain = 334.664 ; free physical = 3964 ; free virtual = 29988
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|dds_sinus   | output1     | 128x15        | LUT            | 
+|rgb2yuv     | in_gs       | 32x10         | LUT            | 
+|rgb2yuv     | in_bs       | 32x7          | LUT            | 
+|rgb2yuv     | in_rs       | 32x9          | LUT            | 
+|graphiti    | I_2/adr_reg | 128x15        | Block RAM      | 
+|graphiti    | I_3/in_gs   | 32x10         | LUT            | 
+|graphiti    | I_3/in_bs   | 32x7          | LUT            | 
+|graphiti    | I_3/in_rs   | 32x9          | LUT            | 
+|graphiti    | I_1/adr_reg | 128x15        | Block RAM      | 
++------------+-------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|rgb2yuv     | A*(B:0x3a1)        | 12     | 11     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | A*(B:0x170)        | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | PCIN+A*(B:0x3fffa) | 12     | 4      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | PCIN+A*(B:0x132)   | 12     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | PCIN+A*(B:0xd0)    | 12     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | PCIN+A*(B:0x6e)    | 12     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | PCIN+A*(B:0x27)    | 12     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|graphiti    | (A*B)'             | 16     | 12     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|graphiti    | ((A:0x7530)*B)'    | 12     | 16     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|rgb2yuv     | A*(B:0x205)        | 12     | 11     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | A*(B:0x170)        | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | PCIN+A*(B:0x3fffa) | 12     | 4      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | PCIN+A*(B:0x132)   | 12     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | PCIN+A*(B:0xd0)    | 12     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | PCIN+A*(B:0x6e)    | 12     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir       | PCIN+A*(B:0x27)    | 12     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|graphiti    | (A*B)'             | 16     | 12     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|graphiti    | ((A:0x7530)*B)'    | 12     | 16     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|graphiti    | ((A:0x8e38)*B2)'   | 12     | 17     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 1    | 0    | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\I_3/out_y_reg[11] )
+INFO: [Synth 8-3886] merging instance 'I_6/sr_reg[0][11]' (FDC) to 'I_3/out_y_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\I_1/ctr90_48_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\I_1/ctr_48_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\I_3/out_y_reg[11] )
+INFO: [Synth 8-3886] merging instance 'I_6/sr_reg[1][11]' (FDC) to 'I_3/out_y_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\I_3/out_y_reg[11] )
+INFO: [Synth 8-3886] merging instance 'I_6/sr_reg[2][11]' (FDC) to 'I_3/out_y_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\I_3/out_y_reg[11] )
+INFO: [Synth 8-3886] merging instance 'I_6/sr_reg[3][11]' (FDC) to 'I_3/out_y_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\I_3/out_y_reg[11] )
+INFO: [Synth 8-3886] merging instance 'I_6/sr_reg[4][11]' (FDC) to 'I_3/out_y_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\I_3/out_y_reg[11] )
+INFO: [Synth 8-3886] merging instance 'I_6/sr_reg[5][11]' (FDC) to 'I_3/out_y_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\I_3/out_y_reg[11] )
+INFO: [Synth 8-3886] merging instance 'I_6/sr_reg[6][11]' (FDC) to 'I_3/out_y_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\I_3/out_y_reg[11] )
+INFO: [Synth 8-3886] merging instance 'I_6/output_reg[11]' (FDC) to 'I_3/out_y_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\I_3/out_y_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (I_0/en_sync_reg) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/en_schwarz_reg) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/en_vertbr_reg) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/en_verteq_reg) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_1/ctr90_48_reg[0]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_1/ctr_48_reg[0]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_2/abschnittu_reg[0]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_1/abschnittu_reg[0]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_y_reg[11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[0][11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[1][11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[2][11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[3][11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[4][11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[5][11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[6][11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_6/output_reg[11]) is unused and will be removed from module graphiti.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1227.750 ; gain = 342.672 ; free physical = 3961 ; free virtual = 29988
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1227.750 ; gain = 342.672 ; free physical = 3961 ; free virtual = 29988
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1227.750 ; gain = 342.672 ; free physical = 3961 ; free virtual = 29988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[31]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[30]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[29]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[28]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[27]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[26]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[25]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[24]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[23]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[22]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[21]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[20]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[19]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[18]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[17]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[16]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[15]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[14]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[13]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[12]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[10]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[9]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[8]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[7]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[6]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[5]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[4]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[3]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_0/i_sync_c_reg[2]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[10]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[9]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[8]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[7]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[6]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[5]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[4]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[3]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[2]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[1]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_v_reg[0]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[11]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[10]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[9]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[8]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[7]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[6]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[5]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[4]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[3]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[2]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[1]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (I_3/out_u_reg[0]) is unused and will be removed from module graphiti.
+INFO: [Synth 8-3886] merging instance 'i_1131' (FDC) to 'i_1144'
+WARNING: [Synth 8-3332] Sequential element (i_1131) is unused and will be removed from module graphiti.
+INFO: [Synth 8-4480] The timing for the instance I_2/adr_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance I_2/adr_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1227.750 ; gain = 342.672 ; free physical = 3956 ; free virtual = 29982
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1227.750 ; gain = 342.672 ; free physical = 3956 ; free virtual = 29982
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1227.750 ; gain = 342.672 ; free physical = 3956 ; free virtual = 29982
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1227.750 ; gain = 342.672 ; free physical = 3956 ; free virtual = 29982
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1227.750 ; gain = 342.672 ; free physical = 3956 ; free virtual = 29982
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1227.750 ; gain = 342.672 ; free physical = 3956 ; free virtual = 29983
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|graphiti    | I_6/output_reg[10] | 9      | 11    | YES          | NO                 | YES               | 11     | 0       | 
++------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   339|
+|2     |DSP48E1  |    19|
+|3     |LUT1     |   393|
+|4     |LUT2     |   523|
+|5     |LUT3     |   838|
+|6     |LUT4     |    62|
+|7     |LUT5     |    52|
+|8     |LUT6     |    23|
+|9     |RAMB18E1 |     1|
+|10    |SRL16E   |    11|
+|11    |XORCY    |     1|
+|12    |FDCE     |   632|
+|13    |FDPE     |    19|
+|14    |FDRE     |    17|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  2930|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1227.750 ; gain = 342.672 ; free physical = 3956 ; free virtual = 29983
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 81 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1227.750 ; gain = 253.531 ; free physical = 3956 ; free virtual = 29983
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1227.758 ; gain = 342.680 ; free physical = 3956 ; free virtual = 29983
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 360 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'graphiti' is not ideal for floorplanning, since the cellview 'graphiti' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1388.621 ; gain = 426.988 ; free physical = 3943 ; free virtual = 29972

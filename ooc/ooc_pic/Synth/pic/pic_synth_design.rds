@@ -1,0 +1,307 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top pic -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31102 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1048.215 ; gain = 163.137 ; free physical = 7764 ; free virtual = 32036
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pic' [/home/sean/vivado_workspace/ooc_pic/Sources/hdl/pic.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'pic' (1#1) [/home/sean/vivado_workspace/ooc_pic/Sources/hdl/pic.vhd:58]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.652 ; gain = 203.574 ; free physical = 7722 ; free virtual = 31992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.652 ; gain = 203.574 ; free physical = 7722 ; free virtual = 31992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1096.656 ; gain = 211.578 ; free physical = 7722 ; free virtual = 31992
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-802] inferred FSM for state register 'next_s_reg' in module 'pic'
+INFO: [Synth 8-5544] ROM "int_type" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "int_index" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "flag1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "int_index" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "int_type" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "int_index" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "flag1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "int_index" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 reset_s |                             0000 |                             0000
+            get_commands |                             0001 |                             0001
+         jump_int_method |                             0010 |                             0010
+           start_polling |                             0011 |                             0011
+     tx_int_info_polling |                             0100 |                             0100
+          ack_txinfo_rxd |                             0101 |                             0110
+            ack_isr_done |                             0110 |                             0101
+    start_priority_check |                             0111 |                             0111
+    tx_int_info_priority |                             1000 |                             1000
+ ack_txinfo_rxd_priority |                             1001 |                             1001
+         ack_isr_done_pt |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_s_reg' using encoding 'sequential' in module 'pic'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1120.680 ; gain = 235.602 ; free physical = 7699 ; free virtual = 31970
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	  11 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  11 Input      8 Bit        Muxes := 2     
+	  30 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	  11 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  11 Input      8 Bit        Muxes := 2     
+	  30 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1188.688 ; gain = 303.609 ; free physical = 7635 ; free virtual = 31903
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "int_index" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.695 ; gain = 311.617 ; free physical = 7627 ; free virtual = 31895
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.695 ; gain = 311.617 ; free physical = 7627 ; free virtual = 31895
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'DataBus_regi_29' (FDE) to 'DataBus_regi_23'
+INFO: [Synth 8-3886] merging instance 'DataBus_regi_28' (FDE) to 'DataBus_regi_23'
+INFO: [Synth 8-3886] merging instance 'DataBus_regi_27' (FDE) to 'DataBus_regi_23'
+INFO: [Synth 8-3886] merging instance 'DataBus_regi_26' (FDE) to 'DataBus_regi_23'
+INFO: [Synth 8-3886] merging instance 'DataBus_retimed_reg[3]' (FDE) to 'DataBus_retimed_reg[4]'
+INFO: [Synth 8-3886] merging instance 'DataBus_reg__0i_25' (FDE) to 'DataBus_reg__0i_23'
+INFO: [Synth 8-3886] merging instance 'DataBus_reg__0i_24' (FDE) to 'DataBus_reg__0i_23'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DataBus_retimed_reg[5] )
+INFO: [Synth 8-3886] merging instance 'DataBus_reg__0i_23' (FDE) to 'DataBus_reg__0i_22'
+WARNING: [Synth 8-3332] Sequential element (DataBus_retimed_reg[5]) is unused and will be removed from module pic.
+WARNING: [Synth 8-3332] Sequential element (DataBus_retimed_reg[3]) is unused and will be removed from module pic.
+WARNING: [Synth 8-3332] Sequential element (DataBus_reg__0i_23) is unused and will be removed from module pic.
+WARNING: [Synth 8-3332] Sequential element (DataBus_reg__0i_24) is unused and will be removed from module pic.
+WARNING: [Synth 8-3332] Sequential element (DataBus_reg__0i_25) is unused and will be removed from module pic.
+WARNING: [Synth 8-3332] Sequential element (DataBus_reg__0i_26) is unused and will be removed from module pic.
+WARNING: [Synth 8-3332] Sequential element (DataBus_reg__0i_27) is unused and will be removed from module pic.
+WARNING: [Synth 8-3332] Sequential element (DataBus_reg__0i_28) is unused and will be removed from module pic.
+WARNING: [Synth 8-3332] Sequential element (DataBus_reg__0i_29) is unused and will be removed from module pic.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.734 ; gain = 403.656 ; free physical = 7527 ; free virtual = 31801
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.734 ; gain = 403.656 ; free physical = 7527 ; free virtual = 31801
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.734 ; gain = 403.656 ; free physical = 7527 ; free virtual = 31801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.734 ; gain = 403.656 ; free physical = 7527 ; free virtual = 31802
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.734 ; gain = 403.656 ; free physical = 7527 ; free virtual = 31802
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.734 ; gain = 403.656 ; free physical = 7527 ; free virtual = 31802
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_14' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_15' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_16' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_17' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_18' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_19' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_20' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_21' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1288.734 ; gain = 403.656 ; free physical = 7527 ; free virtual = 31802
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1288.734 ; gain = 403.656 ; free physical = 7527 ; free virtual = 31802
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1288.734 ; gain = 403.656 ; free physical = 7527 ; free virtual = 31801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    28|
+|2     |LUT1   |    63|
+|3     |LUT2   |    29|
+|4     |LUT3   |    57|
+|5     |LUT4   |    18|
+|6     |LUT5   |    89|
+|7     |LUT6   |    55|
+|8     |FDCE   |     4|
+|9     |FDRE   |   103|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   446|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1288.734 ; gain = 403.656 ; free physical = 7527 ; free virtual = 31801
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 8 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1288.734 ; gain = 314.516 ; free physical = 7527 ; free virtual = 31801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1288.742 ; gain = 403.664 ; free physical = 7527 ; free virtual = 31801
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 9 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1433.605 ; gain = 471.973 ; free physical = 7480 ; free virtual = 31749

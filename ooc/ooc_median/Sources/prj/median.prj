@@ -1,0 +1,7 @@
+verilog work "hdl/common_network.v"
+verilog work "hdl/dff_3_pipe.v"
+verilog work "hdl/dual_port_ram.v"
+verilog work "hdl/median.v"
+verilog work "hdl/node.v"
+verilog work "hdl/pixel_network.v"
+verilog work "hdl/state_machine.v"

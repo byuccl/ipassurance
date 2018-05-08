@@ -1,0 +1,2 @@
+vhdl work "hdl/pic_tb.vhd"
+vhdl work "hdl/pic.vhd"

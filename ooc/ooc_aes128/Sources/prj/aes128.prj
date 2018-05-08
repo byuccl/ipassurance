@@ -1,0 +1,3 @@
+verilog work "hdl/tiny_aes/round.v"
+verilog work "hdl/tiny_aes/table.v"
+verilog work "hdl/tiny_aes/aes128.v"

@@ -1,0 +1,400 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top apbctrl -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5998 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1050.664 ; gain = 165.590 ; free physical = 2836 ; free virtual = 25922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'apbctrl' [/home/sean/vivado_workspace/ooc_apbctrl/Sources/hdl/lib/grlib/amba/apbctrl.vhd:66]
+	Parameter hindex bound to: 1 - type: integer 
+	Parameter haddr bound to: 2048 - type: integer 
+	Parameter hmask bound to: 4095 - type: integer 
+	Parameter nslaves bound to: 16 - type: integer 
+	Parameter debug bound to: 2 - type: integer 
+	Parameter icheck bound to: 1 - type: integer 
+	Parameter enbusmon bound to: 0 - type: integer 
+	Parameter asserterr bound to: 0 - type: integer 
+	Parameter assertwarn bound to: 0 - type: integer 
+	Parameter pslvdisable bound to: 0 - type: integer 
+	Parameter mcheck bound to: 1 - type: integer 
+	Parameter ccheck bound to: 1 - type: integer 
+	Parameter hindex0 bound to: 1 - type: integer 
+	Parameter haddr0 bound to: 2048 - type: integer 
+	Parameter hmask0 bound to: 4095 - type: integer 
+	Parameter hindex1 bound to: 0 - type: integer 
+	Parameter haddr1 bound to: 0 - type: integer 
+	Parameter hmask1 bound to: 0 - type: integer 
+	Parameter nslaves bound to: 16 - type: integer 
+	Parameter nports bound to: 1 - type: integer 
+	Parameter wprot bound to: 0 - type: integer 
+	Parameter debug bound to: 2 - type: integer 
+	Parameter icheck bound to: 1 - type: integer 
+	Parameter enbusmon bound to: 0 - type: integer 
+	Parameter asserterr bound to: 0 - type: integer 
+	Parameter assertwarn bound to: 0 - type: integer 
+	Parameter pslvdisable bound to: 0 - type: integer 
+	Parameter mcheck bound to: 1 - type: integer 
+	Parameter ccheck bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'apbctrlx' declared at '/home/sean/vivado_workspace/ooc_apbctrl/Sources/hdl/lib/grlib/amba/apbctrlx.vhd:39' bound to instance 'apbx' of component 'apbctrlx' [/home/sean/vivado_workspace/ooc_apbctrl/Sources/hdl/lib/grlib/amba/apbctrl.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'apbctrlx' [/home/sean/vivado_workspace/ooc_apbctrl/Sources/hdl/lib/grlib/amba/apbctrlx.vhd:71]
+	Parameter hindex0 bound to: 1 - type: integer 
+	Parameter haddr0 bound to: 2048 - type: integer 
+	Parameter hmask0 bound to: 4095 - type: integer 
+	Parameter hindex1 bound to: 0 - type: integer 
+	Parameter haddr1 bound to: 0 - type: integer 
+	Parameter hmask1 bound to: 0 - type: integer 
+	Parameter nslaves bound to: 16 - type: integer 
+	Parameter nports bound to: 1 - type: integer 
+	Parameter wprot bound to: 0 - type: integer 
+	Parameter debug bound to: 2 - type: integer 
+	Parameter icheck bound to: 1 - type: integer 
+	Parameter enbusmon bound to: 0 - type: integer 
+	Parameter asserterr bound to: 0 - type: integer 
+	Parameter assertwarn bound to: 0 - type: integer 
+	Parameter pslvdisable bound to: 0 - type: integer 
+	Parameter mcheck bound to: 1 - type: integer 
+	Parameter ccheck bound to: 1 - type: integer 
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_apbctrl/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_apbctrl/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_apbctrl/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+INFO: [Synth 8-256] done synthesizing module 'apbctrlx' (1#1) [/home/sean/vivado_workspace/ooc_apbctrl/Sources/hdl/lib/grlib/amba/apbctrlx.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'apbctrl' (2#1) [/home/sean/vivado_workspace/ooc_apbctrl/Sources/hdl/lib/grlib/amba/apbctrl.vhd:66]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][4]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][5]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][6]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][7]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][8]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][9]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][10]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][11]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][12]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][13]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][14]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsel][15]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][31]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][30]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][29]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][28]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][27]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][26]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][25]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][24]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][23]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][22]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][21]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][haddr][20]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsize][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsize][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hsize][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hburst][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hburst][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hburst][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hprot][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hprot][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hprot][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hprot][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hmaster][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hmaster][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hmaster][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hmaster][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hmastlock]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hmbsel][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hmbsel][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hmbsel][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port ahbi[0][hmbsel][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[0][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[0][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[0][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[0][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[1][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[1][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[1][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[1][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[2][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[2][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[2][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[2][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[3][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[3][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[3][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[3][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[4][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[4][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[4][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[4][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[5][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[5][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[5][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[5][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[6][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[6][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[6][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[6][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[7][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[7][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[7][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[7][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[8][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[8][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[8][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[8][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[9][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[9][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[9][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[9][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[10][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[10][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[10][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[10][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[11][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[11][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[11][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[11][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[12][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[12][pindex][2]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[12][pindex][1]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[12][pindex][0]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[13][pindex][3]
+WARNING: [Synth 8-3331] design apbctrlx has unconnected port apbo[13][pindex][2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.102 ; gain = 239.027 ; free physical = 2760 ; free virtual = 25846
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.102 ; gain = 239.027 ; free physical = 2760 ; free virtual = 25846
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1132.105 ; gain = 247.031 ; free physical = 2760 ; free virtual = 25846
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-802] inferred FSM for state register 'syncrregs.r_reg[p][0][state]' in module 'apbctrlx'
+INFO: [Synth 8-5546] ROM "v[p][0][penable]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[p][0][hready]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[p][0][state]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE2 |                               10 |                               10
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'syncrregs.r_reg[p][0][state]' using encoding 'sequential' in module 'apbctrlx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1148.121 ; gain = 263.047 ; free physical = 2745 ; free virtual = 25831
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module apbctrlx 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1193.121 ; gain = 308.047 ; free physical = 2701 ; free virtual = 25787
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "v[p][0][penable]" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1201.129 ; gain = 316.055 ; free physical = 2693 ; free virtual = 25779
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1201.129 ; gain = 316.055 ; free physical = 2693 ; free virtual = 25779
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'apbx/syncrregs.r_reg[p][0][hresp][0]' (FDR) to 'apbx/syncrregs.r_reg[p][0][hresp][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\apbx/syncrregs.r_reg[p][0][hresp][1] )
+WARNING: [Synth 8-3332] Sequential element (apbx/syncrregs.r_reg[p][0][hresp][1]) is unused and will be removed from module apbctrl.
+WARNING: [Synth 8-3332] Sequential element (apbx/syncrregs.r_reg[p][0][hresp][0]) is unused and will be removed from module apbctrl.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1434.668 ; gain = 549.594 ; free physical = 2461 ; free virtual = 25547
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1434.668 ; gain = 549.594 ; free physical = 2461 ; free virtual = 25547
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1434.668 ; gain = 549.594 ; free physical = 2461 ; free virtual = 25547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1434.668 ; gain = 549.594 ; free physical = 2461 ; free virtual = 25547
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1434.668 ; gain = 549.594 ; free physical = 2461 ; free virtual = 25547
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1434.668 ; gain = 549.594 ; free physical = 2461 ; free virtual = 25547
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1434.668 ; gain = 549.594 ; free physical = 2460 ; free virtual = 25547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1434.668 ; gain = 549.594 ; free physical = 2460 ; free virtual = 25547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1434.668 ; gain = 549.594 ; free physical = 2460 ; free virtual = 25547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    16|
+|2     |LUT1   |     2|
+|3     |LUT3   |    12|
+|4     |LUT4   |    65|
+|5     |LUT5   |    53|
+|6     |LUT6   |   588|
+|7     |MUXF7  |   192|
+|8     |FDRE   |    93|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1021|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1434.668 ; gain = 549.594 ; free physical = 2460 ; free virtual = 25547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 739 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1434.668 ; gain = 455.000 ; free physical = 2460 ; free virtual = 25547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1434.676 ; gain = 549.602 ; free physical = 2460 ; free virtual = 25547
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'apbctrl' is not ideal for floorplanning, since the cellview 'apbctrl' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 106 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1482.512 ; gain = 515.430 ; free physical = 2452 ; free virtual = 25538

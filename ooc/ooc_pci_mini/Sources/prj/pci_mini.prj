@@ -1,0 +1,4 @@
+verilog work "hdl/pci-33.v"
+vhdl work "hdl/pci-40.vhd"
+verilog work "hdl/pci_mini-34.v"
+verilog work "hdl/pci_mini.v"

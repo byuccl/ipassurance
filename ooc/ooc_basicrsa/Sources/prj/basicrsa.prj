@@ -1,0 +1,4 @@
+vhdl work "hdl/basicrsa.vhd"
+vhdl work "hdl/modmult.vhd"
+vhdl work "hdl/rsatest16.vhd"
+vhdl work "hdl/Testmult.vhd"

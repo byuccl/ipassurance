@@ -1,0 +1,546 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top aes128 -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14424 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.215 ; gain = 164.137 ; free physical = 3682 ; free virtual = 29790
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'aes128' [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/aes128.v:17]
+INFO: [Synth 8-638] synthesizing module 'expand_key_128' [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/aes128.v:59]
+INFO: [Synth 8-638] synthesizing module 'S4' [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/table.v:32]
+INFO: [Synth 8-638] synthesizing module 'S' [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/table.v:59]
+INFO: [Synth 8-256] done synthesizing module 'S' (1#1) [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/table.v:59]
+INFO: [Synth 8-256] done synthesizing module 'S4' (2#1) [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/table.v:32]
+INFO: [Synth 8-256] done synthesizing module 'expand_key_128' (3#1) [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/aes128.v:59]
+INFO: [Synth 8-638] synthesizing module 'one_round' [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/round.v:18]
+INFO: [Synth 8-638] synthesizing module 'table_lookup' [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/table.v:17]
+INFO: [Synth 8-638] synthesizing module 'T' [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/table.v:45]
+INFO: [Synth 8-638] synthesizing module 'xS' [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/table.v:326]
+INFO: [Synth 8-256] done synthesizing module 'xS' (4#1) [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/table.v:326]
+INFO: [Synth 8-256] done synthesizing module 'T' (5#1) [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/table.v:45]
+INFO: [Synth 8-256] done synthesizing module 'table_lookup' (6#1) [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/table.v:17]
+INFO: [Synth 8-256] done synthesizing module 'one_round' (7#1) [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/round.v:18]
+INFO: [Synth 8-638] synthesizing module 'final_round' [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/round.v:50]
+INFO: [Synth 8-256] done synthesizing module 'final_round' (8#1) [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/round.v:50]
+INFO: [Synth 8-256] done synthesizing module 'aes128' (9#1) [/home/sean/vivado_workspace/ooc_aes128/Sources/hdl/tiny_aes/aes128.v:17]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.652 ; gain = 204.574 ; free physical = 3640 ; free virtual = 29748
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.652 ; gain = 204.574 ; free physical = 3640 ; free virtual = 29748
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1097.656 ; gain = 212.578 ; free physical = 3640 ; free virtual = 29748
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1105.664 ; gain = 220.586 ; free physical = 3632 ; free virtual = 29741
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 74    
+	   5 Input     32 Bit         XORs := 36    
+	   2 Input      8 Bit         XORs := 154   
++---Registers : 
+	              128 Bit    Registers := 22    
+	               32 Bit    Registers := 40    
+	                8 Bit    Registers := 344   
++---ROMs : 
+	                              ROMs := 344   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module aes128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+Module S 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module expand_key_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 7     
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+Module xS 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module T 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module one_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     32 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+Module final_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1188.672 ; gain = 303.594 ; free physical = 3544 ; free virtual = 29652
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1219.703 ; gain = 334.625 ; free physical = 3517 ; free virtual = 29626
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1219.703 ; gain = 334.625 ; free physical = 3517 ; free virtual = 29626
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+WARNING: [Synth 8-3323] Resources of type BRAM have been overutilized. Used = 344, Available = 270. Use report_utilization command for details.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------------+---------------+----------------+
+|Module Name    | RTL Object       | Depth x Width | Implemented As | 
++---------------+------------------+---------------+----------------+
+|S              | out_reg          | 256x8         | Block RAM      | 
+|xS             | out_reg          | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_0/out_reg | 256x8         | Block RAM      | 
++---------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[127]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[126]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[125]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[124]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[123]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[122]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[121]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[120]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[119]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[118]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[117]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[116]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[115]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[114]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[113]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[112]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[111]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[110]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[109]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[108]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[107]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[106]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[105]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[104]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[103]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[102]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[101]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[100]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[99]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[98]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[97]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[96]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[95]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[94]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[93]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[92]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[91]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[90]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[89]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[88]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[87]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[86]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[85]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[84]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[83]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[82]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[81]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[80]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[79]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[78]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[77]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[76]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[75]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[74]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[73]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[72]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[71]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[70]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[69]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[68]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[67]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[66]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[65]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[64]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[63]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[62]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[61]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[60]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[59]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[58]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[57]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[56]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[55]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[54]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[53]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[52]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[51]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[50]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[49]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[48]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[47]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[46]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[45]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[44]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[43]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[42]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[41]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[40]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[39]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[38]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[37]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[36]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[35]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[34]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[33]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[32]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[31]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[30]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[29]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[28]) is unused and will be removed from module expand_key_128.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1285.305 ; gain = 400.227 ; free physical = 3453 ; free virtual = 29562
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1285.305 ; gain = 400.227 ; free physical = 3453 ; free virtual = 29562
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1285.305 ; gain = 400.227 ; free physical = 3453 ; free virtual = 29562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance a1/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a1/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a1/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a1/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a2/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a2/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a2/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a2/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a3/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a3/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a3/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a3/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a4/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a4/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a4/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a4/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a5/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a5/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a5/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a5/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a6/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a6/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a6/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a6/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a7/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a7/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a7/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a7/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a8/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a8/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a8/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a8/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a9/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a9/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a9/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a9/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a10/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a10/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a10/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance a10/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t1/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t1/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t1/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t1/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t3/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r1/t3/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t1/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t1/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t1/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t1/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance r2/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1300.688 ; gain = 415.609 ; free physical = 3438 ; free virtual = 29546
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1300.688 ; gain = 415.609 ; free physical = 3438 ; free virtual = 29546
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1300.688 ; gain = 415.609 ; free physical = 3438 ; free virtual = 29546
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1300.688 ; gain = 415.609 ; free physical = 3434 ; free virtual = 29542
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1300.688 ; gain = 415.609 ; free physical = 3435 ; free virtual = 29543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1300.688 ; gain = 415.609 ; free physical = 3435 ; free virtual = 29543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    16|
+|2     |LUT2     |  1600|
+|3     |LUT3     |   448|
+|4     |LUT4     |   320|
+|5     |LUT6     |  1152|
+|6     |RAMB18E1 |   172|
+|7     |FDRE     |  3968|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  7676|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1300.688 ; gain = 415.609 ; free physical = 3435 ; free virtual = 29543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 129 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1300.688 ; gain = 326.469 ; free physical = 3435 ; free virtual = 29543
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1300.695 ; gain = 415.617 ; free physical = 3435 ; free virtual = 29543
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 172 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'aes128' is not ideal for floorplanning, since the cellview 'aes128' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1419.559 ; gain = 457.926 ; free physical = 3411 ; free virtual = 29520

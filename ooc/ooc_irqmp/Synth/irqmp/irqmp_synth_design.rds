@@ -1,0 +1,502 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top irqmp -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21550 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1050.664 ; gain = 165.590 ; free physical = 3598 ; free virtual = 26145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'irqmp' [/home/sean/vivado_workspace/ooc_irqmp/Sources/hdl/lib/gaisler/irqmp/irqmp.vhd:66]
+	Parameter pindex bound to: 2 - type: integer 
+	Parameter paddr bound to: 2 - type: integer 
+	Parameter pmask bound to: 4095 - type: integer 
+	Parameter ncpu bound to: 4 - type: integer 
+	Parameter eirq bound to: 0 - type: integer 
+	Parameter irqmap bound to: 0 - type: integer 
+	Parameter bootreg bound to: 1 - type: integer 
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_irqmp/Sources/hdl/lib/gaisler/irqmp/irqmp.vhd:178]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_irqmp/Sources/hdl/lib/gaisler/irqmp/irqmp.vhd:208]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_irqmp/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_irqmp/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_irqmp/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_irqmp/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+INFO: [Synth 8-256] done synthesizing module 'irqmp' (1#1) [/home/sean/vivado_workspace/ooc_irqmp/Sources/hdl/lib/gaisler/irqmp/irqmp.vhd:66]
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][31] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][30] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][29] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][28] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][27] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][26] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][25] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][24] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][23] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][22] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][21] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][20] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][19] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][18] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][17] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][16] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][15] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][14] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][13] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][12] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][11] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][10] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][9] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][8] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][7] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][6] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][5] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][4] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][3] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][2] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][1] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pirq][0] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][31] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][30] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][29] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][28] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][27] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][26] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][25] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][24] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][23] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][22] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][21] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][20] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][19] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][18] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][17] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][16] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][15] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][14] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][13] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][12] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][11] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][10] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][9] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][8] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][7] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][6] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][5] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][4] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][3] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][2] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][1] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][0][0] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][31] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][30] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][29] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][28] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][27] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][26] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][25] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][24] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][23] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][22] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][21] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][20] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][19] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][18] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][17] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][16] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][15] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][14] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][13] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][12] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][11] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][10] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][9] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][8] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][7] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][6] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][5] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][4] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][3] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][2] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][1] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pconfig][1][0] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pindex][3] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pindex][2] driven by constant 0
+WARNING: [Synth 8-3917] design irqmp has port apbo[pindex][1] driven by constant 1
+WARNING: [Synth 8-3917] design irqmp has port apbo[pindex][0] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][0]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][1]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][3]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][4]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][5]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][6]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][7]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][8]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][9]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][10]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][11]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][12]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][13]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][14]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][15]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][31]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][30]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][29]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][28]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][27]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][26]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][25]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][24]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][23]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][22]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][21]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][20]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][19]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][18]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][17]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][16]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][15]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][14]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][13]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][12]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][11]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][10]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][9]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][8]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][1]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][0]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][31]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][30]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][29]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][28]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][27]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][26]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][25]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][24]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][23]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][22]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][21]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][20]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][19]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][18]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][17]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][16]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][0]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[testen]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[testrst]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[scanen]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[testoen]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[testin][3]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[testin][2]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[testin][1]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[testin][0]
+WARNING: [Synth 8-3331] design irqmp has unconnected port irqi[0][fpen]
+WARNING: [Synth 8-3331] design irqmp has unconnected port irqi[1][fpen]
+WARNING: [Synth 8-3331] design irqmp has unconnected port irqi[2][fpen]
+WARNING: [Synth 8-3331] design irqmp has unconnected port irqi[3][fpen]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1126.102 ; gain = 241.027 ; free physical = 3520 ; free virtual = 26068
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1126.102 ; gain = 241.027 ; free physical = 3520 ; free virtual = 26068
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1134.105 ; gain = 249.031 ; free physical = 3520 ; free virtual = 26068
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-5544] ROM "bootreg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[setaddr]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[setaddr]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[setaddr]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[setaddr]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[imask][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[imask][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[imask][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[imask][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bootreg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[setaddr]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[setaddr]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[setaddr]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[setaddr]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[imask][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[imask][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[imask][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[imask][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[ilevel]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "level" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "level" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "level" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "level" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1150.121 ; gain = 265.047 ; free physical = 3504 ; free virtual = 26052
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               15 Bit    Registers := 11    
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 4     
+	   2 Input     15 Bit        Muxes := 13    
+	   4 Input     15 Bit        Muxes := 7     
+	   7 Input     15 Bit        Muxes := 2     
+	  15 Input      4 Bit        Muxes := 4     
+	  17 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 12    
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 119   
+	   4 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module irqmp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               15 Bit    Registers := 11    
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 4     
+	   2 Input     15 Bit        Muxes := 13    
+	   4 Input     15 Bit        Muxes := 7     
+	   7 Input     15 Bit        Muxes := 2     
+	  15 Input      4 Bit        Muxes := 4     
+	  17 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 12    
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 119   
+	   4 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1195.121 ; gain = 310.047 ; free physical = 3460 ; free virtual = 26008
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][0]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][1]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][3]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][4]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][5]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][6]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][7]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][8]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][9]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][10]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][11]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][12]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][13]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][14]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[psel][15]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][31]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][30]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][29]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][28]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][27]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][26]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][25]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][24]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][23]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][22]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][21]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[paddr][20]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][31]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][30]
+WARNING: [Synth 8-3331] design irqmp has unconnected port apbi[pirq][29]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1203.129 ; gain = 318.055 ; free physical = 3452 ; free virtual = 26000
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1203.129 ; gain = 318.055 ; free physical = 3452 ; free virtual = 26000
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1269.168 ; gain = 384.094 ; free physical = 3384 ; free virtual = 25931
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1269.168 ; gain = 384.094 ; free physical = 3384 ; free virtual = 25931
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1269.168 ; gain = 384.094 ; free physical = 3384 ; free virtual = 25931
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1277.176 ; gain = 392.102 ; free physical = 3378 ; free virtual = 25926
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1277.176 ; gain = 392.102 ; free physical = 3378 ; free virtual = 25926
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1277.176 ; gain = 392.102 ; free physical = 3378 ; free virtual = 25926
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1277.176 ; gain = 392.102 ; free physical = 3378 ; free virtual = 25926
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1277.176 ; gain = 392.102 ; free physical = 3378 ; free virtual = 25926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1277.176 ; gain = 392.102 ; free physical = 3378 ; free virtual = 25926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |    16|
+|3     |LUT3  |    44|
+|4     |LUT4  |   125|
+|5     |LUT5  |   152|
+|6     |LUT6  |   303|
+|7     |MUXF7 |    12|
+|8     |FDRE  |   227|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   880|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1277.176 ; gain = 392.102 ; free physical = 3378 ; free virtual = 25926
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 531 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1277.176 ; gain = 297.508 ; free physical = 3378 ; free virtual = 25926
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1277.184 ; gain = 392.109 ; free physical = 3378 ; free virtual = 25926
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 205 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1415.047 ; gain = 447.965 ; free physical = 3331 ; free virtual = 25879

@@ -1,0 +1,553 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top mips_16 -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3779 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.211 ; gain = 164.137 ; free physical = 5108 ; free virtual = 30775
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips_16' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/mips_16.v:18]
+INFO: [Synth 8-638] synthesizing module 'IF_stage' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/IF_stage.v:15]
+INFO: [Synth 8-638] synthesizing module 'instruction_mem' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:15]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:23]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'instruction_mem' (1#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/instruction_mem.v:15]
+INFO: [Synth 8-256] done synthesizing module 'IF_stage' (2#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/IF_stage.v:15]
+INFO: [Synth 8-638] synthesizing module 'ID_stage' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/ID_stage.v:14]
+INFO: [Synth 8-256] done synthesizing module 'ID_stage' (3#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/ID_stage.v:14]
+INFO: [Synth 8-638] synthesizing module 'EX_stage' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/EX_stage.v:13]
+INFO: [Synth 8-638] synthesizing module 'alu' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/alu.v:13]
+WARNING: [Synth 8-153] case item 3'bxxx will never be executed [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/alu.v:22]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/alu.v:22]
+INFO: [Synth 8-256] done synthesizing module 'alu' (4#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/alu.v:13]
+INFO: [Synth 8-256] done synthesizing module 'EX_stage' (5#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/EX_stage.v:13]
+INFO: [Synth 8-638] synthesizing module 'MEM_stage' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/MEM_stage.v:14]
+INFO: [Synth 8-638] synthesizing module 'data_mem' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/data_mem.v:14]
+INFO: [Synth 8-256] done synthesizing module 'data_mem' (6#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/data_mem.v:14]
+INFO: [Synth 8-256] done synthesizing module 'MEM_stage' (7#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/MEM_stage.v:14]
+INFO: [Synth 8-638] synthesizing module 'WB_stage' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/WB_stage.v:13]
+INFO: [Synth 8-256] done synthesizing module 'WB_stage' (8#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/WB_stage.v:13]
+INFO: [Synth 8-638] synthesizing module 'register_file' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/register_file.v:18]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (9#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/register_file.v:18]
+INFO: [Synth 8-638] synthesizing module 'hazard_detection_unit' [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/hazard_detection_unit.v:20]
+INFO: [Synth 8-256] done synthesizing module 'hazard_detection_unit' (10#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/hazard_detection_unit.v:20]
+INFO: [Synth 8-256] done synthesizing module 'mips_16' (11#1) [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/mips_16.v:18]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[15]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[14]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[13]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[12]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[11]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[10]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[9]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[8]
+WARNING: [Synth 8-3331] design instruction_mem has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.648 ; gain = 204.574 ; free physical = 5065 ; free virtual = 30732
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.648 ; gain = 204.574 ; free physical = 5065 ; free virtual = 30732
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1097.652 ; gain = 212.578 ; free physical = 5065 ; free virtual = 30732
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/IF_stage.v:35]
+INFO: [Synth 8-5544] ROM "decoding_op_is_branch" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "branch_taken" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "decoding_op_is_store" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_mips_16/Sources/hdl/alu.v:22]
+INFO: [Synth 8-5544] ROM "reg_array_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1113.668 ; gain = 228.594 ; free physical = 5049 ; free virtual = 30717
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               57 Bit    Registers := 1     
+	               38 Bit    Registers := 1     
+	               37 Bit    Registers := 1     
+	               16 Bit    Registers := 9     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module IF_stage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module ID_stage 
+Detailed RTL Component Info : 
++---Registers : 
+	               57 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+Module EX_stage 
+Detailed RTL Component Info : 
++---Registers : 
+	               38 Bit    Registers := 1     
+Module MEM_stage 
+Detailed RTL Component Info : 
++---Registers : 
+	               37 Bit    Registers := 1     
+Module WB_stage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module register_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 8     
++---Muxes : 
+	   9 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1189.676 ; gain = 304.602 ; free physical = 4975 ; free virtual = 30643
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design instruction_mem has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1197.684 ; gain = 312.609 ; free physical = 4968 ; free virtual = 30635
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1197.684 ; gain = 312.609 ; free physical = 4968 ; free virtual = 30635
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------------------+-----------+----------------------+------------------+
+|mips_16     | MEM_stage_inst/dmem/ram_reg | Implied   | 256 x 16             | RAM256X1S x 16   | 
++------------+-----------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[0]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[1]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[2]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[9]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[3]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[10]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[4]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[11]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[5]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[14]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[15]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[13]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[12]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[6]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ID_stage_inst/instruction_reg_reg[7]' (FDCE) to 'ID_stage_inst/instruction_reg_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_stage_inst/instruction_reg_reg[8] )
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[15]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[14]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[13]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[12]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[11]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[10]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[9]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[8]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[7]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[6]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[5]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[4]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[3]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[2]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[1]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/instruction_reg_reg[0]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[56]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[55]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[54]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[53]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[52]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[51]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[50]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[49]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[48]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[47]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[46]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[45]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[44]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[43]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[42]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[41]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[40]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[39]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[38]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[37]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[36]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[35]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[34]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[33]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[32]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[31]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[30]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[29]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[28]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[27]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[26]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[25]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[24]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[23]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[22]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[21]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[20]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[19]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[18]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[17]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[16]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[15]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[14]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[13]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[12]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[11]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[10]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[9]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[8]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[7]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[6]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[5]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[4]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[3]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[2]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[1]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (ID_stage_inst/pipeline_reg_out_reg[0]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[37]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[36]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[35]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[34]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[33]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[32]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[31]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[30]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[29]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[28]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[27]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[26]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[25]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[24]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[23]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[22]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[21]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[20]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[19]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[18]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[17]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[16]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[15]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[14]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[13]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[12]) is unused and will be removed from module mips_16.
+WARNING: [Synth 8-3332] Sequential element (EX_stage_inst/pipeline_reg_out_reg[11]) is unused and will be removed from module mips_16.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1206.691 ; gain = 321.617 ; free physical = 4959 ; free virtual = 30626
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1206.691 ; gain = 321.617 ; free physical = 4959 ; free virtual = 30626
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1206.691 ; gain = 321.617 ; free physical = 4959 ; free virtual = 30626
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1216.707 ; gain = 331.633 ; free physical = 4951 ; free virtual = 30618
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1216.707 ; gain = 331.633 ; free physical = 4951 ; free virtual = 30618
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1216.707 ; gain = 331.633 ; free physical = 4951 ; free virtual = 30618
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.707 ; gain = 331.633 ; free physical = 4951 ; free virtual = 30618
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.707 ; gain = 331.633 ; free physical = 4951 ; free virtual = 30618
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.707 ; gain = 331.633 ; free physical = 4951 ; free virtual = 30618
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     2|
+|2     |LUT1   |     8|
+|3     |FDCE   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    18|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.707 ; gain = 331.633 ; free physical = 4951 ; free virtual = 30618
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 543 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1216.707 ; gain = 241.492 ; free physical = 4951 ; free virtual = 30618
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.715 ; gain = 331.641 ; free physical = 4951 ; free virtual = 30618
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 211 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1318.551 ; gain = 355.922 ; free physical = 4887 ; free virtual = 30554

@@ -1,0 +1,523 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top spimctrl -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31288 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1050.668 ; gain = 165.590 ; free physical = 3502 ; free virtual = 26098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'spimctrl' [/home/sean/vivado_workspace/ooc_spimctrl/Sources/hdl/lib/gaisler/spi/spimctrl.vhd:87]
+	Parameter hindex bound to: 7 - type: integer 
+	Parameter hirq bound to: 7 - type: integer 
+	Parameter faddr bound to: 2816 - type: integer 
+	Parameter fmask bound to: 4080 - type: integer 
+	Parameter ioaddr bound to: 1792 - type: integer 
+	Parameter iomask bound to: 4095 - type: integer 
+	Parameter spliten bound to: 0 - type: integer 
+	Parameter oepol bound to: 0 - type: integer 
+	Parameter sdcard bound to: 0 - type: integer 
+	Parameter readcmd bound to: 11 - type: integer 
+	Parameter dummybyte bound to: 1 - type: integer 
+	Parameter dualoutput bound to: 0 - type: integer 
+	Parameter scaler bound to: 1 - type: integer 
+	Parameter altscaler bound to: 2 - type: integer 
+	Parameter pwrupcnt bound to: 0 - type: integer 
+	Parameter maxahbaccsz bound to: 32 - type: integer 
+	Parameter offset bound to: 0 - type: integer 
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_spimctrl/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_spimctrl/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+INFO: [Synth 8-256] done synthesizing module 'spimctrl' (1#1) [/home/sean/vivado_workspace/ooc_spimctrl/Sources/hdl/lib/gaisler/spi/spimctrl.vhd:87]
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][15] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][14] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][13] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][12] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][11] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][10] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][9] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][8] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][7] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][6] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][5] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][4] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][3] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][2] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][1] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hsplit][0] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][31] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][30] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][29] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][28] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][27] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][26] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][25] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][24] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][23] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][22] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][21] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][20] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][19] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][18] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][17] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][16] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][15] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][14] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][13] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][12] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][11] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][10] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][9] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][8] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][6] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][5] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][4] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][3] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][2] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][1] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hirq][0] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][31] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][30] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][29] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][28] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][27] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][26] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][25] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][24] driven by constant 1
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][23] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][22] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][21] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][20] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][19] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][18] driven by constant 1
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][17] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][16] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][15] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][14] driven by constant 1
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][13] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][12] driven by constant 1
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][11] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][10] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][9] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][8] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][7] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][6] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][5] driven by constant 1
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][4] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][3] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][2] driven by constant 1
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][1] driven by constant 1
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][0][0] driven by constant 1
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][31] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][30] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][29] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][28] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][27] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][26] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][25] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][24] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][23] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][22] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][21] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][20] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][19] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][18] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][17] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][16] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][15] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][14] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][13] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][12] driven by constant 0
+WARNING: [Synth 8-3917] design spimctrl has port ahbso[hconfig][1][11] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][0]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][1]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][2]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][3]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][4]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][5]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][6]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][8]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][9]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][10]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][11]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][12]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][13]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][14]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hsel][15]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[haddr][31]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[haddr][30]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[haddr][29]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[haddr][28]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[haddr][27]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[haddr][26]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[haddr][25]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[haddr][24]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hburst][2]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hburst][1]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][31]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][30]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][29]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][28]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][27]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][26]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][25]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][24]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][23]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][22]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][21]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][20]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][19]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][18]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][17]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][16]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][15]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][14]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][13]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][12]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][11]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][10]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][9]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hwdata][8]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hprot][3]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hprot][2]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hprot][1]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hprot][0]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hmaster][3]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hmaster][2]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hmaster][1]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hmaster][0]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hmastlock]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hmbsel][2]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hmbsel][3]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][31]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][30]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][29]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][28]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][27]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][26]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][25]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][24]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][23]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][22]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][21]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][20]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][19]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][18]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][17]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][16]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][15]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][14]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][13]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][12]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][11]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][10]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][9]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][8]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][7]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][6]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][5]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][4]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][3]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][2]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][1]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[hirq][0]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[testen]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[testrst]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[scanen]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[testoen]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[testin][3]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[testin][2]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[testin][1]
+WARNING: [Synth 8-3331] design spimctrl has unconnected port ahbsi[testin][0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.105 ; gain = 239.027 ; free physical = 3426 ; free virtual = 26022
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.105 ; gain = 239.027 ; free physical = 3426 ; free virtual = 26022
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1132.109 ; gain = 247.031 ; free physical = 3426 ; free virtual = 26022
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-4471] merging register 'r_reg[spio][cdcsnoen]' into 'r_reg[spio][mosioen]' [/home/sean/vivado_workspace/ooc_spimctrl/Sources/hdl/lib/gaisler/spi/spimctrl.vhd:1054]
+INFO: [Synth 8-802] inferred FSM for state register 'r_reg[spimstate]' in module 'spimctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'r_reg[spi][state]' in module 'spimctrl'
+INFO: [Synth 8-5546] ROM "v[rst]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[reg][stat][done]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[spi][state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[hresp]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[reg][stat][busy]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[spimstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[spi][hsize]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[spi][state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[spi][state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                spi_read |                              001 |                              010
+                spi_addr |                              010 |                              011
+                spi_data |                              011 |                              100
+               spi_ready |                              100 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[spi][state]' using encoding 'sequential' in module 'spimctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+             ahb_respond |                               01 |                               01
+                user_spi |                               10 |                               10
+                    busy |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[spimstate]' using encoding 'sequential' in module 'spimctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1148.125 ; gain = 263.047 ; free physical = 3410 ; free virtual = 26006
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	   5 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 80    
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 20    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module spimctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	   5 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 80    
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 20    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1190.125 ; gain = 305.047 ; free physical = 3367 ; free virtual = 25963
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1198.133 ; gain = 313.055 ; free physical = 3359 ; free virtual = 25955
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1198.133 ; gain = 313.055 ; free physical = 3359 ; free virtual = 25955
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\r_reg[spio][mosioen] )
+WARNING: [Synth 8-3332] Sequential element (r_reg[spio][mosioen]) is unused and will be removed from module spimctrl.
+WARNING: [Synth 8-3332] Sequential element (r_reg[timer][1]) is unused and will be removed from module spimctrl.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1222.172 ; gain = 337.094 ; free physical = 3336 ; free virtual = 25932
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1222.172 ; gain = 337.094 ; free physical = 3336 ; free virtual = 25932
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1222.172 ; gain = 337.094 ; free physical = 3336 ; free virtual = 25932
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1223.180 ; gain = 338.102 ; free physical = 3335 ; free virtual = 25931
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1223.180 ; gain = 338.102 ; free physical = 3335 ; free virtual = 25931
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1223.180 ; gain = 338.102 ; free physical = 3335 ; free virtual = 25931
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1223.180 ; gain = 338.102 ; free physical = 3335 ; free virtual = 25931
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1223.180 ; gain = 338.102 ; free physical = 3335 ; free virtual = 25931
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1223.180 ; gain = 338.102 ; free physical = 3335 ; free virtual = 25931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |    31|
+|2     |LUT3  |    41|
+|3     |LUT4  |    54|
+|4     |LUT5  |    42|
+|5     |LUT6  |    81|
+|6     |MUXF7 |     2|
+|7     |FDRE  |   143|
+|8     |FDSE  |    10|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   404|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1223.180 ; gain = 338.102 ; free physical = 3335 ; free virtual = 25931
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 823 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1223.180 ; gain = 243.508 ; free physical = 3335 ; free virtual = 25931
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1223.188 ; gain = 338.109 ; free physical = 3335 ; free virtual = 25931
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 204 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1388.051 ; gain = 420.965 ; free physical = 3267 ; free virtual = 25863

@@ -1,0 +1,2167 @@
+
+####################################################
+# Sites
+sites - SLICE_X52Y0 SLICE_X52Y1 SLICE_X52Y10 SLICE_X52Y11 SLICE_X52Y12 SLICE_X52Y2 SLICE_X52Y3 SLICE_X52Y4 SLICE_X52Y5 SLICE_X52Y6 SLICE_X52Y7 SLICE_X52Y8 SLICE_X52Y9 SLICE_X53Y0 SLICE_X53Y1 SLICE_X53Y10 SLICE_X53Y11 SLICE_X53Y12 SLICE_X53Y2 SLICE_X53Y3 SLICE_X53Y4 SLICE_X53Y5 SLICE_X53Y6 SLICE_X53Y7 SLICE_X53Y8 SLICE_X53Y9 SLICE_X54Y0 SLICE_X54Y1 SLICE_X54Y10 SLICE_X54Y11 SLICE_X54Y12 SLICE_X54Y2 SLICE_X54Y3 SLICE_X54Y4 SLICE_X54Y5 SLICE_X54Y6 SLICE_X54Y7 SLICE_X54Y8 SLICE_X54Y9 SLICE_X55Y0 SLICE_X55Y1 SLICE_X55Y10 SLICE_X55Y11 SLICE_X55Y12 SLICE_X55Y2 SLICE_X55Y3 SLICE_X55Y4 SLICE_X55Y5 SLICE_X55Y6 SLICE_X55Y7 SLICE_X55Y8 SLICE_X55Y9 SLICE_X56Y0 SLICE_X56Y1 SLICE_X56Y10 SLICE_X56Y11 SLICE_X56Y12 SLICE_X56Y2 SLICE_X56Y3 SLICE_X56Y4 SLICE_X56Y5 SLICE_X56Y6 SLICE_X56Y7 SLICE_X56Y8 SLICE_X56Y9 SLICE_X57Y0 SLICE_X57Y1 SLICE_X57Y10 SLICE_X57Y11 SLICE_X57Y12 SLICE_X57Y2 SLICE_X57Y3 SLICE_X57Y4 SLICE_X57Y5 SLICE_X57Y6 SLICE_X57Y7 SLICE_X57Y8 SLICE_X57Y9
+
+####################################################
+# Cells
+a_r_reg[0] - 
+nets: {a_r_reg_n_0_[0] a_r_reg[0]/Q}, {clk_i a_r_reg[0]/C}, {<const1> a_r_reg[0]/CE}, {a_i[0] a_r_reg[0]/D}, {<const0> a_r_reg[0]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[10] - 
+nets: {a_r_reg_n_0_[10] a_r_reg[10]/Q}, {clk_i a_r_reg[10]/C}, {<const1> a_r_reg[10]/CE}, {a_i[10] a_r_reg[10]/D}, {<const0> a_r_reg[10]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y12, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[11] - 
+nets: {a_r_reg_n_0_[11] a_r_reg[11]/Q}, {clk_i a_r_reg[11]/C}, {<const1> a_r_reg[11]/CE}, {a_i[11] a_r_reg[11]/D}, {<const0> a_r_reg[11]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X53Y12, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[12] - 
+nets: {p_1_in12_in a_r_reg[12]/Q}, {clk_i a_r_reg[12]/C}, {<const1> a_r_reg[12]/CE}, {a_i[12] a_r_reg[12]/D}, {<const0> a_r_reg[12]/R}, 
+BEL: SLICEL.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X53Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[13] - 
+nets: {a_r_reg_n_0_[13] a_r_reg[13]/Q}, {clk_i a_r_reg[13]/C}, {<const1> a_r_reg[13]/CE}, {a_i[13] a_r_reg[13]/D}, {<const0> a_r_reg[13]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X57Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[14] - 
+nets: {a_r_reg_n_0_[14] a_r_reg[14]/Q}, {clk_i a_r_reg[14]/C}, {<const1> a_r_reg[14]/CE}, {a_i[14] a_r_reg[14]/D}, {<const0> a_r_reg[14]/R}, 
+BEL: SLICEM.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X56Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[15] - 
+nets: {a_r_reg_n_0_[15] a_r_reg[15]/Q}, {clk_i a_r_reg[15]/C}, {<const1> a_r_reg[15]/CE}, {a_i[15] a_r_reg[15]/D}, {<const0> a_r_reg[15]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X57Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[1] - 
+nets: {a_r_reg_n_0_[1] a_r_reg[1]/Q}, {clk_i a_r_reg[1]/C}, {<const1> a_r_reg[1]/CE}, {a_i[1] a_r_reg[1]/D}, {<const0> a_r_reg[1]/R}, 
+BEL: SLICEL.B5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[2] - 
+nets: {a_r_reg_n_0_[2] a_r_reg[2]/Q}, {clk_i a_r_reg[2]/C}, {<const1> a_r_reg[2]/CE}, {a_i[2] a_r_reg[2]/D}, {<const0> a_r_reg[2]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X56Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[3] - 
+nets: {a_r_reg_n_0_[3] a_r_reg[3]/Q}, {clk_i a_r_reg[3]/C}, {<const1> a_r_reg[3]/CE}, {a_i[3] a_r_reg[3]/D}, {<const0> a_r_reg[3]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[4] - 
+nets: {a_r_reg_n_0_[4] a_r_reg[4]/Q}, {clk_i a_r_reg[4]/C}, {<const1> a_r_reg[4]/CE}, {a_i[4] a_r_reg[4]/D}, {<const0> a_r_reg[4]/R}, 
+BEL: SLICEL.CFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[5] - 
+nets: {a_r_reg_n_0_[5] a_r_reg[5]/Q}, {clk_i a_r_reg[5]/C}, {<const1> a_r_reg[5]/CE}, {a_i[5] a_r_reg[5]/D}, {<const0> a_r_reg[5]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X56Y7, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[6] - 
+nets: {a_r_reg_n_0_[6] a_r_reg[6]/Q}, {clk_i a_r_reg[6]/C}, {<const1> a_r_reg[6]/CE}, {a_i[6] a_r_reg[6]/D}, {<const0> a_r_reg[6]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X54Y7, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[7] - 
+nets: {a_r_reg_n_0_[7] a_r_reg[7]/Q}, {clk_i a_r_reg[7]/C}, {<const1> a_r_reg[7]/CE}, {a_i[7] a_r_reg[7]/D}, {<const0> a_r_reg[7]/R}, 
+BEL: SLICEM.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X56Y7, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[8] - 
+nets: {a_r_reg_n_0_[8] a_r_reg[8]/Q}, {clk_i a_r_reg[8]/C}, {<const1> a_r_reg[8]/CE}, {a_i[8] a_r_reg[8]/D}, {<const0> a_r_reg[8]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+a_r_reg[9] - 
+nets: {a_r_reg_n_0_[9] a_r_reg[9]/Q}, {clk_i a_r_reg[9]/C}, {<const1> a_r_reg[9]/CE}, {a_i[9] a_r_reg[9]/D}, {<const0> a_r_reg[9]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X53Y12, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[0] - 
+nets: {b_r_reg_n_0_[0] b_r_reg[0]/Q}, {clk_i b_r_reg[0]/C}, {<const1> b_r_reg[0]/CE}, {b_i[0] b_r_reg[0]/D}, {<const0> b_r_reg[0]/R}, 
+BEL: SLICEL.CFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[10] - 
+nets: {b_r_reg_n_0_[10] b_r_reg[10]/Q}, {clk_i b_r_reg[10]/C}, {<const1> b_r_reg[10]/CE}, {b_i[10] b_r_reg[10]/D}, {<const0> b_r_reg[10]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y12, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[11] - 
+nets: {b_r_reg_n_0_[11] b_r_reg[11]/Q}, {clk_i b_r_reg[11]/C}, {<const1> b_r_reg[11]/CE}, {b_i[11] b_r_reg[11]/D}, {<const0> b_r_reg[11]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X56Y12, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[12] - 
+nets: {b_r_reg_n_0_[12] b_r_reg[12]/Q}, {clk_i b_r_reg[12]/C}, {<const1> b_r_reg[12]/CE}, {b_i[12] b_r_reg[12]/D}, {<const0> b_r_reg[12]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X53Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[13] - 
+nets: {b_r_reg_n_0_[13] b_r_reg[13]/Q}, {clk_i b_r_reg[13]/C}, {<const1> b_r_reg[13]/CE}, {b_i[13] b_r_reg[13]/D}, {<const0> b_r_reg[13]/R}, 
+BEL: SLICEL.CFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[14] - 
+nets: {b_r_reg_n_0_[14] b_r_reg[14]/Q}, {clk_i b_r_reg[14]/C}, {<const1> b_r_reg[14]/CE}, {b_i[14] b_r_reg[14]/D}, {<const0> b_r_reg[14]/R}, 
+BEL: SLICEL.DFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[15] - 
+nets: {b_r_reg_n_0_[15] b_r_reg[15]/Q}, {clk_i b_r_reg[15]/C}, {<const1> b_r_reg[15]/CE}, {b_i[15] b_r_reg[15]/D}, {<const0> b_r_reg[15]/R}, 
+BEL: SLICEL.B5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[1] - 
+nets: {p_0_in17_in b_r_reg[1]/Q}, {clk_i b_r_reg[1]/C}, {<const1> b_r_reg[1]/CE}, {b_i[1] b_r_reg[1]/D}, {<const0> b_r_reg[1]/R}, 
+BEL: SLICEM.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X56Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[2] - 
+nets: {p_1_in18_in b_r_reg[2]/Q}, {clk_i b_r_reg[2]/C}, {<const1> b_r_reg[2]/CE}, {b_i[2] b_r_reg[2]/D}, {<const0> b_r_reg[2]/R}, 
+BEL: SLICEL.DFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[3] - 
+nets: {b_r_reg_n_0_[3] b_r_reg[3]/Q}, {clk_i b_r_reg[3]/C}, {<const1> b_r_reg[3]/CE}, {b_i[3] b_r_reg[3]/D}, {<const0> b_r_reg[3]/R}, 
+BEL: SLICEM.CFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X56Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[4] - 
+nets: {b_r_reg_n_0_[4] b_r_reg[4]/Q}, {clk_i b_r_reg[4]/C}, {<const1> b_r_reg[4]/CE}, {b_i[4] b_r_reg[4]/D}, {<const0> b_r_reg[4]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y7, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[5] - 
+nets: {b_r_reg_n_0_[5] b_r_reg[5]/Q}, {clk_i b_r_reg[5]/C}, {<const1> b_r_reg[5]/CE}, {b_i[5] b_r_reg[5]/D}, {<const0> b_r_reg[5]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X53Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[6] - 
+nets: {b_r_reg_n_0_[6] b_r_reg[6]/Q}, {clk_i b_r_reg[6]/C}, {<const1> b_r_reg[6]/CE}, {b_i[6] b_r_reg[6]/D}, {<const0> b_r_reg[6]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X56Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[7] - 
+nets: {b_r_reg_n_0_[7] b_r_reg[7]/Q}, {clk_i b_r_reg[7]/C}, {<const1> b_r_reg[7]/CE}, {b_i[7] b_r_reg[7]/D}, {<const0> b_r_reg[7]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X53Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[8] - 
+nets: {b_r_reg_n_0_[8] b_r_reg[8]/Q}, {clk_i b_r_reg[8]/C}, {<const1> b_r_reg[8]/CE}, {b_i[8] b_r_reg[8]/D}, {<const0> b_r_reg[8]/R}, 
+BEL: SLICEL.B5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+b_r_reg[9] - 
+nets: {b_r_reg_n_0_[9] b_r_reg[9]/Q}, {clk_i b_r_reg[9]/C}, {<const1> b_r_reg[9]/CE}, {b_i[9] b_r_reg[9]/D}, {<const0> b_r_reg[9]/R}, 
+BEL: SLICEL.CFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y12, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+cin_r_reg - 
+nets: {cin_r cin_r_reg/Q}, {clk_i cin_r_reg/C}, {<const1> cin_r_reg/CE}, {cin_i cin_r_reg/D}, {<const0> cin_r_reg/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y7, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+cout_r_reg - 
+nets: {cout_o cout_r_reg/Q}, {clk_i cout_r_reg/C}, {<const1> cout_r_reg/CE}, {cout_r_reg_i_1_n_3 cout_r_reg/D}, {<const0> cout_r_reg/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X54Y12, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+cout_r_reg_i_1 - 
+nets: { cout_r_reg_i_1/CO[3]}, { cout_r_reg_i_1/CO[2]}, { cout_r_reg_i_1/CO[1]}, {cout_r_reg_i_1_n_3 cout_r_reg_i_1/CO[0]}, { cout_r_reg_i_1/O[3]}, { cout_r_reg_i_1/O[2]}, { cout_r_reg_i_1/O[1]}, { cout_r_reg_i_1/O[0]}, {sum_r_reg[15]_i_2_n_0 cout_r_reg_i_1/CI}, {<const0> cout_r_reg_i_1/CYINIT}, {<const0> cout_r_reg_i_1/DI[3]}, {<const0> cout_r_reg_i_1/DI[2]}, {<const0> cout_r_reg_i_1/DI[1]}, {<const0> cout_r_reg_i_1/DI[0]}, {<const0> cout_r_reg_i_1/S[3]}, {<const0> cout_r_reg_i_1/S[2]}, {<const0> cout_r_reg_i_1/S[1]}, {<const1> cout_r_reg_i_1/S[0]}, 
+BEL: SLICEM.CARRY4, 
+CLASS: cell, 
+LOC: SLICE_X54Y12, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: CARRY, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: CARRY.others.CARRY4, 
+REF_NAME: CARRY4, 
+
+sum_r[10]_i_1 - 
+nets: {sum_r[10]_i_1_n_0 sum_r[10]_i_1/O}, {sum_r_reg[11]_i_2_n_6 sum_r[10]_i_1/I0}, {sum_r_reg[11]_i_2_n_5 sum_r[10]_i_1/I1}, {b_r_reg_n_0_[12] sum_r[10]_i_1/I2}, {p_1_in12_in sum_r[10]_i_1/I3}, {sum_r_reg[15]_i_2_n_7 sum_r[10]_i_1/I4}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 32'hC66C6CC6, 
+LOC: SLICE_X52Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+sum_r[11]_i_1 - 
+nets: {sum_r[11]_i_1_n_0 sum_r[11]_i_1/O}, {sum_r_reg[11]_i_2_n_6 sum_r[11]_i_1/I0}, {sum_r_reg[11]_i_2_n_5 sum_r[11]_i_1/I1}, {sum_r_reg[11]_i_2_n_4 sum_r[11]_i_1/I2}, {b_r_reg_n_0_[12] sum_r[11]_i_1/I3}, {p_1_in12_in sum_r[11]_i_1/I4}, {sum_r_reg[15]_i_2_n_7 sum_r[11]_i_1/I5}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 64'hF08080F080F0F080, 
+LOC: SLICE_X53Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+sum_r[11]_i_3 - 
+nets: {sum_r[11]_i_3_n_0 sum_r[11]_i_3/O}, {a_r_reg_n_0_[11] sum_r[11]_i_3/I0}, {b_r_reg_n_0_[9] sum_r[11]_i_3/I1}, {b_r_reg_n_0_[10] sum_r[11]_i_3/I2}, {b_r_reg_n_0_[11] sum_r[11]_i_3/I3}, 
+BEL: SLICEM.D6LUT, 
+CLASS: cell, 
+INIT: 16'h5556, 
+LOC: SLICE_X54Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+sum_r[11]_i_4 - 
+nets: {sum_r[11]_i_4_n_0 sum_r[11]_i_4/O}, {a_r_reg_n_0_[10] sum_r[11]_i_4/I0}, {b_r_reg_n_0_[9] sum_r[11]_i_4/I1}, {b_r_reg_n_0_[10] sum_r[11]_i_4/I2}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 8'h69, 
+LOC: SLICE_X54Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+sum_r[11]_i_5 - 
+nets: {sum_r[11]_i_5_n_0 sum_r[11]_i_5/O}, {a_r_reg_n_0_[9] sum_r[11]_i_5/I0}, {b_r_reg_n_0_[9] sum_r[11]_i_5/I1}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 4'h9, 
+LOC: SLICE_X54Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+sum_r[11]_i_6 - 
+nets: {sum_r[11]_i_6_n_0 sum_r[11]_i_6/O}, {a_r_reg_n_0_[8] sum_r[11]_i_6/I0}, {b_r_reg_n_0_[8] sum_r[11]_i_6/I1}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 4'h6, 
+LOC: SLICE_X54Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+sum_r[13]_i_1 - 
+nets: {sum_r[13]_i_1_n_0 sum_r[13]_i_1/O}, {sum_r_reg[15]_i_2_n_6 sum_r[13]_i_1/I0}, {cout_r_reg_i_1_n_3 sum_r[13]_i_1/I1}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 4'h9, 
+LOC: SLICE_X56Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+sum_r[14]_i_1 - 
+nets: {sum_r[14]_i_1_n_0 sum_r[14]_i_1/O}, {sum_r_reg[15]_i_2_n_6 sum_r[14]_i_1/I0}, {sum_r_reg[15]_i_2_n_5 sum_r[14]_i_1/I1}, {cout_r_reg_i_1_n_3 sum_r[14]_i_1/I2}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 8'hC6, 
+LOC: SLICE_X55Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+sum_r[15]_i_1 - 
+nets: {sum_r[15]_i_1_n_0 sum_r[15]_i_1/O}, {sum_r_reg[15]_i_2_n_6 sum_r[15]_i_1/I0}, {sum_r_reg[15]_i_2_n_5 sum_r[15]_i_1/I1}, {sum_r_reg[15]_i_2_n_4 sum_r[15]_i_1/I2}, {cout_r_reg_i_1_n_3 sum_r[15]_i_1/I3}, 
+BEL: SLICEL.A5LUT, 
+CLASS: cell, 
+INIT: 16'hF080, 
+LOC: SLICE_X55Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+sum_r[15]_i_3 - 
+nets: {sum_r[15]_i_3_n_0 sum_r[15]_i_3/O}, {a_r_reg_n_0_[15] sum_r[15]_i_3/I0}, {b_r_reg_n_0_[13] sum_r[15]_i_3/I1}, {b_r_reg_n_0_[14] sum_r[15]_i_3/I2}, {b_r_reg_n_0_[15] sum_r[15]_i_3/I3}, 
+BEL: SLICEM.D6LUT, 
+CLASS: cell, 
+INIT: 16'h5556, 
+LOC: SLICE_X54Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+sum_r[15]_i_4 - 
+nets: {sum_r[15]_i_4_n_0 sum_r[15]_i_4/O}, {a_r_reg_n_0_[14] sum_r[15]_i_4/I0}, {b_r_reg_n_0_[13] sum_r[15]_i_4/I1}, {b_r_reg_n_0_[14] sum_r[15]_i_4/I2}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 8'h69, 
+LOC: SLICE_X54Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+sum_r[15]_i_5 - 
+nets: {sum_r[15]_i_5_n_0 sum_r[15]_i_5/O}, {a_r_reg_n_0_[13] sum_r[15]_i_5/I0}, {b_r_reg_n_0_[13] sum_r[15]_i_5/I1}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 4'h9, 
+LOC: SLICE_X54Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+sum_r[15]_i_6 - 
+nets: {sum_r[15]_i_6_n_0 sum_r[15]_i_6/O}, {p_1_in12_in sum_r[15]_i_6/I0}, {b_r_reg_n_0_[12] sum_r[15]_i_6/I1}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 4'h6, 
+LOC: SLICE_X54Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+sum_r[1]_i_1 - 
+nets: {sum_r[1]_i_1_n_0 sum_r[1]_i_1/O}, {p_0_in6_in sum_r[1]_i_1/I0}, {b_r_reg_n_0_[4] sum_r[1]_i_1/I1}, {a_r_reg_n_0_[4] sum_r[1]_i_1/I2}, {p_0_in sum_r[1]_i_1/I3}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 16'h9669, 
+LOC: SLICE_X55Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+sum_r[2]_i_1 - 
+nets: {sum_r[2]_i_1_n_0 sum_r[2]_i_1/O}, {p_0_in6_in sum_r[2]_i_1/I0}, {p_1_in7_in sum_r[2]_i_1/I1}, {b_r_reg_n_0_[4] sum_r[2]_i_1/I2}, {a_r_reg_n_0_[4] sum_r[2]_i_1/I3}, {p_0_in sum_r[2]_i_1/I4}, 
+BEL: SLICEL.A5LUT, 
+CLASS: cell, 
+INIT: 32'hC66C6CC6, 
+LOC: SLICE_X55Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+sum_r[3]_i_1 - 
+nets: {sum_r[3]_i_1_n_0 sum_r[3]_i_1/O}, {p_0_in6_in sum_r[3]_i_1/I0}, {p_1_in7_in sum_r[3]_i_1/I1}, {sum_r_reg[3]_i_2_n_4 sum_r[3]_i_1/I2}, {b_r_reg_n_0_[4] sum_r[3]_i_1/I3}, {a_r_reg_n_0_[4] sum_r[3]_i_1/I4}, {p_0_in sum_r[3]_i_1/I5}, 
+BEL: SLICEL.B6LUT, 
+CLASS: cell, 
+INIT: 64'hF08080F080F0F080, 
+LOC: SLICE_X55Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+sum_r[3]_i_3 - 
+nets: {sum_r[3]_i_3_n_0 sum_r[3]_i_3/O}, {a_r_reg_n_0_[3] sum_r[3]_i_3/I0}, {p_1_in18_in sum_r[3]_i_3/I1}, {p_0_in17_in sum_r[3]_i_3/I2}, {b_r_reg_n_0_[3] sum_r[3]_i_3/I3}, 
+BEL: SLICEM.D6LUT, 
+CLASS: cell, 
+INIT: 16'h5556, 
+LOC: SLICE_X54Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+sum_r[3]_i_4 - 
+nets: {sum_r[3]_i_4_n_0 sum_r[3]_i_4/O}, {a_r_reg_n_0_[2] sum_r[3]_i_4/I0}, {p_0_in17_in sum_r[3]_i_4/I1}, {p_1_in18_in sum_r[3]_i_4/I2}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 8'h69, 
+LOC: SLICE_X54Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+sum_r[3]_i_5 - 
+nets: {sum_r[3]_i_5_n_0 sum_r[3]_i_5/O}, {a_r_reg_n_0_[1] sum_r[3]_i_5/I0}, {p_0_in17_in sum_r[3]_i_5/I1}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 4'h9, 
+LOC: SLICE_X54Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+sum_r[3]_i_6 - 
+nets: {sum_r[3]_i_6_n_0 sum_r[3]_i_6/O}, {a_r_reg_n_0_[0] sum_r[3]_i_6/I0}, {cin_r sum_r[3]_i_6/I1}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 4'h6, 
+LOC: SLICE_X54Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+sum_r[5]_i_1 - 
+nets: {sum_r[5]_i_1_n_0 sum_r[5]_i_1/O}, {sum_r_reg[7]_i_2_n_6 sum_r[5]_i_1/I0}, {b_r_reg_n_0_[8] sum_r[5]_i_1/I1}, {a_r_reg_n_0_[8] sum_r[5]_i_1/I2}, {sum_r_reg[11]_i_2_n_7 sum_r[5]_i_1/I3}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 16'h9669, 
+LOC: SLICE_X55Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+sum_r[6]_i_1 - 
+nets: {sum_r[6]_i_1_n_0 sum_r[6]_i_1/O}, {sum_r_reg[7]_i_2_n_6 sum_r[6]_i_1/I0}, {sum_r_reg[7]_i_2_n_5 sum_r[6]_i_1/I1}, {b_r_reg_n_0_[8] sum_r[6]_i_1/I2}, {a_r_reg_n_0_[8] sum_r[6]_i_1/I3}, {sum_r_reg[11]_i_2_n_7 sum_r[6]_i_1/I4}, 
+BEL: SLICEL.A5LUT, 
+CLASS: cell, 
+INIT: 32'hC66C6CC6, 
+LOC: SLICE_X55Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+sum_r[7]_i_1 - 
+nets: {sum_r[7]_i_1_n_0 sum_r[7]_i_1/O}, {sum_r_reg[7]_i_2_n_6 sum_r[7]_i_1/I0}, {sum_r_reg[7]_i_2_n_5 sum_r[7]_i_1/I1}, {sum_r_reg[7]_i_2_n_4 sum_r[7]_i_1/I2}, {b_r_reg_n_0_[8] sum_r[7]_i_1/I3}, {a_r_reg_n_0_[8] sum_r[7]_i_1/I4}, {sum_r_reg[11]_i_2_n_7 sum_r[7]_i_1/I5}, 
+BEL: SLICEL.B6LUT, 
+CLASS: cell, 
+INIT: 64'hF08080F080F0F080, 
+LOC: SLICE_X55Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+sum_r[7]_i_3 - 
+nets: {sum_r[7]_i_3_n_0 sum_r[7]_i_3/O}, {a_r_reg_n_0_[7] sum_r[7]_i_3/I0}, {b_r_reg_n_0_[6] sum_r[7]_i_3/I1}, {b_r_reg_n_0_[5] sum_r[7]_i_3/I2}, {b_r_reg_n_0_[7] sum_r[7]_i_3/I3}, 
+BEL: SLICEM.D6LUT, 
+CLASS: cell, 
+INIT: 16'h5556, 
+LOC: SLICE_X54Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+sum_r[7]_i_4 - 
+nets: {sum_r[7]_i_4_n_0 sum_r[7]_i_4/O}, {a_r_reg_n_0_[6] sum_r[7]_i_4/I0}, {b_r_reg_n_0_[5] sum_r[7]_i_4/I1}, {b_r_reg_n_0_[6] sum_r[7]_i_4/I2}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 8'h69, 
+LOC: SLICE_X54Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+sum_r[7]_i_5 - 
+nets: {sum_r[7]_i_5_n_0 sum_r[7]_i_5/O}, {a_r_reg_n_0_[5] sum_r[7]_i_5/I0}, {b_r_reg_n_0_[5] sum_r[7]_i_5/I1}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 4'h9, 
+LOC: SLICE_X54Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+sum_r[7]_i_6 - 
+nets: {sum_r[7]_i_6_n_0 sum_r[7]_i_6/O}, {a_r_reg_n_0_[4] sum_r[7]_i_6/I0}, {b_r_reg_n_0_[4] sum_r[7]_i_6/I1}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 4'h6, 
+LOC: SLICE_X54Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+sum_r[9]_i_1 - 
+nets: {sum_r[9]_i_1_n_0 sum_r[9]_i_1/O}, {sum_r_reg[11]_i_2_n_6 sum_r[9]_i_1/I0}, {b_r_reg_n_0_[12] sum_r[9]_i_1/I1}, {p_1_in12_in sum_r[9]_i_1/I2}, {sum_r_reg[15]_i_2_n_7 sum_r[9]_i_1/I3}, 
+BEL: SLICEL.A5LUT, 
+CLASS: cell, 
+INIT: 16'h9669, 
+LOC: SLICE_X52Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+sum_r_reg[0] - 
+nets: {sum_o[0] sum_r_reg[0]/Q}, {clk_i sum_r_reg[0]/C}, {<const1> sum_r_reg[0]/CE}, {sum_r_reg[3]_i_2_n_7 sum_r_reg[0]/D}, {<const0> sum_r_reg[0]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X54Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[10] - 
+nets: {sum_o[10] sum_r_reg[10]/Q}, {clk_i sum_r_reg[10]/C}, {<const1> sum_r_reg[10]/CE}, {sum_r[10]_i_1_n_0 sum_r_reg[10]/D}, {<const0> sum_r_reg[10]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X52Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[11] - 
+nets: {sum_o[11] sum_r_reg[11]/Q}, {clk_i sum_r_reg[11]/C}, {<const1> sum_r_reg[11]/CE}, {sum_r[11]_i_1_n_0 sum_r_reg[11]/D}, {<const0> sum_r_reg[11]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X53Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[11]_i_2 - 
+nets: {sum_r_reg[11]_i_2_n_0 sum_r_reg[11]_i_2/CO[3]}, { sum_r_reg[11]_i_2/CO[2]}, { sum_r_reg[11]_i_2/CO[1]}, { sum_r_reg[11]_i_2/CO[0]}, {sum_r_reg[11]_i_2_n_4 sum_r_reg[11]_i_2/O[3]}, {sum_r_reg[11]_i_2_n_5 sum_r_reg[11]_i_2/O[2]}, {sum_r_reg[11]_i_2_n_6 sum_r_reg[11]_i_2/O[1]}, {sum_r_reg[11]_i_2_n_7 sum_r_reg[11]_i_2/O[0]}, {sum_r_reg[7]_i_2_n_0 sum_r_reg[11]_i_2/CI}, {<const0> sum_r_reg[11]_i_2/CYINIT}, {a_r_reg_n_0_[11] sum_r_reg[11]_i_2/DI[3]}, {a_r_reg_n_0_[10] sum_r_reg[11]_i_2/DI[2]}, {a_r_reg_n_0_[9] sum_r_reg[11]_i_2/DI[1]}, {a_r_reg_n_0_[8] sum_r_reg[11]_i_2/DI[0]}, {sum_r[11]_i_3_n_0 sum_r_reg[11]_i_2/S[3]}, {sum_r[11]_i_4_n_0 sum_r_reg[11]_i_2/S[2]}, {sum_r[11]_i_5_n_0 sum_r_reg[11]_i_2/S[1]}, {sum_r[11]_i_6_n_0 sum_r_reg[11]_i_2/S[0]}, 
+BEL: SLICEM.CARRY4, 
+CLASS: cell, 
+LOC: SLICE_X54Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: CARRY, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: CARRY.others.CARRY4, 
+REF_NAME: CARRY4, 
+
+sum_r_reg[12] - 
+nets: {sum_o[12] sum_r_reg[12]/Q}, {clk_i sum_r_reg[12]/C}, {<const1> sum_r_reg[12]/CE}, {sum_r_reg[15]_i_2_n_7 sum_r_reg[12]/D}, {<const0> sum_r_reg[12]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X54Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[13] - 
+nets: {sum_o[13] sum_r_reg[13]/Q}, {clk_i sum_r_reg[13]/C}, {<const1> sum_r_reg[13]/CE}, {sum_r[13]_i_1_n_0 sum_r_reg[13]/D}, {<const0> sum_r_reg[13]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X56Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[14] - 
+nets: {sum_o[14] sum_r_reg[14]/Q}, {clk_i sum_r_reg[14]/C}, {<const1> sum_r_reg[14]/CE}, {sum_r[14]_i_1_n_0 sum_r_reg[14]/D}, {<const0> sum_r_reg[14]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[15] - 
+nets: {sum_o[15] sum_r_reg[15]/Q}, {clk_i sum_r_reg[15]/C}, {<const1> sum_r_reg[15]/CE}, {sum_r[15]_i_1_n_0 sum_r_reg[15]/D}, {<const0> sum_r_reg[15]/R}, 
+BEL: SLICEL.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[15]_i_2 - 
+nets: {sum_r_reg[15]_i_2_n_0 sum_r_reg[15]_i_2/CO[3]}, { sum_r_reg[15]_i_2/CO[2]}, { sum_r_reg[15]_i_2/CO[1]}, { sum_r_reg[15]_i_2/CO[0]}, {sum_r_reg[15]_i_2_n_4 sum_r_reg[15]_i_2/O[3]}, {sum_r_reg[15]_i_2_n_5 sum_r_reg[15]_i_2/O[2]}, {sum_r_reg[15]_i_2_n_6 sum_r_reg[15]_i_2/O[1]}, {sum_r_reg[15]_i_2_n_7 sum_r_reg[15]_i_2/O[0]}, {sum_r_reg[11]_i_2_n_0 sum_r_reg[15]_i_2/CI}, {<const0> sum_r_reg[15]_i_2/CYINIT}, {a_r_reg_n_0_[15] sum_r_reg[15]_i_2/DI[3]}, {a_r_reg_n_0_[14] sum_r_reg[15]_i_2/DI[2]}, {a_r_reg_n_0_[13] sum_r_reg[15]_i_2/DI[1]}, {p_1_in12_in sum_r_reg[15]_i_2/DI[0]}, {sum_r[15]_i_3_n_0 sum_r_reg[15]_i_2/S[3]}, {sum_r[15]_i_4_n_0 sum_r_reg[15]_i_2/S[2]}, {sum_r[15]_i_5_n_0 sum_r_reg[15]_i_2/S[1]}, {sum_r[15]_i_6_n_0 sum_r_reg[15]_i_2/S[0]}, 
+BEL: SLICEM.CARRY4, 
+CLASS: cell, 
+LOC: SLICE_X54Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: CARRY, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: CARRY.others.CARRY4, 
+REF_NAME: CARRY4, 
+
+sum_r_reg[1] - 
+nets: {sum_o[1] sum_r_reg[1]/Q}, {clk_i sum_r_reg[1]/C}, {<const1> sum_r_reg[1]/CE}, {sum_r[1]_i_1_n_0 sum_r_reg[1]/D}, {<const0> sum_r_reg[1]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[2] - 
+nets: {sum_o[2] sum_r_reg[2]/Q}, {clk_i sum_r_reg[2]/C}, {<const1> sum_r_reg[2]/CE}, {sum_r[2]_i_1_n_0 sum_r_reg[2]/D}, {<const0> sum_r_reg[2]/R}, 
+BEL: SLICEL.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[3] - 
+nets: {sum_o[3] sum_r_reg[3]/Q}, {clk_i sum_r_reg[3]/C}, {<const1> sum_r_reg[3]/CE}, {sum_r[3]_i_1_n_0 sum_r_reg[3]/D}, {<const0> sum_r_reg[3]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[3]_i_2 - 
+nets: {sum_r_reg[3]_i_2_n_0 sum_r_reg[3]_i_2/CO[3]}, { sum_r_reg[3]_i_2/CO[2]}, { sum_r_reg[3]_i_2/CO[1]}, { sum_r_reg[3]_i_2/CO[0]}, {sum_r_reg[3]_i_2_n_4 sum_r_reg[3]_i_2/O[3]}, {p_1_in7_in sum_r_reg[3]_i_2/O[2]}, {p_0_in6_in sum_r_reg[3]_i_2/O[1]}, {sum_r_reg[3]_i_2_n_7 sum_r_reg[3]_i_2/O[0]}, {<const0> sum_r_reg[3]_i_2/CI}, {b_r_reg_n_0_[0] sum_r_reg[3]_i_2/CYINIT}, {a_r_reg_n_0_[3] sum_r_reg[3]_i_2/DI[3]}, {a_r_reg_n_0_[2] sum_r_reg[3]_i_2/DI[2]}, {a_r_reg_n_0_[1] sum_r_reg[3]_i_2/DI[1]}, {a_r_reg_n_0_[0] sum_r_reg[3]_i_2/DI[0]}, {sum_r[3]_i_3_n_0 sum_r_reg[3]_i_2/S[3]}, {sum_r[3]_i_4_n_0 sum_r_reg[3]_i_2/S[2]}, {sum_r[3]_i_5_n_0 sum_r_reg[3]_i_2/S[1]}, {sum_r[3]_i_6_n_0 sum_r_reg[3]_i_2/S[0]}, 
+BEL: SLICEM.CARRY4, 
+CLASS: cell, 
+LOC: SLICE_X54Y8, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: CARRY, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: CARRY.others.CARRY4, 
+REF_NAME: CARRY4, 
+
+sum_r_reg[4] - 
+nets: {sum_o[4] sum_r_reg[4]/Q}, {clk_i sum_r_reg[4]/C}, {<const1> sum_r_reg[4]/CE}, {p_0_in sum_r_reg[4]/D}, {<const0> sum_r_reg[4]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X54Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[5] - 
+nets: {sum_o[5] sum_r_reg[5]/Q}, {clk_i sum_r_reg[5]/C}, {<const1> sum_r_reg[5]/CE}, {sum_r[5]_i_1_n_0 sum_r_reg[5]/D}, {<const0> sum_r_reg[5]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[6] - 
+nets: {sum_o[6] sum_r_reg[6]/Q}, {clk_i sum_r_reg[6]/C}, {<const1> sum_r_reg[6]/CE}, {sum_r[6]_i_1_n_0 sum_r_reg[6]/D}, {<const0> sum_r_reg[6]/R}, 
+BEL: SLICEL.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[7] - 
+nets: {sum_o[7] sum_r_reg[7]/Q}, {clk_i sum_r_reg[7]/C}, {<const1> sum_r_reg[7]/CE}, {sum_r[7]_i_1_n_0 sum_r_reg[7]/D}, {<const0> sum_r_reg[7]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X55Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[7]_i_2 - 
+nets: {sum_r_reg[7]_i_2_n_0 sum_r_reg[7]_i_2/CO[3]}, { sum_r_reg[7]_i_2/CO[2]}, { sum_r_reg[7]_i_2/CO[1]}, { sum_r_reg[7]_i_2/CO[0]}, {sum_r_reg[7]_i_2_n_4 sum_r_reg[7]_i_2/O[3]}, {sum_r_reg[7]_i_2_n_5 sum_r_reg[7]_i_2/O[2]}, {sum_r_reg[7]_i_2_n_6 sum_r_reg[7]_i_2/O[1]}, {p_0_in sum_r_reg[7]_i_2/O[0]}, {sum_r_reg[3]_i_2_n_0 sum_r_reg[7]_i_2/CI}, {<const0> sum_r_reg[7]_i_2/CYINIT}, {a_r_reg_n_0_[7] sum_r_reg[7]_i_2/DI[3]}, {a_r_reg_n_0_[6] sum_r_reg[7]_i_2/DI[2]}, {a_r_reg_n_0_[5] sum_r_reg[7]_i_2/DI[1]}, {a_r_reg_n_0_[4] sum_r_reg[7]_i_2/DI[0]}, {sum_r[7]_i_3_n_0 sum_r_reg[7]_i_2/S[3]}, {sum_r[7]_i_4_n_0 sum_r_reg[7]_i_2/S[2]}, {sum_r[7]_i_5_n_0 sum_r_reg[7]_i_2/S[1]}, {sum_r[7]_i_6_n_0 sum_r_reg[7]_i_2/S[0]}, 
+BEL: SLICEM.CARRY4, 
+CLASS: cell, 
+LOC: SLICE_X54Y9, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: CARRY, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: CARRY.others.CARRY4, 
+REF_NAME: CARRY4, 
+
+sum_r_reg[8] - 
+nets: {sum_o[8] sum_r_reg[8]/Q}, {clk_i sum_r_reg[8]/C}, {<const1> sum_r_reg[8]/CE}, {sum_r_reg[11]_i_2_n_7 sum_r_reg[8]/D}, {<const0> sum_r_reg[8]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X54Y10, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+sum_r_reg[9] - 
+nets: {sum_o[9] sum_r_reg[9]/Q}, {clk_i sum_r_reg[9]/C}, {<const1> sum_r_reg[9]/CE}, {sum_r[9]_i_1_n_0 sum_r_reg[9]/D}, {<const0> sum_r_reg[9]/R}, 
+BEL: SLICEL.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X52Y11, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+
+####################################################
+# Nets
+Boundary Nets - 
+a_i[0], 
+a_i[10], 
+a_i[11], 
+a_i[12], 
+a_i[13], 
+a_i[14], 
+a_i[15], 
+a_i[1], 
+a_i[2], 
+a_i[3], 
+a_i[4], 
+a_i[5], 
+a_i[6], 
+a_i[7], 
+a_i[8], 
+a_i[9], 
+b_i[0], 
+b_i[10], 
+b_i[11], 
+b_i[12], 
+b_i[13], 
+b_i[14], 
+b_i[15], 
+b_i[1], 
+b_i[2], 
+b_i[3], 
+b_i[4], 
+b_i[5], 
+b_i[6], 
+b_i[7], 
+b_i[8], 
+b_i[9], 
+cin_i, 
+clk_i, 
+cout_o, 
+sum_o[0], 
+sum_o[10], 
+sum_o[11], 
+sum_o[12], 
+sum_o[13], 
+sum_o[14], 
+sum_o[15], 
+sum_o[1], 
+sum_o[2], 
+sum_o[3], 
+sum_o[4], 
+sum_o[5], 
+sum_o[6], 
+sum_o[7], 
+sum_o[8], 
+sum_o[9], 
+
+a_r_reg_n_0_[0] - 
+wires: CLBLM_R_X33Y8/CLBLM_IMUX8 CLBLM_R_X33Y8/CLBLM_LOGIC_OUTS0 CLBLM_R_X33Y8/CLBLM_L_AQ CLBLM_R_X33Y8/CLBLM_M_A5 INT_R_X33Y8/IMUX8 INT_R_X33Y8/LOGIC_OUTS0 
+pips: CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX8->CLBLM_M_A5 CLBLM_R_X33Y8/CLBLM_R.CLBLM_L_AQ->CLBLM_LOGIC_OUTS0 INT_R_X33Y8/INT_R.LOGIC_OUTS0->>IMUX8 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+<const1> - 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 52, 
+
+<const0> - 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 63, 
+
+a_r_reg_n_0_[10] - 
+wires: CLBLM_R_X33Y10/CLBLM_BYP3 CLBLM_R_X33Y10/CLBLM_IMUX32 CLBLM_R_X33Y10/CLBLM_M_C1 CLBLM_R_X33Y10/CLBLM_M_CX CLBLM_R_X33Y12/CLBLM_LOGIC_OUTS0 CLBLM_R_X33Y12/CLBLM_L_AQ INT_R_X33Y10/BYP3 INT_R_X33Y10/BYP_ALT2 INT_R_X33Y10/BYP_ALT3 INT_R_X33Y10/BYP_BOUNCE2 INT_R_X33Y10/IMUX32 INT_R_X33Y10/SL1END0 INT_R_X33Y10/SR1END1 INT_R_X33Y11/BYP_BOUNCE_N3_2 INT_R_X33Y11/SL1BEG0 INT_R_X33Y11/SL1END0 INT_R_X33Y11/SR1BEG1 INT_R_X33Y12/LOGIC_OUTS0 INT_R_X33Y12/SL1BEG0 
+pips: CLBLM_R_X33Y10/CLBLM_R.CLBLM_BYP3->CLBLM_M_CX CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX32->CLBLM_M_C1 CLBLM_R_X33Y12/CLBLM_R.CLBLM_L_AQ->CLBLM_LOGIC_OUTS0 INT_R_X33Y10/INT_R.BYP_ALT2->>BYP_BOUNCE2 INT_R_X33Y10/INT_R.BYP_ALT3->>BYP3 INT_R_X33Y10/INT_R.BYP_BOUNCE2->>BYP_ALT3 INT_R_X33Y10/INT_R.SL1END0->>IMUX32 INT_R_X33Y10/INT_R.SR1END1->>BYP_ALT2 INT_R_X33Y11/INT_R.SL1END0->>SL1BEG0 INT_R_X33Y11/INT_R.SL1END0->>SR1BEG1 INT_R_X33Y12/INT_R.LOGIC_OUTS0->>SL1BEG0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+a_r_reg_n_0_[11] - 
+wires: CLBLL_L_X32Y12/CLBLL_LOGIC_OUTS0 CLBLL_L_X32Y12/CLBLL_L_AQ CLBLM_R_X33Y10/CLBLM_BYP6 CLBLM_R_X33Y10/CLBLM_IMUX47 CLBLM_R_X33Y10/CLBLM_M_D5 CLBLM_R_X33Y10/CLBLM_M_DX INT_L_X32Y11/EL1BEG3 INT_L_X32Y12/EL1BEG_N3 INT_L_X32Y12/LOGIC_OUTS_L0 INT_R_X33Y10/BYP6 INT_R_X33Y10/BYP_ALT6 INT_R_X33Y10/IMUX47 INT_R_X33Y10/SL1END3 INT_R_X33Y11/EL1END3 INT_R_X33Y11/SL1BEG3 
+pips: CLBLL_L_X32Y12/CLBLL_L.CLBLL_L_AQ->CLBLL_LOGIC_OUTS0 CLBLM_R_X33Y10/CLBLM_R.CLBLM_BYP6->CLBLM_M_DX CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX47->CLBLM_M_D5 INT_L_X32Y12/INT_L.LOGIC_OUTS_L0->>EL1BEG_N3 INT_R_X33Y10/INT_R.BYP_ALT6->>BYP6 INT_R_X33Y10/INT_R.SL1END3->>BYP_ALT6 INT_R_X33Y10/INT_R.SL1END3->>IMUX47 INT_R_X33Y11/INT_R.EL1END3->>SL1BEG3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+p_1_in12_in - 
+wires: CLBLL_L_X32Y11/CLBLL_IMUX5 CLBLL_L_X32Y11/CLBLL_IMUX7 CLBLL_L_X32Y11/CLBLL_LL_A1 CLBLL_L_X32Y11/CLBLL_LOGIC_OUTS16 CLBLL_L_X32Y11/CLBLL_L_A6 CLBLL_L_X32Y11/CLBLL_L_AMUX CLBLM_R_X33Y11/CLBLM_BYP1 CLBLM_R_X33Y11/CLBLM_IMUX11 CLBLM_R_X33Y11/CLBLM_M_A4 CLBLM_R_X33Y11/CLBLM_M_AX INT_L_X32Y11/BYP_ALT3 INT_L_X32Y11/BYP_BOUNCE3 INT_L_X32Y11/EL1BEG1 INT_L_X32Y11/IMUX_L5 INT_L_X32Y11/IMUX_L7 INT_L_X32Y11/LOGIC_OUTS_L16 INT_L_X32Y12/BYP_BOUNCE_N3_3 INT_R_X33Y11/BYP1 INT_R_X33Y11/BYP_ALT1 INT_R_X33Y11/EL1END1 INT_R_X33Y11/IMUX11 
+pips: CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX5->CLBLL_L_A6 CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX7->CLBLL_LL_A1 CLBLL_L_X32Y11/CLBLL_L.CLBLL_L_AMUX->CLBLL_LOGIC_OUTS16 CLBLM_R_X33Y11/CLBLM_R.CLBLM_BYP1->CLBLM_M_AX CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX11->CLBLM_M_A4 INT_L_X32Y11/INT_L.BYP_ALT3->>BYP_BOUNCE3 INT_L_X32Y11/INT_L.BYP_BOUNCE3->>IMUX_L7 INT_L_X32Y11/INT_L.LOGIC_OUTS_L16->>BYP_ALT3 INT_L_X32Y11/INT_L.LOGIC_OUTS_L16->>EL1BEG1 INT_L_X32Y11/INT_L.LOGIC_OUTS_L16->>IMUX_L5 INT_R_X33Y11/INT_R.BYP_ALT1->>BYP1 INT_R_X33Y11/INT_R.EL1END1->>BYP_ALT1 INT_R_X33Y11/INT_R.EL1END1->>IMUX11 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 6, 
+
+a_r_reg_n_0_[13] - 
+wires: CLBLM_L_X34Y11/CLBLM_LOGIC_OUTS0 CLBLM_L_X34Y11/CLBLM_L_AQ CLBLM_L_X34Y11/CLBLM_WR1END1 CLBLM_R_X33Y11/CLBLM_BYP4 CLBLM_R_X33Y11/CLBLM_IMUX18 CLBLM_R_X33Y11/CLBLM_M_B2 CLBLM_R_X33Y11/CLBLM_M_BX CLBLM_R_X33Y11/CLBLM_WR1END1 INT_L_X34Y11/LOGIC_OUTS_L0 INT_L_X34Y11/WR1BEG1 INT_R_X33Y11/BYP4 INT_R_X33Y11/BYP_ALT4 INT_R_X33Y11/IMUX18 INT_R_X33Y11/WR1END1 
+pips: CLBLM_L_X34Y11/CLBLM_L.CLBLM_L_AQ->CLBLM_LOGIC_OUTS0 CLBLM_R_X33Y11/CLBLM_R.CLBLM_BYP4->CLBLM_M_BX CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX18->CLBLM_M_B2 INT_L_X34Y11/INT_L.LOGIC_OUTS_L0->>WR1BEG1 INT_R_X33Y11/INT_R.BYP_ALT4->>BYP4 INT_R_X33Y11/INT_R.WR1END1->>BYP_ALT4 INT_R_X33Y11/INT_R.WR1END1->>IMUX18 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+a_r_reg_n_0_[14] - 
+wires: CLBLM_L_X34Y11/CLBLM_LOGIC_OUTS20 CLBLM_L_X34Y11/CLBLM_M_AMUX CLBLM_L_X34Y11/CLBLM_WR1END3 CLBLM_R_X33Y11/CLBLM_BYP3 CLBLM_R_X33Y11/CLBLM_IMUX22 CLBLM_R_X33Y11/CLBLM_M_C3 CLBLM_R_X33Y11/CLBLM_M_CX CLBLM_R_X33Y11/CLBLM_WR1END3 INT_L_X34Y11/LOGIC_OUTS_L20 INT_L_X34Y11/WR1BEG3 INT_R_X33Y11/BYP3 INT_R_X33Y11/BYP_ALT3 INT_R_X33Y11/IMUX22 INT_R_X33Y11/WR1END3 
+pips: CLBLM_L_X34Y11/CLBLM_L.CLBLM_M_AMUX->CLBLM_LOGIC_OUTS20 CLBLM_R_X33Y11/CLBLM_R.CLBLM_BYP3->CLBLM_M_CX CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX22->CLBLM_M_C3 INT_L_X34Y11/INT_L.LOGIC_OUTS_L20->>WR1BEG3 INT_R_X33Y11/INT_R.BYP_ALT3->>BYP3 INT_R_X33Y11/INT_R.WR1END3->>BYP_ALT3 INT_R_X33Y11/INT_R.WR1END3->>IMUX22 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+a_r_reg_n_0_[15] - 
+wires: CLBLM_L_X34Y11/CLBLM_LOGIC_OUTS1 CLBLM_L_X34Y11/CLBLM_L_BQ CLBLM_L_X34Y11/CLBLM_WL1END0 CLBLM_R_X33Y11/CLBLM_BYP6 CLBLM_R_X33Y11/CLBLM_IMUX40 CLBLM_R_X33Y11/CLBLM_M_D1 CLBLM_R_X33Y11/CLBLM_M_DX CLBLM_R_X33Y11/CLBLM_WL1END0 INT_L_X34Y11/LOGIC_OUTS_L1 INT_L_X34Y11/WL1BEG0 INT_R_X33Y11/BYP6 INT_R_X33Y11/BYP_ALT6 INT_R_X33Y11/FAN_BOUNCE_S3_0 INT_R_X33Y11/IMUX40 INT_R_X33Y11/NL1BEG0 INT_R_X33Y11/NL1END_S3_0 INT_R_X33Y11/WL1END0 INT_R_X33Y12/FAN_ALT0 INT_R_X33Y12/FAN_BOUNCE0 INT_R_X33Y12/NL1END0 
+pips: CLBLM_L_X34Y11/CLBLM_L.CLBLM_L_BQ->CLBLM_LOGIC_OUTS1 CLBLM_R_X33Y11/CLBLM_R.CLBLM_BYP6->CLBLM_M_DX CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX40->CLBLM_M_D1 INT_L_X34Y11/INT_L.LOGIC_OUTS_L1->>WL1BEG0 INT_R_X33Y11/INT_R.BYP_ALT6->>BYP6 INT_R_X33Y11/INT_R.FAN_BOUNCE_S3_0->>BYP_ALT6 INT_R_X33Y11/INT_R.WL1END0->>IMUX40 INT_R_X33Y11/INT_R.WL1END0->>NL1BEG0 INT_R_X33Y12/INT_R.FAN_ALT0->>FAN_BOUNCE0 INT_R_X33Y12/INT_R.NL1END0->>FAN_ALT0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+a_r_reg_n_0_[1] - 
+wires: CLBLM_R_X33Y8/CLBLM_BYP4 CLBLM_R_X33Y8/CLBLM_IMUX15 CLBLM_R_X33Y8/CLBLM_M_B1 CLBLM_R_X33Y8/CLBLM_M_BX CLBLM_R_X33Y9/CLBLM_LOGIC_OUTS17 CLBLM_R_X33Y9/CLBLM_L_BMUX INT_R_X33Y8/BYP4 INT_R_X33Y8/BYP_ALT4 INT_R_X33Y8/IMUX15 INT_R_X33Y8/SL1END3 INT_R_X33Y8/SR1BEG_S0 INT_R_X33Y9/LOGIC_OUTS17 INT_R_X33Y9/SL1BEG3 
+pips: CLBLM_R_X33Y8/CLBLM_R.CLBLM_BYP4->CLBLM_M_BX CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX15->CLBLM_M_B1 CLBLM_R_X33Y9/CLBLM_R.CLBLM_L_BMUX->CLBLM_LOGIC_OUTS17 INT_R_X33Y8/INT_R.BYP_ALT4->>BYP4 INT_R_X33Y8/INT_R.SL1END3->>IMUX15 INT_R_X33Y8/INT_R.SL1END3->>SR1BEG_S0 INT_R_X33Y8/INT_R.SR1BEG_S0->>BYP_ALT4 INT_R_X33Y9/INT_R.LOGIC_OUTS17->>SL1BEG3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+a_r_reg_n_0_[2] - 
+wires: CLBLM_L_X34Y7/CLBLM_WL1END3 CLBLM_L_X34Y8/CLBLM_LOGIC_OUTS4 CLBLM_L_X34Y8/CLBLM_M_AQ CLBLM_R_X33Y7/CLBLM_WL1END3 CLBLM_R_X33Y8/CLBLM_BYP3 CLBLM_R_X33Y8/CLBLM_IMUX29 CLBLM_R_X33Y8/CLBLM_M_C2 CLBLM_R_X33Y8/CLBLM_M_CX INT_L_X34Y7/WL1BEG3 INT_L_X34Y8/LOGIC_OUTS_L4 INT_L_X34Y8/WL1BEG_N3 INT_R_X33Y7/WL1END3 INT_R_X33Y8/BYP3 INT_R_X33Y8/BYP_ALT3 INT_R_X33Y8/IMUX29 INT_R_X33Y8/NL1BEG_N3 INT_R_X33Y8/WL1END_N1_3 
+pips: CLBLM_L_X34Y8/CLBLM_L.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 CLBLM_R_X33Y8/CLBLM_R.CLBLM_BYP3->CLBLM_M_CX CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX29->CLBLM_M_C2 INT_L_X34Y8/INT_L.LOGIC_OUTS_L4->>WL1BEG_N3 INT_R_X33Y8/INT_R.BYP_ALT3->>BYP3 INT_R_X33Y8/INT_R.NL1BEG_N3->>BYP_ALT3 INT_R_X33Y8/INT_R.NL1BEG_N3->>IMUX29 INT_R_X33Y8/INT_R.WL1END_N1_3->>NL1BEG_N3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+a_r_reg_n_0_[3] - 
+wires: CLBLM_R_X33Y8/CLBLM_BYP6 CLBLM_R_X33Y8/CLBLM_IMUX38 CLBLM_R_X33Y8/CLBLM_LOGIC_OUTS1 CLBLM_R_X33Y8/CLBLM_L_BQ CLBLM_R_X33Y8/CLBLM_M_D3 CLBLM_R_X33Y8/CLBLM_M_DX INT_R_X33Y10/NN2END1 INT_R_X33Y10/SR1BEG1 INT_R_X33Y8/BYP6 INT_R_X33Y8/BYP_ALT6 INT_R_X33Y8/IMUX38 INT_R_X33Y8/LOGIC_OUTS1 INT_R_X33Y8/NN2BEG1 INT_R_X33Y8/SR1END2 INT_R_X33Y9/NN2A1 INT_R_X33Y9/SR1BEG2 INT_R_X33Y9/SR1END1 
+pips: CLBLM_R_X33Y8/CLBLM_R.CLBLM_BYP6->CLBLM_M_DX CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX38->CLBLM_M_D3 CLBLM_R_X33Y8/CLBLM_R.CLBLM_L_BQ->CLBLM_LOGIC_OUTS1 INT_R_X33Y10/INT_R.NN2END1->>SR1BEG1 INT_R_X33Y8/INT_R.BYP_ALT6->>BYP6 INT_R_X33Y8/INT_R.LOGIC_OUTS1->>NN2BEG1 INT_R_X33Y8/INT_R.SR1END2->>BYP_ALT6 INT_R_X33Y8/INT_R.SR1END2->>IMUX38 INT_R_X33Y9/INT_R.SR1END1->>SR1BEG2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+a_r_reg_n_0_[4] - 
+wires: CLBLM_R_X33Y9/CLBLM_BYP1 CLBLM_R_X33Y9/CLBLM_IMUX10 CLBLM_R_X33Y9/CLBLM_IMUX26 CLBLM_R_X33Y9/CLBLM_IMUX4 CLBLM_R_X33Y9/CLBLM_LOGIC_OUTS2 CLBLM_R_X33Y9/CLBLM_L_A4 CLBLM_R_X33Y9/CLBLM_L_B4 CLBLM_R_X33Y9/CLBLM_L_CQ CLBLM_R_X33Y9/CLBLM_M_A6 CLBLM_R_X33Y9/CLBLM_M_AX INT_R_X33Y9/BYP1 INT_R_X33Y9/BYP_ALT0 INT_R_X33Y9/BYP_ALT1 INT_R_X33Y9/BYP_BOUNCE0 INT_R_X33Y9/FAN_ALT7 INT_R_X33Y9/FAN_BOUNCE7 INT_R_X33Y9/IMUX10 INT_R_X33Y9/IMUX26 INT_R_X33Y9/IMUX4 INT_R_X33Y9/LOGIC_OUTS2 
+pips: CLBLM_R_X33Y9/CLBLM_R.CLBLM_BYP1->CLBLM_M_AX CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX10->CLBLM_L_A4 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX26->CLBLM_L_B4 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX4->CLBLM_M_A6 CLBLM_R_X33Y9/CLBLM_R.CLBLM_L_CQ->CLBLM_LOGIC_OUTS2 INT_R_X33Y9/INT_R.BYP_ALT0->>BYP_BOUNCE0 INT_R_X33Y9/INT_R.BYP_ALT1->>BYP1 INT_R_X33Y9/INT_R.BYP_BOUNCE0->>BYP_ALT1 INT_R_X33Y9/INT_R.FAN_ALT7->>FAN_BOUNCE7 INT_R_X33Y9/INT_R.FAN_BOUNCE7->>BYP_ALT0 INT_R_X33Y9/INT_R.FAN_BOUNCE7->>IMUX10 INT_R_X33Y9/INT_R.FAN_BOUNCE7->>IMUX26 INT_R_X33Y9/INT_R.LOGIC_OUTS2->>FAN_ALT7 INT_R_X33Y9/INT_R.LOGIC_OUTS2->>IMUX4 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 6, 
+
+a_r_reg_n_0_[5] - 
+wires: CLBLM_L_X34Y7/CLBLM_LOGIC_OUTS4 CLBLM_L_X34Y7/CLBLM_M_AQ CLBLM_L_X34Y7/CLBLM_WR1END1 CLBLM_L_X34Y9/CLBLM_NW2A0 CLBLM_R_X33Y7/CLBLM_WR1END1 CLBLM_R_X33Y9/CLBLM_BYP4 CLBLM_R_X33Y9/CLBLM_IMUX24 CLBLM_R_X33Y9/CLBLM_M_B5 CLBLM_R_X33Y9/CLBLM_M_BX CLBLM_R_X33Y9/CLBLM_NW2A0 INT_L_X34Y7/LOGIC_OUTS_L4 INT_L_X34Y7/NR1BEG0 INT_L_X34Y7/WR1BEG1 INT_L_X34Y8/NR1END0 INT_L_X34Y8/NW2BEG0 INT_L_X34Y9/NW2A0 INT_R_X33Y7/NN2BEG1 INT_R_X33Y7/WR1END1 INT_R_X33Y8/NN2A1 INT_R_X33Y8/NW2END_S0_0 INT_R_X33Y9/BYP4 INT_R_X33Y9/BYP_ALT4 INT_R_X33Y9/IMUX24 INT_R_X33Y9/NN2END1 INT_R_X33Y9/NW2END0 
+pips: CLBLM_L_X34Y7/CLBLM_L.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 CLBLM_R_X33Y9/CLBLM_R.CLBLM_BYP4->CLBLM_M_BX CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX24->CLBLM_M_B5 INT_L_X34Y7/INT_L.LOGIC_OUTS_L4->>NR1BEG0 INT_L_X34Y7/INT_L.LOGIC_OUTS_L4->>WR1BEG1 INT_L_X34Y8/INT_L.NR1END0->>NW2BEG0 INT_R_X33Y7/INT_R.WR1END1->>NN2BEG1 INT_R_X33Y9/INT_R.BYP_ALT4->>BYP4 INT_R_X33Y9/INT_R.NN2END1->>BYP_ALT4 INT_R_X33Y9/INT_R.NW2END0->>IMUX24 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+a_r_reg_n_0_[6] - 
+wires: CLBLM_R_X33Y7/CLBLM_LOGIC_OUTS4 CLBLM_R_X33Y7/CLBLM_M_AQ CLBLM_R_X33Y9/CLBLM_BYP3 CLBLM_R_X33Y9/CLBLM_IMUX29 CLBLM_R_X33Y9/CLBLM_M_C2 CLBLM_R_X33Y9/CLBLM_M_CX INT_R_X33Y7/LOGIC_OUTS4 INT_R_X33Y7/NN2BEG0 INT_R_X33Y8/NN2A0 INT_R_X33Y8/NN2END_S2_0 INT_R_X33Y9/BYP3 INT_R_X33Y9/BYP_ALT3 INT_R_X33Y9/IMUX29 INT_R_X33Y9/NL1BEG_N3 INT_R_X33Y9/NN2END0 
+pips: CLBLM_R_X33Y7/CLBLM_R.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 CLBLM_R_X33Y9/CLBLM_R.CLBLM_BYP3->CLBLM_M_CX CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX29->CLBLM_M_C2 INT_R_X33Y7/INT_R.LOGIC_OUTS4->>NN2BEG0 INT_R_X33Y9/INT_R.BYP_ALT3->>BYP3 INT_R_X33Y9/INT_R.NL1BEG_N3->>BYP_ALT3 INT_R_X33Y9/INT_R.NL1BEG_N3->>IMUX29 INT_R_X33Y9/INT_R.NN2END0->>NL1BEG_N3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+a_r_reg_n_0_[7] - 
+wires: CLBLM_L_X34Y7/CLBLM_LOGIC_OUTS5 CLBLM_L_X34Y7/CLBLM_M_BQ CLBLM_L_X34Y9/CLBLM_WR1END2 CLBLM_R_X33Y9/CLBLM_BYP6 CLBLM_R_X33Y9/CLBLM_IMUX44 CLBLM_R_X33Y9/CLBLM_M_D4 CLBLM_R_X33Y9/CLBLM_M_DX CLBLM_R_X33Y9/CLBLM_WR1END2 INT_L_X32Y10/EL1BEG_N3 INT_L_X32Y10/NL1END0 INT_L_X32Y9/EL1BEG3 INT_L_X32Y9/NL1BEG0 INT_L_X32Y9/NL1END_S3_0 INT_L_X32Y9/WL1END0 INT_L_X34Y7/LOGIC_OUTS_L5 INT_L_X34Y7/NN2BEG1 INT_L_X34Y8/NN2A1 INT_L_X34Y9/NN2END1 INT_L_X34Y9/WR1BEG2 INT_R_X33Y9/BYP6 INT_R_X33Y9/BYP_ALT6 INT_R_X33Y9/EL1END3 INT_R_X33Y9/IMUX44 INT_R_X33Y9/WL1BEG0 INT_R_X33Y9/WR1END2 
+pips: CLBLM_L_X34Y7/CLBLM_L.CLBLM_M_BQ->CLBLM_LOGIC_OUTS5 CLBLM_R_X33Y9/CLBLM_R.CLBLM_BYP6->CLBLM_M_DX CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX44->CLBLM_M_D4 INT_L_X32Y10/INT_L.NL1END0->>EL1BEG_N3 INT_L_X32Y9/INT_L.WL1END0->>NL1BEG0 INT_L_X34Y7/INT_L.LOGIC_OUTS_L5->>NN2BEG1 INT_L_X34Y9/INT_L.NN2END1->>WR1BEG2 INT_R_X33Y9/INT_R.BYP_ALT6->>BYP6 INT_R_X33Y9/INT_R.EL1END3->>BYP_ALT6 INT_R_X33Y9/INT_R.WR1END2->>IMUX44 INT_R_X33Y9/INT_R.WR1END2->>WL1BEG0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+a_r_reg_n_0_[8] - 
+wires: CLBLM_L_X34Y10/CLBLM_SE2A1 CLBLM_L_X34Y10/CLBLM_WL1END0 CLBLM_R_X33Y10/CLBLM_BYP1 CLBLM_R_X33Y10/CLBLM_IMUX1 CLBLM_R_X33Y10/CLBLM_IMUX10 CLBLM_R_X33Y10/CLBLM_IMUX25 CLBLM_R_X33Y10/CLBLM_L_A4 CLBLM_R_X33Y10/CLBLM_L_B5 CLBLM_R_X33Y10/CLBLM_M_A3 CLBLM_R_X33Y10/CLBLM_M_AX CLBLM_R_X33Y10/CLBLM_SE2A1 CLBLM_R_X33Y10/CLBLM_WL1END0 CLBLM_R_X33Y11/CLBLM_LOGIC_OUTS1 CLBLM_R_X33Y11/CLBLM_L_BQ INT_L_X34Y10/SE2END1 INT_L_X34Y10/WL1BEG0 INT_R_X33Y10/BYP1 INT_R_X33Y10/BYP_ALT1 INT_R_X33Y10/IMUX1 INT_R_X33Y10/IMUX10 INT_R_X33Y10/IMUX25 INT_R_X33Y10/SE2A1 INT_R_X33Y10/WL1END0 INT_R_X33Y11/LOGIC_OUTS1 INT_R_X33Y11/SE2BEG1 
+pips: CLBLM_R_X33Y10/CLBLM_R.CLBLM_BYP1->CLBLM_M_AX CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX1->CLBLM_M_A3 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX10->CLBLM_L_A4 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX25->CLBLM_L_B5 CLBLM_R_X33Y11/CLBLM_R.CLBLM_L_BQ->CLBLM_LOGIC_OUTS1 INT_L_X34Y10/INT_L.SE2END1->>WL1BEG0 INT_R_X33Y10/INT_R.BYP_ALT1->>BYP1 INT_R_X33Y10/INT_R.WL1END0->>BYP_ALT1 INT_R_X33Y10/INT_R.WL1END0->>IMUX1 INT_R_X33Y10/INT_R.WL1END0->>IMUX10 INT_R_X33Y10/INT_R.WL1END0->>IMUX25 INT_R_X33Y11/INT_R.LOGIC_OUTS1->>SE2BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 6, 
+
+a_r_reg_n_0_[9] - 
+wires: CLBLL_L_X32Y12/CLBLL_LOGIC_OUTS1 CLBLL_L_X32Y12/CLBLL_L_BQ CLBLM_R_X33Y10/CLBLM_BYP4 CLBLM_R_X33Y10/CLBLM_IMUX17 CLBLM_R_X33Y10/CLBLM_M_B3 CLBLM_R_X33Y10/CLBLM_M_BX INT_L_X32Y11/SE2A1 INT_L_X32Y12/EL1BEG0 INT_L_X32Y12/LOGIC_OUTS_L1 INT_L_X32Y12/SE2BEG1 INT_R_X33Y10/BYP4 INT_R_X33Y10/BYP_ALT4 INT_R_X33Y10/IMUX17 INT_R_X33Y10/SL1END1 INT_R_X33Y10/SS2END0 INT_R_X33Y11/EL1END_S3_0 INT_R_X33Y11/SE2END1 INT_R_X33Y11/SL1BEG1 INT_R_X33Y11/SS2A0 INT_R_X33Y12/EL1END0 INT_R_X33Y12/SS2BEG0 
+pips: CLBLL_L_X32Y12/CLBLL_L.CLBLL_L_BQ->CLBLL_LOGIC_OUTS1 CLBLM_R_X33Y10/CLBLM_R.CLBLM_BYP4->CLBLM_M_BX CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX17->CLBLM_M_B3 INT_L_X32Y12/INT_L.LOGIC_OUTS_L1->>EL1BEG0 INT_L_X32Y12/INT_L.LOGIC_OUTS_L1->>SE2BEG1 INT_R_X33Y10/INT_R.BYP_ALT4->>BYP4 INT_R_X33Y10/INT_R.SL1END1->>BYP_ALT4 INT_R_X33Y10/INT_R.SS2END0->>IMUX17 INT_R_X33Y11/INT_R.SE2END1->>SL1BEG1 INT_R_X33Y12/INT_R.EL1END0->>SS2BEG0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+b_r_reg_n_0_[0] - 
+wires: CLBLM_R_X33Y8/CLBLM_BYP1 CLBLM_R_X33Y8/CLBLM_LOGIC_OUTS2 CLBLM_R_X33Y8/CLBLM_L_CQ CLBLM_R_X33Y8/CLBLM_M_AX INT_R_X33Y7/FAN_BOUNCE_S3_6 INT_R_X33Y8/BYP1 INT_R_X33Y8/BYP_ALT1 INT_R_X33Y8/FAN_ALT6 INT_R_X33Y8/FAN_ALT7 INT_R_X33Y8/FAN_BOUNCE6 INT_R_X33Y8/FAN_BOUNCE7 INT_R_X33Y8/LOGIC_OUTS2 
+pips: CLBLM_R_X33Y8/CLBLM_R.CLBLM_BYP1->CLBLM_M_AX CLBLM_R_X33Y8/CLBLM_R.CLBLM_L_CQ->CLBLM_LOGIC_OUTS2 INT_R_X33Y8/INT_R.BYP_ALT1->>BYP1 INT_R_X33Y8/INT_R.FAN_ALT6->>FAN_BOUNCE6 INT_R_X33Y8/INT_R.FAN_ALT7->>FAN_BOUNCE7 INT_R_X33Y8/INT_R.FAN_BOUNCE6->>BYP_ALT1 INT_R_X33Y8/INT_R.FAN_BOUNCE7->>FAN_ALT6 INT_R_X33Y8/INT_R.LOGIC_OUTS2->>FAN_ALT7 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+b_r_reg_n_0_[10] - 
+wires: CLBLM_R_X33Y10/CLBLM_IMUX35 CLBLM_R_X33Y10/CLBLM_IMUX43 CLBLM_R_X33Y10/CLBLM_M_C6 CLBLM_R_X33Y10/CLBLM_M_D6 CLBLM_R_X33Y12/CLBLM_LOGIC_OUTS1 CLBLM_R_X33Y12/CLBLM_L_BQ INT_R_X33Y10/IMUX35 INT_R_X33Y10/IMUX43 INT_R_X33Y10/SS2END1 INT_R_X33Y11/SS2A1 INT_R_X33Y12/LOGIC_OUTS1 INT_R_X33Y12/SS2BEG1 
+pips: CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX35->CLBLM_M_C6 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX43->CLBLM_M_D6 CLBLM_R_X33Y12/CLBLM_R.CLBLM_L_BQ->CLBLM_LOGIC_OUTS1 INT_R_X33Y10/INT_R.SS2END1->>IMUX35 INT_R_X33Y10/INT_R.SS2END1->>IMUX43 INT_R_X33Y12/INT_R.LOGIC_OUTS1->>SS2BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+b_r_reg_n_0_[11] - 
+wires: CLBLM_L_X34Y10/CLBLM_WL1END3 CLBLM_L_X34Y12/CLBLM_LOGIC_OUTS4 CLBLM_L_X34Y12/CLBLM_M_AQ CLBLM_R_X33Y10/CLBLM_IMUX38 CLBLM_R_X33Y10/CLBLM_M_D3 CLBLM_R_X33Y10/CLBLM_WL1END3 INT_L_X34Y10/WL1BEG3 INT_L_X34Y11/SL1END0 INT_L_X34Y11/WL1BEG_N3 INT_L_X34Y12/LOGIC_OUTS_L4 INT_L_X34Y12/SL1BEG0 INT_R_X33Y10/IMUX38 INT_R_X33Y10/WL1END3 INT_R_X33Y11/WL1END_N1_3 
+pips: CLBLM_L_X34Y12/CLBLM_L.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX38->CLBLM_M_D3 INT_L_X34Y11/INT_L.SL1END0->>WL1BEG_N3 INT_L_X34Y12/INT_L.LOGIC_OUTS_L4->>SL1BEG0 INT_R_X33Y10/INT_R.WL1END3->>IMUX38 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+b_r_reg_n_0_[12] - 
+wires: CLBLL_L_X32Y11/CLBLL_IMUX11 CLBLL_L_X32Y11/CLBLL_IMUX3 CLBLL_L_X32Y11/CLBLL_LL_A4 CLBLL_L_X32Y11/CLBLL_LOGIC_OUTS1 CLBLL_L_X32Y11/CLBLL_L_A2 CLBLL_L_X32Y11/CLBLL_L_BQ CLBLM_R_X33Y11/CLBLM_IMUX1 CLBLM_R_X33Y11/CLBLM_M_A3 INT_L_X32Y11/EL1BEG0 INT_L_X32Y11/IMUX_L11 INT_L_X32Y11/IMUX_L3 INT_L_X32Y11/LOGIC_OUTS_L1 INT_R_X33Y10/EL1END_S3_0 INT_R_X33Y11/EL1END0 INT_R_X33Y11/IMUX1 
+pips: CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX11->CLBLL_LL_A4 CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX3->CLBLL_L_A2 CLBLL_L_X32Y11/CLBLL_L.CLBLL_L_BQ->CLBLL_LOGIC_OUTS1 CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX1->CLBLM_M_A3 INT_L_X32Y11/INT_L.LOGIC_OUTS_L1->>EL1BEG0 INT_L_X32Y11/INT_L.LOGIC_OUTS_L1->>IMUX_L11 INT_L_X32Y11/INT_L.LOGIC_OUTS_L1->>IMUX_L3 INT_R_X33Y11/INT_R.EL1END0->>IMUX1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 5, 
+
+b_r_reg_n_0_[13] - 
+wires: CLBLM_R_X33Y11/CLBLM_IMUX12 CLBLM_R_X33Y11/CLBLM_IMUX28 CLBLM_R_X33Y11/CLBLM_IMUX44 CLBLM_R_X33Y11/CLBLM_LOGIC_OUTS2 CLBLM_R_X33Y11/CLBLM_L_CQ CLBLM_R_X33Y11/CLBLM_M_B6 CLBLM_R_X33Y11/CLBLM_M_C4 CLBLM_R_X33Y11/CLBLM_M_D4 INT_R_X33Y11/IMUX12 INT_R_X33Y11/IMUX28 INT_R_X33Y11/IMUX44 INT_R_X33Y11/LOGIC_OUTS2 
+pips: CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX12->CLBLM_M_B6 CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX28->CLBLM_M_C4 CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX44->CLBLM_M_D4 CLBLM_R_X33Y11/CLBLM_R.CLBLM_L_CQ->CLBLM_LOGIC_OUTS2 INT_R_X33Y11/INT_R.LOGIC_OUTS2->>IMUX12 INT_R_X33Y11/INT_R.LOGIC_OUTS2->>IMUX28 INT_R_X33Y11/INT_R.LOGIC_OUTS2->>IMUX44 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+b_r_reg_n_0_[14] - 
+wires: CLBLM_R_X33Y11/CLBLM_IMUX31 CLBLM_R_X33Y11/CLBLM_IMUX47 CLBLM_R_X33Y11/CLBLM_LOGIC_OUTS3 CLBLM_R_X33Y11/CLBLM_L_DQ CLBLM_R_X33Y11/CLBLM_M_C5 CLBLM_R_X33Y11/CLBLM_M_D5 INT_R_X33Y11/IMUX31 INT_R_X33Y11/IMUX47 INT_R_X33Y11/LOGIC_OUTS3 
+pips: CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX31->CLBLM_M_C5 CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX47->CLBLM_M_D5 CLBLM_R_X33Y11/CLBLM_R.CLBLM_L_DQ->CLBLM_LOGIC_OUTS3 INT_R_X33Y11/INT_R.LOGIC_OUTS3->>IMUX31 INT_R_X33Y11/INT_R.LOGIC_OUTS3->>IMUX47 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+b_r_reg_n_0_[15] - 
+wires: CLBLM_R_X33Y11/CLBLM_IMUX38 CLBLM_R_X33Y11/CLBLM_LOGIC_OUTS17 CLBLM_R_X33Y11/CLBLM_L_BMUX CLBLM_R_X33Y11/CLBLM_M_D3 INT_R_X33Y11/IMUX38 INT_R_X33Y11/LOGIC_OUTS17 
+pips: CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX38->CLBLM_M_D3 CLBLM_R_X33Y11/CLBLM_R.CLBLM_L_BMUX->CLBLM_LOGIC_OUTS17 INT_R_X33Y11/INT_R.LOGIC_OUTS17->>IMUX38 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+p_0_in17_in - 
+wires: CLBLM_L_X34Y8/CLBLM_LOGIC_OUTS5 CLBLM_L_X34Y8/CLBLM_M_BQ CLBLM_L_X34Y8/CLBLM_WR1END2 CLBLM_R_X33Y8/CLBLM_IMUX12 CLBLM_R_X33Y8/CLBLM_IMUX28 CLBLM_R_X33Y8/CLBLM_IMUX43 CLBLM_R_X33Y8/CLBLM_M_B6 CLBLM_R_X33Y8/CLBLM_M_C4 CLBLM_R_X33Y8/CLBLM_M_D6 CLBLM_R_X33Y8/CLBLM_WR1END2 INT_L_X34Y8/LOGIC_OUTS_L5 INT_L_X34Y8/WR1BEG2 INT_R_X33Y8/IMUX12 INT_R_X33Y8/IMUX28 INT_R_X33Y8/IMUX43 INT_R_X33Y8/WR1END2 
+pips: CLBLM_L_X34Y8/CLBLM_L.CLBLM_M_BQ->CLBLM_LOGIC_OUTS5 CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX12->CLBLM_M_B6 CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX28->CLBLM_M_C4 CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX43->CLBLM_M_D6 INT_L_X34Y8/INT_L.LOGIC_OUTS_L5->>WR1BEG2 INT_R_X33Y8/INT_R.WR1END2->>IMUX12 INT_R_X33Y8/INT_R.WR1END2->>IMUX28 INT_R_X33Y8/INT_R.WR1END2->>IMUX43 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+p_1_in18_in - 
+wires: CLBLM_R_X33Y8/CLBLM_IMUX31 CLBLM_R_X33Y8/CLBLM_IMUX47 CLBLM_R_X33Y8/CLBLM_LOGIC_OUTS3 CLBLM_R_X33Y8/CLBLM_L_DQ CLBLM_R_X33Y8/CLBLM_M_C5 CLBLM_R_X33Y8/CLBLM_M_D5 INT_R_X33Y8/IMUX31 INT_R_X33Y8/IMUX47 INT_R_X33Y8/LOGIC_OUTS3 
+pips: CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX31->CLBLM_M_C5 CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX47->CLBLM_M_D5 CLBLM_R_X33Y8/CLBLM_R.CLBLM_L_DQ->CLBLM_LOGIC_OUTS3 INT_R_X33Y8/INT_R.LOGIC_OUTS3->>IMUX31 INT_R_X33Y8/INT_R.LOGIC_OUTS3->>IMUX47 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+b_r_reg_n_0_[3] - 
+wires: CLBLM_L_X34Y8/CLBLM_LOGIC_OUTS6 CLBLM_L_X34Y8/CLBLM_M_CQ CLBLM_L_X34Y8/CLBLM_WR1END3 CLBLM_R_X33Y8/CLBLM_IMUX45 CLBLM_R_X33Y8/CLBLM_M_D2 CLBLM_R_X33Y8/CLBLM_WR1END3 INT_L_X34Y8/LOGIC_OUTS_L6 INT_L_X34Y8/WR1BEG3 INT_R_X33Y8/IMUX45 INT_R_X33Y8/WR1END3 
+pips: CLBLM_L_X34Y8/CLBLM_L.CLBLM_M_CQ->CLBLM_LOGIC_OUTS6 CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX45->CLBLM_M_D2 INT_L_X34Y8/INT_L.LOGIC_OUTS_L6->>WR1BEG3 INT_R_X33Y8/INT_R.WR1END3->>IMUX45 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+b_r_reg_n_0_[4] - 
+wires: CLBLM_L_X34Y8/CLBLM_NE2A0 CLBLM_L_X34Y9/CLBLM_NW2A3 CLBLM_R_X33Y7/CLBLM_LOGIC_OUTS0 CLBLM_R_X33Y7/CLBLM_L_AQ CLBLM_R_X33Y8/CLBLM_NE2A0 CLBLM_R_X33Y9/CLBLM_IMUX1 CLBLM_R_X33Y9/CLBLM_IMUX14 CLBLM_R_X33Y9/CLBLM_IMUX6 CLBLM_R_X33Y9/CLBLM_L_A1 CLBLM_R_X33Y9/CLBLM_L_B1 CLBLM_R_X33Y9/CLBLM_M_A3 CLBLM_R_X33Y9/CLBLM_NW2A3 INT_L_X32Y7/NW2END_S0_0 INT_L_X32Y8/NE2BEG0 INT_L_X32Y8/NW2END0 INT_L_X32Y9/NE2A0 INT_L_X34Y7/NE2END_S3_0 INT_L_X34Y8/NE2END0 INT_L_X34Y8/NL1BEG_N3 INT_L_X34Y8/NW2BEG3 INT_L_X34Y9/NW2A3 INT_R_X33Y7/LOGIC_OUTS0 INT_R_X33Y7/NE2BEG0 INT_R_X33Y7/NW2BEG0 INT_R_X33Y8/NE2A0 INT_R_X33Y8/NE2END_S3_0 INT_R_X33Y8/NW2A0 INT_R_X33Y9/IMUX1 INT_R_X33Y9/IMUX14 INT_R_X33Y9/IMUX6 INT_R_X33Y9/NE2END0 INT_R_X33Y9/NW2END3 
+pips: CLBLM_R_X33Y7/CLBLM_R.CLBLM_L_AQ->CLBLM_LOGIC_OUTS0 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX1->CLBLM_M_A3 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX14->CLBLM_L_B1 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX6->CLBLM_L_A1 INT_L_X32Y8/INT_L.NW2END0->>NE2BEG0 INT_L_X34Y8/INT_L.NE2END0->>NL1BEG_N3 INT_L_X34Y8/INT_L.NL1BEG_N3->>NW2BEG3 INT_R_X33Y7/INT_R.LOGIC_OUTS0->>NE2BEG0 INT_R_X33Y7/INT_R.LOGIC_OUTS0->>NW2BEG0 INT_R_X33Y9/INT_R.NE2END0->>IMUX1 INT_R_X33Y9/INT_R.NW2END3->>IMUX14 INT_R_X33Y9/INT_R.NW2END3->>IMUX6 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 5, 
+
+b_r_reg_n_0_[5] - 
+wires: CLBLL_L_X32Y9/CLBLL_LOGIC_OUTS0 CLBLL_L_X32Y9/CLBLL_L_AQ CLBLM_R_X33Y9/CLBLM_IMUX12 CLBLM_R_X33Y9/CLBLM_IMUX35 CLBLM_R_X33Y9/CLBLM_IMUX43 CLBLM_R_X33Y9/CLBLM_M_B6 CLBLM_R_X33Y9/CLBLM_M_C6 CLBLM_R_X33Y9/CLBLM_M_D6 INT_L_X32Y9/ER1BEG1 INT_L_X32Y9/LOGIC_OUTS_L0 INT_R_X33Y9/ER1END1 INT_R_X33Y9/IMUX12 INT_R_X33Y9/IMUX35 INT_R_X33Y9/IMUX43 
+pips: CLBLL_L_X32Y9/CLBLL_L.CLBLL_L_AQ->CLBLL_LOGIC_OUTS0 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX12->CLBLM_M_B6 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX35->CLBLM_M_C6 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX43->CLBLM_M_D6 INT_L_X32Y9/INT_L.LOGIC_OUTS_L0->>ER1BEG1 INT_R_X33Y9/INT_R.ER1END1->>IMUX12 INT_R_X33Y9/INT_R.ER1END1->>IMUX35 INT_R_X33Y9/INT_R.ER1END1->>IMUX43 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+b_r_reg_n_0_[6] - 
+wires: CLBLM_L_X34Y8/CLBLM_SW2A0 CLBLM_L_X34Y9/CLBLM_LOGIC_OUTS4 CLBLM_L_X34Y9/CLBLM_M_AQ CLBLM_R_X33Y8/CLBLM_SW2A0 CLBLM_R_X33Y9/CLBLM_IMUX32 CLBLM_R_X33Y9/CLBLM_IMUX40 CLBLM_R_X33Y9/CLBLM_M_C1 CLBLM_R_X33Y9/CLBLM_M_D1 INT_L_X34Y8/SW2A0 INT_L_X34Y9/LOGIC_OUTS_L4 INT_L_X34Y9/SW2BEG0 INT_R_X33Y8/NL1BEG0 INT_R_X33Y8/NL1END_S3_0 INT_R_X33Y8/SW2END0 INT_R_X33Y9/IMUX32 INT_R_X33Y9/IMUX40 INT_R_X33Y9/NL1END0 
+pips: CLBLM_L_X34Y9/CLBLM_L.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX32->CLBLM_M_C1 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX40->CLBLM_M_D1 INT_L_X34Y9/INT_L.LOGIC_OUTS_L4->>SW2BEG0 INT_R_X33Y8/INT_R.SW2END0->>NL1BEG0 INT_R_X33Y9/INT_R.NL1END0->>IMUX32 INT_R_X33Y9/INT_R.NL1END0->>IMUX40 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+b_r_reg_n_0_[7] - 
+wires: CLBLL_L_X32Y9/CLBLL_LOGIC_OUTS1 CLBLL_L_X32Y9/CLBLL_L_BQ CLBLM_R_X33Y9/CLBLM_IMUX45 CLBLM_R_X33Y9/CLBLM_M_D2 INT_L_X32Y9/ER1BEG2 INT_L_X32Y9/LOGIC_OUTS_L1 INT_R_X33Y9/ER1END2 INT_R_X33Y9/IMUX45 
+pips: CLBLL_L_X32Y9/CLBLL_L.CLBLL_L_BQ->CLBLL_LOGIC_OUTS1 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX45->CLBLM_M_D2 INT_L_X32Y9/INT_L.LOGIC_OUTS_L1->>ER1BEG2 INT_R_X33Y9/INT_R.ER1END2->>IMUX45 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+b_r_reg_n_0_[8] - 
+wires: CLBLM_R_X33Y10/CLBLM_IMUX14 CLBLM_R_X33Y10/CLBLM_IMUX2 CLBLM_R_X33Y10/CLBLM_IMUX6 CLBLM_R_X33Y10/CLBLM_LOGIC_OUTS17 CLBLM_R_X33Y10/CLBLM_L_A1 CLBLM_R_X33Y10/CLBLM_L_B1 CLBLM_R_X33Y10/CLBLM_L_BMUX CLBLM_R_X33Y10/CLBLM_M_A2 INT_R_X33Y10/IMUX14 INT_R_X33Y10/IMUX2 INT_R_X33Y10/IMUX6 INT_R_X33Y10/LOGIC_OUTS17 INT_R_X33Y10/SR1BEG_S0 
+pips: CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX14->CLBLM_L_B1 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX2->CLBLM_M_A2 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX6->CLBLM_L_A1 CLBLM_R_X33Y10/CLBLM_R.CLBLM_L_BMUX->CLBLM_LOGIC_OUTS17 INT_R_X33Y10/INT_R.LOGIC_OUTS17->>IMUX14 INT_R_X33Y10/INT_R.LOGIC_OUTS17->>IMUX6 INT_R_X33Y10/INT_R.LOGIC_OUTS17->>SR1BEG_S0 INT_R_X33Y10/INT_R.SR1BEG_S0->>IMUX2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 5, 
+
+b_r_reg_n_0_[9] - 
+wires: CLBLM_R_X33Y10/CLBLM_IMUX12 CLBLM_R_X33Y10/CLBLM_IMUX29 CLBLM_R_X33Y10/CLBLM_IMUX44 CLBLM_R_X33Y10/CLBLM_M_B6 CLBLM_R_X33Y10/CLBLM_M_C2 CLBLM_R_X33Y10/CLBLM_M_D4 CLBLM_R_X33Y12/CLBLM_LOGIC_OUTS2 CLBLM_R_X33Y12/CLBLM_L_CQ INT_R_X33Y10/IMUX12 INT_R_X33Y10/IMUX29 INT_R_X33Y10/IMUX44 INT_R_X33Y10/SL1END2 INT_R_X33Y11/SL1BEG2 INT_R_X33Y11/SL1END2 INT_R_X33Y12/LOGIC_OUTS2 INT_R_X33Y12/SL1BEG2 
+pips: CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX12->CLBLM_M_B6 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX29->CLBLM_M_C2 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX44->CLBLM_M_D4 CLBLM_R_X33Y12/CLBLM_R.CLBLM_L_CQ->CLBLM_LOGIC_OUTS2 INT_R_X33Y10/INT_R.SL1END2->>IMUX12 INT_R_X33Y10/INT_R.SL1END2->>IMUX29 INT_R_X33Y10/INT_R.SL1END2->>IMUX44 INT_R_X33Y11/INT_R.SL1END2->>SL1BEG2 INT_R_X33Y12/INT_R.LOGIC_OUTS2->>SL1BEG2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+cin_r - 
+wires: CLBLM_R_X33Y7/CLBLM_LOGIC_OUTS1 CLBLM_R_X33Y7/CLBLM_L_BQ CLBLM_R_X33Y8/CLBLM_IMUX11 CLBLM_R_X33Y8/CLBLM_M_A4 INT_R_X33Y7/LOGIC_OUTS1 INT_R_X33Y7/NR1BEG1 INT_R_X33Y8/IMUX11 INT_R_X33Y8/NR1END1 
+pips: CLBLM_R_X33Y7/CLBLM_R.CLBLM_L_BQ->CLBLM_LOGIC_OUTS1 CLBLM_R_X33Y8/CLBLM_R.CLBLM_IMUX11->CLBLM_M_A4 INT_R_X33Y7/INT_R.LOGIC_OUTS1->>NR1BEG1 INT_R_X33Y8/INT_R.NR1END1->>IMUX11 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+cout_r_reg_i_1_n_3 - 
+wires: CLBLM_L_X34Y11/CLBLM_IMUX4 CLBLM_L_X34Y11/CLBLM_M_A6 CLBLM_L_X34Y11/CLBLM_SE2A2 CLBLM_L_X34Y11/CLBLM_WL1END1 CLBLM_R_X33Y11/CLBLM_IMUX9 CLBLM_R_X33Y11/CLBLM_L_A5 CLBLM_R_X33Y11/CLBLM_SE2A2 CLBLM_R_X33Y11/CLBLM_WL1END1 CLBLM_R_X33Y12/CLBLM_LOGIC_OUTS20 CLBLM_R_X33Y12/CLBLM_M_AMUX INT_L_X34Y11/IMUX_L4 INT_L_X34Y11/SE2END2 INT_L_X34Y11/WL1BEG1 INT_R_X33Y10/FAN_BOUNCE_S3_6 INT_R_X33Y11/FAN_ALT6 INT_R_X33Y11/FAN_BOUNCE6 INT_R_X33Y11/IMUX9 INT_R_X33Y11/SE2A2 INT_R_X33Y11/WL1END1 INT_R_X33Y12/LOGIC_OUTS20 INT_R_X33Y12/SE2BEG2 
+pips: CLBLM_L_X34Y11/CLBLM_L.CLBLM_IMUX4->CLBLM_M_A6 CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX9->CLBLM_L_A5 CLBLM_R_X33Y12/CLBLM_R.CLBLM_M_AMUX->CLBLM_LOGIC_OUTS20 INT_L_X34Y11/INT_L.SE2END2->>IMUX_L4 INT_L_X34Y11/INT_L.SE2END2->>WL1BEG1 INT_R_X33Y11/INT_R.FAN_ALT6->>FAN_BOUNCE6 INT_R_X33Y11/INT_R.FAN_BOUNCE6->>IMUX9 INT_R_X33Y11/INT_R.WL1END1->>FAN_ALT6 INT_R_X33Y12/INT_R.LOGIC_OUTS20->>SE2BEG2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 5, 
+
+sum_r_reg[15]_i_2_n_0 - 
+wires: CLBLM_R_X33Y11/CLBLM_M_COUT CLBLM_R_X33Y11/CLBLM_M_COUT_N CLBLM_R_X33Y12/CLBLM_M_CIN 
+pips: CLBLM_R_X33Y11/CLBLM_R.CLBLM_M_COUT->CLBLM_M_COUT_N 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[10]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[11]_i_2_n_6 - 
+wires: CLBLL_L_X32Y11/CLBLL_IMUX1 CLBLL_L_X32Y11/CLBLL_IMUX9 CLBLL_L_X32Y11/CLBLL_LL_A3 CLBLL_L_X32Y11/CLBLL_L_A5 CLBLM_R_X33Y10/CLBLM_LOGIC_OUTS21 CLBLM_R_X33Y10/CLBLM_M_BMUX INT_L_X32Y10/WR1END_S1_0 INT_L_X32Y11/IMUX_L1 INT_L_X32Y11/IMUX_L9 INT_L_X32Y11/WR1END0 INT_R_X33Y10/LOGIC_OUTS21 INT_R_X33Y10/WR1BEG_S0 INT_R_X33Y11/WR1BEG0 
+pips: CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX1->CLBLL_LL_A3 CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX9->CLBLL_L_A5 CLBLM_R_X33Y10/CLBLM_R.CLBLM_M_BMUX->CLBLM_LOGIC_OUTS21 INT_L_X32Y11/INT_L.WR1END0->>IMUX_L1 INT_L_X32Y11/INT_L.WR1END0->>IMUX_L9 INT_R_X33Y10/INT_R.LOGIC_OUTS21->>WR1BEG_S0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+sum_r_reg[11]_i_2_n_5 - 
+wires: CLBLL_L_X32Y11/CLBLL_IMUX0 CLBLL_L_X32Y11/CLBLL_IMUX8 CLBLL_L_X32Y11/CLBLL_LL_A5 CLBLL_L_X32Y11/CLBLL_L_A3 CLBLM_R_X33Y10/CLBLM_LOGIC_OUTS22 CLBLM_R_X33Y10/CLBLM_M_CMUX INT_L_X32Y10/NW2END_S0_0 INT_L_X32Y11/IMUX_L0 INT_L_X32Y11/IMUX_L8 INT_L_X32Y11/NW2END0 INT_R_X33Y10/LOGIC_OUTS22 INT_R_X33Y10/NW2BEG0 INT_R_X33Y11/NW2A0 
+pips: CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX0->CLBLL_L_A3 CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX8->CLBLL_LL_A5 CLBLM_R_X33Y10/CLBLM_R.CLBLM_M_CMUX->CLBLM_LOGIC_OUTS22 INT_L_X32Y11/INT_L.NW2END0->>IMUX_L0 INT_L_X32Y11/INT_L.NW2END0->>IMUX_L8 INT_R_X33Y10/INT_R.LOGIC_OUTS22->>NW2BEG0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+sum_r_reg[15]_i_2_n_7 - 
+wires: CLBLL_L_X32Y11/CLBLL_IMUX2 CLBLL_L_X32Y11/CLBLL_IMUX6 CLBLL_L_X32Y11/CLBLL_LL_A2 CLBLL_L_X32Y11/CLBLL_L_A1 CLBLM_R_X33Y11/CLBLM_LOGIC_OUTS20 CLBLM_R_X33Y11/CLBLM_M_AMUX INT_L_X32Y11/FAN_ALT1 INT_L_X32Y11/FAN_BOUNCE1 INT_L_X32Y11/IMUX_L2 INT_L_X32Y11/IMUX_L6 INT_L_X32Y11/WR1END3 INT_R_X33Y11/LOGIC_OUTS20 INT_R_X33Y11/WR1BEG3 
+pips: CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX2->CLBLL_LL_A2 CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX6->CLBLL_L_A1 CLBLM_R_X33Y11/CLBLM_R.CLBLM_M_AMUX->CLBLM_LOGIC_OUTS20 INT_L_X32Y11/INT_L.FAN_ALT1->>FAN_BOUNCE1 INT_L_X32Y11/INT_L.FAN_BOUNCE1->>IMUX_L2 INT_L_X32Y11/INT_L.WR1END3->>FAN_ALT1 INT_L_X32Y11/INT_L.WR1END3->>IMUX_L6 INT_R_X33Y11/INT_R.LOGIC_OUTS20->>WR1BEG3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 5, 
+
+sum_r[11]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[11]_i_2_n_4 - 
+wires: CLBLL_L_X32Y11/CLBLL_IMUX10 CLBLL_L_X32Y11/CLBLL_L_A4 CLBLM_R_X33Y10/CLBLM_LOGIC_OUTS23 CLBLM_R_X33Y10/CLBLM_M_DMUX INT_L_X32Y11/IMUX_L10 INT_L_X32Y11/NW2END1 INT_R_X33Y10/LOGIC_OUTS23 INT_R_X33Y10/NW2BEG1 INT_R_X33Y11/NW2A1 
+pips: CLBLL_L_X32Y11/CLBLL_L.CLBLL_IMUX10->CLBLL_L_A4 CLBLM_R_X33Y10/CLBLM_R.CLBLM_M_DMUX->CLBLM_LOGIC_OUTS23 INT_L_X32Y11/INT_L.NW2END1->>IMUX_L10 INT_R_X33Y10/INT_R.LOGIC_OUTS23->>NW2BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[11]_i_3_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[11]_i_4_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[11]_i_5_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[11]_i_6_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[13]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[15]_i_2_n_6 - 
+wires: CLBLM_L_X34Y11/CLBLM_ER1BEG1 CLBLM_L_X34Y11/CLBLM_IMUX11 CLBLM_L_X34Y11/CLBLM_M_A4 CLBLM_R_X33Y11/CLBLM_ER1BEG1 CLBLM_R_X33Y11/CLBLM_IMUX10 CLBLM_R_X33Y11/CLBLM_LOGIC_OUTS21 CLBLM_R_X33Y11/CLBLM_L_A4 CLBLM_R_X33Y11/CLBLM_M_BMUX INT_L_X34Y11/ER1END1 INT_L_X34Y11/IMUX_L11 INT_R_X33Y11/ER1BEG1 INT_R_X33Y11/IMUX10 INT_R_X33Y11/LOGIC_OUTS21 INT_R_X33Y11/SR1BEG_S0 
+pips: CLBLM_L_X34Y11/CLBLM_L.CLBLM_IMUX11->CLBLM_M_A4 CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX10->CLBLM_L_A4 CLBLM_R_X33Y11/CLBLM_R.CLBLM_M_BMUX->CLBLM_LOGIC_OUTS21 INT_L_X34Y11/INT_L.ER1END1->>IMUX_L11 INT_R_X33Y11/INT_R.LOGIC_OUTS21->>SR1BEG_S0 INT_R_X33Y11/INT_R.SR1BEG_S0->>ER1BEG1 INT_R_X33Y11/INT_R.SR1BEG_S0->>IMUX10 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+sum_r[14]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[15]_i_2_n_5 - 
+wires: CLBLM_R_X33Y11/CLBLM_IMUX0 CLBLM_R_X33Y11/CLBLM_LOGIC_OUTS22 CLBLM_R_X33Y11/CLBLM_L_A3 CLBLM_R_X33Y11/CLBLM_M_CMUX INT_R_X33Y11/IMUX0 INT_R_X33Y11/LOGIC_OUTS22 
+pips: CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX0->CLBLM_L_A3 CLBLM_R_X33Y11/CLBLM_R.CLBLM_M_CMUX->CLBLM_LOGIC_OUTS22 INT_R_X33Y11/INT_R.LOGIC_OUTS22->>IMUX0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+sum_r[15]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[15]_i_2_n_4 - 
+wires: CLBLM_R_X33Y11/CLBLM_IMUX3 CLBLM_R_X33Y11/CLBLM_LOGIC_OUTS23 CLBLM_R_X33Y11/CLBLM_L_A2 CLBLM_R_X33Y11/CLBLM_M_DMUX INT_R_X33Y11/IMUX3 INT_R_X33Y11/LOGIC_OUTS23 
+pips: CLBLM_R_X33Y11/CLBLM_R.CLBLM_IMUX3->CLBLM_L_A2 CLBLM_R_X33Y11/CLBLM_R.CLBLM_M_DMUX->CLBLM_LOGIC_OUTS23 INT_R_X33Y11/INT_R.LOGIC_OUTS23->>IMUX3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[15]_i_3_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[15]_i_4_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[15]_i_5_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[15]_i_6_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[1]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+p_0_in6_in - 
+wires: CLBLM_R_X33Y8/CLBLM_LOGIC_OUTS21 CLBLM_R_X33Y8/CLBLM_M_BMUX CLBLM_R_X33Y9/CLBLM_IMUX19 CLBLM_R_X33Y9/CLBLM_IMUX3 CLBLM_R_X33Y9/CLBLM_L_A2 CLBLM_R_X33Y9/CLBLM_L_B2 INT_R_X33Y8/LOGIC_OUTS21 INT_R_X33Y8/NL1BEG2 INT_R_X33Y9/IMUX19 INT_R_X33Y9/IMUX3 INT_R_X33Y9/NL1END2 
+pips: CLBLM_R_X33Y8/CLBLM_R.CLBLM_M_BMUX->CLBLM_LOGIC_OUTS21 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX19->CLBLM_L_B2 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX3->CLBLM_L_A2 INT_R_X33Y8/INT_R.LOGIC_OUTS21->>NL1BEG2 INT_R_X33Y9/INT_R.NL1END2->>IMUX19 INT_R_X33Y9/INT_R.NL1END2->>IMUX3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+p_0_in - 
+wires: CLBLM_R_X33Y9/CLBLM_IMUX0 CLBLM_R_X33Y9/CLBLM_IMUX16 CLBLM_R_X33Y9/CLBLM_LOGIC_OUTS20 CLBLM_R_X33Y9/CLBLM_L_A3 CLBLM_R_X33Y9/CLBLM_L_B3 CLBLM_R_X33Y9/CLBLM_M_AMUX INT_R_X33Y8/SR1END3 INT_R_X33Y9/IMUX0 INT_R_X33Y9/IMUX16 INT_R_X33Y9/LOGIC_OUTS20 INT_R_X33Y9/SR1BEG3 INT_R_X33Y9/SR1END_N3_3 
+pips: CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX0->CLBLM_L_A3 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX16->CLBLM_L_B3 CLBLM_R_X33Y9/CLBLM_R.CLBLM_M_AMUX->CLBLM_LOGIC_OUTS20 INT_R_X33Y9/INT_R.LOGIC_OUTS20->>SR1BEG3 INT_R_X33Y9/INT_R.SR1END_N3_3->>IMUX0 INT_R_X33Y9/INT_R.SR1END_N3_3->>IMUX16 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 5, 
+
+sum_r[2]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+p_1_in7_in - 
+wires: CLBLM_R_X33Y8/CLBLM_LOGIC_OUTS22 CLBLM_R_X33Y8/CLBLM_M_CMUX CLBLM_R_X33Y9/CLBLM_IMUX25 CLBLM_R_X33Y9/CLBLM_IMUX9 CLBLM_R_X33Y9/CLBLM_L_A5 CLBLM_R_X33Y9/CLBLM_L_B5 INT_R_X33Y8/LOGIC_OUTS22 INT_R_X33Y8/NR1BEG0 INT_R_X33Y9/IMUX25 INT_R_X33Y9/IMUX9 INT_R_X33Y9/NR1END0 
+pips: CLBLM_R_X33Y8/CLBLM_R.CLBLM_M_CMUX->CLBLM_LOGIC_OUTS22 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX25->CLBLM_L_B5 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX9->CLBLM_L_A5 INT_R_X33Y8/INT_R.LOGIC_OUTS22->>NR1BEG0 INT_R_X33Y9/INT_R.NR1END0->>IMUX25 INT_R_X33Y9/INT_R.NR1END0->>IMUX9 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+sum_r[3]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[3]_i_2_n_4 - 
+wires: CLBLM_R_X33Y8/CLBLM_LOGIC_OUTS23 CLBLM_R_X33Y8/CLBLM_M_DMUX CLBLM_R_X33Y9/CLBLM_IMUX13 CLBLM_R_X33Y9/CLBLM_L_B6 INT_R_X33Y8/LOGIC_OUTS23 INT_R_X33Y8/NR1BEG1 INT_R_X33Y9/GFAN1 INT_R_X33Y9/IMUX13 INT_R_X33Y9/NR1END1 
+pips: CLBLM_R_X33Y8/CLBLM_R.CLBLM_M_DMUX->CLBLM_LOGIC_OUTS23 CLBLM_R_X33Y9/CLBLM_R.CLBLM_IMUX13->CLBLM_L_B6 INT_R_X33Y8/INT_R.LOGIC_OUTS23->>NR1BEG1 INT_R_X33Y9/INT_R.GFAN1->>IMUX13 INT_R_X33Y9/INT_R.NR1END1->>GFAN1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[3]_i_3_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[3]_i_4_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[3]_i_5_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[3]_i_6_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[5]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[7]_i_2_n_6 - 
+wires: CLBLM_R_X33Y10/CLBLM_IMUX13 CLBLM_R_X33Y10/CLBLM_IMUX3 CLBLM_R_X33Y10/CLBLM_L_A2 CLBLM_R_X33Y10/CLBLM_L_B6 CLBLM_R_X33Y9/CLBLM_LOGIC_OUTS21 CLBLM_R_X33Y9/CLBLM_M_BMUX INT_L_X32Y10/EL1BEG2 INT_L_X32Y10/NW2END3 INT_R_X33Y10/EL1END2 INT_R_X33Y10/FAN_ALT5 INT_R_X33Y10/FAN_BOUNCE5 INT_R_X33Y10/IMUX13 INT_R_X33Y10/IMUX3 INT_R_X33Y10/NW2A3 INT_R_X33Y9/LOGIC_OUTS21 INT_R_X33Y9/NW2BEG3 
+pips: CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX13->CLBLM_L_B6 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX3->CLBLM_L_A2 CLBLM_R_X33Y9/CLBLM_R.CLBLM_M_BMUX->CLBLM_LOGIC_OUTS21 INT_L_X32Y10/INT_L.NW2END3->>EL1BEG2 INT_R_X33Y10/INT_R.EL1END2->>FAN_ALT5 INT_R_X33Y10/INT_R.EL1END2->>IMUX13 INT_R_X33Y10/INT_R.FAN_ALT5->>FAN_BOUNCE5 INT_R_X33Y10/INT_R.FAN_BOUNCE5->>IMUX3 INT_R_X33Y9/INT_R.LOGIC_OUTS21->>NW2BEG3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+sum_r_reg[11]_i_2_n_7 - 
+wires: CLBLM_R_X33Y10/CLBLM_IMUX0 CLBLM_R_X33Y10/CLBLM_IMUX26 CLBLM_R_X33Y10/CLBLM_LOGIC_OUTS20 CLBLM_R_X33Y10/CLBLM_L_A3 CLBLM_R_X33Y10/CLBLM_L_B4 CLBLM_R_X33Y10/CLBLM_M_AMUX INT_R_X33Y10/FAN_ALT7 INT_R_X33Y10/FAN_BOUNCE7 INT_R_X33Y10/IMUX0 INT_R_X33Y10/IMUX26 INT_R_X33Y10/LOGIC_OUTS20 
+pips: CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX0->CLBLM_L_A3 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX26->CLBLM_L_B4 CLBLM_R_X33Y10/CLBLM_R.CLBLM_M_AMUX->CLBLM_LOGIC_OUTS20 INT_R_X33Y10/INT_R.FAN_ALT7->>FAN_BOUNCE7 INT_R_X33Y10/INT_R.FAN_BOUNCE7->>IMUX0 INT_R_X33Y10/INT_R.FAN_BOUNCE7->>IMUX26 INT_R_X33Y10/INT_R.LOGIC_OUTS20->>FAN_ALT7 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 5, 
+
+sum_r[6]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[7]_i_2_n_5 - 
+wires: CLBLM_R_X33Y10/CLBLM_IMUX16 CLBLM_R_X33Y10/CLBLM_IMUX9 CLBLM_R_X33Y10/CLBLM_L_A5 CLBLM_R_X33Y10/CLBLM_L_B3 CLBLM_R_X33Y9/CLBLM_LOGIC_OUTS22 CLBLM_R_X33Y9/CLBLM_M_CMUX INT_R_X33Y10/IMUX16 INT_R_X33Y10/IMUX9 INT_R_X33Y10/NR1END0 INT_R_X33Y9/LOGIC_OUTS22 INT_R_X33Y9/NR1BEG0 
+pips: CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX16->CLBLM_L_B3 CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX9->CLBLM_L_A5 CLBLM_R_X33Y9/CLBLM_R.CLBLM_M_CMUX->CLBLM_LOGIC_OUTS22 INT_R_X33Y10/INT_R.NR1END0->>IMUX16 INT_R_X33Y10/INT_R.NR1END0->>IMUX9 INT_R_X33Y9/INT_R.LOGIC_OUTS22->>NR1BEG0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+sum_r[7]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[7]_i_2_n_4 - 
+wires: CLBLM_R_X33Y10/CLBLM_IMUX19 CLBLM_R_X33Y10/CLBLM_L_B2 CLBLM_R_X33Y9/CLBLM_LOGIC_OUTS23 CLBLM_R_X33Y9/CLBLM_M_DMUX INT_R_X33Y10/IMUX19 INT_R_X33Y10/NR1END1 INT_R_X33Y9/LOGIC_OUTS23 INT_R_X33Y9/NR1BEG1 
+pips: CLBLM_R_X33Y10/CLBLM_R.CLBLM_IMUX19->CLBLM_L_B2 CLBLM_R_X33Y9/CLBLM_R.CLBLM_M_DMUX->CLBLM_LOGIC_OUTS23 INT_R_X33Y10/INT_R.NR1END1->>IMUX19 INT_R_X33Y9/INT_R.LOGIC_OUTS23->>NR1BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[7]_i_3_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[7]_i_4_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[7]_i_5_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[7]_i_6_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r[9]_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[3]_i_2_n_7 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[11]_i_2_n_0 - 
+wires: CLBLM_R_X33Y10/CLBLM_M_COUT CLBLM_R_X33Y10/CLBLM_M_COUT_N CLBLM_R_X33Y11/CLBLM_M_CIN 
+pips: CLBLM_R_X33Y10/CLBLM_R.CLBLM_M_COUT->CLBLM_M_COUT_N 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[7]_i_2_n_0 - 
+wires: CLBLM_R_X33Y10/CLBLM_M_CIN CLBLM_R_X33Y9/CLBLM_M_COUT CLBLM_R_X33Y9/CLBLM_M_COUT_N 
+pips: CLBLM_R_X33Y9/CLBLM_R.CLBLM_M_COUT->CLBLM_M_COUT_N 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+sum_r_reg[3]_i_2_n_0 - 
+wires: CLBLM_R_X33Y8/CLBLM_M_COUT CLBLM_R_X33Y8/CLBLM_M_COUT_N CLBLM_R_X33Y9/CLBLM_M_CIN 
+pips: CLBLM_R_X33Y8/CLBLM_R.CLBLM_M_COUT->CLBLM_M_COUT_N 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+
+####################################################
+# Bels
+SLICE_X55Y8/AFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y8/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y12/AFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y12/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X53Y12/AFF - 
+CLASS: bel, 
+NAME: SLICE_X53Y12/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X53Y11/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X53Y11/A5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X57Y11/AFF - 
+CLASS: bel, 
+NAME: SLICE_X57Y11/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X56Y11/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X56Y11/A5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X57Y11/BFF - 
+CLASS: bel, 
+NAME: SLICE_X57Y11/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y9/B5FF - 
+CLASS: bel, 
+NAME: SLICE_X55Y9/B5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X56Y8/AFF - 
+CLASS: bel, 
+NAME: SLICE_X56Y8/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y8/BFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y8/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y9/CFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y9/CFF, 
+TYPE: REG_INIT, 
+
+SLICE_X56Y7/AFF - 
+CLASS: bel, 
+NAME: SLICE_X56Y7/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X54Y7/AFF - 
+CLASS: bel, 
+NAME: SLICE_X54Y7/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X56Y7/BFF - 
+CLASS: bel, 
+NAME: SLICE_X56Y7/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y11/BFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y11/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X53Y12/BFF - 
+CLASS: bel, 
+NAME: SLICE_X53Y12/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y8/CFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y8/CFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y12/BFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y12/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X56Y12/AFF - 
+CLASS: bel, 
+NAME: SLICE_X56Y12/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X53Y11/BFF - 
+CLASS: bel, 
+NAME: SLICE_X53Y11/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y11/CFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y11/CFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y11/DFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y11/DFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y11/B5FF - 
+CLASS: bel, 
+NAME: SLICE_X55Y11/B5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X56Y8/BFF - 
+CLASS: bel, 
+NAME: SLICE_X56Y8/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y8/DFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y8/DFF, 
+TYPE: REG_INIT, 
+
+SLICE_X56Y8/CFF - 
+CLASS: bel, 
+NAME: SLICE_X56Y8/CFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y7/AFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y7/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X53Y9/AFF - 
+CLASS: bel, 
+NAME: SLICE_X53Y9/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X56Y9/AFF - 
+CLASS: bel, 
+NAME: SLICE_X56Y9/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X53Y9/BFF - 
+CLASS: bel, 
+NAME: SLICE_X53Y9/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y10/B5FF - 
+CLASS: bel, 
+NAME: SLICE_X55Y10/B5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X55Y12/CFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y12/CFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y7/BFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y7/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X54Y12/AFF - 
+CLASS: bel, 
+NAME: SLICE_X54Y12/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X54Y12/CARRY4 - 
+CLASS: bel, 
+NAME: SLICE_X54Y12/CARRY4, 
+TYPE: CARRY4, 
+
+SLICE_X52Y11/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A3*A5*A4*A1*A2)+(A3*A5*A4*(~A1)*(~A2))+(A3*A5*(~A4)*A1*(~A2))+(A3*A5*(~A4)*(~A1)*A2)+(A3*(~A5)*A4*A1*(~A2))+(A3*(~A5)*A4*(~A1)*A2)+(A3*(~A5)*(~A4)*A1*A2)+(A3*(~A5)*(~A4)*(~A1)*(~A2))+((~A3)*A5)) , 
+NAME: SLICE_X52Y11/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X53Y11/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A5*A3*A4)+(A5*(~A3)*A4*A2*A6*A1)+(A5*(~A3)*A4*A2*(~A6)*(~A1))+(A5*(~A3)*A4*(~A2)*A6*(~A1))+(A5*(~A3)*A4*(~A2)*(~A6)*A1)+((~A5)*A4*A2*A6*A1)+((~A5)*A4*A2*(~A6)*(~A1))+((~A5)*A4*(~A2)*A6*(~A1))+((~A5)*A4*(~A2)*(~A6)*A1) , 
+NAME: SLICE_X53Y11/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X54Y10/D6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A5*(~A4)*(~A6)*(~A3))+((~A5)*A4)+((~A5)*(~A4)*A6)+((~A5)*(~A4)*(~A6)*A3) , 
+NAME: SLICE_X54Y10/D6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y10/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A1*A2*(~A6))+(A1*(~A2)*A6)+((~A1)*A2*A6)+((~A1)*(~A2)*(~A6)) , 
+NAME: SLICE_X54Y10/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y10/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A3*A6)+((~A3)*(~A6)) , 
+NAME: SLICE_X54Y10/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y10/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A3*(~A2))+((~A3)*A2) , 
+NAME: SLICE_X54Y10/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X56Y11/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A4*A6)+((~A4)*(~A6)) , 
+NAME: SLICE_X56Y11/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X55Y11/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A4*A3*A5)+(A4*(~A3)*(~A5))+((~A4)*A3)) , 
+NAME: SLICE_X55Y11/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X55Y11/A5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A4*A3*A2)+(A4*(~A3)*A2*A5)+((~A4)*A2*A5) , 
+NAME: SLICE_X55Y11/A5LUT, 
+TYPE: LUT5, 
+
+SLICE_X54Y11/D6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A1*(~A4)*(~A5)*(~A3))+((~A1)*A4)+((~A1)*(~A4)*A5)+((~A1)*(~A4)*(~A5)*A3) , 
+NAME: SLICE_X54Y11/D6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y11/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A3*A4*(~A5))+(A3*(~A4)*A5)+((~A3)*A4*A5)+((~A3)*(~A4)*(~A5)) , 
+NAME: SLICE_X54Y11/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y11/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A2*A6)+((~A2)*(~A6)) , 
+NAME: SLICE_X54Y11/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y11/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A4*(~A3))+((~A4)*A3) , 
+NAME: SLICE_X54Y11/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X55Y9/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A2*A1*A4*A3)+(A2*A1*(~A4)*(~A3))+(A2*(~A1)*A4*(~A3))+(A2*(~A1)*(~A4)*A3)+((~A2)*A1*A4*(~A3))+((~A2)*A1*(~A4)*A3)+((~A2)*(~A1)*A4*A3)+((~A2)*(~A1)*(~A4)*(~A3))) , 
+NAME: SLICE_X55Y9/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X55Y9/A5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A2*A5*A1*A4*A3)+(A2*A5*A1*(~A4)*(~A3))+(A2*A5*(~A1)*A4*(~A3))+(A2*A5*(~A1)*(~A4)*A3)+(A2*(~A5)*A1*A4*(~A3))+(A2*(~A5)*A1*(~A4)*A3)+(A2*(~A5)*(~A1)*A4*A3)+(A2*(~A5)*(~A1)*(~A4)*(~A3))+((~A2)*A5) , 
+NAME: SLICE_X55Y9/A5LUT, 
+TYPE: LUT5, 
+
+SLICE_X55Y9/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A2*A5*A6)+(A2*(~A5)*A6*A1*A4*A3)+(A2*(~A5)*A6*A1*(~A4)*(~A3))+(A2*(~A5)*A6*(~A1)*A4*(~A3))+(A2*(~A5)*A6*(~A1)*(~A4)*A3)+((~A2)*A6*A1*A4*A3)+((~A2)*A6*A1*(~A4)*(~A3))+((~A2)*A6*(~A1)*A4*(~A3))+((~A2)*A6*(~A1)*(~A4)*A3) , 
+NAME: SLICE_X55Y9/B6LUT, 
+TYPE: LUT6, 
+
+SLICE_X54Y8/D6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A3*(~A5)*(~A6)*(~A2))+((~A3)*A5)+((~A3)*(~A5)*A6)+((~A3)*(~A5)*(~A6)*A2) , 
+NAME: SLICE_X54Y8/D6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y8/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A2*A4*(~A5))+(A2*(~A4)*A5)+((~A2)*A4*A5)+((~A2)*(~A4)*(~A5)) , 
+NAME: SLICE_X54Y8/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y8/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A1*A6)+((~A1)*(~A6)) , 
+NAME: SLICE_X54Y8/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y8/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A5*(~A4))+((~A5)*A4)) , 
+NAME: SLICE_X54Y8/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X55Y10/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A2*A1*A4*A3)+(A2*A1*(~A4)*(~A3))+(A2*(~A1)*A4*(~A3))+(A2*(~A1)*(~A4)*A3)+((~A2)*A1*A4*(~A3))+((~A2)*A1*(~A4)*A3)+((~A2)*(~A1)*A4*A3)+((~A2)*(~A1)*(~A4)*(~A3))) , 
+NAME: SLICE_X55Y10/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X55Y10/A5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A2*A5*A1*A4*A3)+(A2*A5*A1*(~A4)*(~A3))+(A2*A5*(~A1)*A4*(~A3))+(A2*A5*(~A1)*(~A4)*A3)+(A2*(~A5)*A1*A4*(~A3))+(A2*(~A5)*A1*(~A4)*A3)+(A2*(~A5)*(~A1)*A4*A3)+(A2*(~A5)*(~A1)*(~A4)*(~A3))+((~A2)*A5) , 
+NAME: SLICE_X55Y10/A5LUT, 
+TYPE: LUT5, 
+
+SLICE_X55Y10/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6*A3*A2)+(A6*(~A3)*A2*A1*A5*A4)+(A6*(~A3)*A2*A1*(~A5)*(~A4))+(A6*(~A3)*A2*(~A1)*A5*(~A4))+(A6*(~A3)*A2*(~A1)*(~A5)*A4)+((~A6)*A2*A1*A5*A4)+((~A6)*A2*A1*(~A5)*(~A4))+((~A6)*A2*(~A1)*A5*(~A4))+((~A6)*A2*(~A1)*(~A5)*A4) , 
+NAME: SLICE_X55Y10/B6LUT, 
+TYPE: LUT6, 
+
+SLICE_X54Y9/D6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A4*(~A1)*(~A6)*(~A2))+((~A4)*A1)+((~A4)*(~A1)*A6)+((~A4)*(~A1)*(~A6)*A2) , 
+NAME: SLICE_X54Y9/D6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y9/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A2*A6*(~A1))+(A2*(~A6)*A1)+((~A2)*A6*A1)+((~A2)*(~A6)*(~A1)) , 
+NAME: SLICE_X54Y9/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y9/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A5*A6)+((~A5)*(~A6)) , 
+NAME: SLICE_X54Y9/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X54Y9/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6*(~A3))+((~A6)*A3) , 
+NAME: SLICE_X54Y9/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X52Y11/A5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A3*A4*A1*A2)+(A3*A4*(~A1)*(~A2))+(A3*(~A4)*A1*(~A2))+(A3*(~A4)*(~A1)*A2)+((~A3)*A4*A1*(~A2))+((~A3)*A4*(~A1)*A2)+((~A3)*(~A4)*A1*A2)+((~A3)*(~A4)*(~A1)*(~A2)) , 
+NAME: SLICE_X52Y11/A5LUT, 
+TYPE: LUT5, 
+
+SLICE_X54Y8/AFF - 
+CLASS: bel, 
+NAME: SLICE_X54Y8/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X52Y11/AFF - 
+CLASS: bel, 
+NAME: SLICE_X52Y11/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X53Y11/AFF - 
+CLASS: bel, 
+NAME: SLICE_X53Y11/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X54Y10/CARRY4 - 
+CLASS: bel, 
+NAME: SLICE_X54Y10/CARRY4, 
+TYPE: CARRY4, 
+
+SLICE_X54Y11/AFF - 
+CLASS: bel, 
+NAME: SLICE_X54Y11/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X56Y11/AFF - 
+CLASS: bel, 
+NAME: SLICE_X56Y11/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y11/AFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y11/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y11/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X55Y11/A5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X54Y11/CARRY4 - 
+CLASS: bel, 
+NAME: SLICE_X54Y11/CARRY4, 
+TYPE: CARRY4, 
+
+SLICE_X55Y9/AFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y9/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y9/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X55Y9/A5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X55Y9/BFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y9/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X54Y8/CARRY4 - 
+CLASS: bel, 
+NAME: SLICE_X54Y8/CARRY4, 
+TYPE: CARRY4, 
+
+SLICE_X54Y9/AFF - 
+CLASS: bel, 
+NAME: SLICE_X54Y9/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y10/AFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y10/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X55Y10/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X55Y10/A5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X55Y10/BFF - 
+CLASS: bel, 
+NAME: SLICE_X55Y10/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X54Y9/CARRY4 - 
+CLASS: bel, 
+NAME: SLICE_X54Y9/CARRY4, 
+TYPE: CARRY4, 
+
+SLICE_X54Y10/AFF - 
+CLASS: bel, 
+NAME: SLICE_X54Y10/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X52Y11/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X52Y11/A5FF, 
+TYPE: FF_INIT, 
+

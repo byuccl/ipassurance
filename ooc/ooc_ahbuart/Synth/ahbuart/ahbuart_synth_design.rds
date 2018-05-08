@@ -1,0 +1,554 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top ahbuart -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16322 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1050.672 ; gain = 165.590 ; free physical = 6198 ; free virtual = 32979
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ahbuart' [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/ahbuart.vhd:59]
+	Parameter hindex bound to: 4 - type: integer 
+	Parameter pindex bound to: 4 - type: integer 
+	Parameter paddr bound to: 7 - type: integer 
+	Parameter pmask bound to: 4095 - type: integer 
+	Parameter hindex bound to: 4 - type: integer 
+	Parameter hirq bound to: 0 - type: integer 
+	Parameter venid bound to: 1 - type: integer 
+	Parameter devid bound to: 7 - type: integer 
+	Parameter version bound to: 0 - type: integer 
+	Parameter chprot bound to: 3 - type: integer 
+	Parameter incaddr bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'ahbmst' declared at '/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/grlib/amba/ahbmst.vhd:36' bound to instance 'ahbmst0' of component 'ahbmst' [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/ahbuart.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'ahbmst' [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/grlib/amba/ahbmst.vhd:55]
+	Parameter hindex bound to: 4 - type: integer 
+	Parameter hirq bound to: 0 - type: integer 
+	Parameter venid bound to: 1 - type: integer 
+	Parameter devid bound to: 7 - type: integer 
+	Parameter version bound to: 0 - type: integer 
+	Parameter chprot bound to: 3 - type: integer 
+	Parameter incaddr bound to: 0 - type: integer 
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+INFO: [Synth 8-256] done synthesizing module 'ahbmst' (1#1) [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/grlib/amba/ahbmst.vhd:55]
+	Parameter pindex bound to: 4 - type: integer 
+	Parameter paddr bound to: 7 - type: integer 
+	Parameter pmask bound to: 4095 - type: integer 
+INFO: [Synth 8-3491] module 'dcom_uart' declared at '/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/dcom_uart.vhd:42' bound to instance 'dcom_uart0' of component 'dcom_uart' [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/ahbuart.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'dcom_uart' [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/dcom_uart.vhd:60]
+	Parameter pindex bound to: 4 - type: integer 
+	Parameter paddr bound to: 7 - type: integer 
+	Parameter pmask bound to: 4095 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/dcom_uart.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'dcom_uart' (2#1) [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/dcom_uart.vhd:60]
+INFO: [Synth 8-3491] module 'dcom' declared at '/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/dcom.vhd:38' bound to instance 'dcom0' of component 'dcom' [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/ahbuart.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'dcom' [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/dcom.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'dcom' (3#1) [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/dcom.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'ahbuart' (4#1) [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/ahbuart.vhd:59]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[start]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[retry]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[mexc]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[haddr][9]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[haddr][8]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[haddr][7]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[haddr][6]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[haddr][5]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[haddr][4]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[haddr][3]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[haddr][2]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[haddr][1]
+WARNING: [Synth 8-3331] design dcom has unconnected port dmao[haddr][0]
+WARNING: [Synth 8-3331] design dcom has unconnected port uarto[tsempty]
+WARNING: [Synth 8-3331] design dcom has unconnected port uarto[enable]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][0]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][1]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][2]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][3]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][4]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][5]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][6]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][7]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][8]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][9]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][10]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][11]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][12]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][13]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][14]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hgrant][15]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hready]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hresp][1]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hresp][0]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][31]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][30]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][29]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][28]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][27]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][26]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][25]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][24]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][23]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][22]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][21]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][20]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][19]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][18]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][17]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][16]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][15]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][14]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][13]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][12]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][11]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][10]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][9]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][8]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][7]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][6]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][5]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][4]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][3]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][2]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][1]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hrdata][0]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][31]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][30]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][29]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][28]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][27]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][26]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][25]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][24]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][23]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][22]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][21]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][20]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][19]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][18]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][17]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][16]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][15]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][14]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][13]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][12]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][11]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][10]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][9]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][8]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][7]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][6]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][5]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][4]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][3]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][2]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][1]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[hirq][0]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[testen]
+WARNING: [Synth 8-3331] design dcom has unconnected port ahbi[testrst]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.109 ; gain = 239.027 ; free physical = 6122 ; free virtual = 32904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.109 ; gain = 239.027 ; free physical = 6122 ; free virtual = 32904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1132.113 ; gain = 247.031 ; free physical = 6122 ; free virtual = 32904
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-5544] ROM "ready" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "retry" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mexc" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_ahbuart/Sources/hdl/lib/gaisler/uart/dcom_uart.vhd:128]
+INFO: [Synth 8-5544] ROM "v[rxen]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[txstate]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'r_reg[state]' in module 'dcom'
+INFO: [Synth 8-5544] ROM "v[state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                   addr1 |                              001 |                              001
+                  write1 |                              010 |                              100
+                  write2 |                              011 |                              101
+                   read1 |                              100 |                              010
+                   read2 |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[state]' using encoding 'sequential' in module 'dcom'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1148.129 ; gain = 263.047 ; free physical = 6108 ; free virtual = 32890
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               18 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 3     
+	   2 Input     30 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 12    
+	   4 Input     18 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   6 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 56    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 22    
+	   6 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ahbmst 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+Module dcom_uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 12    
+	   4 Input     18 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 53    
+	   4 Input      1 Bit        Muxes := 22    
+Module dcom 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 3     
+	   2 Input     30 Bit        Muxes := 2     
+	   6 Input      6 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   6 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1191.129 ; gain = 306.047 ; free physical = 6062 ; free virtual = 32845
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "dcom_uart0/v[txstate]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design ahbuart has port uarto[rtsn] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][31] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][30] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][29] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][28] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][27] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][26] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][25] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][24] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][23] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][22] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][21] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][20] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][19] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[scaler][18] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port uarto[txen] driven by constant 1
+WARNING: [Synth 8-3917] design ahbuart has port uarto[flow] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][31] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][30] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][29] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][28] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][27] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][26] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][25] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][24] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][23] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][22] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][21] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][20] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][19] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[prdata][18] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][31] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][30] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][29] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][28] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][27] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][26] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][25] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][24] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][23] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][22] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][21] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][20] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][19] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][18] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][17] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][16] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][15] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][14] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][13] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][12] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][11] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][10] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][9] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][8] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][7] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][6] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][5] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][4] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][3] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][2] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][1] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pirq][0] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][31] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][30] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][29] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][28] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][27] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][26] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][25] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][24] driven by constant 1
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][23] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][22] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][21] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][20] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][19] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][18] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][17] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][16] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][15] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][14] driven by constant 1
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][13] driven by constant 1
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][12] driven by constant 1
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][11] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][10] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][9] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][8] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][7] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][6] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][5] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][4] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][3] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][2] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][1] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][0][0] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][1][31] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][1][30] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][1][29] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][1][28] driven by constant 0
+WARNING: [Synth 8-3917] design ahbuart has port apbo[pconfig][1][27] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1199.137 ; gain = 314.055 ; free physical = 6057 ; free virtual = 32840
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1199.137 ; gain = 314.055 ; free physical = 6057 ; free virtual = 32840
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1227.176 ; gain = 342.094 ; free physical = 6029 ; free virtual = 32812
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1227.176 ; gain = 342.094 ; free physical = 6029 ; free virtual = 32812
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1227.176 ; gain = 342.094 ; free physical = 6029 ; free virtual = 32812
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1228.184 ; gain = 343.102 ; free physical = 6028 ; free virtual = 32811
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1228.184 ; gain = 343.102 ; free physical = 6028 ; free virtual = 32811
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1228.184 ; gain = 343.102 ; free physical = 6028 ; free virtual = 32811
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1228.184 ; gain = 343.102 ; free physical = 6027 ; free virtual = 32810
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1228.184 ; gain = 343.102 ; free physical = 6027 ; free virtual = 32810
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1228.184 ; gain = 343.102 ; free physical = 6027 ; free virtual = 32810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    17|
+|2     |LUT1   |    30|
+|3     |LUT2   |    23|
+|4     |LUT3   |    36|
+|5     |LUT4   |    86|
+|6     |LUT5   |    65|
+|7     |LUT6   |   107|
+|8     |MUXF7  |     1|
+|9     |FDRE   |   132|
+|10    |FDSE   |    47|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   544|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1228.184 ; gain = 343.102 ; free physical = 6027 ; free virtual = 32810
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 852 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1228.184 ; gain = 248.508 ; free physical = 6027 ; free virtual = 32810
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1228.191 ; gain = 343.109 ; free physical = 6027 ; free virtual = 32810
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 201 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1388.055 ; gain = 420.965 ; free physical = 5964 ; free virtual = 32747

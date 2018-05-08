@@ -1,0 +1,942 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top fm_3d_core -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7107 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1051.215 ; gain = 166.137 ; free physical = 7207 ; free virtual = 31662
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fm_3d_core' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_core.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_sys' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_sys.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_3d_fcnv' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_fcnv.v:43]
+INFO: [Synth 8-256] done synthesizing module 'fm_3d_fcnv' (1#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_fcnv.v:43]
+INFO: [Synth 8-256] done synthesizing module 'fm_sys' (2#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_sys.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_geo' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_geo_mem' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_mem.v:43]
+	Parameter P_BURST_MODE bound to: 0 - type: integer 
+	Parameter P_IDLE bound to: 0 - type: integer 
+	Parameter P_REQ bound to: 1 - type: integer 
+	Parameter P_RD_X bound to: 2 - type: integer 
+	Parameter P_RD_Y bound to: 3 - type: integer 
+	Parameter P_RD_Z bound to: 4 - type: integer 
+	Parameter P_RD_W bound to: 5 - type: integer 
+	Parameter P_ACK_WAIT bound to: 6 - type: integer 
+	Parameter P_DONE bound to: 7 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_mem.v:197]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_mem.v:240]
+INFO: [Synth 8-256] done synthesizing module 'fm_geo_mem' (3#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_mem.v:43]
+WARNING: [Synth 8-350] instance 'u_geo_mem' of module 'fm_geo_mem' requires 19 connections, but only 18 given [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo.v:190]
+INFO: [Synth 8-638] synthesizing module 'fm_geo_matrix' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_matrix.v:43]
+	Parameter P_IDLE bound to: 0 - type: integer 
+	Parameter P_ROW1_IN bound to: 1 - type: integer 
+	Parameter P_ROW2_IN bound to: 2 - type: integer 
+	Parameter P_ROW3_IN bound to: 3 - type: integer 
+	Parameter P_WAIT bound to: 4 - type: integer 
+	Parameter P_DONE bound to: 5 - type: integer 
+	Parameter P_FMUL_LAT bound to: 3 - type: integer 
+	Parameter P_FADD_LAT bound to: 3 - type: integer 
+	Parameter P_ROW_LAT bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_matrix.v:457]
+INFO: [Synth 8-638] synthesizing module 'fm_3d_fmul' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_fmul.v:42]
+INFO: [Synth 8-638] synthesizing module 'fm_3d_norm' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_norm.v:42]
+INFO: [Synth 8-256] done synthesizing module 'fm_3d_norm' (4#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_norm.v:42]
+INFO: [Synth 8-256] done synthesizing module 'fm_3d_fmul' (5#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_fmul.v:42]
+INFO: [Synth 8-638] synthesizing module 'fm_3d_fadd' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_fadd.v:43]
+INFO: [Synth 8-256] done synthesizing module 'fm_3d_fadd' (6#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_fadd.v:43]
+INFO: [Synth 8-256] done synthesizing module 'fm_geo_matrix' (7#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_matrix.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_geo_clip' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_clip.v:43]
+	Parameter P_IDLE bound to: 0 - type: integer 
+	Parameter P_X_P1_PLANE bound to: 1 - type: integer 
+	Parameter P_Y_M1_PLANE bound to: 2 - type: integer 
+	Parameter P_Y_P1_PLANE bound to: 3 - type: integer 
+	Parameter P_Z_M1_PLANE bound to: 4 - type: integer 
+	Parameter P_Z_P1_PLANE bound to: 5 - type: integer 
+	Parameter P_WADD0 bound to: 6 - type: integer 
+	Parameter P_WADD1 bound to: 7 - type: integer 
+	Parameter P_WADD2 bound to: 8 - type: integer 
+	Parameter P_DONE bound to: 9 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_clip.v:170]
+INFO: [Synth 8-256] done synthesizing module 'fm_geo_clip' (8#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_clip.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_geo_persdiv' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_persdiv.v:44]
+	Parameter P_IDLE bound to: 0 - type: integer 
+	Parameter P_WRECIP0 bound to: 1 - type: integer 
+	Parameter P_X_IN bound to: 2 - type: integer 
+	Parameter P_Y_IN bound to: 3 - type: integer 
+	Parameter P_WMUL0 bound to: 4 - type: integer 
+	Parameter P_WMUL1 bound to: 5 - type: integer 
+	Parameter P_WMUL2 bound to: 6 - type: integer 
+	Parameter P_DONE bound to: 7 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_persdiv.v:133]
+INFO: [Synth 8-638] synthesizing module 'fm_3d_frcp' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_frcp.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_3d_frcp_rom' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_frcp_rom.v:42]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_frcp_rom.v:67]
+INFO: [Synth 8-256] done synthesizing module 'fm_3d_frcp_rom' (9#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_frcp_rom.v:42]
+INFO: [Synth 8-256] done synthesizing module 'fm_3d_frcp' (10#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_frcp.v:43]
+INFO: [Synth 8-256] done synthesizing module 'fm_geo_persdiv' (11#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_persdiv.v:44]
+INFO: [Synth 8-638] synthesizing module 'fm_geo_viewport' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_viewport.v:53]
+	Parameter P_IDLE bound to: 0 - type: integer 
+	Parameter P_Y_IN bound to: 1 - type: integer 
+	Parameter P_WADD2 bound to: 2 - type: integer 
+	Parameter P_WMUL0 bound to: 3 - type: integer 
+	Parameter P_WMUL1 bound to: 4 - type: integer 
+	Parameter P_WMUL2 bound to: 5 - type: integer 
+	Parameter P_WMUL3 bound to: 6 - type: integer 
+	Parameter P_WAIT bound to: 7 - type: integer 
+	Parameter P_DONE bound to: 8 - type: integer 
+	Parameter P_1F bound to: 22'b0011111000000000000000 
+	Parameter P_SCREEN_WIDTH bound to: 22'b0110001010000000000000 
+	Parameter P_SCREEN_HEIGHT bound to: 22'b0101111111000000000000 
+	Parameter P_SCREEN_WIDTH_HALF bound to: 22'b0101111010000000000000 
+	Parameter P_SCREEN_HEIGHT_HALF bound to: 22'b0101101111000000000000 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_viewport.v:143]
+INFO: [Synth 8-256] done synthesizing module 'fm_geo_viewport' (12#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_viewport.v:53]
+INFO: [Synth 8-638] synthesizing module 'fm_geo_tri' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_tri.v:47]
+	Parameter P_V0_X_IN bound to: 0 - type: integer 
+	Parameter P_V0_Y_IN bound to: 1 - type: integer 
+	Parameter P_V1_X_IN bound to: 2 - type: integer 
+	Parameter P_V1_Y_IN bound to: 3 - type: integer 
+	Parameter P_V2_X_IN bound to: 4 - type: integer 
+	Parameter P_V2_Y_IN bound to: 5 - type: integer 
+	Parameter P_DONE bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_tri.v:174]
+INFO: [Synth 8-638] synthesizing module 'fm_3d_f22_to_i' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_f22_to_i.v:42]
+INFO: [Synth 8-256] done synthesizing module 'fm_3d_f22_to_i' (13#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_f22_to_i.v:42]
+INFO: [Synth 8-256] done synthesizing module 'fm_geo_tri' (14#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_tri.v:47]
+INFO: [Synth 8-638] synthesizing module 'fm_geo_cull' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_cull.v:43]
+	Parameter P_IDLE bound to: 0 - type: integer 
+	Parameter P_SUM1 bound to: 1 - type: integer 
+	Parameter P_SUM2 bound to: 2 - type: integer 
+	Parameter P_OUT bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fm_geo_cull' (15#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo_cull.v:43]
+INFO: [Synth 8-256] done synthesizing module 'fm_geo' (16#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_geo.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_ras' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_ras_state' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_state.v:45]
+	Parameter P_IDLE bound to: 0 - type: integer 
+	Parameter P_LINE_0 bound to: 1 - type: integer 
+	Parameter P_LINE_1 bound to: 2 - type: integer 
+	Parameter P_LINE_2 bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_state.v:144]
+INFO: [Synth 8-256] done synthesizing module 'fm_ras_state' (17#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_state.v:45]
+INFO: [Synth 8-638] synthesizing module 'fm_ras_line' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_line.v:43]
+	Parameter P_IDLE bound to: 0 - type: integer 
+	Parameter P_OUT bound to: 1 - type: integer 
+	Parameter P_PROC bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_line.v:144]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_line.v:178]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_line.v:162]
+INFO: [Synth 8-256] done synthesizing module 'fm_ras_line' (18#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_line.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_ras_mem' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_mem.v:44]
+	Parameter P_IDLE bound to: 0 - type: integer 
+	Parameter P_REQ bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fm_ras_mem' (19#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_mem.v:44]
+INFO: [Synth 8-256] done synthesizing module 'fm_ras' (20#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras.v:43]
+INFO: [Synth 8-638] synthesizing module 'fm_mem_arb' [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_mem_arb.v:43]
+	Parameter P_IDLE bound to: 0 - type: integer 
+	Parameter P_WAIT bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fm_mem_arb' (21#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_mem_arb.v:43]
+INFO: [Synth 8-256] done synthesizing module 'fm_3d_core' (22#1) [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_core.v:43]
+WARNING: [Synth 8-3331] design fm_mem_arb has unconnected port i_adrs_geo[1]
+WARNING: [Synth 8-3331] design fm_mem_arb has unconnected port i_adrs_geo[0]
+WARNING: [Synth 8-3331] design fm_mem_arb has unconnected port i_adrs_ras[1]
+WARNING: [Synth 8-3331] design fm_mem_arb has unconnected port i_adrs_ras[0]
+WARNING: [Synth 8-3331] design fm_ras_mem has unconnected port i_scr_w[1]
+WARNING: [Synth 8-3331] design fm_ras_mem has unconnected port i_scr_w[0]
+WARNING: [Synth 8-3331] design fm_ras_mem has unconnected port i_scr_h_m1[15]
+WARNING: [Synth 8-3331] design fm_ras_mem has unconnected port i_scr_h_m1[14]
+WARNING: [Synth 8-3331] design fm_ras_mem has unconnected port i_scr_h_m1[13]
+WARNING: [Synth 8-3331] design fm_ras_mem has unconnected port i_scr_h_m1[12]
+WARNING: [Synth 8-3331] design fm_3d_frcp has unconnected port i_a[15]
+WARNING: [Synth 8-3331] design fm_3d_fcnv has unconnected port i_f32[6]
+WARNING: [Synth 8-3331] design fm_3d_fcnv has unconnected port i_f32[5]
+WARNING: [Synth 8-3331] design fm_3d_fcnv has unconnected port i_f32[4]
+WARNING: [Synth 8-3331] design fm_3d_fcnv has unconnected port i_f32[3]
+WARNING: [Synth 8-3331] design fm_3d_fcnv has unconnected port i_f32[2]
+WARNING: [Synth 8-3331] design fm_3d_fcnv has unconnected port i_f32[1]
+WARNING: [Synth 8-3331] design fm_3d_fcnv has unconnected port i_f32[0]
+WARNING: [Synth 8-3331] design fm_geo_mem has unconnected port i_strr_m
+WARNING: [Synth 8-3331] design fm_sys has unconnected port i_wb_adr[7]
+WARNING: [Synth 8-3331] design fm_sys has unconnected port i_debug
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1094.652 ; gain = 209.574 ; free physical = 7161 ; free virtual = 31616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1094.652 ; gain = 209.574 ; free physical = 7161 ; free virtual = 31616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1102.656 ; gain = 217.578 ; free physical = 7161 ; free virtual = 31616
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'fm_geo_mem'
+INFO: [Synth 8-5544] ROM "r_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_norm.v:158]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_fadd.v:125]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_3d_fadd.v:183]
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'fm_geo_matrix'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'fm_geo_clip'
+INFO: [Synth 8-5544] ROM "r_bc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_bc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_bc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_bc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_bc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_bc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'fm_geo_persdiv'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'fm_geo_viewport'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'fm_geo_tri'
+INFO: [Synth 8-5544] ROM "r_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'fm_ras_state'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_line.v:114]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_line.v:115]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_line.v:178]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_line.v:181]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_fm_3d_core/Sources/hdl/fm_3d_core/fm_ras_line.v:185]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                           000001 |                              000
+                  P_RD_X |                           000010 |                              010
+                  P_RD_Y |                           000100 |                              011
+                  P_RD_Z |                           001000 |                              100
+              P_ACK_WAIT |                           010000 |                              110
+                  P_DONE |                           100000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'one-hot' in module 'fm_geo_mem'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                           000001 |                              000
+               P_ROW1_IN |                           000010 |                              001
+               P_ROW2_IN |                           000100 |                              010
+               P_ROW3_IN |                           001000 |                              011
+                  P_WAIT |                           010000 |                              100
+                  P_DONE |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'one-hot' in module 'fm_geo_matrix'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                       0000000001 |                             0000
+            P_X_P1_PLANE |                       0000000010 |                             0001
+            P_Y_M1_PLANE |                       0000000100 |                             0010
+            P_Y_P1_PLANE |                       0000001000 |                             0011
+            P_Z_M1_PLANE |                       0000010000 |                             0100
+            P_Z_P1_PLANE |                       0000100000 |                             0101
+                 P_WADD0 |                       0001000000 |                             0110
+                 P_WADD1 |                       0010000000 |                             0111
+                 P_WADD2 |                       0100000000 |                             1000
+                  P_DONE |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'one-hot' in module 'fm_geo_clip'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                              000 |                             0000
+               P_WRECIP0 |                              001 |                             0001
+                  P_X_IN |                              010 |                             0010
+                  P_Y_IN |                              011 |                             0011
+                 P_WMUL0 |                              100 |                             0100
+                 P_WMUL1 |                              101 |                             0101
+                 P_WMUL2 |                              110 |                             0110
+                  P_DONE |                              111 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'fm_geo_persdiv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                             0000 |                             0000
+                  P_Y_IN |                             0001 |                             0001
+                 P_WADD2 |                             0010 |                             0010
+                 P_WMUL0 |                             0011 |                             0011
+                 P_WMUL1 |                             0100 |                             0100
+                 P_WMUL2 |                             0101 |                             0101
+                 P_WMUL3 |                             0110 |                             0110
+                  P_WAIT |                             0111 |                             0111
+                  P_DONE |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'fm_geo_viewport'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               P_V0_X_IN |                          0000001 |                              000
+               P_V0_Y_IN |                          0000010 |                              001
+               P_V1_X_IN |                          0000100 |                              010
+               P_V1_Y_IN |                          0001000 |                              011
+               P_V2_X_IN |                          0010000 |                              100
+               P_V2_Y_IN |                          0100000 |                              101
+                  P_DONE |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'one-hot' in module 'fm_geo_tri'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                               00 |                              000
+                P_LINE_0 |                               01 |                              001
+                P_LINE_1 |                               10 |                              010
+                P_LINE_2 |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'fm_ras_state'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1154.766 ; gain = 269.688 ; free physical = 7110 ; free virtual = 31566
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 6     
+	   3 Input     17 Bit       Adders := 5     
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 4     
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 18    
+	   2 Input      6 Bit       Adders := 7     
+	   3 Input      5 Bit       Adders := 5     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 16    
++---Registers : 
+	               32 Bit    Registers := 2     
+	               30 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               22 Bit    Registers := 51    
+	               18 Bit    Registers := 6     
+	               17 Bit    Registers := 11    
+	               16 Bit    Registers := 15    
+	               12 Bit    Registers := 27    
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 23    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 42    
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	  28 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 3     
+	   6 Input     30 Bit        Muxes := 1     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 31    
+	   4 Input     22 Bit        Muxes := 4     
+	   6 Input     22 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 40    
+	   6 Input     16 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 8     
+	   2 Input     12 Bit        Muxes := 21    
+	   4 Input     12 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   9 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 12    
+	   2 Input      5 Bit        Muxes := 12    
+	  15 Input      4 Bit        Muxes := 12    
+	   9 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	   6 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 17    
+	  10 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fm_3d_fcnv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module fm_sys 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               30 Bit    Registers := 2     
+	               22 Bit    Registers := 18    
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  28 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 2     
+	   2 Input     22 Bit        Muxes := 18    
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module fm_geo_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               22 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     30 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   9 Input      6 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+Module fm_3d_norm 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+Module fm_3d_fmul 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module fm_3d_fadd 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module fm_geo_matrix 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 8     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     22 Bit        Muxes := 4     
+	   2 Input     22 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module fm_geo_clip 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   6 Input     22 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+Module fm_3d_frcp_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module fm_3d_frcp 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module fm_geo_persdiv 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 5     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+Module fm_geo_viewport 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module fm_3d_f22_to_i 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module fm_geo_tri 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 1     
+	               12 Bit    Registers := 6     
+	                6 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module fm_geo_cull 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module fm_geo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fm_ras_state 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 6     
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 1     
+Module fm_ras_line 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 3     
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 8     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 20    
+	   4 Input     12 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 6     
+	   7 Input      1 Bit        Muxes := 3     
+Module fm_ras_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module fm_mem_arb 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.766 ; gain = 311.688 ; free physical = 7071 ; free virtual = 31526
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP w_cf_tmp, operation Mode is: A*B.
+DSP Report: operator w_cf_tmp is absorbed into DSP w_cf_tmp.
+DSP Report: Generating DSP w_cf_tmp, operation Mode is: A*B.
+DSP Report: operator w_cf_tmp is absorbed into DSP w_cf_tmp.
+DSP Report: Generating DSP w_cf_tmp, operation Mode is: A*B.
+DSP Report: operator w_cf_tmp is absorbed into DSP w_cf_tmp.
+DSP Report: Generating DSP w_cf_tmp, operation Mode is: A*B.
+DSP Report: operator w_cf_tmp is absorbed into DSP w_cf_tmp.
+DSP Report: Generating DSP u_frcp/w_rom_correct, operation Mode is: A2*B2.
+DSP Report: register u_frcp/r_a_frac_l_reg is absorbed into DSP u_frcp/w_rom_correct.
+DSP Report: register u_frcp/frcp_rom/r_c_reg is absorbed into DSP u_frcp/w_rom_correct.
+DSP Report: operator u_frcp/w_rom_correct is absorbed into DSP u_frcp/w_rom_correct.
+DSP Report: Generating DSP u_fmul/w_cf_tmp, operation Mode is: A*B.
+DSP Report: operator u_fmul/w_cf_tmp is absorbed into DSP u_fmul/w_cf_tmp.
+DSP Report: Generating DSP u_fmul/w_cf_tmp, operation Mode is: A2*B.
+DSP Report: register u_fadd/r_c_reg is absorbed into DSP u_fmul/w_cf_tmp.
+DSP Report: operator u_fmul/w_cf_tmp is absorbed into DSP u_fmul/w_cf_tmp.
+DSP Report: Generating DSP f_multi_return0, operation Mode is: A*B.
+DSP Report: operator f_multi_return0 is absorbed into DSP f_multi_return0.
+DSP Report: Generating DSP f_multi_return, operation Mode is: C+A*B+1.
+DSP Report: operator f_multi_return is absorbed into DSP f_multi_return.
+DSP Report: operator f_multi_return0 is absorbed into DSP f_multi_return.
+DSP Report: Generating DSP u_ras_mem/r_adrs_m_reg, operation Mode is: (C'+A*B)'.
+DSP Report: register C is absorbed into DSP u_ras_mem/r_adrs_m_reg.
+DSP Report: register u_ras_mem/r_adrs_m_reg is absorbed into DSP u_ras_mem/r_adrs_m_reg.
+DSP Report: operator u_ras_mem/w_adrs is absorbed into DSP u_ras_mem/r_adrs_m_reg.
+DSP Report: operator u_ras_mem/w_adrs0 is absorbed into DSP u_ras_mem/r_adrs_m_reg.
+WARNING: [Synth 8-3331] design fm_mem_arb has unconnected port i_adrs_geo[1]
+WARNING: [Synth 8-3331] design fm_mem_arb has unconnected port i_adrs_geo[0]
+WARNING: [Synth 8-3331] design fm_mem_arb has unconnected port i_adrs_ras[1]
+WARNING: [Synth 8-3331] design fm_mem_arb has unconnected port i_adrs_ras[0]
+WARNING: [Synth 8-3331] design fm_ras has unconnected port i_scr_w[1]
+WARNING: [Synth 8-3331] design fm_ras has unconnected port i_scr_w[0]
+WARNING: [Synth 8-3331] design fm_geo_persdiv has unconnected port i_vw[15]
+WARNING: [Synth 8-3331] design fm_geo_mem has unconnected port i_strr_m
+WARNING: [Synth 8-3331] design fm_geo_mem has unconnected port i_dbr_m[6]
+WARNING: [Synth 8-3331] design fm_geo_mem has unconnected port i_dbr_m[5]
+WARNING: [Synth 8-3331] design fm_geo_mem has unconnected port i_dbr_m[4]
+WARNING: [Synth 8-3331] design fm_geo_mem has unconnected port i_dbr_m[3]
+WARNING: [Synth 8-3331] design fm_geo_mem has unconnected port i_dbr_m[2]
+WARNING: [Synth 8-3331] design fm_geo_mem has unconnected port i_dbr_m[1]
+WARNING: [Synth 8-3331] design fm_geo_mem has unconnected port i_dbr_m[0]
+WARNING: [Synth 8-3331] design fm_sys has unconnected port i_wb_adr[7]
+WARNING: [Synth 8-3331] design fm_sys has unconnected port i_debug
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1251.836 ; gain = 366.758 ; free physical = 7020 ; free virtual = 31475
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1251.836 ; gain = 366.758 ; free physical = 7020 ; free virtual = 31475
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+---------------------+---------------+----------------+
+|Module Name    | RTL Object          | Depth x Width | Implemented As | 
++---------------+---------------------+---------------+----------------+
+|fm_3d_frcp_rom | r_c_reg             | 128x32        | Block RAM      | 
+|fm_geo_persdiv | u_frcp/frcp_rom/r_c | 128x32        | LUT            | 
++---------------+---------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fm_3d_fmul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fm_3d_fmul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fm_3d_fmul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fm_3d_fmul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fm_3d_frcp      | A2*B2       | 16     | 8      | -      | -      | 24     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fm_3d_fmul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fm_geo_viewport | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|fm_geo_cull     | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fm_geo_cull     | C+A*B+1     | 12     | 12     | 24     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|fm_ras          | (C'+A*B)'   | 14     | 12     | 10     | -      | 23     | 0    | 0    | 1    | -    | -     | 0    | 1    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[0]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[1]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[2]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[3]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[4]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[5]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[6]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[7]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[8]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[9]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[10]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[11]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[12]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[13]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[14]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[15]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[21]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_geo/u_geo_matrix/\r_vw_in_reg[20] )
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[18]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[19]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_geo/u_geo_matrix/r_vw_in_reg[17]' (FDE) to 'u_geo/u_geo_matrix/r_vw_in_reg[16]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_geo/u_geo_matrix/\r_vw_in_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_ras/u_ras_line/r_e2_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[21]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[20]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[19]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[18]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[17]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[16]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[15]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[14]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[13]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[12]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[11]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[10]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[9]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[8]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[7]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[6]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[5]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[4]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[3]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[2]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[1]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_vw_in_reg[0]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_lat_cnt_reg[11]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_lat_cnt_reg[10]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (r_lat_cnt_reg[9]) is unused and will be removed from module fm_geo_matrix.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[20]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[19]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[18]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[17]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[16]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[15]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[14]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[13]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[12]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[11]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[10]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[9]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[8]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[7]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[6]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[5]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[4]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[3]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[2]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[1]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[0]) is unused and will be removed from module fm_geo_clip.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[15]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[14]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[13]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[12]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[11]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[10]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[9]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[8]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[7]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[6]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[5]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[4]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[3]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[2]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[1]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_frcp/frcp_rom/r_c_reg[0]) is unused and will be removed from module fm_geo_persdiv.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[15]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[14]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[13]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[12]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[11]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[10]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[9]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[8]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[7]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[6]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[5]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[4]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[3]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[2]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[1]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (u_fadd/r_c_reg[0]) is unused and will be removed from module fm_geo_viewport.
+WARNING: [Synth 8-3332] Sequential element (r_cnt_reg[7]) is unused and will be removed from module fm_geo.
+WARNING: [Synth 8-3332] Sequential element (r_cnt_reg[6]) is unused and will be removed from module fm_geo.
+WARNING: [Synth 8-3332] Sequential element (r_cnt_reg[5]) is unused and will be removed from module fm_geo.
+WARNING: [Synth 8-3332] Sequential element (r_cnt_reg[4]) is unused and will be removed from module fm_geo.
+WARNING: [Synth 8-3332] Sequential element (r_cnt_reg[3]) is unused and will be removed from module fm_geo.
+WARNING: [Synth 8-3332] Sequential element (r_cnt_reg[2]) is unused and will be removed from module fm_geo.
+WARNING: [Synth 8-3332] Sequential element (r_cnt_reg[1]) is unused and will be removed from module fm_geo.
+WARNING: [Synth 8-3332] Sequential element (r_cnt_reg[0]) is unused and will be removed from module fm_geo.
+WARNING: [Synth 8-3332] Sequential element (u_ras/u_ras_line/r_err_reg[11]) is unused and will be removed from module fm_3d_core.
+WARNING: [Synth 8-3332] Sequential element (u_ras/u_ras_line/r_e2_reg[0]) is unused and will be removed from module fm_3d_core.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1296.141 ; gain = 411.062 ; free physical = 6963 ; free virtual = 31419
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1296.141 ; gain = 411.062 ; free physical = 6963 ; free virtual = 31419
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1296.141 ; gain = 411.062 ; free physical = 6963 ; free virtual = 31419
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1323.156 ; gain = 438.078 ; free physical = 6933 ; free virtual = 31389
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1323.156 ; gain = 438.078 ; free physical = 6933 ; free virtual = 31389
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1323.156 ; gain = 438.078 ; free physical = 6933 ; free virtual = 31389
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop u_geo/u_geo_persdiv/u_frcp/frcp_rom/r_c_reg[31] is being inverted and renamed to u_geo/u_geo_persdiv/u_frcp/frcp_rom/r_c_reg[31]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1323.156 ; gain = 438.078 ; free physical = 6938 ; free virtual = 31394
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1323.156 ; gain = 438.078 ; free physical = 6938 ; free virtual = 31394
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1323.156 ; gain = 438.078 ; free physical = 6938 ; free virtual = 31394
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   180|
+|2     |DSP48E1 |    10|
+|3     |LUT1    |   228|
+|4     |LUT2    |   268|
+|5     |LUT3    |   668|
+|6     |LUT4    |   452|
+|7     |LUT5    |   765|
+|8     |LUT6    |  1068|
+|9     |MUXF7   |    37|
+|10    |MUXF8   |     2|
+|11    |FDRE    |  2179|
+|12    |FDSE    |    37|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  5894|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1323.156 ; gain = 438.078 ; free physical = 6938 ; free virtual = 31394
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 127 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1323.156 ; gain = 346.938 ; free physical = 6938 ; free virtual = 31394
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1323.164 ; gain = 438.086 ; free physical = 6938 ; free virtual = 31394
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 190 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fm_3d_core' is not ideal for floorplanning, since the cellview 'fm_3d_core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+119 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1444.027 ; gain = 480.395 ; free physical = 6914 ; free virtual = 31370

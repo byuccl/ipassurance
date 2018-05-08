@@ -1,0 +1,2102 @@
+
+####################################################
+# Sites
+sites - DSP48_X0Y32 DSP48_X0Y33 DSP48_X0Y34 DSP48_X0Y35 RAMB18_X0Y32 RAMB18_X0Y33 RAMB18_X0Y34 RAMB18_X0Y35 RAMB36_X0Y16 RAMB36_X0Y17 SLICE_X10Y77 SLICE_X10Y78 SLICE_X10Y79 SLICE_X10Y80 SLICE_X10Y81 SLICE_X10Y82 SLICE_X10Y83 SLICE_X10Y84 SLICE_X10Y85 SLICE_X10Y86 SLICE_X10Y87 SLICE_X10Y88 SLICE_X10Y89 SLICE_X10Y90 SLICE_X10Y91 SLICE_X11Y77 SLICE_X11Y78 SLICE_X11Y79 SLICE_X11Y80 SLICE_X11Y81 SLICE_X11Y82 SLICE_X11Y83 SLICE_X11Y84 SLICE_X11Y85 SLICE_X11Y86 SLICE_X11Y87 SLICE_X11Y88 SLICE_X11Y89 SLICE_X11Y90 SLICE_X11Y91 SLICE_X12Y77 SLICE_X12Y78 SLICE_X12Y79 SLICE_X12Y80 SLICE_X12Y81 SLICE_X12Y82 SLICE_X12Y83 SLICE_X12Y84 SLICE_X12Y85 SLICE_X12Y86 SLICE_X12Y87 SLICE_X12Y88 SLICE_X12Y89 SLICE_X12Y90 SLICE_X12Y91 SLICE_X13Y77 SLICE_X13Y78 SLICE_X13Y79 SLICE_X13Y80 SLICE_X13Y81 SLICE_X13Y82 SLICE_X13Y83 SLICE_X13Y84 SLICE_X13Y85 SLICE_X13Y86 SLICE_X13Y87 SLICE_X13Y88 SLICE_X13Y89 SLICE_X13Y90 SLICE_X13Y91 SLICE_X6Y77 SLICE_X6Y78 SLICE_X6Y79 SLICE_X6Y80 SLICE_X6Y81 SLICE_X6Y82 SLICE_X6Y83 SLICE_X6Y84 SLICE_X6Y85 SLICE_X6Y86 SLICE_X6Y87 SLICE_X6Y88 SLICE_X6Y89 SLICE_X6Y90 SLICE_X6Y91 SLICE_X7Y77 SLICE_X7Y78 SLICE_X7Y79 SLICE_X7Y80 SLICE_X7Y81 SLICE_X7Y82 SLICE_X7Y83 SLICE_X7Y84 SLICE_X7Y85 SLICE_X7Y86 SLICE_X7Y87 SLICE_X7Y88 SLICE_X7Y89 SLICE_X7Y90 SLICE_X7Y91 SLICE_X8Y77 SLICE_X8Y78 SLICE_X8Y79 SLICE_X8Y80 SLICE_X8Y81 SLICE_X8Y82 SLICE_X8Y83 SLICE_X8Y84 SLICE_X8Y85 SLICE_X8Y86 SLICE_X8Y87 SLICE_X8Y88 SLICE_X8Y89 SLICE_X8Y90 SLICE_X8Y91 SLICE_X9Y77 SLICE_X9Y78 SLICE_X9Y79 SLICE_X9Y80 SLICE_X9Y81 SLICE_X9Y82 SLICE_X9Y83 SLICE_X9Y84 SLICE_X9Y85 SLICE_X9Y86 SLICE_X9Y87 SLICE_X9Y88 SLICE_X9Y89 SLICE_X9Y90 SLICE_X9Y91
+
+####################################################
+# Cells
+bit_counter[0]_i_1 - 
+nets: {p_0_in[0] bit_counter[0]_i_1/O}, {bit_counter[0] bit_counter[0]_i_1/I0}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 2'h1, 
+LOC: SLICE_X11Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT1, 
+REF_NAME: LUT1, 
+
+bit_counter[1]_i_1 - 
+nets: {p_0_in[1] bit_counter[1]_i_1/O}, {bit_counter[0] bit_counter[1]_i_1/I0}, {bit_counter[1] bit_counter[1]_i_1/I1}, 
+BEL: SLICEL.A5LUT, 
+CLASS: cell, 
+INIT: 4'h6, 
+LOC: SLICE_X11Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+bit_counter[2]_i_1 - 
+nets: {p_0_in[2] bit_counter[2]_i_1/O}, {bit_counter[2] bit_counter[2]_i_1/I0}, {bit_counter[1] bit_counter[2]_i_1/I1}, {bit_counter[0] bit_counter[2]_i_1/I2}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 8'h6A, 
+LOC: SLICE_X10Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+bit_counter[3]_i_1 - 
+nets: {p_0_in[3] bit_counter[3]_i_1/O}, {bit_counter[3] bit_counter[3]_i_1/I0}, {bit_counter[0] bit_counter[3]_i_1/I1}, {bit_counter[1] bit_counter[3]_i_1/I2}, {bit_counter[2] bit_counter[3]_i_1/I3}, 
+BEL: SLICEM.A5LUT, 
+CLASS: cell, 
+INIT: 16'h6AAA, 
+LOC: SLICE_X10Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+bit_counter[4]_i_1 - 
+nets: {p_0_in[4] bit_counter[4]_i_1/O}, {bit_counter[4] bit_counter[4]_i_1/I0}, {bit_counter[2] bit_counter[4]_i_1/I1}, {bit_counter[1] bit_counter[4]_i_1/I2}, {bit_counter[0] bit_counter[4]_i_1/I3}, {bit_counter[3] bit_counter[4]_i_1/I4}, 
+BEL: SLICEL.B5LUT, 
+CLASS: cell, 
+INIT: 32'h6AAAAAAA, 
+LOC: SLICE_X11Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+bit_counter[5]_i_1 - 
+nets: {key_exp/round_counter bit_counter[5]_i_1/O}, {data_rdy[1] bit_counter[5]_i_1/I0}, {data_rdy[0] bit_counter[5]_i_1/I1}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 4'h1, 
+LOC: SLICE_X8Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+bit_counter[5]_i_2 - 
+nets: {bit_counter[5]_i_2_n_0 bit_counter[5]_i_2/O}, {data_rdy[1] bit_counter[5]_i_2/I0}, {data_rdy[0] bit_counter[5]_i_2/I1}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 4'h8, 
+LOC: SLICE_X10Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+bit_counter[5]_i_3 - 
+nets: {p_0_in[5] bit_counter[5]_i_3/O}, {bit_counter[5] bit_counter[5]_i_3/I0}, {bit_counter[3] bit_counter[5]_i_3/I1}, {bit_counter[0] bit_counter[5]_i_3/I2}, {bit_counter[1] bit_counter[5]_i_3/I3}, {bit_counter[2] bit_counter[5]_i_3/I4}, {bit_counter[4] bit_counter[5]_i_3/I5}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 64'h6AAAAAAAAAAAAAAA, 
+LOC: SLICE_X10Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+cipher_out_INST_0 - 
+nets: {cipher_out cipher_out_INST_0/O}, {datapath/fifo_ff63 cipher_out_INST_0/I0}, {datapath/fifo_ff56 cipher_out_INST_0/I1}, {round_counter_out cipher_out_INST_0/I2}, {datapath/lut_ff63 cipher_out_INST_0/I3}, {datapath/lut_ff56 cipher_out_INST_0/I4}, {cipher_out_INST_0_i_1_n_0 cipher_out_INST_0/I5}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 64'h07F7F7F7F8080808, 
+LOC: SLICE_X8Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+cipher_out_INST_0_i_1 - 
+nets: {cipher_out_INST_0_i_1_n_0 cipher_out_INST_0_i_1/O}, {datapath/fifo_ff62 cipher_out_INST_0_i_1/I0}, {round_counter_out cipher_out_INST_0_i_1/I1}, {datapath/lut_ff62 cipher_out_INST_0_i_1/I2}, {key cipher_out_INST_0_i_1/I3}, {datapath/shifter2[0] cipher_out_INST_0_i_1/I4}, 
+BEL: SLICEL.B5LUT, 
+CLASS: cell, 
+INIT: 32'hE21D1DE2, 
+LOC: SLICE_X9Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+datapath/bit_counter_reg[0] - 
+nets: {bit_counter[0] datapath/bit_counter_reg[0]/Q}, {clk datapath/bit_counter_reg[0]/C}, {bit_counter[5]_i_2_n_0 datapath/bit_counter_reg[0]/CE}, {p_0_in[0] datapath/bit_counter_reg[0]/D}, {key_exp/round_counter datapath/bit_counter_reg[0]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X11Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/bit_counter_reg[1] - 
+nets: {bit_counter[1] datapath/bit_counter_reg[1]/Q}, {clk datapath/bit_counter_reg[1]/C}, {bit_counter[5]_i_2_n_0 datapath/bit_counter_reg[1]/CE}, {p_0_in[1] datapath/bit_counter_reg[1]/D}, {key_exp/round_counter datapath/bit_counter_reg[1]/R}, 
+BEL: SLICEL.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X11Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/bit_counter_reg[2] - 
+nets: {bit_counter[2] datapath/bit_counter_reg[2]/Q}, {clk datapath/bit_counter_reg[2]/C}, {bit_counter[5]_i_2_n_0 datapath/bit_counter_reg[2]/CE}, {p_0_in[2] datapath/bit_counter_reg[2]/D}, {key_exp/round_counter datapath/bit_counter_reg[2]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X10Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/bit_counter_reg[3] - 
+nets: {bit_counter[3] datapath/bit_counter_reg[3]/Q}, {clk datapath/bit_counter_reg[3]/C}, {bit_counter[5]_i_2_n_0 datapath/bit_counter_reg[3]/CE}, {p_0_in[3] datapath/bit_counter_reg[3]/D}, {key_exp/round_counter datapath/bit_counter_reg[3]/R}, 
+BEL: SLICEM.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X10Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/bit_counter_reg[4] - 
+nets: {bit_counter[4] datapath/bit_counter_reg[4]/Q}, {clk datapath/bit_counter_reg[4]/C}, {bit_counter[5]_i_2_n_0 datapath/bit_counter_reg[4]/CE}, {p_0_in[4] datapath/bit_counter_reg[4]/D}, {key_exp/round_counter datapath/bit_counter_reg[4]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X11Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/bit_counter_reg[5] - 
+nets: {bit_counter[5] datapath/bit_counter_reg[5]/Q}, {clk datapath/bit_counter_reg[5]/C}, {bit_counter[5]_i_2_n_0 datapath/bit_counter_reg[5]/CE}, {p_0_in[5] datapath/bit_counter_reg[5]/D}, {key_exp/round_counter datapath/bit_counter_reg[5]/R}, 
+BEL: SLICEM.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X10Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/fifo_ff56_reg - 
+nets: {datapath/fifo_ff56 datapath/fifo_ff56_reg/Q}, {clk datapath/fifo_ff56_reg/C}, {data_rdy[0] datapath/fifo_ff56_reg/CE}, {datapath/fifo_ff57_reg_srl5_n_0 datapath/fifo_ff56_reg/D}, {<const0> datapath/fifo_ff56_reg/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X10Y85, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/fifo_ff57_reg_srl5 - 
+nets: {datapath/fifo_ff57_reg_srl5_n_0 datapath/fifo_ff57_reg_srl5/Q}, {<const0> datapath/fifo_ff57_reg_srl5/A0}, {<const0> datapath/fifo_ff57_reg_srl5/A1}, {<const1> datapath/fifo_ff57_reg_srl5/A2}, {<const0> datapath/fifo_ff57_reg_srl5/A3}, {data_rdy[0] datapath/fifo_ff57_reg_srl5/CE}, {clk datapath/fifo_ff57_reg_srl5/CLK}, {datapath/fifo_ff62 datapath/fifo_ff57_reg_srl5/D}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 16'h0000, 
+LOC: SLICE_X10Y85, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRL16E, 
+REF_NAME: SRL16E, 
+
+datapath/fifo_ff62_reg - 
+nets: {datapath/fifo_ff62 datapath/fifo_ff62_reg/Q}, {clk datapath/fifo_ff62_reg/C}, {data_rdy[0] datapath/fifo_ff62_reg/CE}, {datapath/fifo_ff63 datapath/fifo_ff62_reg/D}, {<const0> datapath/fifo_ff62_reg/R}, 
+BEL: SLICEL.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X9Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/fifo_ff63_reg - 
+nets: {datapath/fifo_ff63 datapath/fifo_ff63_reg/Q}, {clk datapath/fifo_ff63_reg/C}, {data_rdy[0] datapath/fifo_ff63_reg/CE}, {fifo_ff63_i_1_n_0 datapath/fifo_ff63_reg/D}, {<const0> datapath/fifo_ff63_reg/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X9Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/lut_ff56_reg - 
+nets: {datapath/lut_ff56 datapath/lut_ff56_reg/Q}, {clk datapath/lut_ff56_reg/C}, {<const1> datapath/lut_ff56_reg/CE}, {datapath/lut_ff57_reg_srl5_n_0 datapath/lut_ff56_reg/D}, {<const0> datapath/lut_ff56_reg/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X6Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/lut_ff57_reg_srl5 - 
+nets: {datapath/lut_ff57_reg_srl5_n_0 datapath/lut_ff57_reg_srl5/Q}, {<const0> datapath/lut_ff57_reg_srl5/A0}, {<const0> datapath/lut_ff57_reg_srl5/A1}, {<const1> datapath/lut_ff57_reg_srl5/A2}, {<const0> datapath/lut_ff57_reg_srl5/A3}, {<const1> datapath/lut_ff57_reg_srl5/CE}, {clk datapath/lut_ff57_reg_srl5/CLK}, {datapath/lut_ff62 datapath/lut_ff57_reg_srl5/D}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 16'h0000, 
+LOC: SLICE_X6Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRL16E, 
+REF_NAME: SRL16E, 
+
+datapath/lut_ff62_reg - 
+nets: {datapath/lut_ff62 datapath/lut_ff62_reg/Q}, {clk datapath/lut_ff62_reg/C}, {<const1> datapath/lut_ff62_reg/CE}, {datapath/lut_ff63 datapath/lut_ff62_reg/D}, {<const0> datapath/lut_ff62_reg/R}, 
+BEL: SLICEM.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X8Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/lut_ff63_reg - 
+nets: {datapath/lut_ff63 datapath/lut_ff63_reg/Q}, {clk datapath/lut_ff63_reg/C}, {<const1> datapath/lut_ff63_reg/CE}, {datapath/lut_ff_input datapath/lut_ff63_reg/D}, {<const0> datapath/lut_ff63_reg/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X8Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/shifter1_reg[0] - 
+nets: {datapath/shifter1_reg_n_0_[0] datapath/shifter1_reg[0]/Q}, {clk datapath/shifter1_reg[0]/C}, {data_rdy[0] datapath/shifter1_reg[0]/CE}, {datapath/shifter1_reg[1]_srl23_n_0 datapath/shifter1_reg[0]/D}, {<const0> datapath/shifter1_reg[0]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X8Y85, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/shifter1_reg[1]_srl23 - 
+nets: {datapath/shifter1_reg[1]_srl23_n_0 datapath/shifter1_reg[1]_srl23/Q}, { datapath/shifter1_reg[1]_srl23/Q31}, {<const1> datapath/shifter1_reg[1]_srl23/A[4]}, {<const0> datapath/shifter1_reg[1]_srl23/A[3]}, {<const1> datapath/shifter1_reg[1]_srl23/A[2]}, {<const1> datapath/shifter1_reg[1]_srl23/A[1]}, {<const0> datapath/shifter1_reg[1]_srl23/A[0]}, {data_rdy[0] datapath/shifter1_reg[1]_srl23/CE}, {clk datapath/shifter1_reg[1]_srl23/CLK}, {datapath/shifter1_reg[24]_srl32_n_1 datapath/shifter1_reg[1]_srl23/D}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 32'h00000000, 
+LOC: SLICE_X8Y85, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRLC32E, 
+REF_NAME: SRLC32E, 
+
+datapath/shifter1_reg[24]_srl32 - 
+nets: { datapath/shifter1_reg[24]_srl32/Q}, {datapath/shifter1_reg[24]_srl32_n_1 datapath/shifter1_reg[24]_srl32/Q31}, {<const1> datapath/shifter1_reg[24]_srl32/A[4]}, {<const1> datapath/shifter1_reg[24]_srl32/A[3]}, {<const1> datapath/shifter1_reg[24]_srl32/A[2]}, {<const1> datapath/shifter1_reg[24]_srl32/A[1]}, {<const1> datapath/shifter1_reg[24]_srl32/A[0]}, {data_rdy[0] datapath/shifter1_reg[24]_srl32/CE}, {clk datapath/shifter1_reg[24]_srl32/CLK}, {p_1_out[55] datapath/shifter1_reg[24]_srl32/D}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 32'h00000000, 
+LOC: SLICE_X8Y85, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRLC32E, 
+REF_NAME: SRLC32E, 
+
+datapath/shifter2_reg[0] - 
+nets: {datapath/shifter2[0] datapath/shifter2_reg[0]/Q}, {clk datapath/shifter2_reg[0]/C}, {data_rdy[0] datapath/shifter2_reg[0]/CE}, {datapath/shifter2_reg[1]_srl31_n_0 datapath/shifter2_reg[0]/D}, {<const0> datapath/shifter2_reg[0]/R}, 
+BEL: SLICEM.CFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X8Y85, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+datapath/shifter2_reg[1]_srl31 - 
+nets: {datapath/shifter2_reg[1]_srl31_n_0 datapath/shifter2_reg[1]_srl31/Q}, { datapath/shifter2_reg[1]_srl31/Q31}, {<const1> datapath/shifter2_reg[1]_srl31/A[4]}, {<const1> datapath/shifter2_reg[1]_srl31/A[3]}, {<const1> datapath/shifter2_reg[1]_srl31/A[2]}, {<const1> datapath/shifter2_reg[1]_srl31/A[1]}, {<const0> datapath/shifter2_reg[1]_srl31/A[0]}, {data_rdy[0] datapath/shifter2_reg[1]_srl31/CE}, {clk datapath/shifter2_reg[1]_srl31/CLK}, {datapath/shifter2_reg[32]_srl32_n_1 datapath/shifter2_reg[1]_srl31/D}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 32'h00000000, 
+LOC: SLICE_X8Y85, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRLC32E, 
+REF_NAME: SRLC32E, 
+
+datapath/shifter2_reg[32]_srl32 - 
+nets: { datapath/shifter2_reg[32]_srl32/Q}, {datapath/shifter2_reg[32]_srl32_n_1 datapath/shifter2_reg[32]_srl32/Q31}, {<const1> datapath/shifter2_reg[32]_srl32/A[4]}, {<const1> datapath/shifter2_reg[32]_srl32/A[3]}, {<const1> datapath/shifter2_reg[32]_srl32/A[2]}, {<const1> datapath/shifter2_reg[32]_srl32/A[1]}, {<const1> datapath/shifter2_reg[32]_srl32/A[0]}, {data_rdy[0] datapath/shifter2_reg[32]_srl32/CE}, {clk datapath/shifter2_reg[32]_srl32/CLK}, {datapath/shifter1_reg_n_0_[0] datapath/shifter2_reg[32]_srl32/D}, 
+BEL: SLICEM.D6LUT, 
+CLASS: cell, 
+INIT: 32'h00000000, 
+LOC: SLICE_X8Y85, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRLC32E, 
+REF_NAME: SRLC32E, 
+
+fifo_ff63_i_1 - 
+nets: {fifo_ff63_i_1_n_0 fifo_ff63_i_1/O}, {cipher_out fifo_ff63_i_1/I0}, {round_counter_out fifo_ff63_i_1/I1}, {data_rdy[1] fifo_ff63_i_1/I2}, {data_rdy[0] fifo_ff63_i_1/I3}, {datapath/shifter1_reg_n_0_[0] fifo_ff63_i_1/I4}, {data_in fifo_ff63_i_1/I5}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 64'hBFBB8F88B0BB8088, 
+LOC: SLICE_X9Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+key_exp/fifo_ff0_reg - 
+nets: {fifo_ff0 key_exp/fifo_ff0_reg/Q}, {clk key_exp/fifo_ff0_reg/C}, {data_rdy[1] key_exp/fifo_ff0_reg/CE}, {key_exp/fifo_ff1_reg_srl2_n_0 key_exp/fifo_ff0_reg/D}, {<const0> key_exp/fifo_ff0_reg/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X10Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/fifo_ff1_reg_srl2 - 
+nets: {key_exp/fifo_ff1_reg_srl2_n_0 key_exp/fifo_ff1_reg_srl2/Q}, {<const1> key_exp/fifo_ff1_reg_srl2/A0}, {<const0> key_exp/fifo_ff1_reg_srl2/A1}, {<const0> key_exp/fifo_ff1_reg_srl2/A2}, {<const0> key_exp/fifo_ff1_reg_srl2/A3}, {data_rdy[1] key_exp/fifo_ff1_reg_srl2/CE}, {clk key_exp/fifo_ff1_reg_srl2/CLK}, {key_exp/fifo_ff3 key_exp/fifo_ff1_reg_srl2/D}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 16'h0000, 
+LOC: SLICE_X10Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRL16E, 
+REF_NAME: SRL16E, 
+
+key_exp/fifo_ff3_reg - 
+nets: {key_exp/fifo_ff3 key_exp/fifo_ff3_reg/Q}, {clk key_exp/fifo_ff3_reg/C}, {data_rdy[1] key_exp/fifo_ff3_reg/CE}, {key_exp/shifter1_reg_n_0_[0] key_exp/fifo_ff3_reg/D}, {<const0> key_exp/fifo_ff3_reg/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X9Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/lut_ff0_reg - 
+nets: {lut_ff0 key_exp/lut_ff0_reg/Q}, {clk key_exp/lut_ff0_reg/C}, {key_exp/p_3_in key_exp/lut_ff0_reg/CE}, {key_exp/lut_ff1_reg_srl2_n_0 key_exp/lut_ff0_reg/D}, {<const0> key_exp/lut_ff0_reg/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X10Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/lut_ff1_reg_srl2 - 
+nets: {key_exp/lut_ff1_reg_srl2_n_0 key_exp/lut_ff1_reg_srl2/Q}, {<const1> key_exp/lut_ff1_reg_srl2/A0}, {<const0> key_exp/lut_ff1_reg_srl2/A1}, {<const0> key_exp/lut_ff1_reg_srl2/A2}, {<const0> key_exp/lut_ff1_reg_srl2/A3}, {key_exp/p_3_in key_exp/lut_ff1_reg_srl2/CE}, {clk key_exp/lut_ff1_reg_srl2/CLK}, {key_exp/lut_ff3 key_exp/lut_ff1_reg_srl2/D}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 16'h0000, 
+LOC: SLICE_X10Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRL16E, 
+REF_NAME: SRL16E, 
+
+key_exp/lut_ff3_reg - 
+nets: {key_exp/lut_ff3 key_exp/lut_ff3_reg/Q}, {clk key_exp/lut_ff3_reg/C}, {key_exp/p_3_in key_exp/lut_ff3_reg/CE}, {key_exp/lut_out key_exp/lut_ff3_reg/D}, {<const0> key_exp/lut_ff3_reg/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X11Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/round_counter_reg[0] - 
+nets: {round_counter_out key_exp/round_counter_reg[0]/Q}, {clk key_exp/round_counter_reg[0]/C}, {key_exp/round_counter0 key_exp/round_counter_reg[0]/CE}, {p_0_in__0[0] key_exp/round_counter_reg[0]/D}, {key_exp/round_counter key_exp/round_counter_reg[0]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X9Y85, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/round_counter_reg[1] - 
+nets: {key_exp/round_counter_reg__0[1] key_exp/round_counter_reg[1]/Q}, {clk key_exp/round_counter_reg[1]/C}, {key_exp/round_counter0 key_exp/round_counter_reg[1]/CE}, {p_0_in__0[1] key_exp/round_counter_reg[1]/D}, {key_exp/round_counter key_exp/round_counter_reg[1]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X9Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/round_counter_reg[2] - 
+nets: {key_exp/round_counter_reg__0[2] key_exp/round_counter_reg[2]/Q}, {clk key_exp/round_counter_reg[2]/C}, {key_exp/round_counter0 key_exp/round_counter_reg[2]/CE}, {round_counter[2]_i_1_n_0 key_exp/round_counter_reg[2]/D}, {key_exp/round_counter key_exp/round_counter_reg[2]/R}, 
+BEL: SLICEM.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X8Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/round_counter_reg[3] - 
+nets: {key_exp/round_counter_reg__0[3] key_exp/round_counter_reg[3]/Q}, {clk key_exp/round_counter_reg[3]/C}, {key_exp/round_counter0 key_exp/round_counter_reg[3]/CE}, {p_0_in__0[3] key_exp/round_counter_reg[3]/D}, {key_exp/round_counter key_exp/round_counter_reg[3]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X9Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/round_counter_reg[4] - 
+nets: {key_exp/round_counter_reg__0[4] key_exp/round_counter_reg[4]/Q}, {clk key_exp/round_counter_reg[4]/C}, {key_exp/round_counter0 key_exp/round_counter_reg[4]/CE}, {p_0_in__0[4] key_exp/round_counter_reg[4]/D}, {key_exp/round_counter key_exp/round_counter_reg[4]/R}, 
+BEL: SLICEM.B5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X8Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/round_counter_reg[5] - 
+nets: {key_exp/round_counter_reg__0[5] key_exp/round_counter_reg[5]/Q}, {clk key_exp/round_counter_reg[5]/C}, {key_exp/round_counter0 key_exp/round_counter_reg[5]/CE}, {p_0_in__0[5] key_exp/round_counter_reg[5]/D}, {key_exp/round_counter key_exp/round_counter_reg[5]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X8Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/round_counter_reg[6] - 
+nets: {key_exp/round_counter_reg__0[6] key_exp/round_counter_reg[6]/Q}, {clk key_exp/round_counter_reg[6]/C}, {key_exp/round_counter0 key_exp/round_counter_reg[6]/CE}, {p_0_in__0[6] key_exp/round_counter_reg[6]/D}, {key_exp/round_counter key_exp/round_counter_reg[6]/R}, 
+BEL: SLICEM.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X8Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/shifter1_reg[0] - 
+nets: {key_exp/shifter1_reg_n_0_[0] key_exp/shifter1_reg[0]/Q}, {clk key_exp/shifter1_reg[0]/C}, {data_rdy[1] key_exp/shifter1_reg[0]/CE}, {key_exp/shifter1_reg[1]_srl27_n_0 key_exp/shifter1_reg[0]/D}, {<const0> key_exp/shifter1_reg[0]/R}, 
+BEL: SLICEM.AFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X8Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/shifter1_reg[1]_srl27 - 
+nets: {key_exp/shifter1_reg[1]_srl27_n_0 key_exp/shifter1_reg[1]_srl27/Q}, { key_exp/shifter1_reg[1]_srl27/Q31}, {<const1> key_exp/shifter1_reg[1]_srl27/A[4]}, {<const1> key_exp/shifter1_reg[1]_srl27/A[3]}, {<const0> key_exp/shifter1_reg[1]_srl27/A[2]}, {<const1> key_exp/shifter1_reg[1]_srl27/A[1]}, {<const0> key_exp/shifter1_reg[1]_srl27/A[0]}, {data_rdy[1] key_exp/shifter1_reg[1]_srl27/CE}, {clk key_exp/shifter1_reg[1]_srl27/CLK}, {key_exp/shifter1_reg[28]_srl32_n_1 key_exp/shifter1_reg[1]_srl27/D}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 32'h00000000, 
+LOC: SLICE_X8Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRLC32E, 
+REF_NAME: SRLC32E, 
+
+key_exp/shifter1_reg[28]_srl32 - 
+nets: { key_exp/shifter1_reg[28]_srl32/Q}, {key_exp/shifter1_reg[28]_srl32_n_1 key_exp/shifter1_reg[28]_srl32/Q31}, {<const1> key_exp/shifter1_reg[28]_srl32/A[4]}, {<const1> key_exp/shifter1_reg[28]_srl32/A[3]}, {<const1> key_exp/shifter1_reg[28]_srl32/A[2]}, {<const1> key_exp/shifter1_reg[28]_srl32/A[1]}, {<const1> key_exp/shifter1_reg[28]_srl32/A[0]}, {data_rdy[1] key_exp/shifter1_reg[28]_srl32/CE}, {clk key_exp/shifter1_reg[28]_srl32/CLK}, {p_2_out[59] key_exp/shifter1_reg[28]_srl32/D}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 32'h00000000, 
+LOC: SLICE_X8Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRLC32E, 
+REF_NAME: SRLC32E, 
+
+key_exp/shifter2_reg[0] - 
+nets: {key key_exp/shifter2_reg[0]/Q}, {clk key_exp/shifter2_reg[0]/C}, {data_rdy[1] key_exp/shifter2_reg[0]/CE}, {key_exp/shifter2_reg[1]_srl31_n_0 key_exp/shifter2_reg[0]/D}, {<const0> key_exp/shifter2_reg[0]/R}, 
+BEL: SLICEM.CFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X8Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+key_exp/shifter2_reg[1]_srl31 - 
+nets: {key_exp/shifter2_reg[1]_srl31_n_0 key_exp/shifter2_reg[1]_srl31/Q}, { key_exp/shifter2_reg[1]_srl31/Q31}, {<const1> key_exp/shifter2_reg[1]_srl31/A[4]}, {<const1> key_exp/shifter2_reg[1]_srl31/A[3]}, {<const1> key_exp/shifter2_reg[1]_srl31/A[2]}, {<const1> key_exp/shifter2_reg[1]_srl31/A[1]}, {<const0> key_exp/shifter2_reg[1]_srl31/A[0]}, {data_rdy[1] key_exp/shifter2_reg[1]_srl31/CE}, {clk key_exp/shifter2_reg[1]_srl31/CLK}, {key_exp/shifter2_reg[32]_srl32_n_1 key_exp/shifter2_reg[1]_srl31/D}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 32'h00000000, 
+LOC: SLICE_X8Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRLC32E, 
+REF_NAME: SRLC32E, 
+
+key_exp/shifter2_reg[32]_srl32 - 
+nets: { key_exp/shifter2_reg[32]_srl32/Q}, {key_exp/shifter2_reg[32]_srl32_n_1 key_exp/shifter2_reg[32]_srl32/Q31}, {<const1> key_exp/shifter2_reg[32]_srl32/A[4]}, {<const1> key_exp/shifter2_reg[32]_srl32/A[3]}, {<const1> key_exp/shifter2_reg[32]_srl32/A[2]}, {<const1> key_exp/shifter2_reg[32]_srl32/A[1]}, {<const1> key_exp/shifter2_reg[32]_srl32/A[0]}, {data_rdy[1] key_exp/shifter2_reg[32]_srl32/CE}, {clk key_exp/shifter2_reg[32]_srl32/CLK}, {shifter2_reg[32]_srl32_i_1_n_0 key_exp/shifter2_reg[32]_srl32/D}, 
+BEL: SLICEM.D6LUT, 
+CLASS: cell, 
+INIT: 32'h00000000, 
+LOC: SLICE_X8Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: DMEM, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: srl, 
+PRIMITIVE_TYPE: DMEM.srl.SRLC32E, 
+REF_NAME: SRLC32E, 
+
+lut_ff3_i_1 - 
+nets: {key_exp/p_3_in lut_ff3_i_1/O}, {data_rdy[0] lut_ff3_i_1/I0}, {data_rdy[1] lut_ff3_i_1/I1}, {bit_counter[4] lut_ff3_i_1/I2}, {bit_counter[5] lut_ff3_i_1/I3}, {bit_counter[3] lut_ff3_i_1/I4}, {bit_counter[2] lut_ff3_i_1/I5}, 
+BEL: SLICEL.B6LUT, 
+CLASS: cell, 
+INIT: 64'h0000000000000008, 
+LOC: SLICE_X11Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+lut_ff3_i_10 - 
+nets: {lut_ff3_i_10_n_0 lut_ff3_i_10/O}, {bit_counter[0] lut_ff3_i_10/I0}, {bit_counter[2] lut_ff3_i_10/I1}, {bit_counter[3] lut_ff3_i_10/I2}, {bit_counter[5] lut_ff3_i_10/I3}, {bit_counter[4] lut_ff3_i_10/I4}, {bit_counter[1] lut_ff3_i_10/I5}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 64'hFFFFFFFFFFFFFFFE, 
+LOC: SLICE_X10Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+lut_ff3_i_11 - 
+nets: {lut_ff3_i_11_n_0 lut_ff3_i_11/O}, {round_counter_out lut_ff3_i_11/I0}, {key_exp/round_counter_reg__0[1] lut_ff3_i_11/I1}, {key_exp/round_counter_reg__0[2] lut_ff3_i_11/I2}, {key_exp/round_counter_reg__0[3] lut_ff3_i_11/I3}, {key_exp/round_counter_reg__0[4] lut_ff3_i_11/I4}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 32'h8C960776, 
+LOC: SLICE_X8Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+lut_ff3_i_12 - 
+nets: {lut_ff3_i_12_n_0 lut_ff3_i_12/O}, {key_exp/round_counter_reg__0[6] lut_ff3_i_12/I0}, {key_exp/round_counter_reg__0[4] lut_ff3_i_12/I1}, {key_exp/round_counter_reg__0[3] lut_ff3_i_12/I2}, {key_exp/round_counter_reg__0[2] lut_ff3_i_12/I3}, {key_exp/round_counter_reg__0[5] lut_ff3_i_12/I4}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 32'hFFFFFFFE, 
+LOC: SLICE_X9Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+lut_ff3_i_2 - 
+nets: {key_exp/lut_out lut_ff3_i_2/O}, {lut_ff3_i_3_n_0 lut_ff3_i_2/I0}, {lut_ff3_i_4_n_0 lut_ff3_i_2/I1}, {key lut_ff3_i_2/I2}, {lut_ff3_i_5_n_0 lut_ff3_i_2/I3}, {key_exp/shifter1_reg_n_0_[0] lut_ff3_i_2/I4}, {lut_ff3_i_6_n_0 lut_ff3_i_2/I5}, 
+BEL: SLICEL.B6LUT, 
+CLASS: cell, 
+INIT: 64'hB44B4BB44BB4B44B, 
+LOC: SLICE_X9Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+lut_ff3_i_3 - 
+nets: {lut_ff3_i_3_n_0 lut_ff3_i_3/O}, {key_exp/round_counter_reg__0[5] lut_ff3_i_3/I0}, {lut_ff3_i_7_n_0 lut_ff3_i_3/I1}, {key_exp/round_counter_reg__0[6] lut_ff3_i_3/I2}, {lut_ff3_i_8_n_0 lut_ff3_i_3/I3}, {lut_ff3_i_9_n_0 lut_ff3_i_3/I4}, {lut_ff3_i_10_n_0 lut_ff3_i_3/I5}, 
+BEL: SLICEL.C6LUT, 
+CLASS: cell, 
+INIT: 64'hFFFFFFFF00006660, 
+LOC: SLICE_X9Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+lut_ff3_i_4 - 
+nets: {lut_ff3_i_4_n_0 lut_ff3_i_4/O}, {lut_ff3_i_11_n_0 lut_ff3_i_4/I0}, {key_exp/round_counter_reg__0[6] lut_ff3_i_4/I1}, {round_counter_out lut_ff3_i_4/I2}, {lut_ff3_i_7_n_0 lut_ff3_i_4/I3}, {key_exp/round_counter_reg__0[5] lut_ff3_i_4/I4}, {lut_ff3_i_9_n_0 lut_ff3_i_4/I5}, 
+BEL: SLICEL.C6LUT, 
+CLASS: cell, 
+INIT: 64'h111F114F11FFFF4F, 
+LOC: SLICE_X9Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+lut_ff3_i_5 - 
+nets: {lut_ff3_i_5_n_0 lut_ff3_i_5/O}, {key_exp/fifo_ff3 lut_ff3_i_5/I0}, {lut_ff3_i_10_n_0 lut_ff3_i_5/I1}, {lut_ff3_i_12_n_0 lut_ff3_i_5/I2}, {round_counter_out lut_ff3_i_5/I3}, {key_exp/round_counter_reg__0[1] lut_ff3_i_5/I4}, {key_exp/lut_ff3 lut_ff3_i_5/I5}, 
+BEL: SLICEL.D6LUT, 
+CLASS: cell, 
+INIT: 64'hBBBBBBBA8888888A, 
+LOC: SLICE_X9Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+lut_ff3_i_6 - 
+nets: {lut_ff3_i_6_n_0 lut_ff3_i_6/O}, {bit_counter[1] lut_ff3_i_6/I0}, {bit_counter[4] lut_ff3_i_6/I1}, {bit_counter[5] lut_ff3_i_6/I2}, {bit_counter[3] lut_ff3_i_6/I3}, {bit_counter[2] lut_ff3_i_6/I4}, 
+BEL: SLICEL.A5LUT, 
+CLASS: cell, 
+INIT: 32'h00000001, 
+LOC: SLICE_X11Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+lut_ff3_i_7 - 
+nets: {lut_ff3_i_7_n_0 lut_ff3_i_7/O}, {key_exp/round_counter_reg__0[4] lut_ff3_i_7/I0}, {key_exp/round_counter_reg__0[3] lut_ff3_i_7/I1}, {key_exp/round_counter_reg__0[2] lut_ff3_i_7/I2}, 
+BEL: SLICEL.A5LUT, 
+CLASS: cell, 
+INIT: 8'hFE, 
+LOC: SLICE_X9Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+lut_ff3_i_8 - 
+nets: {lut_ff3_i_8_n_0 lut_ff3_i_8/O}, {key_exp/round_counter_reg__0[4] lut_ff3_i_8/I0}, {key_exp/round_counter_reg__0[3] lut_ff3_i_8/I1}, {key_exp/round_counter_reg__0[2] lut_ff3_i_8/I2}, {round_counter_out lut_ff3_i_8/I3}, {key_exp/round_counter_reg__0[1] lut_ff3_i_8/I4}, 
+BEL: SLICEL.B6LUT, 
+CLASS: cell, 
+INIT: 32'hE1E1EBEF, 
+LOC: SLICE_X9Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+lut_ff3_i_9 - 
+nets: {lut_ff3_i_9_n_0 lut_ff3_i_9/O}, {key_exp/round_counter_reg__0[4] lut_ff3_i_9/I0}, {key_exp/round_counter_reg__0[6] lut_ff3_i_9/I1}, {key_exp/round_counter_reg__0[2] lut_ff3_i_9/I2}, {key_exp/round_counter_reg__0[1] lut_ff3_i_9/I3}, {round_counter_out lut_ff3_i_9/I4}, {key_exp/round_counter_reg__0[3] lut_ff3_i_9/I5}, 
+BEL: SLICEL.D6LUT, 
+CLASS: cell, 
+INIT: 64'h0000022200200121, 
+LOC: SLICE_X9Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+lut_ff63_i_1 - 
+nets: {datapath/lut_ff_input lut_ff63_i_1/O}, {datapath/shifter1_reg_n_0_[0] lut_ff63_i_1/I0}, {round_counter_out lut_ff63_i_1/I1}, {cipher_out lut_ff63_i_1/I2}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 8'hB8, 
+LOC: SLICE_X8Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+round_counter[0]_i_1 - 
+nets: {p_0_in__0[0] round_counter[0]_i_1/O}, {round_counter_out round_counter[0]_i_1/I0}, 
+BEL: SLICEL.B6LUT, 
+CLASS: cell, 
+INIT: 2'h1, 
+LOC: SLICE_X9Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT1, 
+REF_NAME: LUT1, 
+
+round_counter[1]_i_1 - 
+nets: {p_0_in__0[1] round_counter[1]_i_1/O}, {round_counter_out round_counter[1]_i_1/I0}, {key_exp/round_counter_reg__0[1] round_counter[1]_i_1/I1}, 
+BEL: SLICEL.A5LUT, 
+CLASS: cell, 
+INIT: 4'h6, 
+LOC: SLICE_X9Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT2, 
+REF_NAME: LUT2, 
+
+round_counter[2]_i_1 - 
+nets: {round_counter[2]_i_1_n_0 round_counter[2]_i_1/O}, {key_exp/round_counter_reg__0[2] round_counter[2]_i_1/I0}, {key_exp/round_counter_reg__0[1] round_counter[2]_i_1/I1}, {round_counter_out round_counter[2]_i_1/I2}, 
+BEL: SLICEM.D6LUT, 
+CLASS: cell, 
+INIT: 8'h6A, 
+LOC: SLICE_X8Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+round_counter[3]_i_1 - 
+nets: {p_0_in__0[3] round_counter[3]_i_1/O}, {key_exp/round_counter_reg__0[3] round_counter[3]_i_1/I0}, {round_counter_out round_counter[3]_i_1/I1}, {key_exp/round_counter_reg__0[1] round_counter[3]_i_1/I2}, {key_exp/round_counter_reg__0[2] round_counter[3]_i_1/I3}, 
+BEL: SLICEL.B5LUT, 
+CLASS: cell, 
+INIT: 16'h6AAA, 
+LOC: SLICE_X9Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+round_counter[4]_i_1 - 
+nets: {p_0_in__0[4] round_counter[4]_i_1/O}, {key_exp/round_counter_reg__0[4] round_counter[4]_i_1/I0}, {key_exp/round_counter_reg__0[2] round_counter[4]_i_1/I1}, {key_exp/round_counter_reg__0[1] round_counter[4]_i_1/I2}, {round_counter_out round_counter[4]_i_1/I3}, {key_exp/round_counter_reg__0[3] round_counter[4]_i_1/I4}, 
+BEL: SLICEM.C5LUT, 
+CLASS: cell, 
+INIT: 32'h6AAAAAAA, 
+LOC: SLICE_X8Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+round_counter[5]_i_1 - 
+nets: {p_0_in__0[5] round_counter[5]_i_1/O}, {key_exp/round_counter_reg__0[5] round_counter[5]_i_1/I0}, {key_exp/round_counter_reg__0[3] round_counter[5]_i_1/I1}, {round_counter_out round_counter[5]_i_1/I2}, {key_exp/round_counter_reg__0[1] round_counter[5]_i_1/I3}, {key_exp/round_counter_reg__0[2] round_counter[5]_i_1/I4}, {key_exp/round_counter_reg__0[4] round_counter[5]_i_1/I5}, 
+BEL: SLICEM.A6LUT, 
+CLASS: cell, 
+INIT: 64'h6AAAAAAAAAAAAAAA, 
+LOC: SLICE_X8Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+round_counter[6]_i_1 - 
+nets: {key_exp/round_counter0 round_counter[6]_i_1/O}, {data_rdy[0] round_counter[6]_i_1/I0}, {data_rdy[1] round_counter[6]_i_1/I1}, {round_counter[6]_i_3_n_0 round_counter[6]_i_1/I2}, {bit_counter[5] round_counter[6]_i_1/I3}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 16'h8000, 
+LOC: SLICE_X10Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+round_counter[6]_i_2 - 
+nets: {p_0_in__0[6] round_counter[6]_i_2/O}, {key_exp/round_counter_reg__0[6] round_counter[6]_i_2/I0}, {key_exp/round_counter_reg__0[5] round_counter[6]_i_2/I1}, {key_exp/round_counter_reg__0[4] round_counter[6]_i_2/I2}, {round_counter[6]_i_4_n_0 round_counter[6]_i_2/I3}, {key_exp/round_counter_reg__0[3] round_counter[6]_i_2/I4}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 32'h6AAAAAAA, 
+LOC: SLICE_X8Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+round_counter[6]_i_3 - 
+nets: {round_counter[6]_i_3_n_0 round_counter[6]_i_3/O}, {bit_counter[4] round_counter[6]_i_3/I0}, {bit_counter[2] round_counter[6]_i_3/I1}, {bit_counter[1] round_counter[6]_i_3/I2}, {bit_counter[0] round_counter[6]_i_3/I3}, {bit_counter[3] round_counter[6]_i_3/I4}, 
+BEL: SLICEL.B6LUT, 
+CLASS: cell, 
+INIT: 32'h80000000, 
+LOC: SLICE_X11Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+round_counter[6]_i_4 - 
+nets: {round_counter[6]_i_4_n_0 round_counter[6]_i_4/O}, {key_exp/round_counter_reg__0[2] round_counter[6]_i_4/I0}, {key_exp/round_counter_reg__0[1] round_counter[6]_i_4/I1}, {round_counter_out round_counter[6]_i_4/I2}, 
+BEL: SLICEM.D5LUT, 
+CLASS: cell, 
+INIT: 8'h80, 
+LOC: SLICE_X8Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+shifter1_reg[24]_srl32_i_1 - 
+nets: {p_1_out[55] shifter1_reg[24]_srl32_i_1/O}, {datapath/fifo_ff56 shifter1_reg[24]_srl32_i_1/I0}, {data_rdy[1] shifter1_reg[24]_srl32_i_1/I1}, {data_rdy[0] shifter1_reg[24]_srl32_i_1/I2}, {shifter1_reg[24]_srl32_i_2_n_0 shifter1_reg[24]_srl32_i_1/I3}, {round_counter_out shifter1_reg[24]_srl32_i_1/I4}, {datapath/lut_ff56 shifter1_reg[24]_srl32_i_1/I5}, 
+BEL: SLICEL.C6LUT, 
+CLASS: cell, 
+INIT: 64'hAAEFEFAAAA2020AA, 
+LOC: SLICE_X9Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+shifter1_reg[24]_srl32_i_2 - 
+nets: {shifter1_reg[24]_srl32_i_2_n_0 shifter1_reg[24]_srl32_i_2/O}, {bit_counter[4] shifter1_reg[24]_srl32_i_2/I0}, {bit_counter[5] shifter1_reg[24]_srl32_i_2/I1}, {bit_counter[3] shifter1_reg[24]_srl32_i_2/I2}, 
+BEL: SLICEM.B6LUT, 
+CLASS: cell, 
+INIT: 8'hFE, 
+LOC: SLICE_X10Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+shifter1_reg[28]_srl32_i_1 - 
+nets: {p_2_out[59] shifter1_reg[28]_srl32_i_1/O}, {shifter1_reg[28]_srl32_i_2_n_0 shifter1_reg[28]_srl32_i_1/I0}, {shifter1_reg[28]_srl32_i_3_n_0 shifter1_reg[28]_srl32_i_1/I1}, {key_exp/lut_out shifter1_reg[28]_srl32_i_1/I2}, {key_exp/p_3_in shifter1_reg[28]_srl32_i_1/I3}, {shifter1_reg[28]_srl32_i_4_n_0 shifter1_reg[28]_srl32_i_1/I4}, {lut_ff0 shifter1_reg[28]_srl32_i_1/I5}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 64'hBBBABBBABBBAAABA, 
+LOC: SLICE_X11Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+shifter1_reg[28]_srl32_i_2 - 
+nets: {shifter1_reg[28]_srl32_i_2_n_0 shifter1_reg[28]_srl32_i_2/O}, {data_in shifter1_reg[28]_srl32_i_2/I0}, {data_rdy[0] shifter1_reg[28]_srl32_i_2/I1}, {data_rdy[1] shifter1_reg[28]_srl32_i_2/I2}, 
+BEL: SLICEM.C6LUT, 
+CLASS: cell, 
+INIT: 8'h20, 
+LOC: SLICE_X10Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+shifter1_reg[28]_srl32_i_3 - 
+nets: {shifter1_reg[28]_srl32_i_3_n_0 shifter1_reg[28]_srl32_i_3/O}, {data_rdy[0] shifter1_reg[28]_srl32_i_3/I0}, {data_rdy[1] shifter1_reg[28]_srl32_i_3/I1}, {fifo_ff0 shifter1_reg[28]_srl32_i_3/I2}, {key_exp/p_3_in shifter1_reg[28]_srl32_i_3/I3}, {shifter1_reg[28]_srl32_i_4_n_0 shifter1_reg[28]_srl32_i_3/I4}, 
+BEL: SLICEL.B6LUT, 
+CLASS: cell, 
+INIT: 32'h4F444444, 
+LOC: SLICE_X11Y84, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+shifter1_reg[28]_srl32_i_4 - 
+nets: {shifter1_reg[28]_srl32_i_4_n_0 shifter1_reg[28]_srl32_i_4/O}, {key_exp/round_counter_reg__0[1] shifter1_reg[28]_srl32_i_4/I0}, {round_counter_out shifter1_reg[28]_srl32_i_4/I1}, {key_exp/round_counter_reg__0[5] shifter1_reg[28]_srl32_i_4/I2}, {lut_ff3_i_7_n_0 shifter1_reg[28]_srl32_i_4/I3}, {key_exp/round_counter_reg__0[6] shifter1_reg[28]_srl32_i_4/I4}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 32'h00000001, 
+LOC: SLICE_X9Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+shifter2_reg[32]_srl32_i_1 - 
+nets: {shifter2_reg[32]_srl32_i_1_n_0 shifter2_reg[32]_srl32_i_1/O}, {fifo_ff0 shifter2_reg[32]_srl32_i_1/I0}, {data_rdy[1] shifter2_reg[32]_srl32_i_1/I1}, {shifter1_reg[28]_srl32_i_4_n_0 shifter2_reg[32]_srl32_i_1/I2}, {data_rdy[0] shifter2_reg[32]_srl32_i_1/I3}, {shifter2_reg[32]_srl32_i_2_n_0 shifter2_reg[32]_srl32_i_1/I4}, {lut_ff0 shifter2_reg[32]_srl32_i_1/I5}, 
+BEL: SLICEL.C6LUT, 
+CLASS: cell, 
+INIT: 64'hBBBBBFBB88888088, 
+LOC: SLICE_X11Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT6, 
+REF_NAME: LUT6, 
+
+shifter2_reg[32]_srl32_i_2 - 
+nets: {shifter2_reg[32]_srl32_i_2_n_0 shifter2_reg[32]_srl32_i_2/O}, {bit_counter[2] shifter2_reg[32]_srl32_i_2/I0}, {bit_counter[3] shifter2_reg[32]_srl32_i_2/I1}, {bit_counter[5] shifter2_reg[32]_srl32_i_2/I2}, {bit_counter[4] shifter2_reg[32]_srl32_i_2/I3}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 16'hFFFE, 
+LOC: SLICE_X11Y83, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT4, 
+REF_NAME: LUT4, 
+
+
+####################################################
+# Nets
+Boundary Nets - 
+cipher_out, 
+clk, 
+data_in, 
+data_rdy[0], 
+data_rdy[1], 
+
+p_0_in[0] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+bit_counter[0] - 
+wires: CLBLM_L_X8Y82/CLBLM_IMUX0 CLBLM_L_X8Y82/CLBLM_IMUX16 CLBLM_L_X8Y82/CLBLM_IMUX24 CLBLM_L_X8Y82/CLBLM_IMUX32 CLBLM_L_X8Y82/CLBLM_IMUX8 CLBLM_L_X8Y82/CLBLM_LOGIC_OUTS0 CLBLM_L_X8Y82/CLBLM_L_A3 CLBLM_L_X8Y82/CLBLM_L_AQ CLBLM_L_X8Y82/CLBLM_L_B3 CLBLM_L_X8Y82/CLBLM_M_A5 CLBLM_L_X8Y82/CLBLM_M_B5 CLBLM_L_X8Y82/CLBLM_M_C1 INT_L_X8Y82/IMUX_L0 INT_L_X8Y82/IMUX_L16 INT_L_X8Y82/IMUX_L24 INT_L_X8Y82/IMUX_L32 INT_L_X8Y82/IMUX_L8 INT_L_X8Y82/LOGIC_OUTS_L0 
+pips: CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX0->CLBLM_L_A3 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX16->CLBLM_L_B3 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX24->CLBLM_M_B5 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX32->CLBLM_M_C1 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX8->CLBLM_M_A5 CLBLM_L_X8Y82/CLBLM_L.CLBLM_L_AQ->CLBLM_LOGIC_OUTS0 INT_L_X8Y82/INT_L.LOGIC_OUTS_L0->>IMUX_L0 INT_L_X8Y82/INT_L.LOGIC_OUTS_L0->>IMUX_L16 INT_L_X8Y82/INT_L.LOGIC_OUTS_L0->>IMUX_L24 INT_L_X8Y82/INT_L.LOGIC_OUTS_L0->>IMUX_L32 INT_L_X8Y82/INT_L.LOGIC_OUTS_L0->>IMUX_L8 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 9, 
+
+p_0_in[1] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+bit_counter[1] - 
+wires: CLBLM_L_X8Y82/CLBLM_IMUX15 CLBLM_L_X8Y82/CLBLM_IMUX19 CLBLM_L_X8Y82/CLBLM_IMUX29 CLBLM_L_X8Y82/CLBLM_IMUX3 CLBLM_L_X8Y82/CLBLM_IMUX7 CLBLM_L_X8Y82/CLBLM_LOGIC_OUTS16 CLBLM_L_X8Y82/CLBLM_L_A2 CLBLM_L_X8Y82/CLBLM_L_AMUX CLBLM_L_X8Y82/CLBLM_L_B2 CLBLM_L_X8Y82/CLBLM_M_A1 CLBLM_L_X8Y82/CLBLM_M_B1 CLBLM_L_X8Y82/CLBLM_M_C2 CLBLM_L_X8Y83/CLBLM_IMUX9 CLBLM_L_X8Y83/CLBLM_L_A5 INT_L_X8Y82/BYP_ALT3 INT_L_X8Y82/BYP_BOUNCE3 INT_L_X8Y82/FAN_ALT3 INT_L_X8Y82/FAN_BOUNCE3 INT_L_X8Y82/IMUX_L15 INT_L_X8Y82/IMUX_L19 INT_L_X8Y82/IMUX_L29 INT_L_X8Y82/IMUX_L3 INT_L_X8Y82/IMUX_L7 INT_L_X8Y82/LOGIC_OUTS_L16 INT_L_X8Y83/BYP_BOUNCE_N3_3 INT_L_X8Y83/IMUX_L9 
+pips: CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX15->CLBLM_M_B1 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX19->CLBLM_L_B2 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX29->CLBLM_M_C2 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX3->CLBLM_L_A2 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX7->CLBLM_M_A1 CLBLM_L_X8Y82/CLBLM_L.CLBLM_L_AMUX->CLBLM_LOGIC_OUTS16 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX9->CLBLM_L_A5 INT_L_X8Y82/INT_L.BYP_ALT3->>BYP_BOUNCE3 INT_L_X8Y82/INT_L.BYP_BOUNCE3->>FAN_ALT3 INT_L_X8Y82/INT_L.BYP_BOUNCE3->>IMUX_L15 INT_L_X8Y82/INT_L.BYP_BOUNCE3->>IMUX_L7 INT_L_X8Y82/INT_L.FAN_ALT3->>FAN_BOUNCE3 INT_L_X8Y82/INT_L.FAN_BOUNCE3->>IMUX_L19 INT_L_X8Y82/INT_L.FAN_BOUNCE3->>IMUX_L3 INT_L_X8Y82/INT_L.LOGIC_OUTS_L16->>BYP_ALT3 INT_L_X8Y82/INT_L.LOGIC_OUTS_L16->>IMUX_L29 INT_L_X8Y83/INT_L.BYP_BOUNCE_N3_3->>IMUX_L9 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 9, 
+
+p_0_in[2] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+bit_counter[2] - 
+wires: CLBLM_L_X8Y82/CLBLM_IMUX1 CLBLM_L_X8Y82/CLBLM_IMUX17 CLBLM_L_X8Y82/CLBLM_IMUX22 CLBLM_L_X8Y82/CLBLM_IMUX25 CLBLM_L_X8Y82/CLBLM_LOGIC_OUTS4 CLBLM_L_X8Y82/CLBLM_L_B5 CLBLM_L_X8Y82/CLBLM_M_A3 CLBLM_L_X8Y82/CLBLM_M_AQ CLBLM_L_X8Y82/CLBLM_M_B3 CLBLM_L_X8Y82/CLBLM_M_C3 CLBLM_L_X8Y83/CLBLM_EL1BEG3 CLBLM_L_X8Y83/CLBLM_IMUX25 CLBLM_L_X8Y83/CLBLM_IMUX6 CLBLM_L_X8Y83/CLBLM_L_A1 CLBLM_L_X8Y83/CLBLM_L_B5 CLBLM_L_X8Y84/CLBLM_NW2A0 CLBLM_R_X7Y83/CLBLM_EL1BEG3 CLBLM_R_X7Y84/CLBLM_NW2A0 INT_L_X8Y82/IMUX_L1 INT_L_X8Y82/IMUX_L17 INT_L_X8Y82/IMUX_L22 INT_L_X8Y82/IMUX_L25 INT_L_X8Y82/LOGIC_OUTS_L4 INT_L_X8Y82/NL1BEG_N3 INT_L_X8Y82/NR1BEG0 INT_L_X8Y83/EL1END3 INT_L_X8Y83/IMUX_L25 INT_L_X8Y83/IMUX_L6 INT_L_X8Y83/NR1END0 INT_L_X8Y83/NW2BEG0 INT_L_X8Y84/NW2A0 INT_R_X7Y83/EL1BEG3 INT_R_X7Y83/NW2END_S0_0 INT_R_X7Y84/EL1BEG_N3 INT_R_X7Y84/NW2END0 
+pips: CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX1->CLBLM_M_A3 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX17->CLBLM_M_B3 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX22->CLBLM_M_C3 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX25->CLBLM_L_B5 CLBLM_L_X8Y82/CLBLM_L.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX25->CLBLM_L_B5 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX6->CLBLM_L_A1 INT_L_X8Y82/INT_L.LOGIC_OUTS_L4->>IMUX_L1 INT_L_X8Y82/INT_L.LOGIC_OUTS_L4->>IMUX_L17 INT_L_X8Y82/INT_L.LOGIC_OUTS_L4->>IMUX_L25 INT_L_X8Y82/INT_L.LOGIC_OUTS_L4->>NL1BEG_N3 INT_L_X8Y82/INT_L.LOGIC_OUTS_L4->>NR1BEG0 INT_L_X8Y82/INT_L.NL1BEG_N3->>IMUX_L22 INT_L_X8Y83/INT_L.EL1END3->>IMUX_L6 INT_L_X8Y83/INT_L.NR1END0->>IMUX_L25 INT_L_X8Y83/INT_L.NR1END0->>NW2BEG0 INT_R_X7Y84/INT_R.NW2END0->>EL1BEG_N3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 10, 
+
+p_0_in[3] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+bit_counter[3] - 
+wires: CLBLM_L_X8Y82/CLBLM_IMUX12 CLBLM_L_X8Y82/CLBLM_IMUX14 CLBLM_L_X8Y82/CLBLM_IMUX2 CLBLM_L_X8Y82/CLBLM_IMUX28 CLBLM_L_X8Y82/CLBLM_LOGIC_OUTS20 CLBLM_L_X8Y82/CLBLM_L_B1 CLBLM_L_X8Y82/CLBLM_M_A2 CLBLM_L_X8Y82/CLBLM_M_AMUX CLBLM_L_X8Y82/CLBLM_M_B6 CLBLM_L_X8Y82/CLBLM_M_C4 CLBLM_L_X8Y83/CLBLM_IMUX10 CLBLM_L_X8Y83/CLBLM_IMUX26 CLBLM_L_X8Y83/CLBLM_L_A4 CLBLM_L_X8Y83/CLBLM_L_B4 CLBLM_L_X8Y84/CLBLM_IMUX12 CLBLM_L_X8Y84/CLBLM_M_B6 INT_L_X8Y82/BYP_ALT2 INT_L_X8Y82/BYP_BOUNCE2 INT_L_X8Y82/FAN_ALT1 INT_L_X8Y82/FAN_BOUNCE1 INT_L_X8Y82/IMUX_L12 INT_L_X8Y82/IMUX_L14 INT_L_X8Y82/IMUX_L2 INT_L_X8Y82/IMUX_L28 INT_L_X8Y82/LOGIC_OUTS_L20 INT_L_X8Y82/NL1BEG1 INT_L_X8Y82/NN2BEG2 INT_L_X8Y83/BYP_BOUNCE_N3_2 INT_L_X8Y83/IMUX_L10 INT_L_X8Y83/IMUX_L26 INT_L_X8Y83/NL1END1 INT_L_X8Y83/NN2A2 INT_L_X8Y84/IMUX_L12 INT_L_X8Y84/NN2END2 
+pips: CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX12->CLBLM_M_B6 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX14->CLBLM_L_B1 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX2->CLBLM_M_A2 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX28->CLBLM_M_C4 CLBLM_L_X8Y82/CLBLM_L.CLBLM_M_AMUX->CLBLM_LOGIC_OUTS20 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX10->CLBLM_L_A4 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX26->CLBLM_L_B4 CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX12->CLBLM_M_B6 INT_L_X8Y82/INT_L.BYP_ALT2->>BYP_BOUNCE2 INT_L_X8Y82/INT_L.BYP_BOUNCE2->>FAN_ALT1 INT_L_X8Y82/INT_L.BYP_BOUNCE2->>IMUX_L14 INT_L_X8Y82/INT_L.FAN_ALT1->>FAN_BOUNCE1 INT_L_X8Y82/INT_L.FAN_BOUNCE1->>IMUX_L2 INT_L_X8Y82/INT_L.LOGIC_OUTS_L20->>BYP_ALT2 INT_L_X8Y82/INT_L.LOGIC_OUTS_L20->>IMUX_L12 INT_L_X8Y82/INT_L.LOGIC_OUTS_L20->>IMUX_L28 INT_L_X8Y82/INT_L.LOGIC_OUTS_L20->>NL1BEG1 INT_L_X8Y82/INT_L.LOGIC_OUTS_L20->>NN2BEG2 INT_L_X8Y83/INT_L.NL1END1->>IMUX_L10 INT_L_X8Y83/INT_L.NL1END1->>IMUX_L26 INT_L_X8Y84/INT_L.NN2END2->>IMUX_L12 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 10, 
+
+p_0_in[4] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+bit_counter[4] - 
+wires: CLBLM_L_X8Y82/CLBLM_IMUX26 CLBLM_L_X8Y82/CLBLM_IMUX27 CLBLM_L_X8Y82/CLBLM_IMUX35 CLBLM_L_X8Y82/CLBLM_LOGIC_OUTS1 CLBLM_L_X8Y82/CLBLM_L_B4 CLBLM_L_X8Y82/CLBLM_L_BQ CLBLM_L_X8Y82/CLBLM_M_B4 CLBLM_L_X8Y82/CLBLM_M_C6 CLBLM_L_X8Y83/CLBLM_IMUX19 CLBLM_L_X8Y83/CLBLM_IMUX3 CLBLM_L_X8Y83/CLBLM_L_A2 CLBLM_L_X8Y83/CLBLM_L_B2 CLBLM_L_X8Y84/CLBLM_IMUX18 CLBLM_L_X8Y84/CLBLM_M_B2 INT_L_X8Y82/IMUX_L26 INT_L_X8Y82/IMUX_L27 INT_L_X8Y82/IMUX_L35 INT_L_X8Y82/LOGIC_OUTS_L1 INT_L_X8Y82/NN2BEG1 INT_L_X8Y82/SL1END1 INT_L_X8Y83/IMUX_L19 INT_L_X8Y83/IMUX_L3 INT_L_X8Y83/NN2A1 INT_L_X8Y83/SL1BEG1 INT_L_X8Y83/SR1END1 INT_L_X8Y84/IMUX_L18 INT_L_X8Y84/NN2END1 INT_L_X8Y84/SR1BEG1 
+pips: CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX26->CLBLM_L_B4 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX27->CLBLM_M_B4 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX35->CLBLM_M_C6 CLBLM_L_X8Y82/CLBLM_L.CLBLM_L_BQ->CLBLM_LOGIC_OUTS1 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX19->CLBLM_L_B2 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX3->CLBLM_L_A2 CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX18->CLBLM_M_B2 INT_L_X8Y82/INT_L.LOGIC_OUTS_L1->>IMUX_L27 INT_L_X8Y82/INT_L.LOGIC_OUTS_L1->>IMUX_L35 INT_L_X8Y82/INT_L.LOGIC_OUTS_L1->>NN2BEG1 INT_L_X8Y82/INT_L.SL1END1->>IMUX_L26 INT_L_X8Y83/INT_L.SR1END1->>IMUX_L19 INT_L_X8Y83/INT_L.SR1END1->>IMUX_L3 INT_L_X8Y83/INT_L.SR1END1->>SL1BEG1 INT_L_X8Y84/INT_L.NN2END1->>IMUX_L18 INT_L_X8Y84/INT_L.NN2END1->>SR1BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 9, 
+
+key_exp/round_counter - 
+wires: CLBLM_L_X8Y80/CLBLM_SW2A2 CLBLM_L_X8Y82/CLBLM_CTRL0 CLBLM_L_X8Y82/CLBLM_CTRL1 CLBLM_L_X8Y82/CLBLM_L_SR CLBLM_L_X8Y82/CLBLM_M_SR CLBLM_L_X8Y83/CLBLM_SE2A2 CLBLM_R_X7Y80/CLBLM_SW2A2 CLBLM_R_X7Y82/CLBLM_CTRL0 CLBLM_R_X7Y82/CLBLM_CTRL1 CLBLM_R_X7Y82/CLBLM_L_SR CLBLM_R_X7Y82/CLBLM_M_SR CLBLM_R_X7Y83/CLBLM_SE2A2 CLBLM_R_X7Y84/CLBLM_LOGIC_OUTS14 CLBLM_R_X7Y84/CLBLM_M_C CLBLM_R_X7Y85/CLBLM_CTRL0 CLBLM_R_X7Y85/CLBLM_L_SR INT_L_X8Y80/SW2A2 INT_L_X8Y81/NR1BEG2 INT_L_X8Y81/SS2END2 INT_L_X8Y81/SW2BEG2 INT_L_X8Y82/CTRL_L0 INT_L_X8Y82/CTRL_L1 INT_L_X8Y82/NR1END2 INT_L_X8Y82/SS2A2 INT_L_X8Y83/SE2END2 INT_L_X8Y83/SS2BEG2 INT_R_X7Y80/NL1BEG2 INT_R_X7Y80/SW2END2 INT_R_X7Y81/NL1END2 INT_R_X7Y81/NR1BEG2 INT_R_X7Y82/CTRL0 INT_R_X7Y82/CTRL1 INT_R_X7Y82/NR1END2 INT_R_X7Y83/SE2A2 INT_R_X7Y84/LOGIC_OUTS14 INT_R_X7Y84/NN2BEG2 INT_R_X7Y84/SE2BEG2 INT_R_X7Y85/CTRL0 INT_R_X7Y85/NN2A2 INT_R_X7Y85/SR1END2 INT_R_X7Y86/NN2END2 INT_R_X7Y86/SR1BEG2 
+pips: CLBLM_L_X8Y82/CLBLM_L.CLBLM_CTRL0->CLBLM_L_SR CLBLM_L_X8Y82/CLBLM_L.CLBLM_CTRL1->CLBLM_M_SR CLBLM_R_X7Y82/CLBLM_R.CLBLM_CTRL0->CLBLM_L_SR CLBLM_R_X7Y82/CLBLM_R.CLBLM_CTRL1->CLBLM_M_SR CLBLM_R_X7Y84/CLBLM_R.CLBLM_M_C->CLBLM_LOGIC_OUTS14 CLBLM_R_X7Y85/CLBLM_R.CLBLM_CTRL0->CLBLM_L_SR INT_L_X8Y81/INT_L.SS2END2->>NR1BEG2 INT_L_X8Y81/INT_L.SS2END2->>SW2BEG2 INT_L_X8Y82/INT_L.NR1END2->>CTRL_L0 INT_L_X8Y82/INT_L.NR1END2->>CTRL_L1 INT_L_X8Y83/INT_L.SE2END2->>SS2BEG2 INT_R_X7Y80/INT_R.SW2END2->>NL1BEG2 INT_R_X7Y81/INT_R.NL1END2->>NR1BEG2 INT_R_X7Y82/INT_R.NR1END2->>CTRL0 INT_R_X7Y82/INT_R.NR1END2->>CTRL1 INT_R_X7Y84/INT_R.LOGIC_OUTS14->>NN2BEG2 INT_R_X7Y84/INT_R.LOGIC_OUTS14->>SE2BEG2 INT_R_X7Y85/INT_R.SR1END2->>CTRL0 INT_R_X7Y86/INT_R.NN2END2->>SR1BEG2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 14, 
+
+bit_counter[5]_i_2_n_0 - 
+wires: CLBLM_L_X8Y82/CLBLM_FAN6 CLBLM_L_X8Y82/CLBLM_FAN7 CLBLM_L_X8Y82/CLBLM_L_CE CLBLM_L_X8Y82/CLBLM_M_CE CLBLM_L_X8Y83/CLBLM_LOGIC_OUTS14 CLBLM_L_X8Y83/CLBLM_M_C INT_L_X8Y82/FAN_ALT6 INT_L_X8Y82/FAN_ALT7 INT_L_X8Y82/FAN_BOUNCE7 INT_L_X8Y82/FAN_L6 INT_L_X8Y82/FAN_L7 INT_L_X8Y82/SL1END2 INT_L_X8Y83/LOGIC_OUTS_L14 INT_L_X8Y83/SL1BEG2 
+pips: CLBLM_L_X8Y82/CLBLM_L.CLBLM_FAN6->CLBLM_L_CE CLBLM_L_X8Y82/CLBLM_L.CLBLM_FAN7->CLBLM_M_CE CLBLM_L_X8Y83/CLBLM_L.CLBLM_M_C->CLBLM_LOGIC_OUTS14 INT_L_X8Y82/INT_L.FAN_ALT6->>FAN_L6 INT_L_X8Y82/INT_L.FAN_ALT7->>FAN_BOUNCE7 INT_L_X8Y82/INT_L.FAN_ALT7->>FAN_L7 INT_L_X8Y82/INT_L.FAN_BOUNCE7->>FAN_ALT6 INT_L_X8Y82/INT_L.SL1END2->>FAN_ALT7 INT_L_X8Y83/INT_L.LOGIC_OUTS_L14->>SL1BEG2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 7, 
+
+p_0_in[5] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+bit_counter[5] - 
+wires: CLBLM_L_X8Y82/CLBLM_IMUX18 CLBLM_L_X8Y82/CLBLM_IMUX31 CLBLM_L_X8Y82/CLBLM_LOGIC_OUTS5 CLBLM_L_X8Y82/CLBLM_M_B2 CLBLM_L_X8Y82/CLBLM_M_BQ CLBLM_L_X8Y82/CLBLM_M_C5 CLBLM_L_X8Y83/CLBLM_IMUX0 CLBLM_L_X8Y83/CLBLM_IMUX16 CLBLM_L_X8Y83/CLBLM_IMUX24 CLBLM_L_X8Y83/CLBLM_L_A3 CLBLM_L_X8Y83/CLBLM_L_B3 CLBLM_L_X8Y83/CLBLM_M_B5 CLBLM_L_X8Y84/CLBLM_IMUX17 CLBLM_L_X8Y84/CLBLM_M_B3 INT_L_X8Y82/IMUX_L18 INT_L_X8Y82/IMUX_L31 INT_L_X8Y82/LOGIC_OUTS_L5 INT_L_X8Y82/NL1BEG0 INT_L_X8Y82/NL1END_S3_0 INT_L_X8Y83/IMUX_L0 INT_L_X8Y83/IMUX_L16 INT_L_X8Y83/IMUX_L24 INT_L_X8Y83/NL1END0 INT_L_X8Y83/NR1BEG0 INT_L_X8Y84/IMUX_L17 INT_L_X8Y84/NR1END0 
+pips: CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX18->CLBLM_M_B2 CLBLM_L_X8Y82/CLBLM_L.CLBLM_IMUX31->CLBLM_M_C5 CLBLM_L_X8Y82/CLBLM_L.CLBLM_M_BQ->CLBLM_LOGIC_OUTS5 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX0->CLBLM_L_A3 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX16->CLBLM_L_B3 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX24->CLBLM_M_B5 CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX17->CLBLM_M_B3 INT_L_X8Y82/INT_L.LOGIC_OUTS_L5->>IMUX_L18 INT_L_X8Y82/INT_L.LOGIC_OUTS_L5->>NL1BEG0 INT_L_X8Y82/INT_L.NL1END_S3_0->>IMUX_L31 INT_L_X8Y83/INT_L.NL1END0->>IMUX_L0 INT_L_X8Y83/INT_L.NL1END0->>IMUX_L16 INT_L_X8Y83/INT_L.NL1END0->>IMUX_L24 INT_L_X8Y83/INT_L.NL1END0->>NR1BEG0 INT_L_X8Y84/INT_L.NR1END0->>IMUX_L17 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 8, 
+
+datapath/fifo_ff63 - 
+wires: CLBLM_R_X7Y84/CLBLM_BYP0 CLBLM_R_X7Y84/CLBLM_IMUX24 CLBLM_R_X7Y84/CLBLM_LOGIC_OUTS0 CLBLM_R_X7Y84/CLBLM_L_AQ CLBLM_R_X7Y84/CLBLM_L_AX CLBLM_R_X7Y84/CLBLM_M_B5 INT_R_X7Y84/BYP0 INT_R_X7Y84/BYP_ALT0 INT_R_X7Y84/IMUX24 INT_R_X7Y84/LOGIC_OUTS0 
+pips: CLBLM_R_X7Y84/CLBLM_R.CLBLM_BYP0->CLBLM_L_AX CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX24->CLBLM_M_B5 CLBLM_R_X7Y84/CLBLM_R.CLBLM_L_AQ->CLBLM_LOGIC_OUTS0 INT_R_X7Y84/INT_R.BYP_ALT0->>BYP0 INT_R_X7Y84/INT_R.LOGIC_OUTS0->>BYP_ALT0 INT_R_X7Y84/INT_R.LOGIC_OUTS0->>IMUX24 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+datapath/fifo_ff56 - 
+wires: CLBLM_L_X8Y84/CLBLM_WL1END3 CLBLM_L_X8Y85/CLBLM_LOGIC_OUTS4 CLBLM_L_X8Y85/CLBLM_M_AQ CLBLM_R_X7Y84/CLBLM_IMUX15 CLBLM_R_X7Y84/CLBLM_IMUX30 CLBLM_R_X7Y84/CLBLM_L_C5 CLBLM_R_X7Y84/CLBLM_M_B1 CLBLM_R_X7Y84/CLBLM_WL1END3 INT_L_X8Y84/WL1BEG3 INT_L_X8Y85/LOGIC_OUTS_L4 INT_L_X8Y85/WL1BEG_N3 INT_R_X7Y84/IMUX15 INT_R_X7Y84/IMUX30 INT_R_X7Y84/WL1END3 INT_R_X7Y85/WL1END_N1_3 
+pips: CLBLM_L_X8Y85/CLBLM_L.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX15->CLBLM_M_B1 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX30->CLBLM_L_C5 INT_L_X8Y85/INT_L.LOGIC_OUTS_L4->>WL1BEG_N3 INT_R_X7Y84/INT_R.WL1END3->>IMUX15 INT_R_X7Y84/INT_R.WL1END3->>IMUX30 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+round_counter_out - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX2 CLBLM_R_X7Y82/CLBLM_IMUX22 CLBLM_R_X7Y82/CLBLM_IMUX25 CLBLM_R_X7Y82/CLBLM_IMUX33 CLBLM_R_X7Y82/CLBLM_IMUX45 CLBLM_R_X7Y82/CLBLM_IMUX46 CLBLM_R_X7Y82/CLBLM_L_B5 CLBLM_R_X7Y82/CLBLM_L_C1 CLBLM_R_X7Y82/CLBLM_L_D5 CLBLM_R_X7Y82/CLBLM_M_A2 CLBLM_R_X7Y82/CLBLM_M_C3 CLBLM_R_X7Y82/CLBLM_M_D2 CLBLM_R_X7Y83/CLBLM_IMUX3 CLBLM_R_X7Y83/CLBLM_IMUX41 CLBLM_R_X7Y83/CLBLM_L_A2 CLBLM_R_X7Y83/CLBLM_L_D1 CLBLM_R_X7Y84/CLBLM_IMUX0 CLBLM_R_X7Y84/CLBLM_IMUX1 CLBLM_R_X7Y84/CLBLM_IMUX16 CLBLM_R_X7Y84/CLBLM_IMUX27 CLBLM_R_X7Y84/CLBLM_IMUX34 CLBLM_R_X7Y84/CLBLM_L_A3 CLBLM_R_X7Y84/CLBLM_L_B3 CLBLM_R_X7Y84/CLBLM_L_C6 CLBLM_R_X7Y84/CLBLM_M_A3 CLBLM_R_X7Y84/CLBLM_M_B4 CLBLM_R_X7Y85/CLBLM_LOGIC_OUTS0 CLBLM_R_X7Y85/CLBLM_L_AQ INT_R_X7Y82/IMUX2 INT_R_X7Y82/IMUX22 INT_R_X7Y82/IMUX25 INT_R_X7Y82/IMUX33 INT_R_X7Y82/IMUX45 INT_R_X7Y82/IMUX46 INT_R_X7Y82/SL1END1 INT_R_X7Y82/SR1END2 INT_R_X7Y82/SS2END0 INT_R_X7Y83/IMUX3 INT_R_X7Y83/IMUX41 INT_R_X7Y83/SL1BEG1 INT_R_X7Y83/SL1END0 INT_R_X7Y83/SR1BEG2 INT_R_X7Y83/SR1END1 INT_R_X7Y83/SS2A0 INT_R_X7Y84/FAN_ALT7 INT_R_X7Y84/FAN_BOUNCE7 INT_R_X7Y84/IMUX0 INT_R_X7Y84/IMUX1 INT_R_X7Y84/IMUX16 INT_R_X7Y84/IMUX27 INT_R_X7Y84/IMUX34 INT_R_X7Y84/SL1BEG0 INT_R_X7Y84/SL1END0 INT_R_X7Y84/SR1BEG1 INT_R_X7Y84/SR1END1 INT_R_X7Y84/SS2BEG0 INT_R_X7Y85/LOGIC_OUTS0 INT_R_X7Y85/SL1BEG0 INT_R_X7Y85/SR1BEG1 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX2->CLBLM_M_A2 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX22->CLBLM_M_C3 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX25->CLBLM_L_B5 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX33->CLBLM_L_C1 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX45->CLBLM_M_D2 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX46->CLBLM_L_D5 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX3->CLBLM_L_A2 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX41->CLBLM_L_D1 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX0->CLBLM_L_A3 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX1->CLBLM_M_A3 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX16->CLBLM_L_B3 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX27->CLBLM_M_B4 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX34->CLBLM_L_C6 CLBLM_R_X7Y85/CLBLM_R.CLBLM_L_AQ->CLBLM_LOGIC_OUTS0 INT_R_X7Y82/INT_R.SL1END1->>IMUX2 INT_R_X7Y82/INT_R.SR1END2->>IMUX22 INT_R_X7Y82/INT_R.SR1END2->>IMUX45 INT_R_X7Y82/INT_R.SR1END2->>IMUX46 INT_R_X7Y82/INT_R.SS2END0->>IMUX25 INT_R_X7Y82/INT_R.SS2END0->>IMUX33 INT_R_X7Y83/INT_R.SL1END0->>IMUX41 INT_R_X7Y83/INT_R.SR1END1->>IMUX3 INT_R_X7Y83/INT_R.SR1END1->>SL1BEG1 INT_R_X7Y83/INT_R.SR1END1->>SR1BEG2 INT_R_X7Y84/INT_R.FAN_ALT7->>FAN_BOUNCE7 INT_R_X7Y84/INT_R.FAN_BOUNCE7->>IMUX34 INT_R_X7Y84/INT_R.SL1END0->>IMUX0 INT_R_X7Y84/INT_R.SL1END0->>IMUX1 INT_R_X7Y84/INT_R.SL1END0->>IMUX16 INT_R_X7Y84/INT_R.SL1END0->>SL1BEG0 INT_R_X7Y84/INT_R.SL1END0->>SR1BEG1 INT_R_X7Y84/INT_R.SL1END0->>SS2BEG0 INT_R_X7Y84/INT_R.SR1END1->>FAN_ALT7 INT_R_X7Y84/INT_R.SR1END1->>IMUX27 INT_R_X7Y85/INT_R.LOGIC_OUTS0->>SL1BEG0 INT_R_X7Y85/INT_R.LOGIC_OUTS0->>SR1BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 19, 
+
+datapath/lut_ff63 - 
+wires: CLBLM_R_X7Y84/CLBLM_BYP1 CLBLM_R_X7Y84/CLBLM_IMUX17 CLBLM_R_X7Y84/CLBLM_LOGIC_OUTS4 CLBLM_R_X7Y84/CLBLM_M_AQ CLBLM_R_X7Y84/CLBLM_M_AX CLBLM_R_X7Y84/CLBLM_M_B3 INT_R_X7Y84/BYP1 INT_R_X7Y84/BYP_ALT1 INT_R_X7Y84/IMUX17 INT_R_X7Y84/LOGIC_OUTS4 
+pips: CLBLM_R_X7Y84/CLBLM_R.CLBLM_BYP1->CLBLM_M_AX CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX17->CLBLM_M_B3 CLBLM_R_X7Y84/CLBLM_R.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 INT_R_X7Y84/INT_R.BYP_ALT1->>BYP1 INT_R_X7Y84/INT_R.LOGIC_OUTS4->>BYP_ALT1 INT_R_X7Y84/INT_R.LOGIC_OUTS4->>IMUX17 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+datapath/lut_ff56 - 
+wires: BRAM_INT_INTERFACE_L_X6Y83/INT_INTERFACE_EL1BEG3 BRAM_L_X6Y80/BRAM_EL1BEG3_3 CLBLM_R_X5Y83/CLBLM_EL1BEG3 CLBLM_R_X5Y84/CLBLM_LOGIC_OUTS4 CLBLM_R_X5Y84/CLBLM_M_AQ CLBLM_R_X7Y84/CLBLM_IMUX18 CLBLM_R_X7Y84/CLBLM_IMUX33 CLBLM_R_X7Y84/CLBLM_L_C1 CLBLM_R_X7Y84/CLBLM_M_B2 INT_L_X6Y83/EL1END3 INT_L_X6Y83/ER1BEG_S0 INT_L_X6Y84/ER1BEG0 INT_R_X5Y83/EL1BEG3 INT_R_X5Y84/EL1BEG_N3 INT_R_X5Y84/LOGIC_OUTS4 INT_R_X7Y84/ER1END0 INT_R_X7Y84/IMUX18 INT_R_X7Y84/IMUX33 VBRK_X18Y87/VBRK_EL1BEG3 
+pips: CLBLM_R_X5Y84/CLBLM_R.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX18->CLBLM_M_B2 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX33->CLBLM_L_C1 INT_L_X6Y83/INT_L.EL1END3->>ER1BEG_S0 INT_R_X5Y84/INT_R.LOGIC_OUTS4->>EL1BEG_N3 INT_R_X7Y84/INT_R.ER1END0->>IMUX18 INT_R_X7Y84/INT_R.ER1END0->>IMUX33 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+cipher_out_INST_0_i_1_n_0 - 
+wires: CLBLM_R_X7Y84/CLBLM_IMUX12 CLBLM_R_X7Y84/CLBLM_LOGIC_OUTS17 CLBLM_R_X7Y84/CLBLM_L_BMUX CLBLM_R_X7Y84/CLBLM_M_B6 INT_R_X7Y84/FAN_ALT1 INT_R_X7Y84/FAN_BOUNCE1 INT_R_X7Y84/IMUX12 INT_R_X7Y84/LOGIC_OUTS17 
+pips: CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX12->CLBLM_M_B6 CLBLM_R_X7Y84/CLBLM_R.CLBLM_L_BMUX->CLBLM_LOGIC_OUTS17 INT_R_X7Y84/INT_R.FAN_ALT1->>FAN_BOUNCE1 INT_R_X7Y84/INT_R.FAN_BOUNCE1->>IMUX12 INT_R_X7Y84/INT_R.LOGIC_OUTS17->>FAN_ALT1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+datapath/fifo_ff62 - 
+wires: CLBLM_L_X8Y85/CLBLM_BYP1 CLBLM_L_X8Y85/CLBLM_M_AX CLBLM_L_X8Y85/CLBLM_NE2A2 CLBLM_R_X7Y84/CLBLM_IMUX19 CLBLM_R_X7Y84/CLBLM_LOGIC_OUTS16 CLBLM_R_X7Y84/CLBLM_L_AMUX CLBLM_R_X7Y84/CLBLM_L_B2 CLBLM_R_X7Y85/CLBLM_NE2A2 INT_L_X8Y85/BYP_ALT1 INT_L_X8Y85/BYP_L1 INT_L_X8Y85/FAN_ALT5 INT_L_X8Y85/FAN_BOUNCE5 INT_L_X8Y85/NE2END2 INT_R_X7Y84/FAN_ALT5 INT_R_X7Y84/FAN_BOUNCE5 INT_R_X7Y84/IMUX19 INT_R_X7Y84/LOGIC_OUTS16 INT_R_X7Y84/NE2BEG2 INT_R_X7Y85/NE2A2 
+pips: CLBLM_L_X8Y85/CLBLM_L.CLBLM_BYP1->CLBLM_M_AX CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX19->CLBLM_L_B2 CLBLM_R_X7Y84/CLBLM_R.CLBLM_L_AMUX->CLBLM_LOGIC_OUTS16 INT_L_X8Y85/INT_L.BYP_ALT1->>BYP_L1 INT_L_X8Y85/INT_L.FAN_ALT5->>FAN_BOUNCE5 INT_L_X8Y85/INT_L.FAN_BOUNCE5->>BYP_ALT1 INT_L_X8Y85/INT_L.NE2END2->>FAN_ALT5 INT_R_X7Y84/INT_R.FAN_ALT5->>FAN_BOUNCE5 INT_R_X7Y84/INT_R.FAN_BOUNCE5->>IMUX19 INT_R_X7Y84/INT_R.LOGIC_OUTS16->>FAN_ALT5 INT_R_X7Y84/INT_R.LOGIC_OUTS16->>NE2BEG2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+datapath/lut_ff62 - 
+wires: BRAM_INT_INTERFACE_L_X6Y84/INT_INTERFACE_WL1END0 BRAM_L_X6Y80/BRAM_WL1END0_4 CLBLM_R_X5Y84/CLBLM_BYP1 CLBLM_R_X5Y84/CLBLM_M_AX CLBLM_R_X5Y84/CLBLM_WL1END0 CLBLM_R_X7Y84/CLBLM_IMUX14 CLBLM_R_X7Y84/CLBLM_LOGIC_OUTS20 CLBLM_R_X7Y84/CLBLM_L_B1 CLBLM_R_X7Y84/CLBLM_M_AMUX INT_L_X6Y84/WL1BEG0 INT_L_X6Y84/WL1END1 INT_R_X5Y84/BYP1 INT_R_X5Y84/BYP_ALT1 INT_R_X5Y84/WL1END0 INT_R_X7Y84/BYP_ALT2 INT_R_X7Y84/BYP_BOUNCE2 INT_R_X7Y84/IMUX14 INT_R_X7Y84/LOGIC_OUTS20 INT_R_X7Y84/WL1BEG1 INT_R_X7Y85/BYP_BOUNCE_N3_2 VBRK_X18Y88/VBRK_WL1END0 
+pips: CLBLM_R_X5Y84/CLBLM_R.CLBLM_BYP1->CLBLM_M_AX CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX14->CLBLM_L_B1 CLBLM_R_X7Y84/CLBLM_R.CLBLM_M_AMUX->CLBLM_LOGIC_OUTS20 INT_L_X6Y84/INT_L.WL1END1->>WL1BEG0 INT_R_X5Y84/INT_R.BYP_ALT1->>BYP1 INT_R_X5Y84/INT_R.WL1END0->>BYP_ALT1 INT_R_X7Y84/INT_R.BYP_ALT2->>BYP_BOUNCE2 INT_R_X7Y84/INT_R.BYP_BOUNCE2->>IMUX14 INT_R_X7Y84/INT_R.LOGIC_OUTS20->>BYP_ALT2 INT_R_X7Y84/INT_R.LOGIC_OUTS20->>WL1BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+key - 
+wires: CLBLM_R_X7Y83/CLBLM_IMUX16 CLBLM_R_X7Y83/CLBLM_LOGIC_OUTS6 CLBLM_R_X7Y83/CLBLM_L_B3 CLBLM_R_X7Y83/CLBLM_M_CQ CLBLM_R_X7Y84/CLBLM_IMUX25 CLBLM_R_X7Y84/CLBLM_L_B5 INT_R_X7Y82/SR1END3 INT_R_X7Y83/IMUX16 INT_R_X7Y83/LOGIC_OUTS6 INT_R_X7Y83/NL1BEG1 INT_R_X7Y83/SR1BEG3 INT_R_X7Y83/SR1END_N3_3 INT_R_X7Y84/IMUX25 INT_R_X7Y84/NL1END1 
+pips: CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX16->CLBLM_L_B3 CLBLM_R_X7Y83/CLBLM_R.CLBLM_M_CQ->CLBLM_LOGIC_OUTS6 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX25->CLBLM_L_B5 INT_R_X7Y83/INT_R.LOGIC_OUTS6->>NL1BEG1 INT_R_X7Y83/INT_R.LOGIC_OUTS6->>SR1BEG3 INT_R_X7Y83/INT_R.SR1END_N3_3->>IMUX16 INT_R_X7Y84/INT_R.NL1END1->>IMUX25 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+datapath/shifter2[0] - 
+wires: CLBLM_R_X7Y84/CLBLM_IMUX26 CLBLM_R_X7Y84/CLBLM_L_B4 CLBLM_R_X7Y85/CLBLM_LOGIC_OUTS6 CLBLM_R_X7Y85/CLBLM_M_CQ INT_R_X7Y84/IMUX26 INT_R_X7Y84/SR1BEG_S0 INT_R_X7Y84/SR1END3 INT_R_X7Y85/LOGIC_OUTS6 INT_R_X7Y85/SR1BEG3 INT_R_X7Y85/SR1END_N3_3 
+pips: CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX26->CLBLM_L_B4 CLBLM_R_X7Y85/CLBLM_R.CLBLM_M_CQ->CLBLM_LOGIC_OUTS6 INT_R_X7Y84/INT_R.SR1BEG_S0->>IMUX26 INT_R_X7Y84/INT_R.SR1END3->>SR1BEG_S0 INT_R_X7Y85/INT_R.LOGIC_OUTS6->>SR1BEG3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+datapath/fifo_ff57_reg_srl5_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+<const0> - 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 33, 
+
+<const1> - 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 43, 
+
+fifo_ff63_i_1_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+datapath/lut_ff57_reg_srl5_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+datapath/lut_ff_input - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+datapath/shifter1_reg_n_0_[0] - 
+wires: CLBLM_R_X7Y84/CLBLM_IMUX5 CLBLM_R_X7Y84/CLBLM_IMUX7 CLBLM_R_X7Y84/CLBLM_L_A6 CLBLM_R_X7Y84/CLBLM_M_A1 CLBLM_R_X7Y85/CLBLM_FAN3 CLBLM_R_X7Y85/CLBLM_LOGIC_OUTS4 CLBLM_R_X7Y85/CLBLM_M_AQ CLBLM_R_X7Y85/CLBLM_M_DI INT_L_X6Y85/EL1BEG3 INT_L_X6Y85/NW2END_S0_0 INT_L_X6Y86/EL1BEG_N3 INT_L_X6Y86/NW2END0 INT_R_X7Y84/FAN_BOUNCE_S3_4 INT_R_X7Y84/IMUX5 INT_R_X7Y84/IMUX7 INT_R_X7Y85/EL1END3 INT_R_X7Y85/FAN3 INT_R_X7Y85/FAN_ALT3 INT_R_X7Y85/FAN_ALT4 INT_R_X7Y85/FAN_BOUNCE4 INT_R_X7Y85/LOGIC_OUTS4 INT_R_X7Y85/NW2BEG0 INT_R_X7Y86/NW2A0 
+pips: CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX5->CLBLM_L_A6 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX7->CLBLM_M_A1 CLBLM_R_X7Y85/CLBLM_R.CLBLM_FAN3->CLBLM_M_DI CLBLM_R_X7Y85/CLBLM_R.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 INT_L_X6Y86/INT_L.NW2END0->>EL1BEG_N3 INT_R_X7Y84/INT_R.FAN_BOUNCE_S3_4->>IMUX5 INT_R_X7Y84/INT_R.FAN_BOUNCE_S3_4->>IMUX7 INT_R_X7Y85/INT_R.EL1END3->>FAN_ALT3 INT_R_X7Y85/INT_R.FAN_ALT3->>FAN3 INT_R_X7Y85/INT_R.FAN_ALT4->>FAN_BOUNCE4 INT_R_X7Y85/INT_R.LOGIC_OUTS4->>FAN_ALT4 INT_R_X7Y85/INT_R.LOGIC_OUTS4->>NW2BEG0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+datapath/shifter1_reg[1]_srl23_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+datapath/shifter1_reg[24]_srl32_n_1 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+p_1_out[55] - 
+wires: CLBLM_R_X7Y84/CLBLM_LOGIC_OUTS10 CLBLM_R_X7Y84/CLBLM_L_C CLBLM_R_X7Y85/CLBLM_FAN2 CLBLM_R_X7Y85/CLBLM_M_BI INT_R_X7Y84/LOGIC_OUTS10 INT_R_X7Y84/NL1BEG1 INT_R_X7Y85/FAN2 INT_R_X7Y85/FAN_ALT2 INT_R_X7Y85/NL1END1 
+pips: CLBLM_R_X7Y84/CLBLM_R.CLBLM_L_C->CLBLM_LOGIC_OUTS10 CLBLM_R_X7Y85/CLBLM_R.CLBLM_FAN2->CLBLM_M_BI INT_R_X7Y84/INT_R.LOGIC_OUTS10->>NL1BEG1 INT_R_X7Y85/INT_R.FAN_ALT2->>FAN2 INT_R_X7Y85/INT_R.NL1END1->>FAN_ALT2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+datapath/shifter2_reg[1]_srl31_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+datapath/shifter2_reg[32]_srl32_n_1 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+fifo_ff0 - 
+wires: CLBLM_L_X8Y83/CLBLM_IMUX21 CLBLM_L_X8Y83/CLBLM_L_C4 CLBLM_L_X8Y84/CLBLM_IMUX25 CLBLM_L_X8Y84/CLBLM_LOGIC_OUTS4 CLBLM_L_X8Y84/CLBLM_L_B5 CLBLM_L_X8Y84/CLBLM_M_AQ INT_L_X8Y83/FAN_BOUNCE_S3_4 INT_L_X8Y83/IMUX_L21 INT_L_X8Y84/FAN_ALT4 INT_L_X8Y84/FAN_BOUNCE4 INT_L_X8Y84/IMUX_L25 INT_L_X8Y84/LOGIC_OUTS_L4 
+pips: CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX21->CLBLM_L_C4 CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX25->CLBLM_L_B5 CLBLM_L_X8Y84/CLBLM_L.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 INT_L_X8Y83/INT_L.FAN_BOUNCE_S3_4->>IMUX_L21 INT_L_X8Y84/INT_L.FAN_ALT4->>FAN_BOUNCE4 INT_L_X8Y84/INT_L.LOGIC_OUTS_L4->>FAN_ALT4 INT_L_X8Y84/INT_L.LOGIC_OUTS_L4->>IMUX_L25 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+key_exp/fifo_ff1_reg_srl2_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/fifo_ff3 - 
+wires: CLBLM_L_X8Y83/CLBLM_EE2BEG0 CLBLM_L_X8Y83/CLBLM_WL1END3 CLBLM_L_X8Y84/CLBLM_BYP1 CLBLM_L_X8Y84/CLBLM_M_AX CLBLM_R_X7Y83/CLBLM_EE2BEG0 CLBLM_R_X7Y83/CLBLM_IMUX46 CLBLM_R_X7Y83/CLBLM_LOGIC_OUTS0 CLBLM_R_X7Y83/CLBLM_L_AQ CLBLM_R_X7Y83/CLBLM_L_D5 CLBLM_R_X7Y83/CLBLM_WL1END3 INT_L_X8Y83/EE2A0 INT_L_X8Y83/WL1BEG3 INT_L_X8Y84/BYP_ALT1 INT_L_X8Y84/BYP_L1 INT_L_X8Y84/WL1BEG_N3 INT_L_X8Y84/WR1END1 INT_R_X7Y83/EE2BEG0 INT_R_X7Y83/IMUX46 INT_R_X7Y83/LOGIC_OUTS0 INT_R_X7Y83/WL1END3 INT_R_X7Y84/WL1END_N1_3 INT_R_X9Y83/EE2END0 INT_R_X9Y83/NR1BEG0 INT_R_X9Y84/NR1END0 INT_R_X9Y84/WR1BEG1 
+pips: CLBLM_L_X8Y84/CLBLM_L.CLBLM_BYP1->CLBLM_M_AX CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX46->CLBLM_L_D5 CLBLM_R_X7Y83/CLBLM_R.CLBLM_L_AQ->CLBLM_LOGIC_OUTS0 INT_L_X8Y84/INT_L.BYP_ALT1->>BYP_L1 INT_L_X8Y84/INT_L.WR1END1->>BYP_ALT1 INT_L_X8Y84/INT_L.WR1END1->>WL1BEG_N3 INT_R_X7Y83/INT_R.LOGIC_OUTS0->>EE2BEG0 INT_R_X7Y83/INT_R.WL1END3->>IMUX46 INT_R_X9Y83/INT_R.EE2END0->>NR1BEG0 INT_R_X9Y84/INT_R.NR1END0->>WR1BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+key_exp/shifter1_reg_n_0_[0] - 
+wires: BRAM_INT_INTERFACE_L_X6Y83/INT_INTERFACE_ER1BEG1 BRAM_INT_INTERFACE_L_X6Y83/INT_INTERFACE_WW2END0 BRAM_L_X6Y80/BRAM_ER1BEG1_3 BRAM_L_X6Y80/BRAM_WW2END0_3 CLBLM_R_X5Y83/CLBLM_ER1BEG1 CLBLM_R_X5Y83/CLBLM_WW2END0 CLBLM_R_X7Y83/CLBLM_BYP0 CLBLM_R_X7Y83/CLBLM_IMUX25 CLBLM_R_X7Y83/CLBLM_LOGIC_OUTS4 CLBLM_R_X7Y83/CLBLM_L_AX CLBLM_R_X7Y83/CLBLM_L_B5 CLBLM_R_X7Y83/CLBLM_M_AQ INT_L_X6Y83/EL1BEG0 INT_L_X6Y83/ER1END1 INT_L_X6Y83/WW2A0 INT_R_X5Y83/ER1BEG1 INT_R_X5Y83/WW2END0 INT_R_X7Y82/EL1END_S3_0 INT_R_X7Y83/BYP0 INT_R_X7Y83/BYP_ALT0 INT_R_X7Y83/EL1END0 INT_R_X7Y83/IMUX25 INT_R_X7Y83/LOGIC_OUTS4 INT_R_X7Y83/WW2BEG0 VBRK_X18Y87/VBRK_ER1BEG1 VBRK_X18Y87/VBRK_WW2END0 
+pips: CLBLM_R_X7Y83/CLBLM_R.CLBLM_BYP0->CLBLM_L_AX CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX25->CLBLM_L_B5 CLBLM_R_X7Y83/CLBLM_R.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 INT_L_X6Y83/INT_L.ER1END1->>EL1BEG0 INT_R_X5Y83/INT_R.WW2END0->>ER1BEG1 INT_R_X7Y83/INT_R.BYP_ALT0->>BYP0 INT_R_X7Y83/INT_R.EL1END0->>BYP_ALT0 INT_R_X7Y83/INT_R.LOGIC_OUTS4->>IMUX25 INT_R_X7Y83/INT_R.LOGIC_OUTS4->>WW2BEG0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+lut_ff0 - 
+wires: CLBLM_L_X8Y83/CLBLM_IMUX30 CLBLM_L_X8Y83/CLBLM_LOGIC_OUTS4 CLBLM_L_X8Y83/CLBLM_L_C5 CLBLM_L_X8Y83/CLBLM_M_AQ CLBLM_L_X8Y84/CLBLM_IMUX5 CLBLM_L_X8Y84/CLBLM_L_A6 INT_L_X8Y83/IMUX_L30 INT_L_X8Y83/LOGIC_OUTS_L4 INT_L_X8Y83/NL1BEG2 INT_L_X8Y83/NL1BEG_N3 INT_L_X8Y84/BYP_ALT5 INT_L_X8Y84/BYP_BOUNCE5 INT_L_X8Y84/IMUX_L5 INT_L_X8Y84/NL1END2 
+pips: CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX30->CLBLM_L_C5 CLBLM_L_X8Y83/CLBLM_L.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX5->CLBLM_L_A6 INT_L_X8Y83/INT_L.LOGIC_OUTS_L4->>NL1BEG_N3 INT_L_X8Y83/INT_L.NL1BEG_N3->>IMUX_L30 INT_L_X8Y83/INT_L.NL1BEG_N3->>NL1BEG2 INT_L_X8Y84/INT_L.BYP_ALT5->>BYP_BOUNCE5 INT_L_X8Y84/INT_L.BYP_BOUNCE5->>IMUX_L5 INT_L_X8Y84/INT_L.NL1END2->>BYP_ALT5 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+key_exp/p_3_in - 
+wires: CLBLM_L_X8Y83/CLBLM_FAN6 CLBLM_L_X8Y83/CLBLM_FAN7 CLBLM_L_X8Y83/CLBLM_LOGIC_OUTS9 CLBLM_L_X8Y83/CLBLM_L_B CLBLM_L_X8Y83/CLBLM_L_CE CLBLM_L_X8Y83/CLBLM_M_CE CLBLM_L_X8Y84/CLBLM_IMUX0 CLBLM_L_X8Y84/CLBLM_IMUX16 CLBLM_L_X8Y84/CLBLM_L_A3 CLBLM_L_X8Y84/CLBLM_L_B3 INT_L_X8Y83/BYP_ALT4 INT_L_X8Y83/BYP_BOUNCE4 INT_L_X8Y83/FAN_ALT6 INT_L_X8Y83/FAN_ALT7 INT_L_X8Y83/FAN_BOUNCE7 INT_L_X8Y83/FAN_L6 INT_L_X8Y83/FAN_L7 INT_L_X8Y83/LOGIC_OUTS_L9 INT_L_X8Y83/NL1BEG0 INT_L_X8Y83/NL1END_S3_0 INT_L_X8Y84/IMUX_L0 INT_L_X8Y84/IMUX_L16 INT_L_X8Y84/NL1END0 
+pips: CLBLM_L_X8Y83/CLBLM_L.CLBLM_FAN6->CLBLM_L_CE CLBLM_L_X8Y83/CLBLM_L.CLBLM_FAN7->CLBLM_M_CE CLBLM_L_X8Y83/CLBLM_L.CLBLM_L_B->CLBLM_LOGIC_OUTS9 CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX0->CLBLM_L_A3 CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX16->CLBLM_L_B3 INT_L_X8Y83/INT_L.BYP_ALT4->>BYP_BOUNCE4 INT_L_X8Y83/INT_L.BYP_BOUNCE4->>FAN_ALT7 INT_L_X8Y83/INT_L.FAN_ALT6->>FAN_L6 INT_L_X8Y83/INT_L.FAN_ALT7->>FAN_BOUNCE7 INT_L_X8Y83/INT_L.FAN_ALT7->>FAN_L7 INT_L_X8Y83/INT_L.FAN_BOUNCE7->>FAN_ALT6 INT_L_X8Y83/INT_L.LOGIC_OUTS_L9->>BYP_ALT4 INT_L_X8Y83/INT_L.LOGIC_OUTS_L9->>NL1BEG0 INT_L_X8Y84/INT_L.NL1END0->>IMUX_L0 INT_L_X8Y84/INT_L.NL1END0->>IMUX_L16 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 6, 
+
+key_exp/lut_ff1_reg_srl2_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/lut_ff3 - 
+wires: CLBLM_L_X8Y82/CLBLM_WL1END3 CLBLM_L_X8Y83/CLBLM_BYP1 CLBLM_L_X8Y83/CLBLM_LOGIC_OUTS0 CLBLM_L_X8Y83/CLBLM_L_AQ CLBLM_L_X8Y83/CLBLM_M_AX CLBLM_R_X7Y82/CLBLM_WL1END3 CLBLM_R_X7Y83/CLBLM_IMUX37 CLBLM_R_X7Y83/CLBLM_L_D4 INT_L_X8Y82/SE2A0 INT_L_X8Y82/WL1BEG3 INT_L_X8Y83/BYP_ALT1 INT_L_X8Y83/BYP_L1 INT_L_X8Y83/LOGIC_OUTS_L0 INT_L_X8Y83/SE2BEG0 INT_L_X8Y83/WL1BEG_N3 INT_L_X8Y83/WR1END1 INT_R_X7Y82/WL1END3 INT_R_X7Y83/IMUX37 INT_R_X7Y83/NL1BEG_N3 INT_R_X7Y83/WL1END_N1_3 INT_R_X9Y82/NR1BEG0 INT_R_X9Y82/SE2END0 INT_R_X9Y83/NR1END0 INT_R_X9Y83/WR1BEG1 
+pips: CLBLM_L_X8Y83/CLBLM_L.CLBLM_BYP1->CLBLM_M_AX CLBLM_L_X8Y83/CLBLM_L.CLBLM_L_AQ->CLBLM_LOGIC_OUTS0 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX37->CLBLM_L_D4 INT_L_X8Y83/INT_L.BYP_ALT1->>BYP_L1 INT_L_X8Y83/INT_L.LOGIC_OUTS_L0->>SE2BEG0 INT_L_X8Y83/INT_L.WR1END1->>BYP_ALT1 INT_L_X8Y83/INT_L.WR1END1->>WL1BEG_N3 INT_R_X7Y83/INT_R.NL1BEG_N3->>IMUX37 INT_R_X7Y83/INT_R.WL1END_N1_3->>NL1BEG_N3 INT_R_X9Y82/INT_R.SE2END0->>NR1BEG0 INT_R_X9Y83/INT_R.NR1END0->>WR1BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+key_exp/lut_out - 
+wires: CLBLM_L_X8Y83/CLBLM_BYP0 CLBLM_L_X8Y83/CLBLM_EL1BEG0 CLBLM_L_X8Y83/CLBLM_L_AX CLBLM_L_X8Y84/CLBLM_ER1BEG0 CLBLM_L_X8Y84/CLBLM_IMUX9 CLBLM_L_X8Y84/CLBLM_L_A5 CLBLM_R_X7Y83/CLBLM_EL1BEG0 CLBLM_R_X7Y83/CLBLM_LOGIC_OUTS17 CLBLM_R_X7Y83/CLBLM_LOGIC_OUTS9 CLBLM_R_X7Y83/CLBLM_L_B CLBLM_R_X7Y83/CLBLM_L_BMUX CLBLM_R_X7Y84/CLBLM_ER1BEG0 INT_L_X8Y82/EL1END_S3_0 INT_L_X8Y83/BYP_ALT0 INT_L_X8Y83/BYP_L0 INT_L_X8Y83/EL1END0 INT_L_X8Y84/ER1END0 INT_L_X8Y84/IMUX_L9 INT_R_X7Y83/EL1BEG0 INT_R_X7Y83/ER1BEG_S0 INT_R_X7Y83/LOGIC_OUTS17 INT_R_X7Y83/LOGIC_OUTS9 INT_R_X7Y84/ER1BEG0 
+pips: CLBLM_L_X8Y83/CLBLM_L.CLBLM_BYP0->CLBLM_L_AX CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX9->CLBLM_L_A5 CLBLM_R_X7Y83/CLBLM_R.CLBLM_L_B->>CLBLM_L_BMUX CLBLM_R_X7Y83/CLBLM_R.CLBLM_L_B->CLBLM_LOGIC_OUTS9 CLBLM_R_X7Y83/CLBLM_R.CLBLM_L_BMUX->CLBLM_LOGIC_OUTS17 INT_L_X8Y83/INT_L.BYP_ALT0->>BYP_L0 INT_L_X8Y83/INT_L.EL1END0->>BYP_ALT0 INT_L_X8Y84/INT_L.ER1END0->>IMUX_L9 INT_R_X7Y83/INT_R.LOGIC_OUTS17->>ER1BEG_S0 INT_R_X7Y83/INT_R.LOGIC_OUTS9->>EL1BEG0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+key_exp/round_counter0 - 
+wires: CLBLM_L_X8Y82/CLBLM_SW2A1 CLBLM_L_X8Y83/CLBLM_LOGIC_OUTS13 CLBLM_L_X8Y83/CLBLM_M_B CLBLM_L_X8Y83/CLBLM_WL1END0 CLBLM_R_X7Y82/CLBLM_FAN6 CLBLM_R_X7Y82/CLBLM_FAN7 CLBLM_R_X7Y82/CLBLM_L_CE CLBLM_R_X7Y82/CLBLM_M_CE CLBLM_R_X7Y82/CLBLM_SW2A1 CLBLM_R_X7Y83/CLBLM_WL1END0 CLBLM_R_X7Y85/CLBLM_FAN6 CLBLM_R_X7Y85/CLBLM_L_CE INT_L_X8Y82/SW2A1 INT_L_X8Y83/LOGIC_OUTS_L13 INT_L_X8Y83/SW2BEG1 INT_L_X8Y83/WL1BEG0 INT_R_X7Y82/FAN6 INT_R_X7Y82/FAN7 INT_R_X7Y82/FAN_ALT6 INT_R_X7Y82/FAN_ALT7 INT_R_X7Y82/SW2END1 INT_R_X7Y83/NN2BEG1 INT_R_X7Y83/WL1END0 INT_R_X7Y84/NN2A1 INT_R_X7Y85/FAN6 INT_R_X7Y85/FAN_ALT6 INT_R_X7Y85/NN2END1 
+pips: CLBLM_L_X8Y83/CLBLM_L.CLBLM_M_B->CLBLM_LOGIC_OUTS13 CLBLM_R_X7Y82/CLBLM_R.CLBLM_FAN6->CLBLM_L_CE CLBLM_R_X7Y82/CLBLM_R.CLBLM_FAN7->CLBLM_M_CE CLBLM_R_X7Y85/CLBLM_R.CLBLM_FAN6->CLBLM_L_CE INT_L_X8Y83/INT_L.LOGIC_OUTS_L13->>SW2BEG1 INT_L_X8Y83/INT_L.LOGIC_OUTS_L13->>WL1BEG0 INT_R_X7Y82/INT_R.FAN_ALT6->>FAN6 INT_R_X7Y82/INT_R.FAN_ALT7->>FAN7 INT_R_X7Y82/INT_R.SW2END1->>FAN_ALT6 INT_R_X7Y82/INT_R.SW2END1->>FAN_ALT7 INT_R_X7Y83/INT_R.WL1END0->>NN2BEG1 INT_R_X7Y85/INT_R.FAN_ALT6->>FAN6 INT_R_X7Y85/INT_R.NN2END1->>FAN_ALT6 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 8, 
+
+p_0_in__0[0] - 
+wires: CLBLM_R_X7Y84/CLBLM_LOGIC_OUTS9 CLBLM_R_X7Y84/CLBLM_L_B CLBLM_R_X7Y85/CLBLM_BYP0 CLBLM_R_X7Y85/CLBLM_L_AX INT_R_X7Y84/LOGIC_OUTS9 INT_R_X7Y84/NL1BEG0 INT_R_X7Y84/NL1END_S3_0 INT_R_X7Y85/BYP0 INT_R_X7Y85/BYP_ALT0 INT_R_X7Y85/NL1END0 
+pips: CLBLM_R_X7Y84/CLBLM_R.CLBLM_L_B->CLBLM_LOGIC_OUTS9 CLBLM_R_X7Y85/CLBLM_R.CLBLM_BYP0->CLBLM_L_AX INT_R_X7Y84/INT_R.LOGIC_OUTS9->>NL1BEG0 INT_R_X7Y85/INT_R.BYP_ALT0->>BYP0 INT_R_X7Y85/INT_R.NL1END0->>BYP_ALT0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/round_counter_reg__0[1] - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX16 CLBLM_R_X7Y82/CLBLM_IMUX32 CLBLM_R_X7Y82/CLBLM_IMUX40 CLBLM_R_X7Y82/CLBLM_IMUX41 CLBLM_R_X7Y82/CLBLM_IMUX8 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS0 CLBLM_R_X7Y82/CLBLM_L_AQ CLBLM_R_X7Y82/CLBLM_L_B3 CLBLM_R_X7Y82/CLBLM_L_D1 CLBLM_R_X7Y82/CLBLM_M_A5 CLBLM_R_X7Y82/CLBLM_M_C1 CLBLM_R_X7Y82/CLBLM_M_D1 CLBLM_R_X7Y83/CLBLM_IMUX39 CLBLM_R_X7Y83/CLBLM_IMUX6 CLBLM_R_X7Y83/CLBLM_L_A1 CLBLM_R_X7Y83/CLBLM_L_D3 INT_R_X7Y82/IMUX16 INT_R_X7Y82/IMUX32 INT_R_X7Y82/IMUX40 INT_R_X7Y82/IMUX41 INT_R_X7Y82/IMUX8 INT_R_X7Y82/LOGIC_OUTS0 INT_R_X7Y82/NN2BEG0 INT_R_X7Y82/SL1END0 INT_R_X7Y83/BYP_ALT4 INT_R_X7Y83/BYP_BOUNCE4 INT_R_X7Y83/IMUX39 INT_R_X7Y83/IMUX6 INT_R_X7Y83/NN2A0 INT_R_X7Y83/NN2END_S2_0 INT_R_X7Y83/SL1BEG0 INT_R_X7Y83/SR1BEG_S0 INT_R_X7Y84/NN2END0 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX16->CLBLM_L_B3 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX32->CLBLM_M_C1 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX40->CLBLM_M_D1 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX41->CLBLM_L_D1 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX8->CLBLM_M_A5 CLBLM_R_X7Y82/CLBLM_R.CLBLM_L_AQ->CLBLM_LOGIC_OUTS0 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX39->CLBLM_L_D3 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX6->CLBLM_L_A1 INT_R_X7Y82/INT_R.LOGIC_OUTS0->>IMUX16 INT_R_X7Y82/INT_R.LOGIC_OUTS0->>IMUX32 INT_R_X7Y82/INT_R.LOGIC_OUTS0->>IMUX40 INT_R_X7Y82/INT_R.LOGIC_OUTS0->>IMUX8 INT_R_X7Y82/INT_R.LOGIC_OUTS0->>NN2BEG0 INT_R_X7Y82/INT_R.SL1END0->>IMUX41 INT_R_X7Y83/INT_R.BYP_ALT4->>BYP_BOUNCE4 INT_R_X7Y83/INT_R.BYP_BOUNCE4->>IMUX6 INT_R_X7Y83/INT_R.NN2END_S2_0->>IMUX39 INT_R_X7Y83/INT_R.NN2END_S2_0->>SR1BEG_S0 INT_R_X7Y83/INT_R.SR1BEG_S0->>BYP_ALT4 INT_R_X7Y83/INT_R.SR1BEG_S0->>SL1BEG0 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 12, 
+
+p_0_in__0[1] - 
+wires: CLBLM_R_X7Y82/CLBLM_BYP0 CLBLM_R_X7Y82/CLBLM_L_AX CLBLM_R_X7Y83/CLBLM_LOGIC_OUTS16 CLBLM_R_X7Y83/CLBLM_L_AMUX INT_R_X7Y81/SR1END3 INT_R_X7Y82/BYP0 INT_R_X7Y82/BYP_ALT0 INT_R_X7Y82/SL1END2 INT_R_X7Y82/SR1BEG3 INT_R_X7Y82/SR1END_N3_3 INT_R_X7Y83/LOGIC_OUTS16 INT_R_X7Y83/SL1BEG2 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_BYP0->CLBLM_L_AX CLBLM_R_X7Y83/CLBLM_R.CLBLM_L_AMUX->CLBLM_LOGIC_OUTS16 INT_R_X7Y82/INT_R.BYP_ALT0->>BYP0 INT_R_X7Y82/INT_R.SL1END2->>SR1BEG3 INT_R_X7Y82/INT_R.SR1END_N3_3->>BYP_ALT0 INT_R_X7Y83/INT_R.LOGIC_OUTS16->>SL1BEG2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/round_counter_reg__0[2] - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX14 CLBLM_R_X7Y82/CLBLM_IMUX28 CLBLM_R_X7Y82/CLBLM_IMUX36 CLBLM_R_X7Y82/CLBLM_IMUX4 CLBLM_R_X7Y82/CLBLM_IMUX44 CLBLM_R_X7Y82/CLBLM_IMUX6 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS20 CLBLM_R_X7Y82/CLBLM_L_A1 CLBLM_R_X7Y82/CLBLM_L_B1 CLBLM_R_X7Y82/CLBLM_L_D2 CLBLM_R_X7Y82/CLBLM_M_A6 CLBLM_R_X7Y82/CLBLM_M_AMUX CLBLM_R_X7Y82/CLBLM_M_C4 CLBLM_R_X7Y82/CLBLM_M_D4 INT_R_X7Y82/BYP_ALT2 INT_R_X7Y82/BYP_BOUNCE2 INT_R_X7Y82/IMUX14 INT_R_X7Y82/IMUX28 INT_R_X7Y82/IMUX36 INT_R_X7Y82/IMUX4 INT_R_X7Y82/IMUX44 INT_R_X7Y82/IMUX6 INT_R_X7Y82/LOGIC_OUTS20 INT_R_X7Y83/BYP_BOUNCE_N3_2 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX14->CLBLM_L_B1 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX28->CLBLM_M_C4 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX36->CLBLM_L_D2 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX4->CLBLM_M_A6 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX44->CLBLM_M_D4 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX6->CLBLM_L_A1 CLBLM_R_X7Y82/CLBLM_R.CLBLM_M_AMUX->CLBLM_LOGIC_OUTS20 INT_R_X7Y82/INT_R.BYP_ALT2->>BYP_BOUNCE2 INT_R_X7Y82/INT_R.BYP_BOUNCE2->>IMUX14 INT_R_X7Y82/INT_R.BYP_BOUNCE2->>IMUX6 INT_R_X7Y82/INT_R.LOGIC_OUTS20->>BYP_ALT2 INT_R_X7Y82/INT_R.LOGIC_OUTS20->>IMUX28 INT_R_X7Y82/INT_R.LOGIC_OUTS20->>IMUX36 INT_R_X7Y82/INT_R.LOGIC_OUTS20->>IMUX4 INT_R_X7Y82/INT_R.LOGIC_OUTS20->>IMUX44 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 11, 
+
+round_counter[2]_i_1_n_0 - 
+wires: CLBLM_R_X7Y82/CLBLM_BYP1 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS15 CLBLM_R_X7Y82/CLBLM_M_AX CLBLM_R_X7Y82/CLBLM_M_D INT_L_X6Y81/ER1BEG_S0 INT_L_X6Y81/SW2END3 INT_L_X6Y82/ER1BEG0 INT_L_X6Y82/SW2END_N0_3 INT_R_X7Y81/SW2A3 INT_R_X7Y82/BYP1 INT_R_X7Y82/BYP_ALT1 INT_R_X7Y82/ER1END0 INT_R_X7Y82/LOGIC_OUTS15 INT_R_X7Y82/SW2BEG3 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_BYP1->CLBLM_M_AX CLBLM_R_X7Y82/CLBLM_R.CLBLM_M_D->CLBLM_LOGIC_OUTS15 INT_L_X6Y81/INT_L.SW2END3->>ER1BEG_S0 INT_R_X7Y82/INT_R.BYP_ALT1->>BYP1 INT_R_X7Y82/INT_R.ER1END0->>BYP_ALT1 INT_R_X7Y82/INT_R.LOGIC_OUTS15->>SW2BEG3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/round_counter_reg__0[3] - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX11 CLBLM_R_X7Y82/CLBLM_IMUX19 CLBLM_R_X7Y82/CLBLM_IMUX27 CLBLM_R_X7Y82/CLBLM_IMUX29 CLBLM_R_X7Y82/CLBLM_IMUX3 CLBLM_R_X7Y82/CLBLM_IMUX37 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS1 CLBLM_R_X7Y82/CLBLM_L_A2 CLBLM_R_X7Y82/CLBLM_L_B2 CLBLM_R_X7Y82/CLBLM_L_BQ CLBLM_R_X7Y82/CLBLM_L_D4 CLBLM_R_X7Y82/CLBLM_M_A4 CLBLM_R_X7Y82/CLBLM_M_B4 CLBLM_R_X7Y82/CLBLM_M_C2 INT_R_X7Y82/BYP_ALT5 INT_R_X7Y82/BYP_BOUNCE5 INT_R_X7Y82/IMUX11 INT_R_X7Y82/IMUX19 INT_R_X7Y82/IMUX27 INT_R_X7Y82/IMUX29 INT_R_X7Y82/IMUX3 INT_R_X7Y82/IMUX37 INT_R_X7Y82/LOGIC_OUTS1 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX11->CLBLM_M_A4 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX19->CLBLM_L_B2 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX27->CLBLM_M_B4 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX29->CLBLM_M_C2 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX3->CLBLM_L_A2 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX37->CLBLM_L_D4 CLBLM_R_X7Y82/CLBLM_R.CLBLM_L_BQ->CLBLM_LOGIC_OUTS1 INT_R_X7Y82/INT_R.BYP_ALT5->>BYP_BOUNCE5 INT_R_X7Y82/INT_R.BYP_BOUNCE5->>IMUX29 INT_R_X7Y82/INT_R.BYP_BOUNCE5->>IMUX37 INT_R_X7Y82/INT_R.LOGIC_OUTS1->>BYP_ALT5 INT_R_X7Y82/INT_R.LOGIC_OUTS1->>IMUX11 INT_R_X7Y82/INT_R.LOGIC_OUTS1->>IMUX19 INT_R_X7Y82/INT_R.LOGIC_OUTS1->>IMUX27 INT_R_X7Y82/INT_R.LOGIC_OUTS1->>IMUX3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 10, 
+
+p_0_in__0[3] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/round_counter_reg__0[4] - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX10 CLBLM_R_X7Y82/CLBLM_IMUX15 CLBLM_R_X7Y82/CLBLM_IMUX26 CLBLM_R_X7Y82/CLBLM_IMUX31 CLBLM_R_X7Y82/CLBLM_IMUX39 CLBLM_R_X7Y82/CLBLM_IMUX7 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS21 CLBLM_R_X7Y82/CLBLM_L_A4 CLBLM_R_X7Y82/CLBLM_L_B4 CLBLM_R_X7Y82/CLBLM_L_D3 CLBLM_R_X7Y82/CLBLM_M_A1 CLBLM_R_X7Y82/CLBLM_M_B1 CLBLM_R_X7Y82/CLBLM_M_BMUX CLBLM_R_X7Y82/CLBLM_M_C5 INT_R_X7Y82/IMUX10 INT_R_X7Y82/IMUX15 INT_R_X7Y82/IMUX26 INT_R_X7Y82/IMUX31 INT_R_X7Y82/IMUX39 INT_R_X7Y82/IMUX7 INT_R_X7Y82/LOGIC_OUTS21 INT_R_X7Y82/SR1BEG_S0 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX10->CLBLM_L_A4 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX15->CLBLM_M_B1 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX26->CLBLM_L_B4 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX31->CLBLM_M_C5 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX39->CLBLM_L_D3 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX7->CLBLM_M_A1 CLBLM_R_X7Y82/CLBLM_R.CLBLM_M_BMUX->CLBLM_LOGIC_OUTS21 INT_R_X7Y82/INT_R.LOGIC_OUTS21->>IMUX15 INT_R_X7Y82/INT_R.LOGIC_OUTS21->>IMUX31 INT_R_X7Y82/INT_R.LOGIC_OUTS21->>IMUX39 INT_R_X7Y82/INT_R.LOGIC_OUTS21->>IMUX7 INT_R_X7Y82/INT_R.LOGIC_OUTS21->>SR1BEG_S0 INT_R_X7Y82/INT_R.SR1BEG_S0->>IMUX10 INT_R_X7Y82/INT_R.SR1BEG_S0->>IMUX26 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 9, 
+
+p_0_in__0[4] - 
+wires: CLBLM_R_X7Y82/CLBLM_BYP4 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS22 CLBLM_R_X7Y82/CLBLM_M_BX CLBLM_R_X7Y82/CLBLM_M_CMUX INT_R_X7Y82/BYP4 INT_R_X7Y82/BYP_ALT4 INT_R_X7Y82/FAN_ALT1 INT_R_X7Y82/FAN_BOUNCE1 INT_R_X7Y82/LOGIC_OUTS22 INT_R_X7Y82/NL1BEG_N3 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_BYP4->CLBLM_M_BX CLBLM_R_X7Y82/CLBLM_R.CLBLM_M_CMUX->CLBLM_LOGIC_OUTS22 INT_R_X7Y82/INT_R.BYP_ALT4->>BYP4 INT_R_X7Y82/INT_R.FAN_ALT1->>FAN_BOUNCE1 INT_R_X7Y82/INT_R.FAN_BOUNCE1->>BYP_ALT4 INT_R_X7Y82/INT_R.LOGIC_OUTS22->>NL1BEG_N3 INT_R_X7Y82/INT_R.NL1BEG_N3->>FAN_ALT1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/round_counter_reg__0[5] - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX1 CLBLM_R_X7Y82/CLBLM_IMUX17 CLBLM_R_X7Y82/CLBLM_IMUX23 CLBLM_R_X7Y82/CLBLM_IMUX9 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS4 CLBLM_R_X7Y82/CLBLM_L_A5 CLBLM_R_X7Y82/CLBLM_L_C3 CLBLM_R_X7Y82/CLBLM_M_A3 CLBLM_R_X7Y82/CLBLM_M_AQ CLBLM_R_X7Y82/CLBLM_M_B3 CLBLM_R_X7Y83/CLBLM_IMUX0 CLBLM_R_X7Y83/CLBLM_IMUX33 CLBLM_R_X7Y83/CLBLM_L_A3 CLBLM_R_X7Y83/CLBLM_L_C1 INT_L_X6Y82/EL1BEG3 INT_L_X6Y82/NW2END_S0_0 INT_L_X6Y83/EL1BEG_N3 INT_L_X6Y83/NW2END0 INT_R_X7Y82/EL1END3 INT_R_X7Y82/IMUX1 INT_R_X7Y82/IMUX17 INT_R_X7Y82/IMUX23 INT_R_X7Y82/IMUX9 INT_R_X7Y82/LOGIC_OUTS4 INT_R_X7Y82/NR1BEG0 INT_R_X7Y82/NW2BEG0 INT_R_X7Y83/IMUX0 INT_R_X7Y83/IMUX33 INT_R_X7Y83/NR1END0 INT_R_X7Y83/NW2A0 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX1->CLBLM_M_A3 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX17->CLBLM_M_B3 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX23->CLBLM_L_C3 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX9->CLBLM_L_A5 CLBLM_R_X7Y82/CLBLM_R.CLBLM_M_AQ->CLBLM_LOGIC_OUTS4 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX0->CLBLM_L_A3 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX33->CLBLM_L_C1 INT_L_X6Y83/INT_L.NW2END0->>EL1BEG_N3 INT_R_X7Y82/INT_R.EL1END3->>IMUX23 INT_R_X7Y82/INT_R.LOGIC_OUTS4->>IMUX1 INT_R_X7Y82/INT_R.LOGIC_OUTS4->>IMUX17 INT_R_X7Y82/INT_R.LOGIC_OUTS4->>IMUX9 INT_R_X7Y82/INT_R.LOGIC_OUTS4->>NR1BEG0 INT_R_X7Y82/INT_R.LOGIC_OUTS4->>NW2BEG0 INT_R_X7Y83/INT_R.NR1END0->>IMUX0 INT_R_X7Y83/INT_R.NR1END0->>IMUX33 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 7, 
+
+p_0_in__0[5] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/round_counter_reg__0[6] - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX0 CLBLM_R_X7Y82/CLBLM_IMUX18 CLBLM_R_X7Y82/CLBLM_IMUX34 CLBLM_R_X7Y82/CLBLM_IMUX42 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS5 CLBLM_R_X7Y82/CLBLM_L_A3 CLBLM_R_X7Y82/CLBLM_L_C6 CLBLM_R_X7Y82/CLBLM_L_D6 CLBLM_R_X7Y82/CLBLM_M_B2 CLBLM_R_X7Y82/CLBLM_M_BQ CLBLM_R_X7Y83/CLBLM_IMUX10 CLBLM_R_X7Y83/CLBLM_IMUX34 CLBLM_R_X7Y83/CLBLM_L_A4 CLBLM_R_X7Y83/CLBLM_L_C6 INT_R_X7Y81/FAN_BOUNCE_S3_2 INT_R_X7Y82/FAN_ALT2 INT_R_X7Y82/FAN_BOUNCE2 INT_R_X7Y82/IMUX0 INT_R_X7Y82/IMUX18 INT_R_X7Y82/IMUX34 INT_R_X7Y82/IMUX42 INT_R_X7Y82/LOGIC_OUTS5 INT_R_X7Y82/NR1BEG1 INT_R_X7Y83/IMUX10 INT_R_X7Y83/IMUX34 INT_R_X7Y83/NR1END1 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX0->CLBLM_L_A3 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX18->CLBLM_M_B2 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX34->CLBLM_L_C6 CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX42->CLBLM_L_D6 CLBLM_R_X7Y82/CLBLM_R.CLBLM_M_BQ->CLBLM_LOGIC_OUTS5 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX10->CLBLM_L_A4 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX34->CLBLM_L_C6 INT_R_X7Y82/INT_R.FAN_ALT2->>FAN_BOUNCE2 INT_R_X7Y82/INT_R.FAN_BOUNCE2->>IMUX0 INT_R_X7Y82/INT_R.LOGIC_OUTS5->>FAN_ALT2 INT_R_X7Y82/INT_R.LOGIC_OUTS5->>IMUX18 INT_R_X7Y82/INT_R.LOGIC_OUTS5->>IMUX34 INT_R_X7Y82/INT_R.LOGIC_OUTS5->>IMUX42 INT_R_X7Y82/INT_R.LOGIC_OUTS5->>NR1BEG1 INT_R_X7Y83/INT_R.NR1END1->>IMUX10 INT_R_X7Y83/INT_R.NR1END1->>IMUX34 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 7, 
+
+p_0_in__0[6] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/shifter1_reg[1]_srl27_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/shifter1_reg[28]_srl32_n_1 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+p_2_out[59] - 
+wires: CLBLM_L_X8Y83/CLBLM_SW2A0 CLBLM_L_X8Y84/CLBLM_LOGIC_OUTS8 CLBLM_L_X8Y84/CLBLM_L_A CLBLM_R_X7Y83/CLBLM_FAN2 CLBLM_R_X7Y83/CLBLM_M_BI CLBLM_R_X7Y83/CLBLM_SW2A0 INT_L_X8Y83/SW2A0 INT_L_X8Y84/LOGIC_OUTS_L8 INT_L_X8Y84/SW2BEG0 INT_R_X7Y83/FAN2 INT_R_X7Y83/FAN_ALT2 INT_R_X7Y83/SW2END0 
+pips: CLBLM_L_X8Y84/CLBLM_L.CLBLM_L_A->CLBLM_LOGIC_OUTS8 CLBLM_R_X7Y83/CLBLM_R.CLBLM_FAN2->CLBLM_M_BI INT_L_X8Y84/INT_L.LOGIC_OUTS_L8->>SW2BEG0 INT_R_X7Y83/INT_R.FAN_ALT2->>FAN2 INT_R_X7Y83/INT_R.SW2END0->>FAN_ALT2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/shifter2_reg[1]_srl31_n_0 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+key_exp/shifter2_reg[32]_srl32_n_1 - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+shifter2_reg[32]_srl32_i_1_n_0 - 
+wires: CLBLM_L_X8Y83/CLBLM_LOGIC_OUTS10 CLBLM_L_X8Y83/CLBLM_L_C CLBLM_L_X8Y83/CLBLM_WR1END3 CLBLM_R_X7Y83/CLBLM_FAN3 CLBLM_R_X7Y83/CLBLM_M_DI CLBLM_R_X7Y83/CLBLM_WR1END3 INT_L_X8Y83/LOGIC_OUTS_L10 INT_L_X8Y83/WR1BEG3 INT_R_X7Y83/FAN3 INT_R_X7Y83/FAN_ALT3 INT_R_X7Y83/WR1END3 
+pips: CLBLM_L_X8Y83/CLBLM_L.CLBLM_L_C->CLBLM_LOGIC_OUTS10 CLBLM_R_X7Y83/CLBLM_R.CLBLM_FAN3->CLBLM_M_DI INT_L_X8Y83/INT_L.LOGIC_OUTS_L10->>WR1BEG3 INT_R_X7Y83/INT_R.FAN_ALT3->>FAN3 INT_R_X7Y83/INT_R.WR1END3->>FAN_ALT3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+lut_ff3_i_10_n_0 - 
+wires: CLBLM_L_X8Y82/CLBLM_LOGIC_OUTS14 CLBLM_L_X8Y82/CLBLM_M_C CLBLM_L_X8Y83/CLBLM_NW2A2 CLBLM_R_X7Y83/CLBLM_IMUX20 CLBLM_R_X7Y83/CLBLM_IMUX36 CLBLM_R_X7Y83/CLBLM_L_C2 CLBLM_R_X7Y83/CLBLM_L_D2 CLBLM_R_X7Y83/CLBLM_NW2A2 INT_L_X8Y82/LOGIC_OUTS_L14 INT_L_X8Y82/NW2BEG2 INT_L_X8Y83/NW2A2 INT_R_X7Y83/IMUX20 INT_R_X7Y83/IMUX36 INT_R_X7Y83/NW2END2 
+pips: CLBLM_L_X8Y82/CLBLM_L.CLBLM_M_C->CLBLM_LOGIC_OUTS14 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX20->CLBLM_L_C2 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX36->CLBLM_L_D2 INT_L_X8Y82/INT_L.LOGIC_OUTS_L14->>NW2BEG2 INT_R_X7Y83/INT_R.NW2END2->>IMUX20 INT_R_X7Y83/INT_R.NW2END2->>IMUX36 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+lut_ff3_i_11_n_0 - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX20 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS14 CLBLM_R_X7Y82/CLBLM_L_C2 CLBLM_R_X7Y82/CLBLM_M_C INT_R_X7Y82/IMUX20 INT_R_X7Y82/LOGIC_OUTS14 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX20->CLBLM_L_C2 CLBLM_R_X7Y82/CLBLM_R.CLBLM_M_C->CLBLM_LOGIC_OUTS14 INT_R_X7Y82/INT_R.LOGIC_OUTS14->>IMUX20 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+lut_ff3_i_12_n_0 - 
+wires: CLBLM_L_X8Y83/CLBLM_NE2A0 CLBLM_L_X8Y83/CLBLM_WR1END1 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS8 CLBLM_R_X7Y82/CLBLM_L_A CLBLM_R_X7Y83/CLBLM_IMUX42 CLBLM_R_X7Y83/CLBLM_L_D6 CLBLM_R_X7Y83/CLBLM_NE2A0 CLBLM_R_X7Y83/CLBLM_WR1END1 INT_L_X8Y82/NE2END_S3_0 INT_L_X8Y83/NE2END0 INT_L_X8Y83/WR1BEG1 INT_R_X7Y82/LOGIC_OUTS8 INT_R_X7Y82/NE2BEG0 INT_R_X7Y83/IMUX42 INT_R_X7Y83/NE2A0 INT_R_X7Y83/WR1END1 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_L_A->CLBLM_LOGIC_OUTS8 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX42->CLBLM_L_D6 INT_L_X8Y83/INT_L.NE2END0->>WR1BEG1 INT_R_X7Y82/INT_R.LOGIC_OUTS8->>NE2BEG0 INT_R_X7Y83/INT_R.WR1END1->>IMUX42 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+lut_ff3_i_3_n_0 - 
+wires: CLBLM_R_X7Y83/CLBLM_IMUX13 CLBLM_R_X7Y83/CLBLM_LOGIC_OUTS10 CLBLM_R_X7Y83/CLBLM_L_B6 CLBLM_R_X7Y83/CLBLM_L_C INT_R_X7Y83/IMUX13 INT_R_X7Y83/LOGIC_OUTS10 
+pips: CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX13->CLBLM_L_B6 CLBLM_R_X7Y83/CLBLM_R.CLBLM_L_C->CLBLM_LOGIC_OUTS10 INT_R_X7Y83/INT_R.LOGIC_OUTS10->>IMUX13 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+lut_ff3_i_4_n_0 - 
+wires: CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS10 CLBLM_R_X7Y82/CLBLM_L_C CLBLM_R_X7Y83/CLBLM_IMUX26 CLBLM_R_X7Y83/CLBLM_L_B4 INT_L_X6Y83/EL1BEG1 INT_L_X6Y83/NW2END2 INT_R_X7Y82/LOGIC_OUTS10 INT_R_X7Y82/NW2BEG2 INT_R_X7Y83/EL1END1 INT_R_X7Y83/IMUX26 INT_R_X7Y83/NW2A2 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_L_C->CLBLM_LOGIC_OUTS10 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX26->CLBLM_L_B4 INT_L_X6Y83/INT_L.NW2END2->>EL1BEG1 INT_R_X7Y82/INT_R.LOGIC_OUTS10->>NW2BEG2 INT_R_X7Y83/INT_R.EL1END1->>IMUX26 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+lut_ff3_i_5_n_0 - 
+wires: CLBLM_R_X7Y83/CLBLM_IMUX14 CLBLM_R_X7Y83/CLBLM_LOGIC_OUTS11 CLBLM_R_X7Y83/CLBLM_L_B1 CLBLM_R_X7Y83/CLBLM_L_D INT_R_X7Y83/IMUX14 INT_R_X7Y83/LOGIC_OUTS11 
+pips: CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX14->CLBLM_L_B1 CLBLM_R_X7Y83/CLBLM_R.CLBLM_L_D->CLBLM_LOGIC_OUTS11 INT_R_X7Y83/INT_R.LOGIC_OUTS11->>IMUX14 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+lut_ff3_i_6_n_0 - 
+wires: CLBLM_L_X8Y83/CLBLM_LOGIC_OUTS16 CLBLM_L_X8Y83/CLBLM_L_AMUX CLBLM_L_X8Y83/CLBLM_WL1END1 CLBLM_R_X7Y83/CLBLM_IMUX19 CLBLM_R_X7Y83/CLBLM_L_B2 CLBLM_R_X7Y83/CLBLM_WL1END1 INT_L_X8Y83/LOGIC_OUTS_L16 INT_L_X8Y83/WL1BEG1 INT_R_X7Y83/IMUX19 INT_R_X7Y83/WL1END1 
+pips: CLBLM_L_X8Y83/CLBLM_L.CLBLM_L_AMUX->CLBLM_LOGIC_OUTS16 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX19->CLBLM_L_B2 INT_L_X8Y83/INT_L.LOGIC_OUTS_L16->>WL1BEG1 INT_R_X7Y83/INT_R.WL1END1->>IMUX19 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+lut_ff3_i_7_n_0 - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX21 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS16 CLBLM_R_X7Y82/CLBLM_L_AMUX CLBLM_R_X7Y82/CLBLM_L_C4 CLBLM_R_X7Y83/CLBLM_IMUX30 CLBLM_R_X7Y83/CLBLM_IMUX9 CLBLM_R_X7Y83/CLBLM_L_A5 CLBLM_R_X7Y83/CLBLM_L_C5 INT_R_X7Y82/IMUX21 INT_R_X7Y82/LOGIC_OUTS16 INT_R_X7Y82/NL1BEG1 INT_R_X7Y82/NN2BEG2 INT_R_X7Y83/IMUX30 INT_R_X7Y83/IMUX9 INT_R_X7Y83/NL1END1 INT_R_X7Y83/NN2A2 INT_R_X7Y83/SR1END2 INT_R_X7Y84/NN2END2 INT_R_X7Y84/SR1BEG2 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX21->CLBLM_L_C4 CLBLM_R_X7Y82/CLBLM_R.CLBLM_L_AMUX->CLBLM_LOGIC_OUTS16 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX30->CLBLM_L_C5 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX9->CLBLM_L_A5 INT_R_X7Y82/INT_R.LOGIC_OUTS16->>IMUX21 INT_R_X7Y82/INT_R.LOGIC_OUTS16->>NL1BEG1 INT_R_X7Y82/INT_R.LOGIC_OUTS16->>NN2BEG2 INT_R_X7Y83/INT_R.NL1END1->>IMUX9 INT_R_X7Y83/INT_R.SR1END2->>IMUX30 INT_R_X7Y84/INT_R.NN2END2->>SR1BEG2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+lut_ff3_i_8_n_0 - 
+wires: CLBLM_L_X8Y83/CLBLM_NE2A1 CLBLM_L_X8Y83/CLBLM_WR1END2 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS9 CLBLM_R_X7Y82/CLBLM_L_B CLBLM_R_X7Y83/CLBLM_IMUX21 CLBLM_R_X7Y83/CLBLM_L_C4 CLBLM_R_X7Y83/CLBLM_NE2A1 CLBLM_R_X7Y83/CLBLM_WR1END2 INT_L_X8Y83/NE2END1 INT_L_X8Y83/WR1BEG2 INT_R_X7Y82/LOGIC_OUTS9 INT_R_X7Y82/NE2BEG1 INT_R_X7Y83/IMUX21 INT_R_X7Y83/NE2A1 INT_R_X7Y83/WR1END2 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_L_B->CLBLM_LOGIC_OUTS9 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX21->CLBLM_L_C4 INT_L_X8Y83/INT_L.NE2END1->>WR1BEG2 INT_R_X7Y82/INT_R.LOGIC_OUTS9->>NE2BEG1 INT_R_X7Y83/INT_R.WR1END2->>IMUX21 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+lut_ff3_i_9_n_0 - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX30 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS11 CLBLM_R_X7Y82/CLBLM_L_C5 CLBLM_R_X7Y82/CLBLM_L_D CLBLM_R_X7Y83/CLBLM_IMUX23 CLBLM_R_X7Y83/CLBLM_L_C3 INT_R_X7Y82/IMUX30 INT_R_X7Y82/LOGIC_OUTS11 INT_R_X7Y82/NN2BEG3 INT_R_X7Y83/IMUX23 INT_R_X7Y83/NN2A3 INT_R_X7Y83/SR1END3 INT_R_X7Y84/NN2END3 INT_R_X7Y84/SR1BEG3 INT_R_X7Y84/SR1END_N3_3 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX30->CLBLM_L_C5 CLBLM_R_X7Y82/CLBLM_R.CLBLM_L_D->CLBLM_LOGIC_OUTS11 CLBLM_R_X7Y83/CLBLM_R.CLBLM_IMUX23->CLBLM_L_C3 INT_R_X7Y82/INT_R.LOGIC_OUTS11->>IMUX30 INT_R_X7Y82/INT_R.LOGIC_OUTS11->>NN2BEG3 INT_R_X7Y83/INT_R.SR1END3->>IMUX23 INT_R_X7Y84/INT_R.NN2END3->>SR1BEG3 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 3, 
+
+round_counter[6]_i_3_n_0 - 
+wires: CLBLM_L_X8Y82/CLBLM_LOGIC_OUTS9 CLBLM_L_X8Y82/CLBLM_L_B CLBLM_L_X8Y83/CLBLM_IMUX18 CLBLM_L_X8Y83/CLBLM_M_B2 INT_L_X8Y82/LOGIC_OUTS_L9 INT_L_X8Y82/NR1BEG1 INT_L_X8Y83/IMUX_L18 INT_L_X8Y83/NR1END1 
+pips: CLBLM_L_X8Y82/CLBLM_L.CLBLM_L_B->CLBLM_LOGIC_OUTS9 CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX18->CLBLM_M_B2 INT_L_X8Y82/INT_L.LOGIC_OUTS_L9->>NR1BEG1 INT_L_X8Y83/INT_L.NR1END1->>IMUX_L18 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+round_counter[6]_i_4_n_0 - 
+wires: CLBLM_R_X7Y82/CLBLM_IMUX24 CLBLM_R_X7Y82/CLBLM_LOGIC_OUTS23 CLBLM_R_X7Y82/CLBLM_M_B5 CLBLM_R_X7Y82/CLBLM_M_DMUX INT_L_X6Y81/NL1BEG1 INT_L_X6Y81/SW2END1 INT_L_X6Y82/EL1BEG0 INT_L_X6Y82/NL1END1 INT_R_X7Y81/EL1END_S3_0 INT_R_X7Y81/SW2A1 INT_R_X7Y82/EL1END0 INT_R_X7Y82/IMUX24 INT_R_X7Y82/LOGIC_OUTS23 INT_R_X7Y82/SW2BEG1 
+pips: CLBLM_R_X7Y82/CLBLM_R.CLBLM_IMUX24->CLBLM_M_B5 CLBLM_R_X7Y82/CLBLM_R.CLBLM_M_DMUX->CLBLM_LOGIC_OUTS23 INT_L_X6Y81/INT_L.SW2END1->>NL1BEG1 INT_L_X6Y82/INT_L.NL1END1->>EL1BEG0 INT_R_X7Y82/INT_R.EL1END0->>IMUX24 INT_R_X7Y82/INT_R.LOGIC_OUTS23->>SW2BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+shifter1_reg[24]_srl32_i_2_n_0 - 
+wires: CLBLM_L_X8Y84/CLBLM_LOGIC_OUTS13 CLBLM_L_X8Y84/CLBLM_M_B CLBLM_L_X8Y84/CLBLM_WR1END2 CLBLM_R_X7Y84/CLBLM_IMUX20 CLBLM_R_X7Y84/CLBLM_L_C2 CLBLM_R_X7Y84/CLBLM_WR1END2 INT_L_X8Y84/LOGIC_OUTS_L13 INT_L_X8Y84/WR1BEG2 INT_R_X7Y84/IMUX20 INT_R_X7Y84/WR1END2 
+pips: CLBLM_L_X8Y84/CLBLM_L.CLBLM_M_B->CLBLM_LOGIC_OUTS13 CLBLM_R_X7Y84/CLBLM_R.CLBLM_IMUX20->CLBLM_L_C2 INT_L_X8Y84/INT_L.LOGIC_OUTS_L13->>WR1BEG2 INT_R_X7Y84/INT_R.WR1END2->>IMUX20 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+shifter1_reg[28]_srl32_i_2_n_0 - 
+wires: CLBLM_L_X8Y84/CLBLM_IMUX6 CLBLM_L_X8Y84/CLBLM_LOGIC_OUTS14 CLBLM_L_X8Y84/CLBLM_L_A1 CLBLM_L_X8Y84/CLBLM_M_C INT_L_X8Y84/BYP_ALT2 INT_L_X8Y84/BYP_BOUNCE2 INT_L_X8Y84/IMUX_L6 INT_L_X8Y84/LOGIC_OUTS_L14 INT_L_X8Y85/BYP_BOUNCE_N3_2 
+pips: CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX6->CLBLM_L_A1 CLBLM_L_X8Y84/CLBLM_L.CLBLM_M_C->CLBLM_LOGIC_OUTS14 INT_L_X8Y84/INT_L.BYP_ALT2->>BYP_BOUNCE2 INT_L_X8Y84/INT_L.BYP_BOUNCE2->>IMUX_L6 INT_L_X8Y84/INT_L.LOGIC_OUTS_L14->>BYP_ALT2 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+shifter1_reg[28]_srl32_i_3_n_0 - 
+wires: CLBLM_L_X8Y84/CLBLM_IMUX10 CLBLM_L_X8Y84/CLBLM_LOGIC_OUTS9 CLBLM_L_X8Y84/CLBLM_L_A4 CLBLM_L_X8Y84/CLBLM_L_B INT_L_X8Y84/IMUX_L10 INT_L_X8Y84/LOGIC_OUTS_L9 
+pips: CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX10->CLBLM_L_A4 CLBLM_L_X8Y84/CLBLM_L.CLBLM_L_B->CLBLM_LOGIC_OUTS9 INT_L_X8Y84/INT_L.LOGIC_OUTS_L9->>IMUX_L10 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+shifter1_reg[28]_srl32_i_4_n_0 - 
+wires: CLBLM_L_X8Y83/CLBLM_ER1BEG1 CLBLM_L_X8Y83/CLBLM_IMUX34 CLBLM_L_X8Y83/CLBLM_L_C6 CLBLM_L_X8Y84/CLBLM_IMUX26 CLBLM_L_X8Y84/CLBLM_IMUX3 CLBLM_L_X8Y84/CLBLM_L_A2 CLBLM_L_X8Y84/CLBLM_L_B4 CLBLM_R_X7Y83/CLBLM_ER1BEG1 CLBLM_R_X7Y83/CLBLM_LOGIC_OUTS8 CLBLM_R_X7Y83/CLBLM_L_A INT_L_X8Y83/ER1END1 INT_L_X8Y83/IMUX_L34 INT_L_X8Y83/NR1BEG1 INT_L_X8Y84/IMUX_L26 INT_L_X8Y84/IMUX_L3 INT_L_X8Y84/NR1END1 INT_R_X7Y83/ER1BEG1 INT_R_X7Y83/LOGIC_OUTS8 
+pips: CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX34->CLBLM_L_C6 CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX26->CLBLM_L_B4 CLBLM_L_X8Y84/CLBLM_L.CLBLM_IMUX3->CLBLM_L_A2 CLBLM_R_X7Y83/CLBLM_R.CLBLM_L_A->CLBLM_LOGIC_OUTS8 INT_L_X8Y83/INT_L.ER1END1->>IMUX_L34 INT_L_X8Y83/INT_L.ER1END1->>NR1BEG1 INT_L_X8Y84/INT_L.NR1END1->>IMUX_L26 INT_L_X8Y84/INT_L.NR1END1->>IMUX_L3 INT_R_X7Y83/INT_R.LOGIC_OUTS8->>ER1BEG1 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 4, 
+
+shifter2_reg[32]_srl32_i_2_n_0 - 
+wires: CLBLM_L_X8Y83/CLBLM_IMUX33 CLBLM_L_X8Y83/CLBLM_LOGIC_OUTS8 CLBLM_L_X8Y83/CLBLM_L_A CLBLM_L_X8Y83/CLBLM_L_C1 INT_L_X8Y83/IMUX_L33 INT_L_X8Y83/LOGIC_OUTS_L8 
+pips: CLBLM_L_X8Y83/CLBLM_L.CLBLM_IMUX33->CLBLM_L_C1 CLBLM_L_X8Y83/CLBLM_L.CLBLM_L_A->CLBLM_LOGIC_OUTS8 INT_L_X8Y83/INT_L.LOGIC_OUTS_L8->>IMUX_L33 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+
+####################################################
+# Bels
+SLICE_X11Y82/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*(((~A3))) , 
+NAME: SLICE_X11Y82/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X11Y82/A5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A3*(~A2))+((~A3)*A2) , 
+NAME: SLICE_X11Y82/A5LUT, 
+TYPE: LUT5, 
+
+SLICE_X10Y82/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A3*A1*(~A5))+(A3*(~A1))+((~A3)*A1*A5)) , 
+NAME: SLICE_X10Y82/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X10Y82/A5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A2*A5*A1*(~A3))+(A2*A5*(~A1))+(A2*(~A5))+((~A2)*A5*A1*A3) , 
+NAME: SLICE_X10Y82/A5LUT, 
+TYPE: LUT_OR_MEM5, 
+
+SLICE_X11Y82/B5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A4*A5*A2*A3*(~A1))+(A4*A5*A2*(~A3))+(A4*A5*(~A2))+(A4*(~A5))+((~A4)*A5*A2*A3*A1) , 
+NAME: SLICE_X11Y82/B5LUT, 
+TYPE: LUT5, 
+
+SLICE_X8Y84/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=((~A1)*(~A6)) , 
+NAME: SLICE_X8Y84/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X10Y83/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A3*A4) , 
+NAME: SLICE_X10Y83/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X10Y82/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A2*A6*A5*A1*A3*(~A4))+(A2*A6*A5*A1*(~A3))+(A2*A6*A5*(~A1))+(A2*A6*(~A5))+(A2*(~A6))+((~A2)*A6*A5*A1*A3*A4) , 
+NAME: SLICE_X10Y82/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X8Y84/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A5*A1*A4*A3*A2*(~A6))+(A5*A1*A4*A3*(~A2)*A6)+(A5*A1*A4*(~A3)*A6)+(A5*A1*(~A4)*(~A6))+(A5*(~A1)*A4*A3*A2*(~A6))+(A5*(~A1)*A4*A3*(~A2)*A6)+(A5*(~A1)*A4*(~A3)*A6)+(A5*(~A1)*(~A4)*A6)+((~A5)*A4*A3*A2*(~A6))+((~A5)*A4*A3*(~A2)*A6)+((~A5)*A4*(~A3)*A6)+((~A5)*(~A4)*A6) , 
+NAME: SLICE_X8Y84/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X9Y84/B5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A2*A3*A1*A5*A4)+(A2*A3*A1*(~A5)*(~A4))+(A2*A3*(~A1)*A5*(~A4))+(A2*A3*(~A1)*(~A5)*A4)+(A2*(~A3)*A5*A4)+(A2*(~A3)*(~A5)*(~A4))+((~A2)*A3*A1*A5*A4)+((~A2)*A3*A1*(~A5)*(~A4))+((~A2)*A3*(~A1)*A5*(~A4))+((~A2)*A3*(~A1)*(~A5)*A4)+((~A2)*(~A3)*A5*(~A4))+((~A2)*(~A3)*(~A5)*A4) , 
+NAME: SLICE_X9Y84/B5LUT, 
+TYPE: LUT5, 
+
+SLICE_X11Y82/AFF - 
+CLASS: bel, 
+NAME: SLICE_X11Y82/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X11Y82/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X11Y82/A5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X10Y82/AFF - 
+CLASS: bel, 
+NAME: SLICE_X10Y82/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X10Y82/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X10Y82/A5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X11Y82/BFF - 
+CLASS: bel, 
+NAME: SLICE_X11Y82/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X10Y82/BFF - 
+CLASS: bel, 
+NAME: SLICE_X10Y82/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X10Y85/AFF - 
+CLASS: bel, 
+NAME: SLICE_X10Y85/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X10Y85/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X10Y85/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X9Y84/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X9Y84/A5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X9Y84/AFF - 
+CLASS: bel, 
+NAME: SLICE_X9Y84/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X6Y84/AFF - 
+CLASS: bel, 
+NAME: SLICE_X6Y84/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X6Y84/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X6Y84/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X8Y84/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X8Y84/A5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X8Y84/AFF - 
+CLASS: bel, 
+NAME: SLICE_X8Y84/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X8Y85/AFF - 
+CLASS: bel, 
+NAME: SLICE_X8Y85/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X8Y85/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X8Y85/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X8Y85/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X8Y85/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X8Y85/CFF - 
+CLASS: bel, 
+NAME: SLICE_X8Y85/CFF, 
+TYPE: REG_INIT, 
+
+SLICE_X8Y85/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X8Y85/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X8Y85/D6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X8Y85/D6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X9Y84/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A2*A3*A5)+(A2*A3*(~A5)*A1*A4)+(A2*A3*(~A5)*(~A1))+(A2*(~A3)*A5*A6)+(A2*(~A3)*(~A5)*A1*A4)+(A2*(~A3)*(~A5)*(~A1)*A6)+((~A2)*A3*(~A5)*A1*A4)+((~A2)*(~A3)*A5*A6)+((~A2)*(~A3)*(~A5)*A1*A4)+((~A2)*(~A3)*(~A5)*(~A1)*A6) , 
+NAME: SLICE_X9Y84/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X10Y84/AFF - 
+CLASS: bel, 
+NAME: SLICE_X10Y84/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X10Y84/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X10Y84/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X9Y83/AFF - 
+CLASS: bel, 
+NAME: SLICE_X9Y83/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X10Y83/AFF - 
+CLASS: bel, 
+NAME: SLICE_X10Y83/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X10Y83/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X10Y83/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X11Y83/AFF - 
+CLASS: bel, 
+NAME: SLICE_X11Y83/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X9Y85/AFF - 
+CLASS: bel, 
+NAME: SLICE_X9Y85/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X9Y82/AFF - 
+CLASS: bel, 
+NAME: SLICE_X9Y82/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X8Y82/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X8Y82/A5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X9Y82/BFF - 
+CLASS: bel, 
+NAME: SLICE_X9Y82/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X8Y82/B5FF - 
+CLASS: bel, 
+NAME: SLICE_X8Y82/B5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X8Y82/AFF - 
+CLASS: bel, 
+NAME: SLICE_X8Y82/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X8Y82/BFF - 
+CLASS: bel, 
+NAME: SLICE_X8Y82/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X8Y83/AFF - 
+CLASS: bel, 
+NAME: SLICE_X8Y83/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X8Y83/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X8Y83/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X8Y83/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X8Y83/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X8Y83/CFF - 
+CLASS: bel, 
+NAME: SLICE_X8Y83/CFF, 
+TYPE: REG_INIT, 
+
+SLICE_X8Y83/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X8Y83/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X8Y83/D6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=0x0000000000000000 , 
+NAME: SLICE_X8Y83/D6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X11Y83/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6*A1*(~A2)*(~A3)*(~A4)*(~A5)) , 
+NAME: SLICE_X11Y83/B6LUT, 
+TYPE: LUT6, 
+
+SLICE_X10Y82/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A1)+((~A1)*A3)+((~A1)*(~A3)*A4)+((~A1)*(~A3)*(~A4)*A5)+((~A1)*(~A3)*(~A4)*(~A5)*A6)+((~A1)*(~A3)*(~A4)*(~A5)*(~A6)*A2) , 
+NAME: SLICE_X10Y82/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X8Y82/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A3*A1*A4*A5)+(A3*A1*(~A4)*A2*A5)+(A3*(~A1)*A4*(~A2)*(~A5))+(A3*(~A1)*(~A4)*A2*(~A5))+(A3*(~A1)*(~A4)*(~A2))+((~A3)*A1*A4*(~A2)*(~A5))+((~A3)*A1*(~A4))+((~A3)*(~A1)*A4*(~A2))+((~A3)*(~A1)*(~A4)*A2*(~A5))) , 
+NAME: SLICE_X8Y82/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X9Y82/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A3)+((~A3)*A4)+((~A3)*(~A4)*A2)+((~A3)*(~A4)*(~A2)*A1)+((~A3)*(~A4)*(~A2)*(~A1)*A5)) , 
+NAME: SLICE_X9Y82/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X9Y83/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6*A3*A1*A5*A2)+(A6*A3*A1*(~A5)*(~A2))+(A6*A3*(~A1)*A5*(~A2))+(A6*A3*(~A1)*(~A5)*A2)+(A6*(~A3)*A1*A5*(~A2))+(A6*(~A3)*A1*(~A5)*A2)+(A6*(~A3)*(~A1)*A5*A2)+(A6*(~A3)*(~A1)*(~A5)*(~A2))+((~A6)*A4*A3*A1*A5*(~A2))+((~A6)*A4*A3*A1*(~A5)*A2)+((~A6)*A4*A3*(~A1)*A5*A2)+((~A6)*A4*A3*(~A1)*(~A5)*(~A2))+((~A6)*A4*(~A3)*A1*A5*A2)+((~A6)*A4*(~A3)*A1*(~A5)*(~A2))+((~A6)*A4*(~A3)*(~A1)*A5*(~A2))+((~A6)*A4*(~A3)*(~A1)*(~A5)*A2)+((~A6)*(~A4)*A3*A1*A5*A2)+((~A6)*(~A4)*A3*A1*(~A5)*(~A2))+((~A6)*(~A4)*A3*(~A1)*A5*(~A2))+((~A6)*(~A4)*A3*(~A1)*(~A5)*A2)+((~A6)*(~A4)*(~A3)*A1*A5*(~A2))+((~A6)*(~A4)*(~A3)*A1*(~A5)*A2)+((~A6)*(~A4)*(~A3)*(~A1)*A5*A2)+((~A6)*(~A4)*(~A3)*(~A1)*(~A5)*(~A2)) , 
+NAME: SLICE_X9Y83/B6LUT, 
+TYPE: LUT6, 
+
+SLICE_X9Y83/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A1*A5*A2)+(A1*(~A5)*A6*A3*A2)+(A1*(~A5)*A6*(~A3))+(A1*(~A5)*(~A6)*A4*A3*A2)+(A1*(~A5)*(~A6)*A4*(~A3))+(A1*(~A5)*(~A6)*(~A4)*A2)+((~A1)*A5*A6*A3*A2)+((~A1)*A5*A6*(~A3))+((~A1)*A5*(~A6)*A4*A3*A2)+((~A1)*A5*(~A6)*A4*(~A3))+((~A1)*A5*(~A6)*(~A4)*A2)+((~A1)*(~A5)*A2) , 
+NAME: SLICE_X9Y83/C6LUT, 
+TYPE: LUT6, 
+
+SLICE_X9Y82/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A2*A1*A4*(~A3)*(~A5))+(A2*A1*(~A4)*A3*(~A5))+(A2*(~A1)*A4*(~A3)*(~A5))+(A2*(~A1)*(~A4))+((~A2)*A6*A1*A4*(~A3)*(~A5))+((~A2)*A6*A1*(~A4)*A3*(~A5))+((~A2)*A6*A1*(~A4)*(~A3))+((~A2)*A6*(~A1)*A4*(~A3)*(~A5))+((~A2)*A6*(~A1)*(~A4))+((~A2)*(~A6)*A1*A4)+((~A2)*(~A6)*A1*(~A4)*A3)+((~A2)*(~A6)*(~A1)) , 
+NAME: SLICE_X9Y82/C6LUT, 
+TYPE: LUT6, 
+
+SLICE_X9Y83/D6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A5*A2)+(A5*(~A2)*A6*A4)+(A5*(~A2)*(~A6)*A1*A4)+(A5*(~A2)*(~A6)*(~A1)*A3*A4)+(A5*(~A2)*(~A6)*(~A1)*(~A3))+((~A5)*(~A2)*A6*A4)+((~A5)*(~A2)*(~A6)*A1*A4)+((~A5)*(~A2)*(~A6)*(~A1)*A3*A4) , 
+NAME: SLICE_X9Y83/D6LUT, 
+TYPE: LUT6, 
+
+SLICE_X11Y83/A5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=((~A5)*(~A2)*(~A3)*(~A4)*(~A1)) , 
+NAME: SLICE_X11Y83/A5LUT, 
+TYPE: LUT5, 
+
+SLICE_X9Y82/A5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A4)+((~A4)*A2)+((~A4)*(~A2)*A1) , 
+NAME: SLICE_X9Y82/A5LUT, 
+TYPE: LUT5, 
+
+SLICE_X9Y82/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A4*A1)+(A4*(~A1)*(~A3))+((~A4)*A2*A1)+((~A4)*A2*(~A1)*(~A5)*(~A3))+((~A4)*(~A2)*(~A1))) , 
+NAME: SLICE_X9Y82/B6LUT, 
+TYPE: LUT6, 
+
+SLICE_X9Y82/D6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A3*(~A6)*A2*(~A1)*A5*(~A4))+(A3*(~A6)*A2*(~A1)*(~A5))+(A3*(~A6)*(~A2)*(~A5)*A4)+((~A3)*(~A6)*(~A2)*(~A5)*(~A4)) , 
+NAME: SLICE_X9Y82/D6LUT, 
+TYPE: LUT6, 
+
+SLICE_X8Y84/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A1*A3)+(A1*(~A3)*A4)+((~A1)*(~A3)*A4) , 
+NAME: SLICE_X8Y84/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X9Y84/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*(((~A3))) , 
+NAME: SLICE_X9Y84/B6LUT, 
+TYPE: LUT6, 
+
+SLICE_X9Y83/A5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A2*(~A1))+((~A2)*A1) , 
+NAME: SLICE_X9Y83/A5LUT, 
+TYPE: LUT5, 
+
+SLICE_X8Y82/D6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A4*A1*(~A2))+(A4*(~A1))+((~A4)*A1*A2)) , 
+NAME: SLICE_X8Y82/D6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X9Y82/B5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A2*A5*A3*(~A1))+(A2*A5*(~A3))+(A2*(~A5))+((~A2)*A5*A3*A1) , 
+NAME: SLICE_X9Y82/B5LUT, 
+TYPE: LUT5, 
+
+SLICE_X8Y82/C5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A5*A4*A1*A3*(~A2))+(A5*A4*A1*(~A3))+(A5*A4*(~A1))+(A5*(~A4))+((~A5)*A4*A1*A3*A2) , 
+NAME: SLICE_X8Y82/C5LUT, 
+TYPE: LUT_OR_MEM5, 
+
+SLICE_X8Y82/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A3*A4*A2*A5*A6*(~A1))+(A3*A4*A2*A5*(~A6))+(A3*A4*A2*(~A5))+(A3*A4*(~A2))+(A3*(~A4))+((~A3)*A4*A2*A5*A6*A1) , 
+NAME: SLICE_X8Y82/A6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X10Y83/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6*A1*A2*A5) , 
+NAME: SLICE_X10Y83/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X8Y82/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A2*A3*A1*A5*(~A4))+(A2*A3*A1*(~A5))+(A2*A3*(~A1))+(A2*(~A3))+((~A2)*A3*A1*A5*A4) , 
+NAME: SLICE_X8Y82/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X11Y82/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A4*A5*A2*A3*A1)) , 
+NAME: SLICE_X11Y82/B6LUT, 
+TYPE: LUT6, 
+
+SLICE_X8Y82/D5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A4*A1*A2) , 
+NAME: SLICE_X8Y82/D5LUT, 
+TYPE: LUT_OR_MEM5, 
+
+SLICE_X9Y84/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A5*A4*A2*A6)+(A5*A4*A2*(~A6)*A1)+(A5*A4*(~A2)*A6*A1)+(A5*A4*(~A2)*(~A6))+(A5*(~A4)*A3)+(A5*(~A4)*(~A3)*A2*A6)+(A5*(~A4)*(~A3)*A2*(~A6)*A1)+(A5*(~A4)*(~A3)*(~A2)*A6*A1)+(A5*(~A4)*(~A3)*(~A2)*(~A6))+((~A5)*A4*A2*(~A6)*A1)+((~A5)*A4*(~A2)*A6*A1)+((~A5)*(~A4)*(~A3)*A2*(~A6)*A1)+((~A5)*(~A4)*(~A3)*(~A2)*A6*A1) , 
+NAME: SLICE_X9Y84/C6LUT, 
+TYPE: LUT6, 
+
+SLICE_X10Y84/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A2)+((~A2)*A3)+((~A2)*(~A3)*A6) , 
+NAME: SLICE_X10Y84/B6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X11Y84/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A1)+((~A1)*(~A4)*A5*A3*A2)+((~A1)*(~A4)*A5*A3*(~A2)*A6)+((~A1)*(~A4)*A5*(~A3))+((~A1)*(~A4)*(~A5)*A3*A2)+((~A1)*(~A4)*(~A5)*A3*(~A2)*A6) , 
+NAME: SLICE_X11Y84/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X10Y84/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A1*(~A2)*A4) , 
+NAME: SLICE_X10Y84/C6LUT, 
+TYPE: LUT_OR_MEM6, 
+
+SLICE_X11Y84/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6*(~A5)*A3*A4)+((~A6)*A1)+((~A6)*(~A1)*(~A5)*A3*A4) , 
+NAME: SLICE_X11Y84/B6LUT, 
+TYPE: LUT6, 
+
+SLICE_X9Y83/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*(((~A1)*(~A2)*(~A3)*(~A5)*(~A4))) , 
+NAME: SLICE_X9Y83/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X11Y83/C6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A4*A3*A6)+(A4*A3*(~A6)*A2*A1)+(A4*A3*(~A6)*A2*(~A1)*A5)+(A4*A3*(~A6)*(~A2))+(A4*(~A3)*A5)+((~A4)*A3*(~A6)*A2*(~A1)*A5)+((~A4)*(~A3)*A5) , 
+NAME: SLICE_X11Y83/C6LUT, 
+TYPE: LUT6, 
+
+SLICE_X11Y83/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A1)+((~A1)*A4)+((~A1)*(~A4)*A3)+((~A1)*(~A4)*(~A3)*A2)) , 
+NAME: SLICE_X11Y83/A6LUT, 
+TYPE: LUT6, 
+

@@ -1,0 +1,5 @@
+verilog work "hdl/pid_src/booth.v"
+verilog work "hdl/pid_src/PID_defines.v"
+verilog work "hdl/pid_src/CLA_fixed.v"
+verilog work "hdl/pid_src/16x16bit_multiplier_pipelined.v"
+verilog work "hdl/pid_src/PID.v"

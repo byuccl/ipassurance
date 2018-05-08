@@ -1,0 +1,382 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top sha3_high_throughput -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27921 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1050.215 ; gain = 165.137 ; free physical = 9100 ; free virtual = 31789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sha3_high_throughput' [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/sha3_high_throughput.v:26]
+INFO: [Synth 8-638] synthesizing module 'padder_h' [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/padder_h.v:21]
+INFO: [Synth 8-638] synthesizing module 'padder1_h' [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/padder1_h.v:17]
+INFO: [Synth 8-256] done synthesizing module 'padder1_h' (1#1) [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/padder1_h.v:17]
+INFO: [Synth 8-256] done synthesizing module 'padder_h' (2#1) [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/padder_h.v:21]
+INFO: [Synth 8-638] synthesizing module 'f_permutation_h' [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/f_permutation_h.v:19]
+INFO: [Synth 8-638] synthesizing module 'rconst2in1' [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/rconst2in1.v:18]
+INFO: [Synth 8-256] done synthesizing module 'rconst2in1' (3#1) [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/rconst2in1.v:18]
+INFO: [Synth 8-638] synthesizing module 'round2in1' [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/round2in1.v:25]
+INFO: [Synth 8-256] done synthesizing module 'round2in1' (4#1) [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/round2in1.v:25]
+INFO: [Synth 8-256] done synthesizing module 'f_permutation_h' (5#1) [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/f_permutation_h.v:19]
+INFO: [Synth 8-256] done synthesizing module 'sha3_high_throughput' (6#1) [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/sha3_high_throughput.v:26]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[62]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[61]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[60]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[59]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[58]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[57]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[56]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[55]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[54]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[53]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[52]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[51]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[50]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[49]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[48]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[47]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[46]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[45]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[44]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[43]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[42]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[41]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[40]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[39]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[38]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[37]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[36]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[35]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[34]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[33]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[32]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[30]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[29]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[28]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[27]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[26]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[25]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[24]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[23]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[22]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[21]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[20]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[19]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[18]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[17]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[16]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[14]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[13]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[12]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[11]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[10]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[9]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[8]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[6]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[5]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[4]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[2]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[62]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[61]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[60]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[59]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[58]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[57]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[56]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[55]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[54]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[53]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[52]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[51]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[50]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[49]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[48]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[47]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[46]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[45]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[44]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[43]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[42]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[41]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[40]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[39]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[38]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[37]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[36]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[35]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[34]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[33]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[32]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[30]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[29]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[28]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[27]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[26]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[25]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[24]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[23]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[22]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[21]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[20]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_2[19]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1097.652 ; gain = 212.574 ; free physical = 9047 ; free virtual = 31737
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1097.652 ; gain = 212.574 ; free physical = 9047 ; free virtual = 31737
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1105.656 ; gain = 220.578 ; free physical = 9047 ; free virtual = 31737
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1130.672 ; gain = 245.594 ; free physical = 9025 ; free virtual = 31714
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/f_permutation_h.v:56]
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    576 Bit         XORs := 1     
+	   5 Input     64 Bit         XORs := 10    
+	   3 Input     64 Bit         XORs := 50    
+	   2 Input     64 Bit         XORs := 50    
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	             1600 Bit    Registers := 1     
+	              576 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   1600 Bit        Muxes := 1     
+	   2 Input    576 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/f_permutation_h.v:56]
+Hierarchical RTL Component report 
+Module sha3_high_throughput 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module padder_h 
+Detailed RTL Component Info : 
++---Registers : 
+	              576 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    576 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+Module round2in1 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     64 Bit         XORs := 10    
+	   3 Input     64 Bit         XORs := 50    
+	   2 Input     64 Bit         XORs := 50    
+	   2 Input      1 Bit         XORs := 14    
+Module f_permutation_h 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    576 Bit         XORs := 1     
++---Registers : 
+	             1600 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   1600 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1202.680 ; gain = 317.602 ; free physical = 8945 ; free virtual = 31635
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'state_reg' into 'padder_h_/state_reg' [/home/sean/vivado_workspace/ooc_sha3_high_throughput/Sources/hdl/sha3_high_throughput.v:57]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1210.688 ; gain = 325.609 ; free physical = 8937 ; free virtual = 31627
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1210.688 ; gain = 325.609 ; free physical = 8937 ; free virtual = 31627
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (out_ready_reg) is unused and will be removed from module f_permutation_h.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:21:59 ; elapsed = 00:21:59 . Memory (MB): peak = 2074.312 ; gain = 1189.234 ; free physical = 4032 ; free virtual = 26718
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:21:59 ; elapsed = 00:21:59 . Memory (MB): peak = 2074.312 ; gain = 1189.234 ; free physical = 4032 ; free virtual = 26718
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:21:59 ; elapsed = 00:21:59 . Memory (MB): peak = 2074.312 ; gain = 1189.234 ; free physical = 4032 ; free virtual = 26718
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:22:09 ; elapsed = 00:22:09 . Memory (MB): peak = 2074.312 ; gain = 1189.234 ; free physical = 8273 ; free virtual = 30959
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:22:09 ; elapsed = 00:22:09 . Memory (MB): peak = 2074.312 ; gain = 1189.234 ; free physical = 8273 ; free virtual = 30959
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:22:09 ; elapsed = 00:22:09 . Memory (MB): peak = 2074.312 ; gain = 1189.234 ; free physical = 8273 ; free virtual = 30959
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:22:10 ; elapsed = 00:22:10 . Memory (MB): peak = 2074.312 ; gain = 1189.234 ; free physical = 8274 ; free virtual = 30960
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:22:10 ; elapsed = 00:22:10 . Memory (MB): peak = 2074.312 ; gain = 1189.234 ; free physical = 8274 ; free virtual = 30960
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:22:10 ; elapsed = 00:22:11 . Memory (MB): peak = 2074.312 ; gain = 1189.234 ; free physical = 8273 ; free virtual = 30959
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------------+-----------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name          | RTL Name  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------------+-----------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|sha3_high_throughput | i_reg[10] | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++---------------------+-----------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT2   |   651|
+|2     |LUT3   |   943|
+|3     |LUT4   |   906|
+|4     |LUT5   |  1182|
+|5     |LUT6   |  3349|
+|6     |SRL16E |     1|
+|7     |FDRE   |  2212|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  9244|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:22:10 ; elapsed = 00:22:11 . Memory (MB): peak = 2074.312 ; gain = 1189.234 ; free physical = 8273 ; free virtual = 30959
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 180 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:22:08 ; elapsed = 00:22:09 . Memory (MB): peak = 2074.312 ; gain = 1098.094 ; free physical = 8273 ; free virtual = 30959
+Synthesis Optimization Complete : Time (s): cpu = 00:22:10 ; elapsed = 00:22:11 . Memory (MB): peak = 2074.320 ; gain = 1189.242 ; free physical = 8273 ; free virtual = 30959
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-101] Netlist 'sha3_high_throughput' is not ideal for floorplanning, since the cellview 'sha3_high_throughput' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:22:11 ; elapsed = 00:22:11 . Memory (MB): peak = 2168.184 ; gain = 1204.551 ; free physical = 8269 ; free virtual = 30955

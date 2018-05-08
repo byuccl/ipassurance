@@ -1,0 +1,5 @@
+verilog work "hdl/bitsplit.v"
+verilog work "hdl/bubblesort.v"
+verilog work "hdl/intgenerator.v"
+verilog work "hdl/rungenerator.v"
+verilog work "hdl/stageen.v"

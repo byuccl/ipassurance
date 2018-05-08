@@ -1,0 +1,24 @@
+
+verilog work "hdl/cr_dct.v"
+verilog work "hdl/cr_quantizer.v"
+verilog work "hdl/cr_huff.v"
+verilog work "hdl/cb_dct.v"
+verilog work "hdl/cb_quantizer.v"
+verilog work "hdl/cb_huff.v"
+verilog work "hdl/y_dct.v"
+verilog work "hdl/y_quantizer.v"
+verilog work "hdl/y_huff.v"
+
+verilog work "hdl/rgb2ycbcr.v"
+verilog work "hdl/crd_q_h.v"
+verilog work "hdl/cbd_q_h.v"
+verilog work "hdl/yd_q_h.v"
+
+verilog work "hdl/pre_fifo.v"
+verilog work "hdl/sync_fifo_32.v"
+verilog work "hdl/sync_fifo_ff.v"
+
+verilog work "hdl/fifo_out.v"
+verilog work "hdl/ff_checker.v"
+
+verilog work "hdl/jpegencode.v"

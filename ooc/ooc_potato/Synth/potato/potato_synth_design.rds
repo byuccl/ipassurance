@@ -1,0 +1,780 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top potato -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10696 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1048.215 ; gain = 163.137 ; free physical = 7809 ; free virtual = 32101
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'potato' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/potato.vhd:43]
+	Parameter PROCESSOR_ID bound to: 32'b00000000000000000000000000000000 
+	Parameter RESET_ADDRESS bound to: 32'b00000000000000000000001000000000 
+INFO: [Synth 8-638] synthesizing module 'pp_core' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_core.vhd:54]
+	Parameter PROCESSOR_ID bound to: 0 - type: integer 
+	Parameter RESET_ADDRESS bound to: 512 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'pp_csr_unit' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_csr_unit.vhd:57]
+	Parameter PROCESSOR_ID bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'pp_counter' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_counter.vhd:23]
+	Parameter COUNTER_WIDTH bound to: 64 - type: integer 
+	Parameter COUNTER_STEP bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pp_counter' (1#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_counter.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'pp_csr_unit' (2#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_csr_unit.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'pp_register_file' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_register_file.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'pp_register_file' (3#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_register_file.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'pp_fetch' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_fetch.vhd:42]
+	Parameter RESET_ADDRESS bound to: 512 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pp_fetch' (4#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_fetch.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'pp_decode' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_decode.vhd:67]
+	Parameter RESET_ADDRESS bound to: 512 - type: integer 
+	Parameter PROCESSOR_ID bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'pp_imm_decoder' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_imm_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'pp_imm_decoder' (5#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_imm_decoder.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'pp_control_unit' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_control_unit.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'pp_alu_control_unit' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_alu_control_unit.vhd:25]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_alu_control_unit.vhd:70]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_alu_control_unit.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'pp_alu_control_unit' (6#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_alu_control_unit.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'pp_control_unit' (7#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_control_unit.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'pp_decode' (8#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_decode.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'pp_execute' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:125]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:290]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:290]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:290]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:290]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:290]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:290]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:290]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:290]
+INFO: [Synth 8-638] synthesizing module 'pp_alu_mux' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_alu_mux.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'pp_alu_mux' (9#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_alu_mux.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'pp_comparator' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_comparator.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'pp_comparator' (10#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_comparator.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'pp_alu' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_alu.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'pp_alu' (11#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_alu.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'pp_csr_alu' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_csr_alu.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'pp_csr_alu' (12#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_csr_alu.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'pp_execute' (13#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'pp_memory' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_memory.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'pp_memory' (14#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_memory.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'pp_writeback' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_writeback.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'pp_writeback' (15#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_writeback.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'pp_core' (16#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_core.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'pp_icache' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_icache.vhd:43]
+	Parameter LINE_SIZE bound to: 4 - type: integer 
+	Parameter NUM_LINES bound to: 128 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_icache.vhd:59]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_utilities.vhd:71]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_icache.vhd:239]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_utilities.vhd:71]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_icache.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'pp_icache' (17#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_icache.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'pp_wb_adapter' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_wb_adapter.vhd:34]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_wb_adapter.vhd:90]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_utilities.vhd:71]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_utilities.vhd:71]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_wb_adapter.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'pp_wb_adapter' (18#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_wb_adapter.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'pp_wb_arbiter' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_wb_arbiter.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'pp_wb_arbiter' (19#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_wb_arbiter.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'potato' (20#1) [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/potato.vhd:43]
+WARNING: [Synth 8-3331] design pp_memory has unconnected port dmem_read_ack
+WARNING: [Synth 8-3331] design pp_memory has unconnected port dmem_write_ack
+WARNING: [Synth 8-3331] design pp_fetch has unconnected port flush
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1095.652 ; gain = 210.574 ; free physical = 7760 ; free virtual = 32054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1095.652 ; gain = 210.574 ; free physical = 7759 ; free virtual = 32054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1103.656 ; gain = 218.578 ; free physical = 7759 ; free virtual = 32054
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-5546] ROM "software_interrupt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mtvec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mepc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mie" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mscratch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mtime_compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "alu_x_src" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "alu_op" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "alu_op" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rd_write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "csr_write" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_size" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_size" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_execute.vhd:365]
+INFO: [Synth 8-5544] ROM "exception_cause" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dmem_data_size" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wb_outputs[cyc]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cl_current_word" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'wb_outputs_reg[stb]' into 'wb_outputs_reg[cyc]' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_wb_adapter.vhd:79]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'pp_wb_arbiter'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                 m1_busy |                               01 |                               01
+                 m2_busy |                               10 |                               10
+                  iSTATE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'pp_wb_arbiter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1166.797 ; gain = 281.719 ; free physical = 7700 ; free virtual = 31993
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 33    
+	               28 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 33    
++---RAMs : 
+	              16K Bit         RAMs := 1     
+	               2K Bit         RAMs := 1     
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   8 Input    128 Bit        Muxes := 2     
+	   2 Input    128 Bit        Muxes := 2     
+	  20 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 32    
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 7     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 5     
+	  22 Input      5 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   7 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 12    
+	  16 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 9     
+	   5 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 24    
+	   2 Input      1 Bit        Muxes := 44    
+	  13 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pp_csr_unit 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 10    
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  20 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  22 Input      5 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 13    
+Module pp_register_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module pp_fetch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module pp_imm_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+Module pp_alu_control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module pp_control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      5 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+Module pp_decode 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module pp_alu_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module pp_alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module pp_csr_alu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+Module pp_execute 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 4     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+Module pp_memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module pp_writeback 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
+Module pp_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module pp_icache 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 3     
+	               28 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   8 Input    128 Bit        Muxes := 2     
+	   2 Input    128 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 8     
+Module pp_wb_adapter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   7 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 10    
+Module pp_wb_arbiter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1197.797 ; gain = 312.719 ; free physical = 7670 ; free virtual = 31963
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'cl_current_word_reg[2:0]' into 'cl_current_word_reg[2:0]' [/home/sean/vivado_workspace/ooc_potato/Sources/hdl/pp_icache.vhd:226]
+INFO: [Synth 8-5546] ROM "processor/csr_unit/mscratch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "processor/csr_unit/mepc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "processor/csr_unit/mtvec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "processor/csr_unit/software_interrupt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "processor/csr_unit/mtime_compare" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "processor/csr_unit/mie" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "processor/decode/control_unit/alu_control/alu_op" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "processor/decode/control_unit/alu_control/alu_op" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.805 ; gain = 320.727 ; free physical = 7662 ; free virtual = 31954
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.805 ; gain = 320.727 ; free physical = 7662 ; free virtual = 31954
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|pp_icache   | cache_memory_reg | 128 x 128(READ_FIRST)  | W |   | 128 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
++------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                      | Inference | Size (Depth x Width) | Primitives    | 
++------------+---------------------------------+-----------+----------------------+---------------+
+|potato      | processor/regfile/registers_reg | Implied   | 32 x 32              | RAM32M x 12   | 
+|potato      | icache/tag_memory_reg           | Implied   | 128 x 21             | RAM64M x 14   | 
++------------+---------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[2]' (FDE) to 'icache/cl_load_address_reg[13]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[1]' (FDE) to 'icache/cl_load_address_reg[12]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[0]' (FDE) to 'icache/cl_load_address_reg[11]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[5]' (FDE) to 'icache/cl_load_address_reg[16]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[4]' (FDE) to 'icache/cl_load_address_reg[15]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[3]' (FDE) to 'icache/cl_load_address_reg[14]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[8]' (FDE) to 'icache/cl_load_address_reg[19]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[7]' (FDE) to 'icache/cl_load_address_reg[18]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[6]' (FDE) to 'icache/cl_load_address_reg[17]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[11]' (FDE) to 'icache/cl_load_address_reg[22]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[10]' (FDE) to 'icache/cl_load_address_reg[21]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[9]' (FDE) to 'icache/cl_load_address_reg[20]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[14]' (FDE) to 'icache/cl_load_address_reg[25]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[13]' (FDE) to 'icache/cl_load_address_reg[24]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[12]' (FDE) to 'icache/cl_load_address_reg[23]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[17]' (FDE) to 'icache/cl_load_address_reg[28]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[16]' (FDE) to 'icache/cl_load_address_reg[27]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[15]' (FDE) to 'icache/cl_load_address_reg[26]'
+INFO: [Synth 8-3886] merging instance 'icache/cl_current_line_reg[0]' (FDE) to 'icache/cl_load_address_reg[4]'
+INFO: [Synth 8-3886] merging instance 'icache/cl_current_line_reg[1]' (FDE) to 'icache/cl_load_address_reg[5]'
+INFO: [Synth 8-3886] merging instance 'icache/cl_current_line_reg[2]' (FDE) to 'icache/cl_load_address_reg[6]'
+INFO: [Synth 8-3886] merging instance 'icache/cl_current_line_reg[3]' (FDE) to 'icache/cl_load_address_reg[7]'
+INFO: [Synth 8-3886] merging instance 'icache/cl_current_line_reg[4]' (FDE) to 'icache/cl_load_address_reg[8]'
+INFO: [Synth 8-3886] merging instance 'icache/cl_current_line_reg[5]' (FDE) to 'icache/cl_load_address_reg[9]'
+INFO: [Synth 8-3886] merging instance 'icache/cl_current_line_reg[6]' (FDE) to 'icache/cl_load_address_reg[10]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[20]' (FDE) to 'icache/cl_load_address_reg[31]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[19]' (FDE) to 'icache/cl_load_address_reg[30]'
+INFO: [Synth 8-3886] merging instance 'icache/load_buffer_tag_reg[18]' (FDE) to 'icache/cl_load_address_reg[29]'
+INFO: [Synth 8-3886] merging instance 'processor/execute/decode_exception_cause_reg[4]' (FDE) to 'processor/execute/decode_exception_cause_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\processor/execute /\decode_exception_cause_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor/execute /\decode_exception_cause_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[dat][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[we] )
+INFO: [Synth 8-3886] merging instance 'icache/wb_outputs_reg[sel][0]' (FDE) to 'icache/wb_outputs_reg[sel][3]'
+INFO: [Synth 8-3886] merging instance 'icache/wb_outputs_reg[sel][1]' (FDE) to 'icache/wb_outputs_reg[sel][3]'
+INFO: [Synth 8-3886] merging instance 'icache/wb_outputs_reg[sel][2]' (FDE) to 'icache/wb_outputs_reg[sel][3]'
+INFO: [Synth 8-3886] merging instance 'icache/wb_outputs_reg[adr][0]' (FDE) to 'icache/wb_outputs_reg[adr][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icache/wb_outputs_reg[adr][1] )
+WARNING: [Synth 8-3332] Sequential element (decode_exception_cause_reg[5]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (decode_exception_cause_reg[4]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (decode_exception_cause_reg[1]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[23]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[22]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[21]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[20]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[19]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[18]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[17]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[16]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[15]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[14]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[13]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[12]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[11]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[10]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[9]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[8]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[6]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[5]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[4]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[2]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[1]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (mie_reg[0]) is unused and will be removed from module pp_execute.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[31]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[30]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[29]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[28]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[27]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[26]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[25]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[24]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[23]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[22]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[21]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[20]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[19]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[18]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[17]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[16]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[15]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[14]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[13]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[12]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[11]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[10]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[9]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[8]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[7]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[6]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[5]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[4]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[3]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[2]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[1]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/read_data_out_reg[0]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[adr][1]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[adr][0]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[sel][2]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[sel][1]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[sel][0]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[we]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][31]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][30]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][29]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][28]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][27]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][26]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][25]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][24]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][23]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][22]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][21]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][20]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][19]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][18]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][17]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][16]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][15]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][14]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][13]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][12]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][11]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][10]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][9]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][8]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][7]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][6]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][5]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][4]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][3]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][2]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][1]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/wb_outputs_reg[dat][0]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/load_buffer_tag_reg[2]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/load_buffer_tag_reg[1]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/load_buffer_tag_reg[0]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/load_buffer_tag_reg[5]) is unused and will be removed from module potato.
+WARNING: [Synth 8-3332] Sequential element (icache/load_buffer_tag_reg[4]) is unused and will be removed from module potato.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'processor/execute/csr_use_immediate_reg' (FDE) to 'processor/execute/funct3_reg[2]'
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1301.844 ; gain = 416.766 ; free physical = 7557 ; free virtual = 31850
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1301.844 ; gain = 416.766 ; free physical = 7557 ; free virtual = 31850
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1301.844 ; gain = 416.766 ; free physical = 7557 ; free virtual = 31850
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance icache/cache_memory_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance icache/cache_memory_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1317.859 ; gain = 432.781 ; free physical = 7547 ; free virtual = 31840
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1317.859 ; gain = 432.781 ; free physical = 7547 ; free virtual = 31840
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1317.859 ; gain = 432.781 ; free physical = 7547 ; free virtual = 31840
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1317.859 ; gain = 432.781 ; free physical = 7547 ; free virtual = 31840
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1317.859 ; gain = 432.781 ; free physical = 7547 ; free virtual = 31840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1317.859 ; gain = 432.781 ; free physical = 7547 ; free virtual = 31840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   149|
+|2     |LUT1     |   320|
+|3     |LUT2     |   208|
+|4     |LUT3     |   250|
+|5     |LUT4     |   457|
+|6     |LUT5     |   622|
+|7     |LUT6     |  1078|
+|8     |MUXF7    |    63|
+|9     |MUXF8    |     8|
+|10    |RAM32M   |    12|
+|11    |RAM64M   |    14|
+|12    |RAMB36E1 |     2|
+|13    |FDCE     |    32|
+|14    |FDRE     |  1607|
+|15    |FDSE     |    26|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  4848|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1317.859 ; gain = 432.781 ; free physical = 7547 ; free virtual = 31840
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 137 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1317.859 ; gain = 342.641 ; free physical = 7547 ; free virtual = 31840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1317.867 ; gain = 432.789 ; free physical = 7547 ; free virtual = 31840
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 177 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'potato' is not ideal for floorplanning, since the cellview 'potato' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 26 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 14 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+167 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1443.730 ; gain = 482.098 ; free physical = 7519 ; free virtual = 31812

@@ -1,0 +1,2 @@
+vhdl work "hdl/quadratic_func_bench.vhd"
+vhdl work "hdl/quadratic_func.vhd"

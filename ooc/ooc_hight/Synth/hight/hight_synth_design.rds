@@ -1,0 +1,433 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top hight -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28416 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1048.215 ; gain = 163.137 ; free physical = 3932 ; free virtual = 29966
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hight' [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/hight.v:43]
+INFO: [Synth 8-638] synthesizing module 'CRYPTO_PATH' [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/CRYPTO_PATH.v:43]
+INFO: [Synth 8-638] synthesizing module 'WF' [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/WF.v:43]
+INFO: [Synth 8-256] done synthesizing module 'WF' (1#1) [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/WF.v:43]
+INFO: [Synth 8-638] synthesizing module 'RF' [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/RF.v:43]
+INFO: [Synth 8-256] done synthesizing module 'RF' (2#1) [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/RF.v:43]
+INFO: [Synth 8-256] done synthesizing module 'CRYPTO_PATH' (3#1) [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/CRYPTO_PATH.v:43]
+INFO: [Synth 8-638] synthesizing module 'KEY_SCHED' [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/KEY_SCHED.v:43]
+INFO: [Synth 8-638] synthesizing module 'WKG' [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/WKG.v:44]
+INFO: [Synth 8-256] done synthesizing module 'WKG' (4#1) [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/WKG.v:44]
+INFO: [Synth 8-638] synthesizing module 'SKG' [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/SKG.v:43]
+INFO: [Synth 8-256] done synthesizing module 'SKG' (5#1) [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/SKG.v:43]
+INFO: [Synth 8-256] done synthesizing module 'KEY_SCHED' (6#1) [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/KEY_SCHED.v:43]
+INFO: [Synth 8-638] synthesizing module 'CONTROL' [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/CONTROL.v:43]
+	Parameter S_IDLE bound to: 6'b110000 
+	Parameter S_KEY_CONFIG bound to: 6'b100000 
+	Parameter S_RDY bound to: 6'b000000 
+	Parameter S_WF1 bound to: 6'b000001 
+	Parameter S_RF1 bound to: 6'b000010 
+	Parameter S_RF2 bound to: 6'b000011 
+	Parameter S_RF3 bound to: 6'b000100 
+	Parameter S_RF4 bound to: 6'b000101 
+	Parameter S_RF5 bound to: 6'b000110 
+	Parameter S_RF6 bound to: 6'b000111 
+	Parameter S_RF7 bound to: 6'b001000 
+	Parameter S_RF8 bound to: 6'b001001 
+	Parameter S_RF9 bound to: 6'b001010 
+	Parameter S_RF10 bound to: 6'b001011 
+	Parameter S_RF11 bound to: 6'b001100 
+	Parameter S_RF12 bound to: 6'b001101 
+	Parameter S_RF13 bound to: 6'b001110 
+	Parameter S_RF14 bound to: 6'b001111 
+	Parameter S_RF15 bound to: 6'b010000 
+	Parameter S_RF16 bound to: 6'b010001 
+	Parameter S_RF17 bound to: 6'b010010 
+	Parameter S_RF18 bound to: 6'b010011 
+	Parameter S_RF19 bound to: 6'b010100 
+	Parameter S_RF20 bound to: 6'b010101 
+	Parameter S_RF21 bound to: 6'b010110 
+	Parameter S_RF22 bound to: 6'b010111 
+	Parameter S_RF23 bound to: 6'b011000 
+	Parameter S_RF24 bound to: 6'b011001 
+	Parameter S_RF25 bound to: 6'b011010 
+	Parameter S_RF26 bound to: 6'b011011 
+	Parameter S_RF27 bound to: 6'b011100 
+	Parameter S_RF28 bound to: 6'b011101 
+	Parameter S_RF29 bound to: 6'b011110 
+	Parameter S_RF30 bound to: 6'b011111 
+	Parameter S_RF31 bound to: 6'b111111 
+	Parameter S_RF32 bound to: 6'b111110 
+	Parameter S_DONE bound to: 6'b111100 
+	Parameter S_ERROR bound to: 6'b101010 
+INFO: [Synth 8-256] done synthesizing module 'CONTROL' (7#1) [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/CONTROL.v:43]
+INFO: [Synth 8-256] done synthesizing module 'hight' (8#1) [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/hight.v:43]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.652 ; gain = 204.574 ; free physical = 3888 ; free virtual = 29923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.652 ; gain = 204.574 ; free physical = 3888 ; free virtual = 29923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1097.656 ; gain = 212.578 ; free physical = 3888 ; free virtual = 29923
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/WF.v:115]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_hight/Sources/hdl/WF.v:110]
+INFO: [Synth 8-5544] ROM "r_xf0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'r_pstate_reg' in module 'CONTROL'
+INFO: [Synth 8-5546] ROM "o_xf_sel2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                           000001 |                           110000
+            S_KEY_CONFIG |                           000011 |                           100000
+                   S_RDY |                           000010 |                           000000
+                   S_WF1 |                           000100 |                           000001
+                   S_RF1 |                           000101 |                           000010
+                   S_RF2 |                           000110 |                           000011
+                   S_RF3 |                           000111 |                           000100
+                   S_RF4 |                           001000 |                           000101
+                   S_RF5 |                           001001 |                           000110
+                   S_RF6 |                           001010 |                           000111
+                   S_RF7 |                           001011 |                           001000
+                   S_RF8 |                           001100 |                           001001
+                   S_RF9 |                           001101 |                           001010
+                  S_RF10 |                           001110 |                           001011
+                  S_RF11 |                           001111 |                           001100
+                  S_RF12 |                           010000 |                           001101
+                  S_RF13 |                           010001 |                           001110
+                  S_RF14 |                           010010 |                           001111
+                  S_RF15 |                           010011 |                           010000
+                  S_RF16 |                           010100 |                           010001
+                  S_RF17 |                           010101 |                           010010
+                  S_RF18 |                           010110 |                           010011
+                  S_RF19 |                           010111 |                           010100
+                  S_RF20 |                           011000 |                           010101
+                  S_RF21 |                           011001 |                           010110
+                  S_RF22 |                           011010 |                           010111
+                  S_RF23 |                           011011 |                           011000
+                  S_RF24 |                           011100 |                           011001
+                  S_RF25 |                           011101 |                           011010
+                  S_RF26 |                           011110 |                           011011
+                  S_RF27 |                           011111 |                           011100
+                  S_RF28 |                           100000 |                           011101
+                  S_RF29 |                           100001 |                           011110
+                  S_RF30 |                           100010 |                           011111
+                  S_RF31 |                           100011 |                           111111
+                  S_RF32 |                           100100 |                           111110
+                  S_DONE |                           100101 |                           111100
+                 S_ERROR |                           000000 |                           101010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_pstate_reg' using encoding 'sequential' in module 'CONTROL'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1129.688 ; gain = 244.609 ; free physical = 3862 ; free virtual = 29897
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 10    
++---XORs : 
+	   2 Input      8 Bit         XORs := 10    
+	   3 Input      8 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 34    
+	  38 Input      6 Bit        Muxes := 1     
+	  79 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module WF 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module RF 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 6     
++---XORs : 
+	   3 Input      8 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 20    
+Module CRYPTO_PATH 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module WKG 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+Module SKG 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+Module KEY_SCHED 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+Module CONTROL 
+Detailed RTL Component Info : 
++---Muxes : 
+	  38 Input      6 Bit        Muxes := 1     
+	  79 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1189.688 ; gain = 304.609 ; free physical = 3797 ; free virtual = 29832
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1215.719 ; gain = 330.641 ; free physical = 3773 ; free virtual = 29808
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1215.719 ; gain = 330.641 ; free physical = 3773 ; free virtual = 29808
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------------------+---------------+----------------+
+|Module Name | RTL Object              | Depth x Width | Implemented As | 
++------------+-------------------------+---------------+----------------+
+|SKG         | w_d0x                   | 32x7          | LUT            | 
+|SKG         | w_d3x                   | 32x7          | LUT            | 
+|SKG         | w_d1x                   | 32x7          | LUT            | 
+|SKG         | w_d2x                   | 32x7          | LUT            | 
+|hight       | u_KEY_SCHED/u_SKG/w_d3x | 32x7          | LUT            | 
+|hight       | u_KEY_SCHED/u_SKG/w_d0x | 32x7          | LUT            | 
+|hight       | u_KEY_SCHED/u_SKG/w_d2x | 32x7          | LUT            | 
+|hight       | u_KEY_SCHED/u_SKG/w_d1x | 32x7          | LUT            | 
++------------+-------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1255.742 ; gain = 370.664 ; free physical = 3731 ; free virtual = 29767
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1255.742 ; gain = 370.664 ; free physical = 3731 ; free virtual = 29767
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1255.742 ; gain = 370.664 ; free physical = 3731 ; free virtual = 29767
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1255.742 ; gain = 370.664 ; free physical = 3731 ; free virtual = 29767
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1255.742 ; gain = 370.664 ; free physical = 3731 ; free virtual = 29767
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1255.742 ; gain = 370.664 ; free physical = 3731 ; free virtual = 29767
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1255.742 ; gain = 370.664 ; free physical = 3731 ; free virtual = 29767
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1255.742 ; gain = 370.664 ; free physical = 3731 ; free virtual = 29767
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1255.742 ; gain = 370.664 ; free physical = 3731 ; free virtual = 29767
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    28|
+|2     |LUT1   |     3|
+|3     |LUT2   |    21|
+|4     |LUT3   |    32|
+|5     |LUT4   |   118|
+|6     |LUT5   |    67|
+|7     |LUT6   |   285|
+|8     |FDCE   |   101|
+|9     |FDPE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   656|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1255.742 ; gain = 370.664 ; free physical = 3731 ; free virtual = 29767
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1255.742 ; gain = 281.523 ; free physical = 3731 ; free virtual = 29767
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1255.750 ; gain = 370.672 ; free physical = 3731 ; free virtual = 29767
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1393.613 ; gain = 431.980 ; free physical = 3688 ; free virtual = 29723

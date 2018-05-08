@@ -1,0 +1,15 @@
+verilog work "hdl/rtl/lib/registers.v"
+verilog work "hdl/rtl/msg_hand/uart_msg_handler.v"
+
+verilog work "hdl/rtl/spi/spi_cfg.v"
+verilog work "hdl/rtl/spi/spi_core.v"
+verilog work "hdl/rtl/spi/spi_ctl.v"
+verilog work "hdl/rtl/spi/spi_if.v"
+
+
+verilog work "hdl/rtl/uart_core/clk_ctl.v"
+verilog work "hdl/rtl/uart_core/uart_core.v"
+verilog work "hdl/rtl/uart_core/uart_rxfsm.v"
+verilog work "hdl/rtl/uart_core/uart_txfsm.v"
+
+verilog work "hdl/rtl/top/uart2spi.v"

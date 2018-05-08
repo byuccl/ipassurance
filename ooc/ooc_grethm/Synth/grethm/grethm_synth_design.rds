@@ -1,0 +1,1689 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top grethm -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26607 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1051.668 ; gain = 166.590 ; free physical = 4221 ; free virtual = 26655
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'grethm' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/grethm.vhd:97]
+	Parameter hindex bound to: 6 - type: integer 
+	Parameter pindex bound to: 15 - type: integer 
+	Parameter paddr bound to: 15 - type: integer 
+	Parameter pmask bound to: 4095 - type: integer 
+	Parameter pirq bound to: 12 - type: integer 
+	Parameter memtech bound to: 50 - type: integer 
+	Parameter ifg_gap bound to: 24 - type: integer 
+	Parameter attempt_limit bound to: 16 - type: integer 
+	Parameter backoff_limit bound to: 10 - type: integer 
+	Parameter slot_time bound to: 128 - type: integer 
+	Parameter mdcscaler bound to: 50 - type: integer 
+	Parameter enable_mdio bound to: 1 - type: integer 
+	Parameter fifosize bound to: 4 - type: integer 
+	Parameter nsync bound to: 1 - type: integer 
+	Parameter edcl bound to: 1 - type: integer 
+	Parameter edclbufsz bound to: 2 - type: integer 
+	Parameter burstlength bound to: 32 - type: integer 
+	Parameter macaddrh bound to: 131072 - type: integer 
+	Parameter macaddrl bound to: 0 - type: integer 
+	Parameter ipaddrh bound to: 49320 - type: integer 
+	Parameter ipaddrl bound to: 51 - type: integer 
+	Parameter phyrstadr bound to: 7 - type: integer 
+	Parameter rmii bound to: 1 - type: integer 
+	Parameter sim bound to: 0 - type: integer 
+	Parameter giga bound to: 0 - type: integer 
+	Parameter oepol bound to: 0 - type: integer 
+	Parameter scanen bound to: 0 - type: integer 
+	Parameter ft bound to: 0 - type: integer 
+	Parameter edclft bound to: 0 - type: integer 
+	Parameter mdint_pol bound to: 0 - type: integer 
+	Parameter enable_mdint bound to: 0 - type: integer 
+	Parameter multicast bound to: 0 - type: integer 
+	Parameter ramdebug bound to: 0 - type: integer 
+	Parameter mdiohold bound to: 1 - type: integer 
+	Parameter maxsize bound to: 1500 - type: integer 
+	Parameter gmiimode bound to: 0 - type: integer 
+	Parameter hindex bound to: 6 - type: integer 
+	Parameter pindex bound to: 15 - type: integer 
+	Parameter paddr bound to: 15 - type: integer 
+	Parameter pmask bound to: 4095 - type: integer 
+	Parameter pirq bound to: 12 - type: integer 
+	Parameter memtech bound to: 50 - type: integer 
+	Parameter ifg_gap bound to: 24 - type: integer 
+	Parameter attempt_limit bound to: 16 - type: integer 
+	Parameter backoff_limit bound to: 10 - type: integer 
+	Parameter slot_time bound to: 128 - type: integer 
+	Parameter mdcscaler bound to: 50 - type: integer 
+	Parameter enable_mdio bound to: 1 - type: integer 
+	Parameter fifosize bound to: 4 - type: integer 
+	Parameter nsync bound to: 1 - type: integer 
+	Parameter edcl bound to: 1 - type: integer 
+	Parameter edclbufsz bound to: 2 - type: integer 
+	Parameter macaddrh bound to: 131072 - type: integer 
+	Parameter macaddrl bound to: 0 - type: integer 
+	Parameter ipaddrh bound to: 49320 - type: integer 
+	Parameter ipaddrl bound to: 51 - type: integer 
+	Parameter phyrstadr bound to: 7 - type: integer 
+	Parameter rmii bound to: 1 - type: integer 
+	Parameter oepol bound to: 0 - type: integer 
+	Parameter scanen bound to: 0 - type: integer 
+	Parameter ft bound to: 0 - type: integer 
+	Parameter edclft bound to: 0 - type: integer 
+	Parameter mdint_pol bound to: 0 - type: integer 
+	Parameter enable_mdint bound to: 0 - type: integer 
+	Parameter multicast bound to: 0 - type: integer 
+	Parameter ramdebug bound to: 0 - type: integer 
+	Parameter mdiohold bound to: 1 - type: integer 
+	Parameter maxsize bound to: 1500 - type: integer 
+	Parameter gmiimode bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'greth' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/greth.vhd:41' bound to instance 'u0' of component 'greth' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/grethm.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'greth' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/greth.vhd:89]
+	Parameter hindex bound to: 6 - type: integer 
+	Parameter pindex bound to: 15 - type: integer 
+	Parameter paddr bound to: 15 - type: integer 
+	Parameter pmask bound to: 4095 - type: integer 
+	Parameter pirq bound to: 12 - type: integer 
+	Parameter memtech bound to: 50 - type: integer 
+	Parameter ifg_gap bound to: 24 - type: integer 
+	Parameter attempt_limit bound to: 16 - type: integer 
+	Parameter backoff_limit bound to: 10 - type: integer 
+	Parameter slot_time bound to: 128 - type: integer 
+	Parameter mdcscaler bound to: 50 - type: integer 
+	Parameter enable_mdio bound to: 1 - type: integer 
+	Parameter fifosize bound to: 4 - type: integer 
+	Parameter nsync bound to: 1 - type: integer 
+	Parameter edcl bound to: 1 - type: integer 
+	Parameter edclbufsz bound to: 2 - type: integer 
+	Parameter macaddrh bound to: 131072 - type: integer 
+	Parameter macaddrl bound to: 0 - type: integer 
+	Parameter ipaddrh bound to: 49320 - type: integer 
+	Parameter ipaddrl bound to: 51 - type: integer 
+	Parameter phyrstadr bound to: 7 - type: integer 
+	Parameter rmii bound to: 1 - type: integer 
+	Parameter oepol bound to: 0 - type: integer 
+	Parameter scanen bound to: 0 - type: integer 
+	Parameter ft bound to: 0 - type: integer 
+	Parameter edclft bound to: 0 - type: integer 
+	Parameter mdint_pol bound to: 0 - type: integer 
+	Parameter enable_mdint bound to: 0 - type: integer 
+	Parameter multicast bound to: 0 - type: integer 
+	Parameter ramdebug bound to: 0 - type: integer 
+	Parameter mdiohold bound to: 1 - type: integer 
+	Parameter maxsize bound to: 1500 - type: integer 
+	Parameter gmiimode bound to: 0 - type: integer 
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+	Parameter ifg_gap bound to: 24 - type: integer 
+	Parameter attempt_limit bound to: 16 - type: integer 
+	Parameter backoff_limit bound to: 10 - type: integer 
+	Parameter mdcscaler bound to: 50 - type: integer 
+	Parameter enable_mdio bound to: 1 - type: integer 
+	Parameter fifosize bound to: 4 - type: integer 
+	Parameter nsync bound to: 1 - type: integer 
+	Parameter edcl bound to: 1 - type: integer 
+	Parameter edclbufsz bound to: 2 - type: integer 
+	Parameter macaddrh bound to: 131072 - type: integer 
+	Parameter macaddrl bound to: 0 - type: integer 
+	Parameter ipaddrh bound to: 49320 - type: integer 
+	Parameter ipaddrl bound to: 51 - type: integer 
+	Parameter phyrstadr bound to: 7 - type: integer 
+	Parameter rmii bound to: 1 - type: integer 
+	Parameter oepol bound to: 0 - type: integer 
+	Parameter scanen bound to: 0 - type: integer 
+	Parameter mdint_pol bound to: 0 - type: integer 
+	Parameter enable_mdint bound to: 0 - type: integer 
+	Parameter multicast bound to: 0 - type: integer 
+	Parameter edclsepahbg bound to: 0 - type: integer 
+	Parameter ramdebug bound to: 0 - type: integer 
+	Parameter mdiohold bound to: 1 - type: integer 
+	Parameter maxsize bound to: 1500 - type: integer 
+	Parameter gmiimode bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'grethc' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:35' bound to instance 'ethc0' of component 'grethc' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/greth.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'grethc' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:163]
+	Parameter ifg_gap bound to: 24 - type: integer 
+	Parameter attempt_limit bound to: 16 - type: integer 
+	Parameter backoff_limit bound to: 10 - type: integer 
+	Parameter mdcscaler bound to: 50 - type: integer 
+	Parameter enable_mdio bound to: 1 - type: integer 
+	Parameter fifosize bound to: 4 - type: integer 
+	Parameter nsync bound to: 1 - type: integer 
+	Parameter edcl bound to: 1 - type: integer 
+	Parameter edclbufsz bound to: 2 - type: integer 
+	Parameter macaddrh bound to: 131072 - type: integer 
+	Parameter macaddrl bound to: 0 - type: integer 
+	Parameter ipaddrh bound to: 49320 - type: integer 
+	Parameter ipaddrl bound to: 51 - type: integer 
+	Parameter phyrstadr bound to: 7 - type: integer 
+	Parameter rmii bound to: 1 - type: integer 
+	Parameter oepol bound to: 0 - type: integer 
+	Parameter scanen bound to: 0 - type: integer 
+	Parameter mdint_pol bound to: 0 - type: integer 
+	Parameter enable_mdint bound to: 0 - type: integer 
+	Parameter multicast bound to: 0 - type: integer 
+	Parameter edclsepahbg bound to: 0 - type: integer 
+	Parameter ramdebug bound to: 0 - type: integer 
+	Parameter mdiohold bound to: 1 - type: integer 
+	Parameter maxsize bound to: 1500 - type: integer 
+	Parameter gmiimode bound to: 0 - type: integer 
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:1055]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+	Parameter ifg_gap bound to: 24 - type: integer 
+	Parameter attempt_limit bound to: 16 - type: integer 
+	Parameter backoff_limit bound to: 10 - type: integer 
+	Parameter nsync bound to: 1 - type: integer 
+	Parameter rmii bound to: 1 - type: integer 
+	Parameter gmiimode bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'greth_tx' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_tx.vhd:33' bound to instance 'tx0' of component 'greth_tx' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:2235]
+INFO: [Synth 8-638] synthesizing module 'greth_tx' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_tx.vhd:51]
+	Parameter ifg_gap bound to: 24 - type: integer 
+	Parameter attempt_limit bound to: 16 - type: integer 
+	Parameter backoff_limit bound to: 10 - type: integer 
+	Parameter nsync bound to: 1 - type: integer 
+	Parameter rmii bound to: 1 - type: integer 
+	Parameter gmiimode bound to: 0 - type: integer 
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+	Parameter acthigh bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'eth_rstgen' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/eth_rstgen.vhd:30' bound to instance 'tx_rst' of component 'eth_rstgen' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_tx.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'eth_rstgen' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/eth_rstgen.vhd:41]
+	Parameter acthigh bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'eth_rstgen' (1#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/eth_rstgen.vhd:41]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_tx.vhd:363]
+INFO: [Synth 8-256] done synthesizing module 'greth_tx' (2#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_tx.vhd:51]
+	Parameter nsync bound to: 1 - type: integer 
+	Parameter rmii bound to: 1 - type: integer 
+	Parameter multicast bound to: 0 - type: integer 
+	Parameter maxsize bound to: 1500 - type: integer 
+	Parameter gmiimode bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'greth_rx' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_rx.vhd:34' bound to instance 'rx0' of component 'greth_rx' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:2271]
+INFO: [Synth 8-638] synthesizing module 'greth_rx' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_rx.vhd:51]
+	Parameter nsync bound to: 1 - type: integer 
+	Parameter rmii bound to: 1 - type: integer 
+	Parameter multicast bound to: 0 - type: integer 
+	Parameter maxsize bound to: 1500 - type: integer 
+	Parameter gmiimode bound to: 0 - type: integer 
+	Parameter acthigh bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'eth_rstgen' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/eth_rstgen.vhd:30' bound to instance 'rx_rst' of component 'eth_rstgen' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_rx.vhd:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'gmiimode0.r_reg[rxd]' and it is trimmed from '4' to '2' bits. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_rx.vhd:360]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rin_reg[rxd]' and it is trimmed from '4' to '2' bits. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_rx.vhd:343]
+INFO: [Synth 8-256] done synthesizing module 'greth_rx' (3#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_rx.vhd:51]
+INFO: [Synth 8-3491] module 'eth_ahb_mst' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/eth_ahb_mst.vhd:33' bound to instance 'ahb0' of component 'eth_ahb_mst' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:2288]
+INFO: [Synth 8-638] synthesizing module 'eth_ahb_mst' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/eth_ahb_mst.vhd:47]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/eth_ahb_mst.vhd:123]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/eth_ahb_mst.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'eth_ahb_mst' (4#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/eth_ahb_mst.vhd:47]
+WARNING: [Synth 8-3848] Net ahbmo2[hbusreq] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:470]
+WARNING: [Synth 8-3848] Net ahbmo2[hlock] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:470]
+WARNING: [Synth 8-3848] Net ahbmo2[htrans] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:470]
+WARNING: [Synth 8-3848] Net ahbmo2[haddr] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:470]
+WARNING: [Synth 8-3848] Net ahbmo2[hwrite] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:470]
+WARNING: [Synth 8-3848] Net ahbmo2[hsize] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:470]
+WARNING: [Synth 8-3848] Net ahbmo2[hburst] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:470]
+WARNING: [Synth 8-3848] Net ahbmo2[hprot] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:470]
+WARNING: [Synth 8-3848] Net ahbmo2[hwdata] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:470]
+WARNING: [Synth 8-3848] Net tmsti2[ready] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:461]
+WARNING: [Synth 8-3848] Net tmsti2[error] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:461]
+WARNING: [Synth 8-3848] Net tmsti2[retry] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:461]
+WARNING: [Synth 8-3848] Net tmsti2[grant] in module/entity grethc does not have driver. [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:461]
+INFO: [Synth 8-256] done synthesizing module 'grethc' (5#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:163]
+	Parameter tech bound to: 50 - type: integer 
+	Parameter abits bound to: 7 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter testen bound to: 0 - type: integer 
+	Parameter words bound to: 0 - type: integer 
+	Parameter custombits bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'syncram_2p' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:37' bound to instance 'tx_fifo0' of component 'syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/greth.vhd:306]
+INFO: [Synth 8-638] synthesizing module 'syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:54]
+	Parameter tech bound to: 50 - type: integer 
+	Parameter abits bound to: 7 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter testen bound to: 0 - type: integer 
+	Parameter words bound to: 0 - type: integer 
+	Parameter custombits bound to: 1 - type: integer 
+	Parameter techwrfst bound to: 0 - type: integer 
+	Parameter techrwcol bound to: 0 - type: integer 
+	Parameter techrdhold bound to: 0 - type: integer 
+	Parameter abits bound to: 7 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'memrwcol' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:32' bound to instance 'rwcol0' of component 'memrwcol' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'memrwcol' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:64]
+	Parameter techwrfst bound to: 0 - type: integer 
+	Parameter techrwcol bound to: 0 - type: integer 
+	Parameter techrdhold bound to: 0 - type: integer 
+	Parameter abits bound to: 7 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'memrwcol' (6#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:64]
+	Parameter abits bound to: 7 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'unisim_syncram_2p' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:603' bound to instance 'x0' of component 'unisim_syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'unisim_syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:617]
+	Parameter abits bound to: 7 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter abits bound to: 7 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'unisim_syncram_dp' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:282' bound to instance 'x0' of component 'unisim_syncram_dp' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:669]
+INFO: [Synth 8-638] synthesizing module 'unisim_syncram_dp' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:301]
+	Parameter abits bound to: 7 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter SIM_COLLISION_CHECK bound to: GENERATE_X_ONLY - type: string 
+INFO: [Synth 8-3491] module 'RAMB16_S36_S36' declared at '/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:40260' bound to instance 'r0' of component 'RAMB16_S36_S36' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:455]
+INFO: [Synth 8-638] synthesizing module 'RAMB16_S36_S36' [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:40260]
+	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_08 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_09 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_10 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_11 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_12 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_13 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_14 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_15 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_16 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_17 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_18 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_19 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_35 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_38 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_A bound to: 36'b000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 36'b000000000000000000000000000000000000 
+	Parameter SIM_COLLISION_CHECK bound to: GENERATE_X_ONLY - type: string 
+	Parameter SRVAL_A bound to: 36'b000000000000000000000000000000000000 
+	Parameter SRVAL_B bound to: 36'b000000000000000000000000000000000000 
+	Parameter WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+INFO: [Synth 8-256] done synthesizing module 'RAMB16_S36_S36' (7#1) [/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:40260]
+INFO: [Synth 8-256] done synthesizing module 'unisim_syncram_dp' (8#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'unisim_syncram_2p' (9#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:617]
+INFO: [Synth 8-256] done synthesizing module 'syncram_2p' (10#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:54]
+	Parameter tech bound to: 50 - type: integer 
+	Parameter abits bound to: 2 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter testen bound to: 0 - type: integer 
+	Parameter words bound to: 0 - type: integer 
+	Parameter custombits bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'syncram_2p' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:37' bound to instance 'rx_fifo0' of component 'syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/greth.vhd:311]
+INFO: [Synth 8-638] synthesizing module 'syncram_2p__parameterized1' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:54]
+	Parameter tech bound to: 50 - type: integer 
+	Parameter abits bound to: 2 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter testen bound to: 0 - type: integer 
+	Parameter words bound to: 0 - type: integer 
+	Parameter custombits bound to: 1 - type: integer 
+	Parameter techwrfst bound to: 0 - type: integer 
+	Parameter techrwcol bound to: 0 - type: integer 
+	Parameter techrdhold bound to: 0 - type: integer 
+	Parameter abits bound to: 2 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'memrwcol' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:32' bound to instance 'rwcol0' of component 'memrwcol' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'memrwcol__parameterized1' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:64]
+	Parameter techwrfst bound to: 0 - type: integer 
+	Parameter techrwcol bound to: 0 - type: integer 
+	Parameter techrdhold bound to: 0 - type: integer 
+	Parameter abits bound to: 2 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'memrwcol__parameterized1' (10#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:64]
+	Parameter abits bound to: 2 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'unisim_syncram_2p' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:603' bound to instance 'x0' of component 'unisim_syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'unisim_syncram_2p__parameterized1' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:617]
+	Parameter abits bound to: 2 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter abits bound to: 2 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'generic_syncram_2p' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/inferred/memory_inferred.vhd:114' bound to instance 'x0' of component 'generic_syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:664]
+INFO: [Synth 8-638] synthesizing module 'generic_syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/inferred/memory_inferred.vhd:131]
+	Parameter abits bound to: 2 - type: integer 
+	Parameter dbits bound to: 32 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'generic_syncram_2p' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/inferred/memory_inferred.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'unisim_syncram_2p__parameterized1' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:617]
+INFO: [Synth 8-256] done synthesizing module 'syncram_2p__parameterized1' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:54]
+	Parameter tech bound to: 50 - type: integer 
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter testen bound to: 0 - type: integer 
+	Parameter words bound to: 0 - type: integer 
+	Parameter custombits bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'syncram_2p' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:37' bound to instance 'r0' of component 'syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/greth.vhd:320]
+INFO: [Synth 8-638] synthesizing module 'syncram_2p__parameterized3' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:54]
+	Parameter tech bound to: 50 - type: integer 
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter testen bound to: 0 - type: integer 
+	Parameter words bound to: 0 - type: integer 
+	Parameter custombits bound to: 1 - type: integer 
+	Parameter techwrfst bound to: 0 - type: integer 
+	Parameter techrwcol bound to: 0 - type: integer 
+	Parameter techrdhold bound to: 0 - type: integer 
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'memrwcol' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:32' bound to instance 'rwcol0' of component 'memrwcol' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'memrwcol__parameterized3' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:64]
+	Parameter techwrfst bound to: 0 - type: integer 
+	Parameter techrwcol bound to: 0 - type: integer 
+	Parameter techrdhold bound to: 0 - type: integer 
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'memrwcol__parameterized3' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:64]
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'unisim_syncram_2p' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:603' bound to instance 'x0' of component 'unisim_syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'unisim_syncram_2p__parameterized3' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:617]
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'unisim_syncram_dp' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:282' bound to instance 'x0' of component 'unisim_syncram_dp' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:669]
+INFO: [Synth 8-638] synthesizing module 'unisim_syncram_dp__parameterized1' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:301]
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter SIM_COLLISION_CHECK bound to: GENERATE_X_ONLY - type: string 
+INFO: [Synth 8-3491] module 'RAMB16_S36_S36' declared at '/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:40260' bound to instance 'r0' of component 'RAMB16_S36_S36' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:455]
+INFO: [Synth 8-256] done synthesizing module 'unisim_syncram_dp__parameterized1' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'unisim_syncram_2p__parameterized3' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:617]
+INFO: [Synth 8-256] done synthesizing module 'syncram_2p__parameterized3' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:54]
+	Parameter tech bound to: 50 - type: integer 
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter testen bound to: 0 - type: integer 
+	Parameter words bound to: 0 - type: integer 
+	Parameter custombits bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'syncram_2p' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:37' bound to instance 'r1' of component 'syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/greth.vhd:323]
+INFO: [Synth 8-638] synthesizing module 'syncram_2p__parameterized5' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:54]
+	Parameter tech bound to: 50 - type: integer 
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter testen bound to: 0 - type: integer 
+	Parameter words bound to: 0 - type: integer 
+	Parameter custombits bound to: 1 - type: integer 
+	Parameter techwrfst bound to: 0 - type: integer 
+	Parameter techrwcol bound to: 0 - type: integer 
+	Parameter techrdhold bound to: 0 - type: integer 
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'memrwcol' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:32' bound to instance 'rwcol0' of component 'memrwcol' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'memrwcol__parameterized5' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:64]
+	Parameter techwrfst bound to: 0 - type: integer 
+	Parameter techrwcol bound to: 0 - type: integer 
+	Parameter techrdhold bound to: 0 - type: integer 
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'memrwcol__parameterized5' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/memrwcol.vhd:64]
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'unisim_syncram_2p' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:603' bound to instance 'x0' of component 'unisim_syncram_2p' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'unisim_syncram_2p__parameterized5' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:617]
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter sepclk bound to: 0 - type: integer 
+	Parameter wrfst bound to: 0 - type: integer 
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'unisim_syncram_dp' declared at '/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:282' bound to instance 'x0' of component 'unisim_syncram_dp' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:669]
+INFO: [Synth 8-638] synthesizing module 'unisim_syncram_dp__parameterized3' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:301]
+	Parameter abits bound to: 9 - type: integer 
+	Parameter dbits bound to: 16 - type: integer 
+	Parameter SIM_COLLISION_CHECK bound to: GENERATE_X_ONLY - type: string 
+INFO: [Synth 8-3491] module 'RAMB16_S36_S36' declared at '/opt/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:40260' bound to instance 'r0' of component 'RAMB16_S36_S36' [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:455]
+INFO: [Synth 8-256] done synthesizing module 'unisim_syncram_dp__parameterized3' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'unisim_syncram_2p__parameterized5' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/unisim/memory_unisim.vhd:617]
+INFO: [Synth 8-256] done synthesizing module 'syncram_2p__parameterized5' (11#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/techmap/maps/syncram_2p.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'greth' (12#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/greth.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'grethm' (13#1) [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/gaisler/greth/grethm.vhd:97]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uwrite1
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress1[8]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress1[7]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress1[6]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress1[5]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress1[4]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress1[3]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress1[2]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress1[1]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress1[0]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uwrite2
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress2[8]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress2[7]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress2[6]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress2[5]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress2[4]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress2[3]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress2[2]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress2[1]
+WARNING: [Synth 8-3331] design memrwcol__parameterized5 has unconnected port uaddress2[0]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized5 has unconnected port testin[3]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized5 has unconnected port testin[2]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized5 has unconnected port testin[1]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized5 has unconnected port testin[0]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uwrite1
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress1[8]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress1[7]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress1[6]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress1[5]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress1[4]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress1[3]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress1[2]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress1[1]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress1[0]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uwrite2
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress2[8]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress2[7]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress2[6]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress2[5]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress2[4]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress2[3]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress2[2]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress2[1]
+WARNING: [Synth 8-3331] design memrwcol__parameterized3 has unconnected port uaddress2[0]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized3 has unconnected port testin[3]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized3 has unconnected port testin[2]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized3 has unconnected port testin[1]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized3 has unconnected port testin[0]
+WARNING: [Synth 8-3331] design generic_syncram_2p has unconnected port rclk
+WARNING: [Synth 8-3331] design unisim_syncram_2p__parameterized1 has unconnected port renable
+WARNING: [Synth 8-3331] design memrwcol__parameterized1 has unconnected port uwrite1
+WARNING: [Synth 8-3331] design memrwcol__parameterized1 has unconnected port uaddress1[1]
+WARNING: [Synth 8-3331] design memrwcol__parameterized1 has unconnected port uaddress1[0]
+WARNING: [Synth 8-3331] design memrwcol__parameterized1 has unconnected port uwrite2
+WARNING: [Synth 8-3331] design memrwcol__parameterized1 has unconnected port uaddress2[1]
+WARNING: [Synth 8-3331] design memrwcol__parameterized1 has unconnected port uaddress2[0]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized1 has unconnected port testin[3]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized1 has unconnected port testin[2]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized1 has unconnected port testin[1]
+WARNING: [Synth 8-3331] design syncram_2p__parameterized1 has unconnected port testin[0]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uwrite1
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress1[6]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress1[5]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress1[4]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress1[3]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress1[2]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress1[1]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress1[0]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uwrite2
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress2[6]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress2[5]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress2[4]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress2[3]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress2[2]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress2[1]
+WARNING: [Synth 8-3331] design memrwcol has unconnected port uaddress2[0]
+WARNING: [Synth 8-3331] design syncram_2p has unconnected port testin[3]
+WARNING: [Synth 8-3331] design syncram_2p has unconnected port testin[2]
+WARNING: [Synth 8-3331] design syncram_2p has unconnected port testin[1]
+WARNING: [Synth 8-3331] design syncram_2p has unconnected port testin[0]
+WARNING: [Synth 8-3331] design greth_rx has unconnected port rxi[rxd][3]
+WARNING: [Synth 8-3331] design greth_rx has unconnected port rxi[rxd][2]
+WARNING: [Synth 8-3331] design greth_rx has unconnected port rxi[rx_dv]
+WARNING: [Synth 8-3331] design greth_rx has unconnected port rxi[rx_er]
+WARNING: [Synth 8-3331] design greth_rx has unconnected port rxi[rx_en]
+WARNING: [Synth 8-3331] design greth_tx has unconnected port txi[rx_col]
+WARNING: [Synth 8-3331] design greth_tx has unconnected port txi[datavalid]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehbusreq
+WARNING: [Synth 8-3331] design grethc has unconnected port ehlock
+WARNING: [Synth 8-3331] design grethc has unconnected port ehtrans[1]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehtrans[0]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehaddr[31]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehaddr[30]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehaddr[29]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehaddr[28]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehaddr[27]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehaddr[26]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehaddr[25]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehaddr[24]
+WARNING: [Synth 8-3331] design grethc has unconnected port ehaddr[23]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1157.105 ; gain = 272.027 ; free physical = 4111 ; free virtual = 26549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1157.105 ; gain = 272.027 ; free physical = 4111 ; free virtual = 26549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1165.109 ; gain = 280.031 ; free physical = 4111 ; free virtual = 26549
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-5544] ROM "rready" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rerror" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rretry" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[bb]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/greth_tx.vhd:270]
+INFO: [Synth 8-802] inferred FSM for state register 'gmiimode0.r_reg[def_state]' in module 'greth_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'gmiimode0.r_reg[main_state]' in module 'greth_tx'
+INFO: [Synth 8-5546] ROM "v[def_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[main_state]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[main_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[cnt]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[delay_val]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[status]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[restart]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[zero]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[def_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[transmitting]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[slot_count]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[done]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[main_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[main_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[main_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[main_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[main_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[main_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[main_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[main_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'gmiimode0.r_reg[rx_state]' in module 'greth_rx'
+INFO: [Synth 8-5544] ROM "v[zero]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ltfound]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[got4b]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rx_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rx_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rx_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rx_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rx_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_grethm/Sources/hdl/lib/eth/core/grethc.vhd:1544]
+INFO: [Synth 8-802] inferred FSM for state register 'r_reg[rxdstate]' in module 'grethc'
+INFO: [Synth 8-802] inferred FSM for state register 'r_reg[mdio_state]' in module 'grethc'
+INFO: [Synth 8-802] inferred FSM for state register 'r_reg[regaddr]' in module 'grethc'
+INFO: [Synth 8-802] inferred FSM for state register 'r_reg[edclrstate]' in module 'grethc'
+INFO: [Synth 8-5545] ROM "veri[writem]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "veri[writel]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "setmz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "swap" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "v[status][tx_int]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[status][rx_int]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[status][rx_err]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[status][tx_err]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[ctrlpkt]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "v[bcast]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[bcast]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "v[mdioclk]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[mdio_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[mdio_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[mdio_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[mdioo]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "v[edclrstate]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[nak]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[rcntm]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[rcntm]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[rcntl]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[ipcrc]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[udpsrc]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "v[tarp]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[tarp]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[tnak]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "v[edclbcast]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "v[rmsto][write]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[addrok]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[mdio_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[capbil]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[regaddr]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "veri[writem]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "veri[writel]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "setmz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "swap" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "v[status][tx_int]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[status][rx_int]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[status][rx_err]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[status][tx_err]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[ctrlpkt]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "v[bcast]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[bcast]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "v[mdioclk]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[mdio_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[mdio_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[mdio_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[mdioo]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "v[edclrstate]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[nak]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[rcntm]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[rcntm]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[rcntl]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[ipcrc]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v[udpsrc]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "v[tarp]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[tarp]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[tnak]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "v[edclbcast]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "v[rmsto][write]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[addrok]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[mdio_state]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[capbil]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "v[regaddr]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclrstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[ctrl][txen]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[status][txahberr]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[duplexstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[mac_addr]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[txdesc]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxdesc]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[edclip]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[txdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[txdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[txdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[txdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[txdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[txdstate]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[txdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[txdstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[txwrap]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxrenable]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[rxwrap]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[addrdone]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[tedcl]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[emacaddr]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[duplexstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "v[duplexstate]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 monitor |                              000 |                              000
+                  def_on |                              001 |                              001
+                    ifg1 |                              010 |                              010
+                    ifg2 |                              011 |                              011
+         frame_waitingst |                              100 |                              100
+                  iSTATE |                              101 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gmiimode0.r_reg[def_state]' using encoding 'sequential' in module 'greth_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                preamble |                             0001 |                             0001
+                     sfd |                             0010 |                             0010
+                   data1 |                             0011 |                             0011
+                    pad1 |                             0100 |                             0101
+                    pad2 |                             0101 |                             0110
+                     fcs |                             0110 |                             0111
+                    fcs2 |                             0111 |                             1000
+                   data2 |                             1000 |                             0100
+                send_jam |                             1001 |                             1100
+               send_jam2 |                             1010 |                             1101
+          check_attempts |                             1011 |                             1110
+            calc_backoff |                             1100 |                             1010
+            wait_backoff |                             1101 |                             1011
+                  finish |                             1110 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gmiimode0.r_reg[main_state]' using encoding 'sequential' in module 'greth_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                   data1 |                             0001 |                             0010
+                 errorst |                             0010 |                             0100
+                   data2 |                             0011 |                             0011
+               check_crc |                             0100 |                             0111
+           report_status |                             0101 |                             0101
+             wait_report |                             0110 |                             0110
+          discard_packet |                             0111 |                             1000
+                  iSTATE |                             1000 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gmiimode0.r_reg[rx_state]' using encoding 'sequential' in module 'greth_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                            00000
+                 iSTATE0 |                              001 |                            00001
+                 iSTATE3 |                              010 |                            01001
+                 iSTATE1 |                              011 |                            00100
+                 iSTATE2 |                              100 |                            00101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[regaddr]' using encoding 'sequential' in module 'grethc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                preamble |                             0001 |                             0001
+                 startst |                             0010 |                             0010
+                      op |                             0011 |                             0011
+                     op2 |                             0100 |                             0100
+                  phyadr |                             0101 |                             0101
+                  regadr |                             0110 |                             0110
+                      ta |                             0111 |                             0111
+                     ta2 |                             1000 |                             1000
+                     ta3 |                             1001 |                             1001
+                    data |                             1010 |                             1010
+                 dataend |                             1011 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[mdio_state]' using encoding 'sequential' in module 'grethc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                    wrda |                             0001 |                             0001
+                   wrdsa |                             0010 |                             0010
+                    wrsa |                             0011 |                             0011
+                  wrtype |                             0100 |                             0100
+                      ip |                             0101 |                             0101
+                  ipdata |                             0110 |                             0110
+                   ipcrc |                             0111 |                             1010
+                     udp |                             1000 |                             1100
+                iplength |                             1001 |                             1001
+                oplength |                             1010 |                             0111
+                     arp |                             1011 |                             1000
+                   arpop |                             1100 |                             1011
+                   spill |                             1101 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[edclrstate]' using encoding 'sequential' in module 'grethc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+               read_desc |                              001 |                              001
+              check_desc |                              010 |                              010
+                read_req |                              011 |                              011
+            write_status |                              100 |                              110
+           write_status2 |                              101 |                              111
+               read_fifo |                              110 |                              100
+                 discard |                              111 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_reg[rxdstate]' using encoding 'sequential' in module 'grethc'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1238.258 ; gain = 353.180 ; free physical = 4039 ; free virtual = 26476
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 9     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 19    
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 9     
++---XORs : 
+	   2 Input      1 Bit         XORs := 77    
+	   3 Input      1 Bit         XORs := 4     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 15    
+	               30 Bit    Registers := 2     
+	               22 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	               11 Bit    Registers := 7     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 22    
+	                1 Bit    Registers := 110   
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	  14 Input     48 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 24    
+	  15 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   9 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 2     
+	  14 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input     30 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   4 Input     28 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	  10 Input     18 Bit        Muxes := 2     
+	  14 Input     18 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 27    
+	   5 Input     16 Bit        Muxes := 2     
+	  12 Input     16 Bit        Muxes := 14    
+	   2 Input     14 Bit        Muxes := 1     
+	  15 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 10    
+	   9 Input     11 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 2     
+	   8 Input     11 Bit        Muxes := 1     
+	  15 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   5 Input      8 Bit        Muxes := 1     
+	  15 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 13    
+	   6 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
+	  14 Input      7 Bit        Muxes := 2     
+	  10 Input      7 Bit        Muxes := 3     
+	   8 Input      7 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	  15 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 5     
+	   6 Input      5 Bit        Muxes := 2     
+	  12 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 25    
+	   4 Input      4 Bit        Muxes := 3     
+	  15 Input      4 Bit        Muxes := 3     
+	  29 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 2     
+	  36 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 15    
+	   5 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 8     
+	  14 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	  19 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 33    
+	  15 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 2     
+	  10 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 239   
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 25    
+	   8 Input      1 Bit        Muxes := 38    
+	  15 Input      1 Bit        Muxes := 22    
+	   9 Input      1 Bit        Muxes := 16    
+	  13 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 19    
+	  12 Input      1 Bit        Muxes := 15    
+	  10 Input      1 Bit        Muxes := 46    
+	  14 Input      1 Bit        Muxes := 19    
+	   7 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module eth_ahb_mst 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module eth_rstgen 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module greth_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 36    
+	   3 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  15 Input     32 Bit        Muxes := 1     
+	  15 Input     11 Bit        Muxes := 1     
+	  15 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  15 Input      7 Bit        Muxes := 1     
+	  15 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   4 Input      4 Bit        Muxes := 2     
+	  15 Input      4 Bit        Muxes := 3     
+	  29 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	  15 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 27    
+	   6 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 22    
+Module greth_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 35    
+	   3 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   4 Input     28 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   9 Input     11 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   9 Input      1 Bit        Muxes := 16    
+Module grethc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 4     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 18    
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	               30 Bit    Registers := 2     
+	               22 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 7     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 75    
++---Muxes : 
+	  14 Input     48 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 10    
+	  10 Input     32 Bit        Muxes := 2     
+	  14 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   7 Input     30 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	  10 Input     18 Bit        Muxes := 2     
+	  14 Input     18 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 19    
+	   5 Input     16 Bit        Muxes := 2     
+	  12 Input     16 Bit        Muxes := 14    
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 7     
+	   5 Input     11 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 2     
+	   8 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 13    
+	   6 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
+	  14 Input      7 Bit        Muxes := 2     
+	  10 Input      7 Bit        Muxes := 3     
+	   8 Input      7 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 5     
+	   6 Input      5 Bit        Muxes := 2     
+	  12 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	  10 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 2     
+	  36 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 15    
+	   5 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 8     
+	  14 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  19 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 24    
+	   3 Input      2 Bit        Muxes := 2     
+	  10 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 193   
+	   6 Input      1 Bit        Muxes := 21    
+	   5 Input      1 Bit        Muxes := 19    
+	  12 Input      1 Bit        Muxes := 15    
+	  10 Input      1 Bit        Muxes := 46    
+	  14 Input      1 Bit        Muxes := 19    
+	   7 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 37    
+Module memrwcol 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module memrwcol__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module generic_syncram_2p 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              128 Bit         RAMs := 1     
+Module memrwcol__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+Module memrwcol__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1238.258 ; gain = 353.180 ; free physical = 4039 ; free virtual = 26476
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "v[bb]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[def_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[main_state]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[cnt]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v[delay_val]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v[mdioclk]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "v[edclbcast]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "v[tarp]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "v[bcast]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][31] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][30] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][29] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][28] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][27] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][26] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][25] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][24] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][23] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][22] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][21] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][20] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][19] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][18] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][17] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][16] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][15] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][14] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][13] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][12] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][11] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][10] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][9] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][8] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][7] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][6] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][5] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][4] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][3] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][2] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][1] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hirq][0] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][31] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][30] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][29] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][28] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][27] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][26] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][25] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][24] driven by constant 1
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][23] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][22] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][21] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][20] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][19] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][18] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][17] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][16] driven by constant 1
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][15] driven by constant 1
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][14] driven by constant 1
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][13] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][12] driven by constant 1
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][11] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][10] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][9] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][8] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][7] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][6] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][5] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][4] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][3] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][2] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][1] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][0][0] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][31] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][30] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][29] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][28] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][27] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][26] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][25] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][24] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][23] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][22] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][21] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][20] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][19] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][18] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][17] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][16] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][15] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][14] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][13] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][12] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][11] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][10] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][9] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][8] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][7] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][6] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][5] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][4] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][3] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][2] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][1] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][1][0] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][2][31] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][2][30] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][2][29] driven by constant 0
+WARNING: [Synth 8-3917] design grethm has port ahbmo[hconfig][2][28] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1238.258 ; gain = 353.180 ; free physical = 4039 ; free virtual = 26476
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1238.258 ; gain = 353.180 ; free physical = 4039 ; free virtual = 26476
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                                 | Inference | Size (Depth x Width) | Primitives   | 
++------------+--------------------------------------------+-----------+----------------------+--------------+
+|grethm      | m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/rfd_reg | Implied   | 4 x 32               | RAM32M x 6   | 
++------------+--------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\m100.u0/ethc0 /\rx_rmii1.rx0 /\gmiimode0.r_reg[rxen][0] )
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/rx_rmii1.rx0/gmiimode0.r_reg[rxen][1]' (FD) to 'm100.u0/ethc0/rx_rmii1.rx0/gmiimode0.r_reg[rxen][0]'
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/r_reg[applength][10]' (FDRE) to 'm100.u0/ethc0/r_reg[applength][15]'
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/r_reg[applength][11]' (FDRE) to 'm100.u0/ethc0/r_reg[applength][15]'
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/r_reg[applength][12]' (FDRE) to 'm100.u0/ethc0/r_reg[applength][15]'
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/r_reg[applength][13]' (FDRE) to 'm100.u0/ethc0/r_reg[applength][15]'
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/r_reg[applength][14]' (FDRE) to 'm100.u0/ethc0/r_reg[applength][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m100.u0/ethc0 /\r_reg[applength][15] )
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/tx_rmii1.tx0/gmiimode0.r_reg[txd_msb][0]' (FD) to 'm100.u0/ethc0/tx_rmii1.tx0/gmiimode0.r_reg[txd][2]'
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/tx_rmii1.tx0/gmiimode0.r_reg[txd_msb][1]' (FD) to 'm100.u0/ethc0/tx_rmii1.tx0/gmiimode0.r_reg[txd][3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\m100.u0/ethc0 /\rx_rmii1.rx0 /\gmiimode0.r_reg[rxen][0] )
+WARNING: [Synth 8-3332] Sequential element (gmiimode0.r_reg[txd_msb][0]) is unused and will be removed from module greth_tx.
+WARNING: [Synth 8-3332] Sequential element (gmiimode0.r_reg[txd_msb][1]) is unused and will be removed from module greth_tx.
+WARNING: [Synth 8-3332] Sequential element (gmiimode0.r_reg[rxen][1]) is unused and will be removed from module greth_rx.
+WARNING: [Synth 8-3332] Sequential element (gmiimode0.r_reg[rxen][0]) is unused and will be removed from module greth_rx.
+WARNING: [Synth 8-3332] Sequential element (gmiimode0.r_reg[done_ack][1]) is unused and will be removed from module greth_rx.
+WARNING: [Synth 8-3332] Sequential element (r_reg[capbil][0]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (r_reg[applength][15]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (r_reg[applength][14]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (r_reg[applength][13]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (r_reg[applength][12]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (r_reg[applength][11]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (r_reg[applength][10]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (r_reg[tmsto2][req]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (r_reg[rmsto][addr][0]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (r_reg[rxrenable]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (r_reg[tmsto][addr][0]) is unused and will be removed from module grethc.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][31]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][30]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][29]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][28]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][27]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][26]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][25]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][24]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][23]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][22]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][21]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][20]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][19]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][18]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][17]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][16]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][15]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][14]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][13]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][12]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][11]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][10]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][9]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][8]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][7]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][6]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][5]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][4]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][3]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][2]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][1]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.tx_fifo0/rwcol0/r2_reg[wdata][0]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][31]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][30]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][29]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][28]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][27]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][26]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][25]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][24]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][23]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][22]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][21]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][20]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][19]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][18]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][17]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][16]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][15]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][14]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][13]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][12]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][11]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][10]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][9]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][8]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][7]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][6]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][5]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][4]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][3]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][2]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][1]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/nft.rx_fifo0/rwcol0/r2_reg[wdata][0]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][15]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][14]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][13]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][12]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][11]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][10]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][9]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][8]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][7]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][6]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][5]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][4]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][3]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][2]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][1]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r1/rwcol0/r2_reg[wdata][0]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r0/rwcol0/r2_reg[wdata][15]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r0/rwcol0/r2_reg[wdata][14]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r0/rwcol0/r2_reg[wdata][13]) is unused and will be removed from module grethm.
+WARNING: [Synth 8-3332] Sequential element (m100.u0/edclramnft.r0/rwcol0/r2_reg[wdata][12]) is unused and will be removed from module grethm.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1347.844 ; gain = 462.766 ; free physical = 3932 ; free virtual = 26369
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1347.844 ; gain = 462.766 ; free physical = 3932 ; free virtual = 26369
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1347.844 ; gain = 462.766 ; free physical = 3932 ; free virtual = 26369
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/rx_rmii1.rx0/gmiimode0.r_reg[speed][0]' (FD) to 'm100.u0/ethc0/tx_rmii1.tx0/gmiimode0.r_reg[speed][0]'
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/tx_rmii1.tx0/gmiimode0.r_reg[crs][0]' (FD) to 'm100.u0/ethc0/rx_rmii1.rx0/gmiimode0.r_reg[en]'
+INFO: [Synth 8-3886] merging instance 'm100.u0/ethc0/rx_rmii1.rx0/gmiimode0.r_reg[speed][1]' (FD) to 'm100.u0/ethc0/tx_rmii1.tx0/gmiimode0.r_reg[speed][1]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1347.844 ; gain = 462.766 ; free physical = 3928 ; free virtual = 26368
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1347.844 ; gain = 462.766 ; free physical = 3928 ; free virtual = 26368
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1347.844 ; gain = 462.766 ; free physical = 3928 ; free virtual = 26368
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1347.844 ; gain = 462.766 ; free physical = 3927 ; free virtual = 26367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1347.844 ; gain = 462.766 ; free physical = 3927 ; free virtual = 26367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1347.844 ; gain = 462.766 ; free physical = 3927 ; free virtual = 26367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |CARRY4         |    89|
+|2     |LUT1           |   143|
+|3     |LUT2           |   125|
+|4     |LUT3           |   227|
+|5     |LUT4           |   267|
+|6     |LUT5           |   363|
+|7     |LUT6           |  1369|
+|8     |MUXF7          |    37|
+|9     |RAM32M         |     6|
+|10    |RAMB16_S36_S36 |     3|
+|11    |FDCE           |    12|
+|12    |FDRE           |  1092|
+|13    |FDSE           |    39|
++------+---------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  3772|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1347.844 ; gain = 462.766 ; free physical = 3927 ; free virtual = 26367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1179 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1347.844 ; gain = 367.172 ; free physical = 3927 ; free virtual = 26367
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1347.852 ; gain = 462.773 ; free physical = 3927 ; free virtual = 26367
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'grethm' is not ideal for floorplanning, since the cellview 'grethm' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAMB16_S36_S36 => RAMB36E1: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+274 Infos, 326 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1468.715 ; gain = 500.629 ; free physical = 3901 ; free virtual = 26341

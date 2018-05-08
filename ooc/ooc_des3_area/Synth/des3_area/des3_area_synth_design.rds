@@ -1,0 +1,431 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top des3_area -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15209 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1050.215 ; gain = 165.137 ; free physical = 7814 ; free virtual = 32078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'des3_area' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/des3_area.v:35]
+INFO: [Synth 8-638] synthesizing module 'crp' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/crp.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox1' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox1.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox1.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox1.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox1' (1#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox1.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox2' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox2.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox2.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox2.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox2' (2#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox2.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox3' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox3.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox3.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox3.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox3' (3#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox3.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox4' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox4.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox4.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox4.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox4' (4#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox4.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox5' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox5.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox5.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox5.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox5' (5#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox5.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox6' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox6.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox6.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox6.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox6' (6#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox6.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox7' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox7.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox7.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox7.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox7' (7#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox7.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox8' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox8.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox8.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox8.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox8' (8#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/sbox8.v:35]
+INFO: [Synth 8-256] done synthesizing module 'crp' (9#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/crp.v:35]
+INFO: [Synth 8-638] synthesizing module 'key_sel3' [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/key_sel3.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/key_sel3.v:48]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/key_sel3.v:48]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/key_sel3.v:61]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/key_sel3.v:61]
+INFO: [Synth 8-256] done synthesizing module 'key_sel3' (10#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/key_sel3.v:35]
+INFO: [Synth 8-256] done synthesizing module 'des3_area' (11#1) [/home/sean/vivado_workspace/ooc_des3_area/Sources/hdl/des3_area.v:35]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1099.652 ; gain = 214.574 ; free physical = 7763 ; free virtual = 32028
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1099.652 ; gain = 214.574 ; free physical = 7763 ; free virtual = 32028
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1107.656 ; gain = 222.578 ; free physical = 7763 ; free virtual = 32028
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1197.766 ; gain = 312.688 ; free physical = 7674 ; free virtual = 31939
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     48 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   7 Input     56 Bit        Muxes := 27    
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 715   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module des3_area 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module crp 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     48 Bit         XORs := 1     
+Module key_sel3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input     56 Bit        Muxes := 27    
+	   2 Input      1 Bit        Muxes := 715   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1197.766 ; gain = 312.688 ; free physical = 7673 ; free virtual = 31938
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1221.789 ; gain = 336.711 ; free physical = 7651 ; free virtual = 31916
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1221.789 ; gain = 336.711 ; free physical = 7651 ; free virtual = 31916
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|sbox1       | dout       | 64x4          | LUT            | 
+|sbox2       | dout       | 64x4          | LUT            | 
+|sbox3       | dout       | 64x4          | LUT            | 
+|sbox4       | dout       | 64x4          | LUT            | 
+|sbox5       | dout       | 64x4          | LUT            | 
+|sbox6       | dout       | 64x4          | LUT            | 
+|sbox7       | dout       | 64x4          | LUT            | 
+|sbox8       | dout       | 64x4          | LUT            | 
+|des3_area   | u0/u6/dout | 64x4          | LUT            | 
+|des3_area   | u0/u2/dout | 64x4          | LUT            | 
+|des3_area   | u0/u5/dout | 64x4          | LUT            | 
+|des3_area   | u0/u1/dout | 64x4          | LUT            | 
+|des3_area   | u0/u7/dout | 64x4          | LUT            | 
+|des3_area   | u0/u3/dout | 64x4          | LUT            | 
+|des3_area   | u0/u4/dout | 64x4          | LUT            | 
+|des3_area   | u0/u0/dout | 64x4          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'L_reg[25]' (FD) to 'FP_R_reg[57]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[25]' (FD) to 'R_reg[25]'
+INFO: [Synth 8-3886] merging instance 'L_reg[17]' (FD) to 'FP_R_reg[49]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[17]' (FD) to 'R_reg[17]'
+INFO: [Synth 8-3886] merging instance 'L_reg[9]' (FD) to 'FP_R_reg[41]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[9]' (FD) to 'R_reg[9]'
+INFO: [Synth 8-3886] merging instance 'L_reg[1]' (FD) to 'FP_R_reg[33]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[1]' (FD) to 'R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'L_reg[26]' (FD) to 'FP_R_reg[58]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[26]' (FD) to 'R_reg[26]'
+INFO: [Synth 8-3886] merging instance 'L_reg[18]' (FD) to 'FP_R_reg[50]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[18]' (FD) to 'R_reg[18]'
+INFO: [Synth 8-3886] merging instance 'L_reg[10]' (FD) to 'FP_R_reg[42]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[10]' (FD) to 'R_reg[10]'
+INFO: [Synth 8-3886] merging instance 'L_reg[2]' (FD) to 'FP_R_reg[34]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[2]' (FD) to 'R_reg[2]'
+INFO: [Synth 8-3886] merging instance 'L_reg[27]' (FD) to 'FP_R_reg[59]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[27]' (FD) to 'R_reg[27]'
+INFO: [Synth 8-3886] merging instance 'L_reg[19]' (FD) to 'FP_R_reg[51]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[19]' (FD) to 'R_reg[19]'
+INFO: [Synth 8-3886] merging instance 'L_reg[11]' (FD) to 'FP_R_reg[43]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[11]' (FD) to 'R_reg[11]'
+INFO: [Synth 8-3886] merging instance 'L_reg[3]' (FD) to 'FP_R_reg[35]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[3]' (FD) to 'R_reg[3]'
+INFO: [Synth 8-3886] merging instance 'L_reg[28]' (FD) to 'FP_R_reg[60]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[28]' (FD) to 'R_reg[28]'
+INFO: [Synth 8-3886] merging instance 'L_reg[20]' (FD) to 'FP_R_reg[52]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[20]' (FD) to 'R_reg[20]'
+INFO: [Synth 8-3886] merging instance 'L_reg[12]' (FD) to 'FP_R_reg[44]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[12]' (FD) to 'R_reg[12]'
+INFO: [Synth 8-3886] merging instance 'L_reg[4]' (FD) to 'FP_R_reg[36]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[4]' (FD) to 'R_reg[4]'
+INFO: [Synth 8-3886] merging instance 'L_reg[29]' (FD) to 'FP_R_reg[61]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[29]' (FD) to 'R_reg[29]'
+INFO: [Synth 8-3886] merging instance 'L_reg[21]' (FD) to 'FP_R_reg[53]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[21]' (FD) to 'R_reg[21]'
+INFO: [Synth 8-3886] merging instance 'L_reg[13]' (FD) to 'FP_R_reg[45]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[13]' (FD) to 'R_reg[13]'
+INFO: [Synth 8-3886] merging instance 'L_reg[5]' (FD) to 'FP_R_reg[37]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[5]' (FD) to 'R_reg[5]'
+INFO: [Synth 8-3886] merging instance 'L_reg[30]' (FD) to 'FP_R_reg[62]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[30]' (FD) to 'R_reg[30]'
+INFO: [Synth 8-3886] merging instance 'L_reg[22]' (FD) to 'FP_R_reg[54]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[22]' (FD) to 'R_reg[22]'
+INFO: [Synth 8-3886] merging instance 'L_reg[14]' (FD) to 'FP_R_reg[46]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[14]' (FD) to 'R_reg[14]'
+INFO: [Synth 8-3886] merging instance 'L_reg[6]' (FD) to 'FP_R_reg[38]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[6]' (FD) to 'R_reg[6]'
+INFO: [Synth 8-3886] merging instance 'L_reg[31]' (FD) to 'FP_R_reg[63]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[31]' (FD) to 'R_reg[31]'
+INFO: [Synth 8-3886] merging instance 'L_reg[23]' (FD) to 'FP_R_reg[55]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[23]' (FD) to 'R_reg[23]'
+INFO: [Synth 8-3886] merging instance 'L_reg[15]' (FD) to 'FP_R_reg[47]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[15]' (FD) to 'R_reg[15]'
+INFO: [Synth 8-3886] merging instance 'L_reg[7]' (FD) to 'FP_R_reg[39]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[7]' (FD) to 'R_reg[7]'
+INFO: [Synth 8-3886] merging instance 'L_reg[32]' (FD) to 'FP_R_reg[64]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[32]' (FD) to 'R_reg[32]'
+INFO: [Synth 8-3886] merging instance 'L_reg[24]' (FD) to 'FP_R_reg[56]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[24]' (FD) to 'R_reg[24]'
+INFO: [Synth 8-3886] merging instance 'L_reg[16]' (FD) to 'FP_R_reg[48]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[16]' (FD) to 'R_reg[16]'
+INFO: [Synth 8-3886] merging instance 'L_reg[8]' (FD) to 'FP_R_reg[40]'
+INFO: [Synth 8-3886] merging instance 'FP_R_reg[8]' (FD) to 'R_reg[8]'
+WARNING: [Synth 8-3332] Sequential element (L_reg[25]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[25]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[17]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[17]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[9]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[9]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[1]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[1]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[26]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[26]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[18]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[18]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[10]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[10]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[2]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[2]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[27]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[27]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[19]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[19]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[11]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[11]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[3]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[3]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[28]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[28]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[20]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[20]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[12]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[12]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[4]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[4]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[29]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[29]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[21]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[21]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[13]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[13]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[5]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[5]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[30]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[30]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[22]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[22]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[14]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[14]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[6]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[6]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[31]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[31]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[23]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[23]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[15]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[15]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[7]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[7]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[32]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[32]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[24]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[24]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[16]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[16]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (L_reg[8]) is unused and will be removed from module des3_area.
+WARNING: [Synth 8-3332] Sequential element (FP_R_reg[8]) is unused and will be removed from module des3_area.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.820 ; gain = 404.742 ; free physical = 7581 ; free virtual = 31846
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.820 ; gain = 404.742 ; free physical = 7581 ; free virtual = 31846
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.820 ; gain = 404.742 ; free physical = 7581 ; free virtual = 31846
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.820 ; gain = 404.742 ; free physical = 7581 ; free virtual = 31846
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.820 ; gain = 404.742 ; free physical = 7581 ; free virtual = 31846
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.820 ; gain = 404.742 ; free physical = 7581 ; free virtual = 31846
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.820 ; gain = 404.742 ; free physical = 7581 ; free virtual = 31846
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.820 ; gain = 404.742 ; free physical = 7581 ; free virtual = 31846
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.820 ; gain = 404.742 ; free physical = 7581 ; free virtual = 31846
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     1|
+|2     |LUT3  |    31|
+|3     |LUT4  |    13|
+|4     |LUT5  |    86|
+|5     |LUT6  |   526|
+|6     |MUXF7 |   192|
+|7     |MUXF8 |    48|
+|8     |FDRE  |    64|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   961|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.820 ; gain = 404.742 ; free physical = 7581 ; free virtual = 31846
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 64 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1289.820 ; gain = 313.602 ; free physical = 7581 ; free virtual = 31846
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.828 ; gain = 404.750 ; free physical = 7581 ; free virtual = 31846
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+113 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1416.691 ; gain = 453.059 ; free physical = 7550 ; free virtual = 31815

@@ -1,0 +1,449 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top median -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24461 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1049.215 ; gain = 164.137 ; free physical = 5155 ; free virtual = 30776
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'median' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/median.v:36]
+	Parameter MEM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter LUT_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter MEM_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter PIXEL_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter IMG_WIDTH bound to: 320 - type: integer 
+	Parameter IMG_HEIGHT bound to: 320 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'state_machine' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/state_machine.v:35]
+	Parameter LUT_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter IMG_WIDTH bound to: 320 - type: integer 
+	Parameter IMG_HEIGHT bound to: 320 - type: integer 
+WARNING: [Synth 8-5788] Register valid_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/ooc_median/Sources/hdl/state_machine.v:75]
+WARNING: [Synth 8-3848] Net memory_shift in module/entity state_machine does not have driver. [/home/sean/vivado_workspace/ooc_median/Sources/hdl/state_machine.v:50]
+INFO: [Synth 8-256] done synthesizing module 'state_machine' (1#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/state_machine.v:35]
+WARNING: [Synth 8-350] instance 'window_contol' of module 'state_machine' requires 9 connections, but only 6 given [/home/sean/vivado_workspace/ooc_median/Sources/hdl/median.v:130]
+INFO: [Synth 8-638] synthesizing module 'common_network' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/common_network.v:35]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'node' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 1 - type: integer 
+	Parameter HI_MUX bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:62]
+INFO: [Synth 8-256] done synthesizing module 'node' (2#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+INFO: [Synth 8-256] done synthesizing module 'common_network' (3#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/common_network.v:35]
+INFO: [Synth 8-638] synthesizing module 'dff_3_pipe' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/dff_3_pipe.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff_3_pipe' (4#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/dff_3_pipe.v:34]
+INFO: [Synth 8-638] synthesizing module 'pixel_network' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/pixel_network.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'node__parameterized0' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 1 - type: integer 
+	Parameter HI_MUX bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:62]
+WARNING: [Synth 8-3848] Net data_hi in module/entity node__parameterized0 does not have driver. [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:43]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized0' (4#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u0' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/ooc_median/Sources/hdl/pixel_network.v:68]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized1' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 0 - type: integer 
+	Parameter HI_MUX bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:62]
+WARNING: [Synth 8-3848] Net data_lo in module/entity node__parameterized1 does not have driver. [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:44]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized1' (4#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u2' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/ooc_median/Sources/hdl/pixel_network.v:94]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized2' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 1 - type: integer 
+	Parameter HI_MUX bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:62]
+WARNING: [Synth 8-3848] Net data_hi in module/entity node__parameterized2 does not have driver. [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:43]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized2' (4#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u3' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/ooc_median/Sources/hdl/pixel_network.v:107]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized3' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 0 - type: integer 
+	Parameter HI_MUX bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:62]
+WARNING: [Synth 8-3848] Net data_lo in module/entity node__parameterized3 does not have driver. [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:44]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized3' (4#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u4' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/ooc_median/Sources/hdl/pixel_network.v:119]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized4' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 0 - type: integer 
+	Parameter HI_MUX bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:62]
+WARNING: [Synth 8-3848] Net data_lo in module/entity node__parameterized4 does not have driver. [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:44]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized4' (4#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u5' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/ooc_median/Sources/hdl/pixel_network.v:131]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized5' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 1 - type: integer 
+	Parameter HI_MUX bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:62]
+WARNING: [Synth 8-3848] Net data_hi in module/entity node__parameterized5 does not have driver. [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:43]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized5' (4#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u6' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/ooc_median/Sources/hdl/pixel_network.v:144]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized6' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 0 - type: integer 
+	Parameter HI_MUX bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:62]
+WARNING: [Synth 8-3848] Net data_lo in module/entity node__parameterized6 does not have driver. [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:44]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized6' (4#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u8' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/ooc_median/Sources/hdl/pixel_network.v:170]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized7' [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 1 - type: integer 
+	Parameter HI_MUX bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:62]
+WARNING: [Synth 8-3848] Net data_hi in module/entity node__parameterized7 does not have driver. [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:43]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized7' (4#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u9' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/ooc_median/Sources/hdl/pixel_network.v:183]
+INFO: [Synth 8-256] done synthesizing module 'pixel_network' (5#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/pixel_network.v:34]
+INFO: [Synth 8-256] done synthesizing module 'median' (6#1) [/home/sean/vivado_workspace/ooc_median/Sources/hdl/median.v:36]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[7]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[6]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[5]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[4]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[3]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[2]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[1]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[0]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[7]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[6]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[5]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[4]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[3]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[2]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[1]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[0]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[7]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[6]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[5]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[4]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[3]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[2]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[1]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[0]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[7]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[6]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[5]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[4]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[3]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[2]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[1]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[0]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[7]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[6]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[5]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[4]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[3]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[2]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[1]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[0]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[7]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[6]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[5]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[4]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[3]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[2]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[1]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[0]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[7]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[6]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[5]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[4]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[3]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[2]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[1]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[0]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[7]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[6]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[5]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[4]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[3]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[2]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[1]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[0]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[9]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[8]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[7]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[6]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[5]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[4]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[3]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[2]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[1]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.652 ; gain = 204.574 ; free physical = 5113 ; free virtual = 30734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.652 ; gain = 204.574 ; free physical = 5113 ; free virtual = 30734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1097.656 ; gain = 212.578 ; free physical = 5113 ; free virtual = 30734
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1105.664 ; gain = 220.586 ; free physical = 5105 ; free virtual = 30726
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 11    
++---Registers : 
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 72    
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module state_machine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 11    
++---Registers : 
+	               10 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module node 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module dff_3_pipe 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+Module node__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1188.672 ; gain = 303.594 ; free physical = 5022 ; free virtual = 30643
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[9]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[8]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[7]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[6]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[5]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[4]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[3]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[2]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[1]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.680 ; gain = 311.602 ; free physical = 5015 ; free virtual = 30636
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.680 ; gain = 311.602 ; free physical = 5015 ; free virtual = 30636
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.594 ; gain = 423.516 ; free physical = 4900 ; free virtual = 30524
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.594 ; gain = 423.516 ; free physical = 4900 ; free virtual = 30524
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.594 ; gain = 423.516 ; free physical = 4900 ; free virtual = 30524
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.594 ; gain = 423.516 ; free physical = 4900 ; free virtual = 30524
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.594 ; gain = 423.516 ; free physical = 4900 ; free virtual = 30524
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.594 ; gain = 423.516 ; free physical = 4900 ; free virtual = 30524
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.594 ; gain = 423.516 ; free physical = 4900 ; free virtual = 30524
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.594 ; gain = 423.516 ; free physical = 4900 ; free virtual = 30524
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.594 ; gain = 423.516 ; free physical = 4900 ; free virtual = 30524
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    68|
+|2     |LUT1   |     2|
+|3     |LUT2   |     8|
+|4     |LUT3   |   202|
+|5     |LUT4   |   176|
+|6     |LUT5   |   265|
+|7     |LUT6   |   413|
+|8     |FDCE   |   124|
+|9     |FDRE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1259|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.594 ; gain = 423.516 ; free physical = 4900 ; free virtual = 30524
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 103 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1308.594 ; gain = 333.375 ; free physical = 4900 ; free virtual = 30524
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1308.602 ; gain = 423.523 ; free physical = 4900 ; free virtual = 30524
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 68 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'median' is not ideal for floorplanning, since the cellview 'median' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1402.465 ; gain = 439.832 ; free physical = 4873 ; free virtual = 30498

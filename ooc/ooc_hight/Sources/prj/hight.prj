@@ -1,0 +1,8 @@
+verilog work "hdl/CONTROL.v"
+verilog work "hdl/CRYPTO_PATH.v"
+verilog work "hdl/hight.v"
+verilog work "hdl/KEY_SCHED.v"
+verilog work "hdl/RF.v"
+verilog work "hdl/SKG.v"
+verilog work "hdl/WF.v"
+verilog work "hdl/WKG.v"

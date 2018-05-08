@@ -1,0 +1,3 @@
+vhdl work "hdl/tea1tb.vhd"
+vhdl work "hdl/tea64.vhd"
+vhdl work "hdl/tiny_encryption_algorithm.vhd"

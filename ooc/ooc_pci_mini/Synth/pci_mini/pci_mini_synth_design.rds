@@ -1,0 +1,443 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top pci_mini -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18948 
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module pci [/home/sean/vivado_workspace/ooc_pci_mini/Sources/hdl/pci_mini-34.v:92]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1057.406 ; gain = 172.324 ; free physical = 7795 ; free virtual = 31878
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pci_mini' [/home/sean/vivado_workspace/ooc_pci_mini/Sources/hdl/pci_mini.v:84]
+	Parameter DEVICE_ID bound to: 16'b1001010100000000 
+	Parameter VENDOR_ID bound to: 16'b0001000011101110 
+	Parameter DEVICE_CLASS bound to: 24'b000001101000000000000000 
+	Parameter DEVICE_REV bound to: 8'b00000001 
+	Parameter SUBSYSTEM_ID bound to: 16'b0000000000000001 
+	Parameter SUBSYSTEM_VENDOR_ID bound to: 16'b1011111010111110 
+	Parameter DEVSEL_TIMING bound to: 2'b00 
+	Parameter EN_NONE bound to: 0 - type: integer 
+	Parameter EN_RD bound to: 1 - type: integer 
+	Parameter EN_WR bound to: 2 - type: integer 
+	Parameter EN_TR bound to: 3 - type: integer 
+	Parameter ST_IDLE bound to: 3'b000 
+	Parameter ST_BUSY bound to: 3'b010 
+	Parameter ST_MEMREAD bound to: 3'b100 
+	Parameter ST_MEMWRITE bound to: 3'b101 
+	Parameter ST_CFGREAD bound to: 3'b110 
+	Parameter ST_CFGWRITE bound to: 3'b111 
+	Parameter MEMREAD bound to: 4'b0110 
+	Parameter MEMWRITE bound to: 4'b0111 
+	Parameter CFGREAD bound to: 4'b1010 
+	Parameter CFGWRITE bound to: 4'b1011 
+	Parameter arb_state1 bound to: 2'b00 
+	Parameter arb_state2 bound to: 2'b01 
+	Parameter machine_waiting bound to: 2'b00 
+	Parameter machine_flushing bound to: 2'b01 
+	Parameter machine_read_filling bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/ooc_pci_mini/Sources/hdl/pci_mini.v:255]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_pci_mini/Sources/hdl/pci_mini.v:495]
+INFO: [Synth 8-256] done synthesizing module 'pci_mini' (1#1) [/home/sean/vivado_workspace/ooc_pci_mini/Sources/hdl/pci_mini.v:84]
+WARNING: [Synth 8-3331] design pci_mini has unconnected port wb_gnt
+WARNING: [Synth 8-3331] design pci_mini has unconnected port wb_req_other
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1086.656 ; gain = 201.574 ; free physical = 7765 ; free virtual = 31848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1086.656 ; gain = 201.574 ; free physical = 7765 ; free virtual = 31848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1094.660 ; gain = 209.578 ; free physical = 7765 ; free virtual = 31848
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-4471] merging register 'fifo_start_wb_addr_rd_reg[31:0]' into 'fifo_start_wb_addr_reg[31:0]' [/home/sean/vivado_workspace/ooc_pci_mini/Sources/hdl/pci_mini.v:513]
+INFO: [Synth 8-4471] merging register 'wb_stb_o_reg' into 'wb_cyc_o_reg' [/home/sean/vivado_workspace/ooc_pci_mini/Sources/hdl/pci_mini.v:327]
+INFO: [Synth 8-802] inferred FSM for state register 'wbw_phase_reg' in module 'pci_mini'
+INFO: [Synth 8-5544] ROM "trdy0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ad1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wbwf_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "failed_addr_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "baseaddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memen" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "int_line" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wb_baseaddr_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "user_command_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "wbwf_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wbw_phase_reg' using encoding 'sequential' in module 'pci_mini'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1118.684 ; gain = 233.602 ; free physical = 7741 ; free virtual = 31824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	  36 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
+	  12 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	  12 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 25    
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 25    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pci_mini 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	  36 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
+	  12 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	  12 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 25    
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 25    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1187.691 ; gain = 302.609 ; free physical = 7673 ; free virtual = 31756
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "ad1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-3331] design pci_mini has unconnected port wb_gnt
+WARNING: [Synth 8-3331] design pci_mini has unconnected port wb_req_other
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1195.699 ; gain = 310.617 ; free physical = 7666 ; free virtual = 31749
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1195.699 ; gain = 310.617 ; free physical = 7666 ; free virtual = 31749
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[0]' (FDRE) to 'user_status_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[1]' (FDRE) to 'user_status_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[2]' (FDRE) to 'user_status_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[3]' (FDRE) to 'user_status_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[4]' (FDRE) to 'user_status_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[5]' (FDRE) to 'user_status_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[6]' (FDRE) to 'user_status_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[7]' (FDRE) to 'user_status_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[8]' (FDRE) to 'user_status_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[9]' (FDRE) to 'user_status_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[10]' (FDRE) to 'user_status_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[11]' (FDRE) to 'user_status_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[12]' (FDRE) to 'user_status_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[13]' (FDRE) to 'user_status_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[14]' (FDRE) to 'user_status_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[15]' (FDRE) to 'user_status_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[16]' (FDRE) to 'user_status_reg_reg[17]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[17]' (FDRE) to 'user_status_reg_reg[18]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[18]' (FDRE) to 'user_status_reg_reg[19]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[19]' (FDRE) to 'user_status_reg_reg[20]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[20]' (FDRE) to 'user_status_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[21]' (FDRE) to 'user_status_reg_reg[22]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[22]' (FDRE) to 'user_status_reg_reg[23]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[23]' (FDRE) to 'user_status_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[24]' (FDRE) to 'user_status_reg_reg[25]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[25]' (FDRE) to 'user_status_reg_reg[26]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[26]' (FDRE) to 'user_status_reg_reg[27]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[27]' (FDRE) to 'user_status_reg_reg[28]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[28]' (FDRE) to 'user_status_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[29]' (FDRE) to 'user_status_reg_reg[30]'
+INFO: [Synth 8-3886] merging instance 'user_status_reg_reg[30]' (FDRE) to 'user_status_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\user_status_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'pci_write_reg_reg[0]' (FDRE) to 'led_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pci_write_reg_reg[1]' (FDRE) to 'led_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pci_write_reg_reg[2]' (FDRE) to 'led_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pci_write_reg_reg[3]' (FDRE) to 'led_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (EN_RDd_reg)
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[31]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[30]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[29]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[28]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[27]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[26]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[25]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[24]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[23]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[22]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[21]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[20]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[19]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[18]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[17]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[16]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[15]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[14]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[13]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[12]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[11]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[10]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[9]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[8]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[7]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[6]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[5]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[4]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[3]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[2]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[1]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (user_status_reg_reg[0]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (EN_RDd_reg) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (pci_write_reg_reg[0]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (pci_write_reg_reg[1]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (pci_write_reg_reg[2]) is unused and will be removed from module pci_mini.
+WARNING: [Synth 8-3332] Sequential element (pci_write_reg_reg[3]) is unused and will be removed from module pci_mini.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1221.730 ; gain = 336.648 ; free physical = 7637 ; free virtual = 31721
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1221.730 ; gain = 336.648 ; free physical = 7637 ; free virtual = 31721
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1221.730 ; gain = 336.648 ; free physical = 7637 ; free virtual = 31721
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1229.738 ; gain = 344.656 ; free physical = 7630 ; free virtual = 31713
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1229.738 ; gain = 344.656 ; free physical = 7630 ; free virtual = 31713
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1229.738 ; gain = 344.656 ; free physical = 7630 ; free virtual = 31713
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_1' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_2' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_4' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_5' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_6' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_7' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_8' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_9' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_10' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_11' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_12' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_13' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_14' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_15' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_16' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_17' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_18' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_19' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_20' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_21' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_22' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_23' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_24' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_25' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_26' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_27' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_28' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_29' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_30' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_31' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_32' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_33' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_34' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_35' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_36' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_37' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_38' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_39' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'i_40' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1229.738 ; gain = 344.656 ; free physical = 7628 ; free virtual = 31711
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1229.738 ; gain = 344.656 ; free physical = 7628 ; free virtual = 31712
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1229.738 ; gain = 344.656 ; free physical = 7628 ; free virtual = 31712
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     9|
+|2     |LUT2 |    88|
+|3     |LUT3 |    47|
+|4     |LUT4 |    33|
+|5     |LUT5 |    47|
+|6     |LUT6 |   107|
+|7     |FDRE |   332|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   663|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1229.738 ; gain = 344.656 ; free physical = 7628 ; free virtual = 31712
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 40 critical warnings and 41 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1229.738 ; gain = 255.516 ; free physical = 7628 ; free virtual = 31712
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1229.746 ; gain = 344.664 ; free physical = 7628 ; free virtual = 31712
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 41 Warnings, 40 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1384.609 ; gain = 422.973 ; free physical = 7571 ; free virtual = 31654

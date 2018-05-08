@@ -1,0 +1,6 @@
+verilog work "hdl/f_permutation_l.v"
+verilog work "hdl/padder1_l.v"
+verilog work "hdl/padder_l.v"
+verilog work "hdl/rconst.v"
+verilog work "hdl/round.v"
+verilog work "hdl/sha3_low_throughput.v"

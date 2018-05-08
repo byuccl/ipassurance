@@ -1,0 +1,401 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top fixed_point_sqrt -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7244 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1048.215 ; gain = 163.137 ; free physical = 4198 ; free virtual = 30169
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fixed_point_sqrt' [/home/sean/vivado_workspace/ooc_fixed_point_sqrt/Sources/hdl/fixed_point_sqrt.vhd:19]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-4471] merging register 'd_reg[0][31:0]' into 'n_reg[0][31:0]' [/home/sean/vivado_workspace/ooc_fixed_point_sqrt/Sources/hdl/fixed_point_sqrt.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'fixed_point_sqrt' (1#1) [/home/sean/vivado_workspace/ooc_fixed_point_sqrt/Sources/hdl/fixed_point_sqrt.vhd:19]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.652 ; gain = 203.574 ; free physical = 4154 ; free virtual = 30125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.652 ; gain = 203.574 ; free physical = 4154 ; free virtual = 30125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1096.656 ; gain = 211.578 ; free physical = 4154 ; free virtual = 30125
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1121.688 ; gain = 236.609 ; free physical = 4131 ; free virtual = 30102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     63 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
++---Multipliers : 
+	                32x32  Multipliers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fixed_point_sqrt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     63 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
++---Multipliers : 
+	                32x32  Multipliers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1188.695 ; gain = 303.617 ; free physical = 4062 ; free virtual = 30033
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP d_reg[1]0, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP d_reg[1]0.
+DSP Report: operator d_reg[1]0 is absorbed into DSP d_reg[1]0.
+DSP Report: operator d_reg[1]0 is absorbed into DSP d_reg[1]0.
+DSP Report: Generating DSP d_reg[1]0, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP d_reg[1]0.
+DSP Report: operator d_reg[1]0 is absorbed into DSP d_reg[1]0.
+DSP Report: operator d_reg[1]0 is absorbed into DSP d_reg[1]0.
+DSP Report: Generating DSP d_reg[1]0, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP d_reg[1]0.
+DSP Report: register A is absorbed into DSP d_reg[1]0.
+DSP Report: operator d_reg[1]0 is absorbed into DSP d_reg[1]0.
+DSP Report: operator d_reg[1]0 is absorbed into DSP d_reg[1]0.
+DSP Report: Generating DSP d_reg[1]0, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP d_reg[1]0.
+DSP Report: register A is absorbed into DSP d_reg[1]0.
+DSP Report: operator d_reg[1]0 is absorbed into DSP d_reg[1]0.
+DSP Report: operator d_reg[1]0 is absorbed into DSP d_reg[1]0.
+DSP Report: Generating DSP rsqr_reg[1]0, operation Mode is: A*B.
+DSP Report: operator rsqr_reg[1]0 is absorbed into DSP rsqr_reg[1]0.
+DSP Report: operator rsqr_reg[1]0 is absorbed into DSP rsqr_reg[1]0.
+DSP Report: Generating DSP rsqr_reg[1]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rsqr_reg[1]0 is absorbed into DSP rsqr_reg[1]0.
+DSP Report: operator rsqr_reg[1]0 is absorbed into DSP rsqr_reg[1]0.
+DSP Report: Generating DSP rsqr_reg[1]0, operation Mode is: A*B.
+DSP Report: operator rsqr_reg[1]0 is absorbed into DSP rsqr_reg[1]0.
+DSP Report: operator rsqr_reg[1]0 is absorbed into DSP rsqr_reg[1]0.
+DSP Report: Generating DSP rsqr_reg[1]0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rsqr_reg[1]0 is absorbed into DSP rsqr_reg[1]0.
+DSP Report: operator rsqr_reg[1]0 is absorbed into DSP rsqr_reg[1]0.
+DSP Report: Generating DSP r_reg[2]1, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP r_reg[2]1.
+DSP Report: register A is absorbed into DSP r_reg[2]1.
+DSP Report: operator r_reg[2]1 is absorbed into DSP r_reg[2]1.
+DSP Report: operator r_reg[2]1 is absorbed into DSP r_reg[2]1.
+DSP Report: Generating DSP r_reg[2]1, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP r_reg[2]1.
+DSP Report: register A is absorbed into DSP r_reg[2]1.
+DSP Report: operator r_reg[2]1 is absorbed into DSP r_reg[2]1.
+DSP Report: operator r_reg[2]1 is absorbed into DSP r_reg[2]1.
+DSP Report: Generating DSP r_reg[2]1, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP r_reg[2]1.
+DSP Report: register A is absorbed into DSP r_reg[2]1.
+DSP Report: operator r_reg[2]1 is absorbed into DSP r_reg[2]1.
+DSP Report: operator r_reg[2]1 is absorbed into DSP r_reg[2]1.
+DSP Report: Generating DSP r_reg[2]1, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP r_reg[2]1.
+DSP Report: register A is absorbed into DSP r_reg[2]1.
+DSP Report: operator r_reg[2]1 is absorbed into DSP r_reg[2]1.
+DSP Report: operator r_reg[2]1 is absorbed into DSP r_reg[2]1.
+DSP Report: Generating DSP n_reg[1]0, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP n_reg[1]0.
+DSP Report: operator n_reg[1]0 is absorbed into DSP n_reg[1]0.
+DSP Report: operator n_reg[1]0 is absorbed into DSP n_reg[1]0.
+DSP Report: Generating DSP n_reg[1]0, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP n_reg[1]0.
+DSP Report: operator n_reg[1]0 is absorbed into DSP n_reg[1]0.
+DSP Report: operator n_reg[1]0 is absorbed into DSP n_reg[1]0.
+DSP Report: Generating DSP n_reg[1]0, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP n_reg[1]0.
+DSP Report: register A is absorbed into DSP n_reg[1]0.
+DSP Report: operator n_reg[1]0 is absorbed into DSP n_reg[1]0.
+DSP Report: operator n_reg[1]0 is absorbed into DSP n_reg[1]0.
+DSP Report: Generating DSP n_reg[1]0, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP n_reg[1]0.
+DSP Report: register A is absorbed into DSP n_reg[1]0.
+DSP Report: operator n_reg[1]0 is absorbed into DSP n_reg[1]0.
+DSP Report: operator n_reg[1]0 is absorbed into DSP n_reg[1]0.
+DSP Report: Generating DSP n_reg[2]0, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP n_reg[2]0.
+DSP Report: register A is absorbed into DSP n_reg[2]0.
+DSP Report: operator n_reg[2]0 is absorbed into DSP n_reg[2]0.
+DSP Report: operator n_reg[2]0 is absorbed into DSP n_reg[2]0.
+DSP Report: Generating DSP n_reg[2]0, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP n_reg[2]0.
+DSP Report: register A is absorbed into DSP n_reg[2]0.
+DSP Report: operator n_reg[2]0 is absorbed into DSP n_reg[2]0.
+DSP Report: operator n_reg[2]0 is absorbed into DSP n_reg[2]0.
+DSP Report: Generating DSP n_reg[2]0, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP n_reg[2]0.
+DSP Report: register A is absorbed into DSP n_reg[2]0.
+DSP Report: operator n_reg[2]0 is absorbed into DSP n_reg[2]0.
+DSP Report: operator n_reg[2]0 is absorbed into DSP n_reg[2]0.
+DSP Report: Generating DSP n_reg[2]0, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP n_reg[2]0.
+DSP Report: register A is absorbed into DSP n_reg[2]0.
+DSP Report: operator n_reg[2]0 is absorbed into DSP n_reg[2]0.
+DSP Report: operator n_reg[2]0 is absorbed into DSP n_reg[2]0.
+DSP Report: Generating DSP n_reg[3]0, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP n_reg[3]0.
+DSP Report: register A is absorbed into DSP n_reg[3]0.
+DSP Report: operator n_reg[3]0 is absorbed into DSP n_reg[3]0.
+DSP Report: operator n_reg[3]0 is absorbed into DSP n_reg[3]0.
+DSP Report: Generating DSP n_reg[3]0, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP n_reg[3]0.
+DSP Report: register A is absorbed into DSP n_reg[3]0.
+DSP Report: operator n_reg[3]0 is absorbed into DSP n_reg[3]0.
+DSP Report: operator n_reg[3]0 is absorbed into DSP n_reg[3]0.
+DSP Report: Generating DSP n_reg[3]0, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP n_reg[3]0.
+DSP Report: register A is absorbed into DSP n_reg[3]0.
+DSP Report: operator n_reg[3]0 is absorbed into DSP n_reg[3]0.
+DSP Report: operator n_reg[3]0 is absorbed into DSP n_reg[3]0.
+DSP Report: Generating DSP n_reg[3]0, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP n_reg[3]0.
+DSP Report: register A is absorbed into DSP n_reg[3]0.
+DSP Report: operator n_reg[3]0 is absorbed into DSP n_reg[3]0.
+DSP Report: operator n_reg[3]0 is absorbed into DSP n_reg[3]0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+-----------------+---------------+----------------+
+|Module Name      | RTL Object      | Depth x Width | Implemented As | 
++-----------------+-----------------+---------------+----------------+
+|fixed_point_sqrt | SQRT_TABLE_2[0] | 128x32        | LUT            | 
+|fixed_point_sqrt | SQRT_TABLE_1[0] | 128x32        | LUT            | 
+|fixed_point_sqrt | SQRT_TABLE_2[0] | 128x32        | LUT            | 
+|fixed_point_sqrt | SQRT_TABLE_1[0] | 128x32        | LUT            | 
++-----------------+-----------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fixed_point_sqrt | A2*B             | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A*B2  | 16     | 16     | -      | -      | 29     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A2*B2 | 18     | 16     | -      | -      | 46     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A2*B2            | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A2*B2 | 16     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A2*B2 | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A2*B             | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A*B2  | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A2*B2 | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A2*B2            | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A2*B2 | 16     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A2*B2 | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A2*B2            | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A2*B2 | 16     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|fixed_point_sqrt | (PCIN>>17)+A2*B2 | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][16]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][15]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][14]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][13]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][12]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][11]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][10]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][9]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][8]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][7]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][6]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][5]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][4]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][3]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][2]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][1]) is unused and will be removed from module fixed_point_sqrt.
+WARNING: [Synth 8-3332] Sequential element (n_reg[0][0]) is unused and will be removed from module fixed_point_sqrt.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    88|
+|2     |DSP48E1 |    24|
+|3     |LUT1    |    71|
+|4     |LUT2    |   277|
+|5     |LUT4    |     1|
+|6     |LUT5    |     4|
+|7     |LUT6    |   115|
+|8     |MUXF7   |    59|
+|9     |FDRE    |    32|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   671|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.766 ; gain = 364.688 ; free physical = 4004 ; free virtual = 29975
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1249.766 ; gain = 275.547 ; free physical = 4004 ; free virtual = 29975
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.773 ; gain = 364.695 ; free physical = 4004 ; free virtual = 29975
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1336.609 ; gain = 374.977 ; free physical = 3955 ; free virtual = 29927

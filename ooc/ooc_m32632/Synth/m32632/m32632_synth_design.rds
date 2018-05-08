@@ -1,0 +1,1821 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top m32632 -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17097 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1052.215 ; gain = 167.137 ; free physical = 5691 ; free virtual = 30743
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'm32632' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/m32632.v:42]
+INFO: [Synth 8-638] synthesizing module 'DCACHE' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DCACHE.v:42]
+INFO: [Synth 8-638] synthesizing module 'NEU_VALID' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:54]
+INFO: [Synth 8-256] done synthesizing module 'NEU_VALID' (1#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:54]
+INFO: [Synth 8-638] synthesizing module 'DCACHE_SM' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:492]
+INFO: [Synth 8-256] done synthesizing module 'DCACHE_SM' (2#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:492]
+INFO: [Synth 8-638] synthesizing module 'CA_MATCH' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:363]
+INFO: [Synth 8-256] done synthesizing module 'CA_MATCH' (3#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:363]
+INFO: [Synth 8-638] synthesizing module 'DCA_CONTROL' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:182]
+INFO: [Synth 8-256] done synthesizing module 'DCA_CONTROL' (4#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:182]
+INFO: [Synth 8-638] synthesizing module 'MMU_MATCH' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:276]
+INFO: [Synth 8-256] done synthesizing module 'MMU_MATCH' (5#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:276]
+INFO: [Synth 8-638] synthesizing module 'MMU_UP' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:131]
+INFO: [Synth 8-256] done synthesizing module 'MMU_UP' (6#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:131]
+INFO: [Synth 8-638] synthesizing module 'RD_ALIGNER' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ALIGNER.v:176]
+INFO: [Synth 8-256] done synthesizing module 'RD_ALIGNER' (7#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ALIGNER.v:176]
+INFO: [Synth 8-638] synthesizing module 'WR_ALIGNER' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ALIGNER.v:47]
+INFO: [Synth 8-256] done synthesizing module 'WR_ALIGNER' (8#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ALIGNER.v:47]
+INFO: [Synth 8-638] synthesizing module 'DEBUG_AE' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:84]
+INFO: [Synth 8-256] done synthesizing module 'DEBUG_AE' (9#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:84]
+INFO: [Synth 8-256] done synthesizing module 'DCACHE' (10#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DCACHE.v:42]
+INFO: [Synth 8-638] synthesizing module 'DATENPFAD' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DATENPFAD.v:42]
+INFO: [Synth 8-638] synthesizing module 'REGISTER' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/REGISTERS.v:267]
+INFO: [Synth 8-256] done synthesizing module 'REGISTER' (11#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/REGISTERS.v:267]
+INFO: [Synth 8-638] synthesizing module 'MULFILTER' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:118]
+INFO: [Synth 8-256] done synthesizing module 'MULFILTER' (12#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:118]
+INFO: [Synth 8-638] synthesizing module 'SIGNMUL' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:150]
+INFO: [Synth 8-256] done synthesizing module 'SIGNMUL' (13#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:150]
+INFO: [Synth 8-638] synthesizing module 'BITMASK' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:53]
+INFO: [Synth 8-256] done synthesizing module 'BITMASK' (14#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:53]
+INFO: [Synth 8-638] synthesizing module 'I_PFAD' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:357]
+INFO: [Synth 8-638] synthesizing module 'SCHALE' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:315]
+INFO: [Synth 8-256] done synthesizing module 'SCHALE' (15#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:315]
+INFO: [Synth 8-638] synthesizing module 'SHIFTER' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:164]
+INFO: [Synth 8-256] done synthesizing module 'SHIFTER' (16#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:164]
+INFO: [Synth 8-638] synthesizing module 'FFS_LOGIK' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:239]
+INFO: [Synth 8-256] done synthesizing module 'FFS_LOGIK' (17#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:239]
+INFO: [Synth 8-256] done synthesizing module 'I_PFAD' (18#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/I_PFAD.v:357]
+INFO: [Synth 8-638] synthesizing module 'ADDR_UNIT' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ADDR_UNIT.v:42]
+INFO: [Synth 8-256] done synthesizing module 'ADDR_UNIT' (19#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ADDR_UNIT.v:42]
+INFO: [Synth 8-638] synthesizing module 'CONFIG_REGS' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/REGISTERS.v:48]
+INFO: [Synth 8-256] done synthesizing module 'CONFIG_REGS' (20#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/REGISTERS.v:48]
+INFO: [Synth 8-638] synthesizing module 'DP_FPU' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:1343]
+INFO: [Synth 8-638] synthesizing module 'DP_LOGIK' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:1010]
+INFO: [Synth 8-638] synthesizing module 'DFPU_ADDSUB' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:208]
+INFO: [Synth 8-256] done synthesizing module 'DFPU_ADDSUB' (21#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:208]
+INFO: [Synth 8-638] synthesizing module 'DFPU_MUL' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:584]
+INFO: [Synth 8-256] done synthesizing module 'DFPU_MUL' (22#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:584]
+INFO: [Synth 8-638] synthesizing module 'DFPU_DIV' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:706]
+INFO: [Synth 8-638] synthesizing module 'DIVI_PREP' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:641]
+INFO: [Synth 8-638] synthesizing module 'SCANDIG' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:625]
+INFO: [Synth 8-256] done synthesizing module 'SCANDIG' (23#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:625]
+INFO: [Synth 8-256] done synthesizing module 'DIVI_PREP' (24#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:641]
+INFO: [Synth 8-256] done synthesizing module 'DFPU_DIV' (25#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:706]
+INFO: [Synth 8-638] synthesizing module 'DFPU_MISC' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:473]
+INFO: [Synth 8-256] done synthesizing module 'DFPU_MISC' (26#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:473]
+INFO: [Synth 8-638] synthesizing module 'DFPU_BCD' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:142]
+INFO: [Synth 8-638] synthesizing module 'BCDADDER' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:98]
+INFO: [Synth 8-256] done synthesizing module 'BCDADDER' (27#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:98]
+INFO: [Synth 8-256] done synthesizing module 'DFPU_BCD' (28#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:142]
+INFO: [Synth 8-256] done synthesizing module 'DP_LOGIK' (29#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:1010]
+INFO: [Synth 8-638] synthesizing module 'PREPDATA' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:56]
+INFO: [Synth 8-256] done synthesizing module 'PREPDATA' (30#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:56]
+INFO: [Synth 8-256] done synthesizing module 'DP_FPU' (31#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:1343]
+INFO: [Synth 8-638] synthesizing module 'SP_FPU' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/SP_FPU.v:384]
+INFO: [Synth 8-638] synthesizing module 'SFPU_ADDSUB' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/SP_FPU.v:66]
+INFO: [Synth 8-638] synthesizing module 'ADDSUB' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/SP_FPU.v:51]
+INFO: [Synth 8-256] done synthesizing module 'ADDSUB' (32#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/SP_FPU.v:51]
+INFO: [Synth 8-256] done synthesizing module 'SFPU_ADDSUB' (33#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/SP_FPU.v:66]
+INFO: [Synth 8-638] synthesizing module 'SFPU_MUL' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/SP_FPU.v:350]
+INFO: [Synth 8-256] done synthesizing module 'SFPU_MUL' (34#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/SP_FPU.v:350]
+INFO: [Synth 8-256] done synthesizing module 'SP_FPU' (35#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/SP_FPU.v:384]
+INFO: [Synth 8-638] synthesizing module 'FP_STAT_REG' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/REGISTERS.v:174]
+WARNING: [Synth 8-5788] Register flags_reg in module FP_STAT_REG is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/REGISTERS.v:220]
+WARNING: [Synth 8-5788] Register flags_reg in module FP_STAT_REG is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/REGISTERS.v:234]
+INFO: [Synth 8-256] done synthesizing module 'FP_STAT_REG' (36#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/REGISTERS.v:174]
+INFO: [Synth 8-256] done synthesizing module 'DATENPFAD' (37#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DATENPFAD.v:42]
+INFO: [Synth 8-638] synthesizing module 'ICACHE' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ICACHE.v:41]
+INFO: [Synth 8-638] synthesizing module 'ICACHE_SM' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ICACHE_SM.v:252]
+INFO: [Synth 8-256] done synthesizing module 'ICACHE_SM' (38#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ICACHE_SM.v:252]
+INFO: [Synth 8-638] synthesizing module 'KOLDETECT' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ICACHE_SM.v:47]
+INFO: [Synth 8-256] done synthesizing module 'KOLDETECT' (39#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ICACHE_SM.v:47]
+INFO: [Synth 8-256] done synthesizing module 'ICACHE' (40#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/ICACHE.v:41]
+INFO: [Synth 8-638] synthesizing module 'STEUERUNG' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUERUNG.v:41]
+INFO: [Synth 8-638] synthesizing module 'DECODER' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DECODER.v:41]
+	Parameter addr_nop bound to: 19'b1000000000000000000 
+	Parameter push_op bound to: 19'b1001110000110100000 
+	Parameter push_ea bound to: 19'b1001110000110100011 
+	Parameter pop_op bound to: 19'b1010110010100001000 
+	Parameter adddisp bound to: 19'b1000100000000000011 
+	Parameter adddispn bound to: 19'b1000100000000000000 
+	Parameter save_sp bound to: 19'b1000000000100000000 
+	Parameter next_po bound to: 19'b1010110010100001011 
+	Parameter dispmin bound to: 19'b1000100000001000011 
+	Parameter rmod_rxp bound to: 19'b1010010000100000100 
+	Parameter rmod_rtt bound to: 19'b1010010000000000100 
+	Parameter rmod_4 bound to: 19'b1010110000000010100 
+	Parameter rmod_8 bound to: 19'b1010110000000100100 
+	Parameter rdltab bound to: 19'b1010100000010000000 
+	Parameter ea_push bound to: 19'b1001100000010100011 
+	Parameter ea_min8 bound to: 19'b1010100000010110011 
+	Parameter pop_ru bound to: 19'b1010100010000001011 
+	Parameter rd_icu bound to: 19'b0010010000011000010 
+	Parameter get_vec bound to: 19'b1010010000001xx0000 
+	Parameter get_veci bound to: 19'b1010010110000000000 
+	Parameter load_ea bound to: 19'b1000100000000000000 
+	Parameter save_msr bound to: 19'b1000100001000000000 
+	Parameter ivar_adr bound to: 19'b1000000100000000010 
+	Parameter st_trans bound to: 19'b0010010100000000000 
+	Parameter src_x bound to: 7'bxxxxxxx 
+	Parameter dest_x bound to: 6'bxxxxxx 
+	Parameter imme bound to: 7'b1xxxxxx 
+	Parameter frame bound to: 7'b0011000 
+	Parameter ibase bound to: 7'b0011110 
+	Parameter modul bound to: 7'b0011111 
+	Parameter w_msr bound to: 6'b001010 
+	Parameter w_tear bound to: 6'b001011 
+	Parameter fsr_r bound to: 6'b010111 
+	Parameter temp_l bound to: 6'b111100 
+	Parameter temp_h bound to: 6'b111101 
+	Parameter temp_1 bound to: 6'b111110 
+	Parameter temp_2 bound to: 6'b111111 
+	Parameter rtmpl bound to: 7'b0111100 
+	Parameter rtmph bound to: 7'b0111101 
+	Parameter rtmp1 bound to: 7'b0111110 
+	Parameter rtmp2 bound to: 7'b0111111 
+	Parameter op_mov bound to: 11'b01101000101 
+	Parameter op_adr bound to: 11'b01101001001 
+	Parameter op_add bound to: 11'b01101000000 
+	Parameter op_flip bound to: 11'b01101100100 
+	Parameter op_lmr bound to: 11'b01101101010 
+	Parameter op_wrp bound to: 11'b01110000111 
+	Parameter op_ldp bound to: 11'b01110001000 
+	Parameter op_zex bound to: 11'b00001110110 
+	Parameter op_cop bound to: 8'b11011101 
+INFO: [Synth 8-638] synthesizing module 'REG_LIST' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:263]
+INFO: [Synth 8-256] done synthesizing module 'REG_LIST' (41#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:263]
+INFO: [Synth 8-638] synthesizing module 'GRUPPE_2' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:425]
+	Parameter dont_care bound to: 67'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+	Parameter addr_nop bound to: 19'b0000000000000000000 
+	Parameter disp2ea bound to: 19'bxx00100000000000010 
+	Parameter case_op bound to: 19'bxx00101000000000001 
+	Parameter read_byb bound to: 19'b00101111xx000000011 
+	Parameter exr11 bound to: 19'b1010110000010000000 
+	Parameter adrcvtp bound to: 19'bxx00100111000000000 
+	Parameter addone bound to: 19'bxx00100100000000000 
+	Parameter addind bound to: 19'bxx00100100000000011 
+	Parameter src_x bound to: 7'bxxxxxxx 
+	Parameter dest_x bound to: 6'bxxxxxx 
+	Parameter imme bound to: 7'b1xxxxxx 
+	Parameter F0 bound to: 7'b0100000 
+	Parameter F0_h bound to: 7'b0100001 
+	Parameter w_F0 bound to: 6'b100000 
+	Parameter w_F0_h bound to: 6'b100001 
+	Parameter temp_l bound to: 6'b111100 
+	Parameter temp_h bound to: 6'b111101 
+	Parameter temp_1 bound to: 6'b111110 
+	Parameter rtmpl bound to: 7'b0111100 
+	Parameter rtmph bound to: 7'b0111101 
+	Parameter rtmp1 bound to: 7'b0111110 
+	Parameter op_mov bound to: 11'bx1x01000101 
+	Parameter op_adr bound to: 11'bx1x01001001 
+	Parameter op_addl bound to: 11'b01x10110000 
+	Parameter op_addf bound to: 11'b11x10110000 
+	Parameter op_mull bound to: 11'b01x10111100 
+	Parameter op_mulf bound to: 11'b11x10111100 
+	Parameter op_stpr bound to: 11'b11x01010100 
+	Parameter op_lsh bound to: 11'b01101100101 
+	Parameter op_msk bound to: 11'b01110000000 
+	Parameter op_mul bound to: 11'b01101111000 
+	Parameter op_rwv bound to: 11'bx1x11100000 
+INFO: [Synth 8-256] done synthesizing module 'GRUPPE_2' (42#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:425]
+WARNING: [Synth 8-5788] Register dim_feld_reg in module DECODER is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DECODER.v:397]
+WARNING: [Synth 8-5788] Register dim_feld_reg in module DECODER is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DECODER.v:641]
+WARNING: [Synth 8-5788] Register ACC_FELD_reg in module DECODER is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DECODER.v:1688]
+INFO: [Synth 8-256] done synthesizing module 'DECODER' (43#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DECODER.v:41]
+INFO: [Synth 8-638] synthesizing module 'ILL_UNDEF' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:303]
+	Parameter udef_amode bound to: 5'b10011 
+	Parameter imode bound to: 5'b10100 
+INFO: [Synth 8-256] done synthesizing module 'ILL_UNDEF' (44#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:303]
+INFO: [Synth 8-638] synthesizing module 'OPDEC_REG' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:50]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:134]
+INFO: [Synth 8-256] done synthesizing module 'OPDEC_REG' (45#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:50]
+INFO: [Synth 8-638] synthesizing module 'PROG_COUNTER' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:186]
+INFO: [Synth 8-256] done synthesizing module 'PROG_COUNTER' (46#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUER_MISC.v:186]
+INFO: [Synth 8-256] done synthesizing module 'STEUERUNG' (47#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/STEUERUNG.v:41]
+INFO: [Synth 8-638] synthesizing module 'IO_SWITCH' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/TOP_MISC.v:47]
+INFO: [Synth 8-256] done synthesizing module 'IO_SWITCH' (48#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/TOP_MISC.v:47]
+INFO: [Synth 8-638] synthesizing module 'MAKE_STAT' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/TOP_MISC.v:139]
+INFO: [Synth 8-256] done synthesizing module 'MAKE_STAT' (49#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/TOP_MISC.v:139]
+INFO: [Synth 8-256] done synthesizing module 'm32632' (50#1) [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/m32632.v:42]
+WARNING: [Synth 8-3331] design GRUPPE_2 has unconnected port ACCA[2]
+WARNING: [Synth 8-3331] design GRUPPE_2 has unconnected port ACCA[0]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[55]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[54]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[53]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[52]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[51]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[50]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[49]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[48]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[47]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[46]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[45]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[44]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[43]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[42]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[41]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[40]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[39]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[38]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[37]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[36]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[35]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[34]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[33]
+WARNING: [Synth 8-3331] design DECODER has unconnected port OPREG[32]
+WARNING: [Synth 8-3331] design DECODER has unconnected port CFG[7]
+WARNING: [Synth 8-3331] design DECODER has unconnected port CFG[6]
+WARNING: [Synth 8-3331] design DECODER has unconnected port CFG[5]
+WARNING: [Synth 8-3331] design DECODER has unconnected port CFG[4]
+WARNING: [Synth 8-3331] design DECODER has unconnected port CFG[3]
+WARNING: [Synth 8-3331] design DECODER has unconnected port CFG[2]
+WARNING: [Synth 8-3331] design DECODER has unconnected port CFG[1]
+WARNING: [Synth 8-3331] design DECODER has unconnected port PSR[3]
+WARNING: [Synth 8-3331] design DECODER has unconnected port PSR[1]
+WARNING: [Synth 8-3331] design DECODER has unconnected port STRING[4]
+WARNING: [Synth 8-3331] design MMU_MATCH has unconnected port VADR_R[19]
+WARNING: [Synth 8-3331] design MMU_MATCH has unconnected port VADR_R[18]
+WARNING: [Synth 8-3331] design MMU_MATCH has unconnected port VADR_R[17]
+WARNING: [Synth 8-3331] design MMU_MATCH has unconnected port VADR_R[16]
+WARNING: [Synth 8-3331] design ICACHE_SM has unconnected port USER
+WARNING: [Synth 8-3331] design CA_MATCH has unconnected port ADDR[11]
+WARNING: [Synth 8-3331] design CA_MATCH has unconnected port ADDR[10]
+WARNING: [Synth 8-3331] design CA_MATCH has unconnected port ADDR[9]
+WARNING: [Synth 8-3331] design CA_MATCH has unconnected port ADDR[8]
+WARNING: [Synth 8-3331] design CA_MATCH has unconnected port ADDR[7]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[22]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[21]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[20]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[19]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[18]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[17]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[16]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[15]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[14]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[13]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[12]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[11]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[10]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[9]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[8]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[7]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[6]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[5]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[4]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[3]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[2]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[1]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC1[0]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[22]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[21]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[20]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[19]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[18]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[17]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[16]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[15]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[14]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[13]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[12]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[11]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[10]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[9]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[8]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[7]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[6]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[5]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[4]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[3]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[2]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[1]
+WARNING: [Synth 8-3331] design SFPU_MUL has unconnected port SRC2[0]
+WARNING: [Synth 8-3331] design SP_FPU has unconnected port FSR[6]
+WARNING: [Synth 8-3331] design SP_FPU has unconnected port FSR[4]
+WARNING: [Synth 8-3331] design DFPU_MISC has unconnected port SRCFLAGS[5]
+WARNING: [Synth 8-3331] design DFPU_MISC has unconnected port SRCFLAGS[4]
+WARNING: [Synth 8-3331] design DFPU_MUL has unconnected port SRC1[31]
+WARNING: [Synth 8-3331] design DFPU_MUL has unconnected port SRC1[19]
+WARNING: [Synth 8-3331] design DFPU_MUL has unconnected port SRC1[18]
+WARNING: [Synth 8-3331] design DFPU_MUL has unconnected port SRC1[17]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.652 ; gain = 251.574 ; free physical = 5603 ; free virtual = 30657
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.652 ; gain = 251.574 ; free physical = 5599 ; free virtual = 30653
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1144.656 ; gain = 259.578 ; free physical = 5601 ; free virtual = 30654
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:988]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/DP_FPU.v:560]
+INFO: [Synth 8-5544] ROM "BCD_Q" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BCD_Q" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "phsrc1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "phsrc2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "get8b_d" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "get8b_s" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "valid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "op_sho" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ai_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1251.828 ; gain = 366.750 ; free physical = 5494 ; free virtual = 30548
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DATENPFAD     |           1|     28201|
+|2     |m32632__GB1   |           1|     26746|
++------+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     68 Bit       Adders := 1     
+	   2 Input     65 Bit       Adders := 1     
+	   3 Input     57 Bit       Adders := 3     
+	   2 Input     56 Bit       Adders := 1     
+	   3 Input     36 Bit       Adders := 3     
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     33 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 4     
+	   2 Input     32 Bit       Adders := 10    
+	   3 Input     24 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 2     
+	   3 Input     13 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 4     
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   3 Input     10 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 7     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
+	   3 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 6     
+	   3 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 6     
+	   2 Input      5 Bit         XORs := 1     
+	   2 Input      2 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 19    
++---Registers : 
+	               70 Bit    Registers := 4     
+	               64 Bit    Registers := 2     
+	               57 Bit    Registers := 2     
+	               56 Bit    Registers := 3     
+	               48 Bit    Registers := 1     
+	               37 Bit    Registers := 2     
+	               36 Bit    Registers := 4     
+	               34 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 38    
+	               30 Bit    Registers := 1     
+	               28 Bit    Registers := 2     
+	               24 Bit    Registers := 8     
+	               21 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 11    
+	               13 Bit    Registers := 3     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 6     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 26    
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 20    
+	                2 Bit    Registers := 25    
+	                1 Bit    Registers := 204   
++---Multipliers : 
+	                53x53  Multipliers := 1     
+	                32x32  Multipliers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 2     
+	               9K Bit         RAMs := 2     
+	               8K Bit         RAMs := 8     
+	               4K Bit         RAMs := 6     
+	             1024 Bit         RAMs := 2     
+	              768 Bit         RAMs := 3     
+	              512 Bit         RAMs := 6     
++---Muxes : 
+	   2 Input     70 Bit        Muxes := 6     
+	   4 Input     70 Bit        Muxes := 2     
+	   2 Input     68 Bit        Muxes := 1     
+	   2 Input     67 Bit        Muxes := 60    
+	   7 Input     67 Bit        Muxes := 1     
+	  19 Input     67 Bit        Muxes := 5     
+	   3 Input     67 Bit        Muxes := 2     
+	 149 Input     67 Bit        Muxes := 1     
+	   2 Input     66 Bit        Muxes := 1     
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   6 Input     64 Bit        Muxes := 1     
+	   4 Input     63 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 4     
+	   4 Input     57 Bit        Muxes := 2     
+	   2 Input     57 Bit        Muxes := 3     
+	   2 Input     56 Bit        Muxes := 12    
+	   8 Input     56 Bit        Muxes := 2     
+	  11 Input     56 Bit        Muxes := 2     
+	   2 Input     55 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 3     
+	  16 Input     53 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 4     
+	  18 Input     48 Bit        Muxes := 1     
+	  47 Input     48 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 5     
+	   2 Input     36 Bit        Muxes := 6     
+	  11 Input     36 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 6     
+	  11 Input     34 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 9     
+	   4 Input     33 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 84    
+	   6 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 2     
+	  10 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     28 Bit        Muxes := 3     
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 13    
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 30    
+	   4 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 6     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 9     
+	  19 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 9     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 2     
+	   7 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 48    
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 2     
+	  14 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 11    
+	   7 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 12    
+	  12 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 15    
+	  28 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 28    
+	  12 Input      5 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 2     
+	  21 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 26    
+	   3 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  26 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 18    
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	  19 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 32    
+	   6 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 132   
+	   4 Input      1 Bit        Muxes := 16    
+	   8 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module REGISTER__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+	              512 Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+Module REGISTER 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+	              512 Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+Module MULFILTER 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+Module SIGNMUL 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module BITMASK 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module SCHALE 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module SHIFTER 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module FFS_LOGIK 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 2     
+	   8 Input      7 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module I_PFAD 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      5 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 2     
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   5 Input     12 Bit        Muxes := 1     
+	  19 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 20    
+	   4 Input      1 Bit        Muxes := 2     
+Module ADDR_UNIT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   7 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	   8 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+Module CONFIG_REGS 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               30 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module DFPU_ADDSUB 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     68 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               70 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     70 Bit        Muxes := 1     
+	   2 Input     68 Bit        Muxes := 1     
+	   2 Input     66 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     56 Bit        Muxes := 12    
+	   2 Input     55 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 3     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 1     
+Module DFPU_MUL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               70 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     70 Bit        Muxes := 1     
+Module DIVI_PREP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module DFPU_DIV 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     57 Bit       Adders := 3     
+	   2 Input     56 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               70 Bit    Registers := 1     
+	               57 Bit    Registers := 2     
+	               56 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	               13 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   4 Input     70 Bit        Muxes := 1     
+	   2 Input     65 Bit        Muxes := 1     
+	   4 Input     63 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 4     
+	   4 Input     57 Bit        Muxes := 2     
+	   2 Input     57 Bit        Muxes := 3     
+	   2 Input     33 Bit        Muxes := 2     
+	   4 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+Module DFPU_MISC 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               70 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     70 Bit        Muxes := 4     
+	   2 Input     13 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 7     
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module BCDADDER__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Muxes : 
+	  12 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module BCDADDER 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Muxes : 
+	  12 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module DFPU_BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module DP_LOGIK 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     65 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input     70 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   6 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 1     
+	  28 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 10    
+Module PREPDATA 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     21 Bit        Muxes := 2     
+Module DP_FPU 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               21 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
++---Multipliers : 
+	                53x53  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ADDSUB__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     36 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+Module ADDSUB__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     36 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+Module ADDSUB 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     36 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+Module SFPU_ADDSUB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               37 Bit    Registers := 1     
+	               34 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     37 Bit        Muxes := 3     
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 3     
+	   2 Input     33 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module SFPU_MUL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               37 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     37 Bit        Muxes := 1     
+Module SP_FPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     37 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module FP_STAT_REG 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module DATENPFAD 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module NEU_VALID 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              768 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module DCACHE_SM 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 2     
+Module CA_MATCH 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module DCA_CONTROL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+Module MMU_MATCH 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+Module MMU_UP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+Module RD_ALIGNER 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 7     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 7     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 1     
+	  12 Input      7 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module WR_ALIGNER 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 7     
+	  26 Input      4 Bit        Muxes := 1     
+Module DEBUG_AE 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module DCACHE 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 2     
+	               32 Bit    Registers := 6     
+	               28 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               9K Bit         RAMs := 1     
+	               8K Bit         RAMs := 8     
+	               4K Bit         RAMs := 2     
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module NEU_VALID__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              768 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module CA_MATCH__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module DCA_CONTROL__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+Module ICACHE_SM 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module NEU_VALID__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              768 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module KOLDETECT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 1     
+Module MMU_MATCH__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+Module MMU_UP__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+Module ICACHE 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 7     
+	               28 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	              32K Bit         RAMs := 2     
+	               9K Bit         RAMs := 1     
+	               4K Bit         RAMs := 4     
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+Module REG_LIST 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module GRUPPE_2 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     67 Bit        Muxes := 31    
+	   7 Input     67 Bit        Muxes := 1     
+	  19 Input     67 Bit        Muxes := 5     
+	   2 Input     19 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 6     
+	   3 Input      7 Bit        Muxes := 1     
+	  21 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	  19 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+Module DECODER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      2 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 57    
++---Muxes : 
+	   2 Input     67 Bit        Muxes := 29    
+	   3 Input     67 Bit        Muxes := 2     
+	 149 Input     67 Bit        Muxes := 1     
+	  16 Input     53 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 4     
+	  18 Input     48 Bit        Muxes := 1     
+	  47 Input     48 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 2     
+	  11 Input     36 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 3     
+	  11 Input     34 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 8     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   7 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 10    
+	   2 Input      5 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+Module ILL_UNDEF 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 1     
+Module OPDEC_REG 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 2     
++---Registers : 
+	               56 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   8 Input     56 Bit        Muxes := 2     
+	  11 Input     56 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module PROG_COUNTER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module IO_SWITCH 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MAKE_STAT 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1251.828 ; gain = 366.750 ; free physical = 5494 ; free virtual = 30548
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'KOL_VAL/valhold_reg[23:0]' into 'VALID_RAM/valhold_reg[23:0]' [/home/sean/vivado_workspace/ooc_m32632/Sources/hdl/CACHE_LOGIK.v:72]
+DSP Report: Generating DSP MRESULT, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: Generating DSP MRESULT, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: Generating DSP MRESULT, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP MRESULT.
+DSP Report: register A is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: Generating DSP MRESULT, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP MRESULT.
+DSP Report: register A is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: Generating DSP MRESULT, operation Mode is: PCIN+A*B.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: Generating DSP MRESULT, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP MRESULT.
+DSP Report: register A is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: Generating DSP MRESULT, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP MRESULT.
+DSP Report: register A is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: Generating DSP MRESULT, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: Generating DSP MRESULT, operation Mode is: PCIN+A*B2.
+DSP Report: register B is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: operator MRESULT is absorbed into DSP MRESULT.
+DSP Report: Generating DSP S_MULTI/result, operation Mode is: A*B.
+DSP Report: operator S_MULTI/result is absorbed into DSP S_MULTI/result.
+DSP Report: operator S_MULTI/result is absorbed into DSP S_MULTI/result.
+DSP Report: Generating DSP S_MULTI/result, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator S_MULTI/result is absorbed into DSP S_MULTI/result.
+DSP Report: operator S_MULTI/result is absorbed into DSP S_MULTI/result.
+DSP Report: Generating DSP S_MULTI/result, operation Mode is: A*B.
+DSP Report: operator S_MULTI/result is absorbed into DSP S_MULTI/result.
+DSP Report: operator S_MULTI/result is absorbed into DSP S_MULTI/result.
+DSP Report: Generating DSP S_MULTI/result, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator S_MULTI/result is absorbed into DSP S_MULTI/result.
+DSP Report: operator S_MULTI/result is absorbed into DSP S_MULTI/result.
+INFO: [Synth 8-5544] ROM "op_sho" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ai_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 1267.844 ; gain = 382.766 ; free physical = 5475 ; free virtual = 30529
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 1267.844 ; gain = 382.766 ; free physical = 5475 ; free virtual = 30529
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DATENPFAD     |           1|     36636|
+|2     |m32632__GB1   |           1|     34834|
++------+--------------+------------+----------+
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM TAGSET_0_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM TAGSET_1_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LEGS/DATA0_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LEGS/DATA1_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LEGS/KTAGSET_0_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LEGS/KTAGSET_1_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LEGS/TAGSET_0_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM LEGS/TAGSET_1_reg to conserve power
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|REGISTER    | REGFILE_C_reg | 64 x 16(WRITE_FIRST)   |   | R | 64 x 16(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 
+|REGISTER    | REGFILE_C_reg | 64 x 16(WRITE_FIRST)   |   | R | 64 x 16(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 
+|DCACHE      | MMU_TAGS_reg  | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|DCACHE      | TAGSET_0_reg  | 256 x 16(READ_FIRST)   | W |   | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|DCACHE      | TAGSET_1_reg  | 256 x 16(READ_FIRST)   | W |   | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|DCACHE      | DATA0_A_reg   | 1 K x 8(WRITE_FIRST)   |   | R | 1 K x 8                | W |   | Port A and B     | 1      | 0      | 
+|DCACHE      | DATA0_B_reg   | 1 K x 8(WRITE_FIRST)   |   | R | 1 K x 8                | W |   | Port A and B     | 1      | 0      | 
+|DCACHE      | DATA0_C_reg   | 1 K x 8(WRITE_FIRST)   |   | R | 1 K x 8                | W |   | Port A and B     | 1      | 0      | 
+|DCACHE      | DATA0_D_reg   | 1 K x 8(WRITE_FIRST)   |   | R | 1 K x 8                | W |   | Port A and B     | 1      | 0      | 
+|DCACHE      | DATA1_A_reg   | 1 K x 8(WRITE_FIRST)   |   | R | 1 K x 8                | W |   | Port A and B     | 1      | 0      | 
+|DCACHE      | DATA1_B_reg   | 1 K x 8(WRITE_FIRST)   |   | R | 1 K x 8                | W |   | Port A and B     | 1      | 0      | 
+|DCACHE      | DATA1_C_reg   | 1 K x 8(WRITE_FIRST)   |   | R | 1 K x 8                | W |   | Port A and B     | 1      | 0      | 
+|DCACHE      | DATA1_D_reg   | 1 K x 8(WRITE_FIRST)   |   | R | 1 K x 8                | W |   | Port A and B     | 1      | 0      | 
+|ICACHE      | MMU_TAGS_reg  | 256 x 36(READ_FIRST)   | W |   | 256 x 36(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ICACHE      | DATA0_reg     | 1 K x 32               | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|ICACHE      | DATA1_reg     | 1 K x 32               | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|ICACHE      | KTAGSET_0_reg | 256 x 16(READ_FIRST)   | W |   | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ICACHE      | KTAGSET_1_reg | 256 x 16(READ_FIRST)   | W |   | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ICACHE      | TAGSET_0_reg  | 256 x 16(READ_FIRST)   | W |   | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|ICACHE      | TAGSET_1_reg  | 256 x 16(READ_FIRST)   | W |   | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------------+-----------+----------------------+--------------+
+|DATENPFAD   | REG_SET_A/REGFILE_A_reg   | Implied   | 64 x 8               | RAM64M x 3   | 
+|DATENPFAD   | REG_SET_A/REGFILE_B_reg   | Implied   | 64 x 8               | RAM64M x 3   | 
+|DATENPFAD   | REG_SET_B/REGFILE_A_reg   | Implied   | 64 x 8               | RAM64M x 3   | 
+|DATENPFAD   | REG_SET_B/REGFILE_B_reg   | Implied   | 64 x 8               | RAM64M x 3   | 
+|DCACHE      | VALID_RAM/cvalid_reg      | Implied   | 32 x 24              | RAM32M x 4   | 
+|DCACHE      | MMU_VALID_reg             | Implied   | 16 x 32              | RAM32M x 6   | 
+|m32632      | LEGS/VALID_RAM/cvalid_reg | Implied   | 32 x 24              | RAM32M x 4   | 
+|m32632      | LEGS/KOL_VAL/cvalid_reg   | Implied   | 32 x 24              | RAM32M x 4   | 
+|m32632      | LEGS/MMU_VALID_reg        | Implied   | 16 x 32              | RAM32M x 6   | 
++------------+---------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DP_FPU      | A2*B             | 20     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DP_FPU      | PCIN+A2*B        | 20     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DP_FPU      | (PCIN>>17)+A2*B2 | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|DP_FPU      | A2*B2            | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|DP_FPU      | PCIN+A*B         | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DP_FPU      | PCIN+A2*B2       | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|DP_FPU      | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|DP_FPU      | (PCIN>>17)+A2*B  | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DP_FPU      | PCIN+A*B2        | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|DATENPFAD   | A*B              | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DATENPFAD   | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DATENPFAD   | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DATENPFAD   | (PCIN>>17)+A*B   | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'STOMACH/DOUBLE_U/DOUBLE_U/div_inst/exponent_reg[12]' (FDE) to 'STOMACH/DOUBLE_U/DOUBLE_U/div_inst/exponent_reg[11]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/DOUBLE_U/DOUBLE_U/misc_inst/dvorz_reg' (FDE) to 'STOMACH/DOUBLE_U/DOUBLE_U/srcflags_reg[5]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/DOUBLE_U/DOUBLE_U/srcflags_reg[4]' (FDE) to 'STOMACH/DOUBLE_U/DOUBLE_U/misc_inst/svorz_reg'
+INFO: [Synth 8-3886] merging instance 'STOMACH/DOUBLE_U/MDB_reg[52]' (FDE) to 'STOMACH/DOUBLE_U/MDA_reg[52]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (STOMACH/\SINGLE_U/IADDSUB /\shiftl_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (STOMACH/\SINGLE_U/IADDSUB /\out_v0_reg[34] )
+WARNING: [Synth 8-3332] Sequential element (exponent_reg[12]) is unused and will be removed from module DFPU_DIV.
+WARNING: [Synth 8-3332] Sequential element (DOUBLE_U/misc_inst/dvorz_reg) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[16]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[15]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[14]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[13]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[12]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[11]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[10]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[9]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[8]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[7]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[6]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[5]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[4]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[3]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[2]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[1]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[0]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[16]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[15]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[14]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[13]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[12]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[11]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[10]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[9]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[8]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[7]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[6]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[5]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[4]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[3]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[2]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[1]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDA_reg[0]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (DOUBLE_U/srcflags_reg[4]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (MDB_reg[52]) is unused and will be removed from module DP_FPU.
+WARNING: [Synth 8-3332] Sequential element (shiftl_reg[9]) is unused and will be removed from module SFPU_ADDSUB.
+WARNING: [Synth 8-3332] Sequential element (out_v0_reg[34]) is unused and will be removed from module SFPU_ADDSUB.
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/dia_op_reg' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/cc_feld_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\LEGS/DCA_CTRL/wr_puls_reg )
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/wait_reg_reg[6]' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/wait_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/wait_reg_reg[1]' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/wait_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/wait_reg_reg[7]' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/wait_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/wait_reg_reg[5]' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/wait_reg_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (BRAIN/BEFEHLS_DEC/\wait_reg_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/reti_flag_reg' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/cc_feld_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/wait_reg_reg[2]' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/wait_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/m_usel_reg' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/COP_OP_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/wmaske_i_reg[0]' (FD) to 'i_0/BRAIN/BEFEHLS_DEC/op_feld_reg_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/wmaske_i_reg[1]' (FD) to 'i_0/BRAIN/BEFEHLS_DEC/op_feld_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/setcfg_lsb_reg' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/COP_OP_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/COP_OP_reg[4]' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/cc_feld_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/COP_OP_reg[5]' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/cc_feld_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/COP_OP_reg[6]' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/cc_feld_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/COP_OP_reg[7]' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/cc_feld_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/BRAIN/BEFEHLS_DEC/COP_OP_reg[10]' (FDE) to 'i_0/BRAIN/BEFEHLS_DEC/wrval_flag_reg'
+WARNING: [Synth 8-3332] Sequential element (wait_reg_reg[7]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (wait_reg_reg[6]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (wait_reg_reg[5]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (wait_reg_reg[2]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (wait_reg_reg[1]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (wait_reg_reg[0]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (reti_flag_reg) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (op_feld_reg_reg[12]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (op_feld_reg_reg[11]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (dia_op_reg) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (setcfg_lsb_reg) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (m_usel_reg) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (wmaske_i_reg[0]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (wmaske_i_reg[1]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (COP_OP_reg[4]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (COP_OP_reg[5]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (COP_OP_reg[6]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (COP_OP_reg[7]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (COP_OP_reg[10]) is unused and will be removed from module DECODER.
+WARNING: [Synth 8-3332] Sequential element (CFG_DBG/CFG_reg[7]) is unused and will be removed from module DATENPFAD.
+WARNING: [Synth 8-3332] Sequential element (CFG_DBG/CFG_reg[6]) is unused and will be removed from module DATENPFAD.
+WARNING: [Synth 8-3332] Sequential element (CFG_DBG/CFG_reg[5]) is unused and will be removed from module DATENPFAD.
+WARNING: [Synth 8-3332] Sequential element (CFG_DBG/CFG_reg[4]) is unused and will be removed from module DATENPFAD.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:16 . Memory (MB): peak = 1692.555 ; gain = 807.477 ; free physical = 4975 ; free virtual = 30030
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:16 . Memory (MB): peak = 1692.555 ; gain = 807.477 ; free physical = 4975 ; free virtual = 30030
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DATENPFAD     |           1|     23350|
+|2     |m32632__GB1   |           1|     18301|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:16 . Memory (MB): peak = 1692.555 ; gain = 807.477 ; free physical = 4975 ; free virtual = 30030
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DATENPFAD     |           1|     23350|
+|2     |m32632__GB1   |           1|     18301|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'BRAIN/BEFEHLS_DEC/reste_ops/bwdreg_reg[1]' (FDE) to 'BRAIN/BEFEHLS_DEC/COP_OP_reg[9]'
+INFO: [Synth 8-3886] merging instance 'BRAIN/BEFEHLS_DEC/reste_ops/bwdreg_reg[0]' (FDE) to 'BRAIN/BEFEHLS_DEC/COP_OP_reg[8]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/DOUBLE_U/DOUBLE_U/DP_CMP_reg[2]' (FD) to 'STOMACH/DOUBLE_U/DOUBLE_U/mul_inst/OUT_reg[69]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[2]' (FD) to 'LEGS/VADR_R_reg[2]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[7]' (FD) to 'LEGS/VADR_R_reg[7]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[0]' (FD) to 'LEGS/VADR_R_reg[0]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[1]' (FD) to 'LEGS/VADR_R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[3]' (FD) to 'LEGS/VADR_R_reg[3]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[4]' (FD) to 'LEGS/VADR_R_reg[4]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[5]' (FD) to 'LEGS/VADR_R_reg[5]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[6]' (FD) to 'LEGS/VADR_R_reg[6]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[8]' (FD) to 'LEGS/VADR_R_reg[8]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[9]' (FD) to 'LEGS/VADR_R_reg[9]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[10]' (FD) to 'LEGS/VADR_R_reg[10]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[11]' (FD) to 'LEGS/VADR_R_reg[11]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[12]' (FD) to 'LEGS/VADR_R_reg[12]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[13]' (FD) to 'LEGS/VADR_R_reg[13]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[14]' (FD) to 'LEGS/VADR_R_reg[14]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[15]' (FD) to 'LEGS/VADR_R_reg[15]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[16]' (FD) to 'LEGS/VADR_R_reg[16]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[17]' (FD) to 'LEGS/VADR_R_reg[17]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[18]' (FD) to 'LEGS/VADR_R_reg[18]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[19]' (FD) to 'LEGS/VADR_R_reg[19]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[20]' (FD) to 'LEGS/VADR_R_reg[20]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[21]' (FD) to 'LEGS/VADR_R_reg[21]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[22]' (FD) to 'LEGS/VADR_R_reg[22]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[23]' (FD) to 'LEGS/VADR_R_reg[23]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[24]' (FD) to 'LEGS/VADR_R_reg[24]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[25]' (FD) to 'LEGS/VADR_R_reg[25]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[26]' (FD) to 'LEGS/VADR_R_reg[26]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[27]' (FD) to 'LEGS/VADR_R_reg[27]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[28]' (FD) to 'LEGS/VADR_R_reg[28]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[29]' (FD) to 'LEGS/VADR_R_reg[29]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[30]' (FD) to 'LEGS/VADR_R_reg[30]'
+INFO: [Synth 8-3886] merging instance 'STOMACH/ADDR_U/icache_adr_reg[31]' (FD) to 'LEGS/VADR_R_reg[31]'
+INFO: [Synth 8-3886] merging instance 'BRAIN/BEFEHLS_DEC/op_feld_reg_reg[9]' (FD) to 'BRAIN/BEFEHLS_DEC/reste_ops/size_dw_reg'
+INFO: [Synth 8-3886] merging instance 'BRAIN/BEFEHLS_DEC/reste_ops/inss_flag_reg' (FDE) to 'BRAIN/BEFEHLS_DEC/cc_feld_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ARMS/DC_SM/NEW_PTB_reg' (FD) to 'LEGS/IC_SM/NEW_PTB_reg'
+INFO: [Synth 8-3886] merging instance 'ARMS/MMU_CTRL/old_rst_reg' (FD) to 'LEGS/MMU_CTRL/old_rst_reg'
+INFO: [Synth 8-3886] merging instance 'ARMS/DCA_CTRL/state_reg[0]' (FD) to 'LEGS/DCA_CTRL/state_reg[0]'
+INFO: [Synth 8-3886] merging instance 'BRAIN/BEFEHLS_DEC/reste_ops/chkreg_reg[0]' (FDE) to 'BRAIN/BEFEHLS_DEC/COP_OP_reg[11]'
+INFO: [Synth 8-3886] merging instance 'BRAIN/BEFEHLS_DEC/reste_ops/chkreg_reg[1]' (FDE) to 'BRAIN/BEFEHLS_DEC/COP_OP_reg[12]'
+INFO: [Synth 8-3886] merging instance 'BRAIN/BEFEHLS_DEC/reste_ops/chkreg_reg[2]' (FDE) to 'BRAIN/BEFEHLS_DEC/COP_OP_reg[13]'
+WARNING: [Synth 8-3332] Sequential element (STOMACH/DOUBLE_U/DOUBLE_U/DP_CMP_reg[2]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (BRAIN/BEFEHLS_DEC/reste_ops/bwdreg_reg[1]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (BRAIN/BEFEHLS_DEC/reste_ops/bwdreg_reg[0]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (BRAIN/BEFEHLS_DEC/op_feld_reg_reg[9]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (BRAIN/BEFEHLS_DEC/reste_ops/inss_flag_reg) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (BRAIN/BEFEHLS_DEC/reste_ops/chkreg_reg[0]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (BRAIN/BEFEHLS_DEC/reste_ops/chkreg_reg[1]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (BRAIN/BEFEHLS_DEC/reste_ops/chkreg_reg[2]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[2]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[7]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[0]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[1]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[3]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[4]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[5]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[6]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[8]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[9]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[10]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[11]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[12]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[13]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[14]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[15]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[16]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[17]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[18]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[19]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[20]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[21]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[22]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[23]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[24]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[25]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[26]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[27]) is unused and will be removed from module m32632.
+WARNING: [Synth 8-3332] Sequential element (STOMACH/ADDR_U/icache_adr_reg[28]) is unused and will be removed from module m32632.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4480] The timing for the instance STOMACH/REG_SET_A/REGFILE_C_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance STOMACH/REG_SET_B/REGFILE_C_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/MMU_TAGS_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/TAGSET_0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/TAGSET_1_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/DATA0_A_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/DATA0_B_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/DATA0_C_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/DATA0_D_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/DATA1_A_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/DATA1_B_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/DATA1_C_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance ARMS/DATA1_D_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance LEGS/MMU_TAGS_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance LEGS/DATA0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance LEGS/DATA1_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance LEGS/KTAGSET_0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance LEGS/KTAGSET_1_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance LEGS/TAGSET_0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance LEGS/TAGSET_1_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:21 . Memory (MB): peak = 1716.570 ; gain = 831.492 ; free physical = 4801 ; free virtual = 29873
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:22 ; elapsed = 00:01:21 . Memory (MB): peak = 1716.570 ; gain = 831.492 ; free physical = 4801 ; free virtual = 29873
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:22 ; elapsed = 00:01:21 . Memory (MB): peak = 1716.570 ; gain = 831.492 ; free physical = 4801 ; free virtual = 29873
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:22 . Memory (MB): peak = 1716.570 ; gain = 831.492 ; free physical = 4803 ; free virtual = 29876
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:22 . Memory (MB): peak = 1716.570 ; gain = 831.492 ; free physical = 4803 ; free virtual = 29876
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:24 ; elapsed = 00:01:23 . Memory (MB): peak = 1716.570 ; gain = 831.492 ; free physical = 4814 ; free virtual = 29876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   433|
+|2     |DSP48E1  |    13|
+|3     |LUT1     |   262|
+|4     |LUT2     |  1458|
+|5     |LUT3     |  1813|
+|6     |LUT4     |  1384|
+|7     |LUT5     |  2493|
+|8     |LUT6     |  5495|
+|9     |MUXF7    |   198|
+|10    |MUXF8    |     3|
+|11    |RAM32M   |    24|
+|12    |RAM64M   |    12|
+|13    |RAMB18E1 |    18|
+|14    |RAMB36E1 |     2|
+|15    |FDCE     |   193|
+|16    |FDRE     |  2990|
+|17    |FDSE     |    20|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 16811|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:23 . Memory (MB): peak = 1716.570 ; gain = 831.492 ; free physical = 4814 ; free virtual = 29876
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 270 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:22 ; elapsed = 00:01:21 . Memory (MB): peak = 1716.570 ; gain = 741.352 ; free physical = 4814 ; free virtual = 29876
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:23 . Memory (MB): peak = 1716.578 ; gain = 831.500 ; free physical = 4814 ; free virtual = 29876
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 502 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'm32632' is not ideal for floorplanning, since the cellview 'm32632' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 27 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+223 Infos, 206 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:24 . Memory (MB): peak = 1810.441 ; gain = 847.809 ; free physical = 4813 ; free virtual = 29878

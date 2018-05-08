@@ -1,0 +1,4 @@
+verilog work "hdl/Simon_bit_serial_datapath_FPGA.v"
+verilog work "hdl/Simon_bit_serial_key_expansion_FPGA.v"
+verilog work "hdl/Simon_bit_serial_testbench.v"
+verilog work "hdl/simon_core.v"

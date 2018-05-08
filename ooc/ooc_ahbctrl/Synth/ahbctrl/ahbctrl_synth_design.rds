@@ -1,0 +1,412 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top ahbctrl -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22717 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1050.664 ; gain = 165.590 ; free physical = 5083 ; free virtual = 31004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ahbctrl' [/home/sean/vivado_workspace/ooc_ahbctrl/Sources/hdl/lib/grlib/amba/ahbctrl.vhd:105]
+	Parameter defmast bound to: 0 - type: integer 
+	Parameter split bound to: 0 - type: integer 
+	Parameter rrobin bound to: 1 - type: integer 
+	Parameter timeout bound to: 0 - type: integer 
+	Parameter ioaddr bound to: 4095 - type: integer 
+	Parameter iomask bound to: 4095 - type: integer 
+	Parameter cfgaddr bound to: 4080 - type: integer 
+	Parameter cfgmask bound to: 4080 - type: integer 
+	Parameter nahbm bound to: 7 - type: integer 
+	Parameter nahbs bound to: 8 - type: integer 
+	Parameter ioen bound to: 1 - type: integer 
+	Parameter disirq bound to: 0 - type: integer 
+	Parameter fixbrst bound to: 0 - type: integer 
+	Parameter debug bound to: 2 - type: integer 
+	Parameter fpnpen bound to: 0 - type: integer 
+	Parameter icheck bound to: 1 - type: integer 
+	Parameter devid bound to: 0 - type: integer 
+	Parameter enbusmon bound to: 0 - type: integer 
+	Parameter assertwarn bound to: 0 - type: integer 
+	Parameter asserterr bound to: 0 - type: integer 
+	Parameter hmstdisable bound to: 0 - type: integer 
+	Parameter hslvdisable bound to: 0 - type: integer 
+	Parameter arbdisable bound to: 0 - type: integer 
+	Parameter mprio bound to: 0 - type: integer 
+	Parameter mcheck bound to: 1 - type: integer 
+	Parameter ccheck bound to: 1 - type: integer 
+	Parameter acdm bound to: 0 - type: integer 
+	Parameter index bound to: 0 - type: integer 
+	Parameter ahbtrace bound to: 0 - type: integer 
+	Parameter hwdebug bound to: 0 - type: integer 
+	Parameter fourgslv bound to: 0 - type: integer 
+	Parameter shadow bound to: 0 - type: integer 
+	Parameter unmapslv bound to: 0 - type: integer 
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_ahbctrl/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_ahbctrl/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_ahbctrl/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+WARNING: [Synth 8-5827] expecting unsigned expression [/home/sean/vivado_workspace/ooc_ahbctrl/Sources/hdl/lib/grlib/stdlib/stdlib.vhd:423]
+INFO: [Synth 8-256] done synthesizing module 'ahbctrl' (1#1) [/home/sean/vivado_workspace/ooc_ahbctrl/Sources/hdl/lib/grlib/amba/ahbctrl.vhd:105]
+WARNING: [Synth 8-3917] design ahbctrl has port slvi[hmaster][3] driven by constant 0
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hbusreq]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hlock]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][htrans][1]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][htrans][0]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][31]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][30]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][29]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][28]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][27]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][26]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][25]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][24]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][23]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][22]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][21]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][20]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][19]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][18]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][17]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][16]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][15]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][14]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][13]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][12]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][11]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][10]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][9]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][8]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][7]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][6]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][5]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][4]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][3]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][2]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][1]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][haddr][0]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwrite]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hsize][2]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hsize][1]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hsize][0]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hburst][2]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hburst][1]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hburst][0]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hprot][3]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hprot][2]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hprot][1]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hprot][0]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][31]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][30]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][29]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][28]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][27]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][26]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][25]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][24]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][23]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][22]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][21]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][20]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][19]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][18]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][17]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][16]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][15]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][14]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][13]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][12]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][11]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][10]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][9]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][8]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][7]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][6]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][5]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][4]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][3]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][2]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][1]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hwdata][0]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][31]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][30]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][29]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][28]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][27]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][26]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][25]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][24]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][23]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][22]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][21]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][20]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][19]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][18]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][17]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][16]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][15]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][14]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][13]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][12]
+WARNING: [Synth 8-3331] design ahbctrl has unconnected port msto[15][hirq][11]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1128.102 ; gain = 243.027 ; free physical = 5004 ; free virtual = 30926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1128.102 ; gain = 243.027 ; free physical = 5004 ; free virtual = 30926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.105 ; gain = 251.031 ; free physical = 5004 ; free virtual = 30926
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+WARNING: [Synth 8-3936] Found unconnected internal register 'syncrregs.r_reg[haddr]' and it is trimmed from '14' to '9' bits. [/home/sean/vivado_workspace/ooc_ahbctrl/Sources/hdl/lib/grlib/amba/ahbctrl.vhd:732]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1176.121 ; gain = 291.047 ; free physical = 4969 ; free virtual = 30891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 17    
+	   5 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 35    
+	   2 Input      3 Bit        Muxes := 27    
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 263   
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ahbctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 17    
+	   5 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 35    
+	   2 Input      3 Bit        Muxes := 27    
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 263   
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1198.121 ; gain = 313.047 ; free physical = 4943 ; free virtual = 30865
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design ahbctrl has port msti[hgrant][8] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port msti[hgrant][9] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port msti[hgrant][10] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port msti[hgrant][11] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port msti[hgrant][12] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port msti[hgrant][13] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port msti[hgrant][14] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port msti[hgrant][15] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port slvi[hsel][8] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port slvi[hsel][9] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port slvi[hsel][10] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port slvi[hsel][11] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port slvi[hsel][12] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port slvi[hsel][13] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port slvi[hsel][14] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port slvi[hsel][15] driven by constant 0
+WARNING: [Synth 8-3917] design ahbctrl has port slvi[hmaster][3] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1215.137 ; gain = 330.062 ; free physical = 4926 ; free virtual = 30847
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1215.137 ; gain = 330.062 ; free physical = 4926 ; free virtual = 30847
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\syncrregs.r_reg[ldefmst] )
+WARNING: [Synth 8-3332] Sequential element (syncrregs.r_reg[ldefmst]) is unused and will be removed from module ahbctrl.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.480 ; gain = 482.406 ; free physical = 4804 ; free virtual = 30729
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.480 ; gain = 482.406 ; free physical = 4804 ; free virtual = 30729
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.480 ; gain = 482.406 ; free physical = 4804 ; free virtual = 30729
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (syncrregs.r_reg[htrans][0]) is unused and will be removed from module ahbctrl.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.480 ; gain = 482.406 ; free physical = 4804 ; free virtual = 30729
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.480 ; gain = 482.406 ; free physical = 4804 ; free virtual = 30729
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.480 ; gain = 482.406 ; free physical = 4804 ; free virtual = 30729
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.480 ; gain = 482.406 ; free physical = 4793 ; free virtual = 30718
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.480 ; gain = 482.406 ; free physical = 4792 ; free virtual = 30717
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.480 ; gain = 482.406 ; free physical = 4792 ; free virtual = 30717
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    64|
+|2     |LUT1   |     1|
+|3     |LUT2   |    68|
+|4     |LUT3   |    15|
+|5     |LUT4   |   270|
+|6     |LUT5   |    79|
+|7     |LUT6   |  1307|
+|8     |MUXF7  |   402|
+|9     |MUXF8  |   120|
+|10    |FDRE   |    97|
+|11    |FDSE   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  2427|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.480 ; gain = 482.406 ; free physical = 4792 ; free virtual = 30717
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15481 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1367.480 ; gain = 387.812 ; free physical = 4792 ; free virtual = 30717
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.488 ; gain = 482.414 ; free physical = 4792 ; free virtual = 30717
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'ahbctrl' is not ideal for floorplanning, since the cellview 'ahbctrl' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 126 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1461.352 ; gain = 494.270 ; free physical = 4790 ; free virtual = 30716

@@ -1,0 +1,4 @@
+verilog work "hdl/down_clocking_even.v"
+verilog work "hdl/down_clocking_odd.v"
+verilog work "hdl/minus_one.v"
+verilog work "hdl/pwm.v"

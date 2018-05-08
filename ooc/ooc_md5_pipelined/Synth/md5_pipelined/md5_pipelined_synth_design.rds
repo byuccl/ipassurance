@@ -1,0 +1,317 @@
+Command: synth_design -mode out_of_context -flatten_hierarchy full -top md5_pipelined -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31517 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1042.207 ; gain = 157.137 ; free physical = 9370 ; free virtual = 33308
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'md5_pipelined' [/home/sean/ipassurance/ooc/ooc_md5_pipelined/Sources/hdl/md5_pipelined.v:54]
+INFO: [Synth 8-256] done synthesizing module 'md5_pipelined' (1#1) [/home/sean/ipassurance/ooc/ooc_md5_pipelined/Sources/hdl/md5_pipelined.v:54]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1113.645 ; gain = 228.574 ; free physical = 9294 ; free virtual = 33235
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1113.645 ; gain = 228.574 ; free physical = 9295 ; free virtual = 33235
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1121.648 ; gain = 236.578 ; free physical = 9295 ; free virtual = 33235
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1217.672 ; gain = 332.602 ; free physical = 9191 ; free virtual = 33147
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |md5_pipelined__GB0 |           1|     28146|
+|2     |md5_pipelined__GB1 |           1|      6668|
+|3     |md5_pipelined__GB2 |           1|      8651|
+|4     |md5_pipelined__GB3 |           1|     14028|
+|5     |md5_pipelined__GB4 |           1|     10832|
++------+-------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 64    
+	   4 Input     32 Bit       Adders := 64    
++---XORs : 
+	   3 Input     32 Bit         XORs := 16    
+	   2 Input     32 Bit         XORs := 16    
++---Registers : 
+	               32 Bit    Registers := 1144  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module md5_pipelined 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 64    
+	   4 Input     32 Bit       Adders := 64    
++---XORs : 
+	   3 Input     32 Bit         XORs := 16    
+	   2 Input     32 Bit         XORs := 16    
++---Registers : 
+	               32 Bit    Registers := 1144  
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1256.672 ; gain = 371.602 ; free physical = 9172 ; free virtual = 33130
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1264.680 ; gain = 379.609 ; free physical = 9163 ; free virtual = 33122
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1264.680 ; gain = 379.609 ; free physical = 9163 ; free virtual = 33122
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |md5_pipelined__GB0 |           1|     29918|
+|2     |md5_pipelined__GB1 |           1|      7082|
+|3     |md5_pipelined__GB2 |           1|      8889|
+|4     |md5_pipelined__GB3 |           1|     15024|
+|5     |md5_pipelined__GB4 |           1|     11184|
++------+-------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.711 ; gain = 533.641 ; free physical = 9002 ; free virtual = 32963
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.711 ; gain = 533.641 ; free physical = 9002 ; free virtual = 32963
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |md5_pipelined__GB0 |           1|     26604|
+|2     |md5_pipelined__GB1 |           1|      6535|
+|3     |md5_pipelined__GB2 |           1|      8443|
+|4     |md5_pipelined__GB3 |           1|     13755|
+|5     |md5_pipelined__GB4 |           1|     10746|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1418.711 ; gain = 533.641 ; free physical = 9002 ; free virtual = 32963
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |md5_pipelined__GB0 |           1|     26604|
+|2     |md5_pipelined__GB1 |           1|      6535|
+|3     |md5_pipelined__GB2 |           1|      8443|
+|4     |md5_pipelined__GB3 |           1|     13755|
+|5     |md5_pipelined__GB4 |           1|     10746|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1483.750 ; gain = 598.680 ; free physical = 8938 ; free virtual = 32899
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1483.750 ; gain = 598.680 ; free physical = 8938 ; free virtual = 32899
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1483.750 ; gain = 598.680 ; free physical = 8938 ; free virtual = 32899
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1483.750 ; gain = 598.680 ; free physical = 8938 ; free virtual = 32898
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1483.750 ; gain = 598.680 ; free physical = 8938 ; free virtual = 32898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1483.750 ; gain = 598.680 ; free physical = 8937 ; free virtual = 32897
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|md5_pipelined | w31_reg[12][31] | 19     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w27_reg[8][31]  | 19     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w15_reg[15][31] | 15     | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w22_reg[15][31] | 7      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w21_reg[10][31] | 11     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w26_reg[3][31]  | 23     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w25_reg[14][31] | 11     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w24_reg[9][31]  | 15     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w30_reg[7][31]  | 23     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w28_reg[13][31] | 15     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w32_reg[5][31]  | 12     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w39_reg[10][31] | 18     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w36_reg[1][31]  | 20     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w55_reg[1][31]  | 19     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w35_reg[14][31] | 10     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w33_reg[8][31]  | 6      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w56_reg[8][31]  | 23     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w50_reg[14][31] | 15     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w51_reg[5][31]  | 19     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w5_reg[5][31]   | 5      | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w20_reg[5][31]  | 15     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w38_reg[7][31]  | 8      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w40_reg[13][31] | 12     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w54_reg[10][31] | 15     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w11_reg[11][31] | 11     | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w18_reg[11][31] | 7      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w34_reg[11][31] | 16     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w19_reg[0][31]  | 19     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w16_reg[1][31]  | 15     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w14_reg[14][31] | 14     | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w13_reg[13][31] | 13     | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w12_reg[12][31] | 12     | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w10_reg[10][31] | 10     | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w9_reg[9][31]   | 9      | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w8_reg[8][31]   | 8      | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w7_reg[7][31]   | 7      | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w41_reg[0][31]  | 22     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w61_reg[11][31] | 27     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w42_reg[3][31]  | 16     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w45_reg[12][31] | 14     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w52_reg[12][31] | 7      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w48_reg[0][31]  | 7      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w44_reg[9][31]  | 20     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w46_reg[15][31] | 24     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w49_reg[7][31]  | 11     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w53_reg[3][31]  | 11     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w57_reg[15][31] | 11     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w29_reg[2][31]  | 27     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w47_reg[2][31]  | 18     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w6_reg[6][31]   | 6      | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w17_reg[6][31]  | 11     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w43_reg[6][31]  | 26     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w4_reg[4][31]   | 4      | 32    | NO           | YES                | YES               | 32     | 0       | 
+|md5_pipelined | w23_reg[4][31]  | 19     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w37_reg[4][31]  | 14     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w58_reg[6][31]  | 15     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w59_reg[13][31] | 19     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w60_reg[4][31]  | 23     | 32    | NO           | NO                 | YES               | 0      | 32      | 
+|md5_pipelined | w62_reg[2][31]  | 15     | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|md5_pipelined | w63_reg[9][31]  | 19     | 32    | NO           | NO                 | YES               | 0      | 32      | 
++--------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |  1024|
+|2     |LUT2    |  2048|
+|3     |LUT3    |   674|
+|4     |LUT4    |  1684|
+|5     |LUT5    |  2300|
+|6     |LUT6    |  2535|
+|7     |SRL16E  |  1248|
+|8     |SRLC32E |   672|
+|9     |FDRE    | 10688|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 22873|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1483.750 ; gain = 598.680 ; free physical = 8937 ; free virtual = 32897
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 1483.750 ; gain = 511.539 ; free physical = 8937 ; free virtual = 32897
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1483.758 ; gain = 598.688 ; free physical = 8937 ; free virtual = 32897
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1024 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'md5_pipelined' is not ideal for floorplanning, since the cellview 'md5_pipelined' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1577.621 ; gain = 617.996 ; free physical = 8915 ; free virtual = 32899

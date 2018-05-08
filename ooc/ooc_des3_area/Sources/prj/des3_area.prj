@@ -1,0 +1,13 @@
+verilog work "hdl/sbox1.v"
+verilog work "hdl/sbox2.v"
+verilog work "hdl/sbox3.v"
+verilog work "hdl/sbox4.v"
+verilog work "hdl/sbox5.v"
+verilog work "hdl/sbox6.v"
+verilog work "hdl/sbox7.v"
+verilog work "hdl/sbox8.v
+verilog work "hdl/crp.v"
+verilog work "hdl/key_sel.v"
+verilog work "hdl/des.v"
+verilog work "hdl/key_sel3.v"
+verilog work "hdl/des3_area.v"

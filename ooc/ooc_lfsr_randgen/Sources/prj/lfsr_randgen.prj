@@ -1,0 +1,3 @@
+vhdl work "hdl/lfsr_pkg.vhd"
+vhdl work "hdl/lfsr_randgen.vhd"
+vhdl work "hdl/lfsr_tb.vhd"

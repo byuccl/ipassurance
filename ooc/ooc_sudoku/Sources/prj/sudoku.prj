@@ -1,0 +1,4 @@
+verilog work "hdl/minPiece.v"
+verilog work "hdl/piece.v"
+verilog work "hdl/sudoku_search.v"
+verilog work "hdl/sudoku.v"

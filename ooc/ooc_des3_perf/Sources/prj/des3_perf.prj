@@ -1,0 +1,13 @@
+verilog work "hdl/verilog/common/crp.v"
+verilog work "hdl/verilog/common/sbox1.v"
+verilog work "hdl/verilog/common/sbox2.v"
+verilog work "hdl/verilog/common/sbox3.v"
+verilog work "hdl/verilog/common/sbox4.v"
+verilog work "hdl/verilog/common/sbox5.v"
+verilog work "hdl/verilog/common/sbox6.v"
+verilog work "hdl/verilog/common/sbox7.v"
+verilog work "hdl/verilog/common/sbox8.v"
+verilog work "hdl/verilog/perf_opt/key_sel.v"
+verilog work "hdl/verilog/perf_opt/des.v"
+verilog work "hdl/verilog/perf_opt/des3_perf.v"
+
