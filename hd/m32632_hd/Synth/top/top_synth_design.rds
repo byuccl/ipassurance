@@ -1,0 +1,1281 @@
+Command: synth_design -mode default -flatten_hierarchy full -top top -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 383 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1050.215 ; gain = 165.137 ; free physical = 4464 ; free virtual = 29861
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'm32632' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/blackbox/blackbox.v:3]
+INFO: [Synth 8-256] done synthesizing module 'm32632' (1#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/blackbox/blackbox.v:3]
+WARNING: [Synth 8-689] width (2) of port connection 'DWCTRL' does not match port width (3) of module 'm32632' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/top.v:81]
+WARNING: [Synth 8-689] width (2) of port connection 'IWCTRL' does not match port width (3) of module 'm32632' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/top.v:82]
+WARNING: [Synth 8-350] instance 'm32632_0' of module 'm32632' requires 41 connections, but only 40 given [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/top.v:57]
+INFO: [Synth 8-638] synthesizing module 'md5_pipelined' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/md5_pipelined/md5_pipelined.v:54]
+INFO: [Synth 8-256] done synthesizing module 'md5_pipelined' (2#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/md5_pipelined/md5_pipelined.v:54]
+INFO: [Synth 8-638] synthesizing module 'median' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/median.v:36]
+	Parameter MEM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter LUT_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter MEM_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter PIXEL_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter IMG_WIDTH bound to: 320 - type: integer 
+	Parameter IMG_HEIGHT bound to: 320 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'state_machine' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/state_machine.v:35]
+	Parameter LUT_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter IMG_WIDTH bound to: 320 - type: integer 
+	Parameter IMG_HEIGHT bound to: 320 - type: integer 
+WARNING: [Synth 8-5788] Register valid_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/state_machine.v:75]
+WARNING: [Synth 8-3848] Net memory_shift in module/entity state_machine does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/state_machine.v:50]
+INFO: [Synth 8-256] done synthesizing module 'state_machine' (3#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/state_machine.v:35]
+WARNING: [Synth 8-350] instance 'window_contol' of module 'state_machine' requires 9 connections, but only 6 given [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/median.v:138]
+INFO: [Synth 8-638] synthesizing module 'common_network' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/common_network.v:35]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'node' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 1 - type: integer 
+	Parameter HI_MUX bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:62]
+INFO: [Synth 8-256] done synthesizing module 'node' (4#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+INFO: [Synth 8-256] done synthesizing module 'common_network' (5#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/common_network.v:35]
+INFO: [Synth 8-638] synthesizing module 'dff_3_pipe' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/dff_3_pipe.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff_3_pipe' (6#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/dff_3_pipe.v:34]
+INFO: [Synth 8-638] synthesizing module 'pixel_network' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/pixel_network.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'node__parameterized0' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 1 - type: integer 
+	Parameter HI_MUX bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:62]
+WARNING: [Synth 8-3848] Net data_hi in module/entity node__parameterized0 does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:43]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized0' (6#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u0' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/pixel_network.v:68]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized1' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 0 - type: integer 
+	Parameter HI_MUX bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:62]
+WARNING: [Synth 8-3848] Net data_lo in module/entity node__parameterized1 does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:44]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized1' (6#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u2' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/pixel_network.v:94]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized2' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 1 - type: integer 
+	Parameter HI_MUX bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:62]
+WARNING: [Synth 8-3848] Net data_hi in module/entity node__parameterized2 does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:43]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized2' (6#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u3' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/pixel_network.v:107]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized3' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 0 - type: integer 
+	Parameter HI_MUX bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:62]
+WARNING: [Synth 8-3848] Net data_lo in module/entity node__parameterized3 does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:44]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized3' (6#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u4' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/pixel_network.v:119]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized4' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 0 - type: integer 
+	Parameter HI_MUX bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:62]
+WARNING: [Synth 8-3848] Net data_lo in module/entity node__parameterized4 does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:44]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized4' (6#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u5' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/pixel_network.v:131]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized5' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 1 - type: integer 
+	Parameter HI_MUX bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:62]
+WARNING: [Synth 8-3848] Net data_hi in module/entity node__parameterized5 does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:43]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized5' (6#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u6' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/pixel_network.v:144]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized6' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 0 - type: integer 
+	Parameter HI_MUX bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:62]
+WARNING: [Synth 8-3848] Net data_lo in module/entity node__parameterized6 does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:44]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized6' (6#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u8' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/pixel_network.v:170]
+INFO: [Synth 8-638] synthesizing module 'node__parameterized7' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter LOW_MUX bound to: 1 - type: integer 
+	Parameter HI_MUX bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:62]
+WARNING: [Synth 8-3848] Net data_hi in module/entity node__parameterized7 does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:43]
+INFO: [Synth 8-256] done synthesizing module 'node__parameterized7' (6#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/node.v:34]
+WARNING: [Synth 8-350] instance 'node_u9' of module 'node' requires 4 connections, but only 3 given [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/pixel_network.v:183]
+INFO: [Synth 8-256] done synthesizing module 'pixel_network' (7#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/pixel_network.v:34]
+INFO: [Synth 8-256] done synthesizing module 'median' (8#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/median/median.v:36]
+INFO: [Synth 8-638] synthesizing module 'mips_16' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/mips_16.v:18]
+INFO: [Synth 8-638] synthesizing module 'IF_stage' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/IF_stage.v:15]
+INFO: [Synth 8-638] synthesizing module 'instruction_mem' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:15]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+WARNING: [Synth 8-3848] Net rom in module/entity instruction_mem does not have driver. [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:23]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'instruction_mem' (9#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/instruction_mem.v:15]
+INFO: [Synth 8-256] done synthesizing module 'IF_stage' (10#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/IF_stage.v:15]
+INFO: [Synth 8-638] synthesizing module 'ID_stage' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/ID_stage.v:14]
+INFO: [Synth 8-256] done synthesizing module 'ID_stage' (11#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/ID_stage.v:14]
+INFO: [Synth 8-638] synthesizing module 'EX_stage' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/EX_stage.v:13]
+INFO: [Synth 8-638] synthesizing module 'alu' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/alu.v:13]
+WARNING: [Synth 8-153] case item 3'bxxx will never be executed [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/alu.v:22]
+INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/alu.v:22]
+INFO: [Synth 8-256] done synthesizing module 'alu' (12#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/alu.v:13]
+INFO: [Synth 8-256] done synthesizing module 'EX_stage' (13#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/EX_stage.v:13]
+INFO: [Synth 8-638] synthesizing module 'MEM_stage' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/MEM_stage.v:14]
+INFO: [Synth 8-638] synthesizing module 'data_mem' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/data_mem.v:14]
+INFO: [Synth 8-256] done synthesizing module 'data_mem' (14#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/data_mem.v:14]
+INFO: [Synth 8-256] done synthesizing module 'MEM_stage' (15#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/MEM_stage.v:14]
+INFO: [Synth 8-638] synthesizing module 'WB_stage' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/WB_stage.v:13]
+INFO: [Synth 8-256] done synthesizing module 'WB_stage' (16#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/WB_stage.v:13]
+INFO: [Synth 8-638] synthesizing module 'register_file' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/register_file.v:18]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (17#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/register_file.v:18]
+INFO: [Synth 8-638] synthesizing module 'hazard_detection_unit' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/hazard_detection_unit.v:20]
+INFO: [Synth 8-256] done synthesizing module 'hazard_detection_unit' (18#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/hazard_detection_unit.v:20]
+INFO: [Synth 8-256] done synthesizing module 'mips_16' (19#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/mips_16.v:18]
+INFO: [Synth 8-256] done synthesizing module 'top' (20#1) [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/top.v:23]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[15]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[14]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[13]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[12]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[11]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[10]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[9]
+WARNING: [Synth 8-3331] design data_mem has unconnected port mem_access_addr[8]
+WARNING: [Synth 8-3331] design instruction_mem has unconnected port clk
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[7]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[6]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[5]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[4]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[3]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[2]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[1]
+WARNING: [Synth 8-3331] design node__parameterized7 has unconnected port data_hi[0]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[7]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[6]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[5]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[4]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[3]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[2]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[1]
+WARNING: [Synth 8-3331] design node__parameterized6 has unconnected port data_lo[0]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[7]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[6]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[5]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[4]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[3]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[2]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[1]
+WARNING: [Synth 8-3331] design node__parameterized5 has unconnected port data_hi[0]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[7]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[6]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[5]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[4]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[3]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[2]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[1]
+WARNING: [Synth 8-3331] design node__parameterized4 has unconnected port data_lo[0]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[7]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[6]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[5]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[4]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[3]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[2]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[1]
+WARNING: [Synth 8-3331] design node__parameterized3 has unconnected port data_lo[0]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[7]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[6]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[5]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[4]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[3]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[2]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[1]
+WARNING: [Synth 8-3331] design node__parameterized2 has unconnected port data_hi[0]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[7]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[6]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[5]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[4]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[3]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[2]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[1]
+WARNING: [Synth 8-3331] design node__parameterized1 has unconnected port data_lo[0]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[7]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[6]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[5]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[4]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[3]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[2]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[1]
+WARNING: [Synth 8-3331] design node__parameterized0 has unconnected port data_hi[0]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[9]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[8]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[7]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[6]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[5]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[4]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[3]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[2]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[1]
+WARNING: [Synth 8-3331] design state_machine has unconnected port memory_shift[0]
+WARNING: [Synth 8-3331] design top has unconnected port JB[7]
+WARNING: [Synth 8-3331] design top has unconnected port JB[6]
+WARNING: [Synth 8-3331] design top has unconnected port JB[5]
+WARNING: [Synth 8-3331] design top has unconnected port JB[4]
+WARNING: [Synth 8-3331] design top has unconnected port JB[3]
+WARNING: [Synth 8-3331] design top has unconnected port JB[2]
+WARNING: [Synth 8-3331] design top has unconnected port JB[1]
+WARNING: [Synth 8-3331] design top has unconnected port JB[0]
+WARNING: [Synth 8-3331] design top has unconnected port JD[5]
+WARNING: [Synth 8-3331] design top has unconnected port JD[4]
+WARNING: [Synth 8-3331] design top has unconnected port JD[3]
+WARNING: [Synth 8-3331] design top has unconnected port JD[2]
+WARNING: [Synth 8-3331] design top has unconnected port JD[1]
+WARNING: [Synth 8-3331] design top has unconnected port JD[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.652 ; gain = 239.574 ; free physical = 4387 ; free virtual = 29785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.652 ; gain = 239.574 ; free physical = 4386 ; free virtual = 29785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1132.656 ; gain = 247.578 ; free physical = 4386 ; free virtual = 29785
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/IF_stage.v:35]
+INFO: [Synth 8-5544] ROM "decoding_op_is_branch" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "branch_taken" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "decoding_op_is_store" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/mips_16/alu.v:22]
+INFO: [Synth 8-5544] ROM "reg_array_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_array_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1248.812 ; gain = 363.734 ; free physical = 4273 ; free virtual = 29671
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |md5_pipelined__GB0 |           1|     28940|
+|2     |md5_pipelined__GB1 |           1|      4007|
+|3     |md5_pipelined__GB2 |           1|      8081|
+|4     |md5_pipelined__GB3 |           1|     25761|
+|5     |top__GC0           |           1|      9380|
++------+-------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 64    
+	   4 Input     32 Bit       Adders := 64    
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 11    
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 16    
+	   2 Input     32 Bit         XORs := 16    
+	   4 Input     32 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 1     
+	   7 Input     10 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 1     
++---XORs : 
+	               36 Bit    Wide XORs := 1     
+	               24 Bit    Wide XORs := 1     
+	               10 Bit    Wide XORs := 1     
+	                8 Bit    Wide XORs := 2     
++---Registers : 
+	               57 Bit    Registers := 1     
+	               38 Bit    Registers := 1     
+	               37 Bit    Registers := 1     
+	               32 Bit    Registers := 1144  
+	               16 Bit    Registers := 9     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 10    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 73    
+	   2 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+	   7 Input     10 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 1     
++---XORs : 
+	               36 Bit    Wide XORs := 1     
+	               24 Bit    Wide XORs := 1     
+	               10 Bit    Wide XORs := 1     
+	                8 Bit    Wide XORs := 2     
+Module md5_pipelined 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 64    
+	   4 Input     32 Bit       Adders := 64    
++---XORs : 
+	   3 Input     32 Bit         XORs := 16    
+	   2 Input     32 Bit         XORs := 16    
++---Registers : 
+	               32 Bit    Registers := 1144  
+Module state_machine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 11    
++---Registers : 
+	               10 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module node__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module dff_3_pipe__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+Module dff_3_pipe__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+Module dff_3_pipe 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+Module node__parameterized0__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__parameterized1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized2__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized3__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized4__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized5__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__parameterized6__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized7__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized0__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__17 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__parameterized1__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized2__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized3__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized4__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized5__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__parameterized6__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized7__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized0__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__19 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__parameterized1__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized2__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized3__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized4__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized5__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__18 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__parameterized6__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized7__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module node__parameterized6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module node__parameterized7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module IF_stage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module ID_stage 
+Detailed RTL Component Info : 
++---Registers : 
+	               57 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+Module EX_stage 
+Detailed RTL Component Info : 
++---Registers : 
+	               38 Bit    Registers := 1     
+Module MEM_stage 
+Detailed RTL Component Info : 
++---Registers : 
+	               37 Bit    Registers := 1     
+Module WB_stage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module register_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 8     
++---Muxes : 
+	   9 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1264.828 ; gain = 379.750 ; free physical = 4256 ; free virtual = 29654
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design top has unconnected port JB[7]
+WARNING: [Synth 8-3331] design top has unconnected port JB[6]
+WARNING: [Synth 8-3331] design top has unconnected port JB[5]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1272.836 ; gain = 387.758 ; free physical = 4247 ; free virtual = 29645
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1272.836 ; gain = 387.758 ; free physical = 4247 ; free virtual = 29645
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |md5_pipelined__GB0 |           1|     30706|
+|2     |md5_pipelined__GB1 |           1|      4185|
+|3     |md5_pipelined__GB2 |           1|      8493|
+|4     |md5_pipelined__GB3 |           1|     27177|
+|5     |top__GC0           |           1|     10569|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                            | Inference | Size (Depth x Width) | Primitives       | 
++------------+---------------------------------------+-----------+----------------------+------------------+
+|top         | mips_16_0/MEM_stage_inst/dmem/ram_reg | Implied   | 256 x 16             | RAM256X1S x 16   | 
++------------+---------------------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[0]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[1]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[2]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[9]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[3]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[10]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[4]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[11]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[5]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[14]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[15]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[13]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[12]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[6]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[7]' (FDCE) to 'i_4/mips_16_0/ID_stage_inst/instruction_reg_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_16_0/ID_stage_inst/instruction_reg_reg[8] )
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][22]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][22]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][23]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][23]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][24]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][24]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][25]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][25]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][26]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][26]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][27]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][27]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][28]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][28]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][29]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][29]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][30]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][30]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][31]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][17]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][17]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][18]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][18]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][19]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][19]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][20]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][20]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][21]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][16]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][16]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][31]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][31]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][0]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][0]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][1]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][1]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][2]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][2]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][3]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][4]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][4]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][5]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][6]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][7]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][7]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][8]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][8]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][9]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][9]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][10]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][10]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][11]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][11]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][12]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][12]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][13]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][13]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][14]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][14]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[15][15]' (FD) to 'md5_pipelined_0i_3/w1_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][21]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][21]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][22]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][22]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][23]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][23]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][24]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][24]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][25]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][25]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][26]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][26]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][27]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][27]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][28]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][28]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][29]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][29]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][30]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][30]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][0]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][1]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][2]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][2]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][3]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][3]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][4]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][4]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][5]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][6]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][7]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][7]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][8]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][8]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][9]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][9]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][10]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][10]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][11]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][11]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][12]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][13]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][13]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][14]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][14]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][15]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][15]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][16]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][16]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][17]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][17]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][18]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][18]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][19]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][19]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[14][20]' (FD) to 'md5_pipelined_0i_3/w1_reg[6][20]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][26]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][26]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][27]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][27]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][28]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][28]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][29]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][29]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][30]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][30]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][31]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][0]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][1]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][2]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][3]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][4]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][5]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][6]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][7]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][8]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][8]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][9]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][10]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][11]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][11]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][12]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][13]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'md5_pipelined_0i_3/w1_reg[13][14]' (FD) to 'md5_pipelined_0i_3/w1_reg[1][14]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\d2_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a3_reg[26] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 1456.750 ; gain = 571.672 ; free physical = 3934 ; free virtual = 29332
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 1456.750 ; gain = 571.672 ; free physical = 3934 ; free virtual = 29332
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |md5_pipelined__GB0 |           1|     28150|
+|2     |md5_pipelined__GB1 |           1|      3993|
+|3     |md5_pipelined__GB2 |           1|      7350|
+|4     |md5_pipelined__GB3 |           1|     18407|
+|5     |top__GC0           |           1|      3362|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 1456.750 ; gain = 571.672 ; free physical = 3934 ; free virtual = 29332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |md5_pipelined__GB0 |           1|     28150|
+|2     |md5_pipelined__GB1 |           1|      3993|
+|3     |md5_pipelined__GB2 |           1|      7350|
+|4     |md5_pipelined__GB3 |           1|     18407|
+|5     |top__GC0           |           1|      3362|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w1_reg[3][31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w2_reg[3][31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w3_reg[3][31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w4_reg[3][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w4_reg[3][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w4_reg[3][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (md5_pipelined_0/w4_reg[3][3]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:45 . Memory (MB): peak = 1516.281 ; gain = 631.203 ; free physical = 3874 ; free virtual = 29272
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:46 ; elapsed = 00:00:45 . Memory (MB): peak = 1516.281 ; gain = 631.203 ; free physical = 3874 ; free virtual = 29272
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:46 ; elapsed = 00:00:45 . Memory (MB): peak = 1516.281 ; gain = 631.203 ; free physical = 3874 ; free virtual = 29272
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:46 . Memory (MB): peak = 1516.281 ; gain = 631.203 ; free physical = 3874 ; free virtual = 29272
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:46 . Memory (MB): peak = 1516.281 ; gain = 631.203 ; free physical = 3874 ; free virtual = 29272
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:46 . Memory (MB): peak = 1516.281 ; gain = 631.203 ; free physical = 3874 ; free virtual = 29272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | md5_pipelined_0/w62_reg[2][31]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w60_reg[4][31]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w63_reg[9][31]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w61_reg[11][31] | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w3_reg[11][22]  | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w4_reg[0][19]   | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w5_reg[1][31]   | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w7_reg[11][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w8_reg[0][23]   | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w9_reg[1][31]   | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w11_reg[11][22] | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w12_reg[8][19]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w13_reg[1][26]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w15_reg[15][30] | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w16_reg[13][0]  | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w18_reg[11][18] | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w19_reg[12][0]  | 7      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w20_reg[13][0]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w22_reg[11][18] | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w23_reg[12][0]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w24_reg[13][0]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w26_reg[11][0]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w30_reg[11][0]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w34_reg[11][0]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w6_reg[2][22]   | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w10_reg[2][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w14_reg[2][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w17_reg[2][22]  | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w27_reg[4][3]   | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w21_reg[2][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w28_reg[9][31]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w31_reg[4][3]   | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w25_reg[2][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w32_reg[9][31]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w37_reg[4][3]   | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w29_reg[2][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w36_reg[9][31]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w41_reg[4][3]   | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w38_reg[11][28] | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w40_reg[9][31]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w35_reg[2][22]  | 6      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w45_reg[4][3]   | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w42_reg[11][28] | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w44_reg[9][31]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w39_reg[2][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w48_reg[4][3]   | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w46_reg[11][28] | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w43_reg[2][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w49_reg[11][28] | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w51_reg[9][31]  | 7      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w47_reg[2][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w53_reg[11][28] | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w50_reg[2][22]  | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w52_reg[4][31]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w55_reg[9][25]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w54_reg[2][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w56_reg[4][31]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w57_reg[11][26] | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w58_reg[2][22]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|top         | md5_pipelined_0/w59_reg[9][17]  | 4      | 32    | NO           | NO                 | YES               | 32     | 0       | 
++------------+---------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |m32632        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |m32632 |     1|
+|2     |BUFG   |     1|
+|3     |CARRY4 |  1094|
+|4     |LUT1   |    34|
+|5     |LUT2   |  2046|
+|6     |LUT3   |   871|
+|7     |LUT4   |  1873|
+|8     |LUT5   |  2527|
+|9     |LUT6   |  2953|
+|10    |SRL16E |  1920|
+|11    |FDCE   |   132|
+|12    |FDRE   | 10201|
+|13    |IBUF   |    28|
+|14    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 24028|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:46 . Memory (MB): peak = 1516.281 ; gain = 631.203 ; free physical = 3874 ; free virtual = 29272
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13190 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:44 . Memory (MB): peak = 1516.281 ; gain = 541.062 ; free physical = 3874 ; free virtual = 29272
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:46 . Memory (MB): peak = 1516.289 ; gain = 631.211 ; free physical = 3874 ; free virtual = 29272
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1122 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'm32632' instantiated as 'm32632_0' [/home/sean/vivado_workspace/m32632_hd/Sources/hdl/top.v:57]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+265 Infos, 315 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:48 . Memory (MB): peak = 1610.152 ; gain = 647.520 ; free physical = 3876 ; free virtual = 29274

@@ -1,0 +1,11 @@
+
+vhdl PowerSequencer "hdl/PowerSequencer/PowerSequencer.vhd"
+vhdl PowerSequencer "hdl/PowerSequencer/retrigg_timer.vhd"
+
+verilog wb_lcd "hdl/wb_lcd/delay_counter.v"
+verilog wb_lcd "hdl/wb_lcd/lcd_defines.v"
+verilog wb_lcd "hdl/wb_lcd/lcd_display.v"
+verilog wb_lcd "hdl/wb_lcd/wb_lcd.v"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

@@ -1,0 +1,28 @@
+
+verilog cpu8080 "hdl/cpu8080/cpu8080.v"
+
+vhdl fixed_point_sqrt "hdl/fixed_point_sqrt/fixed_point_sqrt.vhd"
+
+vhdl graphiti "hdl/graphiti/dds_sinus.vhd"
+vhdl graphiti "hdl/graphiti/delay.vhd"
+vhdl graphiti "hdl/graphiti/myfir.vhd"
+vhdl graphiti "hdl/graphiti/rgb2yuv.vhd"
+vhdl graphiti "hdl/graphiti/dds.vhd"
+vhdl graphiti "hdl/graphiti/graphiti.vhd"
+vhdl graphiti "hdl/graphiti/paltimer.vhd"
+
+verilog hight "hdl/hight/CONTROL.v"
+verilog hight "hdl/hight/CRYPTO_PATH.v"
+verilog hight "hdl/hight/hight.v"
+verilog hight "hdl/hight/KEY_SCHED.v"
+verilog hight "hdl/hight/RF.v"
+verilog hight "hdl/hight/SKG.v"
+verilog hight "hdl/hight/WF.v"
+verilog hight "hdl/hight/WKG.v"
+
+vhdl lfsr_randgen "hdl/lfsr_randgen/lfsr_pkg.vhd"
+vhdl lfsr_randgen "hdl/lfsr_randgen/lfsr_randgen.vhd"
+vhdl lfsr_randgen "hdl/lfsr_randgen/lfsr_tb.vhd"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

@@ -1,0 +1,392 @@
+Command: synth_design -mode default -flatten_hierarchy full -top top -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19624 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.215 ; gain = 164.137 ; free physical = 7415 ; free virtual = 31668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/top.v:23]
+	Parameter wb_nb bound to: 32 - type: integer 
+	Parameter adr_wb_nb bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'divider_dshift' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/divider_dshift.v:1]
+	Parameter state_1 bound to: 1 - type: integer 
+	Parameter state_2 bound to: 2 - type: integer 
+	Parameter state_3 bound to: 4 - type: integer 
+	Parameter state_4 bound to: 8 - type: integer 
+	Parameter state_5 bound to: 16 - type: integer 
+	Parameter state_6 bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'shifter' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/shifter.v:72]
+INFO: [Synth 8-638] synthesizing module 'shift_1b' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/shifter.v:1]
+INFO: [Synth 8-256] done synthesizing module 'shift_1b' (1#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/shifter.v:1]
+INFO: [Synth 8-638] synthesizing module 'shift_3b' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/shifter.v:10]
+INFO: [Synth 8-256] done synthesizing module 'shift_3b' (2#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/shifter.v:10]
+INFO: [Synth 8-638] synthesizing module 'shift_7b' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/shifter.v:26]
+INFO: [Synth 8-256] done synthesizing module 'shift_7b' (3#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/shifter.v:26]
+INFO: [Synth 8-256] done synthesizing module 'shifter' (4#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/shifter.v:72]
+INFO: [Synth 8-638] synthesizing module 'adder_32bit' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/pid/CLA_fixed.v:47]
+INFO: [Synth 8-638] synthesizing module 'operator_A' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/pid/CLA_fixed.v:6]
+INFO: [Synth 8-256] done synthesizing module 'operator_A' (5#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/pid/CLA_fixed.v:6]
+INFO: [Synth 8-638] synthesizing module 'operator_C' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/pid/CLA_fixed.v:28]
+INFO: [Synth 8-256] done synthesizing module 'operator_C' (6#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/pid/CLA_fixed.v:28]
+INFO: [Synth 8-638] synthesizing module 'operator_B' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/pid/CLA_fixed.v:18]
+INFO: [Synth 8-256] done synthesizing module 'operator_B' (7#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/pid/CLA_fixed.v:18]
+INFO: [Synth 8-256] done synthesizing module 'adder_32bit' (8#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/pid/CLA_fixed.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/divider_dshift.v:164]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/divider_dshift.v:162]
+INFO: [Synth 8-256] done synthesizing module 'divider_dshift' (9#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/divider_dshift/divider_dshift.v:1]
+INFO: [Synth 8-638] synthesizing module 'pid' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/blackbox/blackbox.v:5]
+	Parameter wb_nb bound to: 32 - type: integer 
+	Parameter adr_wb_nb bound to: 16 - type: integer 
+	Parameter kp_adr bound to: 0 - type: integer 
+	Parameter ki_adr bound to: 1 - type: integer 
+	Parameter kd_adr bound to: 2 - type: integer 
+	Parameter sp_adr bound to: 3 - type: integer 
+	Parameter pv_adr bound to: 4 - type: integer 
+	Parameter kpd_adr bound to: 5 - type: integer 
+	Parameter err_0_adr bound to: 6 - type: integer 
+	Parameter err_1_adr bound to: 7 - type: integer 
+	Parameter un_adr bound to: 8 - type: integer 
+	Parameter sigma_adr bound to: 9 - type: integer 
+	Parameter of_adr bound to: 10 - type: integer 
+	Parameter RS_adr bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pid' (10#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/blackbox/blackbox.v:5]
+WARNING: [Synth 8-689] width (32) of port connection 'i_wb_adr' does not match port width (16) of module 'pid' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/top.v:113]
+INFO: [Synth 8-256] done synthesizing module 'top' (11#1) [/home/sean/vivado_workspace/pid_hd/Sources/hdl/top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.652 ; gain = 204.574 ; free physical = 7398 ; free virtual = 31626
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.652 ; gain = 204.574 ; free physical = 7398 ; free virtual = 31625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1097.656 ; gain = 212.578 ; free physical = 7398 ; free virtual = 31625
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'divider_dshift'
+INFO: [Synth 8-5546] ROM "PR_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ct" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DD_sign" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "o_quotient" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "state_reg" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "out_led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1122.727 ; gain = 237.648 ; free physical = 7376 ; free virtual = 31603
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 16    
++---XORs : 
+	   2 Input      3 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 1064  
++---XORs : 
+	               32 Bit    Wide XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 64    
+	               31 Bit    Registers := 16    
+	                6 Bit    Registers := 24    
+	                5 Bit    Registers := 16    
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 136   
+	   3 Input     32 Bit        Muxes := 16    
+	   4 Input     32 Bit        Muxes := 8     
+	   2 Input     31 Bit        Muxes := 8     
+	   4 Input     31 Bit        Muxes := 8     
+	   4 Input      6 Bit        Muxes := 16    
+	   7 Input      6 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 48    
+	   5 Input      5 Bit        Muxes := 8     
+	   4 Input      5 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 32    
+	   7 Input      2 Bit        Muxes := 24    
+	   4 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 32    
+	   3 Input      1 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 120   
+	  10 Input      1 Bit        Muxes := 32    
+	   7 Input      1 Bit        Muxes := 40    
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---XORs : 
+	               32 Bit    Wide XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module shift_1b 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module shift_3b 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module shift_7b 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      3 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module operator_A 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module adder_32bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
+Module divider_dshift 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               31 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   3 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   4 Input     31 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 2     
+	   7 Input      6 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 15    
+	  10 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1189.734 ; gain = 304.656 ; free physical = 7272 ; free virtual = 31528
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "out_led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1197.742 ; gain = 312.664 ; free physical = 7275 ; free virtual = 31510
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1197.742 ; gain = 312.664 ; free physical = 7275 ; free virtual = 31510
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (divider_dshift:/\shifted_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (shifted_reg[4]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (shifted_1_reg[4]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[31]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[30]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[29]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[28]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[27]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[26]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[25]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[24]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[23]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[22]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[21]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[20]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[19]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[18]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[17]) is unused and will be removed from module divider_dshift.
+WARNING: [Synth 8-3332] Sequential element (o_remainder_reg[16]) is unused and will be removed from module divider_dshift.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1331.328 ; gain = 446.250 ; free physical = 6908 ; free virtual = 31165
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1331.328 ; gain = 446.250 ; free physical = 6908 ; free virtual = 31165
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1331.328 ; gain = 446.250 ; free physical = 6908 ; free virtual = 31165
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1413.352 ; gain = 528.273 ; free physical = 6734 ; free virtual = 31023
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1413.352 ; gain = 528.273 ; free physical = 6734 ; free virtual = 31023
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1413.352 ; gain = 528.273 ; free physical = 6734 ; free virtual = 31023
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1413.352 ; gain = 528.273 ; free physical = 6774 ; free virtual = 31049
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1413.352 ; gain = 528.273 ; free physical = 6776 ; free virtual = 31051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1413.352 ; gain = 528.273 ; free physical = 6780 ; free virtual = 31051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pid           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |pid    |     1|
+|2     |BUFG   |     1|
+|3     |CARRY4 |   128|
+|4     |LUT1   |   503|
+|5     |LUT2   |   152|
+|6     |LUT3   |   878|
+|7     |LUT4   |   759|
+|8     |LUT5   |  1180|
+|9     |LUT6   |  3297|
+|10    |FDCE   |  2784|
+|11    |FDPE   |     8|
+|12    |FDRE   |     1|
+|13    |IBUF   |     2|
+|14    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  9760|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1413.352 ; gain = 528.273 ; free physical = 6779 ; free virtual = 31050
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1413.352 ; gain = 439.133 ; free physical = 6780 ; free virtual = 31051
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1413.359 ; gain = 528.281 ; free physical = 6780 ; free virtual = 31051
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'pid' instantiated as 'pid_0' [/home/sean/vivado_workspace/pid_hd/Sources/hdl/top.v:108]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 20 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1507.223 ; gain = 545.590 ; free physical = 6787 ; free virtual = 31045

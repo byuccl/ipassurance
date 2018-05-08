@@ -1,0 +1,23 @@
+
+verilog aes128 "hdl/aes128/aes128.v"
+verilog aes128 "hdl/aes128/round.v"
+verilog aes128 "hdl/aes128/table.v"
+
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/ACS.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/bmc010.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/bmc101.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/decoder.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/mem_8x1024.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/bmc000.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/bmc011.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/bmc110.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/encoder.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/tbu.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/bmc001.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/bmc100.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/bmc111.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/mem_1x1024.v"
+verilog viterbi_tx_rx "hdl/viterbi_tx_rx/viterbi_tx_rx.v"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

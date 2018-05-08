@@ -1,0 +1,17 @@
+
+verilog pci_mini "hdl/pci_mini/pci-33.v"
+vhdl pci_mini "hdl/pci_mini/pci-40.vhd"
+verilog pci_mini "hdl/pci_mini/pci_mini-34.v"
+verilog pci_mini "hdl/pci_mini/pci_mini.v"
+
+vhdl pic "hdl/pic/pic.vhd"
+
+verilog pwm "hdl/pwm/down_clocking_even.v"
+verilog pwm "hdl/pwm/down_clocking_odd.v"
+verilog pwm "hdl/pwm/minus_one.v"
+verilog pwm "hdl/pwm/pwm.v"
+
+vhdl quadratic_func "hdl/quadratic_func/quadratic_func.vhd"
+
+vhdl work "hdl/blackbox/blackbox.vhd"
+verilog work "hdl/top.v"

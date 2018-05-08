@@ -1,0 +1,20 @@
+
+verilog bilinearDemosaic "hdl/bilinearDemosaic/bilinearDemosaic.v"
+verilog bilinearDemosaic "hdl/bilinearDemosaic/registerDelay.v"
+
+verilog streamScaler "hdl/streamScaler/scaler.v"
+
+vhdl vga "hdl/vga/colproc.vhd"
+vhdl vga "hdl/vga/dpm.vhd"
+vhdl vga "hdl/vga/fifo.vhd"
+vhdl vga "hdl/vga/tgen.vhd"
+vhdl vga "hdl/vga/vtim.vhd"
+vhdl vga "hdl/vga/wb_slave.vhd"
+vhdl vga "hdl/vga/counter.vhd"
+vhdl vga "hdl/vga/fifo_dc.vhd"
+vhdl vga "hdl/vga/pgen.vhd"
+vhdl vga "hdl/vga/vga.vhd"
+vhdl vga "hdl/vga/wb_master.vhd"
+
+vhdl work "hdl/blackbox/blackbox.vhd"
+verilog work "hdl/top.v"

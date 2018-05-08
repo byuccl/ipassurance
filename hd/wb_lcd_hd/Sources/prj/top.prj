@@ -1,0 +1,6 @@
+
+vhdl PowerSequencer "hdl/PowerSequencer/PowerSequencer.vhd"
+vhdl PowerSequencer "hdl/PowerSequencer/retrigg_timer.vhd"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

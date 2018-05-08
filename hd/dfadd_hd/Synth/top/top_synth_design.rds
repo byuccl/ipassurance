@@ -1,0 +1,667 @@
+Command: synth_design -mode default -flatten_hierarchy full -top top -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 639 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1049.207 ; gain = 164.137 ; free physical = 2935 ; free virtual = 30179
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'dfadd' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/blackbox/blackbox.v:3]
+INFO: [Synth 8-256] done synthesizing module 'dfadd' (1#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/blackbox/blackbox.v:3]
+INFO: [Synth 8-638] synthesizing module 'viterbi_tx_rx' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/viterbi_tx_rx.v:1]
+INFO: [Synth 8-638] synthesizing module 'encoder' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/encoder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'encoder' (2#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/encoder.v:1]
+INFO: [Synth 8-638] synthesizing module 'decoder' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/decoder.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc000' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc000.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc000' (3#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc000.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc001' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc001.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc001' (4#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc001.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc010' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc010.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc010' (5#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc010.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc011' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc011.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc011' (6#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc011.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc100' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc100.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc100' (7#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc100.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc101' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc101.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc101' (8#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc101.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc110' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc110.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc110' (9#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc110.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc111' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc111.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc111' (10#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/bmc111.v:1]
+INFO: [Synth 8-638] synthesizing module 'ACS' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/ACS.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ACS' (11#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/ACS.v:1]
+INFO: [Synth 8-638] synthesizing module 'mem' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/mem_8x1024.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mem' (12#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/mem_8x1024.v:1]
+INFO: [Synth 8-638] synthesizing module 'tbu' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/tbu.v:1]
+INFO: [Synth 8-256] done synthesizing module 'tbu' (13#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/tbu.v:1]
+INFO: [Synth 8-638] synthesizing module 'mem_disp' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/mem_1x1024.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mem_disp' (14#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/mem_1x1024.v:1]
+INFO: [Synth 8-4471] merging register 'd_in_mem_B_reg[7:0]' into 'd_in_mem_A_reg[7:0]' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/decoder.v:265]
+INFO: [Synth 8-4471] merging register 'd_in_mem_C_reg[7:0]' into 'd_in_mem_A_reg[7:0]' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/decoder.v:266]
+INFO: [Synth 8-4471] merging register 'd_in_mem_D_reg[7:0]' into 'd_in_mem_A_reg[7:0]' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/decoder.v:267]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (15#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/decoder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'viterbi_tx_rx' (16#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/viterbi_tx_rx.v:1]
+INFO: [Synth 8-256] done synthesizing module 'top' (17#1) [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1089.645 ; gain = 204.574 ; free physical = 2857 ; free virtual = 30102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1089.645 ; gain = 204.574 ; free physical = 2812 ; free virtual = 30057
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1097.648 ; gain = 212.578 ; free physical = 2812 ; free virtual = 30057
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'encoder'
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'wr_en_reg' into 'selection_buf_reg' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/tbu.v:35]
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "enable_tbu_0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enable_tbu_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE3 |                              001 |                              100
+                 iSTATE5 |                              010 |                              110
+                 iSTATE6 |                              011 |                              111
+                 iSTATE2 |                              100 |                              011
+                 iSTATE4 |                              101 |                              101
+                 iSTATE1 |                              110 |                              010
+                 iSTATE0 |                              111 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cstate_reg' using encoding 'sequential' in module 'encoder'
+WARNING: [Synth 8-327] inferring latch for variable 'd_o_reg_reg' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/tbu.v:66]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1113.664 ; gain = 228.594 ; free physical = 2700 ; free virtual = 29947
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 64    
+	   2 Input      8 Bit       Adders := 256   
+	   2 Input      4 Bit       Adders := 16    
+	   2 Input      2 Bit       Adders := 16    
++---XORs : 
+	   2 Input      1 Bit         XORs := 512   
++---Registers : 
+	               10 Bit    Registers := 160   
+	                8 Bit    Registers := 304   
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 32    
+	                2 Bit    Registers := 64    
+	                1 Bit    Registers := 304   
++---RAMs : 
+	               8K Bit         RAMs := 64    
+	             1024 Bit         RAMs := 32    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 64    
+	   4 Input     10 Bit        Muxes := 64    
+	   2 Input      8 Bit        Muxes := 544   
+	   4 Input      8 Bit        Muxes := 64    
+	  17 Input      3 Bit        Muxes := 16    
+	   4 Input      3 Bit        Muxes := 128   
+	   2 Input      3 Bit        Muxes := 64    
+	   2 Input      2 Bit        Muxes := 48    
+	   8 Input      2 Bit        Muxes := 16    
+	   4 Input      2 Bit        Muxes := 64    
+	   4 Input      1 Bit        Muxes := 656   
+	   2 Input      1 Bit        Muxes := 64    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module encoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 1     
+Module bmc000 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module bmc001 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module bmc010 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module bmc011 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module bmc100 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module bmc101 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module bmc110 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module bmc111 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module ACS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+Module mem 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module tbu 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module mem_disp 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module decoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 10    
+	                8 Bit    Registers := 15    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 18    
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 5     
+Module viterbi_tx_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1188.672 ; gain = 303.602 ; free physical = 2475 ; free virtual = 29721
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'decoder1/selection_tbu_0_reg' into 'decoder1/mem_bank_buf_buf_buf_reg' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/decoder.v:409]
+INFO: [Synth 8-4471] merging register 'decoder1/tbu_0/selection_buf_reg' into 'decoder1/mem_bank_buf_buf_buf_buf_reg' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/viterbi_tx_rx/tbu.v:34]
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1196.680 ; gain = 311.609 ; free physical = 2542 ; free virtual = 29790
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1196.680 ; gain = 311.609 ; free physical = 2542 ; free virtual = 29790
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem         | mem_reg    | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|mem         | mem_reg    | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|mem         | mem_reg    | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|mem         | mem_reg    | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|mem_disp    | mem_reg    | 1 K x 1(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|mem_disp    | mem_reg    | 1 K x 1(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[0]) is unused and will be removed from module viterbi_tx_rx.
+INFO: [Synth 8-3886] merging instance 'viterbi15/decoder1/validity_reg[1]' (FDC) to 'viterbi15/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi15/decoder1/validity_reg[3]' (FDC) to 'viterbi15/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi15/decoder1/validity_reg[2]' (FDC) to 'viterbi15/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi14/decoder1/validity_reg[1]' (FDC) to 'viterbi14/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi14/decoder1/validity_reg[3]' (FDC) to 'viterbi14/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi14/decoder1/validity_reg[2]' (FDC) to 'viterbi14/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi13/decoder1/validity_reg[1]' (FDC) to 'viterbi13/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi13/decoder1/validity_reg[3]' (FDC) to 'viterbi13/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi13/decoder1/validity_reg[2]' (FDC) to 'viterbi13/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi12/decoder1/validity_reg[1]' (FDC) to 'viterbi12/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi12/decoder1/validity_reg[3]' (FDC) to 'viterbi12/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi12/decoder1/validity_reg[2]' (FDC) to 'viterbi12/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi11/decoder1/validity_reg[1]' (FDC) to 'viterbi11/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi11/decoder1/validity_reg[3]' (FDC) to 'viterbi11/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi11/decoder1/validity_reg[2]' (FDC) to 'viterbi11/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi10/decoder1/validity_reg[1]' (FDC) to 'viterbi10/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi10/decoder1/validity_reg[3]' (FDC) to 'viterbi10/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi10/decoder1/validity_reg[2]' (FDC) to 'viterbi10/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi9/decoder1/validity_reg[1]' (FDC) to 'viterbi9/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi9/decoder1/validity_reg[3]' (FDC) to 'viterbi9/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi9/decoder1/validity_reg[2]' (FDC) to 'viterbi9/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi8/decoder1/validity_reg[1]' (FDC) to 'viterbi8/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi8/decoder1/validity_reg[3]' (FDC) to 'viterbi8/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi8/decoder1/validity_reg[2]' (FDC) to 'viterbi8/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi7/decoder1/validity_reg[1]' (FDC) to 'viterbi7/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi7/decoder1/validity_reg[3]' (FDC) to 'viterbi7/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi7/decoder1/validity_reg[2]' (FDC) to 'viterbi7/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi6/decoder1/validity_reg[1]' (FDC) to 'viterbi6/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi6/decoder1/validity_reg[3]' (FDC) to 'viterbi6/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi6/decoder1/validity_reg[2]' (FDC) to 'viterbi6/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi5/decoder1/validity_reg[1]' (FDC) to 'viterbi5/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi5/decoder1/validity_reg[3]' (FDC) to 'viterbi5/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi5/decoder1/validity_reg[2]' (FDC) to 'viterbi5/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi4/decoder1/validity_reg[1]' (FDC) to 'viterbi4/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi4/decoder1/validity_reg[3]' (FDC) to 'viterbi4/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi4/decoder1/validity_reg[2]' (FDC) to 'viterbi4/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi3/decoder1/validity_reg[1]' (FDC) to 'viterbi3/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi3/decoder1/validity_reg[3]' (FDC) to 'viterbi3/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi3/decoder1/validity_reg[2]' (FDC) to 'viterbi3/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi2/decoder1/validity_reg[1]' (FDC) to 'viterbi2/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi2/decoder1/validity_reg[3]' (FDC) to 'viterbi2/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi2/decoder1/validity_reg[2]' (FDC) to 'viterbi2/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi0/decoder1/validity_reg[1]' (FDC) to 'viterbi0/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi0/decoder1/validity_reg[3]' (FDC) to 'viterbi0/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi0/decoder1/validity_reg[2]' (FDC) to 'viterbi0/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi1/decoder1/validity_reg[1]' (FDC) to 'viterbi1/decoder1/validity_reg[5]'
+INFO: [Synth 8-3886] merging instance 'viterbi1/decoder1/validity_reg[3]' (FDC) to 'viterbi1/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi1/decoder1/validity_reg[2]' (FDC) to 'viterbi1/decoder1/validity_reg[6]'
+INFO: [Synth 8-3886] merging instance 'viterbi15/decoder1/validity_reg[5]' (FDC) to 'viterbi15/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi14/decoder1/validity_reg[5]' (FDC) to 'viterbi14/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi13/decoder1/validity_reg[5]' (FDC) to 'viterbi13/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi12/decoder1/validity_reg[5]' (FDC) to 'viterbi12/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi11/decoder1/validity_reg[5]' (FDC) to 'viterbi11/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi10/decoder1/validity_reg[5]' (FDC) to 'viterbi10/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi9/decoder1/validity_reg[5]' (FDC) to 'viterbi9/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi8/decoder1/validity_reg[5]' (FDC) to 'viterbi8/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi7/decoder1/validity_reg[5]' (FDC) to 'viterbi7/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi6/decoder1/validity_reg[5]' (FDC) to 'viterbi6/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi5/decoder1/validity_reg[5]' (FDC) to 'viterbi5/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi4/decoder1/validity_reg[5]' (FDC) to 'viterbi4/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi3/decoder1/validity_reg[5]' (FDC) to 'viterbi3/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi2/decoder1/validity_reg[5]' (FDC) to 'viterbi2/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi0/decoder1/validity_reg[5]' (FDC) to 'viterbi0/decoder1/validity_reg[7]'
+INFO: [Synth 8-3886] merging instance 'viterbi1/decoder1/validity_reg[5]' (FDC) to 'viterbi1/decoder1/validity_reg[7]'
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__1.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__1.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__1.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__1.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__2.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__2.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__2.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__2.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__3.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__3.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__3.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__3.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__4.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__4.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__4.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__4.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__5.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__5.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__5.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__5.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__6.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__6.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__6.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__6.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__7.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__7.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__7.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__7.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__8.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__8.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__8.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__8.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__9.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__9.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__9.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__9.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__10.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__10.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__10.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__10.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__11.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__11.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__11.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__11.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__12.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__12.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__12.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__12.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__13.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__13.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__13.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__13.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__14.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__14.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__14.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__14.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx__15.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx__15.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx__15.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx__15.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[5]) is unused and will be removed from module viterbi_tx_rx.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[3]) is unused and will be removed from module viterbi_tx_rx.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[2]) is unused and will be removed from module viterbi_tx_rx.
+WARNING: [Synth 8-3332] Sequential element (decoder1/validity_reg[1]) is unused and will be removed from module viterbi_tx_rx.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1414.805 ; gain = 529.734 ; free physical = 2215 ; free virtual = 29464
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1414.805 ; gain = 529.734 ; free physical = 2215 ; free virtual = 29464
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1414.805 ; gain = 529.734 ; free physical = 2215 ; free virtual = 29464
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance viterbi0/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi0/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi0/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi0/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi0/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi0/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi1/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi1/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi1/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi1/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi1/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi1/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi2/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi2/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi2/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi2/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi2/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi2/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi3/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi3/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi3/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi3/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi3/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi3/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi4/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi4/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi4/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi4/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi4/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi4/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi5/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi5/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi5/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi5/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi5/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi5/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi6/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi6/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi6/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi6/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi6/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi6/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi7/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi7/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi7/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi7/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi7/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi7/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi8/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi8/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi8/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi8/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi8/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi8/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi9/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi9/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi9/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi9/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi9/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi9/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi10/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi10/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi10/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi10/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi10/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi10/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi11/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi11/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi11/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi11/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi11/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi11/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi12/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi12/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi12/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi12/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi12/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi12/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi13/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi13/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi13/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi13/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi13/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi13/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi14/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi14/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi14/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi14/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi14/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi14/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi15/decoder1/trelis_mem_A/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi15/decoder1/trelis_mem_B/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi15/decoder1/trelis_mem_C/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi15/decoder1/trelis_mem_D/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi15/decoder1/disp_mem_0/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance viterbi15/decoder1/disp_mem_1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1556.812 ; gain = 671.742 ; free physical = 1969 ; free virtual = 29219
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1556.812 ; gain = 671.742 ; free physical = 1969 ; free virtual = 29219
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1556.812 ; gain = 671.742 ; free physical = 1969 ; free virtual = 29219
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1556.812 ; gain = 671.742 ; free physical = 1962 ; free virtual = 29212
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1556.812 ; gain = 671.742 ; free physical = 1962 ; free virtual = 29211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1556.812 ; gain = 671.742 ; free physical = 1935 ; free virtual = 29188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dfadd         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |dfadd    |     1|
+|2     |BUFG     |     1|
+|3     |CARRY4   |   128|
+|4     |LUT1     |    98|
+|5     |LUT2     |   359|
+|6     |LUT3     |  1009|
+|7     |LUT4     |  2369|
+|8     |LUT5     |   977|
+|9     |LUT6     |  2736|
+|10    |MUXF7    |    48|
+|11    |RAMB18E1 |    96|
+|12    |FDCE     |  1680|
+|13    |FDPE     |   160|
+|14    |FDRE     |  2016|
+|15    |FDSE     |   160|
+|16    |LD       |    32|
+|17    |IBUF     |    10|
+|18    |OBUF     |     8|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 11920|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1556.812 ; gain = 671.742 ; free physical = 1935 ; free virtual = 29187
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1556.812 ; gain = 581.602 ; free physical = 1934 ; free virtual = 29186
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1556.820 ; gain = 671.750 ; free physical = 1934 ; free virtual = 29186
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 266 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dfadd' instantiated as 'dfadd_0' [/home/sean/vivado_workspace/dfadd_hd/Sources/hdl/top.v:72]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+238 Infos, 67 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1650.684 ; gain = 688.059 ; free physical = 1693 ; free virtual = 28953

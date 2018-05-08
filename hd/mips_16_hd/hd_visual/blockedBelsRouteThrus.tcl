@@ -1,0 +1,9 @@
+ set mybels [get_bels { \
+ SLICE_X61Y100/F7AMUX \
+ SLICE_X61Y100/F8MUX \
+ SLICE_X61Y100/F7BMUX \
+ SLICE_X61Y99/A6LUT \
+ SLICE_X61Y99/F8MUX \
+ SLICE_X61Y99/F7BMUX \
+}] 
+select_objects -add $mybels 

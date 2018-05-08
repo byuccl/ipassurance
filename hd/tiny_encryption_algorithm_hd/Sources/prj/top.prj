@@ -1,0 +1,8 @@
+
+verilog sudoku "hdl/sudoku/minPiece.v"
+verilog sudoku "hdl/sudoku/piece.v"
+verilog sudoku "hdl/sudoku/sudoku_search.v"
+verilog sudoku "hdl/sudoku/sudoku.v"
+
+vhdl work "hdl/blackbox/blackbox.vhd"
+verilog work "hdl/top.v"

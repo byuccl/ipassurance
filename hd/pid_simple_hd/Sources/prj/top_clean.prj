@@ -1,0 +1,9 @@
+
+verilog pid_simple "hdl/pid_simple/16x16bit_multiplier_pipelined.v"
+verilog pid_simple "hdl/pid_simple/CLA_fixed.v"
+verilog pid_simple "hdl/pid_simple/pid_simple.v"
+verilog pid_simple "hdl/pid_simple/booth.v"
+verilog pid_simple "hdl/pid_simple/PID_defines.v"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

@@ -1,0 +1,12 @@
+
+verilog divider_dshift "hdl/divider_dshift/divider_dshift.v"
+verilog divider_dshift "hdl/divider_dshift/shifter.v"
+
+verilog pid "hdl/pid/16x16bit_multiplier_pipelined.v"
+verilog pid "hdl/pid/booth.v"
+verilog pid "hdl/pid/CLA_fixed.v"
+verilog pid "hdl/pid/PID_defines.v"
+verilog pid "hdl/pid/PID.v"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

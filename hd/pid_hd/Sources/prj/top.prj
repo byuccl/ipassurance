@@ -1,0 +1,7 @@
+
+verilog pid "hdl/pid/CLA_fixed.v"
+verilog divider_dshift "hdl/divider_dshift/divider_dshift.v"
+verilog divider_dshift "hdl/divider_dshift/shifter.v"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

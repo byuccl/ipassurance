@@ -1,0 +1,7 @@
+
+vhdl bcd_adder "hdl/bcd_adder/bcd_adder.vhd"
+
+vhdl big_counter "hdl/big_counter/big_counter.vhd"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

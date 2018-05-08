@@ -1,0 +1,23 @@
+
+verilog uart2spi "hdl/uart2spi/clk_ctl.v"
+verilog uart2spi "hdl/uart2spi/spi_core.v"
+verilog uart2spi "hdl/uart2spi/uart2spi.v"
+verilog uart2spi "hdl/uart2spi/uart_rxfsm.v"
+verilog uart2spi "hdl/uart2spi/registers.v"
+verilog uart2spi "hdl/uart2spi/spi_ctl.v"
+verilog uart2spi "hdl/uart2spi/uart_core.v"
+verilog uart2spi "hdl/uart2spi/uart_txfsm.v"
+verilog uart2spi "hdl/uart2spi/spi_cfg.v"
+verilog uart2spi "hdl/uart2spi/spi_if.v"
+verilog uart2spi "hdl/uart2spi/uart_msg_handler.v"
+
+verilog gng "hdl/gng/gng_coef.v"
+verilog gng "hdl/gng/gng_interp.v"
+verilog gng "hdl/gng/gng_smul_16_18_sadd_37.v"
+verilog gng "hdl/gng/gng.v"
+verilog gng "hdl/gng/gng_ctg.v"
+verilog gng "hdl/gng/gng_lzd.v"
+verilog gng "hdl/gng/gng_smul_16_18.v"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

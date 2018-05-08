@@ -1,0 +1,8 @@
+
+verilog bilinearDemosaic "hdl/bilinearDemosaic/bilinearDemosaic.v"
+verilog bilinearDemosaic "hdl/bilinearDemosaic/registerDelay.v"
+
+verilog streamScaler "hdl/streamScaler/scaler.v"
+
+vhdl work "hdl/blackbox/blackbox.vhd"
+verilog work "hdl/top.v"

@@ -1,0 +1,16 @@
+
+verilog des3_perf "hdl/des3_perf/crp.v"
+verilog des3_perf "hdl/des3_perf/sbox1.v"
+verilog des3_perf "hdl/des3_perf/sbox2.v"
+verilog des3_perf "hdl/des3_perf/sbox3.v"
+verilog des3_perf "hdl/des3_perf/sbox4.v"
+verilog des3_perf "hdl/des3_perf/sbox5.v"
+verilog des3_perf "hdl/des3_perf/sbox6.v"
+verilog des3_perf "hdl/des3_perf/sbox7.v"
+verilog des3_perf "hdl/des3_perf/sbox8.v"
+verilog des3_perf "hdl/des3_perf/key_sel.v"
+verilog des3_perf "hdl/des3_perf/des.v"
+verilog des3_perf "hdl/des3_perf/des3_perf.v"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

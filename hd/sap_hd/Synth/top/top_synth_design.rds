@@ -1,0 +1,759 @@
+Command: synth_design -mode default -flatten_hierarchy full -top top -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22619 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1042.211 ; gain = 157.137 ; free physical = 12019 ; free virtual = 89012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'random_pulse_generator' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/random_pulse_generator/random_pulse_generator.v:36]
+	Parameter LN2_PERIOD bound to: 4 - type: integer 
+	Parameter MASK bound to: 4'b0000 
+INFO: [Synth 8-638] synthesizing module 'pseudo_random' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/random_pulse_generator/random_pulse_generator.v:20]
+INFO: [Synth 8-256] done synthesizing module 'pseudo_random' (1#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/random_pulse_generator/random_pulse_generator.v:20]
+INFO: [Synth 8-256] done synthesizing module 'random_pulse_generator' (2#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/random_pulse_generator/random_pulse_generator.v:36]
+INFO: [Synth 8-638] synthesizing module 'sap' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/blackbox/blackbox.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'sap' (3#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/blackbox/blackbox.vhd:12]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [/home/sean/vivado_workspace/sap_hd/Sources/hdl/top.v:51]
+INFO: [Synth 8-638] synthesizing module 'sha3_high_throughput' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/sha3_high_throughput.v:26]
+INFO: [Synth 8-638] synthesizing module 'padder_h' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/padder_h.v:21]
+INFO: [Synth 8-638] synthesizing module 'padder1_h' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/padder1_h.v:17]
+INFO: [Synth 8-256] done synthesizing module 'padder1_h' (4#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/padder1_h.v:17]
+INFO: [Synth 8-256] done synthesizing module 'padder_h' (5#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/padder_h.v:21]
+INFO: [Synth 8-638] synthesizing module 'f_permutation_h' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/f_permutation_h.v:19]
+INFO: [Synth 8-638] synthesizing module 'rconst2in1' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/rconst2in1.v:18]
+INFO: [Synth 8-256] done synthesizing module 'rconst2in1' (6#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/rconst2in1.v:18]
+INFO: [Synth 8-638] synthesizing module 'round2in1' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/round2in1.v:25]
+INFO: [Synth 8-256] done synthesizing module 'round2in1' (7#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/round2in1.v:25]
+INFO: [Synth 8-256] done synthesizing module 'f_permutation_h' (8#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/f_permutation_h.v:19]
+INFO: [Synth 8-256] done synthesizing module 'sha3_high_throughput' (9#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/sha3_high_throughput.v:26]
+INFO: [Synth 8-638] synthesizing module 'sha3_low_throughput' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/sha3_low_throughput.v:26]
+INFO: [Synth 8-638] synthesizing module 'padder_l' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/padder_l.v:21]
+INFO: [Synth 8-638] synthesizing module 'padder1_l' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/padder1_l.v:25]
+INFO: [Synth 8-256] done synthesizing module 'padder1_l' (10#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/padder1_l.v:25]
+INFO: [Synth 8-256] done synthesizing module 'padder_l' (11#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/padder_l.v:21]
+INFO: [Synth 8-638] synthesizing module 'f_permutation_l' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/f_permutation_l.v:19]
+INFO: [Synth 8-638] synthesizing module 'rconst' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/rconst.v:18]
+INFO: [Synth 8-256] done synthesizing module 'rconst' (12#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/rconst.v:18]
+INFO: [Synth 8-638] synthesizing module 'round' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/round.v:25]
+INFO: [Synth 8-256] done synthesizing module 'round' (13#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/round.v:25]
+INFO: [Synth 8-256] done synthesizing module 'f_permutation_l' (14#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/f_permutation_l.v:19]
+INFO: [Synth 8-256] done synthesizing module 'sha3_low_throughput' (15#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/sha3_low_throughput.v:26]
+INFO: [Synth 8-638] synthesizing module 'simon_core' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/simon_core/simon_core.v:21]
+INFO: [Synth 8-638] synthesizing module 'simon_datapath_shiftreg' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/simon_core/Simon_bit_serial_datapath_FPGA.v:21]
+INFO: [Synth 8-256] done synthesizing module 'simon_datapath_shiftreg' (16#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/simon_core/Simon_bit_serial_datapath_FPGA.v:21]
+INFO: [Synth 8-638] synthesizing module 'simon_key_expansion_shiftreg' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/simon_core/Simon_bit_serial_key_expansion_FPGA.v:22]
+INFO: [Synth 8-256] done synthesizing module 'simon_key_expansion_shiftreg' (17#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/simon_core/Simon_bit_serial_key_expansion_FPGA.v:22]
+INFO: [Synth 8-256] done synthesizing module 'simon_core' (18#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/simon_core/simon_core.v:21]
+INFO: [Synth 8-256] done synthesizing module 'top' (19#1) [/home/sean/vivado_workspace/sap_hd/Sources/hdl/top.v:23]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[62]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[61]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[60]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[59]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[58]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[57]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[56]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[55]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[54]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[53]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[52]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[51]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[50]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[49]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[48]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[47]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[46]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[45]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[44]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[43]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[42]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[41]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[40]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[39]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[38]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[37]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[36]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[35]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[34]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[33]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[32]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[30]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[29]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[28]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[27]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[26]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[25]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[24]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[23]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[22]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[21]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[20]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[19]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[18]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[17]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[16]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[14]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[13]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[12]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[11]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[10]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[9]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[8]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[6]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[5]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[4]
+WARNING: [Synth 8-3331] design round has unconnected port round_const[2]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[7]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[6]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[5]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[4]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[3]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[2]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[1]
+WARNING: [Synth 8-3331] design padder1_l has unconnected port in[0]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[62]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[61]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[60]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[59]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[58]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[57]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[56]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[55]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[54]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[53]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[52]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[51]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[50]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[49]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[48]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[47]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[46]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[45]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[44]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[43]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[42]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[41]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[40]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[39]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[38]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[37]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[36]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[35]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[34]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[33]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[32]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[30]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[29]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[28]
+WARNING: [Synth 8-3331] design round2in1 has unconnected port round_const_1[27]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.648 ; gain = 213.574 ; free physical = 11964 ; free virtual = 88959
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.648 ; gain = 213.574 ; free physical = 11964 ; free virtual = 88959
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1106.652 ; gain = 221.578 ; free physical = 11964 ; free virtual = 88959
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-5544] ROM "q" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "round_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.691 ; gain = 278.617 ; free physical = 11909 ; free virtual = 88903
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/f_permutation_h.v:56]
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/f_permutation_l.v:56]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input    576 Bit         XORs := 2     
+	   5 Input     64 Bit         XORs := 15    
+	   3 Input     64 Bit         XORs := 75    
+	   2 Input     64 Bit         XORs := 75    
+	  16 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 21    
+	   4 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	             1600 Bit    Registers := 2     
+	              576 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               60 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               23 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 40    
++---Muxes : 
+	   2 Input   1600 Bit        Muxes := 2     
+	   2 Input    576 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/f_permutation_h.v:56]
+INFO: [Synth 8-3538] Detected potentially large (wide) register out_reg [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/f_permutation_l.v:56]
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module pseudo_random 
+Detailed RTL Component Info : 
++---XORs : 
+	  16 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module random_pulse_generator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+Module padder_h 
+Detailed RTL Component Info : 
++---Registers : 
+	              576 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    576 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+Module round2in1 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     64 Bit         XORs := 10    
+	   3 Input     64 Bit         XORs := 50    
+	   2 Input     64 Bit         XORs := 50    
+	   2 Input      1 Bit         XORs := 14    
+Module f_permutation_h 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    576 Bit         XORs := 1     
++---Registers : 
+	             1600 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   1600 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sha3_high_throughput 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module padder1_l 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module padder_l 
+Detailed RTL Component Info : 
++---Registers : 
+	              576 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    576 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+Module round 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     64 Bit         XORs := 5     
+	   3 Input     64 Bit         XORs := 25    
+	   2 Input     64 Bit         XORs := 25    
+	   2 Input      1 Bit         XORs := 7     
+Module f_permutation_l 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    576 Bit         XORs := 1     
++---Registers : 
+	             1600 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   1600 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sha3_low_throughput 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module simon_datapath_shiftreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module simon_key_expansion_shiftreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               60 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1206.691 ; gain = 321.617 ; free physical = 11867 ; free virtual = 88861
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'state_reg' into 'padder_h_/state_reg' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_high_throughput/sha3_high_throughput.v:57]
+INFO: [Synth 8-4471] merging register 'state_reg' into 'padder_l_/state_reg' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/sha3_low_throughput/sha3_low_throughput.v:58]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1214.699 ; gain = 329.625 ; free physical = 11859 ; free virtual = 88853
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1214.699 ; gain = 329.625 ; free physical = 11859 ; free virtual = 88853
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[22]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[23]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[28]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[29]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[30]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[31]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[25]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[26]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[27] )
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[46]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[47]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[47]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[41]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[41]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[49]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[49]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[42]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[111]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[105]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[42]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[43]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[175]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[43]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[45]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[105]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[106]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[110]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[106]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[45]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[44]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[174]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_high_throughput_0/padder_h_/out_reg[44] )
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/state_reg' (FDRE) to 'sha3_high_throughput_0/padder_h_/state_reg'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[54]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[55]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[57]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[58]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[59]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[60]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[61]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[62]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[63]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[86]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[87]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[89]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[90]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[91]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[92]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[93]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[94]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[95]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[118]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[118]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[119]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[119]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[123]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[124]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[125]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[126]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[127]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[121]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[121]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[122] )
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[150]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[151]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[183]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[182]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[157]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[158]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[159]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[191]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[182]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[153]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[154]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[182]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[185]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[155]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[156]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[122]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[185]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[186]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[106]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[298]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[107]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[298]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[108]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[298]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[109]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[298]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[113]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[298]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[298]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[170]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[171]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[172]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[173]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[177]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[234]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[235]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[186]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[187]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[236]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[299]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[187]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[188]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[237]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[300]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[233]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[188]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[189]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[241]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[169]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[238]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[233]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[301]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[233]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[189]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[190]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[239]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[233]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[302]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[297]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[362]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[233]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[303]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[297]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[233]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[305]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[363]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[305]'
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[365]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[297]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_high_throughput_0/padder_h_/out_reg[169] )
+INFO: [Synth 8-3886] merging instance 'sha3_high_throughput_0/padder_h_/out_reg[364]' (FDRE) to 'sha3_high_throughput_0/padder_h_/out_reg[297]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[214]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[215]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[215]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[217]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[220]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[217]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[221]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[217]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[222]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[217]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[223]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[217]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[217]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[218]'
+INFO: [Synth 8-3886] merging instance 'sha3_low_throughput_0/padder_l_/out_reg[218]' (FDRE) to 'sha3_low_throughput_0/padder_l_/out_reg[219]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[122] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_high_throughput_0/padder_h_/out_reg[297] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[122] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_high_throughput_0/padder_h_/out_reg[489] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[251] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[251] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[251] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[379] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[379] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[539] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sha3_low_throughput_0/padder_l_/out_reg[539] )
+WARNING: [Synth 8-3332] Sequential element (out_ready_reg) is unused and will be removed from module f_permutation_h.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[561]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[559]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[558]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[557]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[556]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[555]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[554]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[553]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[497]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[495]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[494]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[493]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[492]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[491]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[490]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[489]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[433]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[431]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[430]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[429]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[428]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[427]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[426]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[425]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[369]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[367]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[366]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[365]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[364]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[363]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[362]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[361]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[305]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[303]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[302]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[301]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[300]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[299]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[298]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[297]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[241]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[239]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[238]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[237]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[236]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[235]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[234]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[233]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[177]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[175]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[174]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[173]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[172]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[171]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[170]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[169]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[113]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[111]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[110]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[109]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[108]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[107]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[106]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[105]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[49]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[47]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[46]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[45]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[44]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[43]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[42]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_high_throughput_0/padder_h_/out_reg[41]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (out_ready_reg) is unused and will be removed from module f_permutation_l.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[575]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[574]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[573]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[572]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[571]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[570]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[569]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[567]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[566]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[543]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[542]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[541]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[540]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[539]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[538]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[537]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[535]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[534]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[511]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[510]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[509]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[508]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[507]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[506]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[505]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sha3_low_throughput_0/padder_l_/out_reg[503]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:26:29 ; elapsed = 00:26:33 . Memory (MB): peak = 2112.785 ; gain = 1227.711 ; free physical = 9523 ; free virtual = 86525
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:26:29 ; elapsed = 00:26:33 . Memory (MB): peak = 2112.785 ; gain = 1227.711 ; free physical = 9523 ; free virtual = 86525
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:26:29 ; elapsed = 00:26:33 . Memory (MB): peak = 2112.785 ; gain = 1227.711 ; free physical = 9523 ; free virtual = 86525
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:26:40 ; elapsed = 00:26:44 . Memory (MB): peak = 2112.785 ; gain = 1227.711 ; free physical = 9510 ; free virtual = 86524
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:26:40 ; elapsed = 00:26:44 . Memory (MB): peak = 2112.785 ; gain = 1227.711 ; free physical = 9510 ; free virtual = 86524
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:26:40 ; elapsed = 00:26:44 . Memory (MB): peak = 2112.785 ; gain = 1227.711 ; free physical = 9510 ; free virtual = 86524
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:26:42 ; elapsed = 00:26:45 . Memory (MB): peak = 2112.785 ; gain = 1227.711 ; free physical = 9497 ; free virtual = 86523
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:26:42 ; elapsed = 00:26:45 . Memory (MB): peak = 2112.785 ; gain = 1227.711 ; free physical = 9497 ; free virtual = 86523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:26:42 ; elapsed = 00:26:46 . Memory (MB): peak = 2112.785 ; gain = 1227.711 ; free physical = 9497 ; free virtual = 86523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | simon_core_0/datapath/fifo_ff56_reg   | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | simon_core_0/datapath/lut_ff56_reg    | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | simon_core_0/datapath/shifter1_reg[0] | 56     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top         | simon_core_0/datapath/shifter2_reg[0] | 64     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top         | simon_core_0/key_exp/lut_ff0_reg      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | simon_core_0/key_exp/fifo_ff0_reg     | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | simon_core_0/key_exp/shifter1_reg[0]  | 60     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top         | simon_core_0/key_exp/shifter2_reg[0]  | 64     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top         | sha3_high_throughput_0/i_reg[10]      | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top         | sha3_low_throughput_0/i_reg[22]       | 23     | 1     | YES          | NO                 | YES               | 0      | 1       | 
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |sap           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |sap     |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |    43|
+|4     |LUT1    |     2|
+|5     |LUT2    |   735|
+|6     |LUT3    |  1702|
+|7     |LUT4    |  1333|
+|8     |LUT5    |  2256|
+|9     |LUT6    |  4365|
+|10    |SRL16E  |     5|
+|11    |SRLC32E |     9|
+|12    |FDCE    |    16|
+|13    |FDPE    |    16|
+|14    |FDRE    |  4243|
+|15    |IBUF    |    42|
+|16    |OBUF    |    13|
+|17    |OBUFT   |     3|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 14793|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:26:42 ; elapsed = 00:26:46 . Memory (MB): peak = 2112.785 ; gain = 1227.711 ; free physical = 9497 ; free virtual = 86523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 488 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:26:40 ; elapsed = 00:26:44 . Memory (MB): peak = 2112.785 ; gain = 1140.570 ; free physical = 9497 ; free virtual = 86523
+Synthesis Optimization Complete : Time (s): cpu = 00:26:42 ; elapsed = 00:26:46 . Memory (MB): peak = 2112.793 ; gain = 1227.719 ; free physical = 9499 ; free virtual = 86525
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'sap' instantiated as 'sap_0' [/home/sean/vivado_workspace/sap_hd/Sources/hdl/top.v:48]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+175 Infos, 202 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:26:44 ; elapsed = 00:26:47 . Memory (MB): peak = 2202.617 ; gain = 1242.988 ; free physical = 9513 ; free virtual = 86525

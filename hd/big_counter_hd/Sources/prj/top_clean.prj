@@ -1,0 +1,13 @@
+
+vhdl bcd_adder "hdl/bcd_adder/bcd_adder.vhd"
+
+vhdl big_counter "hdl/big_counter/big_counter.vhd"
+
+verilog bubblesort "hdl/bubblesort/bitsplit.v"
+verilog bubblesort "hdl/bubblesort/bubblesort.v"
+verilog bubblesort "hdl/bubblesort/intgenerator.v"
+verilog bubblesort "hdl/bubblesort/rungenerator.v"
+verilog bubblesort "hdl/bubblesort/stageen.v"
+
+vhdl work "hdl/blackbox/blackbox.vhd"
+verilog work "hdl/top.v"

@@ -1,0 +1,211 @@
+
+####################################################
+# Sites
+sites - DSP48_X0Y30 DSP48_X0Y31 SLICE_X10Y74 SLICE_X10Y75 SLICE_X10Y76 SLICE_X10Y77 SLICE_X10Y78 SLICE_X10Y79 SLICE_X10Y80 SLICE_X10Y81 SLICE_X10Y82 SLICE_X10Y83 SLICE_X11Y74 SLICE_X11Y75 SLICE_X11Y76 SLICE_X11Y77 SLICE_X11Y78 SLICE_X11Y79 SLICE_X11Y80 SLICE_X11Y81 SLICE_X11Y82 SLICE_X11Y83 SLICE_X12Y74 SLICE_X12Y75 SLICE_X12Y76 SLICE_X12Y77 SLICE_X12Y78 SLICE_X12Y79 SLICE_X12Y80 SLICE_X12Y81 SLICE_X12Y82 SLICE_X12Y83 SLICE_X13Y74 SLICE_X13Y75 SLICE_X13Y76 SLICE_X13Y77 SLICE_X13Y78 SLICE_X13Y79 SLICE_X13Y80 SLICE_X13Y81 SLICE_X13Y82 SLICE_X13Y83 SLICE_X14Y74 SLICE_X14Y75 SLICE_X14Y76 SLICE_X14Y77 SLICE_X14Y78 SLICE_X14Y79 SLICE_X14Y80 SLICE_X14Y81 SLICE_X14Y82 SLICE_X14Y83 SLICE_X15Y74 SLICE_X15Y75 SLICE_X15Y76 SLICE_X15Y77 SLICE_X15Y78 SLICE_X15Y79 SLICE_X15Y80 SLICE_X15Y81 SLICE_X15Y82 SLICE_X15Y83 SLICE_X8Y74 SLICE_X8Y75 SLICE_X8Y76 SLICE_X8Y77 SLICE_X8Y78 SLICE_X8Y79 SLICE_X8Y80 SLICE_X8Y81 SLICE_X8Y82 SLICE_X8Y83 SLICE_X9Y74 SLICE_X9Y75 SLICE_X9Y76 SLICE_X9Y77 SLICE_X9Y78 SLICE_X9Y79 SLICE_X9Y80 SLICE_X9Y81 SLICE_X9Y82 SLICE_X9Y83
+
+####################################################
+# Cells
+rand_temp[0]_i_1 - 
+nets: {p_0_out[0] rand_temp[0]_i_1/O}, {rand_out[3] rand_temp[0]_i_1/I0}, {seed[3] rand_temp[0]_i_1/I1}, {set_seed rand_temp[0]_i_1/I2}, {rand_out[2] rand_temp[0]_i_1/I3}, {seed[2] rand_temp[0]_i_1/I4}, 
+BEL: SLICEL.A6LUT, 
+CLASS: cell, 
+INIT: 32'h353AC5CA, 
+LOC: SLICE_X13Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT5, 
+REF_NAME: LUT5, 
+
+rand_temp[1]_i_1 - 
+nets: {random[0] rand_temp[1]_i_1/O}, {seed[0] rand_temp[1]_i_1/I0}, {rand_out[0] rand_temp[1]_i_1/I1}, {set_seed rand_temp[1]_i_1/I2}, 
+BEL: SLICEL.B6LUT, 
+CLASS: cell, 
+INIT: 8'hAC, 
+LOC: SLICE_X13Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+rand_temp[2]_i_1 - 
+nets: {random[1] rand_temp[2]_i_1/O}, {seed[1] rand_temp[2]_i_1/I0}, {rand_out[1] rand_temp[2]_i_1/I1}, {set_seed rand_temp[2]_i_1/I2}, 
+BEL: SLICEL.B5LUT, 
+CLASS: cell, 
+INIT: 8'hAC, 
+LOC: SLICE_X13Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+rand_temp[3]_i_1 - 
+nets: {random[2] rand_temp[3]_i_1/O}, {seed[2] rand_temp[3]_i_1/I0}, {rand_out[2] rand_temp[3]_i_1/I1}, {set_seed rand_temp[3]_i_1/I2}, 
+BEL: SLICEL.A5LUT, 
+CLASS: cell, 
+INIT: 8'hAC, 
+LOC: SLICE_X13Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: LUT, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: others, 
+PRIMITIVE_TYPE: LUT.others.LUT3, 
+REF_NAME: LUT3, 
+
+rand_temp_reg[0] - 
+nets: {rand_out[0] rand_temp_reg[0]/Q}, {clk rand_temp_reg[0]/C}, {<const1> rand_temp_reg[0]/CE}, {p_0_out[0] rand_temp_reg[0]/D}, {<const0> rand_temp_reg[0]/R}, 
+BEL: SLICEL.AFF, 
+CLASS: cell, 
+INIT: 1'b1, 
+LOC: SLICE_X13Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+rand_temp_reg[1] - 
+nets: {rand_out[1] rand_temp_reg[1]/Q}, {clk rand_temp_reg[1]/C}, {<const1> rand_temp_reg[1]/CE}, {random[0] rand_temp_reg[1]/D}, {<const0> rand_temp_reg[1]/R}, 
+BEL: SLICEL.BFF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X13Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+rand_temp_reg[2] - 
+nets: {rand_out[2] rand_temp_reg[2]/Q}, {clk rand_temp_reg[2]/C}, {<const1> rand_temp_reg[2]/CE}, {random[1] rand_temp_reg[2]/D}, {<const0> rand_temp_reg[2]/R}, 
+BEL: SLICEL.B5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X13Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+rand_temp_reg[3] - 
+nets: {rand_out[3] rand_temp_reg[3]/Q}, {clk rand_temp_reg[3]/C}, {<const1> rand_temp_reg[3]/CE}, {random[2] rand_temp_reg[3]/D}, {<const0> rand_temp_reg[3]/R}, 
+BEL: SLICEL.A5FF, 
+CLASS: cell, 
+INIT: 1'b0, 
+LOC: SLICE_X13Y82, 
+PRIMITIVE_COUNT: 1, 
+PRIMITIVE_GROUP: FLOP_LATCH, 
+PRIMITIVE_LEVEL: LEAF, 
+PRIMITIVE_SUBGROUP: flop, 
+PRIMITIVE_TYPE: FLOP_LATCH.flop.FDRE, 
+REF_NAME: FDRE, 
+
+
+####################################################
+# Nets
+Boundary Nets - 
+clk, 
+rand_out[0], 
+rand_out[1], 
+rand_out[2], 
+rand_out[3], 
+seed[0], 
+seed[1], 
+seed[2], 
+seed[3], 
+set_seed, 
+
+p_0_out[0] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+random[0] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+random[1] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+random[2] - 
+wires: 
+pips: 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 2, 
+
+<const1> - 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 5, 
+
+<const0> - 
+CLASS: net, 
+DRIVER_COUNT: 1, 
+PIN_COUNT: 5, 
+
+
+####################################################
+# Bels
+SLICE_X13Y82/A6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A5*A2*A3*(~A4))+(A5*A2*(~A3)*(~A1))+(A5*(~A2)*A3*A4)+(A5*(~A2)*(~A3)*(~A1))+((~A5)*A2*A3*(~A4))+((~A5)*A2*(~A3)*A1)+((~A5)*(~A2)*A3*A4)+((~A5)*(~A2)*(~A3)*A1)) , 
+NAME: SLICE_X13Y82/A6LUT, 
+TYPE: LUT6, 
+
+SLICE_X13Y82/B6LUT - 
+CLASS: bel, 
+CONFIG.EQN: O6=(A6+~A6)*((A4*A1)+(A4*(~A1)*A3)+((~A4)*A1*(~A3))) , 
+NAME: SLICE_X13Y82/B6LUT, 
+TYPE: LUT6, 
+
+SLICE_X13Y82/B5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A5*A2)+(A5*(~A2)*A3)+((~A5)*A2*(~A3)) , 
+NAME: SLICE_X13Y82/B5LUT, 
+TYPE: LUT5, 
+
+SLICE_X13Y82/A5LUT - 
+CLASS: bel, 
+CONFIG.EQN: O5=(A4*A1)+(A4*(~A1)*A3)+((~A4)*A1*(~A3)) , 
+NAME: SLICE_X13Y82/A5LUT, 
+TYPE: LUT5, 
+
+SLICE_X13Y82/AFF - 
+CLASS: bel, 
+NAME: SLICE_X13Y82/AFF, 
+TYPE: REG_INIT, 
+
+SLICE_X13Y82/BFF - 
+CLASS: bel, 
+NAME: SLICE_X13Y82/BFF, 
+TYPE: REG_INIT, 
+
+SLICE_X13Y82/B5FF - 
+CLASS: bel, 
+NAME: SLICE_X13Y82/B5FF, 
+TYPE: FF_INIT, 
+
+SLICE_X13Y82/A5FF - 
+CLASS: bel, 
+NAME: SLICE_X13Y82/A5FF, 
+TYPE: FF_INIT, 
+

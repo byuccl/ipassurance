@@ -1,0 +1,24 @@
+
+verilog random_pulse_generator "hdl/random_pulse_generator/random_pulse_generator.v"
+
+verilog sha3_high_throughput "hdl/sha3_high_throughput/f_permutation_h.v"
+verilog sha3_high_throughput "hdl/sha3_high_throughput/padder_h.v"
+verilog sha3_high_throughput "hdl/sha3_high_throughput/round2in1.v"
+verilog sha3_high_throughput "hdl/sha3_high_throughput/padder1_h.v"
+verilog sha3_high_throughput "hdl/sha3_high_throughput/rconst2in1.v"
+verilog sha3_high_throughput "hdl/sha3_high_throughput/sha3_high_throughput.v"
+
+verilog sha3_low_throughput "hdl/sha3_low_throughput/f_permutation_l.v"
+verilog sha3_low_throughput "hdl/sha3_low_throughput/padder1_l.v"
+verilog sha3_low_throughput "hdl/sha3_low_throughput/padder_l.v"
+verilog sha3_low_throughput "hdl/sha3_low_throughput/rconst.v"
+verilog sha3_low_throughput "hdl/sha3_low_throughput/round.v"
+verilog sha3_low_throughput "hdl/sha3_low_throughput/sha3_low_throughput.v"
+
+verilog simon_core "hdl/simon_core/Simon_bit_serial_testbench.v"
+verilog simon_core "hdl/simon_core/Simon_bit_serial_datapath_FPGA.v"
+verilog simon_core "hdl/simon_core/simon_core.v"
+verilog simon_core "hdl/simon_core/Simon_bit_serial_key_expansion_FPGA.v"
+
+vhdl work "hdl/blackbox/blackbox.vhd"
+verilog work "hdl/top.v"

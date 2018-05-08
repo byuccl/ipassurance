@@ -1,0 +1,9 @@
+
+
+
+vhdl tiny_encryption_algorithm "hdl/tiny_encryption_algorithm/tea1tb.vhd"
+vhdl tiny_encryption_algorithm "hdl/tiny_encryption_algorithm/tea64.vhd"
+vhdl tiny_encryption_algorithm "hdl/tiny_encryption_algorithm/tiny_encryption_algorithm.vhd"
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

@@ -1,0 +1,14 @@
+ set mysites [get_sites { \
+ SLICE_X65Y45 \
+ SLICE_X70Y43 \
+ SLICE_X56Y37 \
+ SLICE_X56Y35 \
+ SLICE_X56Y34 \
+ SLICE_X52Y28 \
+ SLICE_X54Y28 \
+ RAMB18_X1Y8 \
+ RAMB18_X1Y9 \
+ SLICE_X79Y10 \
+ SLICE_X52Y5 \
+}] 
+select_objects -add $mysites 

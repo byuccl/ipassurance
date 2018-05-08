@@ -1,0 +1,5 @@
+
+
+
+verilog work "hdl/blackbox/blackbox.v"
+verilog work "hdl/top.v"

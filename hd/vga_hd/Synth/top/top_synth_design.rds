@@ -1,0 +1,672 @@
+Command: synth_design -mode default -flatten_hierarchy full -top top -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27122 
+WARNING: [Synth 8-2507] parameter declaration becomes local in bilinearDemosaic with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:121]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bilinearDemosaic with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:122]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bilinearDemosaic with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:232]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bilinearDemosaic with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:233]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bilinearDemosaic with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:234]
+WARNING: [Synth 8-2507] parameter declaration becomes local in bilinearDemosaic with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:235]
+WARNING: [Synth 8-2507] parameter declaration becomes local in streamScaler with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:146]
+WARNING: [Synth 8-2507] parameter declaration becomes local in streamScaler with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:147]
+WARNING: [Synth 8-2507] parameter declaration becomes local in streamScaler with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:437]
+WARNING: [Synth 8-2507] parameter declaration becomes local in streamScaler with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:438]
+WARNING: [Synth 8-2507] parameter declaration becomes local in streamScaler with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:439]
+WARNING: [Synth 8-2507] parameter declaration becomes local in streamScaler with formal parameter declaration list [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:440]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1058.395 ; gain = 173.324 ; free physical = 3972 ; free virtual = 29100
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'bilinearDemosaic' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:57]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter X_RES_WIDTH bound to: 11 - type: integer 
+	Parameter Y_RES_WIDTH bound to: 11 - type: integer 
+	Parameter BUFFER_SIZE bound to: 4 - type: integer 
+	Parameter BUFFER_SIZE_WIDTH bound to: 3 - type: integer 
+	Parameter RS_START bound to: 1'b0 
+	Parameter RS_READ_LINE bound to: 1'b1 
+	Parameter WS_START bound to: 0 - type: integer 
+	Parameter WS_DISCARD bound to: 1 - type: integer 
+	Parameter WS_READ bound to: 2 - type: integer 
+	Parameter WS_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:251]
+INFO: [Synth 8-638] synthesizing module 'registerDelay' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:8]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter STAGES bound to: 3 - type: integer 
+WARNING: [Synth 8-5788] Register rd_generate[0].delayReg_reg in module registerDelay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:43]
+WARNING: [Synth 8-5788] Register rd_generate[1].delayReg_reg in module registerDelay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:43]
+WARNING: [Synth 8-5788] Register delayReg_reg in module registerDelay is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:18]
+INFO: [Synth 8-256] done synthesizing module 'registerDelay' (1#1) [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:8]
+INFO: [Synth 8-638] synthesizing module 'registerDelay__parameterized0' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:8]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter STAGES bound to: 5 - type: integer 
+WARNING: [Synth 8-5788] Register rd_generate[0].delayReg_reg in module registerDelay__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:43]
+WARNING: [Synth 8-5788] Register rd_generate[1].delayReg_reg in module registerDelay__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:43]
+WARNING: [Synth 8-5788] Register rd_generate[2].delayReg_reg in module registerDelay__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:43]
+WARNING: [Synth 8-5788] Register rd_generate[3].delayReg_reg in module registerDelay__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:43]
+WARNING: [Synth 8-5788] Register delayReg_reg in module registerDelay__parameterized0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:18]
+INFO: [Synth 8-256] done synthesizing module 'registerDelay__parameterized0' (1#1) [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/registerDelay.v:8]
+INFO: [Synth 8-638] synthesizing module 'demosaicRamFifo' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:588]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 11 - type: integer 
+	Parameter BUFFER_SIZE bound to: 4 - type: integer 
+	Parameter BUFFER_SIZE_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'demosaicRamDualPort' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:716]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'demosaicRamDualPort' (2#1) [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:716]
+WARNING: [Synth 8-3848] Net ramDataOut[15] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[14] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[13] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[12] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[11] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[10] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[9] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[7] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[6] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[5] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[3] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+WARNING: [Synth 8-3848] Net ramDataOut[0] in module/entity demosaicRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:647]
+INFO: [Synth 8-256] done synthesizing module 'demosaicRamFifo' (3#1) [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:588]
+WARNING: [Synth 8-5788] Register blend2_1_reg in module bilinearDemosaic is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:412]
+WARNING: [Synth 8-5788] Register blend3_1_reg in module bilinearDemosaic is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:413]
+WARNING: [Synth 8-5788] Register blend4_1_reg in module bilinearDemosaic is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:414]
+WARNING: [Synth 8-5788] Register blend5_1_reg in module bilinearDemosaic is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:415]
+WARNING: [Synth 8-5788] Register blend5_reg in module bilinearDemosaic is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:420]
+INFO: [Synth 8-256] done synthesizing module 'bilinearDemosaic' (4#1) [/home/sean/vivado_workspace/vga_hd/Sources/hdl/bilinearDemosaic/bilinearDemosaic.v:57]
+INFO: [Synth 8-638] synthesizing module 'vga' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/blackbox/blackbox.vhd:7]
+INFO: [Synth 8-256] done synthesizing module 'vga' (5#1) [/home/sean/vivado_workspace/vga_hd/Sources/hdl/blackbox/blackbox.vhd:7]
+WARNING: [Synth 8-689] width (40) of port connection 'ADR_O' does not match port width (30) of module 'vga' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/top.v:81]
+INFO: [Synth 8-638] synthesizing module 'streamScaler' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:49]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter CHANNELS bound to: 1 - type: integer 
+	Parameter DISCARD_CNT_WIDTH bound to: 8 - type: integer 
+	Parameter INPUT_X_RES_WIDTH bound to: 11 - type: integer 
+	Parameter INPUT_Y_RES_WIDTH bound to: 11 - type: integer 
+	Parameter OUTPUT_X_RES_WIDTH bound to: 11 - type: integer 
+	Parameter OUTPUT_Y_RES_WIDTH bound to: 11 - type: integer 
+	Parameter FRACTION_BITS bound to: 8 - type: integer 
+	Parameter SCALE_INT_BITS bound to: 4 - type: integer 
+	Parameter SCALE_FRAC_BITS bound to: 14 - type: integer 
+	Parameter BUFFER_SIZE bound to: 4 - type: integer 
+	Parameter COEFF_WIDTH bound to: 9 - type: integer 
+	Parameter SCALE_BITS bound to: 18 - type: integer 
+	Parameter BUFFER_SIZE_WIDTH bound to: 3 - type: integer 
+	Parameter RS_START bound to: 0 - type: integer 
+	Parameter RS_READ_LINE bound to: 1 - type: integer 
+	Parameter WS_START bound to: 0 - type: integer 
+	Parameter WS_DISCARD bound to: 1 - type: integer 
+	Parameter WS_READ bound to: 2 - type: integer 
+	Parameter WS_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'scalerRamFifo' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:576]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 11 - type: integer 
+	Parameter BUFFER_SIZE bound to: 4 - type: integer 
+	Parameter BUFFER_SIZE_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'scalerRamDualPort' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:719]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'scalerRamDualPort' (6#1) [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:719]
+WARNING: [Synth 8-689] width (32) of port connection 'addrB' does not match port width (11) of module 'scalerRamDualPort' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:667]
+WARNING: [Synth 8-689] width (32) of port connection 'addrB' does not match port width (11) of module 'scalerRamDualPort' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:667]
+WARNING: [Synth 8-689] width (32) of port connection 'addrB' does not match port width (11) of module 'scalerRamDualPort' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:667]
+WARNING: [Synth 8-689] width (32) of port connection 'addrB' does not match port width (11) of module 'scalerRamDualPort' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:667]
+WARNING: [Synth 8-3848] Net ramDataOutA[15] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[14] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[13] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[12] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[11] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[10] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[9] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[7] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[6] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[5] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[3] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutA[0] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:643]
+WARNING: [Synth 8-3848] Net ramDataOutB[15] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[14] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[13] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[12] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[11] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[10] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[9] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[7] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[6] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[5] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[3] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+WARNING: [Synth 8-3848] Net ramDataOutB[0] in module/entity scalerRamFifo does not have driver. [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:644]
+INFO: [Synth 8-256] done synthesizing module 'scalerRamFifo' (7#1) [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:576]
+INFO: [Synth 8-256] done synthesizing module 'streamScaler' (8#1) [/home/sean/vivado_workspace/vga_hd/Sources/hdl/streamScaler/scaler.v:49]
+INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [/home/sean/vivado_workspace/vga_hd/Sources/hdl/top.v:23]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[10]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[9]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[8]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[7]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[6]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[5]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[4]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[3]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[2]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[1]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.645 ; gain = 205.574 ; free physical = 3943 ; free virtual = 29071
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.645 ; gain = 205.574 ; free physical = 3943 ; free virtual = 29071
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.648 ; gain = 213.578 ; free physical = 3943 ; free virtual = 29071
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-5544] ROM "readyForRead" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "writeState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1127.703 ; gain = 242.633 ; free physical = 3915 ; free virtual = 29044
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     25 Bit       Adders := 1     
+	   4 Input     17 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 10    
+	   4 Input     10 Bit       Adders := 2     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 5     
+	   5 Input      3 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 3     
+	               17 Bit    Registers := 4     
+	               11 Bit    Registers := 11    
+	               10 Bit    Registers := 11    
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 34    
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 22    
++---Multipliers : 
+	                 9x32  Multipliers := 1     
+	                 8x32  Multipliers := 1     
+	                32x32  Multipliers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 8     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 8     
+	   2 Input     10 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 3     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+	   4 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module demosaicRamDualPort 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module demosaicRamFifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bilinearDemosaic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
+	   4 Input     10 Bit       Adders := 2     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   5 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 11    
+	                8 Bit    Registers := 12    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 3     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 10    
+Module scalerRamDualPort 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module scalerRamFifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module streamScaler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     25 Bit       Adders := 1     
+	   4 Input     17 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 3     
+	               17 Bit    Registers := 4     
+	               11 Bit    Registers := 7     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Multipliers : 
+	                 9x32  Multipliers := 1     
+	                 8x32  Multipliers := 1     
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1191.703 ; gain = 306.633 ; free physical = 3852 ; free virtual = 28979
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "writeState" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP xScaleAmount1, operation Mode is: A*B.
+DSP Report: operator xScaleAmount1 is absorbed into DSP xScaleAmount1.
+DSP Report: Generating DSP yScaleAmountNext0, operation Mode is: C+A*B.
+DSP Report: operator yScaleAmountNext0 is absorbed into DSP yScaleAmountNext0.
+DSP Report: operator yScaleAmountNext1 is absorbed into DSP yScaleAmountNext0.
+DSP Report: Generating DSP coeff101, operation Mode is: (C:0x7f)+A*B.
+DSP Report: operator coeff101 is absorbed into DSP coeff101.
+DSP Report: operator coeff102 is absorbed into DSP coeff101.
+DSP Report: Generating DSP coeff001, operation Mode is: (C:0x7f)+A*B.
+DSP Report: operator coeff001 is absorbed into DSP coeff001.
+DSP Report: operator coeff002 is absorbed into DSP coeff001.
+DSP Report: Generating DSP writeNextValidLine1, operation Mode is: C+A*B.
+DSP Report: operator writeNextValidLine1 is absorbed into DSP writeNextValidLine1.
+DSP Report: operator writeNextValidLine2 is absorbed into DSP writeNextValidLine1.
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[10]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[9]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[8]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[7]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[6]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[5]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[4]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[3]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[2]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[1]
+WARNING: [Synth 8-3331] design streamScaler has unconnected port outputYRes[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1199.711 ; gain = 314.641 ; free physical = 3844 ; free virtual = 28971
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1199.711 ; gain = 314.641 ; free physical = 3844 ; free virtual = 28971
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|demosaicRamDualPort | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R | 2 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|demosaicRamDualPort | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R | 2 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|demosaicRamDualPort | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R | 2 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|demosaicRamDualPort | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R | 2 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|scalerRamDualPort   | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R | 2 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|scalerRamDualPort   | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R | 2 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|scalerRamDualPort   | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R | 2 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|scalerRamDualPort   | ram_reg    | 2 K x 8(WRITE_FIRST)   | W | R | 2 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
++--------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|streamScaler | A*B          | 18     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|streamScaler | C+A*B        | 18     | 12     | 14     | -      | 25     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|streamScaler | (C:0x7f)+A*B | 17     | 8      | 7      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|streamScaler | (C:0x7f)+A*B | 17     | 9      | 7      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|streamScaler | C+A*B        | 18     | 11     | 14     | -      | 25     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (streamScaler_0/\xBlend_reg[8] )
+WARNING: [Synth 8-3332] Sequential element (blend2_1_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend2_1_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend2_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend2_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend4_1_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend4_1_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend4_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend4_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend3_1_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend3_1_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend3_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend3_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend5_1_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend5_1_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend5_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend5_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1Sum_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1Sum_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1Sum_reg[0]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1SumOver3_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1SumOver3_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1SumOver3_reg[7]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1SumOver3_reg[6]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1_reg[9]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1_reg[8]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1_reg[7]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (blend1_reg[6]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (gOut_reg[7]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (gOut_reg[6]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (bOut_reg[2]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (bOut_reg[1]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (bOut_reg[0]) is unused and will be removed from module bilinearDemosaic.
+WARNING: [Synth 8-3332] Sequential element (xScaleAmount_reg[5]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (xScaleAmount_reg[4]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (xScaleAmount_reg[3]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (xScaleAmount_reg[2]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (xScaleAmount_reg[1]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (xScaleAmount_reg[0]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmountNext_reg[5]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmountNext_reg[4]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmountNext_reg[3]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmountNext_reg[2]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmountNext_reg[1]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmountNext_reg[0]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmount_reg[5]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmount_reg[4]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmount_reg[3]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmount_reg[2]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmount_reg[1]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (yScaleAmount_reg[0]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (xBlend_reg[8]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (blend_mult_generate[0].product01_reg[16]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (blend_mult_generate[0].product10_reg[16]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (blend_mult_generate[0].product11_reg[16]) is unused and will be removed from module streamScaler.
+WARNING: [Synth 8-3332] Sequential element (blend_mult_generate[0].product00_reg[16]) is unused and will be removed from module streamScaler.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1236.312 ; gain = 351.242 ; free physical = 3822 ; free virtual = 28949
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1236.312 ; gain = 351.242 ; free physical = 3822 ; free virtual = 28949
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1236.312 ; gain = 351.242 ; free physical = 3822 ; free virtual = 28949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/yScaleAmountNext_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (streamScaler_0/writeNextValidLine_reg[0]) is unused and will be removed from module top.
+INFO: [Synth 8-4480] The timing for the instance demosaic_0/ramRB/ram_generate[0].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance demosaic_0/ramRB/ram_generate[1].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance demosaic_0/ramRB/ram_generate[2].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance demosaic_0/ramRB/ram_generate[3].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance streamScaler_0/ramRB/ram_generate[0].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance streamScaler_0/ramRB/ram_generate[0].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance streamScaler_0/ramRB/ram_generate[1].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance streamScaler_0/ramRB/ram_generate[1].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance streamScaler_0/ramRB/ram_generate[2].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance streamScaler_0/ramRB/ram_generate[2].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance streamScaler_0/ramRB/ram_generate[3].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance streamScaler_0/ramRB/ram_generate[3].ram_inst_i/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1255.641 ; gain = 370.570 ; free physical = 3801 ; free virtual = 28928
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1255.641 ; gain = 370.570 ; free physical = 3801 ; free virtual = 28928
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1255.641 ; gain = 370.570 ; free physical = 3801 ; free virtual = 28928
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1255.641 ; gain = 370.570 ; free physical = 3800 ; free virtual = 28927
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1255.641 ; gain = 370.570 ; free physical = 3800 ; free virtual = 28927
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1255.641 ; gain = 370.570 ; free physical = 3800 ; free virtual = 28927
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | demosaic_0/rd_blendMode/rd_generate[0].delayReg_reg[1] | 5      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|top         | streamScaler_0/dOutValid_reg                           | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |vga           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |vga      |     1|
+|2     |BUFG     |     1|
+|3     |CARRY4   |   109|
+|4     |DSP48E1  |     5|
+|5     |LUT1     |    42|
+|6     |LUT2     |   230|
+|7     |LUT3     |   166|
+|8     |LUT4     |   259|
+|9     |LUT5     |   152|
+|10    |LUT6     |   526|
+|11    |RAMB18E1 |     8|
+|12    |SRL16E   |     3|
+|13    |FDCE     |   505|
+|14    |FDPE     |     7|
+|15    |FDRE     |    43|
+|16    |IBUF     |    18|
+|17    |OBUF     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  2191|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1255.641 ; gain = 370.570 ; free physical = 3800 ; free virtual = 28927
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 173 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1255.641 ; gain = 279.430 ; free physical = 3800 ; free virtual = 28927
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1255.648 ; gain = 370.578 ; free physical = 3800 ; free virtual = 28927
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'vga' instantiated as 'vga_0' [/home/sean/vivado_workspace/vga_hd/Sources/hdl/top.v:64]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 174 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1407.512 ; gain = 443.887 ; free physical = 3743 ; free virtual = 28870
