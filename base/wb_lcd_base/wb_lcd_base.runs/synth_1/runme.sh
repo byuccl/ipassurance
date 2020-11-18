@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.runs/synth_1'
+HD_PWD='/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

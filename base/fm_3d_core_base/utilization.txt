@@ -1,0 +1,34 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 16:05:33 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/fm_3d_core_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-1
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------+-------------+------------+------------+---------+------+------+--------+--------+--------------+
+|    Instance    |    Module   | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++----------------+-------------+------------+------------+---------+------+------+--------+--------+--------------+
+| top            |       (top) |       7471 |       7341 |     104 |   26 | 6574 |      2 |      3 |           14 |
+|   (top)        |       (top) |         31 |         31 |       0 |    0 |    0 |      0 |      0 |            0 |
+|   fm_3d_core_0 |  fm_3d_core |       2867 |       2867 |       0 |    0 | 2235 |      0 |      0 |           10 |
+|   potato0      |   pp_potato |       2399 |       2295 |     104 |    0 | 1695 |      2 |      0 |            0 |
+|   tmu_0        |         tmu |       1963 |       1937 |       0 |   26 | 2524 |      0 |      3 |            4 |
+|   vga80x40_0   | vga80x40__1 |         70 |         70 |       0 |    0 |   40 |      0 |      0 |            0 |
+|   vga80x40_1   | vga80x40__2 |         70 |         70 |       0 |    0 |   40 |      0 |      0 |            0 |
+|   vga80x40_2   |    vga80x40 |         71 |         71 |       0 |    0 |   40 |      0 |      0 |            0 |
++----------------+-------------+------------+------------+---------+------+------+--------+--------+--------------+
+
+

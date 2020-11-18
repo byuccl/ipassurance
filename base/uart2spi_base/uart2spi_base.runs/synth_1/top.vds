@@ -2,96 +2,96 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Jan 13 15:19:46 2018
-# Process ID: 23116
-# Current directory: /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.runs/synth_1
+# Start of session at: Tue Nov 17 13:08:05 2020
+# Process ID: 1709
+# Current directory: /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.runs/synth_1
 # Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.runs/synth_1/top.vds
-# Journal file: /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.runs/synth_1/vivado.jou
+# Log file: /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.runs/synth_1/top.vds
+# Journal file: /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23122 
+INFO: Helper process launched with PID 1712 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1047.645 ; gain = 155.137 ; free physical = 5049 ; free virtual = 118828
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.512 ; gain = 148.137 ; free physical = 4633 ; free virtual = 14851
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-638] synthesizing module 'gng' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng.v:39]
-INFO: [Synth 8-638] synthesizing module 'gng_ctg' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_ctg.v:41]
-INFO: [Synth 8-256] done synthesizing module 'gng_ctg' (1#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_ctg.v:41]
-INFO: [Synth 8-638] synthesizing module 'gng_interp' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_interp.v:39]
-INFO: [Synth 8-638] synthesizing module 'gng_lzd' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_lzd.v:39]
-INFO: [Synth 8-256] done synthesizing module 'gng_lzd' (2#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_lzd.v:39]
-INFO: [Synth 8-638] synthesizing module 'gng_coef' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_coef.v:39]
-INFO: [Synth 8-256] done synthesizing module 'gng_coef' (3#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_coef.v:39]
-INFO: [Synth 8-638] synthesizing module 'gng_smul_16_18_sadd_37' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_smul_16_18_sadd_37.v:40]
-INFO: [Synth 8-256] done synthesizing module 'gng_smul_16_18_sadd_37' (4#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_smul_16_18_sadd_37.v:40]
-INFO: [Synth 8-638] synthesizing module 'gng_smul_16_18' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_smul_16_18.v:39]
-INFO: [Synth 8-256] done synthesizing module 'gng_smul_16_18' (5#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_smul_16_18.v:39]
-INFO: [Synth 8-256] done synthesizing module 'gng_interp' (6#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_interp.v:39]
-INFO: [Synth 8-638] synthesizing module 'uart2spi' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/top/uart2spi.v:48]
-INFO: [Synth 8-638] synthesizing module 'spi_core' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_core.v:43]
-INFO: [Synth 8-638] synthesizing module 'spi_if' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_if.v:44]
-INFO: [Synth 8-256] done synthesizing module 'spi_if' (7#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_if.v:44]
-INFO: [Synth 8-638] synthesizing module 'spi_ctl' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_ctl.v:46]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_ctl.v:200]
-WARNING: [Synth 8-5788] Register op_done_reg in module spi_ctl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_ctl.v:203]
-INFO: [Synth 8-256] done synthesizing module 'spi_ctl' (8#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_ctl.v:46]
-INFO: [Synth 8-638] synthesizing module 'spi_cfg' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_cfg.v:46]
-INFO: [Synth 8-638] synthesizing module 'generic_register' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/lib/registers.v:192]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'gng' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng.v:39]
+INFO: [Synth 8-638] synthesizing module 'gng_ctg' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_ctg.v:41]
+INFO: [Synth 8-256] done synthesizing module 'gng_ctg' (1#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_ctg.v:41]
+INFO: [Synth 8-638] synthesizing module 'gng_interp' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_interp.v:39]
+INFO: [Synth 8-638] synthesizing module 'gng_lzd' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_lzd.v:39]
+INFO: [Synth 8-256] done synthesizing module 'gng_lzd' (2#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_lzd.v:39]
+INFO: [Synth 8-638] synthesizing module 'gng_coef' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_coef.v:39]
+INFO: [Synth 8-256] done synthesizing module 'gng_coef' (3#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_coef.v:39]
+INFO: [Synth 8-638] synthesizing module 'gng_smul_16_18_sadd_37' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_smul_16_18_sadd_37.v:40]
+INFO: [Synth 8-256] done synthesizing module 'gng_smul_16_18_sadd_37' (4#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_smul_16_18_sadd_37.v:40]
+INFO: [Synth 8-638] synthesizing module 'gng_smul_16_18' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_smul_16_18.v:39]
+INFO: [Synth 8-256] done synthesizing module 'gng_smul_16_18' (5#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_smul_16_18.v:39]
+INFO: [Synth 8-256] done synthesizing module 'gng_interp' (6#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_interp.v:39]
+INFO: [Synth 8-638] synthesizing module 'uart2spi' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/top/uart2spi.v:48]
+INFO: [Synth 8-638] synthesizing module 'spi_core' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_core.v:43]
+INFO: [Synth 8-638] synthesizing module 'spi_if' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_if.v:44]
+INFO: [Synth 8-256] done synthesizing module 'spi_if' (7#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_if.v:44]
+INFO: [Synth 8-638] synthesizing module 'spi_ctl' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_ctl.v:46]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_ctl.v:200]
+WARNING: [Synth 8-5788] Register op_done_reg in module spi_ctl is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_ctl.v:203]
+INFO: [Synth 8-256] done synthesizing module 'spi_ctl' (8#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_ctl.v:46]
+INFO: [Synth 8-638] synthesizing module 'spi_cfg' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_cfg.v:46]
+INFO: [Synth 8-638] synthesizing module 'generic_register' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/lib/registers.v:192]
 	Parameter WD bound to: 8 - type: integer 
 	Parameter RESET_DEFAULT bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'bit_register' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/lib/registers.v:50]
+INFO: [Synth 8-638] synthesizing module 'bit_register' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/lib/registers.v:50]
 	Parameter RESET_DEFAULT bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'bit_register' (9#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/lib/registers.v:50]
-INFO: [Synth 8-256] done synthesizing module 'generic_register' (10#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/lib/registers.v:192]
-INFO: [Synth 8-638] synthesizing module 'req_register' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/lib/registers.v:95]
+INFO: [Synth 8-256] done synthesizing module 'bit_register' (9#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/lib/registers.v:50]
+INFO: [Synth 8-256] done synthesizing module 'generic_register' (10#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/lib/registers.v:192]
+INFO: [Synth 8-638] synthesizing module 'req_register' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/lib/registers.v:95]
 	Parameter RESET_DEFAULT bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'req_register' (11#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/lib/registers.v:95]
-INFO: [Synth 8-256] done synthesizing module 'spi_cfg' (12#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_cfg.v:46]
-INFO: [Synth 8-256] done synthesizing module 'spi_core' (13#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_core.v:43]
-INFO: [Synth 8-638] synthesizing module 'uart_core' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_core.v:43]
-INFO: [Synth 8-638] synthesizing module 'clk_ctl' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/clk_ctl.v:53]
+INFO: [Synth 8-256] done synthesizing module 'req_register' (11#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/lib/registers.v:95]
+INFO: [Synth 8-256] done synthesizing module 'spi_cfg' (12#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_cfg.v:46]
+INFO: [Synth 8-256] done synthesizing module 'spi_core' (13#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_core.v:43]
+INFO: [Synth 8-638] synthesizing module 'uart_core' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_core.v:43]
+INFO: [Synth 8-638] synthesizing module 'clk_ctl' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/clk_ctl.v:53]
 	Parameter WD bound to: 11 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clk_ctl' (14#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/clk_ctl.v:53]
-INFO: [Synth 8-638] synthesizing module 'uart_txfsm' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_txfsm.v:47]
+INFO: [Synth 8-256] done synthesizing module 'clk_ctl' (14#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/clk_ctl.v:53]
+INFO: [Synth 8-638] synthesizing module 'uart_txfsm' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_txfsm.v:47]
 	Parameter idle_st bound to: 3'b000 
 	Parameter xfr_data_st bound to: 3'b001 
 	Parameter xfr_pri_st bound to: 3'b010 
 	Parameter xfr_stop_st1 bound to: 3'b011 
 	Parameter xfr_stop_st2 bound to: 3'b100 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_txfsm.v:114]
-INFO: [Synth 8-256] done synthesizing module 'uart_txfsm' (15#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_txfsm.v:47]
-INFO: [Synth 8-638] synthesizing module 'uart_rxfsm' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_rxfsm.v:46]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_txfsm.v:114]
+INFO: [Synth 8-256] done synthesizing module 'uart_txfsm' (15#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_txfsm.v:47]
+INFO: [Synth 8-638] synthesizing module 'uart_rxfsm' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_rxfsm.v:46]
 	Parameter idle_st bound to: 3'b000 
 	Parameter xfr_start bound to: 3'b001 
 	Parameter xfr_data_st bound to: 3'b010 
 	Parameter xfr_pri_st bound to: 3'b011 
 	Parameter xfr_stop_st1 bound to: 3'b100 
 	Parameter xfr_stop_st2 bound to: 3'b101 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_rxfsm.v:128]
-INFO: [Synth 8-256] done synthesizing module 'uart_rxfsm' (16#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_rxfsm.v:46]
-INFO: [Synth 8-256] done synthesizing module 'uart_core' (17#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_core.v:43]
-INFO: [Synth 8-638] synthesizing module 'uart_msg_handler' [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:44]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:168]
-WARNING: [Synth 8-5788] Register TxMsgBuf_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:171]
-WARNING: [Synth 8-5788] Register TxMsgSize_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:172]
-WARNING: [Synth 8-5788] Register RxMsgCnt_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:192]
-WARNING: [Synth 8-5788] Register reg_addr_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:207]
-WARNING: [Synth 8-5788] Register reg_wdata_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:208]
-WARNING: [Synth 8-5788] Register cmd_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:205]
-WARNING: [Synth 8-5788] Register reg_wr_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:253]
-WARNING: [Synth 8-5788] Register tx_data_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:318]
-INFO: [Synth 8-256] done synthesizing module 'uart_msg_handler' (18#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:44]
-INFO: [Synth 8-256] done synthesizing module 'uart2spi' (19#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/top/uart2spi.v:48]
-INFO: [Synth 8-256] done synthesizing module 'gng' (20#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng.v:39]
-INFO: [Synth 8-256] done synthesizing module 'top' (21#1) [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_rxfsm.v:128]
+INFO: [Synth 8-256] done synthesizing module 'uart_rxfsm' (16#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_rxfsm.v:46]
+INFO: [Synth 8-256] done synthesizing module 'uart_core' (17#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_core.v:43]
+INFO: [Synth 8-638] synthesizing module 'uart_msg_handler' [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:168]
+WARNING: [Synth 8-5788] Register TxMsgBuf_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:171]
+WARNING: [Synth 8-5788] Register TxMsgSize_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:172]
+WARNING: [Synth 8-5788] Register RxMsgCnt_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:192]
+WARNING: [Synth 8-5788] Register reg_addr_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:207]
+WARNING: [Synth 8-5788] Register reg_wdata_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:208]
+WARNING: [Synth 8-5788] Register cmd_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:205]
+WARNING: [Synth 8-5788] Register reg_wr_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:253]
+WARNING: [Synth 8-5788] Register tx_data_reg in module uart_msg_handler is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:318]
+INFO: [Synth 8-256] done synthesizing module 'uart_msg_handler' (18#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v:44]
+INFO: [Synth 8-256] done synthesizing module 'uart2spi' (19#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/top/uart2spi.v:48]
+INFO: [Synth 8-256] done synthesizing module 'gng' (20#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng.v:39]
+INFO: [Synth 8-256] done synthesizing module 'top' (21#1) [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/new/top.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1091.082 ; gain = 198.574 ; free physical = 5004 ; free virtual = 118784
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1079.949 ; gain = 191.574 ; free physical = 4585 ; free virtual = 14804
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -101,40 +101,40 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1091.082 ; gain = 198.574 ; free physical = 5004 ; free virtual = 118784
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1079.949 ; gain = 191.574 ; free physical = 4586 ; free virtual = 14804
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/constrs_1/imports/opencores/top.xdc]
-Finished Parsing XDC File [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/constrs_1/imports/opencores/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/constrs_1/imports/opencores/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/constrs_1/imports/opencores/top.xdc]
+Finished Parsing XDC File [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/constrs_1/imports/opencores/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/constrs_1/imports/opencores/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1476.629 ; gain = 0.000 ; free physical = 4817 ; free virtual = 118598
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1427.887 ; gain = 0.000 ; free physical = 4360 ; free virtual = 14578
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1476.629 ; gain = 584.121 ; free physical = 4816 ; free virtual = 118596
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4359 ; free virtual = 14577
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1476.629 ; gain = 584.121 ; free physical = 4816 ; free virtual = 118596
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4359 ; free virtual = 14577
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1476.629 ; gain = 584.121 ; free physical = 4816 ; free virtual = 118596
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4359 ; free virtual = 14577
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'sum2_reg' and it is trimmed from '19' to '18' bits. [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_interp.v:197]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sum2_reg' and it is trimmed from '19' to '18' bits. [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_interp.v:197]
 INFO: [Synth 8-5546] ROM "mask" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'spiif_cs_reg' in module 'spi_ctl'
 INFO: [Synth 8-5546] ROM "spiif_cs" won't be mapped to RAM because it is too sparse
@@ -143,8 +143,8 @@ INFO: [Synth 8-5546] ROM "shift_enb" won't be mapped to RAM because it is too sp
 INFO: [Synth 8-5544] ROM "shift_enb" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "spiif_cs" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "spiif_cs" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/clk_ctl.v:103]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/clk_ctl.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/clk_ctl.v:103]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/clk_ctl.v:108]
 INFO: [Synth 8-802] inferred FSM for state register 'txstate_reg' in module 'uart_txfsm'
 INFO: [Synth 8-5544] ROM "txstate" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "txstate" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -194,7 +194,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'txstate_reg' using encodin
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rxstate_reg' using encoding 'sequential' in module 'uart_rxfsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1476.629 ; gain = 584.121 ; free physical = 4801 ; free virtual = 118581
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4337 ; free virtual = 14556
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -500,41 +500,37 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1476.629 ; gain = 584.121 ; free physical = 4801 ; free virtual = 118581
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4337 ; free virtual = 14556
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
+DSP Report: Generating DSP result_reg, operation Mode is: (C'+(A2*B2)')'.
+DSP Report: register a_reg_reg is absorbed into DSP result_reg.
+DSP Report: register b_reg_reg is absorbed into DSP result_reg.
+DSP Report: register c_reg_reg is absorbed into DSP result_reg.
+DSP Report: register result_reg is absorbed into DSP result_reg.
+DSP Report: register prod_reg is absorbed into DSP result_reg.
+DSP Report: operator sum is absorbed into DSP result_reg.
+DSP Report: operator prod0 is absorbed into DSP result_reg.
+DSP Report: Generating DSP prod_reg, operation Mode is: (A2*B2)'.
+DSP Report: register a_reg_reg is absorbed into DSP prod_reg.
+DSP Report: register b_reg_reg is absorbed into DSP prod_reg.
+DSP Report: register prod_reg is absorbed into DSP prod_reg.
+DSP Report: operator p0 is absorbed into DSP prod_reg.
 INFO: [Synth 8-5546] ROM "RxMsgCnt" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "reg_req" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5587] ROM size for "char2hex" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5546] ROM "reg_wdata" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3936] Found unconnected internal register 'u_gng_interp/u_gng_smul_16_18/prod_reg' and it is trimmed from '34' to '33' bits. [/home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_smul_16_18.v:60]
-DSP Report: Generating DSP u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg, operation Mode is: (C'+(A''*B'')')'.
-DSP Report: register B is absorbed into DSP u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg.
-DSP Report: register B is absorbed into DSP u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg.
-DSP Report: register A is absorbed into DSP u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg.
-DSP Report: register A is absorbed into DSP u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg.
-DSP Report: register u_gng_interp/u_gng_smul_16_18_sadd_37/c_reg_reg is absorbed into DSP u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg.
-DSP Report: register u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg is absorbed into DSP u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg.
-DSP Report: register u_gng_interp/u_gng_smul_16_18_sadd_37/prod_reg is absorbed into DSP u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg.
-DSP Report: operator u_gng_interp/u_gng_smul_16_18_sadd_37/sum is absorbed into DSP u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg.
-DSP Report: operator u_gng_interp/u_gng_smul_16_18_sadd_37/prod0 is absorbed into DSP u_gng_interp/u_gng_smul_16_18_sadd_37/result_reg.
-DSP Report: Generating DSP u_gng_interp/u_gng_smul_16_18/prod_reg, operation Mode is: (A2*B'')'.
-DSP Report: register B is absorbed into DSP u_gng_interp/u_gng_smul_16_18/prod_reg.
-DSP Report: register B is absorbed into DSP u_gng_interp/u_gng_smul_16_18/prod_reg.
-DSP Report: register u_gng_interp/u_gng_smul_16_18/b_reg_reg is absorbed into DSP u_gng_interp/u_gng_smul_16_18/prod_reg.
-DSP Report: register u_gng_interp/u_gng_smul_16_18/prod_reg is absorbed into DSP u_gng_interp/u_gng_smul_16_18/prod_reg.
-DSP Report: operator u_gng_interp/u_gng_smul_16_18/p0 is absorbed into DSP u_gng_interp/u_gng_smul_16_18/prod_reg.
 INFO: [Synth 8-5546] ROM "RxMsgCnt" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "reg_req" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5587] ROM size for "char2hex" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5546] ROM "reg_wdata" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1476.629 ; gain = 584.121 ; free physical = 4800 ; free virtual = 118580
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4313 ; free virtual = 14532
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1476.629 ; gain = 584.121 ; free physical = 4800 ; free virtual = 118580
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4313 ; free virtual = 14532
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -546,21 +542,21 @@ Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+------------+---------------------------+---------------+----------------+
-|Module Name | RTL Object                | Depth x Width | Implemented As | 
-+------------+---------------------------+---------------+----------------+
-|gng_coef    | d                         | 256x53        | LUT            | 
-|gng         | u_gng_interp/u_gng_coef/d | 256x53        | Block RAM      | 
-+------------+---------------------------+---------------+----------------+
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|gng_coef    | d          | 256x53        | LUT            | 
+|gng_coef    | d          | 256x53        | LUT            | 
++------------+------------+---------------+----------------+
 
 
 DSP: Preliminary Mapping  Report (see note below)
-+------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|gng         | (C'+(A''*B'')')' | 18     | 16     | 37     | -      | 38     | 2    | 2    | 1    | -    | -     | 1    | 1    | 
-|gng         | (A2*B'')'        | 18     | 16     | -      | -      | 34     | 1    | 2    | -    | -    | -     | 1    | 0    | 
-+------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|gng_smul_16_18_sadd_37 | (C'+(A2*B2)')' | 18     | 16     | 37     | -      | 38     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|gng_smul_16_18         | (A2*B2)'       | 18     | 16     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 0    | 
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -569,203 +565,123 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[7]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[6]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[6]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[4]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[4]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[2]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[3]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[1]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[2]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[0] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[7]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[6]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[6]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[4]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[4]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[2]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[3]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[1]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[2]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\NextState_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/NextState_reg[2] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[0]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[15]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[15]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[14]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[14]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[10]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[11]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[9]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[10]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[8]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[8] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[0]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[15]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[15]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[14]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[14]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[10]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[11]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[9]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[10]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[8]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[8] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[12]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[22]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[12]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[22]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[8]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[23]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[23]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[16]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[19]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[17]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[16] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[8]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[23]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[23]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[16]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[19]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[17]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[16] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[16]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[31] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[27]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[25]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[16]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[31] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[27]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[25]'
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[31]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[39]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[39] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[31]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[39]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[39] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[39]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[47]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[47] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[39]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[47]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[47] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[47]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[55]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[55] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[47]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[55]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[55] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[63] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[63] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[63]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[71]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[71] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[63]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[71]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[71] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[71]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[79]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[79] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[71]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[79]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[79] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[79]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[87]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[87] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[79]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[87]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[87] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[87]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[95]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[95] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[87]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[95]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[95] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[95]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[103]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[103] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[95]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[103]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[103] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[103]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[111]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[111] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[103]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[111]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[111] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[111]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[119]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[119] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[111]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[119]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[119] )
-INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[119]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[127]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\TxMsgBuf_reg[127] )
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[119]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[127]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/TxMsgBuf_reg[127] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gng_0/\uart2spi_0/u_msg /\tx_data_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart2spi_0/u_msg/tx_data_reg[7] )
-WARNING: [Synth 8-3332] Sequential element (NextState_reg[2]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[127]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[119]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[111]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[103]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[95]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[87]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[79]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[71]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[63]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[55]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[47]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[39]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[31]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[27]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[23]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[19]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[16]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[15]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[14]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[12]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[11]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[10]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[8]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[7]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[6]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[4]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[3]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[2]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[0]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (tx_data_reg[7]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[15]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[14]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[13]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[12]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[11]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[10]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[9]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[8]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[7]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[6]) is unused and will be removed from module uart_msg_handler__1.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z2_reg[5]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z2_reg[4]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z2_reg[3]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z2_reg[2]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z2_reg[1]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z2_reg[0]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z3_reg[8]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z3_reg[7]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z3_reg[6]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z3_reg[5]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z3_reg[4]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z3_reg[3]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z3_reg[2]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z3_reg[1]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z3_reg[0]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_ctg/z1_reg[0]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_interp/sum2_reg[1]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (u_gng_interp/sum2_reg[0]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_core/u_txfsm/txdata_reg[7]) is unused and will be removed from module gng.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/NextState_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[127]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[119]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[111]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[103]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[95]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[87]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[79]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[71]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[63]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[55]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[47]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[39]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[31]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[27]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[16]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[12]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/TxMsgBuf_reg[0]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/tx_data_reg[7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/reg_addr_reg[15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/reg_addr_reg[14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/reg_addr_reg[13]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/reg_addr_reg[12]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/reg_addr_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/reg_addr_reg[10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/reg_addr_reg[9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/reg_addr_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (uart2spi_0/u_msg/reg_addr_reg[7]) is unused and will be removed from module top.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[7]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[6]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[6]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[4]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[4]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[2]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[3]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[1]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[2]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\NextState_reg[2] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[0]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[15]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[14]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[14]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[10]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[11]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[9]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[10]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[8] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[12]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[22]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[8]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[23]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[23]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[16]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[19]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[16] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[16]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[31] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[27]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[25]'
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[31]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[39]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[39] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[39]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[47]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[47] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[47]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[55]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[63] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[63]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[71]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[71] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[71]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[79]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[79] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[79]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[87]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[87] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[87]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[95]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[95] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[95]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[103]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[103] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[103]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[111]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[111] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[111]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[119]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[119] )
+INFO: [Synth 8-3886] merging instance 'uart2spi:/u_msg/TxMsgBuf_reg[119]' (FDE) to 'uart2spi:/u_msg/TxMsgBuf_reg[127]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\TxMsgBuf_reg[127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart2spi:/u_msg/\tx_data_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (z2_reg[5]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z2_reg[4]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z2_reg[3]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z2_reg[2]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z2_reg[1]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z2_reg[0]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z3_reg[8]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z3_reg[7]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z3_reg[6]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z3_reg[5]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z3_reg[4]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z3_reg[3]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z3_reg[2]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z3_reg[1]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z3_reg[0]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (z1_reg[0]) is unused and will be removed from module gng_ctg.
+WARNING: [Synth 8-3332] Sequential element (sum2_reg[1]) is unused and will be removed from module gng_interp.
+WARNING: [Synth 8-3332] Sequential element (sum2_reg[0]) is unused and will be removed from module gng_interp.
+WARNING: [Synth 8-3332] Sequential element (txdata_reg[7]) is unused and will be removed from module uart_txfsm.
+WARNING: [Synth 8-3332] Sequential element (NextState_reg[2]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[127]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[119]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[111]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[103]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[95]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[87]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[79]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[71]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[63]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[55]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[47]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[39]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[31]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[27]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[23]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[19]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[16]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[15]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[14]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[12]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[11]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[10]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[8]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[7]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[6]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[4]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[3]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[2]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[0]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (tx_data_reg[7]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[15]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[14]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[13]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[12]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[11]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[10]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[9]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[8]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[7]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[6]) is unused and will be removed from module uart_msg_handler.
 INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[1]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[22]'
+INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[1]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[22]'
 INFO: [Synth 8-3886] merging instance 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[9]' (FDE) to 'gng_0/uart2spi_0/u_msg/TxMsgBuf_reg[30]'
+INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[9]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[30]'
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[9]) is unused and will be removed from module uart_msg_handler__1.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[1]) is unused and will be removed from module uart_msg_handler__1.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[9]) is unused and will be removed from module uart_msg_handler.
+WARNING: [Synth 8-3332] Sequential element (TxMsgBuf_reg[1]) is unused and will be removed from module uart_msg_handler.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1476.629 ; gain = 584.121 ; free physical = 4784 ; free virtual = 118564
+Finished Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4313 ; free virtual = 14531
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1476.629 ; gain = 584.121 ; free physical = 4784 ; free virtual = 118564
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4313 ; free virtual = 14531
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -779,10 +695,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1476.629 ; gain = 584.121 ; free physical = 4693 ; free virtual = 118474
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4273 ; free virtual = 14491
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1485.629 ; gain = 593.121 ; free physical = 4681 ; free virtual = 118461
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1427.887 ; gain = 539.512 ; free physical = 4269 ; free virtual = 14488
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -793,27 +709,19 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[1]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[22]'
-INFO: [Synth 8-3886] merging instance 'uart2spi_0/u_msg/TxMsgBuf_reg[9]' (FDE) to 'uart2spi_0/u_msg/TxMsgBuf_reg[30]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1506.090 ; gain = 613.582 ; free physical = 4662 ; free virtual = 118442
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1447.910 ; gain = 559.535 ; free physical = 4250 ; free virtual = 14468
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1506.090 ; gain = 613.582 ; free physical = 4662 ; free virtual = 118442
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1447.910 ; gain = 559.535 ; free physical = 4250 ; free virtual = 14468
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1506.090 ; gain = 613.582 ; free physical = 4662 ; free virtual = 118442
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1447.910 ; gain = 559.535 ; free physical = 4250 ; free virtual = 14468
 ---------------------------------------------------------------------------------
 Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
@@ -822,7 +730,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1506.090 ; gain = 613.582 ; free physical = 4662 ; free virtual = 118442
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1447.910 ; gain = 559.535 ; free physical = 4251 ; free virtual = 14470
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -835,7 +743,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1506.090 ; gain = 613.582 ; free physical = 4662 ; free virtual = 118442
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1447.910 ; gain = 559.535 ; free physical = 4250 ; free virtual = 14469
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -847,21 +755,21 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1506.090 ; gain = 613.582 ; free physical = 4662 ; free virtual = 118442
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1447.910 ; gain = 559.535 ; free physical = 4251 ; free virtual = 14470
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|top         | gng_0/u_gng_interp/sign_r_reg[8] | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | gng_0/u_gng_interp/x_r3_reg[14]  | 3      | 15    | NO           | NO                 | YES               | 15     | 0       | 
-|top         | gng_0/u_gng_interp/c0_r5_reg[17] | 6      | 18    | NO           | YES                | YES               | 18     | 0       | 
-|top         | gng_0/u_gng_interp/valid_out_reg | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
-+------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|gng_interp  | sign_r_reg[8] | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|gng_interp  | c0_r5_reg[17] | 5      | 18    | NO           | NO                 | YES               | 18     | 0       | 
+|gng_interp  | x_r4_reg[14]  | 3      | 15    | NO           | NO                 | YES               | 15     | 0       | 
+|gng_interp  | valid_out_reg | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -877,54 +785,206 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----------+------+
-|      |Cell       |Count |
-+------+-----------+------+
-|1     |BUFG       |     3|
-|2     |CARRY4     |    25|
-|3     |DSP48E1_1  |     1|
-|4     |DSP48E1_2  |     1|
-|5     |LUT1       |    39|
-|6     |LUT2       |   166|
-|7     |LUT3       |   331|
-|8     |LUT4       |   162|
-|9     |LUT5       |   206|
-|10    |LUT6       |   446|
-|11    |RAMB18E1   |     1|
-|12    |RAMB18E1_1 |     1|
-|13    |SRL16E     |    35|
-|14    |FDCE       |   468|
-|15    |FDPE       |    12|
-|16    |FDRE       |   692|
-|17    |FDSE       |    35|
-|18    |IBUF       |    17|
-|19    |OBUF       |    17|
-+------+-----------+------+
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    25|
+|3     |DSP48E1   |     1|
+|4     |DSP48E1_1 |     1|
+|5     |LUT1      |   168|
+|6     |LUT2      |   313|
+|7     |LUT3      |   249|
+|8     |LUT4      |   170|
+|9     |LUT5      |   189|
+|10    |LUT6      |   710|
+|11    |SRL16E    |    35|
+|12    |FDCE      |   476|
+|13    |FDPE      |    12|
+|14    |FDRE      |   591|
+|15    |FDSE      |   206|
+|16    |IBUF      |    17|
+|17    |OBUF      |    17|
++------+----------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |  2658|
-+------+---------+-------+------+
++------+---------------------------------------+-----------------------+------+
+|      |Instance                               |Module                 |Cells |
++------+---------------------------------------+-----------------------+------+
+|1     |top                                    |                       |  3181|
+|2     |  gng_0                                |gng                    |  2153|
+|3     |    u_gng_ctg                          |gng_ctg                |   498|
+|4     |    u_gng_interp                       |gng_interp             |   662|
+|5     |      u_gng_lzd                        |gng_lzd                |    58|
+|6     |      u_gng_coef                       |gng_coef               |   294|
+|7     |      u_gng_smul_16_18_sadd_37         |gng_smul_16_18_sadd_37 |     1|
+|8     |      u_gng_smul_16_18                 |gng_smul_16_18         |     1|
+|9     |    uart2spi_0                         |uart2spi__1            |   991|
+|10    |      u_spi                            |spi_core__1            |   369|
+|11    |        u_spi_if                       |spi_if__1              |    31|
+|12    |        u_spi_ctrl                     |spi_ctl__1             |   152|
+|13    |        u_cfg                          |spi_cfg__1             |   186|
+|14    |          u_spi_ctrl_be0               |generic_register__13   |    16|
+|15    |            \gen_bit_reg[0].u_bit_reg  |bit_register__111      |     2|
+|16    |            \gen_bit_reg[1].u_bit_reg  |bit_register__110      |     2|
+|17    |            \gen_bit_reg[2].u_bit_reg  |bit_register__109      |     2|
+|18    |            \gen_bit_reg[3].u_bit_reg  |bit_register__108      |     2|
+|19    |            \gen_bit_reg[4].u_bit_reg  |bit_register__107      |     2|
+|20    |            \gen_bit_reg[5].u_bit_reg  |bit_register__106      |     2|
+|21    |            \gen_bit_reg[6].u_bit_reg  |bit_register__105      |     2|
+|22    |            \gen_bit_reg[7].u_bit_reg  |bit_register__104      |     2|
+|23    |          u_spi_ctrl_be1               |generic_register__12   |    16|
+|24    |            \gen_bit_reg[0].u_bit_reg  |bit_register__103      |     2|
+|25    |            \gen_bit_reg[1].u_bit_reg  |bit_register__102      |     2|
+|26    |            \gen_bit_reg[2].u_bit_reg  |bit_register__101      |     2|
+|27    |            \gen_bit_reg[3].u_bit_reg  |bit_register__100      |     2|
+|28    |            \gen_bit_reg[4].u_bit_reg  |bit_register__99       |     2|
+|29    |            \gen_bit_reg[5].u_bit_reg  |bit_register__98       |     2|
+|30    |            \gen_bit_reg[6].u_bit_reg  |bit_register__97       |     2|
+|31    |            \gen_bit_reg[7].u_bit_reg  |bit_register__96       |     2|
+|32    |          u_spi_ctrl_be2               |generic_register__11   |    16|
+|33    |            \gen_bit_reg[0].u_bit_reg  |bit_register__95       |     2|
+|34    |            \gen_bit_reg[1].u_bit_reg  |bit_register__94       |     2|
+|35    |            \gen_bit_reg[2].u_bit_reg  |bit_register__93       |     2|
+|36    |            \gen_bit_reg[3].u_bit_reg  |bit_register__92       |     2|
+|37    |            \gen_bit_reg[4].u_bit_reg  |bit_register__91       |     2|
+|38    |            \gen_bit_reg[5].u_bit_reg  |bit_register__90       |     2|
+|39    |            \gen_bit_reg[6].u_bit_reg  |bit_register__89       |     2|
+|40    |            \gen_bit_reg[7].u_bit_reg  |bit_register__88       |     2|
+|41    |          u_spi_ctrl_req               |req_register__1        |     3|
+|42    |          u_spi_din_be0                |generic_register__10   |    16|
+|43    |            \gen_bit_reg[0].u_bit_reg  |bit_register__87       |     2|
+|44    |            \gen_bit_reg[1].u_bit_reg  |bit_register__86       |     2|
+|45    |            \gen_bit_reg[2].u_bit_reg  |bit_register__85       |     2|
+|46    |            \gen_bit_reg[3].u_bit_reg  |bit_register__84       |     2|
+|47    |            \gen_bit_reg[4].u_bit_reg  |bit_register__83       |     2|
+|48    |            \gen_bit_reg[5].u_bit_reg  |bit_register__82       |     2|
+|49    |            \gen_bit_reg[6].u_bit_reg  |bit_register__81       |     2|
+|50    |            \gen_bit_reg[7].u_bit_reg  |bit_register__80       |     2|
+|51    |          u_spi_din_be1                |generic_register__9    |    16|
+|52    |            \gen_bit_reg[0].u_bit_reg  |bit_register__79       |     2|
+|53    |            \gen_bit_reg[1].u_bit_reg  |bit_register__78       |     2|
+|54    |            \gen_bit_reg[2].u_bit_reg  |bit_register__77       |     2|
+|55    |            \gen_bit_reg[3].u_bit_reg  |bit_register__76       |     2|
+|56    |            \gen_bit_reg[4].u_bit_reg  |bit_register__75       |     2|
+|57    |            \gen_bit_reg[5].u_bit_reg  |bit_register__74       |     2|
+|58    |            \gen_bit_reg[6].u_bit_reg  |bit_register__73       |     2|
+|59    |            \gen_bit_reg[7].u_bit_reg  |bit_register__72       |     2|
+|60    |          u_spi_din_be2                |generic_register__8    |    16|
+|61    |            \gen_bit_reg[0].u_bit_reg  |bit_register__71       |     2|
+|62    |            \gen_bit_reg[1].u_bit_reg  |bit_register__70       |     2|
+|63    |            \gen_bit_reg[2].u_bit_reg  |bit_register__69       |     2|
+|64    |            \gen_bit_reg[3].u_bit_reg  |bit_register__68       |     2|
+|65    |            \gen_bit_reg[4].u_bit_reg  |bit_register__67       |     2|
+|66    |            \gen_bit_reg[5].u_bit_reg  |bit_register__66       |     2|
+|67    |            \gen_bit_reg[6].u_bit_reg  |bit_register__65       |     2|
+|68    |            \gen_bit_reg[7].u_bit_reg  |bit_register__64       |     2|
+|69    |          u_spi_din_be3                |generic_register__7    |    16|
+|70    |            \gen_bit_reg[0].u_bit_reg  |bit_register__63       |     2|
+|71    |            \gen_bit_reg[1].u_bit_reg  |bit_register__62       |     2|
+|72    |            \gen_bit_reg[2].u_bit_reg  |bit_register__61       |     2|
+|73    |            \gen_bit_reg[3].u_bit_reg  |bit_register__60       |     2|
+|74    |            \gen_bit_reg[4].u_bit_reg  |bit_register__59       |     2|
+|75    |            \gen_bit_reg[5].u_bit_reg  |bit_register__58       |     2|
+|76    |            \gen_bit_reg[6].u_bit_reg  |bit_register__57       |     2|
+|77    |            \gen_bit_reg[7].u_bit_reg  |bit_register__56       |     2|
+|78    |      u_core                           |uart_core__1           |   208|
+|79    |        u_clk_ctl                      |clk_ctl__1             |    79|
+|80    |        u_txfsm                        |uart_txfsm__1          |    49|
+|81    |        u_rxfsm                        |uart_rxfsm__1          |    77|
+|82    |      u_msg                            |uart_msg_handler__1    |   414|
+|83    |  uart2spi_0                           |uart2spi               |   991|
+|84    |    u_spi                              |spi_core               |   369|
+|85    |      u_spi_if                         |spi_if                 |    31|
+|86    |      u_spi_ctrl                       |spi_ctl                |   152|
+|87    |      u_cfg                            |spi_cfg                |   186|
+|88    |        u_spi_ctrl_be0                 |generic_register__1    |    16|
+|89    |          \gen_bit_reg[0].u_bit_reg    |bit_register__15       |     2|
+|90    |          \gen_bit_reg[1].u_bit_reg    |bit_register__14       |     2|
+|91    |          \gen_bit_reg[2].u_bit_reg    |bit_register__13       |     2|
+|92    |          \gen_bit_reg[3].u_bit_reg    |bit_register__12       |     2|
+|93    |          \gen_bit_reg[4].u_bit_reg    |bit_register__11       |     2|
+|94    |          \gen_bit_reg[5].u_bit_reg    |bit_register__10       |     2|
+|95    |          \gen_bit_reg[6].u_bit_reg    |bit_register__9        |     2|
+|96    |          \gen_bit_reg[7].u_bit_reg    |bit_register__8        |     2|
+|97    |        u_spi_ctrl_be1                 |generic_register__2    |    16|
+|98    |          \gen_bit_reg[0].u_bit_reg    |bit_register__23       |     2|
+|99    |          \gen_bit_reg[1].u_bit_reg    |bit_register__22       |     2|
+|100   |          \gen_bit_reg[2].u_bit_reg    |bit_register__21       |     2|
+|101   |          \gen_bit_reg[3].u_bit_reg    |bit_register__20       |     2|
+|102   |          \gen_bit_reg[4].u_bit_reg    |bit_register__19       |     2|
+|103   |          \gen_bit_reg[5].u_bit_reg    |bit_register__18       |     2|
+|104   |          \gen_bit_reg[6].u_bit_reg    |bit_register__17       |     2|
+|105   |          \gen_bit_reg[7].u_bit_reg    |bit_register__16       |     2|
+|106   |        u_spi_ctrl_be2                 |generic_register__3    |    16|
+|107   |          \gen_bit_reg[0].u_bit_reg    |bit_register__31       |     2|
+|108   |          \gen_bit_reg[1].u_bit_reg    |bit_register__30       |     2|
+|109   |          \gen_bit_reg[2].u_bit_reg    |bit_register__29       |     2|
+|110   |          \gen_bit_reg[3].u_bit_reg    |bit_register__28       |     2|
+|111   |          \gen_bit_reg[4].u_bit_reg    |bit_register__27       |     2|
+|112   |          \gen_bit_reg[5].u_bit_reg    |bit_register__26       |     2|
+|113   |          \gen_bit_reg[6].u_bit_reg    |bit_register__25       |     2|
+|114   |          \gen_bit_reg[7].u_bit_reg    |bit_register__24       |     2|
+|115   |        u_spi_ctrl_req                 |req_register           |     3|
+|116   |        u_spi_din_be0                  |generic_register__4    |    16|
+|117   |          \gen_bit_reg[0].u_bit_reg    |bit_register__39       |     2|
+|118   |          \gen_bit_reg[1].u_bit_reg    |bit_register__38       |     2|
+|119   |          \gen_bit_reg[2].u_bit_reg    |bit_register__37       |     2|
+|120   |          \gen_bit_reg[3].u_bit_reg    |bit_register__36       |     2|
+|121   |          \gen_bit_reg[4].u_bit_reg    |bit_register__35       |     2|
+|122   |          \gen_bit_reg[5].u_bit_reg    |bit_register__34       |     2|
+|123   |          \gen_bit_reg[6].u_bit_reg    |bit_register__33       |     2|
+|124   |          \gen_bit_reg[7].u_bit_reg    |bit_register__32       |     2|
+|125   |        u_spi_din_be1                  |generic_register__5    |    16|
+|126   |          \gen_bit_reg[0].u_bit_reg    |bit_register__47       |     2|
+|127   |          \gen_bit_reg[1].u_bit_reg    |bit_register__46       |     2|
+|128   |          \gen_bit_reg[2].u_bit_reg    |bit_register__45       |     2|
+|129   |          \gen_bit_reg[3].u_bit_reg    |bit_register__44       |     2|
+|130   |          \gen_bit_reg[4].u_bit_reg    |bit_register__43       |     2|
+|131   |          \gen_bit_reg[5].u_bit_reg    |bit_register__42       |     2|
+|132   |          \gen_bit_reg[6].u_bit_reg    |bit_register__41       |     2|
+|133   |          \gen_bit_reg[7].u_bit_reg    |bit_register__40       |     2|
+|134   |        u_spi_din_be2                  |generic_register__6    |    16|
+|135   |          \gen_bit_reg[0].u_bit_reg    |bit_register__55       |     2|
+|136   |          \gen_bit_reg[1].u_bit_reg    |bit_register__54       |     2|
+|137   |          \gen_bit_reg[2].u_bit_reg    |bit_register__53       |     2|
+|138   |          \gen_bit_reg[3].u_bit_reg    |bit_register__52       |     2|
+|139   |          \gen_bit_reg[4].u_bit_reg    |bit_register__51       |     2|
+|140   |          \gen_bit_reg[5].u_bit_reg    |bit_register__50       |     2|
+|141   |          \gen_bit_reg[6].u_bit_reg    |bit_register__49       |     2|
+|142   |          \gen_bit_reg[7].u_bit_reg    |bit_register__48       |     2|
+|143   |        u_spi_din_be3                  |generic_register       |    16|
+|144   |          \gen_bit_reg[0].u_bit_reg    |bit_register__1        |     2|
+|145   |          \gen_bit_reg[1].u_bit_reg    |bit_register__2        |     2|
+|146   |          \gen_bit_reg[2].u_bit_reg    |bit_register__3        |     2|
+|147   |          \gen_bit_reg[3].u_bit_reg    |bit_register__4        |     2|
+|148   |          \gen_bit_reg[4].u_bit_reg    |bit_register__5        |     2|
+|149   |          \gen_bit_reg[5].u_bit_reg    |bit_register__6        |     2|
+|150   |          \gen_bit_reg[6].u_bit_reg    |bit_register__7        |     2|
+|151   |          \gen_bit_reg[7].u_bit_reg    |bit_register           |     2|
+|152   |    u_core                             |uart_core              |   208|
+|153   |      u_clk_ctl                        |clk_ctl                |    79|
+|154   |      u_txfsm                          |uart_txfsm             |    49|
+|155   |      u_rxfsm                          |uart_rxfsm             |    77|
+|156   |    u_msg                              |uart_msg_handler       |   414|
++------+---------------------------------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1506.090 ; gain = 613.582 ; free physical = 4662 ; free virtual = 118442
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1447.910 ; gain = 559.535 ; free physical = 4251 ; free virtual = 14470
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 108 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1506.090 ; gain = 140.895 ; free physical = 4662 ; free virtual = 118442
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1506.098 ; gain = 613.590 ; free physical = 4662 ; free virtual = 118442
+Synthesis finished with 0 errors, 0 critical warnings and 65 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1447.910 ; gain = 124.457 ; free physical = 4250 ; free virtual = 14469
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1447.918 ; gain = 559.543 ; free physical = 4250 ; free virtual = 14469
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-191 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+145 Infos, 74 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.105 ; gain = 571.043 ; free physical = 4662 ; free virtual = 118443
-report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1570.121 ; gain = 0.000 ; free physical = 4662 ; free virtual = 118442
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 15:20:12 2018...
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1479.926 ; gain = 516.996 ; free physical = 4252 ; free virtual = 14471
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1511.941 ; gain = 0.000 ; free physical = 4248 ; free virtual = 14468
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 13:08:49 2020...

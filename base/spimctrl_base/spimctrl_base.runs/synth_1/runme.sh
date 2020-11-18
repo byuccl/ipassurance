@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/sean/vivado_workspace/spimctrl_simple/spimctrl_simple.runs/synth_1'
+HD_PWD='/home/jgoeders/ipassurance/base/spimctrl_base/spimctrl_base.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

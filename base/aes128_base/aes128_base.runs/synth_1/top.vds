@@ -2,78 +2,78 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Jan 13 13:38:17 2018
-# Process ID: 29891
-# Current directory: /home/sean/vivado_workspace/aes128_simple/aes128_simple.runs/synth_1
+# Start of session at: Tue Nov 17 14:51:21 2020
+# Process ID: 11767
+# Current directory: /home/jgoeders/ipassurance/base/aes128_base/aes128_base.runs/synth_1
 # Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: /home/sean/vivado_workspace/aes128_simple/aes128_simple.runs/synth_1/top.vds
-# Journal file: /home/sean/vivado_workspace/aes128_simple/aes128_simple.runs/synth_1/vivado.jou
+# Log file: /home/jgoeders/ipassurance/base/aes128_base/aes128_base.runs/synth_1/top.vds
+# Journal file: /home/jgoeders/ipassurance/base/aes128_base/aes128_base.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-Command: synth_design -top top -part xc7a100tcsg324-1 -flatten_hierarchy full
+Command: synth_design -top top -part xc7a100tcsg324-1 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 29911 
+INFO: Helper process launched with PID 11798 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1047.227 ; gain = 162.137 ; free physical = 9773 ; free virtual = 32747
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.512 ; gain = 148.137 ; free physical = 4711 ; free virtual = 15033
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-638] synthesizing module 'aes128' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/aes128.v:17]
-INFO: [Synth 8-638] synthesizing module 'expand_key_128' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/aes128.v:59]
-INFO: [Synth 8-638] synthesizing module 'S4' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/table.v:32]
-INFO: [Synth 8-638] synthesizing module 'S' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/table.v:59]
-INFO: [Synth 8-256] done synthesizing module 'S' (1#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/table.v:59]
-INFO: [Synth 8-256] done synthesizing module 'S4' (2#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/table.v:32]
-INFO: [Synth 8-256] done synthesizing module 'expand_key_128' (3#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/aes128.v:59]
-INFO: [Synth 8-638] synthesizing module 'one_round' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/round.v:18]
-INFO: [Synth 8-638] synthesizing module 'table_lookup' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/table.v:17]
-INFO: [Synth 8-638] synthesizing module 'T' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/table.v:45]
-INFO: [Synth 8-638] synthesizing module 'xS' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/table.v:326]
-INFO: [Synth 8-256] done synthesizing module 'xS' (4#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/table.v:326]
-INFO: [Synth 8-256] done synthesizing module 'T' (5#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/table.v:45]
-INFO: [Synth 8-256] done synthesizing module 'table_lookup' (6#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/table.v:17]
-INFO: [Synth 8-256] done synthesizing module 'one_round' (7#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/round.v:18]
-INFO: [Synth 8-638] synthesizing module 'final_round' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/round.v:50]
-INFO: [Synth 8-256] done synthesizing module 'final_round' (8#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/round.v:50]
-INFO: [Synth 8-256] done synthesizing module 'aes128' (9#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/aes128/src/aes128.v:17]
-INFO: [Synth 8-638] synthesizing module 'viterbi_tx_rx' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/viterbi_tx_rx.v:1]
-INFO: [Synth 8-638] synthesizing module 'encoder' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/encoder.v:1]
-INFO: [Synth 8-256] done synthesizing module 'encoder' (10#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/encoder.v:1]
-INFO: [Synth 8-638] synthesizing module 'decoder' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:1]
-INFO: [Synth 8-638] synthesizing module 'bmc000' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc000.v:1]
-INFO: [Synth 8-256] done synthesizing module 'bmc000' (11#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc000.v:1]
-INFO: [Synth 8-638] synthesizing module 'bmc001' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc001.v:1]
-INFO: [Synth 8-256] done synthesizing module 'bmc001' (12#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc001.v:1]
-INFO: [Synth 8-638] synthesizing module 'bmc010' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc010.v:1]
-INFO: [Synth 8-256] done synthesizing module 'bmc010' (13#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc010.v:1]
-INFO: [Synth 8-638] synthesizing module 'bmc011' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc011.v:1]
-INFO: [Synth 8-256] done synthesizing module 'bmc011' (14#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc011.v:1]
-INFO: [Synth 8-638] synthesizing module 'bmc100' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc100.v:1]
-INFO: [Synth 8-256] done synthesizing module 'bmc100' (15#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc100.v:1]
-INFO: [Synth 8-638] synthesizing module 'bmc101' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc101.v:1]
-INFO: [Synth 8-256] done synthesizing module 'bmc101' (16#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc101.v:1]
-INFO: [Synth 8-638] synthesizing module 'bmc110' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc110.v:1]
-INFO: [Synth 8-256] done synthesizing module 'bmc110' (17#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc110.v:1]
-INFO: [Synth 8-638] synthesizing module 'bmc111' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc111.v:1]
-INFO: [Synth 8-256] done synthesizing module 'bmc111' (18#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc111.v:1]
-INFO: [Synth 8-638] synthesizing module 'ACS' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/ACS.v:1]
-INFO: [Synth 8-256] done synthesizing module 'ACS' (19#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/ACS.v:1]
-INFO: [Synth 8-638] synthesizing module 'mem' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/mem_8x1024.v:1]
-INFO: [Synth 8-256] done synthesizing module 'mem' (20#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/mem_8x1024.v:1]
-INFO: [Synth 8-638] synthesizing module 'tbu' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/tbu.v:1]
-INFO: [Synth 8-256] done synthesizing module 'tbu' (21#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/tbu.v:1]
-INFO: [Synth 8-638] synthesizing module 'mem_disp' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/mem_1x1024.v:1]
-INFO: [Synth 8-256] done synthesizing module 'mem_disp' (22#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/mem_1x1024.v:1]
-INFO: [Synth 8-4471] merging register 'd_in_mem_B_reg[7:0]' into 'd_in_mem_A_reg[7:0]' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:265]
-INFO: [Synth 8-4471] merging register 'd_in_mem_C_reg[7:0]' into 'd_in_mem_A_reg[7:0]' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:266]
-INFO: [Synth 8-4471] merging register 'd_in_mem_D_reg[7:0]' into 'd_in_mem_A_reg[7:0]' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:267]
-INFO: [Synth 8-256] done synthesizing module 'decoder' (23#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:1]
-INFO: [Synth 8-256] done synthesizing module 'viterbi_tx_rx' (24#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/viterbi_tx_rx.v:1]
-INFO: [Synth 8-256] done synthesizing module 'top' (25#1) [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'aes128' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/aes128.v:17]
+INFO: [Synth 8-638] synthesizing module 'expand_key_128' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/aes128.v:59]
+INFO: [Synth 8-638] synthesizing module 'S4' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/table.v:32]
+INFO: [Synth 8-638] synthesizing module 'S' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/table.v:59]
+INFO: [Synth 8-256] done synthesizing module 'S' (1#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/table.v:59]
+INFO: [Synth 8-256] done synthesizing module 'S4' (2#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/table.v:32]
+INFO: [Synth 8-256] done synthesizing module 'expand_key_128' (3#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/aes128.v:59]
+INFO: [Synth 8-638] synthesizing module 'one_round' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/round.v:18]
+INFO: [Synth 8-638] synthesizing module 'table_lookup' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/table.v:17]
+INFO: [Synth 8-638] synthesizing module 'T' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/table.v:45]
+INFO: [Synth 8-638] synthesizing module 'xS' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/table.v:326]
+INFO: [Synth 8-256] done synthesizing module 'xS' (4#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/table.v:326]
+INFO: [Synth 8-256] done synthesizing module 'T' (5#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/table.v:45]
+INFO: [Synth 8-256] done synthesizing module 'table_lookup' (6#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/table.v:17]
+INFO: [Synth 8-256] done synthesizing module 'one_round' (7#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/round.v:18]
+INFO: [Synth 8-638] synthesizing module 'final_round' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/round.v:50]
+INFO: [Synth 8-256] done synthesizing module 'final_round' (8#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/round.v:50]
+INFO: [Synth 8-256] done synthesizing module 'aes128' (9#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/aes128/src/aes128.v:17]
+INFO: [Synth 8-638] synthesizing module 'viterbi_tx_rx' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/viterbi_tx_rx.v:1]
+INFO: [Synth 8-638] synthesizing module 'encoder' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/encoder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'encoder' (10#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/encoder.v:1]
+INFO: [Synth 8-638] synthesizing module 'decoder' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc000' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc000.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc000' (11#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc000.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc001' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc001.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc001' (12#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc001.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc010' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc010.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc010' (13#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc010.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc011' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc011.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc011' (14#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc011.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc100' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc100.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc100' (15#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc100.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc101' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc101.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc101' (16#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc101.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc110' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc110.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc110' (17#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc110.v:1]
+INFO: [Synth 8-638] synthesizing module 'bmc111' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc111.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bmc111' (18#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/bmc111.v:1]
+INFO: [Synth 8-638] synthesizing module 'ACS' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/ACS.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ACS' (19#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/ACS.v:1]
+INFO: [Synth 8-638] synthesizing module 'mem' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/mem_8x1024.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mem' (20#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/mem_8x1024.v:1]
+INFO: [Synth 8-638] synthesizing module 'tbu' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/tbu.v:1]
+INFO: [Synth 8-256] done synthesizing module 'tbu' (21#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/tbu.v:1]
+INFO: [Synth 8-638] synthesizing module 'mem_disp' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/mem_1x1024.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mem_disp' (22#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/mem_1x1024.v:1]
+INFO: [Synth 8-4471] merging register 'd_in_mem_B_reg[7:0]' into 'd_in_mem_A_reg[7:0]' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:265]
+INFO: [Synth 8-4471] merging register 'd_in_mem_C_reg[7:0]' into 'd_in_mem_A_reg[7:0]' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:266]
+INFO: [Synth 8-4471] merging register 'd_in_mem_D_reg[7:0]' into 'd_in_mem_A_reg[7:0]' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:267]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (23#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'viterbi_tx_rx' (24#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/viterbi_tx_rx.v:1]
+INFO: [Synth 8-256] done synthesizing module 'top' (25#1) [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/new/top.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.664 ; gain = 203.574 ; free physical = 9728 ; free virtual = 32704
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1076.949 ; gain = 188.574 ; free physical = 4666 ; free virtual = 14989
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -83,38 +83,38 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.664 ; gain = 203.574 ; free physical = 9728 ; free virtual = 32704
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1076.949 ; gain = 188.574 ; free physical = 4666 ; free virtual = 14990
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/constrs_1/imports/opencores/top.xdc]
-Finished Parsing XDC File [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/constrs_1/imports/opencores/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/constrs_1/imports/opencores/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/constrs_1/imports/opencores/top.xdc]
+Finished Parsing XDC File [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/constrs_1/imports/opencores/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/constrs_1/imports/opencores/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1500.430 ; gain = 0.000 ; free physical = 9396 ; free virtual = 32411
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1450.863 ; gain = 0.000 ; free physical = 4367 ; free virtual = 14690
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1500.430 ; gain = 615.340 ; free physical = 9394 ; free virtual = 32410
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1450.863 ; gain = 562.488 ; free physical = 4366 ; free virtual = 14690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1500.430 ; gain = 615.340 ; free physical = 9394 ; free virtual = 32410
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1450.863 ; gain = 562.488 ; free physical = 4366 ; free virtual = 14690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1500.430 ; gain = 615.340 ; free physical = 9394 ; free virtual = 32410
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1450.863 ; gain = 562.488 ; free physical = 4366 ; free virtual = 14690
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'encoder'
 INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -125,7 +125,7 @@ INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address s
 INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'wr_en_reg' into 'selection_buf_reg' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/tbu.v:35]
+INFO: [Synth 8-4471] merging register 'wr_en_reg' into 'selection_buf_reg' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/tbu.v:35]
 INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "enable_tbu_0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "enable_tbu_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -142,9 +142,9 @@ INFO: [Synth 8-5544] ROM "enable_tbu_1" won't be mapped to Block RAM because add
                  iSTATE0 |                              111 |                              001
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'cstate_reg' using encoding 'sequential' in module 'encoder'
-WARNING: [Synth 8-327] inferring latch for variable 'd_o_reg_reg' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/tbu.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'd_o_reg_reg' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/tbu.v:66]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1500.430 ; gain = 615.340 ; free physical = 9397 ; free virtual = 32413
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1450.863 ; gain = 562.488 ; free physical = 4363 ; free virtual = 14686
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -349,32 +349,31 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1500.430 ; gain = 615.340 ; free physical = 9397 ; free virtual = 32413
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1450.863 ; gain = 562.488 ; free physical = 4363 ; free virtual = 14686
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'decoder1/selection_tbu_0_reg' into 'decoder1/mem_bank_buf_buf_buf_reg' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:409]
-INFO: [Synth 8-4471] merging register 'decoder1/tbu_0/selection_buf_reg' into 'decoder1/mem_bank_buf_buf_buf_buf_reg' [/home/sean/vivado_workspace/aes128_simple/aes128_simple.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/tbu.v:34]
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "decoder1/mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'selection_tbu_0_reg' into 'mem_bank_buf_buf_buf_reg' [/home/jgoeders/ipassurance/base/aes128_base/aes128_base.srcs/sources_1/imports/opencores/viterbi_tx_rx/src/decoder.v:409]
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_bank" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1500.430 ; gain = 615.340 ; free physical = 9395 ; free virtual = 32412
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1450.863 ; gain = 562.488 ; free physical = 4368 ; free virtual = 14692
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1500.430 ; gain = 615.340 ; free physical = 9395 ; free virtual = 32412
+Finished Parallel Reinference  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1450.863 ; gain = 562.488 ; free physical = 4368 ; free virtual = 14692
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -387,67 +386,12 @@ Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+---------------+------------------+---------------+----------------+
-|Module Name    | RTL Object       | Depth x Width | Implemented As | 
-+---------------+------------------+---------------+----------------+
-|S              | out_reg          | 256x8         | Block RAM      | 
-|xS             | out_reg          | 256x8         | Block RAM      | 
-|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
-|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
-|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
-|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
-|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
-|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
-|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
-|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t0/t1/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t0/t2/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t0/t3/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t1/t0/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t1/t1/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t1/t2/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t1/t3/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t2/t0/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t2/t1/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t2/t2/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t2/t2/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t2/t3/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t3/t0/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t3/t1/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t3/t2/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
-|one_round      | t3/t3/s4/out_reg | 256x8         | Block RAM      | 
-|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_1/S_3/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_1/S_2/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_1/S_1/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_1/S_0/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_2/S_3/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_2/S_2/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_2/S_1/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_2/S_0/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_3/S_3/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_3/S_2/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_3/S_1/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_3/S_0/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_4/S_3/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_4/S_2/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_4/S_1/out_reg | 256x8         | Block RAM      | 
-|final_round    | S4_4/S_0/out_reg | 256x8         | Block RAM      | 
-+---------------+------------------+---------------+----------------+
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|S           | out_reg    | 256x8         | Block RAM      | 
+|xS          | out_reg    | 256x8         | Block RAM      | 
++------------+------------+---------------+----------------+
 
 
 Block RAM: Preliminary Mapping  Report (see note below)
@@ -455,10 +399,6 @@ Block RAM: Preliminary Mapping  Report (see note below)
 |Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |mem         | mem_reg    | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
-|mem         | mem_reg    | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
-|mem         | mem_reg    | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
-|mem         | mem_reg    | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
-|mem_disp    | mem_reg    | 1 K x 1(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
 |mem_disp    | mem_reg    | 1 K x 1(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
 +------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
@@ -674,9 +614,9 @@ INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instan
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (aes128_0/a1/\k3a_reg[24] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (aes128_0/a1/\k3a_reg[23] )
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1583.469 ; gain = 698.379 ; free physical = 9230 ; free virtual = 32249
+Finished Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1489.418 ; gain = 601.043 ; free physical = 4285 ; free virtual = 14608
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1583.469 ; gain = 698.379 ; free physical = 9230 ; free virtual = 32249
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1489.418 ; gain = 601.043 ; free physical = 4285 ; free virtual = 14608
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -690,10 +630,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1685.758 ; gain = 800.668 ; free physical = 9122 ; free virtual = 32148
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1606.707 ; gain = 718.332 ; free physical = 4169 ; free virtual = 14492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1761.492 ; gain = 876.402 ; free physical = 9044 ; free virtual = 32070
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1659.434 ; gain = 771.059 ; free physical = 4113 ; free virtual = 14436
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -704,182 +644,131 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t0/t2/s4/out_reg' (RAMB18E1_1) to 'aes128_0/r1/t0/t0/s4/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t1/t0/s4/out_reg' (RAMB18E1_1) to 'aes128_0/r1/t0/t0/s4/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t1/t2/s4/out_reg' (RAMB18E1_1) to 'aes128_0/r1/t0/t0/s4/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t0/t3/s4/out_reg' (RAMB18E1_1) to 'aes128_0/r1/t0/t1/s4/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t1/t1/s4/out_reg' (RAMB18E1_1) to 'aes128_0/r1/t0/t1/s4/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t1/t3/s4/out_reg' (RAMB18E1_1) to 'aes128_0/r1/t0/t1/s4/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t0/t0/s0/out_reg' (RAMB18E1) to 'aes128_0/r1/t0/t2/s0/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t0/t1/s0/out_reg' (RAMB18E1) to 'aes128_0/r1/t0/t3/s0/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t0/t2/s0/out_reg' (RAMB18E1) to 'aes128_0/r1/t1/t0/s0/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t0/t3/s0/out_reg' (RAMB18E1) to 'aes128_0/r1/t1/t1/s0/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t1/t0/s0/out_reg' (RAMB18E1) to 'aes128_0/r1/t1/t2/s0/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/r1/t1/t1/s0/out_reg' (RAMB18E1) to 'aes128_0/r1/t1/t3/s0/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/a1/S4_0/S_3/out_reg' (RAMB18E1) to 'aes128_0/a1/S4_0/S_1/out_reg'
-INFO: [Synth 8-223] decloning instance 'aes128_0/a1/S4_0/S_2/out_reg' (RAMB18E1) to 'aes128_0/a1/S4_0/S_0/out_reg'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[24] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\aes128_0/a2/k3a_reg[25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\aes128_0/a2/k3a_reg[15] )
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a1/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a1/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a2/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a2/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a2/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a2/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a3/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a3/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a3/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a3/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a4/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a4/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a4/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a4/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a5/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a5/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a5/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a5/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a6/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a6/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a6/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a6/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a7/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a7/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a7/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a7/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a8/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a8/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a8/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a8/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a9/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a9/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a9/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a9/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a10/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a10/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a10/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/a10/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t3/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r1/t3/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t1/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t1/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t1/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t1/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t3/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r2/t3/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r3/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r3/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r3/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r3/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r3/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r3/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r3/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r3/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r3/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance aes128_0/r3/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (aes128_0/a2/\k3a_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (aes128_0/a2/\k3a_reg[23] )
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1861.906 ; gain = 976.816 ; free physical = 8978 ; free virtual = 32004
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1680.457 ; gain = 792.082 ; free physical = 4091 ; free virtual = 14414
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1861.906 ; gain = 976.816 ; free physical = 8978 ; free virtual = 32004
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1680.457 ; gain = 792.082 ; free physical = 4090 ; free virtual = 14414
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1861.906 ; gain = 976.816 ; free physical = 8978 ; free virtual = 32004
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1680.457 ; gain = 792.082 ; free physical = 4090 ; free virtual = 14414
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-223] decloning instance 'aes128_0/a1/S4_0/S_1/out_reg' (RAMB18E1) to 'aes128_0/r1/t1/t2/s0/out_reg'
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1861.906 ; gain = 976.816 ; free physical = 8978 ; free virtual = 32004
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1680.457 ; gain = 792.082 ; free physical = 4089 ; free virtual = 14413
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -892,7 +781,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1861.906 ; gain = 976.816 ; free physical = 8978 ; free virtual = 32004
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 1680.457 ; gain = 792.082 ; free physical = 4088 ; free virtual = 14412
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -904,7 +793,7 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1861.906 ; gain = 976.816 ; free physical = 8978 ; free virtual = 32004
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1680.457 ; gain = 792.082 ; free physical = 4088 ; free virtual = 14412
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -922,19 +811,19 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |BUFG       |     1|
 |2     |CARRY4     |   128|
-|3     |LUT1       |   129|
-|4     |LUT2       |  1635|
-|5     |LUT3       |  1392|
-|6     |LUT4       |  2640|
-|7     |LUT5       |   992|
-|8     |LUT6       |  3888|
-|9     |MUXF7      |    48|
-|10    |RAMB18E1   |    95|
-|11    |RAMB18E1_1 |    69|
+|3     |LUT1       |   191|
+|4     |LUT2       |  4768|
+|5     |LUT3       |  1376|
+|6     |LUT4       |  2608|
+|7     |LUT5       |  2528|
+|8     |LUT6       |  1696|
+|9     |MUXF7      |    96|
+|10    |RAMB18E1   |   200|
+|11    |RAMB18E1_1 |   144|
 |12    |RAMB18E1_2 |    96|
-|13    |FDCE       |  1680|
+|13    |FDCE       |  1744|
 |14    |FDPE       |   160|
-|15    |FDRE       |  5477|
+|15    |FDRE       |  5565|
 |16    |FDSE       |   160|
 |17    |LD         |    32|
 |18    |IBUF       |    18|
@@ -942,21 +831,1011 @@ Report Cell Usage:
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       | 18656|
-+------+---------+-------+------+
++------+-------------------+------------------+------+
+|      |Instance           |Module            |Cells |
++------+-------------------+------------------+------+
+|1     |top                |                  | 21527|
+|2     |  aes128_0         |aes128            |  8292|
+|3     |    a1             |expand_key_128__1 |   119|
+|4     |      S4_0         |S4__5             |     4|
+|5     |        S_0        |S__167            |     1|
+|6     |        S_1        |S__166            |     1|
+|7     |        S_2        |S__165            |     1|
+|8     |        S_3        |S__164            |     1|
+|9     |    a2             |expand_key_128__2 |   359|
+|10    |      S4_0         |S4__6             |     4|
+|11    |        S_0        |S__171            |     1|
+|12    |        S_1        |S__170            |     1|
+|13    |        S_2        |S__169            |     1|
+|14    |        S_3        |S__168            |     1|
+|15    |    a3             |expand_key_128__3 |   485|
+|16    |      S4_0         |S4__7             |     4|
+|17    |        S_0        |S__175            |     1|
+|18    |        S_1        |S__174            |     1|
+|19    |        S_2        |S__173            |     1|
+|20    |        S_3        |S__172            |     1|
+|21    |    a4             |expand_key_128__4 |   485|
+|22    |      S4_0         |S4__8             |     4|
+|23    |        S_0        |S__179            |     1|
+|24    |        S_1        |S__178            |     1|
+|25    |        S_2        |S__177            |     1|
+|26    |        S_3        |S__176            |     1|
+|27    |    a5             |expand_key_128__5 |   485|
+|28    |      S4_0         |S4__9             |     4|
+|29    |        S_0        |S__183            |     1|
+|30    |        S_1        |S__182            |     1|
+|31    |        S_2        |S__181            |     1|
+|32    |        S_3        |S__180            |     1|
+|33    |    a6             |expand_key_128__6 |   485|
+|34    |      S4_0         |S4__10            |     4|
+|35    |        S_0        |S__187            |     1|
+|36    |        S_1        |S__186            |     1|
+|37    |        S_2        |S__185            |     1|
+|38    |        S_3        |S__184            |     1|
+|39    |    a7             |expand_key_128__7 |   485|
+|40    |      S4_0         |S4__11            |     4|
+|41    |        S_0        |S__191            |     1|
+|42    |        S_1        |S__190            |     1|
+|43    |        S_2        |S__189            |     1|
+|44    |        S_3        |S__188            |     1|
+|45    |    a8             |expand_key_128__8 |   485|
+|46    |      S4_0         |S4__12            |     4|
+|47    |        S_0        |S__195            |     1|
+|48    |        S_1        |S__194            |     1|
+|49    |        S_2        |S__193            |     1|
+|50    |        S_3        |S__192            |     1|
+|51    |    a9             |expand_key_128__9 |   488|
+|52    |      S4_0         |S4__13            |     4|
+|53    |        S_0        |S__199            |     1|
+|54    |        S_1        |S__198            |     1|
+|55    |        S_2        |S__197            |     1|
+|56    |        S_3        |S__196            |     1|
+|57    |    a10            |expand_key_128    |   360|
+|58    |      S4_0         |S4__1             |     4|
+|59    |        S_0        |S__8              |     1|
+|60    |        S_1        |S__7              |     1|
+|61    |        S_2        |S__6              |     1|
+|62    |        S_3        |S__5              |     1|
+|63    |    r1             |one_round__1      |   416|
+|64    |      t0           |table_lookup__7   |    40|
+|65    |        t0         |T__31             |    10|
+|66    |          s0       |S__51             |     1|
+|67    |          s4       |xS__31            |     1|
+|68    |        t1         |T__30             |    10|
+|69    |          s0       |S__50             |     1|
+|70    |          s4       |xS__30            |     1|
+|71    |        t2         |T__29             |    10|
+|72    |          s0       |S__49             |     1|
+|73    |          s4       |xS__29            |     1|
+|74    |        t3         |T__28             |    10|
+|75    |          s0       |S__48             |     1|
+|76    |          s4       |xS__28            |     1|
+|77    |      t1           |table_lookup__6   |    40|
+|78    |        t0         |T__27             |    10|
+|79    |          s0       |S__47             |     1|
+|80    |          s4       |xS__27            |     1|
+|81    |        t1         |T__26             |    10|
+|82    |          s0       |S__46             |     1|
+|83    |          s4       |xS__26            |     1|
+|84    |        t2         |T__25             |    10|
+|85    |          s0       |S__45             |     1|
+|86    |          s4       |xS__25            |     1|
+|87    |        t3         |T__24             |    10|
+|88    |          s0       |S__44             |     1|
+|89    |          s4       |xS__24            |     1|
+|90    |      t2           |table_lookup__5   |    40|
+|91    |        t0         |T__23             |    10|
+|92    |          s0       |S__43             |     1|
+|93    |          s4       |xS__23            |     1|
+|94    |        t1         |T__22             |    10|
+|95    |          s0       |S__42             |     1|
+|96    |          s4       |xS__22            |     1|
+|97    |        t2         |T__21             |    10|
+|98    |          s0       |S__41             |     1|
+|99    |          s4       |xS__21            |     1|
+|100   |        t3         |T__20             |    10|
+|101   |          s0       |S__40             |     1|
+|102   |          s4       |xS__20            |     1|
+|103   |      t3           |table_lookup__4   |    40|
+|104   |        t0         |T__19             |    10|
+|105   |          s0       |S__39             |     1|
+|106   |          s4       |xS__19            |     1|
+|107   |        t1         |T__18             |    10|
+|108   |          s0       |S__38             |     1|
+|109   |          s4       |xS__18            |     1|
+|110   |        t2         |T__17             |    10|
+|111   |          s0       |S__37             |     1|
+|112   |          s4       |xS__17            |     1|
+|113   |        t3         |T__16             |    10|
+|114   |          s0       |S__36             |     1|
+|115   |          s4       |xS__16            |     1|
+|116   |    r2             |one_round__2      |   416|
+|117   |      t0           |table_lookup__11  |    40|
+|118   |        t0         |T__47             |    10|
+|119   |          s0       |S__67             |     1|
+|120   |          s4       |xS__47            |     1|
+|121   |        t1         |T__46             |    10|
+|122   |          s0       |S__66             |     1|
+|123   |          s4       |xS__46            |     1|
+|124   |        t2         |T__45             |    10|
+|125   |          s0       |S__65             |     1|
+|126   |          s4       |xS__45            |     1|
+|127   |        t3         |T__44             |    10|
+|128   |          s0       |S__64             |     1|
+|129   |          s4       |xS__44            |     1|
+|130   |      t1           |table_lookup__10  |    40|
+|131   |        t0         |T__43             |    10|
+|132   |          s0       |S__63             |     1|
+|133   |          s4       |xS__43            |     1|
+|134   |        t1         |T__42             |    10|
+|135   |          s0       |S__62             |     1|
+|136   |          s4       |xS__42            |     1|
+|137   |        t2         |T__41             |    10|
+|138   |          s0       |S__61             |     1|
+|139   |          s4       |xS__41            |     1|
+|140   |        t3         |T__40             |    10|
+|141   |          s0       |S__60             |     1|
+|142   |          s4       |xS__40            |     1|
+|143   |      t2           |table_lookup__9   |    40|
+|144   |        t0         |T__39             |    10|
+|145   |          s0       |S__59             |     1|
+|146   |          s4       |xS__39            |     1|
+|147   |        t1         |T__38             |    10|
+|148   |          s0       |S__58             |     1|
+|149   |          s4       |xS__38            |     1|
+|150   |        t2         |T__37             |    10|
+|151   |          s0       |S__57             |     1|
+|152   |          s4       |xS__37            |     1|
+|153   |        t3         |T__36             |    10|
+|154   |          s0       |S__56             |     1|
+|155   |          s4       |xS__36            |     1|
+|156   |      t3           |table_lookup__8   |    40|
+|157   |        t0         |T__35             |    10|
+|158   |          s0       |S__55             |     1|
+|159   |          s4       |xS__35            |     1|
+|160   |        t1         |T__34             |    10|
+|161   |          s0       |S__54             |     1|
+|162   |          s4       |xS__34            |     1|
+|163   |        t2         |T__33             |    10|
+|164   |          s0       |S__53             |     1|
+|165   |          s4       |xS__33            |     1|
+|166   |        t3         |T__32             |    10|
+|167   |          s0       |S__52             |     1|
+|168   |          s4       |xS__32            |     1|
+|169   |    r3             |one_round__3      |   416|
+|170   |      t0           |table_lookup__15  |    40|
+|171   |        t0         |T__63             |    10|
+|172   |          s0       |S__83             |     1|
+|173   |          s4       |xS__63            |     1|
+|174   |        t1         |T__62             |    10|
+|175   |          s0       |S__82             |     1|
+|176   |          s4       |xS__62            |     1|
+|177   |        t2         |T__61             |    10|
+|178   |          s0       |S__81             |     1|
+|179   |          s4       |xS__61            |     1|
+|180   |        t3         |T__60             |    10|
+|181   |          s0       |S__80             |     1|
+|182   |          s4       |xS__60            |     1|
+|183   |      t1           |table_lookup__14  |    40|
+|184   |        t0         |T__59             |    10|
+|185   |          s0       |S__79             |     1|
+|186   |          s4       |xS__59            |     1|
+|187   |        t1         |T__58             |    10|
+|188   |          s0       |S__78             |     1|
+|189   |          s4       |xS__58            |     1|
+|190   |        t2         |T__57             |    10|
+|191   |          s0       |S__77             |     1|
+|192   |          s4       |xS__57            |     1|
+|193   |        t3         |T__56             |    10|
+|194   |          s0       |S__76             |     1|
+|195   |          s4       |xS__56            |     1|
+|196   |      t2           |table_lookup__13  |    40|
+|197   |        t0         |T__55             |    10|
+|198   |          s0       |S__75             |     1|
+|199   |          s4       |xS__55            |     1|
+|200   |        t1         |T__54             |    10|
+|201   |          s0       |S__74             |     1|
+|202   |          s4       |xS__54            |     1|
+|203   |        t2         |T__53             |    10|
+|204   |          s0       |S__73             |     1|
+|205   |          s4       |xS__53            |     1|
+|206   |        t3         |T__52             |    10|
+|207   |          s0       |S__72             |     1|
+|208   |          s4       |xS__52            |     1|
+|209   |      t3           |table_lookup__12  |    40|
+|210   |        t0         |T__51             |    10|
+|211   |          s0       |S__71             |     1|
+|212   |          s4       |xS__51            |     1|
+|213   |        t1         |T__50             |    10|
+|214   |          s0       |S__70             |     1|
+|215   |          s4       |xS__50            |     1|
+|216   |        t2         |T__49             |    10|
+|217   |          s0       |S__69             |     1|
+|218   |          s4       |xS__49            |     1|
+|219   |        t3         |T__48             |    10|
+|220   |          s0       |S__68             |     1|
+|221   |          s4       |xS__48            |     1|
+|222   |    r4             |one_round__4      |   416|
+|223   |      t0           |table_lookup__19  |    40|
+|224   |        t0         |T__79             |    10|
+|225   |          s0       |S__99             |     1|
+|226   |          s4       |xS__79            |     1|
+|227   |        t1         |T__78             |    10|
+|228   |          s0       |S__98             |     1|
+|229   |          s4       |xS__78            |     1|
+|230   |        t2         |T__77             |    10|
+|231   |          s0       |S__97             |     1|
+|232   |          s4       |xS__77            |     1|
+|233   |        t3         |T__76             |    10|
+|234   |          s0       |S__96             |     1|
+|235   |          s4       |xS__76            |     1|
+|236   |      t1           |table_lookup__18  |    40|
+|237   |        t0         |T__75             |    10|
+|238   |          s0       |S__95             |     1|
+|239   |          s4       |xS__75            |     1|
+|240   |        t1         |T__74             |    10|
+|241   |          s0       |S__94             |     1|
+|242   |          s4       |xS__74            |     1|
+|243   |        t2         |T__73             |    10|
+|244   |          s0       |S__93             |     1|
+|245   |          s4       |xS__73            |     1|
+|246   |        t3         |T__72             |    10|
+|247   |          s0       |S__92             |     1|
+|248   |          s4       |xS__72            |     1|
+|249   |      t2           |table_lookup__17  |    40|
+|250   |        t0         |T__71             |    10|
+|251   |          s0       |S__91             |     1|
+|252   |          s4       |xS__71            |     1|
+|253   |        t1         |T__70             |    10|
+|254   |          s0       |S__90             |     1|
+|255   |          s4       |xS__70            |     1|
+|256   |        t2         |T__69             |    10|
+|257   |          s0       |S__89             |     1|
+|258   |          s4       |xS__69            |     1|
+|259   |        t3         |T__68             |    10|
+|260   |          s0       |S__88             |     1|
+|261   |          s4       |xS__68            |     1|
+|262   |      t3           |table_lookup__16  |    40|
+|263   |        t0         |T__67             |    10|
+|264   |          s0       |S__87             |     1|
+|265   |          s4       |xS__67            |     1|
+|266   |        t1         |T__66             |    10|
+|267   |          s0       |S__86             |     1|
+|268   |          s4       |xS__66            |     1|
+|269   |        t2         |T__65             |    10|
+|270   |          s0       |S__85             |     1|
+|271   |          s4       |xS__65            |     1|
+|272   |        t3         |T__64             |    10|
+|273   |          s0       |S__84             |     1|
+|274   |          s4       |xS__64            |     1|
+|275   |    r5             |one_round__5      |   416|
+|276   |      t0           |table_lookup__23  |    40|
+|277   |        t0         |T__95             |    10|
+|278   |          s0       |S__115            |     1|
+|279   |          s4       |xS__95            |     1|
+|280   |        t1         |T__94             |    10|
+|281   |          s0       |S__114            |     1|
+|282   |          s4       |xS__94            |     1|
+|283   |        t2         |T__93             |    10|
+|284   |          s0       |S__113            |     1|
+|285   |          s4       |xS__93            |     1|
+|286   |        t3         |T__92             |    10|
+|287   |          s0       |S__112            |     1|
+|288   |          s4       |xS__92            |     1|
+|289   |      t1           |table_lookup__22  |    40|
+|290   |        t0         |T__91             |    10|
+|291   |          s0       |S__111            |     1|
+|292   |          s4       |xS__91            |     1|
+|293   |        t1         |T__90             |    10|
+|294   |          s0       |S__110            |     1|
+|295   |          s4       |xS__90            |     1|
+|296   |        t2         |T__89             |    10|
+|297   |          s0       |S__109            |     1|
+|298   |          s4       |xS__89            |     1|
+|299   |        t3         |T__88             |    10|
+|300   |          s0       |S__108            |     1|
+|301   |          s4       |xS__88            |     1|
+|302   |      t2           |table_lookup__21  |    40|
+|303   |        t0         |T__87             |    10|
+|304   |          s0       |S__107            |     1|
+|305   |          s4       |xS__87            |     1|
+|306   |        t1         |T__86             |    10|
+|307   |          s0       |S__106            |     1|
+|308   |          s4       |xS__86            |     1|
+|309   |        t2         |T__85             |    10|
+|310   |          s0       |S__105            |     1|
+|311   |          s4       |xS__85            |     1|
+|312   |        t3         |T__84             |    10|
+|313   |          s0       |S__104            |     1|
+|314   |          s4       |xS__84            |     1|
+|315   |      t3           |table_lookup__20  |    40|
+|316   |        t0         |T__83             |    10|
+|317   |          s0       |S__103            |     1|
+|318   |          s4       |xS__83            |     1|
+|319   |        t1         |T__82             |    10|
+|320   |          s0       |S__102            |     1|
+|321   |          s4       |xS__82            |     1|
+|322   |        t2         |T__81             |    10|
+|323   |          s0       |S__101            |     1|
+|324   |          s4       |xS__81            |     1|
+|325   |        t3         |T__80             |    10|
+|326   |          s0       |S__100            |     1|
+|327   |          s4       |xS__80            |     1|
+|328   |    r6             |one_round__6      |   416|
+|329   |      t0           |table_lookup__27  |    40|
+|330   |        t0         |T__111            |    10|
+|331   |          s0       |S__131            |     1|
+|332   |          s4       |xS__111           |     1|
+|333   |        t1         |T__110            |    10|
+|334   |          s0       |S__130            |     1|
+|335   |          s4       |xS__110           |     1|
+|336   |        t2         |T__109            |    10|
+|337   |          s0       |S__129            |     1|
+|338   |          s4       |xS__109           |     1|
+|339   |        t3         |T__108            |    10|
+|340   |          s0       |S__128            |     1|
+|341   |          s4       |xS__108           |     1|
+|342   |      t1           |table_lookup__26  |    40|
+|343   |        t0         |T__107            |    10|
+|344   |          s0       |S__127            |     1|
+|345   |          s4       |xS__107           |     1|
+|346   |        t1         |T__106            |    10|
+|347   |          s0       |S__126            |     1|
+|348   |          s4       |xS__106           |     1|
+|349   |        t2         |T__105            |    10|
+|350   |          s0       |S__125            |     1|
+|351   |          s4       |xS__105           |     1|
+|352   |        t3         |T__104            |    10|
+|353   |          s0       |S__124            |     1|
+|354   |          s4       |xS__104           |     1|
+|355   |      t2           |table_lookup__25  |    40|
+|356   |        t0         |T__103            |    10|
+|357   |          s0       |S__123            |     1|
+|358   |          s4       |xS__103           |     1|
+|359   |        t1         |T__102            |    10|
+|360   |          s0       |S__122            |     1|
+|361   |          s4       |xS__102           |     1|
+|362   |        t2         |T__101            |    10|
+|363   |          s0       |S__121            |     1|
+|364   |          s4       |xS__101           |     1|
+|365   |        t3         |T__100            |    10|
+|366   |          s0       |S__120            |     1|
+|367   |          s4       |xS__100           |     1|
+|368   |      t3           |table_lookup__24  |    40|
+|369   |        t0         |T__99             |    10|
+|370   |          s0       |S__119            |     1|
+|371   |          s4       |xS__99            |     1|
+|372   |        t1         |T__98             |    10|
+|373   |          s0       |S__118            |     1|
+|374   |          s4       |xS__98            |     1|
+|375   |        t2         |T__97             |    10|
+|376   |          s0       |S__117            |     1|
+|377   |          s4       |xS__97            |     1|
+|378   |        t3         |T__96             |    10|
+|379   |          s0       |S__116            |     1|
+|380   |          s4       |xS__96            |     1|
+|381   |    r7             |one_round__7      |   416|
+|382   |      t0           |table_lookup__31  |    40|
+|383   |        t0         |T__127            |    10|
+|384   |          s0       |S__147            |     1|
+|385   |          s4       |xS__127           |     1|
+|386   |        t1         |T__126            |    10|
+|387   |          s0       |S__146            |     1|
+|388   |          s4       |xS__126           |     1|
+|389   |        t2         |T__125            |    10|
+|390   |          s0       |S__145            |     1|
+|391   |          s4       |xS__125           |     1|
+|392   |        t3         |T__124            |    10|
+|393   |          s0       |S__144            |     1|
+|394   |          s4       |xS__124           |     1|
+|395   |      t1           |table_lookup__30  |    40|
+|396   |        t0         |T__123            |    10|
+|397   |          s0       |S__143            |     1|
+|398   |          s4       |xS__123           |     1|
+|399   |        t1         |T__122            |    10|
+|400   |          s0       |S__142            |     1|
+|401   |          s4       |xS__122           |     1|
+|402   |        t2         |T__121            |    10|
+|403   |          s0       |S__141            |     1|
+|404   |          s4       |xS__121           |     1|
+|405   |        t3         |T__120            |    10|
+|406   |          s0       |S__140            |     1|
+|407   |          s4       |xS__120           |     1|
+|408   |      t2           |table_lookup__29  |    40|
+|409   |        t0         |T__119            |    10|
+|410   |          s0       |S__139            |     1|
+|411   |          s4       |xS__119           |     1|
+|412   |        t1         |T__118            |    10|
+|413   |          s0       |S__138            |     1|
+|414   |          s4       |xS__118           |     1|
+|415   |        t2         |T__117            |    10|
+|416   |          s0       |S__137            |     1|
+|417   |          s4       |xS__117           |     1|
+|418   |        t3         |T__116            |    10|
+|419   |          s0       |S__136            |     1|
+|420   |          s4       |xS__116           |     1|
+|421   |      t3           |table_lookup__28  |    40|
+|422   |        t0         |T__115            |    10|
+|423   |          s0       |S__135            |     1|
+|424   |          s4       |xS__115           |     1|
+|425   |        t1         |T__114            |    10|
+|426   |          s0       |S__134            |     1|
+|427   |          s4       |xS__114           |     1|
+|428   |        t2         |T__113            |    10|
+|429   |          s0       |S__133            |     1|
+|430   |          s4       |xS__113           |     1|
+|431   |        t3         |T__112            |    10|
+|432   |          s0       |S__132            |     1|
+|433   |          s4       |xS__112           |     1|
+|434   |    r8             |one_round__8      |   416|
+|435   |      t0           |table_lookup__35  |    40|
+|436   |        t0         |T__143            |    10|
+|437   |          s0       |S__163            |     1|
+|438   |          s4       |xS__143           |     1|
+|439   |        t1         |T__142            |    10|
+|440   |          s0       |S__162            |     1|
+|441   |          s4       |xS__142           |     1|
+|442   |        t2         |T__141            |    10|
+|443   |          s0       |S__161            |     1|
+|444   |          s4       |xS__141           |     1|
+|445   |        t3         |T__140            |    10|
+|446   |          s0       |S__160            |     1|
+|447   |          s4       |xS__140           |     1|
+|448   |      t1           |table_lookup__34  |    40|
+|449   |        t0         |T__139            |    10|
+|450   |          s0       |S__159            |     1|
+|451   |          s4       |xS__139           |     1|
+|452   |        t1         |T__138            |    10|
+|453   |          s0       |S__158            |     1|
+|454   |          s4       |xS__138           |     1|
+|455   |        t2         |T__137            |    10|
+|456   |          s0       |S__157            |     1|
+|457   |          s4       |xS__137           |     1|
+|458   |        t3         |T__136            |    10|
+|459   |          s0       |S__156            |     1|
+|460   |          s4       |xS__136           |     1|
+|461   |      t2           |table_lookup__33  |    40|
+|462   |        t0         |T__135            |    10|
+|463   |          s0       |S__155            |     1|
+|464   |          s4       |xS__135           |     1|
+|465   |        t1         |T__134            |    10|
+|466   |          s0       |S__154            |     1|
+|467   |          s4       |xS__134           |     1|
+|468   |        t2         |T__133            |    10|
+|469   |          s0       |S__153            |     1|
+|470   |          s4       |xS__133           |     1|
+|471   |        t3         |T__132            |    10|
+|472   |          s0       |S__152            |     1|
+|473   |          s4       |xS__132           |     1|
+|474   |      t3           |table_lookup__32  |    40|
+|475   |        t0         |T__131            |    10|
+|476   |          s0       |S__151            |     1|
+|477   |          s4       |xS__131           |     1|
+|478   |        t1         |T__130            |    10|
+|479   |          s0       |S__150            |     1|
+|480   |          s4       |xS__130           |     1|
+|481   |        t2         |T__129            |    10|
+|482   |          s0       |S__149            |     1|
+|483   |          s4       |xS__129           |     1|
+|484   |        t3         |T__128            |    10|
+|485   |          s0       |S__148            |     1|
+|486   |          s4       |xS__128           |     1|
+|487   |    r9             |one_round         |   416|
+|488   |      t0           |table_lookup__1   |    40|
+|489   |        t0         |T__7              |    10|
+|490   |          s0       |S__27             |     1|
+|491   |          s4       |xS__7             |     1|
+|492   |        t1         |T__6              |    10|
+|493   |          s0       |S__26             |     1|
+|494   |          s4       |xS__6             |     1|
+|495   |        t2         |T__5              |    10|
+|496   |          s0       |S__25             |     1|
+|497   |          s4       |xS__5             |     1|
+|498   |        t3         |T__4              |    10|
+|499   |          s0       |S__24             |     1|
+|500   |          s4       |xS__4             |     1|
+|501   |      t1           |table_lookup__2   |    40|
+|502   |        t0         |T__11             |    10|
+|503   |          s0       |S__31             |     1|
+|504   |          s4       |xS__11            |     1|
+|505   |        t1         |T__10             |    10|
+|506   |          s0       |S__30             |     1|
+|507   |          s4       |xS__10            |     1|
+|508   |        t2         |T__9              |    10|
+|509   |          s0       |S__29             |     1|
+|510   |          s4       |xS__9             |     1|
+|511   |        t3         |T__8              |    10|
+|512   |          s0       |S__28             |     1|
+|513   |          s4       |xS__8             |     1|
+|514   |      t2           |table_lookup__3   |    40|
+|515   |        t0         |T__15             |    10|
+|516   |          s0       |S__35             |     1|
+|517   |          s4       |xS__15            |     1|
+|518   |        t1         |T__14             |    10|
+|519   |          s0       |S__34             |     1|
+|520   |          s4       |xS__14            |     1|
+|521   |        t2         |T__13             |    10|
+|522   |          s0       |S__33             |     1|
+|523   |          s4       |xS__13            |     1|
+|524   |        t3         |T__12             |    10|
+|525   |          s0       |S__32             |     1|
+|526   |          s4       |xS__12            |     1|
+|527   |      t3           |table_lookup      |    40|
+|528   |        t0         |T__1              |    10|
+|529   |          s0       |S__21             |     1|
+|530   |          s4       |xS__1             |     1|
+|531   |        t1         |T__2              |    10|
+|532   |          s0       |S__22             |     1|
+|533   |          s4       |xS__2             |     1|
+|534   |        t2         |T__3              |    10|
+|535   |          s0       |S__23             |     1|
+|536   |          s4       |xS__3             |     1|
+|537   |        t3         |T                 |    10|
+|538   |          s0       |S                 |     1|
+|539   |          s4       |xS                |     1|
+|540   |    rf             |final_round       |   272|
+|541   |      S4_1         |S4__2             |     4|
+|542   |        S_0        |S__12             |     1|
+|543   |        S_1        |S__11             |     1|
+|544   |        S_2        |S__10             |     1|
+|545   |        S_3        |S__9              |     1|
+|546   |      S4_2         |S4__3             |     4|
+|547   |        S_0        |S__16             |     1|
+|548   |        S_1        |S__15             |     1|
+|549   |        S_2        |S__14             |     1|
+|550   |        S_3        |S__13             |     1|
+|551   |      S4_3         |S4__4             |     4|
+|552   |        S_0        |S__20             |     1|
+|553   |        S_1        |S__19             |     1|
+|554   |        S_2        |S__18             |     1|
+|555   |        S_3        |S__17             |     1|
+|556   |      S4_4         |S4                |     4|
+|557   |        S_0        |S__1              |     1|
+|558   |        S_1        |S__2              |     1|
+|559   |        S_2        |S__3              |     1|
+|560   |        S_3        |S__4              |     1|
+|561   |  viterbi0         |viterbi_tx_rx__1  |   823|
+|562   |    encoder1       |encoder__1        |     9|
+|563   |    decoder1       |decoder__1        |   801|
+|564   |      bmc000_inst  |bmc000__1         |     3|
+|565   |      bmc001_inst  |bmc001__1         |     3|
+|566   |      bmc010_inst  |bmc010__1         |     3|
+|567   |      bmc011_inst  |bmc011__1         |     3|
+|568   |      bmc100_inst  |bmc100__1         |     3|
+|569   |      bmc101_inst  |bmc101__1         |     3|
+|570   |      bmc110_inst  |bmc110__1         |     3|
+|571   |      bmc111_inst  |bmc111__1         |     3|
+|572   |      ACS000       |ACS__15           |    31|
+|573   |      ACS001       |ACS__14           |    34|
+|574   |      ACS010       |ACS__13           |    34|
+|575   |      ACS011       |ACS__12           |    34|
+|576   |      ACS100       |ACS__11           |    31|
+|577   |      ACS101       |ACS__10           |    34|
+|578   |      ACS110       |ACS__9            |    34|
+|579   |      ACS111       |ACS__8            |    34|
+|580   |      trelis_mem_A |mem__7            |     1|
+|581   |      trelis_mem_B |mem__6            |     1|
+|582   |      trelis_mem_C |mem__5            |     1|
+|583   |      trelis_mem_D |mem__4            |     1|
+|584   |      tbu_0        |tbu__3            |    19|
+|585   |      tbu_1        |tbu__2            |    19|
+|586   |      disp_mem_0   |mem_disp__3       |     1|
+|587   |      disp_mem_1   |mem_disp__2       |     1|
+|588   |  viterbi1         |viterbi_tx_rx__2  |   823|
+|589   |    encoder1       |encoder__2        |     9|
+|590   |    decoder1       |decoder__2        |   801|
+|591   |      bmc000_inst  |bmc000__2         |     3|
+|592   |      bmc001_inst  |bmc001__2         |     3|
+|593   |      bmc010_inst  |bmc010__2         |     3|
+|594   |      bmc011_inst  |bmc011__2         |     3|
+|595   |      bmc100_inst  |bmc100__2         |     3|
+|596   |      bmc101_inst  |bmc101__2         |     3|
+|597   |      bmc110_inst  |bmc110__2         |     3|
+|598   |      bmc111_inst  |bmc111__2         |     3|
+|599   |      ACS000       |ACS__23           |    31|
+|600   |      ACS001       |ACS__22           |    34|
+|601   |      ACS010       |ACS__21           |    34|
+|602   |      ACS011       |ACS__20           |    34|
+|603   |      ACS100       |ACS__19           |    31|
+|604   |      ACS101       |ACS__18           |    34|
+|605   |      ACS110       |ACS__17           |    34|
+|606   |      ACS111       |ACS__16           |    34|
+|607   |      trelis_mem_A |mem__11           |     1|
+|608   |      trelis_mem_B |mem__10           |     1|
+|609   |      trelis_mem_C |mem__9            |     1|
+|610   |      trelis_mem_D |mem__8            |     1|
+|611   |      tbu_0        |tbu__5            |    19|
+|612   |      tbu_1        |tbu__4            |    19|
+|613   |      disp_mem_0   |mem_disp__5       |     1|
+|614   |      disp_mem_1   |mem_disp__4       |     1|
+|615   |  viterbi2         |viterbi_tx_rx__3  |   823|
+|616   |    encoder1       |encoder__3        |     9|
+|617   |    decoder1       |decoder__3        |   801|
+|618   |      bmc000_inst  |bmc000__3         |     3|
+|619   |      bmc001_inst  |bmc001__3         |     3|
+|620   |      bmc010_inst  |bmc010__3         |     3|
+|621   |      bmc011_inst  |bmc011__3         |     3|
+|622   |      bmc100_inst  |bmc100__3         |     3|
+|623   |      bmc101_inst  |bmc101__3         |     3|
+|624   |      bmc110_inst  |bmc110__3         |     3|
+|625   |      bmc111_inst  |bmc111__3         |     3|
+|626   |      ACS000       |ACS__31           |    31|
+|627   |      ACS001       |ACS__30           |    34|
+|628   |      ACS010       |ACS__29           |    34|
+|629   |      ACS011       |ACS__28           |    34|
+|630   |      ACS100       |ACS__27           |    31|
+|631   |      ACS101       |ACS__26           |    34|
+|632   |      ACS110       |ACS__25           |    34|
+|633   |      ACS111       |ACS__24           |    34|
+|634   |      trelis_mem_A |mem__15           |     1|
+|635   |      trelis_mem_B |mem__14           |     1|
+|636   |      trelis_mem_C |mem__13           |     1|
+|637   |      trelis_mem_D |mem__12           |     1|
+|638   |      tbu_0        |tbu__7            |    19|
+|639   |      tbu_1        |tbu__6            |    19|
+|640   |      disp_mem_0   |mem_disp__7       |     1|
+|641   |      disp_mem_1   |mem_disp__6       |     1|
+|642   |  viterbi3         |viterbi_tx_rx__4  |   823|
+|643   |    encoder1       |encoder__4        |     9|
+|644   |    decoder1       |decoder__4        |   801|
+|645   |      bmc000_inst  |bmc000__4         |     3|
+|646   |      bmc001_inst  |bmc001__4         |     3|
+|647   |      bmc010_inst  |bmc010__4         |     3|
+|648   |      bmc011_inst  |bmc011__4         |     3|
+|649   |      bmc100_inst  |bmc100__4         |     3|
+|650   |      bmc101_inst  |bmc101__4         |     3|
+|651   |      bmc110_inst  |bmc110__4         |     3|
+|652   |      bmc111_inst  |bmc111__4         |     3|
+|653   |      ACS000       |ACS__39           |    31|
+|654   |      ACS001       |ACS__38           |    34|
+|655   |      ACS010       |ACS__37           |    34|
+|656   |      ACS011       |ACS__36           |    34|
+|657   |      ACS100       |ACS__35           |    31|
+|658   |      ACS101       |ACS__34           |    34|
+|659   |      ACS110       |ACS__33           |    34|
+|660   |      ACS111       |ACS__32           |    34|
+|661   |      trelis_mem_A |mem__19           |     1|
+|662   |      trelis_mem_B |mem__18           |     1|
+|663   |      trelis_mem_C |mem__17           |     1|
+|664   |      trelis_mem_D |mem__16           |     1|
+|665   |      tbu_0        |tbu__9            |    19|
+|666   |      tbu_1        |tbu__8            |    19|
+|667   |      disp_mem_0   |mem_disp__9       |     1|
+|668   |      disp_mem_1   |mem_disp__8       |     1|
+|669   |  viterbi4         |viterbi_tx_rx__5  |   823|
+|670   |    encoder1       |encoder__5        |     9|
+|671   |    decoder1       |decoder__5        |   801|
+|672   |      bmc000_inst  |bmc000__5         |     3|
+|673   |      bmc001_inst  |bmc001__5         |     3|
+|674   |      bmc010_inst  |bmc010__5         |     3|
+|675   |      bmc011_inst  |bmc011__5         |     3|
+|676   |      bmc100_inst  |bmc100__5         |     3|
+|677   |      bmc101_inst  |bmc101__5         |     3|
+|678   |      bmc110_inst  |bmc110__5         |     3|
+|679   |      bmc111_inst  |bmc111__5         |     3|
+|680   |      ACS000       |ACS__47           |    31|
+|681   |      ACS001       |ACS__46           |    34|
+|682   |      ACS010       |ACS__45           |    34|
+|683   |      ACS011       |ACS__44           |    34|
+|684   |      ACS100       |ACS__43           |    31|
+|685   |      ACS101       |ACS__42           |    34|
+|686   |      ACS110       |ACS__41           |    34|
+|687   |      ACS111       |ACS__40           |    34|
+|688   |      trelis_mem_A |mem__23           |     1|
+|689   |      trelis_mem_B |mem__22           |     1|
+|690   |      trelis_mem_C |mem__21           |     1|
+|691   |      trelis_mem_D |mem__20           |     1|
+|692   |      tbu_0        |tbu__11           |    19|
+|693   |      tbu_1        |tbu__10           |    19|
+|694   |      disp_mem_0   |mem_disp__11      |     1|
+|695   |      disp_mem_1   |mem_disp__10      |     1|
+|696   |  viterbi5         |viterbi_tx_rx__6  |   823|
+|697   |    encoder1       |encoder__6        |     9|
+|698   |    decoder1       |decoder__6        |   801|
+|699   |      bmc000_inst  |bmc000__6         |     3|
+|700   |      bmc001_inst  |bmc001__6         |     3|
+|701   |      bmc010_inst  |bmc010__6         |     3|
+|702   |      bmc011_inst  |bmc011__6         |     3|
+|703   |      bmc100_inst  |bmc100__6         |     3|
+|704   |      bmc101_inst  |bmc101__6         |     3|
+|705   |      bmc110_inst  |bmc110__6         |     3|
+|706   |      bmc111_inst  |bmc111__6         |     3|
+|707   |      ACS000       |ACS__55           |    31|
+|708   |      ACS001       |ACS__54           |    34|
+|709   |      ACS010       |ACS__53           |    34|
+|710   |      ACS011       |ACS__52           |    34|
+|711   |      ACS100       |ACS__51           |    31|
+|712   |      ACS101       |ACS__50           |    34|
+|713   |      ACS110       |ACS__49           |    34|
+|714   |      ACS111       |ACS__48           |    34|
+|715   |      trelis_mem_A |mem__27           |     1|
+|716   |      trelis_mem_B |mem__26           |     1|
+|717   |      trelis_mem_C |mem__25           |     1|
+|718   |      trelis_mem_D |mem__24           |     1|
+|719   |      tbu_0        |tbu__13           |    19|
+|720   |      tbu_1        |tbu__12           |    19|
+|721   |      disp_mem_0   |mem_disp__13      |     1|
+|722   |      disp_mem_1   |mem_disp__12      |     1|
+|723   |  viterbi6         |viterbi_tx_rx__7  |   823|
+|724   |    encoder1       |encoder__7        |     9|
+|725   |    decoder1       |decoder__7        |   801|
+|726   |      bmc000_inst  |bmc000__7         |     3|
+|727   |      bmc001_inst  |bmc001__7         |     3|
+|728   |      bmc010_inst  |bmc010__7         |     3|
+|729   |      bmc011_inst  |bmc011__7         |     3|
+|730   |      bmc100_inst  |bmc100__7         |     3|
+|731   |      bmc101_inst  |bmc101__7         |     3|
+|732   |      bmc110_inst  |bmc110__7         |     3|
+|733   |      bmc111_inst  |bmc111__7         |     3|
+|734   |      ACS000       |ACS__63           |    31|
+|735   |      ACS001       |ACS__62           |    34|
+|736   |      ACS010       |ACS__61           |    34|
+|737   |      ACS011       |ACS__60           |    34|
+|738   |      ACS100       |ACS__59           |    31|
+|739   |      ACS101       |ACS__58           |    34|
+|740   |      ACS110       |ACS__57           |    34|
+|741   |      ACS111       |ACS__56           |    34|
+|742   |      trelis_mem_A |mem__31           |     1|
+|743   |      trelis_mem_B |mem__30           |     1|
+|744   |      trelis_mem_C |mem__29           |     1|
+|745   |      trelis_mem_D |mem__28           |     1|
+|746   |      tbu_0        |tbu__15           |    19|
+|747   |      tbu_1        |tbu__14           |    19|
+|748   |      disp_mem_0   |mem_disp__15      |     1|
+|749   |      disp_mem_1   |mem_disp__14      |     1|
+|750   |  viterbi7         |viterbi_tx_rx__8  |   823|
+|751   |    encoder1       |encoder__8        |     9|
+|752   |    decoder1       |decoder__8        |   801|
+|753   |      bmc000_inst  |bmc000__8         |     3|
+|754   |      bmc001_inst  |bmc001__8         |     3|
+|755   |      bmc010_inst  |bmc010__8         |     3|
+|756   |      bmc011_inst  |bmc011__8         |     3|
+|757   |      bmc100_inst  |bmc100__8         |     3|
+|758   |      bmc101_inst  |bmc101__8         |     3|
+|759   |      bmc110_inst  |bmc110__8         |     3|
+|760   |      bmc111_inst  |bmc111__8         |     3|
+|761   |      ACS000       |ACS__71           |    31|
+|762   |      ACS001       |ACS__70           |    34|
+|763   |      ACS010       |ACS__69           |    34|
+|764   |      ACS011       |ACS__68           |    34|
+|765   |      ACS100       |ACS__67           |    31|
+|766   |      ACS101       |ACS__66           |    34|
+|767   |      ACS110       |ACS__65           |    34|
+|768   |      ACS111       |ACS__64           |    34|
+|769   |      trelis_mem_A |mem__35           |     1|
+|770   |      trelis_mem_B |mem__34           |     1|
+|771   |      trelis_mem_C |mem__33           |     1|
+|772   |      trelis_mem_D |mem__32           |     1|
+|773   |      tbu_0        |tbu__17           |    19|
+|774   |      tbu_1        |tbu__16           |    19|
+|775   |      disp_mem_0   |mem_disp__17      |     1|
+|776   |      disp_mem_1   |mem_disp__16      |     1|
+|777   |  viterbi8         |viterbi_tx_rx__9  |   823|
+|778   |    encoder1       |encoder__9        |     9|
+|779   |    decoder1       |decoder__9        |   801|
+|780   |      bmc000_inst  |bmc000__9         |     3|
+|781   |      bmc001_inst  |bmc001__9         |     3|
+|782   |      bmc010_inst  |bmc010__9         |     3|
+|783   |      bmc011_inst  |bmc011__9         |     3|
+|784   |      bmc100_inst  |bmc100__9         |     3|
+|785   |      bmc101_inst  |bmc101__9         |     3|
+|786   |      bmc110_inst  |bmc110__9         |     3|
+|787   |      bmc111_inst  |bmc111__9         |     3|
+|788   |      ACS000       |ACS__79           |    31|
+|789   |      ACS001       |ACS__78           |    34|
+|790   |      ACS010       |ACS__77           |    34|
+|791   |      ACS011       |ACS__76           |    34|
+|792   |      ACS100       |ACS__75           |    31|
+|793   |      ACS101       |ACS__74           |    34|
+|794   |      ACS110       |ACS__73           |    34|
+|795   |      ACS111       |ACS__72           |    34|
+|796   |      trelis_mem_A |mem__39           |     1|
+|797   |      trelis_mem_B |mem__38           |     1|
+|798   |      trelis_mem_C |mem__37           |     1|
+|799   |      trelis_mem_D |mem__36           |     1|
+|800   |      tbu_0        |tbu__19           |    19|
+|801   |      tbu_1        |tbu__18           |    19|
+|802   |      disp_mem_0   |mem_disp__19      |     1|
+|803   |      disp_mem_1   |mem_disp__18      |     1|
+|804   |  viterbi9         |viterbi_tx_rx__10 |   823|
+|805   |    encoder1       |encoder__10       |     9|
+|806   |    decoder1       |decoder__10       |   801|
+|807   |      bmc000_inst  |bmc000__10        |     3|
+|808   |      bmc001_inst  |bmc001__10        |     3|
+|809   |      bmc010_inst  |bmc010__10        |     3|
+|810   |      bmc011_inst  |bmc011__10        |     3|
+|811   |      bmc100_inst  |bmc100__10        |     3|
+|812   |      bmc101_inst  |bmc101__10        |     3|
+|813   |      bmc110_inst  |bmc110__10        |     3|
+|814   |      bmc111_inst  |bmc111__10        |     3|
+|815   |      ACS000       |ACS__87           |    31|
+|816   |      ACS001       |ACS__86           |    34|
+|817   |      ACS010       |ACS__85           |    34|
+|818   |      ACS011       |ACS__84           |    34|
+|819   |      ACS100       |ACS__83           |    31|
+|820   |      ACS101       |ACS__82           |    34|
+|821   |      ACS110       |ACS__81           |    34|
+|822   |      ACS111       |ACS__80           |    34|
+|823   |      trelis_mem_A |mem__43           |     1|
+|824   |      trelis_mem_B |mem__42           |     1|
+|825   |      trelis_mem_C |mem__41           |     1|
+|826   |      trelis_mem_D |mem__40           |     1|
+|827   |      tbu_0        |tbu__21           |    19|
+|828   |      tbu_1        |tbu__20           |    19|
+|829   |      disp_mem_0   |mem_disp__21      |     1|
+|830   |      disp_mem_1   |mem_disp__20      |     1|
+|831   |  viterbi10        |viterbi_tx_rx__11 |   823|
+|832   |    encoder1       |encoder__11       |     9|
+|833   |    decoder1       |decoder__11       |   801|
+|834   |      bmc000_inst  |bmc000__11        |     3|
+|835   |      bmc001_inst  |bmc001__11        |     3|
+|836   |      bmc010_inst  |bmc010__11        |     3|
+|837   |      bmc011_inst  |bmc011__11        |     3|
+|838   |      bmc100_inst  |bmc100__11        |     3|
+|839   |      bmc101_inst  |bmc101__11        |     3|
+|840   |      bmc110_inst  |bmc110__11        |     3|
+|841   |      bmc111_inst  |bmc111__11        |     3|
+|842   |      ACS000       |ACS__95           |    31|
+|843   |      ACS001       |ACS__94           |    34|
+|844   |      ACS010       |ACS__93           |    34|
+|845   |      ACS011       |ACS__92           |    34|
+|846   |      ACS100       |ACS__91           |    31|
+|847   |      ACS101       |ACS__90           |    34|
+|848   |      ACS110       |ACS__89           |    34|
+|849   |      ACS111       |ACS__88           |    34|
+|850   |      trelis_mem_A |mem__47           |     1|
+|851   |      trelis_mem_B |mem__46           |     1|
+|852   |      trelis_mem_C |mem__45           |     1|
+|853   |      trelis_mem_D |mem__44           |     1|
+|854   |      tbu_0        |tbu__23           |    19|
+|855   |      tbu_1        |tbu__22           |    19|
+|856   |      disp_mem_0   |mem_disp__23      |     1|
+|857   |      disp_mem_1   |mem_disp__22      |     1|
+|858   |  viterbi11        |viterbi_tx_rx__12 |   823|
+|859   |    encoder1       |encoder__12       |     9|
+|860   |    decoder1       |decoder__12       |   801|
+|861   |      bmc000_inst  |bmc000__12        |     3|
+|862   |      bmc001_inst  |bmc001__12        |     3|
+|863   |      bmc010_inst  |bmc010__12        |     3|
+|864   |      bmc011_inst  |bmc011__12        |     3|
+|865   |      bmc100_inst  |bmc100__12        |     3|
+|866   |      bmc101_inst  |bmc101__12        |     3|
+|867   |      bmc110_inst  |bmc110__12        |     3|
+|868   |      bmc111_inst  |bmc111__12        |     3|
+|869   |      ACS000       |ACS__103          |    31|
+|870   |      ACS001       |ACS__102          |    34|
+|871   |      ACS010       |ACS__101          |    34|
+|872   |      ACS011       |ACS__100          |    34|
+|873   |      ACS100       |ACS__99           |    31|
+|874   |      ACS101       |ACS__98           |    34|
+|875   |      ACS110       |ACS__97           |    34|
+|876   |      ACS111       |ACS__96           |    34|
+|877   |      trelis_mem_A |mem__51           |     1|
+|878   |      trelis_mem_B |mem__50           |     1|
+|879   |      trelis_mem_C |mem__49           |     1|
+|880   |      trelis_mem_D |mem__48           |     1|
+|881   |      tbu_0        |tbu__25           |    19|
+|882   |      tbu_1        |tbu__24           |    19|
+|883   |      disp_mem_0   |mem_disp__25      |     1|
+|884   |      disp_mem_1   |mem_disp__24      |     1|
+|885   |  viterbi12        |viterbi_tx_rx__13 |   823|
+|886   |    encoder1       |encoder__13       |     9|
+|887   |    decoder1       |decoder__13       |   801|
+|888   |      bmc000_inst  |bmc000__13        |     3|
+|889   |      bmc001_inst  |bmc001__13        |     3|
+|890   |      bmc010_inst  |bmc010__13        |     3|
+|891   |      bmc011_inst  |bmc011__13        |     3|
+|892   |      bmc100_inst  |bmc100__13        |     3|
+|893   |      bmc101_inst  |bmc101__13        |     3|
+|894   |      bmc110_inst  |bmc110__13        |     3|
+|895   |      bmc111_inst  |bmc111__13        |     3|
+|896   |      ACS000       |ACS__111          |    31|
+|897   |      ACS001       |ACS__110          |    34|
+|898   |      ACS010       |ACS__109          |    34|
+|899   |      ACS011       |ACS__108          |    34|
+|900   |      ACS100       |ACS__107          |    31|
+|901   |      ACS101       |ACS__106          |    34|
+|902   |      ACS110       |ACS__105          |    34|
+|903   |      ACS111       |ACS__104          |    34|
+|904   |      trelis_mem_A |mem__55           |     1|
+|905   |      trelis_mem_B |mem__54           |     1|
+|906   |      trelis_mem_C |mem__53           |     1|
+|907   |      trelis_mem_D |mem__52           |     1|
+|908   |      tbu_0        |tbu__27           |    19|
+|909   |      tbu_1        |tbu__26           |    19|
+|910   |      disp_mem_0   |mem_disp__27      |     1|
+|911   |      disp_mem_1   |mem_disp__26      |     1|
+|912   |  viterbi13        |viterbi_tx_rx__14 |   823|
+|913   |    encoder1       |encoder__14       |     9|
+|914   |    decoder1       |decoder__14       |   801|
+|915   |      bmc000_inst  |bmc000__14        |     3|
+|916   |      bmc001_inst  |bmc001__14        |     3|
+|917   |      bmc010_inst  |bmc010__14        |     3|
+|918   |      bmc011_inst  |bmc011__14        |     3|
+|919   |      bmc100_inst  |bmc100__14        |     3|
+|920   |      bmc101_inst  |bmc101__14        |     3|
+|921   |      bmc110_inst  |bmc110__14        |     3|
+|922   |      bmc111_inst  |bmc111__14        |     3|
+|923   |      ACS000       |ACS__119          |    31|
+|924   |      ACS001       |ACS__118          |    34|
+|925   |      ACS010       |ACS__117          |    34|
+|926   |      ACS011       |ACS__116          |    34|
+|927   |      ACS100       |ACS__115          |    31|
+|928   |      ACS101       |ACS__114          |    34|
+|929   |      ACS110       |ACS__113          |    34|
+|930   |      ACS111       |ACS__112          |    34|
+|931   |      trelis_mem_A |mem__59           |     1|
+|932   |      trelis_mem_B |mem__58           |     1|
+|933   |      trelis_mem_C |mem__57           |     1|
+|934   |      trelis_mem_D |mem__56           |     1|
+|935   |      tbu_0        |tbu__29           |    19|
+|936   |      tbu_1        |tbu__28           |    19|
+|937   |      disp_mem_0   |mem_disp__29      |     1|
+|938   |      disp_mem_1   |mem_disp__28      |     1|
+|939   |  viterbi14        |viterbi_tx_rx__15 |   823|
+|940   |    encoder1       |encoder__15       |     9|
+|941   |    decoder1       |decoder__15       |   801|
+|942   |      bmc000_inst  |bmc000__15        |     3|
+|943   |      bmc001_inst  |bmc001__15        |     3|
+|944   |      bmc010_inst  |bmc010__15        |     3|
+|945   |      bmc011_inst  |bmc011__15        |     3|
+|946   |      bmc100_inst  |bmc100__15        |     3|
+|947   |      bmc101_inst  |bmc101__15        |     3|
+|948   |      bmc110_inst  |bmc110__15        |     3|
+|949   |      bmc111_inst  |bmc111__15        |     3|
+|950   |      ACS000       |ACS__127          |    31|
+|951   |      ACS001       |ACS__126          |    34|
+|952   |      ACS010       |ACS__125          |    34|
+|953   |      ACS011       |ACS__124          |    34|
+|954   |      ACS100       |ACS__123          |    31|
+|955   |      ACS101       |ACS__122          |    34|
+|956   |      ACS110       |ACS__121          |    34|
+|957   |      ACS111       |ACS__120          |    34|
+|958   |      trelis_mem_A |mem__63           |     1|
+|959   |      trelis_mem_B |mem__62           |     1|
+|960   |      trelis_mem_C |mem__61           |     1|
+|961   |      trelis_mem_D |mem__60           |     1|
+|962   |      tbu_0        |tbu__31           |    19|
+|963   |      tbu_1        |tbu__30           |    19|
+|964   |      disp_mem_0   |mem_disp__31      |     1|
+|965   |      disp_mem_1   |mem_disp__30      |     1|
+|966   |  viterbi15        |viterbi_tx_rx     |   823|
+|967   |    encoder1       |encoder           |     9|
+|968   |    decoder1       |decoder           |   801|
+|969   |      bmc000_inst  |bmc000            |     3|
+|970   |      bmc001_inst  |bmc001            |     3|
+|971   |      bmc010_inst  |bmc010            |     3|
+|972   |      bmc011_inst  |bmc011            |     3|
+|973   |      bmc100_inst  |bmc100            |     3|
+|974   |      bmc101_inst  |bmc101            |     3|
+|975   |      bmc110_inst  |bmc110            |     3|
+|976   |      bmc111_inst  |bmc111            |     3|
+|977   |      ACS000       |ACS__1            |    31|
+|978   |      ACS001       |ACS__2            |    34|
+|979   |      ACS010       |ACS__3            |    34|
+|980   |      ACS011       |ACS__4            |    34|
+|981   |      ACS100       |ACS__5            |    31|
+|982   |      ACS101       |ACS__6            |    34|
+|983   |      ACS110       |ACS__7            |    34|
+|984   |      ACS111       |ACS               |    34|
+|985   |      trelis_mem_A |mem__1            |     1|
+|986   |      trelis_mem_B |mem__2            |     1|
+|987   |      trelis_mem_C |mem__3            |     1|
+|988   |      trelis_mem_D |mem               |     1|
+|989   |      tbu_0        |tbu__1            |    19|
+|990   |      tbu_1        |tbu               |    19|
+|991   |      disp_mem_0   |mem_disp__1       |     1|
+|992   |      disp_mem_1   |mem_disp          |     1|
++------+-------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1861.906 ; gain = 976.816 ; free physical = 8978 ; free virtual = 32004
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 1680.457 ; gain = 792.082 ; free physical = 4088 ; free virtual = 14411
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 702 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1861.906 ; gain = 475.910 ; free physical = 8978 ; free virtual = 32004
-Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1861.914 ; gain = 976.824 ; free physical = 8978 ; free virtual = 32004
+Synthesis finished with 0 errors, 0 critical warnings and 581 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1680.457 ; gain = 331.027 ; free physical = 4088 ; free virtual = 14411
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 1680.465 ; gain = 792.090 ; free physical = 4088 ; free virtual = 14411
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 438 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 618 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -964,8 +1843,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-349 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+303 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 1893.922 ; gain = 932.277 ; free physical = 8977 ; free virtual = 32005
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1925.938 ; gain = 0.000 ; free physical = 8974 ; free virtual = 32004
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 13:39:34 2018...
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1712.473 ; gain = 749.543 ; free physical = 4086 ; free virtual = 14410
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1744.488 ; gain = 0.000 ; free physical = 4081 ; free virtual = 14408
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 14:52:48 2020...

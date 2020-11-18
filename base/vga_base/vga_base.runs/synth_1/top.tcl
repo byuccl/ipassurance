@@ -9,37 +9,37 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/sean/vivado_workspace/vga_simple/vga_simple.cache/wt [current_project]
-set_property parent.project_path /home/sean/vivado_workspace/vga_simple/vga_simple.xpr [current_project]
+set_property webtalk.parent_dir /home/jgoeders/ipassurance/base/vga_base/vga_base.cache/wt [current_project]
+set_property parent.project_path /home/jgoeders/ipassurance/base/vga_base/vga_base.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_verilog -library xil_defaultlib {
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/bilinearDemosaic/src/registerDelay.v
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/bilinearDemosaic/src/bilinearDemosaic.v
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/streamScaler/src/scaler.v
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/maybetop/maybetop.srcs/sources_1/new/top.v
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/bilinearDemosaic/src/registerDelay.v
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/bilinearDemosaic/src/bilinearDemosaic.v
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/streamScaler/src/scaler.v
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/maybetop/maybetop.srcs/sources_1/new/top.v
 }
 read_vhdl -library xil_defaultlib {
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/counter.vhd
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/vtim.vhd
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/colproc.vhd
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/dpm.vhd
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/fifo.vhd
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/tgen.vhd
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/fifo_dc.vhd
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/pgen.vhd
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/wb_master.vhd
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/wb_slave.vhd
-  /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/sources_1/imports/vivado_playground/opencores/vga/src/vga.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/counter.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/vtim.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/colproc.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/dpm.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/fifo.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/tgen.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/fifo_dc.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/pgen.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/wb_master.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/wb_slave.vhd
+  /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/sources_1/imports/vivado_playground/opencores/vga/src/vga.vhd
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/constrs_1/imports/xdc/top.xdc
-set_property used_in_implementation false [get_files /home/sean/vivado_workspace/vga_simple/vga_simple.srcs/constrs_1/imports/xdc/top.xdc]
+read_xdc /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/constrs_1/imports/xdc/top.xdc
+set_property used_in_implementation false [get_files /home/jgoeders/ipassurance/base/vga_base/vga_base.srcs/constrs_1/imports/xdc/top.xdc]
 
 
-synth_design -top top -part xc7a100tcsg324-1 -flatten_hierarchy full
+synth_design -top top -part xc7a100tcsg324-1 -flatten_hierarchy none
 
 
 write_checkpoint -force -noxdef top.dcp

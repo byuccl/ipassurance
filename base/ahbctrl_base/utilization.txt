@@ -1,0 +1,69 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 11:13:43 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/ahbctrl_base/utilization.txt
+| Design       : leon3mp
+| Device       : 7a100tcsg324-1
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------+-------------------------+------------+------------+---------+------+-------+--------+--------+--------------+
+|       Instance       |          Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP48 Blocks |
++----------------------+-------------------------+------------+------------+---------+------+-------+--------+--------+--------------+
+| leon3mp              |                   (top) |      33576 |      33464 |     104 |    8 | 15963 |     37 |     50 |           16 |
+|   (leon3mp)          |                   (top) |          5 |          5 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   ahbctrl_0          |                 ahbctrl |        353 |        353 |       0 |    0 |    53 |      0 |      0 |            0 |
+|   ahbjtag_0          |                 ahbjtag |        242 |        242 |       0 |    0 |   194 |      0 |      0 |            0 |
+|   ahbramgen.ahbram0  |                  ahbram |         19 |         19 |       0 |    0 |    51 |      0 |      2 |            0 |
+|   ahbuart_0          |                 ahbuart |        276 |        276 |       0 |    0 |   179 |      0 |      0 |            0 |
+|   apbctrl_0          |                 apbctrl |        126 |        126 |       0 |    0 |    89 |      0 |      0 |            0 |
+|   bdr                |               iopadv__1 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   bdr2               |                  iopadv |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   bpromgen.brom      |                  ahbrom |        117 |        117 |       0 |    0 |     8 |      0 |      0 |            0 |
+|   clkgen0            |                  clkgen |          1 |          1 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   dcomgen.dsurx_pad  |                inpad__2 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   dcomgen.dsutx_pad  |               outpad__6 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   dsu3_0             |                    dsu3 |        517 |        517 |       0 |    0 |   407 |      2 |      0 |            0 |
+|   ethpads.emdc_pad   |                  outpad |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   ethpads.emdio_pad  |                   iopad |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   ethpads.erxcr_pad  |                   inpad |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   ethpads.erxd_pad   |                  inpadv |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   ethpads.etxd_pad   | outpadv__parameterized1 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   ethpads.etxen_pad  |              outpad__37 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   etxc_pad           |               outpad__5 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   gpt.timer0         |                 gptimer |        231 |        231 |       0 |    0 |   162 |      0 |      0 |            0 |
+|   grethm_0           |                  grethm |       2125 |       2101 |      24 |    0 |  1145 |      3 |      0 |            0 |
+|   irqmp_0            |                   irqmp |        504 |        504 |       0 |    0 |   227 |      0 |      0 |            0 |
+|   leon3gen.cpu[1].u0 |  leon3s__parameterized1 |       7150 |       7128 |      20 |    2 |  3258 |      8 |     12 |            4 |
+|   leon3gen.cpu[2].u0 |  leon3s__parameterized3 |       7166 |       7144 |      20 |    2 |  3259 |      8 |     12 |            4 |
+|   leon3gen.cpu[3].u0 |  leon3s__parameterized5 |       7070 |       7048 |      20 |    2 |  3258 |      8 |     12 |            4 |
+|   leon3s_0           |                  leon3s |       7100 |       7078 |      20 |    2 |  3260 |      8 |     12 |            4 |
+|   mctrl_0            |                   mctrl |        207 |        207 |       0 |    0 |   150 |      0 |      0 |            0 |
+|   mgpads.addr_pad    |                 outpadv |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   mgpads.cs_pad      |              outpad__31 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   mgpads.lb_pad      |              outpad__32 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   mgpads.oen_pad     |              outpad__30 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   mgpads.ub_pad      |              outpad__33 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   mgpads.wri_pad     |              outpad__34 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   rst0               |                  rstgen |          8 |          8 |       0 |    0 |     6 |      0 |      0 |            0 |
+|   spi_QspiDB_2_pad   |               outpad__1 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   spi_QspiDB_3_pad   |               outpad__2 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   spi_miso_pad       |                inpad__1 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   spi_mosi_pad       |               outpad__3 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   spi_slvsel0_pad    |               outpad__4 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   spimctrl_0         |                spimctrl |        197 |        197 |       0 |    0 |   151 |      0 |      0 |            0 |
+|   ua1.uart1          |                 apbuart |        162 |        162 |       0 |    0 |   106 |      0 |      0 |            0 |
++----------------------+-------------------------+------------+------------+---------+------+-------+--------+--------+--------------+
+
+

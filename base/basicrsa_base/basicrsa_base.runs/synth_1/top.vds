@@ -2,26 +2,26 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Jan 13 14:19:07 2018
-# Process ID: 27432
-# Current directory: /home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.runs/synth_1
+# Start of session at: Tue Nov 17 17:47:47 2020
+# Process ID: 618
+# Current directory: /home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.runs/synth_1
 # Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: /home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.runs/synth_1/top.vds
-# Journal file: /home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.runs/synth_1/vivado.jou
+# Log file: /home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.runs/synth_1/top.vds
+# Journal file: /home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27456 
+INFO: Helper process launched with PID 621 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.223 ; gain = 164.137 ; free physical = 9450 ; free virtual = 33102
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1037.512 ; gain = 149.137 ; free physical = 6507 ; free virtual = 15344
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/new/top.v:22]
-INFO: [Synth 8-638] synthesizing module 'amber' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/amber.v:45]
-INFO: [Synth 8-638] synthesizing module 'a25_fetch' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_fetch.v:45]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/new/top.v:22]
+INFO: [Synth 8-638] synthesizing module 'amber' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/amber.v:45]
+INFO: [Synth 8-638] synthesizing module 'a25_fetch' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_fetch.v:45]
 	Parameter MAIN_MSB bound to: 26 - type: integer 
 	Parameter BOOT_MSB bound to: 13 - type: integer 
 	Parameter MAIN_BASE bound to: 0 - type: integer 
@@ -33,7 +33,7 @@ INFO: [Synth 8-638] synthesizing module 'a25_fetch' [/home/sean/vivado_workspace
 	Parameter ETHMAC_BASE bound to: 16'b0010000000000000 
 	Parameter HIBOOT_BASE bound to: 671088640 - type: integer 
 	Parameter TEST_BASE bound to: 16'b1111000000000000 
-INFO: [Synth 8-638] synthesizing module 'a25_icache' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_icache.v:46]
+INFO: [Synth 8-638] synthesizing module 'a25_icache' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_icache.v:46]
 	Parameter CACHE_LINES bound to: 256 - type: integer 
 	Parameter CACHE_WORDS_PER_LINE bound to: 4 - type: integer 
 	Parameter WAYS bound to: 4 - type: integer 
@@ -118,19 +118,19 @@ INFO: [Synth 8-638] synthesizing module 'a25_icache' [/home/sean/vivado_workspac
 	Parameter CS_TURN_AROUND bound to: 4'b1000 
 	Parameter CS_WRITE_HIT1 bound to: 4'b1001 
 	Parameter CS_EX_DELETE bound to: 4'b1010 
-INFO: [Synth 8-638] synthesizing module 'generic_sram_line_en' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/generic_sram_line_en.v:42]
+INFO: [Synth 8-638] synthesizing module 'generic_sram_line_en' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/generic_sram_line_en.v:42]
 	Parameter DATA_WIDTH bound to: 21 - type: integer 
 	Parameter ADDRESS_WIDTH bound to: 8 - type: integer 
 	Parameter INITIALIZE_TO_ZERO bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'generic_sram_line_en' (1#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/generic_sram_line_en.v:42]
-INFO: [Synth 8-638] synthesizing module 'generic_sram_byte_en' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/generic_sram_byte_en.v:43]
+INFO: [Synth 8-256] done synthesizing module 'generic_sram_line_en' (1#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/generic_sram_line_en.v:42]
+INFO: [Synth 8-638] synthesizing module 'generic_sram_byte_en' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/generic_sram_byte_en.v:43]
 	Parameter DATA_WIDTH bound to: 128 - type: integer 
 	Parameter ADDRESS_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'generic_sram_byte_en' (2#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/generic_sram_byte_en.v:43]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_icache.v:236]
-INFO: [Synth 8-256] done synthesizing module 'a25_icache' (3#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_icache.v:46]
-INFO: [Synth 8-256] done synthesizing module 'a25_fetch' (4#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_fetch.v:45]
-INFO: [Synth 8-638] synthesizing module 'a25_decode' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_decode.v:44]
+INFO: [Synth 8-256] done synthesizing module 'generic_sram_byte_en' (2#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/generic_sram_byte_en.v:43]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_icache.v:236]
+INFO: [Synth 8-256] done synthesizing module 'a25_icache' (3#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_icache.v:46]
+INFO: [Synth 8-256] done synthesizing module 'a25_fetch' (4#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_fetch.v:45]
+INFO: [Synth 8-638] synthesizing module 'a25_decode' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_decode.v:44]
 	Parameter REGOP bound to: 4'b0000 
 	Parameter MULT bound to: 4'b0001 
 	Parameter SWAP bound to: 4'b0010 
@@ -207,9 +207,9 @@ INFO: [Synth 8-638] synthesizing module 'a25_decode' [/home/sean/vivado_workspac
 	Parameter SWAP_WAIT1 bound to: 5'b10010 
 	Parameter SWAP_WAIT2 bound to: 5'b10011 
 	Parameter COPRO_WAIT bound to: 5'b10100 
-WARNING: [Synth 8-152] case item 12'b00xxxxxxxxxx overlaps with previous case item(s) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_functions.vh:49]
-INFO: [Synth 8-256] done synthesizing module 'a25_decode' (5#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_decode.v:44]
-INFO: [Synth 8-638] synthesizing module 'a25_execute' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_execute.v:45]
+WARNING: [Synth 8-152] case item 12'b00xxxxxxxxxx overlaps with previous case item(s) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_functions.vh:49]
+INFO: [Synth 8-256] done synthesizing module 'a25_decode' (5#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_decode.v:44]
+INFO: [Synth 8-638] synthesizing module 'a25_execute' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_execute.v:45]
 	Parameter REGOP bound to: 4'b0000 
 	Parameter MULT bound to: 4'b0001 
 	Parameter SWAP bound to: 4'b0010 
@@ -265,8 +265,8 @@ INFO: [Synth 8-638] synthesizing module 'a25_execute' [/home/sean/vivado_workspa
 	Parameter OH_IRQ bound to: 6'b000001 
 	Parameter OH_FIRQ bound to: 6'b000010 
 	Parameter OH_SVC bound to: 6'b000011 
-INFO: [Synth 8-638] synthesizing module 'a25_barrel_shift' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_barrel_shift.v:42]
-INFO: [Synth 8-638] synthesizing module 'a25_shifter' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_shifter.v:42]
+INFO: [Synth 8-638] synthesizing module 'a25_barrel_shift' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_barrel_shift.v:42]
+INFO: [Synth 8-638] synthesizing module 'a25_shifter' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_shifter.v:42]
 	Parameter FULL_BARREL bound to: 1 - type: integer 
 	Parameter REGOP bound to: 4'b0000 
 	Parameter MULT bound to: 4'b0001 
@@ -323,8 +323,8 @@ INFO: [Synth 8-638] synthesizing module 'a25_shifter' [/home/sean/vivado_workspa
 	Parameter OH_IRQ bound to: 6'b000001 
 	Parameter OH_FIRQ bound to: 6'b000010 
 	Parameter OH_SVC bound to: 6'b000011 
-INFO: [Synth 8-256] done synthesizing module 'a25_shifter' (6#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_shifter.v:42]
-INFO: [Synth 8-638] synthesizing module 'a25_shifter__parameterized0' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_shifter.v:42]
+INFO: [Synth 8-256] done synthesizing module 'a25_shifter' (6#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_shifter.v:42]
+INFO: [Synth 8-638] synthesizing module 'a25_shifter__parameterized0' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_shifter.v:42]
 	Parameter FULL_BARREL bound to: 0 - type: integer 
 	Parameter REGOP bound to: 4'b0000 
 	Parameter MULT bound to: 4'b0001 
@@ -381,13 +381,13 @@ INFO: [Synth 8-638] synthesizing module 'a25_shifter__parameterized0' [/home/sea
 	Parameter OH_IRQ bound to: 6'b000001 
 	Parameter OH_FIRQ bound to: 6'b000010 
 	Parameter OH_SVC bound to: 6'b000011 
-INFO: [Synth 8-256] done synthesizing module 'a25_shifter__parameterized0' (6#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_shifter.v:42]
-INFO: [Synth 8-256] done synthesizing module 'a25_barrel_shift' (7#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_barrel_shift.v:42]
-INFO: [Synth 8-638] synthesizing module 'a25_alu' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_alu.v:43]
-INFO: [Synth 8-256] done synthesizing module 'a25_alu' (8#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_alu.v:43]
-INFO: [Synth 8-638] synthesizing module 'a25_multiply' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_multiply.v:56]
-INFO: [Synth 8-256] done synthesizing module 'a25_multiply' (9#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_multiply.v:56]
-INFO: [Synth 8-638] synthesizing module 'a25_register_bank' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_register_bank.v:44]
+INFO: [Synth 8-256] done synthesizing module 'a25_shifter__parameterized0' (6#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_shifter.v:42]
+INFO: [Synth 8-256] done synthesizing module 'a25_barrel_shift' (7#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_barrel_shift.v:42]
+INFO: [Synth 8-638] synthesizing module 'a25_alu' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_alu.v:43]
+INFO: [Synth 8-256] done synthesizing module 'a25_alu' (8#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_alu.v:43]
+INFO: [Synth 8-638] synthesizing module 'a25_multiply' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_multiply.v:56]
+INFO: [Synth 8-256] done synthesizing module 'a25_multiply' (9#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_multiply.v:56]
+INFO: [Synth 8-638] synthesizing module 'a25_register_bank' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_register_bank.v:44]
 	Parameter REGOP bound to: 4'b0000 
 	Parameter MULT bound to: 4'b0001 
 	Parameter SWAP bound to: 4'b0010 
@@ -443,9 +443,9 @@ INFO: [Synth 8-638] synthesizing module 'a25_register_bank' [/home/sean/vivado_w
 	Parameter OH_IRQ bound to: 6'b000001 
 	Parameter OH_FIRQ bound to: 6'b000010 
 	Parameter OH_SVC bound to: 6'b000011 
-INFO: [Synth 8-256] done synthesizing module 'a25_register_bank' (10#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_register_bank.v:44]
-INFO: [Synth 8-256] done synthesizing module 'a25_execute' (11#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_execute.v:45]
-INFO: [Synth 8-638] synthesizing module 'a25_mem' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_mem.v:45]
+INFO: [Synth 8-256] done synthesizing module 'a25_register_bank' (10#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_register_bank.v:44]
+INFO: [Synth 8-256] done synthesizing module 'a25_execute' (11#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_execute.v:45]
+INFO: [Synth 8-638] synthesizing module 'a25_mem' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_mem.v:45]
 	Parameter MAIN_MSB bound to: 26 - type: integer 
 	Parameter BOOT_MSB bound to: 13 - type: integer 
 	Parameter MAIN_BASE bound to: 0 - type: integer 
@@ -457,7 +457,7 @@ INFO: [Synth 8-638] synthesizing module 'a25_mem' [/home/sean/vivado_workspace/b
 	Parameter ETHMAC_BASE bound to: 16'b0010000000000000 
 	Parameter HIBOOT_BASE bound to: 671088640 - type: integer 
 	Parameter TEST_BASE bound to: 16'b1111000000000000 
-INFO: [Synth 8-638] synthesizing module 'a25_dcache' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_dcache.v:48]
+INFO: [Synth 8-638] synthesizing module 'a25_dcache' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_dcache.v:48]
 	Parameter CACHE_LINES bound to: 256 - type: integer 
 	Parameter CACHE_WORDS_PER_LINE bound to: 4 - type: integer 
 	Parameter WAYS bound to: 4 - type: integer 
@@ -540,32 +540,32 @@ INFO: [Synth 8-638] synthesizing module 'a25_dcache' [/home/sean/vivado_workspac
 	Parameter CS_WRITE_HIT_WAIT_WB bound to: 4'b0110 
 	Parameter CS_WRITE_MISS_WAIT_WB bound to: 4'b0111 
 	Parameter CS_EX_DELETE bound to: 4'b1000 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_dcache.v:242]
-INFO: [Synth 8-256] done synthesizing module 'a25_dcache' (12#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_dcache.v:48]
-INFO: [Synth 8-256] done synthesizing module 'a25_mem' (13#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_mem.v:45]
-INFO: [Synth 8-638] synthesizing module 'a25_write_back' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_write_back.v:42]
-INFO: [Synth 8-256] done synthesizing module 'a25_write_back' (14#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_write_back.v:42]
-INFO: [Synth 8-638] synthesizing module 'a25_wishbone' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone.v:60]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_dcache.v:242]
+INFO: [Synth 8-256] done synthesizing module 'a25_dcache' (12#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_dcache.v:48]
+INFO: [Synth 8-256] done synthesizing module 'a25_mem' (13#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_mem.v:45]
+INFO: [Synth 8-638] synthesizing module 'a25_write_back' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_write_back.v:42]
+INFO: [Synth 8-256] done synthesizing module 'a25_write_back' (14#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_write_back.v:42]
+INFO: [Synth 8-638] synthesizing module 'a25_wishbone' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone.v:60]
 	Parameter WBUF bound to: 3 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'a25_wishbone_buf' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone_buf.v:52]
-INFO: [Synth 8-256] done synthesizing module 'a25_wishbone_buf' (15#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone_buf.v:52]
-INFO: [Synth 8-256] done synthesizing module 'a25_wishbone' (16#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone.v:60]
-INFO: [Synth 8-638] synthesizing module 'a25_coprocessor' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_coprocessor.v:41]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_coprocessor.v:123]
-INFO: [Synth 8-256] done synthesizing module 'a25_coprocessor' (17#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_coprocessor.v:41]
-INFO: [Synth 8-256] done synthesizing module 'amber' (18#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/amber.v:45]
-INFO: [Synth 8-638] synthesizing module 'basicrsa' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'a25_wishbone_buf' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone_buf.v:52]
+INFO: [Synth 8-256] done synthesizing module 'a25_wishbone_buf' (15#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone_buf.v:52]
+INFO: [Synth 8-256] done synthesizing module 'a25_wishbone' (16#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone.v:60]
+INFO: [Synth 8-638] synthesizing module 'a25_coprocessor' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_coprocessor.v:41]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_coprocessor.v:123]
+INFO: [Synth 8-256] done synthesizing module 'a25_coprocessor' (17#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_coprocessor.v:41]
+INFO: [Synth 8-256] done synthesizing module 'amber' (18#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/amber.v:45]
+INFO: [Synth 8-638] synthesizing module 'basicrsa' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:87]
 	Parameter KEYSIZE bound to: 32 - type: integer 
 	Parameter MPWID bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'modmult' declared at '/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/modmult.vhd:74' bound to instance 'modmultiply' of component 'modmult' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'modmult' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/modmult.vhd:86]
+INFO: [Synth 8-3491] module 'modmult' declared at '/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/modmult.vhd:74' bound to instance 'modmultiply' of component 'modmult' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'modmult' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/modmult.vhd:86]
 	Parameter MPWID bound to: 32 - type: integer 
-WARNING: [Synth 8-3936] Found unconnected internal register 'mcreg2_reg' and it is trimmed from '34' to '33' bits. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/modmult.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'modmult' (19#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/modmult.vhd:86]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mcreg2_reg' and it is trimmed from '34' to '33' bits. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/modmult.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'modmult' (19#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/modmult.vhd:86]
 	Parameter MPWID bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'modmult' declared at '/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/modmult.vhd:74' bound to instance 'modsqr' of component 'modmult' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:141]
-INFO: [Synth 8-256] done synthesizing module 'basicrsa' (20#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:87]
-INFO: [Synth 8-256] done synthesizing module 'top' (21#1) [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/new/top.v:22]
+INFO: [Synth 8-3491] module 'modmult' declared at '/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/modmult.vhd:74' bound to instance 'modsqr' of component 'modmult' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'basicrsa' (20#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'top' (21#1) [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/new/top.v:22]
 WARNING: [Synth 8-3331] design a25_coprocessor has unconnected port i_copro_opcode1[2]
 WARNING: [Synth 8-3331] design a25_coprocessor has unconnected port i_copro_opcode1[1]
 WARNING: [Synth 8-3331] design a25_coprocessor has unconnected port i_copro_opcode1[0]
@@ -668,7 +668,7 @@ WARNING: [Synth 8-3331] design a25_decode has unconnected port i_execute_daddres
 WARNING: [Synth 8-3331] design a25_decode has unconnected port i_execute_daddress[4]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1129.660 ; gain = 244.574 ; free physical = 9366 ; free virtual = 33020
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1117.949 ; gain = 229.574 ; free physical = 6418 ; free virtual = 15259
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -678,86 +678,86 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1129.660 ; gain = 244.574 ; free physical = 9366 ; free virtual = 33019
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1117.949 ; gain = 229.574 ; free physical = 6418 ; free virtual = 15259
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:41]
+Parsing XDC File [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:41]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:42]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:44]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:45]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:47]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:48]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:50]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:51]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:53]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:54]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:56]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:57]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:59]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:60]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:62]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:62]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:63]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc:63]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/constrs_1/imports/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Finished Parsing XDC File [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/constrs_1/imports/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1520.418 ; gain = 0.000 ; free physical = 9165 ; free virtual = 32818
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1470.863 ; gain = 0.000 ; free physical = 6147 ; free virtual = 15028
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1520.418 ; gain = 635.332 ; free physical = 9194 ; free virtual = 32848
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1470.863 ; gain = 582.488 ; free physical = 6151 ; free virtual = 15032
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1520.418 ; gain = 635.332 ; free physical = 9194 ; free virtual = 32848
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1470.863 ; gain = 582.488 ; free physical = 6151 ; free virtual = 15032
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1520.418 ; gain = 635.332 ; free physical = 9194 ; free virtual = 32848
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1470.863 ; gain = 582.488 ; free physical = 6151 ; free virtual = 15032
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'a25_icache'
 INFO: [Synth 8-5544] ROM "pick_way" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -770,8 +770,8 @@ INFO: [Synth 8-5544] ROM "source_sel" won't be mapped to Block RAM because addre
 INFO: [Synth 8-5544] ROM "select_way" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "source_sel" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "wb_address" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'o_status_bits_irq_mask_wen_reg' into 'o_status_bits_mode_wen_reg' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_decode.v:1666]
-INFO: [Synth 8-4471] merging register 'o_copro_crm_reg[3:0]' into 'o_rm_sel_reg[3:0]' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_decode.v:1672]
+INFO: [Synth 8-4471] merging register 'o_status_bits_irq_mask_wen_reg' into 'o_status_bits_mode_wen_reg' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_decode.v:1666]
+INFO: [Synth 8-4471] merging register 'o_copro_crm_reg[3:0]' into 'o_rm_sel_reg[3:0]' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_decode.v:1672]
 INFO: [Synth 8-5544] ROM "o_user_mode_regs_store_nxt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "status_bits_firq_mask_nxt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "decode_exclusive_nxt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -821,7 +821,7 @@ INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5544] ROM "source_sel" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "source_sel" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "wb_address" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'o_wb_cyc_reg' into 'o_wb_stb_reg' [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone.v:211]
+INFO: [Synth 8-4471] merging register 'o_wb_cyc_reg' into 'o_wb_stb_reg' [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone.v:211]
 INFO: [Synth 8-5544] ROM "cache_control" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cacheable_area" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "updateable_area" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -952,7 +952,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encodin
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'one-hot' in module 'a25_dcache'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1520.418 ; gain = 635.332 ; free physical = 9213 ; free virtual = 32867
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1470.863 ; gain = 582.488 ; free physical = 6146 ; free virtual = 15028
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1379,14 +1379,14 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1520.418 ; gain = 635.332 ; free physical = 9213 ; free virtual = 32867
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1470.863 ; gain = 582.488 ; free physical = 6146 ; free virtual = 15028
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1520.418 ; gain = 635.332 ; free physical = 9201 ; free virtual = 32856
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1470.863 ; gain = 582.488 ; free physical = 6147 ; free virtual = 15029
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1520.418 ; gain = 635.332 ; free physical = 9201 ; free virtual = 32856
+Finished Parallel Reinference  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1470.863 ; gain = 582.488 ; free physical = 6147 ; free virtual = 15029
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1398,43 +1398,23 @@ Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Block RAM: Preliminary Mapping  Report (see note below)
-+---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name          | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|generic_sram_line_en | mem_reg                | 256 x 21(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
-|a25_icache           | rams[0].u_data/mem_reg | 256 x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 4      | 0      | 
-|generic_sram_line_en | mem_reg                | 256 x 21(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
-|a25_icache           | rams[1].u_data/mem_reg | 256 x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 4      | 0      | 
-|generic_sram_line_en | mem_reg                | 256 x 21(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
-|a25_icache           | rams[2].u_data/mem_reg | 256 x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 4      | 0      | 
-|generic_sram_line_en | mem_reg                | 256 x 21(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
-|a25_icache           | rams[3].u_data/mem_reg | 256 x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 4      | 0      | 
-|generic_sram_line_en | mem_reg                | 256 x 21(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
-|a25_dcache           | rams[0].u_data/mem_reg | 256 x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 4      | 0      | 
-|generic_sram_line_en | mem_reg                | 256 x 21(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
-|a25_dcache           | rams[1].u_data/mem_reg | 256 x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 4      | 0      | 
-|generic_sram_line_en | mem_reg                | 256 x 21(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
-|a25_dcache           | rams[2].u_data/mem_reg | 256 x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 4      | 0      | 
-|generic_sram_line_en | mem_reg                | 256 x 21(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
-|a25_dcache           | rams[3].u_data/mem_reg | 256 x 128(READ_FIRST)  | W | R |                        |   |   | Port A           | 4      | 0      | 
-+---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
++---------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|generic_sram_line_en | mem_reg    | 256 x 21(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|generic_sram_byte_en | mem_reg    | 256 x 128(READ_FIRST)  | W |   | 256 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
++---------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
-+-------------+----------------------------------------+-----------+----------------------+---------------+
-|Module Name  | RTL Object                             | Inference | Size (Depth x Width) | Primitives    | 
-+-------------+----------------------------------------+-----------+----------------------+---------------+
-|a25_wishbone | u_a25_wishbone_buf_p0/wbuf_be_r_reg    | Implied   | 2 x 16               | RAM32M x 3    | 
-|a25_wishbone | u_a25_wishbone_buf_p0/wbuf_wdata_r_reg | Implied   | 2 x 128              | RAM32M x 22   | 
-|a25_wishbone | u_a25_wishbone_buf_p0/wbuf_addr_r_reg  | Implied   | 2 x 32               | RAM32M x 6    | 
-|a25_wishbone | u_a25_wishbone_buf_p1/wbuf_be_r_reg    | Implied   | 2 x 16               | RAM32M x 3    | 
-|a25_wishbone | u_a25_wishbone_buf_p1/wbuf_wdata_r_reg | Implied   | 2 x 128              | RAM32M x 22   | 
-|a25_wishbone | u_a25_wishbone_buf_p1/wbuf_addr_r_reg  | Implied   | 2 x 32               | RAM32M x 6    | 
-|a25_wishbone | u_a25_wishbone_buf_p2/wbuf_be_r_reg    | Implied   | 2 x 16               | RAM32M x 3    | 
-|a25_wishbone | u_a25_wishbone_buf_p2/wbuf_wdata_r_reg | Implied   | 2 x 128              | RAM32M x 22   | 
-|a25_wishbone | u_a25_wishbone_buf_p2/wbuf_addr_r_reg  | Implied   | 2 x 32               | RAM32M x 6    | 
-+-------------+----------------------------------------+-----------+----------------------+---------------+
++-----------------+------------------+-----------+----------------------+---------------+
+|Module Name      | RTL Object       | Inference | Size (Depth x Width) | Primitives    | 
++-----------------+------------------+-----------+----------------------+---------------+
+|a25_wishbone_buf | wbuf_be_r_reg    | Implied   | 2 x 16               | RAM32M x 3    | 
+|a25_wishbone_buf | wbuf_wdata_r_reg | Implied   | 2 x 128              | RAM32M x 22   | 
+|a25_wishbone_buf | wbuf_addr_r_reg  | Implied   | 2 x 32               | RAM32M x 6    | 
++-----------------+------------------+-----------+----------------------+---------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -1455,8 +1435,6 @@ INFO: [Synth 8-3886] merging instance 'amber_0/u_decode/pre_fetch_instruction_ia
 INFO: [Synth 8-3886] merging instance 'amber_0/u_decode/abt_status_reg_reg[1]' (FDE) to 'amber_0/u_decode/abt_status_reg_reg[6]'
 INFO: [Synth 8-3886] merging instance 'amber_0/u_decode/pre_fetch_instruction_iabt_status_reg[6]' (FDE) to 'amber_0/u_decode/pre_fetch_instruction_iabt_status_reg[2]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_decode/\abt_status_reg_reg[6] )
-INFO: [Synth 8-3886] merging instance 'basicrsa_0/modsqr/modreg2_reg[0]' (FDE) to 'basicrsa_0/modsqr/modreg2_reg[33]'
-INFO: [Synth 8-3886] merging instance 'basicrsa_0/modsqr/modreg1_reg[0]' (FDE) to 'basicrsa_0/modsqr/modreg2_reg[1]'
 INFO: [Synth 8-3886] merging instance 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[124]' (FDE) to 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[4]'
 INFO: [Synth 8-3886] merging instance 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[60]' (FDE) to 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[4]'
 INFO: [Synth 8-3886] merging instance 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[92]' (FDE) to 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[4]'
@@ -1473,80 +1451,81 @@ INFO: [Synth 8-3886] merging instance 'amber_0/u_fetch/u_cache/read_buf_data_r_r
 INFO: [Synth 8-3886] merging instance 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[63]' (FDE) to 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[4]'
 INFO: [Synth 8-3886] merging instance 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[95]' (FDE) to 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[0]'
 INFO: [Synth 8-3886] merging instance 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[31]' (FDE) to 'amber_0/u_fetch/u_cache/read_buf_data_r_reg[0]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[124]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[125]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[126]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[108]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[109]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[110]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[111]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[112]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[113]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[114]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[115]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[116]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[117]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[118]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[119]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[106]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[121]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[122]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[123]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[107]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[106]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[104]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[107]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[105]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[88]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[104]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[89]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[105]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[90]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[105]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[91]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[104]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[92]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[105]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[93]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[105]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[94]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[105]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[95]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[104]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[96]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[104]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[97]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[104]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[98]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[104]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[99]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[105]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[100]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[105]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[101]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[104]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[102]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[104]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[103]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[105]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[104]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[105]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[86]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[72]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[73]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[86]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[74]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[75]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[76]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[86]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[77]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[86]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[78]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[79]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[80]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[81]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[82]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[86]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[83]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[84]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[86]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[85]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[86]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[87]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[71]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[70]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[71]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[71]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[69]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[52]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[53]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[69]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[54]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[55]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[56]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[69]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[57]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[58]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[59]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[60]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[61]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[62]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[63]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]'
-INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[64]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[69]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[0]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[1]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[2]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[3]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[4]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[5]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[6]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[7]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[8]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[9]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[10]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[11]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[12]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[13]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[14]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[15]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[16]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[17]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[18]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[19]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[20]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[21]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[22]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[23]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[24]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[25]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[26]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[27]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[28]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[29]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[30]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[31]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[32]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[33]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[34]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[35]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[36]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[37]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[38]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[39]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[40]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[41]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[42]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[43]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[44]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[45]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[46]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[47]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[48]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[49]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[50]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[51]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[52]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[53]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[54]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[55]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[56]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[57]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[58]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[59]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[60]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[61]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[62]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[63]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[64]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[65]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[66]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[67]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[68]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[127]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[69]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[70]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[71]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
+INFO: [Synth 8-3886] merging instance 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[72]' (FDE) to 'amber_0/u_mem/u_dcache/wb_rdata_burst_reg[120]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_mem/u_dcache/\wb_rdata_burst_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\basicrsa_0/modsqr/modreg2_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_mem/u_dcache/\wb_rdata_burst_reg[127] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (amber_0/u_decode/status_bits_firq_mask_r_reg)
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (amber_0/u_decode/status_bits_irq_mask_r_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_fetch/u_cache/\read_buf_data_r_reg[9] )
@@ -1558,11 +1537,8 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_decode/\pc_sel_r_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_decode/dabt_reg_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_decode/iabt_reg_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\basicrsa_0/modmultiply/modreg2_reg[33] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\basicrsa_0/count_reg[31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_wishbone/\u_a25_wishbone_buf_p2/wbuf_write_r_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_wishbone/\u_a25_wishbone_buf_p2/wbuf_write_r_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_wishbone/\u_a25_wishbone_buf_p2/ack_owed_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (basicrsa_0/\count_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (modmult:/\modreg2_reg[33] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_decode/\pre_fetch_instruction_iabt_status_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_decode/dabt_reg_d1_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_decode/pre_fetch_instruction_iabt_reg)
@@ -1668,9 +1644,9 @@ WARNING: [Synth 8-3332] Sequential element (read_buf_data_r_reg[39]) is unused a
 WARNING: [Synth 8-3332] Sequential element (read_buf_data_r_reg[38]) is unused and will be removed from module a25_icache.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1536.410 ; gain = 651.324 ; free physical = 8975 ; free virtual = 32634
+Finished Area Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:40 . Memory (MB): peak = 1470.863 ; gain = 582.488 ; free physical = 6057 ; free virtual = 14941
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1536.410 ; gain = 651.324 ; free physical = 8975 ; free virtual = 32634
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:20 ; elapsed = 00:01:40 . Memory (MB): peak = 1470.863 ; gain = 582.488 ; free physical = 6057 ; free virtual = 14941
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1684,18 +1660,83 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 1596.410 ; gain = 711.324 ; free physical = 8912 ; free virtual = 32572
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:02:09 . Memory (MB): peak = 1538.137 ; gain = 649.762 ; free physical = 5975 ; free virtual = 14865
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5584] The signal rams[3].u_tag/mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
-INFO: [Synth 8-5584] The signal rams[3].u_tag/mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
-INFO: [Synth 8-5584] The signal rams[2].u_tag/mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
-INFO: [Synth 8-5584] The signal rams[2].u_tag/mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
-INFO: [Synth 8-5584] The signal rams[1].u_tag/mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
-INFO: [Synth 8-5584] The signal rams[1].u_tag/mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
-INFO: [Synth 8-5584] The signal rams[0].u_tag/mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
-INFO: [Synth 8-5584] The signal rams[0].u_tag/mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+Found timing loop:
+     0: amber_0/u_fetch/i_0/i_44/O (GATE_2_14_OR)
+     1: amber_0/u_fetch/i_0/i_44/I1 (GATE_2_14_OR)
+     2: amber_0/u_fetch/i_0/i_43/O (GATE_2_2)
+     3: amber_0/u_fetch/i_0/i_43/I1 (GATE_2_2)
+     4: amber_0/u_fetch/i_0/i_1/O (INV)
+     5: amber_0/u_fetch/i_0/i_1/I (INV)
+     6: amber_0/u_fetch/i_0/i_0/O (GATE_2_2)
+     7: amber_0/u_fetch/i_0/i_0/I1 (GATE_2_2)
+      : amber_0/u_fetch/i_0/cache_stall
+      : amber_0/u_fetch/u_cache/o_stall
+      : amber_0/u_fetch/u_cache/i_3/o_stall
+     8: amber_0/u_fetch/u_cache/i_3/i_348/O (GATE_2_14_OR)
+     9: amber_0/u_fetch/u_cache/i_3/i_348/I0 (GATE_2_14_OR)
+    10: amber_0/u_fetch/u_cache/i_3/i_347/O (GATE_2_1_NOR)
+    11: amber_0/u_fetch/u_cache/i_3/i_347/I1 (GATE_2_1_NOR)
+    12: amber_0/u_fetch/u_cache/i_3/i_346/O (GATE_2_11)
+    13: amber_0/u_fetch/u_cache/i_3/i_346/I0 (GATE_2_11)
+    14: amber_0/u_fetch/u_cache/i_3/i_345/O (GATE_2_2)
+    15: amber_0/u_fetch/u_cache/i_3/i_345/I1 (GATE_2_2)
+    16: amber_0/u_fetch/u_cache/i_3/i_2/O (GATE_2_7_NAND)
+    17: amber_0/u_fetch/u_cache/i_3/i_2/I1 (GATE_2_7_NAND)
+      : amber_0/u_fetch/u_cache/i_3/i_wb_ready
+      : amber_0/u_fetch/u_cache/i_wb_ready
+      : amber_0/u_fetch/i_wb_ready
+      : amber_0/u_wishbone/o_port2_ack
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/o_ack
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/o_ack
+    18: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_29/O (GATE_2_14_OR)
+    19: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_29/I1 (GATE_2_14_OR)
+    20: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_28/O (GATE_2_8_AND)
+    21: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_28/I1 (GATE_2_8_AND)
+    22: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_25/O (GATE_2_8_AND)
+    23: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_25/I1 (GATE_2_8_AND)
+    24: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_24/O (GATE_2_8_AND)
+    25: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_24/I0 (GATE_2_8_AND)
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_accepted
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_accepted
+      : amber_0/u_wishbone/i_0/\wbuf_accepted[2] [0]
+    26: amber_0/u_wishbone/i_0/\wbuf_accepted[2]_inferredi_21 /O (GATE_2_1_NOR)
+    27: amber_0/u_wishbone/i_0/\wbuf_accepted[2]_inferredi_21 /I1 (GATE_2_1_NOR)
+    28: amber_0/u_wishbone/i_0/\wbuf_accepted[2]_inferredi_20 /O (GATE_2_7_NAND)
+    29: amber_0/u_wishbone/i_0/\wbuf_accepted[2]_inferredi_20 /I0 (GATE_2_7_NAND)
+      : amber_0/u_wishbone/i_0/p_0_in[0]
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/o_valid
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/o_valid
+    30: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_19/O (GATE_2_1_NOR)
+    31: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_19/I1 (GATE_2_1_NOR)
+    32: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_18/O (GATE_2_1_NOR)
+    33: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_18/I1 (GATE_2_1_NOR)
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_12/i_req
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_req
+      : amber_0/u_wishbone/i_port2_req
+      : amber_0/u_fetch/o_wb_req
+      : amber_0/u_fetch/i_0/o_wb_req
+    34: amber_0/u_fetch/i_0/i_45/O (BUF)
+    35: amber_0/u_fetch/i_0/i_45/I (BUF)
+    36: amber_0/u_fetch/i_0/i_44/O (GATE_2_14_OR)
+WARNING: [Synth 8-295] found timing loop. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone.v:117]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through amber_0/u_fetch/i_0/i_1/O'
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'amber_0/u_fetch/i_0/i_1' with timing assertions on output pin 'O'
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:11 . Memory (MB): peak = 1692.965 ; gain = 807.879 ; free physical = 8821 ; free virtual = 32476
+Finished Timing Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:02:20 . Memory (MB): peak = 1604.230 ; gain = 715.855 ; free physical = 5909 ; free virtual = 14800
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1706,161 +1747,144 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[31]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[31] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[30]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[30] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[29]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[29] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[28]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[28] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[27]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[27] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[26]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[26] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[25]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[25] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[24]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[24] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[23]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[23] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[22]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[22] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[21]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[21] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[20]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[20] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[19]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[19] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[18]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[18] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[17]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[17] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[16]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[16] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[15]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[15] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[14]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[14] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[13]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[13] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[12]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[12] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[11]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[11] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[10]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[10] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[9]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[9] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[8]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[8] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[7]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[7] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[6]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[6] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[5]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[5] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[4]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[4] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[3]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[3] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[2]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[2] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[1]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[1] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-4765] Removing register instance (\basicrsa_0/modreg_reg[0]__0 ) from module (top) as it is equivalent to (\basicrsa_0/modreg_reg[0] ) and driving same net [/home/sean/vivado_workspace/basicrsa_simple/basicrsa_simple.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\amber_0/u_coprocessor/fault_address_reg[7] )
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[0].u_tag/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[0].u_tag/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[0].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[0].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[0].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[0].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[0].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[0].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[0].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[0].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[1].u_tag/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[1].u_tag/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[1].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[1].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[1].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[1].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[1].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[1].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[1].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[1].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[2].u_tag/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[2].u_tag/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[2].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[2].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[2].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[2].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[2].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[2].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[2].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[2].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[3].u_tag/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[3].u_tag/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[3].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[3].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[3].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[3].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[3].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[3].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[3].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_fetch/u_cache/rams[3].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[0].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[0].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[0].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[0].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[0].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[0].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[0].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[0].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[1].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[1].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[1].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[1].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[1].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[1].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[1].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[1].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[2].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[2].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[2].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[2].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[2].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[2].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[2].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[2].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[3].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[3].u_data/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[3].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[3].u_data/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[3].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[3].u_data/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[3].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance amber_0/u_mem/u_dcache/rams[3].u_data/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[31]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[31] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[30]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[30] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[29]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[29] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[28]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[28] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[27]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[27] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[26]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[26] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[25]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[25] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[24]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[24] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[23]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[23] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[22]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[22] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[21]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[21] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[20]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[20] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[19]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[19] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[18]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[18] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[17]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[17] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[16]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[16] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[15]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[15] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[14]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[14] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[13]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[13] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[12]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[12] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[11]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[11] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[10]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[10] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[9]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[9] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[8]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[8] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[7]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[7] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[6]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[6] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[5]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[5] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[4]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[4] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[3]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[3] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[2]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[2] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[1]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[1] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+INFO: [Synth 8-4765] Removing register instance (\modreg_reg[0]__0 ) from module (basicrsa) as it is equivalent to (\modreg_reg[0] ) and driving same net [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/hdl/basicrsa.vhd:133]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through amber_0/u_fetch/i_42/O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'amber_0/u_fetch/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_address_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (amber_0/u_coprocessor/\fault_status_reg[6] )
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'amber_0/u_fetch/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'amber_0/u_fetch/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-223] decloning instance 'amber_0/u_fetch/u_cache/rams[0].u_data/mem_reg_0' (RAMB36E1) to 'amber_0/u_fetch/u_cache/rams[0].u_data/mem_reg_1'
+INFO: [Synth 8-223] decloning instance 'amber_0/u_fetch/u_cache/rams[1].u_data/mem_reg_0' (RAMB36E1) to 'amber_0/u_fetch/u_cache/rams[1].u_data/mem_reg_1'
+INFO: [Synth 8-223] decloning instance 'amber_0/u_fetch/u_cache/rams[2].u_data/mem_reg_0' (RAMB36E1) to 'amber_0/u_fetch/u_cache/rams[2].u_data/mem_reg_1'
+INFO: [Synth 8-223] decloning instance 'amber_0/u_fetch/u_cache/rams[3].u_data/mem_reg_0' (RAMB36E1) to 'amber_0/u_fetch/u_cache/rams[3].u_data/mem_reg_1'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'amber_0/u_fetch/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'amber_0/u_fetch/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'amber_0/u_fetch/i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'amber_0/u_fetch/i_0' with timing assertions on output pin 'O'
+Found timing loop:
+     0: amber_0/u_fetch/i_89/O (LUT6)
+     1: amber_0/u_fetch/i_89/I4 (LUT6)
+      : amber_0/u_fetch/u_cache/o_stall
+     2: amber_0/u_fetch/u_cache/i_159/O (LUT6)
+     3: amber_0/u_fetch/u_cache/i_159/I2 (LUT6)
+     4: amber_0/u_fetch/u_cache/i_216/O (LUT4)
+     5: amber_0/u_fetch/u_cache/i_216/I0 (LUT4)
+      : amber_0/u_fetch/u_cache/i_wb_ready
+      : amber_0/u_fetch/i_wb_ready
+      : amber_0/u_wishbone/o_port2_ack
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/o_ack
+     6: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_47/O (LUT5)
+     7: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_47/I3 (LUT5)
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_accepted
+     8: amber_0/u_wishbone/\wbuf_accepted[2]_inferredi_5 /O (LUT4)
+     9: amber_0/u_wishbone/\wbuf_accepted[2]_inferredi_5 /I3 (LUT4)
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/o_valid
+    10: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_45/O (LUT4)
+    11: amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_45/I1 (LUT4)
+      : amber_0/u_wishbone/u_a25_wishbone_buf_p2/i_req
+      : amber_0/u_wishbone/i_port2_req
+      : amber_0/u_fetch/o_wb_req
+    12: amber_0/u_fetch/i_88/O (LUT2)
+    13: amber_0/u_fetch/i_88/I1 (LUT2)
+    14: amber_0/u_fetch/i_89/O (LUT6)
+WARNING: [Synth 8-295] found timing loop. [/home/jgoeders/ipassurance/base/basicrsa_base/basicrsa_base.srcs/sources_1/imports/vivado_workspace/ooc_amber/Sources/hdl/a25_wishbone_buf.v:52]
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through amber_0/u_wishbone/\wbuf_accepted[2]_inferredi_5 /O'
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:17 . Memory (MB): peak = 1789.965 ; gain = 904.879 ; free physical = 8720 ; free virtual = 32376
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:02:31 . Memory (MB): peak = 1631.559 ; gain = 743.184 ; free physical = 5884 ; free virtual = 14775
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:16 ; elapsed = 00:01:17 . Memory (MB): peak = 1789.965 ; gain = 904.879 ; free physical = 8720 ; free virtual = 32376
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:46 ; elapsed = 00:02:31 . Memory (MB): peak = 1631.559 ; gain = 743.184 ; free physical = 5884 ; free virtual = 14775
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:16 ; elapsed = 00:01:17 . Memory (MB): peak = 1789.965 ; gain = 904.879 ; free physical = 8720 ; free virtual = 32376
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:46 ; elapsed = 00:02:31 . Memory (MB): peak = 1631.559 ; gain = 743.184 ; free physical = 5884 ; free virtual = 14775
 ---------------------------------------------------------------------------------
 Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
@@ -1869,7 +1893,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1789.965 ; gain = 904.879 ; free physical = 8720 ; free virtual = 32375
+Finished IO Insertion : Time (s): cpu = 00:01:47 ; elapsed = 00:02:32 . Memory (MB): peak = 1631.559 ; gain = 743.184 ; free physical = 5883 ; free virtual = 14774
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1882,7 +1906,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1789.965 ; gain = 904.879 ; free physical = 8720 ; free virtual = 32375
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:02:32 . Memory (MB): peak = 1631.559 ; gain = 743.184 ; free physical = 5883 ; free virtual = 14774
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1890,23 +1914,25 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through amber_0/u_wishbone/u_a25_wishbone_buf_p2/o_ack_INST_0/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through amber_0/u_wishbone/u_a25_wishbone_buf_p2/wbuf_rp_r_i_1/O'
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 1789.965 ; gain = 904.879 ; free physical = 8720 ; free virtual = 32376
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:02:34 . Memory (MB): peak = 1631.559 ; gain = 743.184 ; free physical = 5883 ; free virtual = 14774
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|top         | amber_0/u_fetch/u_cache/random_num_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | amber_0/u_mem/u_dcache/random_num_reg[2]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-+------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|a25_icache  | random_num_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|a25_dcache  | random_num_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -1927,44 +1953,81 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |BUFG       |     1|
 |2     |CARRY4     |   175|
-|3     |LUT1       |   133|
-|4     |LUT2       |   480|
-|5     |LUT3       |  1538|
-|6     |LUT4       |   522|
-|7     |LUT5       |  1293|
-|8     |LUT6       |  2738|
-|9     |MUXF7      |   235|
-|10    |MUXF8      |    28|
+|3     |LUT1       |   164|
+|4     |LUT2       |   516|
+|5     |LUT3       |  1128|
+|6     |LUT4       |   826|
+|7     |LUT5       |  1390|
+|8     |LUT6       |  2901|
+|9     |MUXF7      |   148|
+|10    |MUXF8      |     4|
 |11    |RAM256X1S  |    84|
 |12    |RAM32M     |    61|
-|13    |RAMB18E1   |     4|
-|14    |RAMB18E1_1 |    32|
+|13    |RAMB18E1_1 |     4|
+|14    |RAMB36E1   |    12|
 |15    |SRL16E     |     2|
 |16    |FDCE       |   160|
 |17    |FDPE       |     3|
-|18    |FDRE       |  2618|
-|19    |FDSE       |    18|
+|18    |FDRE       |  2619|
+|19    |FDSE       |    10|
 |20    |IBUF       |     6|
 |21    |OBUF       |     8|
 |22    |OBUFT      |     8|
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       | 10147|
-+------+---------+-------+------+
++------+----------------------------+----------------------------+------+
+|      |Instance                    |Module                      |Cells |
++------+----------------------------+----------------------------+------+
+|1     |top                         |                            | 10230|
+|2     |  amber_0                   |amber                       |  9009|
+|3     |    u_fetch                 |a25_fetch                   |   732|
+|4     |      u_cache               |a25_icache                  |   641|
+|5     |        \rams[0].u_tag      |generic_sram_line_en__1     |    42|
+|6     |        \rams[0].u_data     |generic_sram_byte_en__1     |     1|
+|7     |        \rams[1].u_tag      |generic_sram_line_en__2     |    42|
+|8     |        \rams[1].u_data     |generic_sram_byte_en__2     |     1|
+|9     |        \rams[2].u_tag      |generic_sram_line_en__3     |    42|
+|10    |        \rams[2].u_data     |generic_sram_byte_en__3     |     1|
+|11    |        \rams[3].u_tag      |generic_sram_line_en__4     |    42|
+|12    |        \rams[3].u_data     |generic_sram_byte_en__4     |     1|
+|13    |    u_decode                |a25_decode                  |   980|
+|14    |    u_execute               |a25_execute                 |  4841|
+|15    |      u_barrel_shift        |a25_barrel_shift            |   565|
+|16    |        u_a25_shifter_full  |a25_shifter                 |   351|
+|17    |        u_a25_shifter_quick |a25_shifter__parameterized0 |   144|
+|18    |      u_alu                 |a25_alu                     |   206|
+|19    |      u_multiply            |a25_multiply                |   257|
+|20    |      u_register_bank       |a25_register_bank           |  2787|
+|21    |    u_mem                   |a25_mem                     |  1410|
+|22    |      u_dcache              |a25_dcache                  |  1230|
+|23    |        \rams[0].u_tag      |generic_sram_line_en__5     |     1|
+|24    |        \rams[0].u_data     |generic_sram_byte_en__5     |     2|
+|25    |        \rams[1].u_tag      |generic_sram_line_en__6     |     1|
+|26    |        \rams[1].u_data     |generic_sram_byte_en__6     |     2|
+|27    |        \rams[2].u_tag      |generic_sram_line_en__7     |     1|
+|28    |        \rams[2].u_data     |generic_sram_byte_en__7     |     2|
+|29    |        \rams[3].u_tag      |generic_sram_line_en        |     1|
+|30    |        \rams[3].u_data     |generic_sram_byte_en        |     2|
+|31    |    u_write_back            |a25_write_back              |    45|
+|32    |    u_wishbone              |a25_wishbone                |   822|
+|33    |      u_a25_wishbone_buf_p0 |a25_wishbone_buf__1         |   219|
+|34    |      u_a25_wishbone_buf_p1 |a25_wishbone_buf__2         |   219|
+|35    |      u_a25_wishbone_buf_p2 |a25_wishbone_buf            |    75|
+|36    |    u_coprocessor           |a25_coprocessor             |   178|
+|37    |  basicrsa_0                |basicrsa                    |  1174|
+|38    |    modmultiply             |modmult__1                  |   419|
+|39    |    modsqr                  |modmult                     |   419|
++------+----------------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 1789.965 ; gain = 904.879 ; free physical = 8720 ; free virtual = 32376
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:02:34 . Memory (MB): peak = 1631.559 ; gain = 743.184 ; free physical = 5883 ; free virtual = 14774
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 744 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:12 . Memory (MB): peak = 1789.965 ; gain = 424.980 ; free physical = 8720 ; free virtual = 32376
-Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 1789.973 ; gain = 904.887 ; free physical = 8720 ; free virtual = 32376
+Synthesis finished with 0 errors, 0 critical warnings and 749 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:41 ; elapsed = 00:02:22 . Memory (MB): peak = 1631.559 ; gain = 303.129 ; free physical = 5883 ; free virtual = 14774
+Synthesis Optimization Complete : Time (s): cpu = 00:01:49 ; elapsed = 00:02:34 . Memory (MB): peak = 1631.566 ; gain = 743.191 ; free physical = 5884 ; free virtual = 14775
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 362 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 342 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -1973,8 +2036,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 61 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-500 Infos, 219 Warnings, 16 Critical Warnings and 0 Errors encountered.
+461 Infos, 225 Warnings, 16 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:19 . Memory (MB): peak = 1821.980 ; gain = 860.340 ; free physical = 8725 ; free virtual = 32380
-report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1853.996 ; gain = 0.000 ; free physical = 8719 ; free virtual = 32376
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 14:20:34 2018...
+synth_design: Time (s): cpu = 00:01:52 ; elapsed = 00:02:34 . Memory (MB): peak = 1663.574 ; gain = 700.645 ; free physical = 5880 ; free virtual = 14773
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1695.590 ; gain = 0.000 ; free physical = 5867 ; free virtual = 14763
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 17:50:33 2020...

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/sean/vivado_workspace/leon3s_simple/leon3s_simple.srcs/constrs_1/imports/leon3-digilent-nexys4/leon3mp.xdc rfile:../../../leon3s_simple.srcs/constrs_1/imports/leon3-digilent-nexys4/leon3mp.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/jgoeders/ipassurance/base/leon3s_base/leon3s_base.srcs/constrs_1/imports/leon3-digilent-nexys4/leon3mp.xdc rfile:../../../leon3s_base.srcs/constrs_1/imports/leon3-digilent-nexys4/leon3mp.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property src_info {type:XDC file:1 line:32 export:INPUT save:INPUT read:READ} [current_design]

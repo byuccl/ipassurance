@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/sean/vivado_workspace/pci_mini_simple/pci_mini_simple.srcs/constrs_1/imports/new/constr.xdc rfile:../../../pci_mini_simple.srcs/constrs_1/imports/new/constr.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/jgoeders/ipassurance/base/pci_mini_base/pci_mini_base.srcs/constrs_1/imports/new/constr.xdc rfile:../../../pci_mini_base.srcs/constrs_1/imports/new/constr.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]

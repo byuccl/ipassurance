@@ -2,33 +2,33 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Jan 13 15:21:51 2018
-# Process ID: 27527
-# Current directory: /home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.runs/synth_1
+# Start of session at: Tue Nov 17 13:55:17 2020
+# Process ID: 7113
+# Current directory: /home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.runs/synth_1
 # Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: /home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.runs/synth_1/top.vds
-# Journal file: /home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.runs/synth_1/vivado.jou
+# Log file: /home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.runs/synth_1/top.vds
+# Journal file: /home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-Command: synth_design -top top -part xc7a100tcsg324-1 -flatten_hierarchy full
+Command: synth_design -top top -part xc7a100tcsg324-1 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27531 
+INFO: Helper process launched with PID 7172 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1047.645 ; gain = 155.137 ; free physical = 5044 ; free virtual = 118829
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.516 ; gain = 148.137 ; free physical = 4743 ; free virtual = 15051
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-638] synthesizing module 'PowerSequencer' [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/powerSequencer/src/PowerSequencer.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'PowerSequencer' [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/powerSequencer/src/PowerSequencer.vhd:59]
 	Parameter ticks bound to: 16 - type: integer 
 	Parameter last_in_chain bound to: 0 - type: bool 
-INFO: [Synth 8-638] synthesizing module 'retrigg_timer' [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/powerSequencer/src/retrigg_timer.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'retrigg_timer' [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/powerSequencer/src/retrigg_timer.vhd:35]
 	Parameter ticks bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'retrigg_timer' (1#1) [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/powerSequencer/src/retrigg_timer.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'PowerSequencer' (2#1) [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/powerSequencer/src/PowerSequencer.vhd:59]
-INFO: [Synth 8-638] synthesizing module 'wb_lcd' [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/wb_lcd.v:47]
-INFO: [Synth 8-638] synthesizing module 'lcd' [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:47]
+INFO: [Synth 8-256] done synthesizing module 'retrigg_timer' (1#1) [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/powerSequencer/src/retrigg_timer.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'PowerSequencer' (2#1) [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/powerSequencer/src/PowerSequencer.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'wb_lcd' [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/wb_lcd.v:47]
+INFO: [Synth 8-638] synthesizing module 'lcd' [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:47]
 	Parameter tx_state_high_setup bound to: 3'b000 
 	Parameter tx_state_high_hold bound to: 3'b001 
 	Parameter tx_state_oneus bound to: 3'b010 
@@ -55,26 +55,26 @@ INFO: [Synth 8-638] synthesizing module 'lcd' [/home/sean/vivado_workspace/wb_lc
 	Parameter display_state_set_addr bound to: 5'b11100 
 	Parameter display_state_char_write bound to: 5'b11101 
 	Parameter display_state_done bound to: 5'b10010 
-INFO: [Synth 8-638] synthesizing module 'delay_counter' [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/delay_counter.v:47]
+INFO: [Synth 8-638] synthesizing module 'delay_counter' [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/delay_counter.v:47]
 	Parameter counter_width bound to: 20 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'delay_counter' (3#1) [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/delay_counter.v:47]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:180]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:373]
-WARNING: [Synth 8-5788] Register tx_byte_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:184]
-WARNING: [Synth 8-5788] Register SF_D1_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:127]
-WARNING: [Synth 8-5788] Register LCD_E1_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:130]
-WARNING: [Synth 8-5788] Register wr_addr_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:339]
-WARNING: [Synth 8-5788] Register wr_dat_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:340]
-WARNING: [Synth 8-5788] Register LCD_E0_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:129]
-WARNING: [Synth 8-5788] Register SF_D0_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:126]
-WARNING: [Synth 8-5788] Register tx_delay_load_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:162]
-WARNING: [Synth 8-5788] Register tx_delay_value_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:161]
-WARNING: [Synth 8-5788] Register tx_done_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:439]
-INFO: [Synth 8-256] done synthesizing module 'lcd' (4#1) [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:47]
-INFO: [Synth 8-256] done synthesizing module 'wb_lcd' (5#1) [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/imports/opencores/wb_lcd/src/wb_lcd.v:47]
-INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay_counter' (3#1) [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/delay_counter.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:180]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:373]
+WARNING: [Synth 8-5788] Register tx_byte_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:184]
+WARNING: [Synth 8-5788] Register SF_D1_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:127]
+WARNING: [Synth 8-5788] Register LCD_E1_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:130]
+WARNING: [Synth 8-5788] Register wr_addr_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:339]
+WARNING: [Synth 8-5788] Register wr_dat_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:340]
+WARNING: [Synth 8-5788] Register LCD_E0_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:129]
+WARNING: [Synth 8-5788] Register SF_D0_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:126]
+WARNING: [Synth 8-5788] Register tx_delay_load_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:162]
+WARNING: [Synth 8-5788] Register tx_delay_value_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:161]
+WARNING: [Synth 8-5788] Register tx_done_reg in module lcd is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:439]
+INFO: [Synth 8-256] done synthesizing module 'lcd' (4#1) [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/lcd_display.v:47]
+INFO: [Synth 8-256] done synthesizing module 'wb_lcd' (5#1) [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/imports/opencores/wb_lcd/src/wb_lcd.v:47]
+INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/sources_1/new/top.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1088.082 ; gain = 195.574 ; free physical = 5001 ; free virtual = 118786
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1075.953 ; gain = 187.574 ; free physical = 4700 ; free virtual = 15008
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -84,38 +84,38 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1088.082 ; gain = 195.574 ; free physical = 5001 ; free virtual = 118786
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1075.953 ; gain = 187.574 ; free physical = 4700 ; free virtual = 15008
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/constrs_1/new/top.xdc]
-Finished Parsing XDC File [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/constrs_1/new/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sean/vivado_workspace/wb_lcd_simple/wb_lcd_simple.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jgoeders/ipassurance/base/wb_lcd_base/wb_lcd_base.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1464.613 ; gain = 0.000 ; free physical = 4824 ; free virtual = 118610
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1414.875 ; gain = 0.000 ; free physical = 4425 ; free virtual = 14733
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4823 ; free virtual = 118609
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4426 ; free virtual = 14734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4823 ; free virtual = 118609
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4426 ; free virtual = 14734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4823 ; free virtual = 118609
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4426 ; free virtual = 14734
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'PowerSequencer'
 INFO: [Synth 8-5544] ROM "timer_do" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -183,7 +183,7 @@ display_state_char_write |                            10010 |                   
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'display_state_reg' using encoding 'sequential' in module 'lcd'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4808 ; free virtual = 118594
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4429 ; free virtual = 14737
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -282,22 +282,14 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4808 ; free virtual = 118594
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4427 ; free virtual = 14735
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3917] design top has port designOutput_i[15] driven by constant 0
-WARNING: [Synth 8-3917] design top has port designOutput_i[7] driven by constant 0
-WARNING: [Synth 8-3917] design top has port designOutput_i[6] driven by constant 0
-WARNING: [Synth 8-3917] design top has port designOutput_i[5] driven by constant 0
-WARNING: [Synth 8-3917] design top has port designOutput_i[4] driven by constant 0
-WARNING: [Synth 8-3917] design top has port designOutput_i[3] driven by constant 0
-WARNING: [Synth 8-3917] design top has port designOutput_i[2] driven by constant 0
-WARNING: [Synth 8-3917] design top has port designOutput_i[1] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4808 ; free virtual = 118594
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4427 ; free virtual = 14735
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4808 ; free virtual = 118594
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4427 ; free virtual = 14735
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -307,14 +299,13 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\powerSequencer_0/pu_chain_out_reg )
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/main_delay_value_reg[19]' (FDC) to 'wb_lcd_0/lcd/main_delay_value_reg[5]'
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/tx_delay_value_reg[19]' (FDE) to 'wb_lcd_0/lcd/tx_delay_value_reg[18]'
-INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/main_delay_value_reg[18]' (FDC) to 'wb_lcd_0/lcd/main_delay_value_reg[2]'
+INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/main_delay_value_reg[18]' (FDC) to 'wb_lcd_0/lcd/main_delay_value_reg[15]'
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/tx_delay_value_reg[18]' (FDE) to 'wb_lcd_0/lcd/tx_delay_value_reg[17]'
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/main_delay_value_reg[17]' (FDC) to 'wb_lcd_0/lcd/main_delay_value_reg[13]'
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/tx_delay_value_reg[17]' (FDE) to 'wb_lcd_0/lcd/tx_delay_value_reg[16]'
-INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/main_delay_value_reg[15]' (FDC) to 'wb_lcd_0/lcd/main_delay_value_reg[2]'
+INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/main_delay_value_reg[15]' (FDC) to 'wb_lcd_0/lcd/main_delay_value_reg[11]'
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/tx_delay_value_reg[15]' (FDE) to 'wb_lcd_0/lcd/tx_delay_value_reg[16]'
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/tx_delay_value_reg[16]' (FDE) to 'wb_lcd_0/lcd/tx_delay_value_reg[14]'
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/tx_delay_value_reg[10]' (FDE) to 'wb_lcd_0/lcd/tx_delay_value_reg[9]'
@@ -327,47 +318,47 @@ INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/tx_delay_value_reg[8]' (FDE)
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/tx_delay_value_reg[9]' (FDE) to 'wb_lcd_0/lcd/tx_delay_value_reg[7]'
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/tx_delay_value_reg[7]' (FDE) to 'wb_lcd_0/lcd/tx_delay_value_reg[6]'
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/main_delay_value_reg[0]' (FDC) to 'wb_lcd_0/lcd/main_delay_value_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wb_lcd_0/lcd/tx_delay_value_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wb_lcd_0/lcd/main_delay_value_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_lcd_0/lcd/\tx_delay_value_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_lcd_0/lcd/\main_delay_value_reg[2] )
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/tx_delay_value_reg[2]' (FDE) to 'wb_lcd_0/lcd/tx_delay_value_reg[3]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\powerSequencer_0/supply_good_reg )
 INFO: [Synth 8-3886] merging instance 'wb_lcd_0/lcd/SF_D1_reg[2]' (FDE) to 'wb_lcd_0/lcd/SF_D1_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wb_lcd_0/lcd/SF_D1_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\powerSequencer_1/supply_good_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wb_lcd_0/lcd/wr_addr_reg[6] )
-WARNING: [Synth 8-3332] Sequential element (powerSequencer_0/supply_good_reg) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (powerSequencer_1/ena_next_reg) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (powerSequencer_0/pu_chain_out_reg) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (powerSequencer_1/supply_good_reg) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/wr_addr_reg[6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/SF_D1_reg[3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/SF_D1_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[18]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[17]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[16]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[13]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[12]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/tx_delay_value_reg[0]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/main_delay_value_reg[19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/main_delay_value_reg[18]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/main_delay_value_reg[17]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/main_delay_value_reg[15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/main_delay_value_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/main_delay_value_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (wb_lcd_0/lcd/main_delay_value_reg[0]) is unused and will be removed from module top.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_lcd_0/lcd/\SF_D1_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (SF_D1_reg[3]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (SF_D1_reg[2]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[19]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[18]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[17]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[16]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[15]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[14]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[13]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[12]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[11]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[10]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[9]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[8]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[7]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[2]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (tx_delay_value_reg[0]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (main_delay_value_reg[19]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (main_delay_value_reg[18]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (main_delay_value_reg[17]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (main_delay_value_reg[15]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (main_delay_value_reg[11]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (main_delay_value_reg[2]) is unused and will be removed from module lcd.
+WARNING: [Synth 8-3332] Sequential element (main_delay_value_reg[0]) is unused and will be removed from module lcd.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (powerSequencer_0/supply_good_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (powerSequencer_1/supply_good_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_lcd_0/lcd/\wr_addr_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (supply_good_reg) is unused and will be removed from module PowerSequencer__1.
+WARNING: [Synth 8-3332] Sequential element (pu_chain_out_reg) is unused and will be removed from module PowerSequencer__1.
+WARNING: [Synth 8-3332] Sequential element (supply_good_reg) is unused and will be removed from module PowerSequencer__2.
+WARNING: [Synth 8-3332] Sequential element (ena_next_reg) is unused and will be removed from module PowerSequencer__2.
+WARNING: [Synth 8-3332] Sequential element (wr_addr_reg[6]) is unused and will be removed from module lcd.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4792 ; free virtual = 118578
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4427 ; free virtual = 14735
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4792 ; free virtual = 118578
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4427 ; free virtual = 14735
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -381,10 +372,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4755 ; free virtual = 118541
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4426 ; free virtual = 14734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4743 ; free virtual = 118529
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4426 ; free virtual = 14734
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -396,24 +387,18 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4730 ; free virtual = 118516
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4430 ; free virtual = 14738
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4730 ; free virtual = 118516
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4430 ; free virtual = 14738
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4730 ; free virtual = 118516
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4430 ; free virtual = 14738
 ---------------------------------------------------------------------------------
 Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
@@ -422,7 +407,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4730 ; free virtual = 118516
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4430 ; free virtual = 14738
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -435,7 +420,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4730 ; free virtual = 118516
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4431 ; free virtual = 14739
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -447,7 +432,7 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4730 ; free virtual = 118516
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4431 ; free virtual = 14739
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -465,30 +450,50 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |     5|
-|3     |LUT2   |    60|
-|4     |LUT3   |    43|
-|5     |LUT4   |    51|
-|6     |LUT5   |    77|
-|7     |LUT6   |   114|
-|8     |MUXF7  |     2|
-|9     |FDCE   |    22|
-|10    |FDRE   |   197|
-|11    |IBUF   |    18|
-|12    |OBUF   |    16|
+|3     |LUT1   |    19|
+|4     |LUT2   |    56|
+|5     |LUT3   |    74|
+|6     |LUT4   |    35|
+|7     |LUT5   |    72|
+|8     |LUT6   |   108|
+|9     |MUXF7  |     2|
+|10    |FDCE   |    22|
+|11    |FDRE   |   197|
+|12    |IBUF   |    18|
+|13    |OBUF   |    16|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |   606|
-+------+---------+-------+------+
++------+--------------------+------------------+------+
+|      |Instance            |Module            |Cells |
++------+--------------------+------------------+------+
+|1     |top                 |                  |   625|
+|2     |  powerSequencer_0  |PowerSequencer__1 |    39|
+|3     |    uti             |retrigg_timer__1  |    17|
+|4     |  powerSequencer_1  |PowerSequencer__2 |    41|
+|5     |    uti             |retrigg_timer__2  |    17|
+|6     |  powerSequencer_2  |PowerSequencer__3 |    48|
+|7     |    uti             |retrigg_timer__3  |    17|
+|8     |  powerSequencer_3  |PowerSequencer__4 |    48|
+|9     |    uti             |retrigg_timer__4  |    17|
+|10    |  powerSequencer_4  |PowerSequencer__5 |    48|
+|11    |    uti             |retrigg_timer__5  |    17|
+|12    |  powerSequencer_5  |PowerSequencer__6 |    48|
+|13    |    uti             |retrigg_timer__6  |    17|
+|14    |  powerSequencer_6  |PowerSequencer__7 |    48|
+|15    |    uti             |retrigg_timer__7  |    17|
+|16    |  powerSequencer_7  |PowerSequencer    |    48|
+|17    |    uti             |retrigg_timer     |    17|
+|18    |  wb_lcd_0          |wb_lcd            |   222|
+|19    |    lcd             |lcd               |   220|
+|20    |      delay_counter |delay_counter     |    68|
++------+--------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4730 ; free virtual = 118516
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4430 ; free virtual = 14738
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1464.613 ; gain = 108.434 ; free physical = 4729 ; free virtual = 118515
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 572.105 ; free physical = 4729 ; free virtual = 118515
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1414.875 ; gain = 100.434 ; free physical = 4430 ; free virtual = 14738
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1414.875 ; gain = 526.496 ; free physical = 4430 ; free virtual = 14738
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -498,8 +503,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-70 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+69 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1464.613 ; gain = 497.551 ; free physical = 4727 ; free virtual = 118513
-report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1496.629 ; gain = 0.000 ; free physical = 4726 ; free virtual = 118512
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 15:22:09 2018...
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1414.875 ; gain = 451.941 ; free physical = 4432 ; free virtual = 14740
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1446.891 ; gain = 0.000 ; free physical = 4431 ; free virtual = 14739
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 13:55:44 2020...

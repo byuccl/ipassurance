@@ -9,22 +9,22 @@ create_project -in_memory -part xc7a100tcsg324-3
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/sean/vivado_workspace/counter_simple/counter_simple.cache/wt [current_project]
-set_property parent.project_path /home/sean/vivado_workspace/counter_simple/counter_simple.xpr [current_project]
+set_property webtalk.parent_dir /home/jgoeders/ipassurance/base/counter_base/counter_base.cache/wt [current_project]
+set_property parent.project_path /home/jgoeders/ipassurance/base/counter_base/counter_base.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 read_verilog -library xil_defaultlib {
-  /home/sean/vivado_workspace/counter_simple/counter_simple.srcs/sources_1/imports/hdl/counter/counter.v
-  /home/sean/vivado_workspace/counter_simple/counter_simple.srcs/sources_1/imports/hdl/top.v
+  /home/jgoeders/ipassurance/base/counter_base/counter_base.srcs/sources_1/imports/hdl/counter/counter.v
+  /home/jgoeders/ipassurance/base/counter_base/counter_base.srcs/sources_1/imports/hdl/top.v
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/sean/vivado_workspace/counter_simple/counter_simple.srcs/constrs_1/new/constr.xdc
-set_property used_in_implementation false [get_files /home/sean/vivado_workspace/counter_simple/counter_simple.srcs/constrs_1/new/constr.xdc]
+read_xdc /home/jgoeders/ipassurance/base/counter_base/counter_base.srcs/constrs_1/new/constr.xdc
+set_property used_in_implementation false [get_files /home/jgoeders/ipassurance/base/counter_base/counter_base.srcs/constrs_1/new/constr.xdc]
 
 
-synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 
 
 write_checkpoint -force -noxdef top.dcp

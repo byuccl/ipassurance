@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/sean/vivado_workspace/sudoku_simple/sudoku_simple.runs/synth_1'
+HD_PWD='/home/jgoeders/ipassurance/base/sudoku_base/sudoku_base.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

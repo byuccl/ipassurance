@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/sean/vivado_workspace/potato_simple/potato_simple.runs/synth_1'
+HD_PWD='/home/jgoeders/ipassurance/base/potato_base/potato_base.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

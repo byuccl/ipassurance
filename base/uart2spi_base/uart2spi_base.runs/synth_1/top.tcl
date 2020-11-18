@@ -9,39 +9,39 @@ create_project -in_memory -part xc7a100tcsg324-3
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.cache/wt [current_project]
-set_property parent.project_path /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.xpr [current_project]
+set_property webtalk.parent_dir /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.cache/wt [current_project]
+set_property parent.project_path /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_verilog -library xil_defaultlib {
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/lib/registers.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_txfsm.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_rxfsm.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_if.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_ctl.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_cfg.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/clk_ctl.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_smul_16_18_sadd_37.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_smul_16_18.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_lzd.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_coef.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/uart_core/uart_core.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/spi/spi_core.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_interp.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng_ctg.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/top/uart2spi.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/imports/rtl/gng.v
-  /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/sources_1/new/top.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/lib/registers.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_txfsm.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_rxfsm.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_if.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_ctl.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_cfg.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/clk_ctl.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_smul_16_18_sadd_37.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_smul_16_18.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_lzd.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_coef.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/msg_hand/uart_msg_handler.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/uart_core/uart_core.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/spi/spi_core.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_interp.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng_ctg.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/top/uart2spi.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/imports/rtl/gng.v
+  /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/sources_1/new/top.v
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/constrs_1/imports/opencores/top.xdc
-set_property used_in_implementation false [get_files /home/sean/vivado_workspace/uart2spi_simple/uart2spi_simple.srcs/constrs_1/imports/opencores/top.xdc]
+read_xdc /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/constrs_1/imports/opencores/top.xdc
+set_property used_in_implementation false [get_files /home/jgoeders/ipassurance/base/uart2spi_base/uart2spi_base.srcs/constrs_1/imports/opencores/top.xdc]
 
 
-synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 
 
 write_checkpoint -force -noxdef top.dcp

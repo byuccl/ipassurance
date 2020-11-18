@@ -1,0 +1,32 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 16:19:07 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/md5_pipelined_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-3
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------+---------------+------------+------------+---------+------+-------+--------+--------+--------------+
+|      Instance     |     Module    | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP48 Blocks |
++-------------------+---------------+------------+------------+---------+------+-------+--------+--------+--------------+
+| top               |         (top) |      21801 |      19737 |     144 | 1920 | 13440 |      2 |     18 |           13 |
+|   (top)           |         (top) |         45 |         45 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   m32632_0        |        m32632 |      11220 |      11076 |     144 |    0 |  3107 |      2 |     18 |           13 |
+|   md5_pipelined_0 | md5_pipelined |       9824 |       7904 |       0 | 1920 | 10200 |      0 |      0 |            0 |
+|   median_0        |        median |        711 |        711 |       0 |    0 |   125 |      0 |      0 |            0 |
+|   mips_16_0       |       mips_16 |          1 |          1 |       0 |    0 |     8 |      0 |      0 |            0 |
++-------------------+---------------+------------+------------+---------+------+-------+--------+--------+--------------+
+
+

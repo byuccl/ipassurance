@@ -9,33 +9,33 @@ create_project -in_memory -part xc7a100tcsg324-3
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.cache/wt [current_project]
-set_property parent.project_path /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.xpr [current_project]
+set_property webtalk.parent_dir /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.cache/wt [current_project]
+set_property parent.project_path /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_verilog -library xil_defaultlib {
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox8.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox7.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox6.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox5.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox4.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox3.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox2.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox1.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/perf_opt/key_sel.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/crp.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/perf_opt/des.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/perf_opt/des3_perf.v
-  /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/new/top.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox8.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox7.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox6.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox5.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox4.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox3.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox2.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox1.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/perf_opt/key_sel.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/crp.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/perf_opt/des.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/perf_opt/des3_perf.v
+  /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/new/top.v
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/constrs_1/imports/opencores/top.xdc
-set_property used_in_implementation false [get_files /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/constrs_1/imports/opencores/top.xdc]
+read_xdc /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/constrs_1/imports/opencores/top.xdc
+set_property used_in_implementation false [get_files /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/constrs_1/imports/opencores/top.xdc]
 
 
-synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 
 
 write_checkpoint -force -noxdef top.dcp

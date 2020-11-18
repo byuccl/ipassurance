@@ -1,0 +1,32 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 13:49:39 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/natalius_8bit_risc_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-3
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------+--------------------+------------+------------+---------+------+-------+--------+--------+--------------+
+|        Instance        |       Module       | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP48 Blocks |
++------------------------+--------------------+------------+------------+---------+------+-------+--------+--------+--------------+
+| top                    |              (top) |      12713 |      12222 |     112 |  379 | 15202 |     18 |     13 |           20 |
+|   (top)                |              (top) |         33 |         33 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   mpeg2fpga_0          |          mpeg2fpga |      10448 |       9990 |      80 |  378 | 14314 |     17 |      9 |           20 |
+|   msp430_vhdl_0        |        msp430_vhdl |       1387 |       1387 |       0 |    0 |   298 |      0 |      0 |            0 |
+|   natalius_8bit_risc_0 | natalius_8bit_risc |         29 |         29 |       0 |    0 |    25 |      1 |      0 |            0 |
+|   neo430_0             |             neo430 |        816 |        783 |      32 |    1 |   565 |      0 |      4 |            0 |
++------------------------+--------------------+------------+------------+---------+------+-------+--------+--------+--------------+
+
+

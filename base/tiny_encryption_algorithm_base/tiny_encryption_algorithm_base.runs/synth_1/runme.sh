@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.runs/synth_1'
+HD_PWD='/home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

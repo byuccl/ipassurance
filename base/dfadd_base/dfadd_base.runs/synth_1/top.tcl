@@ -9,37 +9,37 @@ create_project -in_memory -part xc7a100tcsg324-3
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.cache/wt [current_project]
-set_property parent.project_path /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.xpr [current_project]
+set_property webtalk.parent_dir /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.cache/wt [current_project]
+set_property parent.project_path /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_verilog -library xil_defaultlib {
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/bmc010.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/ACS.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/bmc001.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/bmc000.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/bmc011.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/bmc100.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/bmc110.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/bmc111.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/tbu.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/bmc101.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/mem_1x1024.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/mem_8x1024.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/encoder.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/decoder.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/viterbi/viterbi_tx_rx.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/522r_asst2/examples/chstone/dfadd/dfadd.v
-  /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/sources_1/imports/imports/new/top.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/bmc010.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/ACS.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/bmc001.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/bmc000.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/bmc011.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/bmc100.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/bmc110.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/bmc111.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/tbu.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/bmc101.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/mem_1x1024.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/mem_8x1024.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/encoder.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/decoder.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/viterbi/viterbi_tx_rx.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/522r_asst2/examples/chstone/dfadd/dfadd.v
+  /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/sources_1/imports/imports/new/top.v
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/constrs_1/imports/xdc/top.xdc
-set_property used_in_implementation false [get_files /home/sean/vivado_workspace/dfadd_simple/dfadd_simple.srcs/constrs_1/imports/xdc/top.xdc]
+read_xdc /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/constrs_1/imports/xdc/top.xdc
+set_property used_in_implementation false [get_files /home/jgoeders/ipassurance/base/dfadd_base/dfadd_base.srcs/constrs_1/imports/xdc/top.xdc]
 
 
-synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 
 
 write_checkpoint -force -noxdef top.dcp

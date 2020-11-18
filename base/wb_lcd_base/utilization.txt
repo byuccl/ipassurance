@@ -1,0 +1,37 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 13:55:48 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/wb_lcd_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------+-------------------+------------+------------+---------+------+-----+--------+--------+--------------+
+|      Instance      |       Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++--------------------+-------------------+------------+------------+---------+------+-----+--------+--------+--------------+
+| top                |             (top) |        311 |        311 |       0 |    0 | 219 |      0 |      0 |            0 |
+|   (top)            |             (top) |          0 |          0 |       0 |    0 |   0 |      0 |      0 |            0 |
+|   powerSequencer_0 | PowerSequencer__1 |         20 |         20 |       0 |    0 |  16 |      0 |      0 |            0 |
+|   powerSequencer_1 | PowerSequencer__2 |         22 |         22 |       0 |    0 |  16 |      0 |      0 |            0 |
+|   powerSequencer_2 | PowerSequencer__3 |         27 |         27 |       0 |    0 |  18 |      0 |      0 |            0 |
+|   powerSequencer_3 | PowerSequencer__4 |         27 |         27 |       0 |    0 |  18 |      0 |      0 |            0 |
+|   powerSequencer_4 | PowerSequencer__5 |         27 |         27 |       0 |    0 |  18 |      0 |      0 |            0 |
+|   powerSequencer_5 | PowerSequencer__6 |         27 |         27 |       0 |    0 |  18 |      0 |      0 |            0 |
+|   powerSequencer_6 | PowerSequencer__7 |         27 |         27 |       0 |    0 |  18 |      0 |      0 |            0 |
+|   powerSequencer_7 |    PowerSequencer |         27 |         27 |       0 |    0 |  18 |      0 |      0 |            0 |
+|   wb_lcd_0         |            wb_lcd |        107 |        107 |       0 |    0 |  79 |      0 |      0 |            0 |
++--------------------+-------------------+------------+------------+---------+------+-----+--------+--------+--------------+
+
+

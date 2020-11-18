@@ -1,0 +1,29 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 14:59:18 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/jpegencode_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-3
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------+------------+------------+------------+---------+------+-------+--------+--------+--------------+
+|    Instance    |   Module   | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP48 Blocks |
++----------------+------------+------------+------------+---------+------+-------+--------+--------+--------------+
+| top            |      (top) |      35188 |      34950 |     120 |  118 | 32686 |      1 |      0 |          240 |
+|   (top)        |      (top) |          1 |          1 |       0 |    0 |     0 |      0 |      0 |            0 |
+|   jpegencode_0 | jpegencode |      35187 |      34949 |     120 |  118 | 32686 |      1 |      0 |          240 |
++----------------+------------+------------+------------+---------+------+-------+--------+--------+--------------+
+
+

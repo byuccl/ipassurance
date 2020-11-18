@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/sean/vivado_workspace/mpeg2fpga_simple/mpeg2fpga_simple.srcs/constrs_1/imports/new/constr.xdc rfile:../../../mpeg2fpga_simple.srcs/constrs_1/imports/new/constr.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/jgoeders/ipassurance/base/mpeg2fpga_base/mpeg2fpga_base.srcs/constrs_1/imports/new/constr.xdc rfile:../../../mpeg2fpga_base.srcs/constrs_1/imports/new/constr.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]

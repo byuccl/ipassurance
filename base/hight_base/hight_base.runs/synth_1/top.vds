@@ -2,79 +2,79 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Jan 13 13:48:07 2018
-# Process ID: 22727
-# Current directory: /home/sean/vivado_workspace/hight_simple/hight_simple.runs/synth_1
+# Start of session at: Tue Nov 17 15:57:03 2020
+# Process ID: 14999
+# Current directory: /home/jgoeders/ipassurance/base/hight_base/hight_base.runs/synth_1
 # Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: /home/sean/vivado_workspace/hight_simple/hight_simple.runs/synth_1/top.vds
-# Journal file: /home/sean/vivado_workspace/hight_simple/hight_simple.runs/synth_1/vivado.jou
+# Log file: /home/jgoeders/ipassurance/base/hight_base/hight_base.runs/synth_1/top.vds
+# Journal file: /home/jgoeders/ipassurance/base/hight_base/hight_base.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 22730 
+INFO: Helper process launched with PID 15002 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1047.121 ; gain = 155.137 ; free physical = 24406 ; free virtual = 94276
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.512 ; gain = 148.137 ; free physical = 4679 ; free virtual = 15044
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-638] synthesizing module 'fixed_point_sqrt' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_fixed_point_sqrt/Sources/hdl/fixed_point_sqrt.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'fixed_point_sqrt' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_fixed_point_sqrt/Sources/hdl/fixed_point_sqrt.vhd:19]
 	Parameter WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-4471] merging register 'd_reg[0][31:0]' into 'n_reg[0][31:0]' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_fixed_point_sqrt/Sources/hdl/fixed_point_sqrt.vhd:121]
-INFO: [Synth 8-256] done synthesizing module 'fixed_point_sqrt' (1#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_fixed_point_sqrt/Sources/hdl/fixed_point_sqrt.vhd:19]
-INFO: [Synth 8-638] synthesizing module 'graphiti' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:30]
+INFO: [Synth 8-4471] merging register 'd_reg[0][31:0]' into 'n_reg[0][31:0]' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_fixed_point_sqrt/Sources/hdl/fixed_point_sqrt.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'fixed_point_sqrt' (1#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_fixed_point_sqrt/Sources/hdl/fixed_point_sqrt.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'graphiti' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:30]
 	Parameter TAPS bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'myfir' declared at '/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:19' bound to instance 'I_4' of component 'myfir' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:159]
-INFO: [Synth 8-638] synthesizing module 'myfir' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:32]
+INFO: [Synth 8-3491] module 'myfir' declared at '/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:19' bound to instance 'I_4' of component 'myfir' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'myfir' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:32]
 	Parameter TAPS bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'myfir' (2#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'myfir' (2#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:32]
 	Parameter TAPS bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'myfir' declared at '/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:19' bound to instance 'I_5' of component 'myfir' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:166]
+INFO: [Synth 8-3491] module 'myfir' declared at '/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/myfir.vhd:19' bound to instance 'I_5' of component 'myfir' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:166]
 	Parameter TAPS bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'delay' declared at '/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/delay.vhd:17' bound to instance 'I_6' of component 'delay' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:173]
-INFO: [Synth 8-638] synthesizing module 'delay' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/delay.vhd:30]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/delay.vhd:17' bound to instance 'I_6' of component 'delay' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/delay.vhd:30]
 	Parameter TAPS bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'delay' (3#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/delay.vhd:30]
-INFO: [Synth 8-3491] module 'paltimer' declared at '/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:15' bound to instance 'I_0' of component 'paltimer' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:181]
-INFO: [Synth 8-638] synthesizing module 'paltimer' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'paltimer' (4#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:33]
-INFO: [Synth 8-3491] module 'dds' declared at '/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:15' bound to instance 'I_1' of component 'dds' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:198]
-INFO: [Synth 8-638] synthesizing module 'dds' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:23]
-INFO: [Synth 8-3491] module 'dds_sinus' declared at '/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:15' bound to instance 'I_O' of component 'dds_sinus' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:36]
-INFO: [Synth 8-638] synthesizing module 'dds_sinus' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:22]
-INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:27]
-INFO: [Synth 8-256] done synthesizing module 'dds_sinus' (5#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:22]
-INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:64]
-INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:76]
-INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:84]
-INFO: [Synth 8-256] done synthesizing module 'dds' (6#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:23]
-INFO: [Synth 8-3491] module 'dds' declared at '/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:15' bound to instance 'I_2' of component 'dds' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:209]
-INFO: [Synth 8-3491] module 'rgb2yuv' declared at '/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:15' bound to instance 'I_3' of component 'rgb2yuv' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:217]
-INFO: [Synth 8-638] synthesizing module 'rgb2yuv' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:22]
-INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:44]
-INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:80]
-INFO: [Synth 8-226] default block is never used [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:116]
-INFO: [Synth 8-256] done synthesizing module 'rgb2yuv' (7#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'graphiti' (8#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:30]
-WARNING: [Synth 8-689] width (4) of port connection 'in_r' does not match port width (5) of module 'graphiti' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/new/top.v:46]
-WARNING: [Synth 8-689] width (4) of port connection 'in_g' does not match port width (5) of module 'graphiti' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/new/top.v:47]
-WARNING: [Synth 8-689] width (4) of port connection 'in_b' does not match port width (5) of module 'graphiti' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/new/top.v:48]
-INFO: [Synth 8-638] synthesizing module 'hight' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/hight.v:43]
-INFO: [Synth 8-638] synthesizing module 'CRYPTO_PATH' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/CRYPTO_PATH.v:43]
-INFO: [Synth 8-638] synthesizing module 'WF' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WF.v:43]
-INFO: [Synth 8-256] done synthesizing module 'WF' (9#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WF.v:43]
-INFO: [Synth 8-638] synthesizing module 'RF' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/RF.v:43]
-INFO: [Synth 8-256] done synthesizing module 'RF' (10#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/RF.v:43]
-INFO: [Synth 8-256] done synthesizing module 'CRYPTO_PATH' (11#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/CRYPTO_PATH.v:43]
-INFO: [Synth 8-638] synthesizing module 'KEY_SCHED' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/KEY_SCHED.v:43]
-INFO: [Synth 8-638] synthesizing module 'WKG' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WKG.v:44]
-INFO: [Synth 8-256] done synthesizing module 'WKG' (12#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WKG.v:44]
-INFO: [Synth 8-638] synthesizing module 'SKG' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/SKG.v:43]
-INFO: [Synth 8-256] done synthesizing module 'SKG' (13#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/SKG.v:43]
-INFO: [Synth 8-256] done synthesizing module 'KEY_SCHED' (14#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/KEY_SCHED.v:43]
-INFO: [Synth 8-638] synthesizing module 'CONTROL' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/CONTROL.v:43]
+INFO: [Synth 8-256] done synthesizing module 'delay' (3#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/delay.vhd:30]
+INFO: [Synth 8-3491] module 'paltimer' declared at '/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:15' bound to instance 'I_0' of component 'paltimer' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'paltimer' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'paltimer' (4#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:33]
+INFO: [Synth 8-3491] module 'dds' declared at '/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:15' bound to instance 'I_1' of component 'dds' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'dds' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:23]
+INFO: [Synth 8-3491] module 'dds_sinus' declared at '/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:15' bound to instance 'I_O' of component 'dds_sinus' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'dds_sinus' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:22]
+INFO: [Synth 8-226] default block is never used [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'dds_sinus' (5#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds_sinus.vhd:22]
+INFO: [Synth 8-226] default block is never used [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:64]
+INFO: [Synth 8-226] default block is never used [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:76]
+INFO: [Synth 8-226] default block is never used [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'dds' (6#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:23]
+INFO: [Synth 8-3491] module 'dds' declared at '/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/dds.vhd:15' bound to instance 'I_2' of component 'dds' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:209]
+INFO: [Synth 8-3491] module 'rgb2yuv' declared at '/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:15' bound to instance 'I_3' of component 'rgb2yuv' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'rgb2yuv' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:22]
+INFO: [Synth 8-226] default block is never used [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:44]
+INFO: [Synth 8-226] default block is never used [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:80]
+INFO: [Synth 8-226] default block is never used [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:116]
+INFO: [Synth 8-256] done synthesizing module 'rgb2yuv' (7#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/rgb2yuv.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'graphiti' (8#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:30]
+WARNING: [Synth 8-689] width (4) of port connection 'in_r' does not match port width (5) of module 'graphiti' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/new/top.v:46]
+WARNING: [Synth 8-689] width (4) of port connection 'in_g' does not match port width (5) of module 'graphiti' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/new/top.v:47]
+WARNING: [Synth 8-689] width (4) of port connection 'in_b' does not match port width (5) of module 'graphiti' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/new/top.v:48]
+INFO: [Synth 8-638] synthesizing module 'hight' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/hight.v:43]
+INFO: [Synth 8-638] synthesizing module 'CRYPTO_PATH' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/CRYPTO_PATH.v:43]
+INFO: [Synth 8-638] synthesizing module 'WF' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WF.v:43]
+INFO: [Synth 8-256] done synthesizing module 'WF' (9#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WF.v:43]
+INFO: [Synth 8-638] synthesizing module 'RF' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/RF.v:43]
+INFO: [Synth 8-256] done synthesizing module 'RF' (10#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/RF.v:43]
+INFO: [Synth 8-256] done synthesizing module 'CRYPTO_PATH' (11#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/CRYPTO_PATH.v:43]
+INFO: [Synth 8-638] synthesizing module 'KEY_SCHED' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/KEY_SCHED.v:43]
+INFO: [Synth 8-638] synthesizing module 'WKG' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WKG.v:44]
+INFO: [Synth 8-256] done synthesizing module 'WKG' (12#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WKG.v:44]
+INFO: [Synth 8-638] synthesizing module 'SKG' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/SKG.v:43]
+INFO: [Synth 8-256] done synthesizing module 'SKG' (13#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/SKG.v:43]
+INFO: [Synth 8-256] done synthesizing module 'KEY_SCHED' (14#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/KEY_SCHED.v:43]
+INFO: [Synth 8-638] synthesizing module 'CONTROL' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/CONTROL.v:43]
 	Parameter S_IDLE bound to: 6'b110000 
 	Parameter S_KEY_CONFIG bound to: 6'b100000 
 	Parameter S_RDY bound to: 6'b000000 
@@ -113,18 +113,18 @@ INFO: [Synth 8-638] synthesizing module 'CONTROL' [/home/sean/vivado_workspace/h
 	Parameter S_RF32 bound to: 6'b111110 
 	Parameter S_DONE bound to: 6'b111100 
 	Parameter S_ERROR bound to: 6'b101010 
-INFO: [Synth 8-256] done synthesizing module 'CONTROL' (15#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/CONTROL.v:43]
-INFO: [Synth 8-256] done synthesizing module 'hight' (16#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/hight.v:43]
-INFO: [Synth 8-638] synthesizing module 'lfsr_randgen' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_lfsr_randgen/Sources/hdl/lfsr_randgen.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'CONTROL' (15#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/CONTROL.v:43]
+INFO: [Synth 8-256] done synthesizing module 'hight' (16#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/hight.v:43]
+INFO: [Synth 8-638] synthesizing module 'lfsr_randgen' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_lfsr_randgen/Sources/hdl/lfsr_randgen.vhd:62]
 	Parameter width bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'lfsr_randgen' (17#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_lfsr_randgen/Sources/hdl/lfsr_randgen.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'cpu8080' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:196]
-INFO: [Synth 8-638] synthesizing module 'alu' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:1600]
-INFO: [Synth 8-256] done synthesizing module 'alu' (18#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:1600]
-WARNING: [Synth 8-151] case item 6'b110000 is unreachable [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:351]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:351]
-INFO: [Synth 8-256] done synthesizing module 'cpu8080' (19#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:196]
-INFO: [Synth 8-256] done synthesizing module 'top' (20#1) [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-256] done synthesizing module 'lfsr_randgen' (17#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_lfsr_randgen/Sources/hdl/lfsr_randgen.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'cpu8080' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:196]
+INFO: [Synth 8-638] synthesizing module 'alu' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:1600]
+INFO: [Synth 8-256] done synthesizing module 'alu' (18#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:1600]
+WARNING: [Synth 8-151] case item 6'b110000 is unreachable [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:351]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:351]
+INFO: [Synth 8-256] done synthesizing module 'cpu8080' (19#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:196]
+INFO: [Synth 8-256] done synthesizing module 'top' (20#1) [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/new/top.v:23]
 WARNING: [Synth 8-3331] design dds_sinus has unconnected port clk
 WARNING: [Synth 8-3331] design dds_sinus has unconnected port reset
 WARNING: [Synth 8-3331] design paltimer has unconnected port clk
@@ -133,7 +133,7 @@ WARNING: [Synth 8-3331] design top has unconnected port sw[6]
 WARNING: [Synth 8-3331] design top has unconnected port sw[5]
 WARNING: [Synth 8-3331] design top has unconnected port sw[4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1109.559 ; gain = 217.574 ; free physical = 24341 ; free virtual = 94212
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.949 ; gain = 210.574 ; free physical = 4613 ; free virtual = 14979
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -143,96 +143,96 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1109.559 ; gain = 217.574 ; free physical = 24342 ; free virtual = 94212
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1098.949 ; gain = 210.574 ; free physical = 4613 ; free virtual = 14979
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:41]
+Parsing XDC File [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:41]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:42]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:44]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:45]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:47]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:48]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:50]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:51]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:53]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:54]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:56]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:57]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:59]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:60]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:62]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:62]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:63]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc:63]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Finished Parsing XDC File [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1489.090 ; gain = 0.000 ; free physical = 24160 ; free virtual = 94031
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1440.637 ; gain = 0.000 ; free physical = 4386 ; free virtual = 14751
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1489.090 ; gain = 597.105 ; free physical = 24159 ; free virtual = 94030
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1440.637 ; gain = 552.262 ; free physical = 4385 ; free virtual = 14750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1489.090 ; gain = 597.105 ; free physical = 24159 ; free virtual = 94030
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1440.637 ; gain = 552.262 ; free physical = 4385 ; free virtual = 14750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1489.090 ; gain = 597.105 ; free physical = 24159 ; free virtual = 94030
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1440.637 ; gain = 552.262 ; free physical = 4385 ; free virtual = 14750
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'phase_reg' into 'i_phase_reg' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:78]
-INFO: [Synth 8-4471] merging register 'readmem_reg' into 'i_readmem_reg' [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:81]
-WARNING: [Synth 8-3936] Found unconnected internal register 'modvs_reg' and it is trimmed from '29' to '27' bits. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:293]
-WARNING: [Synth 8-3936] Found unconnected internal register 'modv_reg' and it is trimmed from '28' to '27' bits. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:288]
-WARNING: [Synth 8-3936] Found unconnected internal register 'modus_reg' and it is trimmed from '29' to '27' bits. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:292]
-WARNING: [Synth 8-3936] Found unconnected internal register 'modu_reg' and it is trimmed from '28' to '27' bits. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:287]
-WARNING: [Synth 8-3936] Found unconnected internal register 'modys_reg' and it is trimmed from '29' to '27' bits. [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:294]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WF.v:115]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WF.v:110]
+INFO: [Synth 8-4471] merging register 'phase_reg' into 'i_phase_reg' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:78]
+INFO: [Synth 8-4471] merging register 'readmem_reg' into 'i_readmem_reg' [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/paltimer.vhd:81]
+WARNING: [Synth 8-3936] Found unconnected internal register 'modvs_reg' and it is trimmed from '29' to '27' bits. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:293]
+WARNING: [Synth 8-3936] Found unconnected internal register 'modv_reg' and it is trimmed from '28' to '27' bits. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:288]
+WARNING: [Synth 8-3936] Found unconnected internal register 'modus_reg' and it is trimmed from '29' to '27' bits. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:292]
+WARNING: [Synth 8-3936] Found unconnected internal register 'modu_reg' and it is trimmed from '28' to '27' bits. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:287]
+WARNING: [Synth 8-3936] Found unconnected internal register 'modys_reg' and it is trimmed from '29' to '27' bits. [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_graphiti/Sources/hdl/graphiti.vhd:294]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WF.v:115]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/vivado_workspace/ooc_hight/Sources/hdl/WF.v:110]
 INFO: [Synth 8-5544] ROM "r_xf0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'r_pstate_reg' in module 'CONTROL'
 INFO: [Synth 8-5546] ROM "o_xf_sel2" won't be mapped to RAM because it is too sparse
@@ -274,11 +274,11 @@ INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address
 INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "w_nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:351]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:351]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:351]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:351]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/hight_simple/hight_simple.srcs/sources_1/imports/hdl/cpu8080.v:351]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:351]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:351]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:351]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:351]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/hight_base/hight_base.srcs/sources_1/imports/hdl/cpu8080.v:351]
 INFO: [Synth 8-5544] ROM "regfil_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "regfil" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "regfil_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -357,7 +357,7 @@ INFO: [Synth 8-5546] ROM "popdes" won't be mapped to RAM because it is too spars
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'r_pstate_reg' using encoding 'sequential' in module 'CONTROL'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1489.090 ; gain = 597.105 ; free physical = 24144 ; free virtual = 94015
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1440.637 ; gain = 552.262 ; free physical = 4382 ; free virtual = 14748
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -686,7 +686,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1489.090 ; gain = 597.105 ; free physical = 24144 ; free virtual = 94015
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1440.637 ; gain = 552.262 ; free physical = 4382 ; free virtual = 14748
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -798,50 +798,50 @@ DSP Report: register B is absorbed into DSP n_reg[3]0.
 DSP Report: register A is absorbed into DSP n_reg[3]0.
 DSP Report: operator n_reg[3]0 is absorbed into DSP n_reg[3]0.
 DSP Report: operator n_reg[3]0 is absorbed into DSP n_reg[3]0.
-DSP Report: Generating DSP I_3/multOp, operation Mode is: A*(B:0x3a1).
-DSP Report: operator I_3/multOp is absorbed into DSP I_3/multOp.
-DSP Report: Generating DSP I_5/multOp, operation Mode is: A*(B:0x170).
-DSP Report: operator I_5/multOp is absorbed into DSP I_5/multOp.
-DSP Report: Generating DSP I_5/plusOp, operation Mode is: PCIN+A*(B:0x3fffa).
-DSP Report: operator I_5/plusOp is absorbed into DSP I_5/plusOp.
-DSP Report: operator I_5/multOp is absorbed into DSP I_5/plusOp.
-DSP Report: Generating DSP I_5/plusOp, operation Mode is: PCIN+A*(B:0x132).
-DSP Report: operator I_5/plusOp is absorbed into DSP I_5/plusOp.
-DSP Report: operator I_5/multOp is absorbed into DSP I_5/plusOp.
-DSP Report: Generating DSP I_5/plusOp, operation Mode is: PCIN+A*(B:0xd0).
-DSP Report: operator I_5/plusOp is absorbed into DSP I_5/plusOp.
-DSP Report: operator I_5/multOp is absorbed into DSP I_5/plusOp.
-DSP Report: Generating DSP I_5/plusOp, operation Mode is: PCIN+A*(B:0x6e).
-DSP Report: operator I_5/plusOp is absorbed into DSP I_5/plusOp.
-DSP Report: operator I_5/multOp is absorbed into DSP I_5/plusOp.
-DSP Report: Generating DSP I_5/plusOp, operation Mode is: PCIN+A*(B:0x27).
-DSP Report: operator I_5/plusOp is absorbed into DSP I_5/plusOp.
-DSP Report: operator I_5/multOp is absorbed into DSP I_5/plusOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*(B:0x170).
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP plusOp, operation Mode is: PCIN+A*(B:0x3fffa).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP plusOp, operation Mode is: PCIN+A*(B:0x132).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP plusOp, operation Mode is: PCIN+A*(B:0xd0).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP plusOp, operation Mode is: PCIN+A*(B:0x6e).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP plusOp, operation Mode is: PCIN+A*(B:0x27).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*(B:0x3fffa).
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP plusOp, operation Mode is: PCIN+A*(B:0x170).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP plusOp, operation Mode is: PCIN+A*(B:0x132).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP plusOp, operation Mode is: PCIN+A*(B:0xd0).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP plusOp, operation Mode is: PCIN+A*(B:0x6e).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP plusOp, operation Mode is: PCIN+A*(B:0x27).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*(B:0x205).
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*(B:0x3a1).
+DSP Report: operator multOp is absorbed into DSP multOp.
 DSP Report: Generating DSP modv_reg, operation Mode is: (A*B)'.
 DSP Report: register modv_reg is absorbed into DSP modv_reg.
 DSP Report: operator multOp is absorbed into DSP modv_reg.
 DSP Report: Generating DSP modvs_reg, operation Mode is: ((A:0x7530)*B)'.
 DSP Report: register modvs_reg is absorbed into DSP modvs_reg.
 DSP Report: operator multOp is absorbed into DSP modvs_reg.
-DSP Report: Generating DSP I_3/multOp, operation Mode is: A*(B:0x205).
-DSP Report: operator I_3/multOp is absorbed into DSP I_3/multOp.
-DSP Report: Generating DSP I_4/multOp, operation Mode is: A*(B:0x170).
-DSP Report: operator I_4/multOp is absorbed into DSP I_4/multOp.
-DSP Report: Generating DSP I_4/plusOp, operation Mode is: PCIN+A*(B:0x3fffa).
-DSP Report: operator I_4/plusOp is absorbed into DSP I_4/plusOp.
-DSP Report: operator I_4/multOp is absorbed into DSP I_4/plusOp.
-DSP Report: Generating DSP I_4/plusOp, operation Mode is: PCIN+A*(B:0x132).
-DSP Report: operator I_4/plusOp is absorbed into DSP I_4/plusOp.
-DSP Report: operator I_4/multOp is absorbed into DSP I_4/plusOp.
-DSP Report: Generating DSP I_4/plusOp, operation Mode is: PCIN+A*(B:0xd0).
-DSP Report: operator I_4/plusOp is absorbed into DSP I_4/plusOp.
-DSP Report: operator I_4/multOp is absorbed into DSP I_4/plusOp.
-DSP Report: Generating DSP I_4/plusOp, operation Mode is: PCIN+A*(B:0x6e).
-DSP Report: operator I_4/plusOp is absorbed into DSP I_4/plusOp.
-DSP Report: operator I_4/multOp is absorbed into DSP I_4/plusOp.
-DSP Report: Generating DSP I_4/plusOp, operation Mode is: PCIN+A*(B:0x27).
-DSP Report: operator I_4/plusOp is absorbed into DSP I_4/plusOp.
-DSP Report: operator I_4/multOp is absorbed into DSP I_4/plusOp.
 DSP Report: Generating DSP modu_reg, operation Mode is: (A*B)'.
 DSP Report: register modu_reg is absorbed into DSP modu_reg.
 DSP Report: operator multOp is absorbed into DSP modu_reg.
@@ -852,15 +852,17 @@ DSP Report: Generating DSP modys_reg, operation Mode is: ((A:0x8e38)*B2)'.
 DSP Report: register mody_reg is absorbed into DSP modys_reg.
 DSP Report: register modys_reg is absorbed into DSP modys_reg.
 DSP Report: operator multOp is absorbed into DSP modys_reg.
+WARNING: [Synth 8-3331] design dds_sinus has unconnected port clk
+WARNING: [Synth 8-3331] design dds_sinus has unconnected port reset
 WARNING: [Synth 8-3331] design paltimer has unconnected port clk
 WARNING: [Synth 8-3331] design top has unconnected port sw[7]
 WARNING: [Synth 8-3331] design top has unconnected port sw[6]
 WARNING: [Synth 8-3331] design top has unconnected port sw[5]
 WARNING: [Synth 8-3331] design top has unconnected port sw[4]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1489.090 ; gain = 597.105 ; free physical = 24119 ; free virtual = 93990
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1440.637 ; gain = 552.262 ; free physical = 4372 ; free virtual = 14738
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1489.090 ; gain = 597.105 ; free physical = 24119 ; free virtual = 93990
+Finished Parallel Reinference  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1440.637 ; gain = 552.262 ; free physical = 4372 ; free virtual = 14738
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -872,35 +874,33 @@ Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+-----------------+-------------------------+---------------+----------------+
-|Module Name      | RTL Object              | Depth x Width | Implemented As | 
-+-----------------+-------------------------+---------------+----------------+
-|fixed_point_sqrt | SQRT_TABLE_2[0]         | 128x32        | LUT            | 
-|fixed_point_sqrt | SQRT_TABLE_1[0]         | 128x32        | LUT            | 
-|dds_sinus        | output1                 | 128x15        | LUT            | 
-|rgb2yuv          | in_gs                   | 32x10         | LUT            | 
-|rgb2yuv          | in_bs                   | 32x7          | LUT            | 
-|rgb2yuv          | in_rs                   | 32x9          | LUT            | 
-|SKG              | w_d0x                   | 32x7          | LUT            | 
-|SKG              | w_d3x                   | 32x7          | LUT            | 
-|SKG              | w_d1x                   | 32x7          | LUT            | 
-|SKG              | w_d2x                   | 32x7          | LUT            | 
-|cpu8080          | carry                   | 64x1          | LUT            | 
-|cpu8080          | nextstate               | 64x6          | LUT            | 
-|fixed_point_sqrt | SQRT_TABLE_2[0]         | 128x32        | LUT            | 
-|fixed_point_sqrt | SQRT_TABLE_1[0]         | 128x32        | LUT            | 
-|graphiti         | I_2/adr_reg             | 128x15        | Block RAM      | 
-|graphiti         | I_3/in_gs               | 32x10         | LUT            | 
-|graphiti         | I_3/in_bs               | 32x7          | LUT            | 
-|graphiti         | I_3/in_rs               | 32x9          | LUT            | 
-|graphiti         | I_1/adr_reg             | 128x15        | Block RAM      | 
-|hight            | u_KEY_SCHED/u_SKG/w_d3x | 32x7          | LUT            | 
-|hight            | u_KEY_SCHED/u_SKG/w_d0x | 32x7          | LUT            | 
-|hight            | u_KEY_SCHED/u_SKG/w_d2x | 32x7          | LUT            | 
-|hight            | u_KEY_SCHED/u_SKG/w_d1x | 32x7          | LUT            | 
-|cpu8080          | nextstate               | 64x6          | LUT            | 
-|cpu8080          | carry                   | 64x1          | LUT            | 
-+-----------------+-------------------------+---------------+----------------+
++-----------------+-----------------+---------------+----------------+
+|Module Name      | RTL Object      | Depth x Width | Implemented As | 
++-----------------+-----------------+---------------+----------------+
+|fixed_point_sqrt | SQRT_TABLE_2[0] | 128x32        | LUT            | 
+|fixed_point_sqrt | SQRT_TABLE_1[0] | 128x32        | LUT            | 
+|dds_sinus        | output1         | 128x15        | LUT            | 
+|rgb2yuv          | in_gs           | 32x10         | LUT            | 
+|rgb2yuv          | in_bs           | 32x7          | LUT            | 
+|rgb2yuv          | in_rs           | 32x9          | LUT            | 
+|SKG              | w_d0x           | 32x7          | LUT            | 
+|SKG              | w_d3x           | 32x7          | LUT            | 
+|SKG              | w_d1x           | 32x7          | LUT            | 
+|SKG              | w_d2x           | 32x7          | LUT            | 
+|cpu8080          | carry           | 64x1          | LUT            | 
+|cpu8080          | nextstate       | 64x6          | LUT            | 
+|fixed_point_sqrt | SQRT_TABLE_2[0] | 128x32        | LUT            | 
+|fixed_point_sqrt | SQRT_TABLE_1[0] | 128x32        | LUT            | 
+|rgb2yuv          | in_gs           | 32x10         | LUT            | 
+|rgb2yuv          | in_bs           | 32x7          | LUT            | 
+|rgb2yuv          | in_rs           | 32x9          | LUT            | 
+|SKG              | w_d0x           | 32x7          | LUT            | 
+|SKG              | w_d3x           | 32x7          | LUT            | 
+|SKG              | w_d1x           | 32x7          | LUT            | 
+|SKG              | w_d2x           | 32x7          | LUT            | 
+|cpu8080          | nextstate       | 64x6          | LUT            | 
+|cpu8080          | carry           | 64x1          | LUT            | 
++-----------------+-----------------+---------------+----------------+
 
 
 DSP: Preliminary Mapping  Report (see note below)
@@ -931,22 +931,22 @@ DSP: Preliminary Mapping  Report (see note below)
 |fixed_point_sqrt | (PCIN>>17)+A2*B2   | 16     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
 |fixed_point_sqrt | A2*B2              | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
 |fixed_point_sqrt | (PCIN>>17)+A2*B2   | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
-|rgb2yuv          | A*(B:0x3a1)        | 12     | 11     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |myfir            | A*(B:0x170)        | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |myfir            | PCIN+A*(B:0x3fffa) | 12     | 4      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |myfir            | PCIN+A*(B:0x132)   | 12     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |myfir            | PCIN+A*(B:0xd0)    | 12     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |myfir            | PCIN+A*(B:0x6e)    | 12     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |myfir            | PCIN+A*(B:0x27)    | 12     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir            | A*(B:0x3fffa)      | 12     | 4      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir            | PCIN+A*(B:0x170)   | 12     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir            | PCIN+A*(B:0x132)   | 12     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir            | PCIN+A*(B:0xd0)    | 12     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir            | PCIN+A*(B:0x6e)    | 12     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myfir            | PCIN+A*(B:0x27)    | 12     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rgb2yuv          | A*(B:0x205)        | 12     | 11     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|rgb2yuv          | A*(B:0x3a1)        | 12     | 11     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |graphiti         | (A*B)'             | 16     | 12     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 1    | 0    | 
 |graphiti         | ((A:0x7530)*B)'    | 12     | 16     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 1    | 0    | 
-|rgb2yuv          | A*(B:0x205)        | 12     | 11     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|myfir            | A*(B:0x170)        | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|myfir            | PCIN+A*(B:0x3fffa) | 12     | 4      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|myfir            | PCIN+A*(B:0x132)   | 12     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|myfir            | PCIN+A*(B:0xd0)    | 12     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|myfir            | PCIN+A*(B:0x6e)    | 12     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|myfir            | PCIN+A*(B:0x27)    | 12     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |graphiti         | (A*B)'             | 16     | 12     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 1    | 0    | 
 |graphiti         | ((A:0x7530)*B)'    | 12     | 16     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 1    | 0    | 
 |graphiti         | ((A:0x8e38)*B2)'   | 12     | 17     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 1    | 0    | 
@@ -959,25 +959,13 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[11] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[0][11]' (FDC) to 'graphiti_0/I_3/out_y_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/i_0/\I_1/ctr90_48_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/i_1/\I_1/ctr_48_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[11] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[1][11]' (FDC) to 'graphiti_0/I_3/out_y_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[11] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[2][11]' (FDC) to 'graphiti_0/I_3/out_y_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[11] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[3][11]' (FDC) to 'graphiti_0/I_3/out_y_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[11] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[4][11]' (FDC) to 'graphiti_0/I_3/out_y_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[11] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[5][11]' (FDC) to 'graphiti_0/I_3/out_y_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[11] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[6][11]' (FDC) to 'graphiti_0/I_3/out_y_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[11] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/output_reg[11]' (FDC) to 'graphiti_0/I_3/out_y_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/I_3/\out_y_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dds:/i_0/\ctr225_48_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dds:/i_2/\ctr90_48_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dds:/i_1/\ctr135_48_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dds:/i_3/\ctr_48_reg[0] )
+INFO: [Synth 8-3886] merging instance 'dds:/abschnittu_reg[1]' (FDE) to 'dds:/addi_reg[8]'
+INFO: [Synth 8-3886] merging instance 'dds:/abschnittu_reg[0]' (FDE) to 'dds:/addi_reg[7]'
 WARNING: [Synth 8-3332] Sequential element (n_reg[0][16]) is unused and will be removed from module fixed_point_sqrt.
 WARNING: [Synth 8-3332] Sequential element (n_reg[0][15]) is unused and will be removed from module fixed_point_sqrt.
 WARNING: [Synth 8-3332] Sequential element (n_reg[0][14]) is unused and will be removed from module fixed_point_sqrt.
@@ -995,53 +983,110 @@ WARNING: [Synth 8-3332] Sequential element (n_reg[0][3]) is unused and will be r
 WARNING: [Synth 8-3332] Sequential element (n_reg[0][2]) is unused and will be removed from module fixed_point_sqrt.
 WARNING: [Synth 8-3332] Sequential element (n_reg[0][1]) is unused and will be removed from module fixed_point_sqrt.
 WARNING: [Synth 8-3332] Sequential element (n_reg[0][0]) is unused and will be removed from module fixed_point_sqrt.
-WARNING: [Synth 8-3332] Sequential element (I_0/en_sync_reg) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_0/en_schwarz_reg) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_0/en_vertbr_reg) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_0/en_verteq_reg) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_1/ctr90_48_reg[0]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_1/ctr_48_reg[0]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_2/abschnittu_reg[0]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_1/abschnittu_reg[0]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_3/out_y_reg[11]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[0][11]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[1][11]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[2][11]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[3][11]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[4][11]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[5][11]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[6][11]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/output_reg[11]) is unused and will be removed from module graphiti.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[10] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[0][10]' (FDC) to 'graphiti_0/I_3/out_y_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[10] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[1][10]' (FDC) to 'graphiti_0/I_3/out_y_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[10] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[2][10]' (FDC) to 'graphiti_0/I_3/out_y_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[10] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[3][10]' (FDC) to 'graphiti_0/I_3/out_y_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[10] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[4][10]' (FDC) to 'graphiti_0/I_3/out_y_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[10] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[5][10]' (FDC) to 'graphiti_0/I_3/out_y_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[10] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[6][10]' (FDC) to 'graphiti_0/I_3/out_y_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[10] )
-INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/output_reg[10]' (FDC) to 'graphiti_0/I_3/out_y_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/\I_3/out_y_reg[10] )
-WARNING: [Synth 8-3332] Sequential element (I_3/out_y_reg[10]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[0][10]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[1][10]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[2][10]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[3][10]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[4][10]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[5][10]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/sr_reg[6][10]) is unused and will be removed from module graphiti.
-WARNING: [Synth 8-3332] Sequential element (I_6/output_reg[10]) is unused and will be removed from module graphiti.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[0][11]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[1][11]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[2][11]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[3][11]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[4][11]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[5][11]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[6][11]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (output_reg[11]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (en_sync_reg) is unused and will be removed from module paltimer.
+WARNING: [Synth 8-3332] Sequential element (en_schwarz_reg) is unused and will be removed from module paltimer.
+WARNING: [Synth 8-3332] Sequential element (en_vertbr_reg) is unused and will be removed from module paltimer.
+WARNING: [Synth 8-3332] Sequential element (en_verteq_reg) is unused and will be removed from module paltimer.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[0]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (ctr135_48_reg[0]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (ctr90_48_reg[0]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (ctr_48_reg[0]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (addi_reg[6]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (addi_reg[5]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (addi_reg[4]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (addi_reg[3]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (addi_reg[2]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (addi_reg[1]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (addi_reg[0]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (abschnittu_reg[1]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (addi_reg[7]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (abschnittu_reg[0]) is unused and will be removed from module dds.
+WARNING: [Synth 8-3332] Sequential element (out_y_reg[11]) is unused and will be removed from module rgb2yuv.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/I_3/\out_y_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/I_6/\sr_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[1][10]' (FDC) to 'graphiti_0/I_6/sr_reg[0][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/I_6/\sr_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[2][10]' (FDC) to 'graphiti_0/I_6/sr_reg[0][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/I_6/\sr_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[3][10]' (FDC) to 'graphiti_0/I_6/sr_reg[0][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/I_6/\sr_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[4][10]' (FDC) to 'graphiti_0/I_6/sr_reg[0][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/I_6/\sr_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[5][10]' (FDC) to 'graphiti_0/I_6/sr_reg[0][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/I_6/\sr_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/sr_reg[6][10]' (FDC) to 'graphiti_0/I_6/sr_reg[0][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/I_6/\sr_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'graphiti_0/I_6/output_reg[10]' (FDC) to 'graphiti_0/I_6/sr_reg[0][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (graphiti_0/I_6/\sr_reg[0][10] )
+WARNING: [Synth 8-3332] Sequential element (sr_reg[0][10]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[1][10]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[2][10]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[3][10]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[4][10]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[5][10]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (sr_reg[6][10]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (output_reg[10]) is unused and will be removed from module delay.
+WARNING: [Synth 8-3332] Sequential element (out_y_reg[10]) is unused and will be removed from module rgb2yuv.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[1]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[2]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[3]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[4]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[5]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[6]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[7]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[8]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[9]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[10]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[11]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[12]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[13]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[14]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[15]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[16]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[17]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[18]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[19]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[20]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[21]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[22]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[23]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[24]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[25]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[26]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[27]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[28]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[29]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[30]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[31]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[32]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[33]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[34]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[35]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[36]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[37]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[38]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[39]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[40]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[41]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[42]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[43]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[44]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[45]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[46]) is unused and will be removed from module dds__1.
+WARNING: [Synth 8-3332] Sequential element (ctr225_48_reg[47]) is unused and will be removed from module dds__1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1489.090 ; gain = 597.105 ; free physical = 24085 ; free virtual = 93956
+Finished Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.637 ; gain = 552.262 ; free physical = 4362 ; free virtual = 14728
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1489.090 ; gain = 597.105 ; free physical = 24085 ; free virtual = 93956
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.637 ; gain = 552.262 ; free physical = 4362 ; free virtual = 14728
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1055,10 +1100,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1521.074 ; gain = 629.090 ; free physical = 24000 ; free virtual = 93871
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1469.621 ; gain = 581.246 ; free physical = 4276 ; free virtual = 14642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1542.090 ; gain = 650.105 ; free physical = 23980 ; free virtual = 93851
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1490.637 ; gain = 602.262 ; free physical = 4256 ; free virtual = 14622
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1069,83 +1114,20 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[31]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[30]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[29]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[28]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[27]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[26]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[25]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[24]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[22]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[21]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[20]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[18]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[17]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[16]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[13]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[12]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[5]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_0/i_sync_c_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[5]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_v_reg[0]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[5]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (graphiti_0/I_3/out_u_reg[0]) is unused and will be removed from module top.
-INFO: [Synth 8-3886] merging instance 'i_5032' (FDC) to 'i_5045'
-WARNING: [Synth 8-3332] Sequential element (i_5032) is unused and will be removed from module top.
-INFO: [Synth 8-4480] The timing for the instance I_2/adr_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance I_2/adr_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-3886] merging instance 'graphiti_0/I_3/i_97' (FDC) to 'graphiti_0/I_3/i_84'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1570.129 ; gain = 678.145 ; free physical = 23952 ; free virtual = 93823
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1511.668 ; gain = 623.293 ; free physical = 4233 ; free virtual = 14599
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1570.129 ; gain = 678.145 ; free physical = 23952 ; free virtual = 93823
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1511.668 ; gain = 623.293 ; free physical = 4233 ; free virtual = 14599
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1570.129 ; gain = 678.145 ; free physical = 23952 ; free virtual = 93823
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1511.668 ; gain = 623.293 ; free physical = 4233 ; free virtual = 14599
 ---------------------------------------------------------------------------------
 Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
@@ -1154,7 +1136,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1570.129 ; gain = 678.145 ; free physical = 23952 ; free virtual = 93823
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1511.668 ; gain = 623.293 ; free physical = 4233 ; free virtual = 14599
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1167,7 +1149,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1570.129 ; gain = 678.145 ; free physical = 23952 ; free virtual = 93823
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1511.668 ; gain = 623.293 ; free physical = 4233 ; free virtual = 14599
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1179,18 +1161,18 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1570.129 ; gain = 678.145 ; free physical = 23952 ; free virtual = 93823
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 1511.668 ; gain = 623.293 ; free physical = 4232 ; free virtual = 14598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|top         | graphiti_0/I_6/output_reg[9] | 9      | 10    | YES          | NO                 | YES               | 10     | 0       | 
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|delay       | output_reg[9] | 8      | 10    | YES          | NO                 | YES               | 10     | 0       | 
++------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -1215,50 +1197,70 @@ Report Cell Usage:
 |4     |DSP48E1_3 |    18|
 |5     |DSP48E1_4 |     4|
 |6     |DSP48E1_5 |     1|
-|7     |LUT1      |   668|
-|8     |LUT2      |   975|
-|9     |LUT3      |   987|
-|10    |LUT4      |   165|
-|11    |LUT5      |   397|
-|12    |LUT6      |   794|
-|13    |MUXF7     |    90|
-|14    |RAMB18E1  |     1|
-|15    |SRL16E    |    10|
-|16    |XORCY     |     1|
-|17    |FDCE      |   732|
-|18    |FDPE      |    20|
-|19    |FDRE      |   293|
-|20    |FDSE      |     3|
-|21    |IBUF      |    38|
-|22    |OBUF      |     8|
-|23    |OBUFT     |     8|
+|7     |LUT1      |   679|
+|8     |LUT2      |  1027|
+|9     |LUT3      |  1074|
+|10    |LUT4      |   209|
+|11    |LUT5      |   358|
+|12    |LUT6      |   792|
+|13    |MUXF7     |   112|
+|14    |SRL16E    |    10|
+|15    |XORCY     |     1|
+|16    |FDCE      |   741|
+|17    |FDPE      |    20|
+|18    |FDRE      |   308|
+|19    |FDSE      |     2|
+|20    |IBUF      |    38|
+|21    |OBUF      |     8|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |  5775|
-+------+---------+-------+------+
++------+---------------------+-----------------+------+
+|      |Instance             |Module           |Cells |
++------+---------------------+-----------------+------+
+|1     |top                  |                 |  5964|
+|2     |  fixed_point_sqrt_0 |fixed_point_sqrt |   671|
+|3     |  graphiti_0         |graphiti         |  3059|
+|4     |    I_4              |myfir__1         |   425|
+|5     |    I_5              |myfir            |   425|
+|6     |    I_6              |delay            |    48|
+|7     |    I_0              |paltimer         |  1237|
+|8     |    I_1              |dds__1           |   331|
+|9     |      I_O            |dds_sinus__1     |    44|
+|10    |    I_2              |dds              |   331|
+|11    |      I_O            |dds_sinus        |    44|
+|12    |    I_3              |rgb2yuv          |   105|
+|13    |  hight_0            |hight            |   551|
+|14    |    u_CRYPTO_PATH    |CRYPTO_PATH      |   358|
+|15    |      u_WF           |WF               |    36|
+|16    |      u_RF           |RF               |   160|
+|17    |    u_KEY_SCHED      |KEY_SCHED        |   152|
+|18    |      u_WKG          |WKG              |     0|
+|19    |      u_SKG          |SKG              |    87|
+|20    |    u_CONTROL        |CONTROL          |    41|
+|21    |  lfsr_randgen_0     |lfsr_randgen     |     8|
+|22    |  cpu8080_0          |cpu8080          |  1619|
+|23    |    alu              |alu              |    88|
++------+---------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1570.129 ; gain = 678.145 ; free physical = 23952 ; free virtual = 93823
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1511.668 ; gain = 623.293 ; free physical = 4231 ; free virtual = 14597
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 108 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1570.129 ; gain = 211.473 ; free physical = 23952 ; free virtual = 93823
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1570.137 ; gain = 678.152 ; free physical = 23952 ; free virtual = 93823
+Synthesis finished with 0 errors, 0 critical warnings and 498 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1511.668 ; gain = 194.465 ; free physical = 4231 ; free virtual = 14597
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1511.676 ; gain = 623.301 ; free physical = 4231 ; free virtual = 14597
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 624 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 623 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-193 Infos, 136 Warnings, 16 Critical Warnings and 0 Errors encountered.
+180 Infos, 139 Warnings, 16 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1602.145 ; gain = 635.605 ; free physical = 23952 ; free virtual = 93823
-report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1634.160 ; gain = 0.000 ; free physical = 23951 ; free virtual = 93823
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 13:48:45 2018...
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1543.684 ; gain = 580.754 ; free physical = 4232 ; free virtual = 14598
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1575.699 ; gain = 0.000 ; free physical = 4228 ; free virtual = 14595
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 15:57:55 2020...

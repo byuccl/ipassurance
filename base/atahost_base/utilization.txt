@@ -1,0 +1,32 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 16:27:20 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/atahost_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-1
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------+-------------+------------+------------+---------+------+------+--------+--------+--------------+
+|   Instance   |    Module   | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++--------------+-------------+------------+------------+---------+------+------+--------+--------+--------------+
+| top          |       (top) |       2202 |       2129 |      72 |    1 | 2085 |      0 |      0 |            0 |
+|   (top)      |       (top) |         10 |         10 |       0 |    0 |    0 |      0 |      0 |            0 |
+|   ac97_0     | ac97_top__1 |        376 |        340 |      36 |    0 |  451 |      0 |      0 |            0 |
+|   ac97_1     |    ac97_top |        300 |        288 |      12 |    0 |  382 |      0 |      0 |            0 |
+|   atahost_0  |     atahost |        451 |        427 |      24 |    0 |  331 |      0 |      0 |            0 |
+|   mem_ctrl_0 |      mc_top |       1065 |       1064 |       0 |    1 |  921 |      0 |      0 |            0 |
++--------------+-------------+------------+------------+---------+------+------+--------+--------+--------------+
+
+

@@ -2,25 +2,25 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Jan 13 14:09:39 2018
-# Process ID: 4209
-# Current directory: /home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.runs/synth_1
+# Start of session at: Tue Nov 17 16:03:09 2020
+# Process ID: 15448
+# Current directory: /home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.runs/synth_1
 # Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: /home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.runs/synth_1/top.vds
-# Journal file: /home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.runs/synth_1/vivado.jou
+# Log file: /home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.runs/synth_1/top.vds
+# Journal file: /home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4213 
+INFO: Helper process launched with PID 15451 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1047.648 ; gain = 155.137 ; free physical = 4710 ; free virtual = 118826
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.512 ; gain = 148.137 ; free physical = 4659 ; free virtual = 15038
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-638] synthesizing module 'pid_simple' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/pid_simple.v:38]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'pid_simple' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/pid_simple.v:38]
 	Parameter wb_nb bound to: 32 - type: integer 
 	Parameter adr_wb_nb bound to: 16 - type: integer 
 	Parameter kp_adr bound to: 0 - type: integer 
@@ -35,36 +35,36 @@ INFO: [Synth 8-638] synthesizing module 'pid_simple' [/home/sean/vivado_workspac
 	Parameter sigma_adr bound to: 9 - type: integer 
 	Parameter of_adr bound to: 10 - type: integer 
 	Parameter RS_adr bound to: 11 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/pid_simple.v:165]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/pid_simple.v:261]
-INFO: [Synth 8-638] synthesizing module 'multiplier_16x16bit_pipelined' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:145]
-INFO: [Synth 8-638] synthesizing module 'booth_array' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:7]
-INFO: [Synth 8-638] synthesizing module 'booth_radix4' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/booth.v:5]
-INFO: [Synth 8-256] done synthesizing module 'booth_radix4' (1#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/booth.v:5]
-INFO: [Synth 8-256] done synthesizing module 'booth_array' (2#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:7]
-INFO: [Synth 8-638] synthesizing module 'partial_product_gen' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:73]
-INFO: [Synth 8-256] done synthesizing module 'partial_product_gen' (3#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:73]
-INFO: [Synth 8-638] synthesizing module 'full_adder' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:101]
-INFO: [Synth 8-256] done synthesizing module 'full_adder' (4#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:101]
-INFO: [Synth 8-638] synthesizing module 'compressor42' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:116]
-INFO: [Synth 8-256] done synthesizing module 'compressor42' (5#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:116]
-INFO: [Synth 8-638] synthesizing module 'half_adder' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:91]
-INFO: [Synth 8-256] done synthesizing module 'half_adder' (6#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:91]
-INFO: [Synth 8-638] synthesizing module 'adder_32bit' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/CLA_fixed.v:47]
-INFO: [Synth 8-638] synthesizing module 'operator_A' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/CLA_fixed.v:6]
-INFO: [Synth 8-256] done synthesizing module 'operator_A' (7#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/CLA_fixed.v:6]
-INFO: [Synth 8-638] synthesizing module 'operator_C' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/CLA_fixed.v:28]
-INFO: [Synth 8-256] done synthesizing module 'operator_C' (8#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/CLA_fixed.v:28]
-INFO: [Synth 8-638] synthesizing module 'operator_B' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/CLA_fixed.v:18]
-INFO: [Synth 8-256] done synthesizing module 'operator_B' (9#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/CLA_fixed.v:18]
-INFO: [Synth 8-256] done synthesizing module 'adder_32bit' (10#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/CLA_fixed.v:47]
-INFO: [Synth 8-256] done synthesizing module 'multiplier_16x16bit_pipelined' (11#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:145]
-INFO: [Synth 8-256] done synthesizing module 'pid_simple' (12#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/pid_simple.v:38]
-INFO: [Synth 8-256] done synthesizing module 'top' (13#1) [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/pid_simple.v:165]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/pid_simple.v:261]
+INFO: [Synth 8-638] synthesizing module 'multiplier_16x16bit_pipelined' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:145]
+INFO: [Synth 8-638] synthesizing module 'booth_array' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:7]
+INFO: [Synth 8-638] synthesizing module 'booth_radix4' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/booth.v:5]
+INFO: [Synth 8-256] done synthesizing module 'booth_radix4' (1#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/booth.v:5]
+INFO: [Synth 8-256] done synthesizing module 'booth_array' (2#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:7]
+INFO: [Synth 8-638] synthesizing module 'partial_product_gen' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:73]
+INFO: [Synth 8-256] done synthesizing module 'partial_product_gen' (3#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:73]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:101]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (4#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:101]
+INFO: [Synth 8-638] synthesizing module 'compressor42' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:116]
+INFO: [Synth 8-256] done synthesizing module 'compressor42' (5#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:116]
+INFO: [Synth 8-638] synthesizing module 'half_adder' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:91]
+INFO: [Synth 8-256] done synthesizing module 'half_adder' (6#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:91]
+INFO: [Synth 8-638] synthesizing module 'adder_32bit' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/CLA_fixed.v:47]
+INFO: [Synth 8-638] synthesizing module 'operator_A' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/CLA_fixed.v:6]
+INFO: [Synth 8-256] done synthesizing module 'operator_A' (7#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/CLA_fixed.v:6]
+INFO: [Synth 8-638] synthesizing module 'operator_C' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/CLA_fixed.v:28]
+INFO: [Synth 8-256] done synthesizing module 'operator_C' (8#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/CLA_fixed.v:28]
+INFO: [Synth 8-638] synthesizing module 'operator_B' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/CLA_fixed.v:18]
+INFO: [Synth 8-256] done synthesizing module 'operator_B' (9#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/CLA_fixed.v:18]
+INFO: [Synth 8-256] done synthesizing module 'adder_32bit' (10#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/CLA_fixed.v:47]
+INFO: [Synth 8-256] done synthesizing module 'multiplier_16x16bit_pipelined' (11#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/16x16bit_multiplier_pipelined.v:145]
+INFO: [Synth 8-256] done synthesizing module 'pid_simple' (12#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/pid_simple.v:38]
+INFO: [Synth 8-256] done synthesizing module 'top' (13#1) [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/new/top.v:23]
 WARNING: [Synth 8-3331] design pid_simple has unconnected port i_wb_adr[1]
 WARNING: [Synth 8-3331] design pid_simple has unconnected port i_wb_adr[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1088.086 ; gain = 195.574 ; free physical = 4667 ; free virtual = 118784
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1076.949 ; gain = 188.574 ; free physical = 4615 ; free virtual = 14995
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -74,41 +74,41 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1088.086 ; gain = 195.574 ; free physical = 4667 ; free virtual = 118784
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1076.949 ; gain = 188.574 ; free physical = 4615 ; free virtual = 14995
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/constrs_1/imports/new/constraints.xdc]
-Finished Parsing XDC File [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/constrs_1/imports/new/constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/constrs_1/imports/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/constrs_1/imports/new/constraints.xdc]
+Finished Parsing XDC File [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/constrs_1/imports/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/constrs_1/imports/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1468.617 ; gain = 0.000 ; free physical = 4487 ; free virtual = 118604
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1418.637 ; gain = 0.000 ; free physical = 4418 ; free virtual = 14797
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1468.617 ; gain = 576.105 ; free physical = 4486 ; free virtual = 118604
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4417 ; free virtual = 14796
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1468.617 ; gain = 576.105 ; free physical = 4486 ; free virtual = 118604
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4417 ; free virtual = 14796
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1468.617 ; gain = 576.105 ; free physical = 4486 ; free virtual = 118604
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4417 ; free virtual = 14796
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'md_index_reg[1:0]' into 'mr_index_reg[1:0]' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/pid_simple.v:232]
-INFO: [Synth 8-4471] merging register 'wlb_reg' into 'rlb_reg' [/home/sean/vivado_workspace/pid_simple_simple/pid_simple_simple.srcs/sources_1/imports/pid_src/pid_simple.v:83]
+INFO: [Synth 8-4471] merging register 'md_index_reg[1:0]' into 'mr_index_reg[1:0]' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/pid_simple.v:232]
+INFO: [Synth 8-4471] merging register 'wlb_reg' into 'rlb_reg' [/home/jgoeders/ipassurance/base/pid_simple_base/pid_simple_base.srcs/sources_1/imports/pid_src/pid_simple.v:83]
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_1_reg' in module 'pid_simple'
 INFO: [Synth 8-5546] ROM "err" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "kpd" won't be mapped to RAM because it is too sparse
@@ -117,7 +117,7 @@ INFO: [Synth 8-5546] ROM "start" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "mr_index" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "cout" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1468.617 ; gain = 576.105 ; free physical = 4474 ; free virtual = 118591
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4408 ; free virtual = 14787
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -240,7 +240,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1468.617 ; gain = 576.105 ; free physical = 4474 ; free virtual = 118591
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4406 ; free virtual = 14785
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -253,9 +253,9 @@ INFO: [Synth 8-5546] ROM "mr_index" won't be mapped to RAM because it is too spa
 WARNING: [Synth 8-3331] design pid_simple has unconnected port i_wb_adr[1]
 WARNING: [Synth 8-3331] design pid_simple has unconnected port i_wb_adr[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.617 ; gain = 576.105 ; free physical = 4474 ; free virtual = 118591
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4406 ; free virtual = 14785
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.617 ; gain = 576.105 ; free physical = 4474 ; free virtual = 118591
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4406 ; free virtual = 14785
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -265,16 +265,16 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'pid_simple_0/multiplier_16x16bit_pipelined/reg_layer_2_w29_reg[2]' (FDCE) to 'pid_simple_0/multiplier_16x16bit_pipelined/reg_layer_2_w21_reg[2]'
-INFO: [Synth 8-3886] merging instance 'pid_simple_0/multiplier_16x16bit_pipelined/reg_layer_2_w21_reg[2]' (FDCE) to 'pid_simple_0/multiplier_16x16bit_pipelined/reg_layer_2_w16_reg[3]'
-WARNING: [Synth 8-3332] Sequential element (pid_simple_0/multiplier_16x16bit_pipelined/stage_1_ready_reg) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (pid_simple_0/multiplier_16x16bit_pipelined/reg_layer_2_w21_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (pid_simple_0/multiplier_16x16bit_pipelined/reg_layer_2_w29_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (pid_simple_0/RS_reg) is unused and will be removed from module top.
+INFO: [Synth 8-3886] merging instance 'pid_simple_0/multiplier_16x16bit_pipelined/reg_layer_2_w21_reg[2]' (FDCE) to 'pid_simple_0/multiplier_16x16bit_pipelined/reg_layer_2_w29_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pid_simple_0/multiplier_16x16bit_pipelined/reg_layer_2_w16_reg[3]' (FDCE) to 'pid_simple_0/multiplier_16x16bit_pipelined/reg_layer_2_w29_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (stage_1_ready_reg) is unused and will be removed from module multiplier_16x16bit_pipelined.
+WARNING: [Synth 8-3332] Sequential element (reg_layer_2_w21_reg[2]) is unused and will be removed from module multiplier_16x16bit_pipelined.
+WARNING: [Synth 8-3332] Sequential element (reg_layer_2_w16_reg[3]) is unused and will be removed from module multiplier_16x16bit_pipelined.
+WARNING: [Synth 8-3332] Sequential element (RS_reg) is unused and will be removed from module pid_simple.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1468.617 ; gain = 576.105 ; free physical = 4359 ; free virtual = 118476
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4400 ; free virtual = 14779
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1468.617 ; gain = 576.105 ; free physical = 4359 ; free virtual = 118476
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4400 ; free virtual = 14779
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -288,10 +288,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1525.906 ; gain = 633.395 ; free physical = 4299 ; free virtual = 118416
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4356 ; free virtual = 14736
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1621.070 ; gain = 728.559 ; free physical = 4203 ; free virtual = 118320
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4329 ; free virtual = 14708
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -303,24 +303,18 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1631.086 ; gain = 738.574 ; free physical = 4195 ; free virtual = 118312
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4320 ; free virtual = 14699
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1631.086 ; gain = 738.574 ; free physical = 4195 ; free virtual = 118312
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4320 ; free virtual = 14699
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1631.086 ; gain = 738.574 ; free physical = 4195 ; free virtual = 118312
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4320 ; free virtual = 14699
 ---------------------------------------------------------------------------------
 Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
@@ -329,7 +323,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1631.086 ; gain = 738.574 ; free physical = 4195 ; free virtual = 118312
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4320 ; free virtual = 14700
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -342,7 +336,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1631.086 ; gain = 738.574 ; free physical = 4195 ; free virtual = 118312
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4320 ; free virtual = 14699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -354,7 +348,7 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1631.086 ; gain = 738.574 ; free physical = 4195 ; free virtual = 118312
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4320 ; free virtual = 14699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -367,47 +361,370 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------+------+
-|      |Cell  |Count |
-+------+------+------+
-|1     |BUFG  |     1|
-|2     |LUT1  |     7|
-|3     |LUT2  |    96|
-|4     |LUT3  |    67|
-|5     |LUT4  |   114|
-|6     |LUT5  |   276|
-|7     |LUT6  |   380|
-|8     |MUXF7 |    16|
-|9     |FDCE  |   389|
-|10    |FDPE  |     1|
-|11    |IBUF  |    17|
-|12    |OBUF  |    16|
-+------+------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     3|
+|3     |LUT2 |   412|
+|4     |LUT3 |   297|
+|5     |LUT4 |    46|
+|6     |LUT5 |   277|
+|7     |LUT6 |   131|
+|8     |FDCE |   389|
+|9     |FDPE |     1|
+|10    |IBUF |    17|
+|11    |OBUF |    16|
++------+-----+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |  1380|
-+------+---------+-------+------+
++------+----------------------------------+------------------------------+------+
+|      |Instance                          |Module                        |Cells |
++------+----------------------------------+------------------------------+------+
+|1     |top                               |                              |  1590|
+|2     |  pid_simple_0                    |pid_simple                    |  1543|
+|3     |    multiplier_16x16bit_pipelined |multiplier_16x16bit_pipelined |   675|
+|4     |      booth_array_0               |booth_array                   |    23|
+|5     |        booth_radix4_0            |booth_radix4__1               |     2|
+|6     |        booth_radix4_1            |booth_radix4__2               |     3|
+|7     |        booth_radix4_2            |booth_radix4__3               |     3|
+|8     |        booth_radix4_3            |booth_radix4__4               |     3|
+|9     |        booth_radix4_4            |booth_radix4__5               |     3|
+|10    |        booth_radix4_5            |booth_radix4__6               |     3|
+|11    |        booth_radix4_6            |booth_radix4__7               |     3|
+|12    |        booth_radix4_7            |booth_radix4                  |     3|
+|13    |      partial_product_gen_0       |partial_product_gen__1        |    17|
+|14    |      partial_product_gen_1       |partial_product_gen__2        |    17|
+|15    |      partial_product_gen_2       |partial_product_gen__3        |    17|
+|16    |      partial_product_gen_3       |partial_product_gen__4        |    17|
+|17    |      partial_product_gen_4       |partial_product_gen__5        |    17|
+|18    |      partial_product_gen_5       |partial_product_gen__6        |    17|
+|19    |      partial_product_gen_6       |partial_product_gen__7        |    17|
+|20    |      partial_product_gen_7       |partial_product_gen           |    17|
+|21    |      layer_1_full_adder_0        |full_adder__1                 |     2|
+|22    |      layer_1_full_adder_1        |full_adder__2                 |     2|
+|23    |      layer_1_compressor42_0      |compressor42__1               |     3|
+|24    |      layer_1_full_adder_2        |full_adder__3                 |     2|
+|25    |      layer_1_compressor42_1      |compressor42__2               |     3|
+|26    |      layer_1_compressor42_2      |compressor42__3               |     3|
+|27    |      layer_1_compressor42_3      |compressor42__4               |     3|
+|28    |      layer_1_compressor42_4      |compressor42__5               |     3|
+|29    |      layer_1_compressor42_5      |compressor42__6               |     3|
+|30    |      layer_1_full_adder_3        |full_adder__4                 |     2|
+|31    |      layer_1_compressor42_6      |compressor42__7               |     3|
+|32    |      layer_1_compressor42_7      |compressor42__8               |     3|
+|33    |      layer_1_full_adder_4        |full_adder__5                 |     2|
+|34    |      layer_1_compressor42_8      |compressor42__9               |     3|
+|35    |      layer_1_full_adder_5        |full_adder__6                 |     2|
+|36    |      layer_1_compressor42_9      |compressor42__10              |     3|
+|37    |      layer_1_full_adder_6        |full_adder__7                 |     2|
+|38    |      layer_1_compressor42_10     |compressor42__11              |     3|
+|39    |      layer_1_full_adder_7        |full_adder__8                 |     2|
+|40    |      layer_1_compressor42_11     |compressor42__12              |     3|
+|41    |      layer_1_compressor42_12     |compressor42__13              |     3|
+|42    |      layer_1_compressor42_13     |compressor42__14              |     3|
+|43    |      layer_1_compressor42_14     |compressor42__15              |     3|
+|44    |      layer_1_compressor42_15     |compressor42__16              |     3|
+|45    |      layer_1_compressor42_16     |compressor42__17              |     3|
+|46    |      layer_1_full_adder_8        |full_adder__9                 |     2|
+|47    |      layer_1_full_adder_9        |full_adder__10                |     2|
+|48    |      layer_1_full_adder_10       |full_adder__11                |     2|
+|49    |      layer_1_full_adder_11       |full_adder__12                |     2|
+|50    |      layer_2_full_adder_0        |full_adder__13                |     2|
+|51    |      layer_2_full_adder_1        |full_adder__14                |     2|
+|52    |      layer_2_full_adder_2        |full_adder__15                |     2|
+|53    |      layer_2_compressor42_0      |compressor42__18              |     3|
+|54    |      layer_2_full_adder_3        |full_adder__16                |     2|
+|55    |      layer_2_full_adder_4        |full_adder__17                |     2|
+|56    |      layer_2_compressor42_1      |compressor42__19              |     3|
+|57    |      layer_2_compressor42_2      |compressor42__20              |     3|
+|58    |      layer_2_compressor42_3      |compressor42__21              |     3|
+|59    |      layer_2_compressor42_4      |compressor42__22              |     3|
+|60    |      layer_2_compressor42_5      |compressor42__23              |     3|
+|61    |      layer_2_compressor42_6      |compressor42__24              |     3|
+|62    |      layer_2_compressor42_7      |compressor42                  |     3|
+|63    |      layer_2_full_adder_5        |full_adder__18                |     2|
+|64    |      layer_2_full_adder_6        |full_adder__19                |     2|
+|65    |      layer_2_full_adder_7        |full_adder__20                |     2|
+|66    |      layer_2_full_adder_8        |full_adder__21                |     2|
+|67    |      layer_2_full_adder_9        |full_adder__22                |     2|
+|68    |      layer_2_full_adder_10       |full_adder__23                |     2|
+|69    |      layer_2_full_adder_11       |full_adder__24                |     2|
+|70    |      layer_3_full_adder_0        |full_adder__25                |     2|
+|71    |      layer_3_full_adder_1        |full_adder__26                |     2|
+|72    |      layer_3_full_adder_2        |full_adder__27                |     2|
+|73    |      layer_3_full_adder_3        |full_adder__28                |     2|
+|74    |      layer_3_full_adder_4        |full_adder__29                |     2|
+|75    |      layer_3_full_adder_5        |full_adder__30                |     2|
+|76    |      layer_3_full_adder_6        |full_adder__31                |     2|
+|77    |      layer_3_full_adder_7        |full_adder__32                |     2|
+|78    |      layer_3_full_adder_8        |full_adder__33                |     2|
+|79    |      layer_3_full_adder_9        |full_adder__34                |     2|
+|80    |      layer_3_full_adder_10       |full_adder__35                |     2|
+|81    |      layer_3_full_adder_11       |full_adder__36                |     2|
+|82    |      layer_3_full_adder_12       |full_adder__37                |     2|
+|83    |      layer_3_full_adder_13       |full_adder__38                |     2|
+|84    |      layer_4_full_adder_0        |full_adder__39                |     2|
+|85    |      layer_4_half_adder_0        |half_adder__1                 |     2|
+|86    |      layer_4_half_adder_1        |half_adder__2                 |     2|
+|87    |      layer_4_half_adder_2        |half_adder__3                 |     2|
+|88    |      layer_4_half_adder_3        |half_adder__4                 |     2|
+|89    |      layer_4_half_adder_4        |half_adder__5                 |     2|
+|90    |      layer_4_half_adder_5        |half_adder__6                 |     2|
+|91    |      layer_4_half_adder_6        |half_adder__7                 |     2|
+|92    |      layer_4_half_adder_7        |half_adder__8                 |     2|
+|93    |      layer_4_half_adder_8        |half_adder__9                 |     2|
+|94    |      layer_4_half_adder_9        |half_adder__10                |     2|
+|95    |      layer_4_half_adder_10       |half_adder__11                |     2|
+|96    |      layer_4_half_adder_11       |half_adder__12                |     2|
+|97    |      layer_4_half_adder_12       |half_adder__13                |     2|
+|98    |      layer_4_full_adder_1        |full_adder__40                |     2|
+|99    |      layer_4_half_adder_13       |half_adder__14                |     2|
+|100   |      layer_4_full_adder_2        |full_adder__41                |     2|
+|101   |      layer_4_half_adder_14       |half_adder__15                |     2|
+|102   |      layer_4_full_adder_3        |full_adder__42                |     2|
+|103   |      layer_4_half_adder_15       |half_adder__16                |     2|
+|104   |      layer_4_full_adder_4        |full_adder__43                |     2|
+|105   |      layer_4_half_adder_16       |half_adder                    |     2|
+|106   |      layer_4_full_adder_5        |full_adder__44                |     2|
+|107   |      layer_4_full_adder_6        |full_adder                    |     2|
+|108   |      adder_32bit                 |adder_32bit__1                |   206|
+|109   |        operator_A_0              |operator_A__63                |     2|
+|110   |        operator_A_3              |operator_A__60                |     2|
+|111   |        operator_A_4              |operator_A__59                |     2|
+|112   |        operator_A_5              |operator_A__58                |     2|
+|113   |        operator_A_6              |operator_A__57                |     2|
+|114   |        operator_A_7              |operator_A__56                |     2|
+|115   |        operator_A_8              |operator_A__55                |     2|
+|116   |        operator_A_9              |operator_A__54                |     2|
+|117   |        operator_A_10             |operator_A__53                |     2|
+|118   |        operator_A_11             |operator_A__52                |     2|
+|119   |        operator_A_12             |operator_A__51                |     2|
+|120   |        operator_A_13             |operator_A__50                |     2|
+|121   |        operator_A_14             |operator_A__49                |     2|
+|122   |        operator_A_15             |operator_A__48                |     2|
+|123   |        operator_A_16             |operator_A__47                |     2|
+|124   |        operator_A_17             |operator_A__46                |     2|
+|125   |        operator_A_18             |operator_A__45                |     2|
+|126   |        operator_A_19             |operator_A__44                |     2|
+|127   |        operator_A_20             |operator_A__43                |     2|
+|128   |        operator_A_21             |operator_A__42                |     2|
+|129   |        operator_A_22             |operator_A__41                |     2|
+|130   |        operator_A_23             |operator_A__40                |     2|
+|131   |        operator_A_24             |operator_A__39                |     2|
+|132   |        operator_A_26             |operator_A__37                |     2|
+|133   |        operator_A_28             |operator_A__35                |     2|
+|134   |        operator_A_30             |operator_A__33                |     2|
+|135   |        operator_B_stage_1_1      |operator_B__97                |     1|
+|136   |        operator_B_stage_1_2      |operator_B__96                |     2|
+|137   |        operator_B_stage_1_3      |operator_B__95                |     2|
+|138   |        operator_B_stage_1_4      |operator_B__94                |     2|
+|139   |        operator_B_stage_1_5      |operator_B__93                |     2|
+|140   |        operator_B_stage_1_6      |operator_B__92                |     2|
+|141   |        operator_B_stage_1_7      |operator_B__91                |     2|
+|142   |        operator_B_stage_1_8      |operator_B__90                |     2|
+|143   |        operator_B_stage_1_9      |operator_B__89                |     2|
+|144   |        operator_B_stage_1_10     |operator_B__88                |     2|
+|145   |        operator_B_stage_1_11     |operator_B__87                |     2|
+|146   |        operator_B_stage_1_12     |operator_B__86                |     2|
+|147   |        operator_B_stage_1_13     |operator_B__85                |     1|
+|148   |        operator_B_stage_1_14     |operator_B__84                |     1|
+|149   |        operator_B_stage_1_15     |operator_B__83                |     1|
+|150   |        operator_C_stage_2_1      |operator_C__62                |     1|
+|151   |        operator_B_stage_2_2      |operator_B__82                |     1|
+|152   |        operator_B_stage_2_3      |operator_B__81                |     2|
+|153   |        operator_B_stage_2_4      |operator_B__80                |     2|
+|154   |        operator_B_stage_2_5      |operator_B__79                |     2|
+|155   |        operator_B_stage_2_6      |operator_B__78                |     2|
+|156   |        operator_B_stage_2_7      |operator_B__77                |     2|
+|157   |        operator_B_stage_2_8      |operator_B__76                |     2|
+|158   |        operator_B_stage_2_9      |operator_B__75                |     2|
+|159   |        operator_B_stage_2_10     |operator_B__74                |     2|
+|160   |        operator_B_stage_2_11     |operator_B__73                |     2|
+|161   |        operator_B_stage_2_12     |operator_B__72                |     2|
+|162   |        operator_B_stage_2_13     |operator_B__71                |     2|
+|163   |        operator_B_stage_2_14     |operator_B__70                |     2|
+|164   |        operator_B_stage_2_15     |operator_B__69                |     2|
+|165   |        operator_C_stage_3_2      |operator_C__61                |     1|
+|166   |        operator_C_stage_3_3      |operator_C__60                |     1|
+|167   |        operator_B_stage_3_4      |operator_B__68                |     2|
+|168   |        operator_B_stage_3_5      |operator_B__67                |     2|
+|169   |        operator_B_stage_3_6      |operator_B__66                |     2|
+|170   |        operator_B_stage_3_7      |operator_B__65                |     2|
+|171   |        operator_B_stage_3_8      |operator_B__64                |     2|
+|172   |        operator_B_stage_3_9      |operator_B__63                |     2|
+|173   |        operator_B_stage_3_10     |operator_B__62                |     2|
+|174   |        operator_B_stage_3_11     |operator_B__61                |     2|
+|175   |        operator_B_stage_3_12     |operator_B__60                |     2|
+|176   |        operator_B_stage_3_13     |operator_B__59                |     2|
+|177   |        operator_B_stage_3_14     |operator_B__58                |     2|
+|178   |        operator_B_stage_3_15     |operator_B__57                |     2|
+|179   |        operator_C_stage_4_4      |operator_C__59                |     1|
+|180   |        operator_C_stage_4_5      |operator_C__58                |     1|
+|181   |        operator_C_stage_4_6      |operator_C__57                |     1|
+|182   |        operator_C_stage_4_7      |operator_C__56                |     1|
+|183   |        operator_B_stage_4_8      |operator_B__56                |     2|
+|184   |        operator_B_stage_4_9      |operator_B__55                |     2|
+|185   |        operator_B_stage_4_10     |operator_B__54                |     2|
+|186   |        operator_B_stage_4_11     |operator_B__53                |     2|
+|187   |        operator_B_stage_4_12     |operator_B__52                |     2|
+|188   |        operator_B_stage_4_13     |operator_B__51                |     2|
+|189   |        operator_B_stage_4_14     |operator_B__50                |     2|
+|190   |        operator_B_stage_4_15     |operator_B__49                |     2|
+|191   |        operator_C_stage_5_8      |operator_C__55                |     1|
+|192   |        operator_C_stage_5_9      |operator_C__54                |     1|
+|193   |        operator_C_stage_5_10     |operator_C__53                |     1|
+|194   |        operator_C_stage_5_11     |operator_C__52                |     1|
+|195   |        operator_C_stage_5_12     |operator_C__51                |     1|
+|196   |        operator_C_stage_5_13     |operator_C__50                |     1|
+|197   |        operator_C_stage_5_14     |operator_C__49                |     1|
+|198   |        operator_C_stage_5_15     |operator_C__48                |     1|
+|199   |        operator_C_stage_6_0      |operator_C__47                |     1|
+|200   |        operator_C_stage_6_1      |operator_C__46                |     1|
+|201   |        operator_C_stage_6_2      |operator_C__45                |     1|
+|202   |        operator_C_stage_6_3      |operator_C__44                |     1|
+|203   |        operator_C_stage_6_4      |operator_C__43                |     1|
+|204   |        operator_C_stage_6_5      |operator_C__42                |     1|
+|205   |        operator_C_stage_6_6      |operator_C__41                |     1|
+|206   |        operator_C_stage_6_7      |operator_C__40                |     1|
+|207   |        operator_C_stage_6_8      |operator_C__39                |     1|
+|208   |        operator_C_stage_6_9      |operator_C__38                |     1|
+|209   |        operator_C_stage_6_10     |operator_C__37                |     1|
+|210   |        operator_C_stage_6_11     |operator_C__36                |     1|
+|211   |        operator_C_stage_6_12     |operator_C__35                |     1|
+|212   |        operator_C_stage_6_13     |operator_C__34                |     1|
+|213   |        operator_C_stage_6_14     |operator_C__33                |     1|
+|214   |    adder_32bit_0                 |adder_32bit                   |   224|
+|215   |      operator_A_0                |operator_A__1                 |     2|
+|216   |      operator_A_1                |operator_A__2                 |     2|
+|217   |      operator_A_2                |operator_A__3                 |     2|
+|218   |      operator_A_3                |operator_A__4                 |     2|
+|219   |      operator_A_4                |operator_A__5                 |     2|
+|220   |      operator_A_5                |operator_A__6                 |     2|
+|221   |      operator_A_6                |operator_A__7                 |     2|
+|222   |      operator_A_7                |operator_A__8                 |     2|
+|223   |      operator_A_8                |operator_A__9                 |     2|
+|224   |      operator_A_9                |operator_A__10                |     2|
+|225   |      operator_A_10               |operator_A__11                |     2|
+|226   |      operator_A_11               |operator_A__12                |     2|
+|227   |      operator_A_12               |operator_A__13                |     2|
+|228   |      operator_A_13               |operator_A__14                |     2|
+|229   |      operator_A_14               |operator_A__15                |     2|
+|230   |      operator_A_15               |operator_A__16                |     2|
+|231   |      operator_A_16               |operator_A__17                |     2|
+|232   |      operator_A_17               |operator_A__18                |     2|
+|233   |      operator_A_18               |operator_A__19                |     2|
+|234   |      operator_A_19               |operator_A__20                |     2|
+|235   |      operator_A_20               |operator_A__21                |     2|
+|236   |      operator_A_21               |operator_A__22                |     2|
+|237   |      operator_A_22               |operator_A__23                |     2|
+|238   |      operator_A_23               |operator_A__24                |     2|
+|239   |      operator_A_24               |operator_A__25                |     2|
+|240   |      operator_A_25               |operator_A__26                |     2|
+|241   |      operator_A_26               |operator_A__27                |     2|
+|242   |      operator_A_27               |operator_A__28                |     2|
+|243   |      operator_A_28               |operator_A__29                |     2|
+|244   |      operator_A_29               |operator_A__30                |     2|
+|245   |      operator_A_30               |operator_A__31                |     2|
+|246   |      operator_A_31               |operator_A                    |     1|
+|247   |      operator_C_stage_1_0        |operator_C__1                 |     1|
+|248   |      operator_B_stage_1_1        |operator_B__1                 |     2|
+|249   |      operator_B_stage_1_2        |operator_B__2                 |     2|
+|250   |      operator_B_stage_1_3        |operator_B__3                 |     2|
+|251   |      operator_B_stage_1_4        |operator_B__4                 |     2|
+|252   |      operator_B_stage_1_5        |operator_B__5                 |     2|
+|253   |      operator_B_stage_1_6        |operator_B__6                 |     2|
+|254   |      operator_B_stage_1_7        |operator_B__7                 |     2|
+|255   |      operator_B_stage_1_8        |operator_B__8                 |     2|
+|256   |      operator_B_stage_1_9        |operator_B__9                 |     2|
+|257   |      operator_B_stage_1_10       |operator_B__10                |     2|
+|258   |      operator_B_stage_1_11       |operator_B__11                |     2|
+|259   |      operator_B_stage_1_12       |operator_B__12                |     2|
+|260   |      operator_B_stage_1_13       |operator_B__13                |     2|
+|261   |      operator_B_stage_1_14       |operator_B__14                |     2|
+|262   |      operator_B_stage_1_15       |operator_B__15                |     2|
+|263   |      operator_C_stage_2_1        |operator_C__2                 |     1|
+|264   |      operator_B_stage_2_2        |operator_B__16                |     2|
+|265   |      operator_B_stage_2_3        |operator_B__17                |     2|
+|266   |      operator_B_stage_2_4        |operator_B__18                |     2|
+|267   |      operator_B_stage_2_5        |operator_B__19                |     2|
+|268   |      operator_B_stage_2_6        |operator_B__20                |     2|
+|269   |      operator_B_stage_2_7        |operator_B__21                |     2|
+|270   |      operator_B_stage_2_8        |operator_B__22                |     2|
+|271   |      operator_B_stage_2_9        |operator_B__23                |     2|
+|272   |      operator_B_stage_2_10       |operator_B__24                |     2|
+|273   |      operator_B_stage_2_11       |operator_B__25                |     2|
+|274   |      operator_B_stage_2_12       |operator_B__26                |     2|
+|275   |      operator_B_stage_2_13       |operator_B__27                |     2|
+|276   |      operator_B_stage_2_14       |operator_B__28                |     2|
+|277   |      operator_B_stage_2_15       |operator_B__29                |     2|
+|278   |      operator_C_stage_3_2        |operator_C__3                 |     1|
+|279   |      operator_C_stage_3_3        |operator_C__4                 |     1|
+|280   |      operator_B_stage_3_4        |operator_B__30                |     2|
+|281   |      operator_B_stage_3_5        |operator_B__31                |     2|
+|282   |      operator_B_stage_3_6        |operator_B__32                |     2|
+|283   |      operator_B_stage_3_7        |operator_B__33                |     2|
+|284   |      operator_B_stage_3_8        |operator_B__34                |     2|
+|285   |      operator_B_stage_3_9        |operator_B__35                |     2|
+|286   |      operator_B_stage_3_10       |operator_B__36                |     2|
+|287   |      operator_B_stage_3_11       |operator_B__37                |     2|
+|288   |      operator_B_stage_3_12       |operator_B__38                |     2|
+|289   |      operator_B_stage_3_13       |operator_B__39                |     2|
+|290   |      operator_B_stage_3_14       |operator_B__40                |     2|
+|291   |      operator_B_stage_3_15       |operator_B__41                |     2|
+|292   |      operator_C_stage_4_4        |operator_C__5                 |     1|
+|293   |      operator_C_stage_4_5        |operator_C__6                 |     1|
+|294   |      operator_C_stage_4_6        |operator_C__7                 |     1|
+|295   |      operator_C_stage_4_7        |operator_C__8                 |     1|
+|296   |      operator_B_stage_4_8        |operator_B__42                |     2|
+|297   |      operator_B_stage_4_9        |operator_B__43                |     2|
+|298   |      operator_B_stage_4_10       |operator_B__44                |     2|
+|299   |      operator_B_stage_4_11       |operator_B__45                |     2|
+|300   |      operator_B_stage_4_12       |operator_B__46                |     2|
+|301   |      operator_B_stage_4_13       |operator_B__47                |     2|
+|302   |      operator_B_stage_4_14       |operator_B__48                |     2|
+|303   |      operator_B_stage_4_15       |operator_B                    |     2|
+|304   |      operator_C_stage_5_8        |operator_C__9                 |     1|
+|305   |      operator_C_stage_5_9        |operator_C__10                |     1|
+|306   |      operator_C_stage_5_10       |operator_C__11                |     1|
+|307   |      operator_C_stage_5_11       |operator_C__12                |     1|
+|308   |      operator_C_stage_5_12       |operator_C__13                |     1|
+|309   |      operator_C_stage_5_13       |operator_C__14                |     1|
+|310   |      operator_C_stage_5_14       |operator_C__15                |     1|
+|311   |      operator_C_stage_5_15       |operator_C__16                |     1|
+|312   |      operator_C_stage_6_0        |operator_C__17                |     1|
+|313   |      operator_C_stage_6_1        |operator_C__18                |     1|
+|314   |      operator_C_stage_6_2        |operator_C__19                |     1|
+|315   |      operator_C_stage_6_3        |operator_C__20                |     1|
+|316   |      operator_C_stage_6_4        |operator_C__21                |     1|
+|317   |      operator_C_stage_6_5        |operator_C__22                |     1|
+|318   |      operator_C_stage_6_6        |operator_C__23                |     1|
+|319   |      operator_C_stage_6_7        |operator_C__24                |     1|
+|320   |      operator_C_stage_6_8        |operator_C__25                |     1|
+|321   |      operator_C_stage_6_9        |operator_C__26                |     1|
+|322   |      operator_C_stage_6_10       |operator_C__27                |     1|
+|323   |      operator_C_stage_6_11       |operator_C__28                |     1|
+|324   |      operator_C_stage_6_12       |operator_C__29                |     1|
+|325   |      operator_C_stage_6_13       |operator_C__30                |     1|
+|326   |      operator_C_stage_6_14       |operator_C__31                |     1|
++------+----------------------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1631.086 ; gain = 738.574 ; free physical = 4195 ; free virtual = 118312
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4318 ; free virtual = 14698
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1631.086 ; gain = 270.902 ; free physical = 4195 ; free virtual = 118312
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1631.094 ; gain = 738.582 ; free physical = 4195 ; free virtual = 118312
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1418.637 ; gain = 101.434 ; free physical = 4318 ; free virtual = 14697
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1418.637 ; gain = 530.262 ; free physical = 4318 ; free virtual = 14697
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-57 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+57 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1663.102 ; gain = 696.035 ; free physical = 4195 ; free virtual = 118312
-report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1695.117 ; gain = 0.000 ; free physical = 4194 ; free virtual = 118311
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 14:10:11 2018...
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1438.207 ; gain = 475.277 ; free physical = 4318 ; free virtual = 14697
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1470.223 ; gain = 0.000 ; free physical = 4315 ; free virtual = 14695
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 16:03:38 2020...

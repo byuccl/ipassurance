@@ -1,0 +1,37 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 16:42:18 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/pid_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-3
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------+-------------------+------------+------------+---------+------+------+--------+--------+--------------+
+| Instance |       Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++----------+-------------------+------------+------------+---------+------+------+--------+--------+--------------+
+| top      |             (top) |       6775 |       6775 |       0 |    0 | 3176 |      0 |      0 |            0 |
+|   (top)  |             (top) |         21 |         21 |       0 |    0 |    1 |      0 |      0 |            0 |
+|   d1     | divider_dshift__1 |        663 |        663 |       0 |    0 |  351 |      0 |      0 |            0 |
+|   d2     | divider_dshift__2 |        754 |        754 |       0 |    0 |  351 |      0 |      0 |            0 |
+|   d3     | divider_dshift__3 |        755 |        755 |       0 |    0 |  351 |      0 |      0 |            0 |
+|   d4     | divider_dshift__4 |        755 |        755 |       0 |    0 |  351 |      0 |      0 |            0 |
+|   d5     | divider_dshift__5 |        755 |        755 |       0 |    0 |  351 |      0 |      0 |            0 |
+|   d6     | divider_dshift__6 |        755 |        755 |       0 |    0 |  351 |      0 |      0 |            0 |
+|   d7     | divider_dshift__7 |        755 |        755 |       0 |    0 |  351 |      0 |      0 |            0 |
+|   d8     |    divider_dshift |        756 |        756 |       0 |    0 |  333 |      0 |      0 |            0 |
+|   pid_0  |               pid |        806 |        806 |       0 |    0 |  385 |      0 |      0 |            0 |
++----------+-------------------+------------+------------+---------+------+------+--------+--------+--------------+
+
+

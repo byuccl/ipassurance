@@ -1,0 +1,45 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 16:20:52 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/dfadd_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-3
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------+-------------------+------------+------------+---------+------+------+--------+--------+--------------+
+|   Instance  |       Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++-------------+-------------------+------------+------------+---------+------+------+--------+--------+--------------+
+| top         |             (top) |       9545 |       9545 |       0 |    0 | 6358 |      1 |     96 |            0 |
+|   (top)     |             (top) |         10 |         10 |       0 |    0 |    0 |      0 |      0 |            0 |
+|   dfadd_0   |             dfadd |       3759 |       3759 |       0 |    0 | 2230 |      1 |      0 |            0 |
+|   viterbi0  |  viterbi_tx_rx__1 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi1  |  viterbi_tx_rx__2 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi10 | viterbi_tx_rx__11 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi11 | viterbi_tx_rx__12 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi12 | viterbi_tx_rx__13 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi13 | viterbi_tx_rx__14 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi14 | viterbi_tx_rx__15 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi15 |     viterbi_tx_rx |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi2  |  viterbi_tx_rx__3 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi3  |  viterbi_tx_rx__4 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi4  |  viterbi_tx_rx__5 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi5  |  viterbi_tx_rx__6 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi6  |  viterbi_tx_rx__7 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi7  |  viterbi_tx_rx__8 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi8  |  viterbi_tx_rx__9 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
+|   viterbi9  | viterbi_tx_rx__10 |        361 |        361 |       0 |    0 |  258 |      0 |      6 |            0 |
++-------------+-------------------+------------+------------+---------+------+------+--------+--------+--------------+
+
+

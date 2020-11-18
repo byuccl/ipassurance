@@ -9,26 +9,26 @@ create_project -in_memory -part xc7a100tcsg324-3
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.cache/wt [current_project]
-set_property parent.project_path /home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.xpr [current_project]
+set_property webtalk.parent_dir /home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.cache/wt [current_project]
+set_property parent.project_path /home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_verilog -library xil_defaultlib {
-  /home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.srcs/sources_1/imports/vivado_workspace/ooc_sudoku/Sources/hdl/piece.v
-  /home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.srcs/sources_1/imports/vivado_workspace/ooc_sudoku/Sources/hdl/minPiece.v
-  /home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.srcs/sources_1/imports/vivado_workspace/ooc_sudoku/Sources/hdl/sudoku_search.v
-  /home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.srcs/sources_1/imports/vivado_workspace/ooc_sudoku/Sources/hdl/sudoku.v
-  /home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.srcs/sources_1/imports/vivado_workspace/big_counter_top/big_counter_top.srcs/sources_1/new/top.v
+  /home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.srcs/sources_1/imports/vivado_workspace/ooc_sudoku/Sources/hdl/piece.v
+  /home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.srcs/sources_1/imports/vivado_workspace/ooc_sudoku/Sources/hdl/minPiece.v
+  /home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.srcs/sources_1/imports/vivado_workspace/ooc_sudoku/Sources/hdl/sudoku_search.v
+  /home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.srcs/sources_1/imports/vivado_workspace/ooc_sudoku/Sources/hdl/sudoku.v
+  /home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.srcs/sources_1/imports/vivado_workspace/big_counter_top/big_counter_top.srcs/sources_1/new/top.v
 }
-read_vhdl -library xil_defaultlib /home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.srcs/sources_1/imports/vivado_workspace/ooc_tiny_encryption_algorithm/Sources/hdl/tiny_encryption_algorithm.vhd
+read_vhdl -library xil_defaultlib /home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.srcs/sources_1/imports/vivado_workspace/ooc_tiny_encryption_algorithm/Sources/hdl/tiny_encryption_algorithm.vhd
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.srcs/constrs_1/imports/new/constr.xdc
-set_property used_in_implementation false [get_files /home/sean/vivado_workspace/tiny_encryption_algorithm_simple/tiny_encryption_algorithm_simple.srcs/constrs_1/imports/new/constr.xdc]
+read_xdc /home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.srcs/constrs_1/imports/new/constr.xdc
+set_property used_in_implementation false [get_files /home/jgoeders/ipassurance/base/tiny_encryption_algorithm_base/tiny_encryption_algorithm_base.srcs/constrs_1/imports/new/constr.xdc]
 
 
-synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 
 
 write_checkpoint -force -noxdef top.dcp

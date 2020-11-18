@@ -2,67 +2,67 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Jan 13 15:19:42 2018
-# Process ID: 21134
-# Current directory: /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.runs/synth_1
+# Start of session at: Tue Nov 17 13:06:55 2020
+# Process ID: 1555
+# Current directory: /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.runs/synth_1
 # Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.runs/synth_1/top.vds
-# Journal file: /home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.runs/synth_1/vivado.jou
+# Log file: /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.runs/synth_1/top.vds
+# Journal file: /home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21153 
+INFO: Helper process launched with PID 1558 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1048.215 ; gain = 163.137 ; free physical = 7710 ; free virtual = 31485
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.512 ; gain = 148.137 ; free physical = 4635 ; free virtual = 14855
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-638] synthesizing module 'des3_perf' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/perf_opt/des3_perf.v:35]
-INFO: [Synth 8-638] synthesizing module 'des' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/perf_opt/des.v:35]
-INFO: [Synth 8-638] synthesizing module 'key_sel' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/perf_opt/key_sel.v:36]
-INFO: [Synth 8-256] done synthesizing module 'key_sel' (1#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/perf_opt/key_sel.v:36]
-INFO: [Synth 8-638] synthesizing module 'crp' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/crp.v:35]
-INFO: [Synth 8-638] synthesizing module 'sbox1' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox1.v:35]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox1.v:41]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox1.v:41]
-INFO: [Synth 8-256] done synthesizing module 'sbox1' (2#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox1.v:35]
-INFO: [Synth 8-638] synthesizing module 'sbox2' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox2.v:35]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox2.v:41]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox2.v:41]
-INFO: [Synth 8-256] done synthesizing module 'sbox2' (3#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox2.v:35]
-INFO: [Synth 8-638] synthesizing module 'sbox3' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox3.v:35]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox3.v:41]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox3.v:41]
-INFO: [Synth 8-256] done synthesizing module 'sbox3' (4#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox3.v:35]
-INFO: [Synth 8-638] synthesizing module 'sbox4' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox4.v:35]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox4.v:41]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox4.v:41]
-INFO: [Synth 8-256] done synthesizing module 'sbox4' (5#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox4.v:35]
-INFO: [Synth 8-638] synthesizing module 'sbox5' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox5.v:35]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox5.v:41]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox5.v:41]
-INFO: [Synth 8-256] done synthesizing module 'sbox5' (6#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox5.v:35]
-INFO: [Synth 8-638] synthesizing module 'sbox6' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox6.v:35]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox6.v:41]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox6.v:41]
-INFO: [Synth 8-256] done synthesizing module 'sbox6' (7#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox6.v:35]
-INFO: [Synth 8-638] synthesizing module 'sbox7' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox7.v:35]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox7.v:41]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox7.v:41]
-INFO: [Synth 8-256] done synthesizing module 'sbox7' (8#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox7.v:35]
-INFO: [Synth 8-638] synthesizing module 'sbox8' [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox8.v:35]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox8.v:41]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox8.v:41]
-INFO: [Synth 8-256] done synthesizing module 'sbox8' (9#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/sbox8.v:35]
-INFO: [Synth 8-256] done synthesizing module 'crp' (10#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/common/crp.v:35]
-INFO: [Synth 8-256] done synthesizing module 'des' (11#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/perf_opt/des.v:35]
-INFO: [Synth 8-256] done synthesizing module 'des3_perf' (12#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/imports/verilog/perf_opt/des3_perf.v:35]
-INFO: [Synth 8-256] done synthesizing module 'top' (13#1) [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'des3_perf' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/perf_opt/des3_perf.v:35]
+INFO: [Synth 8-638] synthesizing module 'des' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/perf_opt/des.v:35]
+INFO: [Synth 8-638] synthesizing module 'key_sel' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/perf_opt/key_sel.v:36]
+INFO: [Synth 8-256] done synthesizing module 'key_sel' (1#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/perf_opt/key_sel.v:36]
+INFO: [Synth 8-638] synthesizing module 'crp' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/crp.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox1' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox1.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox1.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox1.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox1' (2#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox1.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox2' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox2.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox2.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox2.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox2' (3#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox2.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox3' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox3.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox3.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox3.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox3' (4#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox3.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox4' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox4.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox4.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox4.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox4' (5#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox4.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox5' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox5.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox5.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox5.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox5' (6#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox5.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox6' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox6.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox6.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox6.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox6' (7#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox6.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox7' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox7.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox7.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox7.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox7' (8#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox7.v:35]
+INFO: [Synth 8-638] synthesizing module 'sbox8' [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox8.v:35]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox8.v:41]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox8.v:41]
+INFO: [Synth 8-256] done synthesizing module 'sbox8' (9#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/sbox8.v:35]
+INFO: [Synth 8-256] done synthesizing module 'crp' (10#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/common/crp.v:35]
+INFO: [Synth 8-256] done synthesizing module 'des' (11#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/perf_opt/des.v:35]
+INFO: [Synth 8-256] done synthesizing module 'des3_perf' (12#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/imports/verilog/perf_opt/des3_perf.v:35]
+INFO: [Synth 8-256] done synthesizing module 'top' (13#1) [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/sources_1/new/top.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1099.652 ; gain = 214.574 ; free physical = 7657 ; free virtual = 31431
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1087.949 ; gain = 199.574 ; free physical = 4580 ; free virtual = 14800
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -72,41 +72,41 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1099.652 ; gain = 214.574 ; free physical = 7657 ; free virtual = 31431
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1087.949 ; gain = 199.574 ; free physical = 4580 ; free virtual = 14800
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/constrs_1/imports/opencores/top.xdc]
-Finished Parsing XDC File [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/constrs_1/imports/opencores/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sean/vivado_workspace/des3_perf_simple/des3_perf_simple.srcs/constrs_1/imports/opencores/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/constrs_1/imports/opencores/top.xdc]
+Finished Parsing XDC File [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/constrs_1/imports/opencores/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jgoeders/ipassurance/base/des3_perf_base/des3_perf_base.srcs/constrs_1/imports/opencores/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1490.191 ; gain = 0.000 ; free physical = 7377 ; free virtual = 31152
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.645 ; gain = 0.000 ; free physical = 4380 ; free virtual = 14600
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1490.191 ; gain = 605.113 ; free physical = 7373 ; free virtual = 31148
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1441.645 ; gain = 553.270 ; free physical = 4379 ; free virtual = 14599
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1490.191 ; gain = 605.113 ; free physical = 7373 ; free virtual = 31148
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1441.645 ; gain = 553.270 ; free physical = 4379 ; free virtual = 14599
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1490.191 ; gain = 605.113 ; free physical = 7373 ; free virtual = 31148
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1441.645 ; gain = 553.270 ; free physical = 4379 ; free virtual = 14599
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1490.191 ; gain = 605.113 ; free physical = 7372 ; free virtual = 31147
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1441.645 ; gain = 553.270 ; free physical = 4367 ; free virtual = 14587
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -177,14 +177,14 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1490.191 ; gain = 605.113 ; free physical = 7371 ; free virtual = 31146
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1441.645 ; gain = 553.270 ; free physical = 4367 ; free virtual = 14587
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1490.191 ; gain = 605.113 ; free physical = 7379 ; free virtual = 31154
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1441.645 ; gain = 553.270 ; free physical = 4370 ; free virtual = 14590
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1490.191 ; gain = 605.113 ; free physical = 7379 ; free virtual = 31154
+Finished Parallel Reinference  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1441.645 ; gain = 553.270 ; free physical = 4370 ; free virtual = 14590
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -207,207 +207,17 @@ ROM:
 |sbox6       | dout       | 64x4          | LUT            | 
 |sbox7       | dout       | 64x4          | LUT            | 
 |sbox8       | dout       | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u1/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u3/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u0/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u5/dout    | 64x4          | LUT            | 
-|crp         | u1/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u1/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u1/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u1/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u0/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
-|crp         | u6/dout    | 64x4          | LUT            | 
-|crp         | u2/dout    | 64x4          | LUT            | 
-|crp         | u7/dout    | 64x4          | LUT            | 
-|crp         | u4/dout    | 64x4          | LUT            | 
+|sbox1       | dout       | 64x4          | LUT            | 
+|sbox2       | dout       | 64x4          | LUT            | 
+|sbox3       | dout       | 64x4          | LUT            | 
+|sbox4       | dout       | 64x4          | LUT            | 
+|sbox5       | dout       | 64x4          | LUT            | 
+|sbox6       | dout       | 64x4          | LUT            | 
+|sbox7       | dout       | 64x4          | LUT            | 
+|sbox8       | dout       | 64x4          | LUT            | 
+|sbox1       | dout       | 64x4          | LUT            | 
+|sbox1       | dout       | 64x4          | LUT            | 
+|sbox1       | dout       | 64x4          | LUT            | 
 +------------+------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
@@ -517,111 +327,111 @@ INFO: [Synth 8-3886] merging instance 'des3_perf_0/key_c_r_reg[2][17]' (FD) to '
 INFO: [Synth 8-3886] merging instance 'des3_perf_0/key_c_r_reg[2][18]' (FD) to 'des3_perf_0/key_c_r_reg[2][34]'
 INFO: [Synth 8-3886] merging instance 'des3_perf_0/key_c_r_reg[2][19]' (FD) to 'des3_perf_0/key_c_r_reg[2][35]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][39]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][38]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][37]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][36]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][35]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][34]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][33]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][32]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][31]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][30]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][29]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][28]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][27]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][26]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][25]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][24]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][22]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][21]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][20]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][18]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][17]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][16]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][13]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][12]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][5]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[0][0]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][39]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][38]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][37]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][36]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][35]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][34]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][33]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][32]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][31]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][30]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][29]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][28]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][27]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][26]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][25]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][24]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][22]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][21]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][20]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][18]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][17]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][16]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][13]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][12]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][5]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[1][0]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][39]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][38]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][37]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][36]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][35]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][34]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][33]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][32]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][31]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][30]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][29]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][28]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][27]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][26]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][25]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][24]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][22]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][21]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (des3_perf_0/key_c_r_reg[2][20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][39]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][38]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][37]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][36]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][35]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][34]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][33]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][32]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][31]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][30]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][29]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][28]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][27]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][26]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][25]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][24]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][23]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][22]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][21]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][20]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][19]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][18]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][17]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][16]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][15]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][14]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][13]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][12]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][11]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][10]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][9]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][8]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][7]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][6]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][5]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][4]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][3]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][2]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][1]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[0][0]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][39]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][38]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][37]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][36]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][35]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][34]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][33]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][32]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][31]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][30]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][29]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][28]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][27]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][26]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][25]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][24]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][23]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][22]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][21]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][20]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][19]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][18]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][17]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][16]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][15]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][14]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][13]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][12]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][11]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][10]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][9]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][8]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][7]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][6]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][5]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][4]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][3]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][2]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][1]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[1][0]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][39]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][38]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][37]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][36]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][35]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][34]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][33]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][32]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][31]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][30]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][29]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][28]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][27]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][26]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][25]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][24]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][23]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][22]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][21]) is unused and will be removed from module des3_perf.
+WARNING: [Synth 8-3332] Sequential element (key_c_r_reg[2][20]) is unused and will be removed from module des3_perf.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1490.191 ; gain = 605.113 ; free physical = 7380 ; free virtual = 31155
+Finished Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1441.645 ; gain = 553.270 ; free physical = 4362 ; free virtual = 14582
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1490.191 ; gain = 605.113 ; free physical = 7380 ; free virtual = 31155
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1441.645 ; gain = 553.270 ; free physical = 4362 ; free virtual = 14582
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -635,10 +445,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1490.191 ; gain = 605.113 ; free physical = 7371 ; free virtual = 31147
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1441.645 ; gain = 553.270 ; free physical = 4296 ; free virtual = 14516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1494.230 ; gain = 609.152 ; free physical = 7338 ; free virtual = 31114
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1451.668 ; gain = 563.293 ; free physical = 4248 ; free virtual = 14468
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -650,24 +460,18 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1494.230 ; gain = 609.152 ; free physical = 7338 ; free virtual = 31113
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1451.668 ; gain = 563.293 ; free physical = 4249 ; free virtual = 14470
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1494.230 ; gain = 609.152 ; free physical = 7338 ; free virtual = 31113
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1451.668 ; gain = 563.293 ; free physical = 4249 ; free virtual = 14470
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1494.230 ; gain = 609.152 ; free physical = 7338 ; free virtual = 31113
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1451.668 ; gain = 563.293 ; free physical = 4249 ; free virtual = 14470
 ---------------------------------------------------------------------------------
 Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
@@ -676,7 +480,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1494.230 ; gain = 609.152 ; free physical = 7338 ; free virtual = 31113
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1451.668 ; gain = 563.293 ; free physical = 4249 ; free virtual = 14469
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -689,7 +493,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1494.230 ; gain = 609.152 ; free physical = 7338 ; free virtual = 31113
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1451.668 ; gain = 563.293 ; free physical = 4248 ; free virtual = 14469
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -701,21 +505,19 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1494.230 ; gain = 609.152 ; free physical = 7338 ; free virtual = 31113
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1451.668 ; gain = 563.293 ; free physical = 4247 ; free virtual = 14467
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|top         | des3_perf_0/u1/key_r_reg[52] | 16     | 7     | NO           | NO                 | YES               | 7      | 0       | 
-|top         | des3_perf_0/u1/key_r_reg[50] | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
-|top         | des3_perf_0/u1/key_r_reg[49] | 17     | 8     | NO           | NO                 | YES               | 8      | 0       | 
-|top         | des3_perf_0/u2/key_r_reg[49] | 19     | 16    | NO           | NO                 | YES               | 0      | 16      | 
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|des3_perf   | key_c_r_reg[33][55] | 34     | 16    | NO           | NO                 | YES               | 0      | 32      | 
+|des3_perf   | key_b_r_reg[16][55] | 17     | 16    | NO           | NO                 | YES               | 16     | 0       | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -735,42 +537,481 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     1|
-|2     |LUT2    |  1562|
-|3     |LUT3    |    14|
-|4     |LUT4    |  2264|
+|2     |LUT1    |     1|
+|3     |LUT2    |  3838|
+|4     |LUT3    |  1694|
 |5     |LUT5    |     2|
 |6     |LUT6    |  1547|
-|7     |SRL16E  |    15|
-|8     |SRLC32E |    17|
-|9     |FDRE    |  3960|
+|7     |SRL16E  |    16|
+|8     |SRLC32E |    32|
+|9     |FDRE    |  3992|
 |10    |IBUF    |    17|
 |11    |OBUF    |    16|
 +------+--------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |  9415|
-+------+---------+-------+------+
++------+--------------+-----------+------+
+|      |Instance      |Module     |Cells |
++------+--------------+-----------+------+
+|1     |top           |           | 11156|
+|2     |  des3_perf_0 |des3_perf  | 11109|
+|3     |    u0        |des__1     |  3620|
+|4     |      uk      |key_sel__1 |   800|
+|5     |      u0      |crp__31    |    76|
+|6     |        u0    |sbox1__31  |     4|
+|7     |        u1    |sbox2__31  |     4|
+|8     |        u2    |sbox3__31  |     4|
+|9     |        u3    |sbox4__31  |     4|
+|10    |        u4    |sbox5__31  |     4|
+|11    |        u5    |sbox6__31  |     4|
+|12    |        u6    |sbox7__31  |     4|
+|13    |        u7    |sbox8__31  |     4|
+|14    |      u1      |crp__30    |    80|
+|15    |        u0    |sbox1__30  |     4|
+|16    |        u1    |sbox2__30  |     4|
+|17    |        u2    |sbox3__30  |     4|
+|18    |        u3    |sbox4__30  |     4|
+|19    |        u4    |sbox5__30  |     4|
+|20    |        u5    |sbox6__30  |     4|
+|21    |        u6    |sbox7__30  |     4|
+|22    |        u7    |sbox8__30  |     4|
+|23    |      u2      |crp__29    |    80|
+|24    |        u0    |sbox1__29  |     4|
+|25    |        u1    |sbox2__29  |     4|
+|26    |        u2    |sbox3__29  |     4|
+|27    |        u3    |sbox4__29  |     4|
+|28    |        u4    |sbox5__29  |     4|
+|29    |        u5    |sbox6__29  |     4|
+|30    |        u6    |sbox7__29  |     4|
+|31    |        u7    |sbox8__29  |     4|
+|32    |      u3      |crp__28    |    80|
+|33    |        u0    |sbox1__28  |     4|
+|34    |        u1    |sbox2__28  |     4|
+|35    |        u2    |sbox3__28  |     4|
+|36    |        u3    |sbox4__28  |     4|
+|37    |        u4    |sbox5__28  |     4|
+|38    |        u5    |sbox6__28  |     4|
+|39    |        u6    |sbox7__28  |     4|
+|40    |        u7    |sbox8__28  |     4|
+|41    |      u4      |crp__27    |    80|
+|42    |        u0    |sbox1__27  |     4|
+|43    |        u1    |sbox2__27  |     4|
+|44    |        u2    |sbox3__27  |     4|
+|45    |        u3    |sbox4__27  |     4|
+|46    |        u4    |sbox5__27  |     4|
+|47    |        u5    |sbox6__27  |     4|
+|48    |        u6    |sbox7__27  |     4|
+|49    |        u7    |sbox8__27  |     4|
+|50    |      u5      |crp__26    |    80|
+|51    |        u0    |sbox1__26  |     4|
+|52    |        u1    |sbox2__26  |     4|
+|53    |        u2    |sbox3__26  |     4|
+|54    |        u3    |sbox4__26  |     4|
+|55    |        u4    |sbox5__26  |     4|
+|56    |        u5    |sbox6__26  |     4|
+|57    |        u6    |sbox7__26  |     4|
+|58    |        u7    |sbox8__26  |     4|
+|59    |      u6      |crp__25    |    80|
+|60    |        u0    |sbox1__25  |     4|
+|61    |        u1    |sbox2__25  |     4|
+|62    |        u2    |sbox3__25  |     4|
+|63    |        u3    |sbox4__25  |     4|
+|64    |        u4    |sbox5__25  |     4|
+|65    |        u5    |sbox6__25  |     4|
+|66    |        u6    |sbox7__25  |     4|
+|67    |        u7    |sbox8__25  |     4|
+|68    |      u7      |crp__24    |    80|
+|69    |        u0    |sbox1__24  |     4|
+|70    |        u1    |sbox2__24  |     4|
+|71    |        u2    |sbox3__24  |     4|
+|72    |        u3    |sbox4__24  |     4|
+|73    |        u4    |sbox5__24  |     4|
+|74    |        u5    |sbox6__24  |     4|
+|75    |        u6    |sbox7__24  |     4|
+|76    |        u7    |sbox8__24  |     4|
+|77    |      u8      |crp__23    |    80|
+|78    |        u0    |sbox1__23  |     4|
+|79    |        u1    |sbox2__23  |     4|
+|80    |        u2    |sbox3__23  |     4|
+|81    |        u3    |sbox4__23  |     4|
+|82    |        u4    |sbox5__23  |     4|
+|83    |        u5    |sbox6__23  |     4|
+|84    |        u6    |sbox7__23  |     4|
+|85    |        u7    |sbox8__23  |     4|
+|86    |      u9      |crp__22    |    80|
+|87    |        u0    |sbox1__22  |     4|
+|88    |        u1    |sbox2__22  |     4|
+|89    |        u2    |sbox3__22  |     4|
+|90    |        u3    |sbox4__22  |     4|
+|91    |        u4    |sbox5__22  |     4|
+|92    |        u5    |sbox6__22  |     4|
+|93    |        u6    |sbox7__22  |     4|
+|94    |        u7    |sbox8__22  |     4|
+|95    |      u10     |crp__21    |    80|
+|96    |        u0    |sbox1__21  |     4|
+|97    |        u1    |sbox2__21  |     4|
+|98    |        u2    |sbox3__21  |     4|
+|99    |        u3    |sbox4__21  |     4|
+|100   |        u4    |sbox5__21  |     4|
+|101   |        u5    |sbox6__21  |     4|
+|102   |        u6    |sbox7__21  |     4|
+|103   |        u7    |sbox8__21  |     4|
+|104   |      u11     |crp__20    |    80|
+|105   |        u0    |sbox1__20  |     4|
+|106   |        u1    |sbox2__20  |     4|
+|107   |        u2    |sbox3__20  |     4|
+|108   |        u3    |sbox4__20  |     4|
+|109   |        u4    |sbox5__20  |     4|
+|110   |        u5    |sbox6__20  |     4|
+|111   |        u6    |sbox7__20  |     4|
+|112   |        u7    |sbox8__20  |     4|
+|113   |      u12     |crp__19    |    80|
+|114   |        u0    |sbox1__19  |     4|
+|115   |        u1    |sbox2__19  |     4|
+|116   |        u2    |sbox3__19  |     4|
+|117   |        u3    |sbox4__19  |     4|
+|118   |        u4    |sbox5__19  |     4|
+|119   |        u5    |sbox6__19  |     4|
+|120   |        u6    |sbox7__19  |     4|
+|121   |        u7    |sbox8__19  |     4|
+|122   |      u13     |crp__18    |    80|
+|123   |        u0    |sbox1__18  |     4|
+|124   |        u1    |sbox2__18  |     4|
+|125   |        u2    |sbox3__18  |     4|
+|126   |        u3    |sbox4__18  |     4|
+|127   |        u4    |sbox5__18  |     4|
+|128   |        u5    |sbox6__18  |     4|
+|129   |        u6    |sbox7__18  |     4|
+|130   |        u7    |sbox8__18  |     4|
+|131   |      u14     |crp__17    |    80|
+|132   |        u0    |sbox1__17  |     4|
+|133   |        u1    |sbox2__17  |     4|
+|134   |        u2    |sbox3__17  |     4|
+|135   |        u3    |sbox4__17  |     4|
+|136   |        u4    |sbox5__17  |     4|
+|137   |        u5    |sbox6__17  |     4|
+|138   |        u6    |sbox7__17  |     4|
+|139   |        u7    |sbox8__17  |     4|
+|140   |      u15     |crp__16    |    80|
+|141   |        u0    |sbox1__16  |     4|
+|142   |        u1    |sbox2__16  |     4|
+|143   |        u2    |sbox3__16  |     4|
+|144   |        u3    |sbox4__16  |     4|
+|145   |        u4    |sbox5__16  |     4|
+|146   |        u5    |sbox6__16  |     4|
+|147   |        u6    |sbox7__16  |     4|
+|148   |        u7    |sbox8__16  |     4|
+|149   |    u1        |des__2     |  3696|
+|150   |      uk      |key_sel__2 |   800|
+|151   |      u0      |crp__47    |    80|
+|152   |        u0    |sbox1__47  |     4|
+|153   |        u1    |sbox2__47  |     4|
+|154   |        u2    |sbox3__47  |     4|
+|155   |        u3    |sbox4__47  |     4|
+|156   |        u4    |sbox5__47  |     4|
+|157   |        u5    |sbox6__47  |     4|
+|158   |        u6    |sbox7__47  |     4|
+|159   |        u7    |sbox8__47  |     4|
+|160   |      u1      |crp__46    |    80|
+|161   |        u0    |sbox1__46  |     4|
+|162   |        u1    |sbox2__46  |     4|
+|163   |        u2    |sbox3__46  |     4|
+|164   |        u3    |sbox4__46  |     4|
+|165   |        u4    |sbox5__46  |     4|
+|166   |        u5    |sbox6__46  |     4|
+|167   |        u6    |sbox7__46  |     4|
+|168   |        u7    |sbox8__46  |     4|
+|169   |      u2      |crp__45    |    80|
+|170   |        u0    |sbox1__45  |     4|
+|171   |        u1    |sbox2__45  |     4|
+|172   |        u2    |sbox3__45  |     4|
+|173   |        u3    |sbox4__45  |     4|
+|174   |        u4    |sbox5__45  |     4|
+|175   |        u5    |sbox6__45  |     4|
+|176   |        u6    |sbox7__45  |     4|
+|177   |        u7    |sbox8__45  |     4|
+|178   |      u3      |crp__44    |    80|
+|179   |        u0    |sbox1__44  |     4|
+|180   |        u1    |sbox2__44  |     4|
+|181   |        u2    |sbox3__44  |     4|
+|182   |        u3    |sbox4__44  |     4|
+|183   |        u4    |sbox5__44  |     4|
+|184   |        u5    |sbox6__44  |     4|
+|185   |        u6    |sbox7__44  |     4|
+|186   |        u7    |sbox8__44  |     4|
+|187   |      u4      |crp__43    |    80|
+|188   |        u0    |sbox1__43  |     4|
+|189   |        u1    |sbox2__43  |     4|
+|190   |        u2    |sbox3__43  |     4|
+|191   |        u3    |sbox4__43  |     4|
+|192   |        u4    |sbox5__43  |     4|
+|193   |        u5    |sbox6__43  |     4|
+|194   |        u6    |sbox7__43  |     4|
+|195   |        u7    |sbox8__43  |     4|
+|196   |      u5      |crp__42    |    80|
+|197   |        u0    |sbox1__42  |     4|
+|198   |        u1    |sbox2__42  |     4|
+|199   |        u2    |sbox3__42  |     4|
+|200   |        u3    |sbox4__42  |     4|
+|201   |        u4    |sbox5__42  |     4|
+|202   |        u5    |sbox6__42  |     4|
+|203   |        u6    |sbox7__42  |     4|
+|204   |        u7    |sbox8__42  |     4|
+|205   |      u6      |crp__41    |    80|
+|206   |        u0    |sbox1__41  |     4|
+|207   |        u1    |sbox2__41  |     4|
+|208   |        u2    |sbox3__41  |     4|
+|209   |        u3    |sbox4__41  |     4|
+|210   |        u4    |sbox5__41  |     4|
+|211   |        u5    |sbox6__41  |     4|
+|212   |        u6    |sbox7__41  |     4|
+|213   |        u7    |sbox8__41  |     4|
+|214   |      u7      |crp__40    |    80|
+|215   |        u0    |sbox1__40  |     4|
+|216   |        u1    |sbox2__40  |     4|
+|217   |        u2    |sbox3__40  |     4|
+|218   |        u3    |sbox4__40  |     4|
+|219   |        u4    |sbox5__40  |     4|
+|220   |        u5    |sbox6__40  |     4|
+|221   |        u6    |sbox7__40  |     4|
+|222   |        u7    |sbox8__40  |     4|
+|223   |      u8      |crp__39    |    80|
+|224   |        u0    |sbox1__39  |     4|
+|225   |        u1    |sbox2__39  |     4|
+|226   |        u2    |sbox3__39  |     4|
+|227   |        u3    |sbox4__39  |     4|
+|228   |        u4    |sbox5__39  |     4|
+|229   |        u5    |sbox6__39  |     4|
+|230   |        u6    |sbox7__39  |     4|
+|231   |        u7    |sbox8__39  |     4|
+|232   |      u9      |crp__38    |    80|
+|233   |        u0    |sbox1__38  |     4|
+|234   |        u1    |sbox2__38  |     4|
+|235   |        u2    |sbox3__38  |     4|
+|236   |        u3    |sbox4__38  |     4|
+|237   |        u4    |sbox5__38  |     4|
+|238   |        u5    |sbox6__38  |     4|
+|239   |        u6    |sbox7__38  |     4|
+|240   |        u7    |sbox8__38  |     4|
+|241   |      u10     |crp__37    |    80|
+|242   |        u0    |sbox1__37  |     4|
+|243   |        u1    |sbox2__37  |     4|
+|244   |        u2    |sbox3__37  |     4|
+|245   |        u3    |sbox4__37  |     4|
+|246   |        u4    |sbox5__37  |     4|
+|247   |        u5    |sbox6__37  |     4|
+|248   |        u6    |sbox7__37  |     4|
+|249   |        u7    |sbox8__37  |     4|
+|250   |      u11     |crp__36    |    80|
+|251   |        u0    |sbox1__36  |     4|
+|252   |        u1    |sbox2__36  |     4|
+|253   |        u2    |sbox3__36  |     4|
+|254   |        u3    |sbox4__36  |     4|
+|255   |        u4    |sbox5__36  |     4|
+|256   |        u5    |sbox6__36  |     4|
+|257   |        u6    |sbox7__36  |     4|
+|258   |        u7    |sbox8__36  |     4|
+|259   |      u12     |crp__35    |    80|
+|260   |        u0    |sbox1__35  |     4|
+|261   |        u1    |sbox2__35  |     4|
+|262   |        u2    |sbox3__35  |     4|
+|263   |        u3    |sbox4__35  |     4|
+|264   |        u4    |sbox5__35  |     4|
+|265   |        u5    |sbox6__35  |     4|
+|266   |        u6    |sbox7__35  |     4|
+|267   |        u7    |sbox8__35  |     4|
+|268   |      u13     |crp__34    |    80|
+|269   |        u0    |sbox1__34  |     4|
+|270   |        u1    |sbox2__34  |     4|
+|271   |        u2    |sbox3__34  |     4|
+|272   |        u3    |sbox4__34  |     4|
+|273   |        u4    |sbox5__34  |     4|
+|274   |        u5    |sbox6__34  |     4|
+|275   |        u6    |sbox7__34  |     4|
+|276   |        u7    |sbox8__34  |     4|
+|277   |      u14     |crp__33    |    80|
+|278   |        u0    |sbox1__33  |     4|
+|279   |        u1    |sbox2__33  |     4|
+|280   |        u2    |sbox3__33  |     4|
+|281   |        u3    |sbox4__33  |     4|
+|282   |        u4    |sbox5__33  |     4|
+|283   |        u5    |sbox6__33  |     4|
+|284   |        u6    |sbox7__33  |     4|
+|285   |        u7    |sbox8__33  |     4|
+|286   |      u15     |crp__32    |    80|
+|287   |        u0    |sbox1__32  |     4|
+|288   |        u1    |sbox2__32  |     4|
+|289   |        u2    |sbox3__32  |     4|
+|290   |        u3    |sbox4__32  |     4|
+|291   |        u4    |sbox5__32  |     4|
+|292   |        u5    |sbox6__32  |     4|
+|293   |        u6    |sbox7__32  |     4|
+|294   |        u7    |sbox8__32  |     4|
+|295   |    u2        |des        |  3696|
+|296   |      uk      |key_sel    |   800|
+|297   |      u0      |crp__1     |    80|
+|298   |        u0    |sbox1__1   |     4|
+|299   |        u1    |sbox2__1   |     4|
+|300   |        u2    |sbox3__1   |     4|
+|301   |        u3    |sbox4__1   |     4|
+|302   |        u4    |sbox5__1   |     4|
+|303   |        u5    |sbox6__1   |     4|
+|304   |        u6    |sbox7__1   |     4|
+|305   |        u7    |sbox8__1   |     4|
+|306   |      u1      |crp__2     |    80|
+|307   |        u0    |sbox1__2   |     4|
+|308   |        u1    |sbox2__2   |     4|
+|309   |        u2    |sbox3__2   |     4|
+|310   |        u3    |sbox4__2   |     4|
+|311   |        u4    |sbox5__2   |     4|
+|312   |        u5    |sbox6__2   |     4|
+|313   |        u6    |sbox7__2   |     4|
+|314   |        u7    |sbox8__2   |     4|
+|315   |      u2      |crp__3     |    80|
+|316   |        u0    |sbox1__3   |     4|
+|317   |        u1    |sbox2__3   |     4|
+|318   |        u2    |sbox3__3   |     4|
+|319   |        u3    |sbox4__3   |     4|
+|320   |        u4    |sbox5__3   |     4|
+|321   |        u5    |sbox6__3   |     4|
+|322   |        u6    |sbox7__3   |     4|
+|323   |        u7    |sbox8__3   |     4|
+|324   |      u3      |crp__4     |    80|
+|325   |        u0    |sbox1__4   |     4|
+|326   |        u1    |sbox2__4   |     4|
+|327   |        u2    |sbox3__4   |     4|
+|328   |        u3    |sbox4__4   |     4|
+|329   |        u4    |sbox5__4   |     4|
+|330   |        u5    |sbox6__4   |     4|
+|331   |        u6    |sbox7__4   |     4|
+|332   |        u7    |sbox8__4   |     4|
+|333   |      u4      |crp__5     |    80|
+|334   |        u0    |sbox1__5   |     4|
+|335   |        u1    |sbox2__5   |     4|
+|336   |        u2    |sbox3__5   |     4|
+|337   |        u3    |sbox4__5   |     4|
+|338   |        u4    |sbox5__5   |     4|
+|339   |        u5    |sbox6__5   |     4|
+|340   |        u6    |sbox7__5   |     4|
+|341   |        u7    |sbox8__5   |     4|
+|342   |      u5      |crp__6     |    80|
+|343   |        u0    |sbox1__6   |     4|
+|344   |        u1    |sbox2__6   |     4|
+|345   |        u2    |sbox3__6   |     4|
+|346   |        u3    |sbox4__6   |     4|
+|347   |        u4    |sbox5__6   |     4|
+|348   |        u5    |sbox6__6   |     4|
+|349   |        u6    |sbox7__6   |     4|
+|350   |        u7    |sbox8__6   |     4|
+|351   |      u6      |crp__7     |    80|
+|352   |        u0    |sbox1__7   |     4|
+|353   |        u1    |sbox2__7   |     4|
+|354   |        u2    |sbox3__7   |     4|
+|355   |        u3    |sbox4__7   |     4|
+|356   |        u4    |sbox5__7   |     4|
+|357   |        u5    |sbox6__7   |     4|
+|358   |        u6    |sbox7__7   |     4|
+|359   |        u7    |sbox8__7   |     4|
+|360   |      u7      |crp__8     |    80|
+|361   |        u0    |sbox1__8   |     4|
+|362   |        u1    |sbox2__8   |     4|
+|363   |        u2    |sbox3__8   |     4|
+|364   |        u3    |sbox4__8   |     4|
+|365   |        u4    |sbox5__8   |     4|
+|366   |        u5    |sbox6__8   |     4|
+|367   |        u6    |sbox7__8   |     4|
+|368   |        u7    |sbox8__8   |     4|
+|369   |      u8      |crp__9     |    80|
+|370   |        u0    |sbox1__9   |     4|
+|371   |        u1    |sbox2__9   |     4|
+|372   |        u2    |sbox3__9   |     4|
+|373   |        u3    |sbox4__9   |     4|
+|374   |        u4    |sbox5__9   |     4|
+|375   |        u5    |sbox6__9   |     4|
+|376   |        u6    |sbox7__9   |     4|
+|377   |        u7    |sbox8__9   |     4|
+|378   |      u9      |crp__10    |    80|
+|379   |        u0    |sbox1__10  |     4|
+|380   |        u1    |sbox2__10  |     4|
+|381   |        u2    |sbox3__10  |     4|
+|382   |        u3    |sbox4__10  |     4|
+|383   |        u4    |sbox5__10  |     4|
+|384   |        u5    |sbox6__10  |     4|
+|385   |        u6    |sbox7__10  |     4|
+|386   |        u7    |sbox8__10  |     4|
+|387   |      u10     |crp__11    |    80|
+|388   |        u0    |sbox1__11  |     4|
+|389   |        u1    |sbox2__11  |     4|
+|390   |        u2    |sbox3__11  |     4|
+|391   |        u3    |sbox4__11  |     4|
+|392   |        u4    |sbox5__11  |     4|
+|393   |        u5    |sbox6__11  |     4|
+|394   |        u6    |sbox7__11  |     4|
+|395   |        u7    |sbox8__11  |     4|
+|396   |      u11     |crp__12    |    80|
+|397   |        u0    |sbox1__12  |     4|
+|398   |        u1    |sbox2__12  |     4|
+|399   |        u2    |sbox3__12  |     4|
+|400   |        u3    |sbox4__12  |     4|
+|401   |        u4    |sbox5__12  |     4|
+|402   |        u5    |sbox6__12  |     4|
+|403   |        u6    |sbox7__12  |     4|
+|404   |        u7    |sbox8__12  |     4|
+|405   |      u12     |crp__13    |    80|
+|406   |        u0    |sbox1__13  |     4|
+|407   |        u1    |sbox2__13  |     4|
+|408   |        u2    |sbox3__13  |     4|
+|409   |        u3    |sbox4__13  |     4|
+|410   |        u4    |sbox5__13  |     4|
+|411   |        u5    |sbox6__13  |     4|
+|412   |        u6    |sbox7__13  |     4|
+|413   |        u7    |sbox8__13  |     4|
+|414   |      u13     |crp__14    |    80|
+|415   |        u0    |sbox1__14  |     4|
+|416   |        u1    |sbox2__14  |     4|
+|417   |        u2    |sbox3__14  |     4|
+|418   |        u3    |sbox4__14  |     4|
+|419   |        u4    |sbox5__14  |     4|
+|420   |        u5    |sbox6__14  |     4|
+|421   |        u6    |sbox7__14  |     4|
+|422   |        u7    |sbox8__14  |     4|
+|423   |      u14     |crp__15    |    80|
+|424   |        u0    |sbox1__15  |     4|
+|425   |        u1    |sbox2__15  |     4|
+|426   |        u2    |sbox3__15  |     4|
+|427   |        u3    |sbox4__15  |     4|
+|428   |        u4    |sbox5__15  |     4|
+|429   |        u5    |sbox6__15  |     4|
+|430   |        u6    |sbox7__15  |     4|
+|431   |        u7    |sbox8__15  |     4|
+|432   |      u15     |crp        |    80|
+|433   |        u0    |sbox1      |     4|
+|434   |        u1    |sbox2      |     4|
+|435   |        u2    |sbox3      |     4|
+|436   |        u3    |sbox4      |     4|
+|437   |        u4    |sbox5      |     4|
+|438   |        u5    |sbox6      |     4|
+|439   |        u6    |sbox7      |     4|
+|440   |        u7    |sbox8      |     4|
++------+--------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1494.230 ; gain = 609.152 ; free physical = 7338 ; free virtual = 31113
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1451.668 ; gain = 563.293 ; free physical = 4247 ; free virtual = 14467
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4310 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1494.230 ; gain = 129.473 ; free physical = 7338 ; free virtual = 31113
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1494.238 ; gain = 609.160 ; free physical = 7338 ; free virtual = 31113
+Synthesis finished with 0 errors, 0 critical warnings and 4032 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1451.668 ; gain = 122.457 ; free physical = 4247 ; free virtual = 14467
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1451.676 ; gain = 563.301 ; free physical = 4246 ; free virtual = 14467
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 16 instances were transformed.
+  SRLC32E => SRL16E: 16 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-156 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+156 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1526.246 ; gain = 564.613 ; free physical = 7340 ; free virtual = 31115
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1558.262 ; gain = 0.000 ; free physical = 7338 ; free virtual = 31114
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 15:20:24 2018...
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1483.684 ; gain = 520.754 ; free physical = 4248 ; free virtual = 14468
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1515.699 ; gain = 0.000 ; free physical = 4241 ; free virtual = 14462
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 13:07:49 2020...

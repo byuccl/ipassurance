@@ -1,0 +1,30 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 13:08:55 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/uart2spi_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-3
+| Design State : Synthesized
+-----------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------+----------+------------+------------+---------+------+------+--------+--------+--------------+
+|   Instance   |  Module  | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++--------------+----------+------------+------------+---------+------+------+--------+--------+--------------+
+| top          |    (top) |       1532 |       1497 |       0 |   35 | 1285 |      0 |      0 |            2 |
+|   (top)      |    (top) |          2 |          2 |       0 |    0 |    0 |      0 |      0 |            0 |
+|   gng_0      |      gng |       1047 |       1012 |       0 |   35 |  871 |      0 |      0 |            2 |
+|   uart2spi_0 | uart2spi |        483 |        483 |       0 |    0 |  414 |      0 |      0 |            0 |
++--------------+----------+------------+------------+---------+------+------+--------+--------+--------------+
+
+

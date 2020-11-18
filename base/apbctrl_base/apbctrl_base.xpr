@@ -3,19 +3,19 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="/home/sean/ipassurance/apbctrl_base/apbctrl_base.xpr">
+<Project Version="7" Minor="14" Path="/home/jgoeders/ipassurance/base/apbctrl_base/apbctrl_base.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="7700599f311e480a9fe2adb0c1d9e453"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="/home/sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="/home/sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="/home/sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="/home/sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="/home/sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="/home/sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="$PPRDIR/../../../../sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PPRDIR/../../../../sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PPRDIR/../../../../sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PPRDIR/../../../../sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PPRDIR/../../../../sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PPRDIR/../../../../sean/ipassurance/apbctrl_base/apbctrl_base.cache/compile_simlib/activehdl"/>
     <Option Name="TargetSimulator" Val="ModelSim"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
@@ -3198,18 +3198,21 @@
       </File>
       <File Path="$PPRDIR/../../vivado_workspace/apbctrl_simple/apbctrl_simple.srcs/sources_1/imports/grlib-gpl-2017.2-b4194/lib/opencores/ge_1000baseX/ge_1000baseX_regs.v">
         <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../vivado_workspace/apbctrl_simple/apbctrl_simple.srcs/sources_1/imports/grlib-gpl-2017.2-b4194/lib/opencores/ge_1000baseX/ge_1000baseX_constants.v">
         <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../vivado_workspace/apbctrl_simple/apbctrl_simple.srcs/sources_1/imports/grlib-gpl-2017.2-b4194/lib/opencores/ge_1000baseX/timescale.v">
         <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -3301,12 +3304,12 @@
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
-          <Option Id="FlattenHierarchy">0</Option>
+          <Option Id="FlattenHierarchy">1</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
@@ -3321,7 +3324,6 @@
           <Option Id="MaskFileBool">1</Option>
         </Step>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
   </Runs>
   <MsgRule>

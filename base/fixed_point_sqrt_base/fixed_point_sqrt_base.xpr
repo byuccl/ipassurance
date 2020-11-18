@@ -3,19 +3,19 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="/home/sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.xpr">
+<Project Version="7" Minor="14" Path="/home/jgoeders/ipassurance/base/fixed_point_sqrt_base/fixed_point_sqrt_base.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="9e2631999d9942728a0f661436241e79"/>
     <Option Name="Part" Val="xc7a100tcsg324-3"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="/home/sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="/home/sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="/home/sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="/home/sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="/home/sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="/home/sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="$PPRDIR/../../../../sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PPRDIR/../../../../sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PPRDIR/../../../../sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PPRDIR/../../../../sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PPRDIR/../../../../sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PPRDIR/../../../../sean/ipassurance/fixed_point_sqrt_base/fixed_point_sqrt_base.cache/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
@@ -702,12 +702,12 @@
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
-          <Option Id="FlattenHierarchy">0</Option>
+          <Option Id="FlattenHierarchy">1</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-3" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
@@ -720,7 +720,6 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
   </Runs>
 </Project>

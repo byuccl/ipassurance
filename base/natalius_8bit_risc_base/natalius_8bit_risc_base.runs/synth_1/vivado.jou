@@ -2,11 +2,11 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Jan 13 14:51:26 2018
-# Process ID: 19794
-# Current directory: /home/sean/vivado_workspace/natalius_8bit_risc_simple/natalius_8bit_risc_simple.runs/synth_1
+# Start of session at: Tue Nov 17 13:45:00 2020
+# Process ID: 4689
+# Current directory: /home/jgoeders/ipassurance/base/natalius_8bit_risc_base/natalius_8bit_risc_base.runs/synth_1
 # Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: /home/sean/vivado_workspace/natalius_8bit_risc_simple/natalius_8bit_risc_simple.runs/synth_1/top.vds
-# Journal file: /home/sean/vivado_workspace/natalius_8bit_risc_simple/natalius_8bit_risc_simple.runs/synth_1/vivado.jou
+# Log file: /home/jgoeders/ipassurance/base/natalius_8bit_risc_base/natalius_8bit_risc_base.runs/synth_1/top.vds
+# Journal file: /home/jgoeders/ipassurance/base/natalius_8bit_risc_base/natalius_8bit_risc_base.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

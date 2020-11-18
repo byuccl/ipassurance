@@ -1,0 +1,32 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 18:06:02 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/des3_area_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-3
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------+-------------+------------+------------+---------+------+------+--------+--------+--------------+
+|    Instance   |    Module   | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++---------------+-------------+------------+------------+---------+------+------+--------+--------+--------------+
+| top           |       (top) |       2287 |       2238 |      48 |    1 | 1818 |      0 |      0 |            0 |
+|   (top)       |       (top) |         11 |         11 |       0 |    0 |    0 |      0 |      0 |            0 |
+|   ac97_0      | ac97_top__1 |        376 |        340 |      36 |    0 |  451 |      0 |      0 |            0 |
+|   ac97_1      |    ac97_top |        300 |        288 |      12 |    0 |  382 |      0 |      0 |            0 |
+|   des3_area_0 |   des3_area |        535 |        535 |       0 |    0 |   64 |      0 |      0 |            0 |
+|   mem_ctrl_0  |      mc_top |       1065 |       1064 |       0 |    1 |  921 |      0 |      0 |            0 |
++---------------+-------------+------------+------------+---------+------+------+--------+--------+--------------+
+
+

@@ -1,0 +1,33 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 16:41:03 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/simon_core_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-3
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------+------------------------+------------+------------+---------+------+------+--------+--------+--------------+
+|          Instance          |         Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++----------------------------+------------------------+------------+------------+---------+------+------+--------+--------+--------------+
+| top                        |                  (top) |       8191 |       8177 |       0 |   14 | 4335 |      0 |      0 |            0 |
+|   (top)                    |                  (top) |        174 |        174 |       0 |    0 |    3 |      0 |      0 |            0 |
+|   random_pulse_generator_0 | random_pulse_generator |          4 |          4 |       0 |    0 |   33 |      0 |      0 |            0 |
+|   sap_0                    |                    sap |         68 |         68 |       0 |    0 |   44 |      0 |      0 |            0 |
+|   sha3_high_throughput_0   |   sha3_high_throughput |       5258 |       5257 |       0 |    1 | 2144 |      0 |      0 |            0 |
+|   sha3_low_throughput_0    |    sha3_low_throughput |       2639 |       2638 |       0 |    1 | 2084 |      0 |      0 |            0 |
+|   simon_core_0             |             simon_core |         48 |         36 |       0 |   12 |   27 |      0 |      0 |            0 |
++----------------------------+------------------------+------------+------------+---------+------+------+--------+--------+--------------+
+
+

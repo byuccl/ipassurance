@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/sean/vivado_workspace/fm_3d_core_simple/fm_3d_core_simple.srcs/constrs_1/new/top.xdc rfile:../../../fm_3d_core_simple.srcs/constrs_1/new/top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/jgoeders/ipassurance/base/fm_3d_core_base/fm_3d_core_base.srcs/constrs_1/new/top.xdc rfile:../../../fm_3d_core_base.srcs/constrs_1/new/top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk_o]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]

@@ -2,47 +2,47 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Jan 13 13:56:08 2018
-# Process ID: 30254
-# Current directory: /home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.runs/synth_1
+# Start of session at: Tue Nov 17 14:53:43 2020
+# Process ID: 12700
+# Current directory: /home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.runs/synth_1
 # Command line: vivado -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: /home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.runs/synth_1/top.vds
-# Journal file: /home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.runs/synth_1/vivado.jou
+# Log file: /home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.runs/synth_1/top.vds
+# Journal file: /home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy full
+Command: synth_design -top top -part xc7a100tcsg324-3 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 30258 
+INFO: Helper process launched with PID 12731 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1051.113 ; gain = 159.137 ; free physical = 24210 ; free virtual = 94263
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1040.512 ; gain = 152.137 ; free physical = 4698 ; free virtual = 15026
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/new/top.v:4]
-INFO: [Synth 8-638] synthesizing module 'jpegencode' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/jpegencode.v:46]
-INFO: [Synth 8-638] synthesizing module 'fifo_out' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/fifo_out.v:42]
-INFO: [Synth 8-638] synthesizing module 'pre_fifo' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/pre_fifo.v:40]
-INFO: [Synth 8-638] synthesizing module 'RGB2YCBCR' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/rgb2ycbcr.v:44]
-INFO: [Synth 8-256] done synthesizing module 'RGB2YCBCR' (1#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/rgb2ycbcr.v:44]
-INFO: [Synth 8-638] synthesizing module 'crd_q_h' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/crd_q_h.v:38]
-INFO: [Synth 8-638] synthesizing module 'cr_dct' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:48]
-INFO: [Synth 8-4471] merging register 'Ti1_reg[31:0]' into 'T1_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:171]
-INFO: [Synth 8-4471] merging register 'Ti21_reg[31:0]' into 'T21_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:172]
-INFO: [Synth 8-4471] merging register 'Ti22_reg[31:0]' into 'T22_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:173]
-INFO: [Synth 8-4471] merging register 'Ti23_reg[31:0]' into 'T23_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:174]
-INFO: [Synth 8-4471] merging register 'Ti24_reg[31:0]' into 'T24_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:175]
-INFO: [Synth 8-4471] merging register 'Ti25_reg[31:0]' into 'T25_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:176]
-INFO: [Synth 8-4471] merging register 'Ti26_reg[31:0]' into 'T26_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:177]
-INFO: [Synth 8-4471] merging register 'Ti27_reg[31:0]' into 'T27_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:178]
-INFO: [Synth 8-4471] merging register 'Ti28_reg[31:0]' into 'T28_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:179]
-INFO: [Synth 8-4471] merging register 'Ti31_reg[31:0]' into 'T31_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:180]
-INFO: [Synth 8-4471] merging register 'Ti32_reg[31:0]' into 'T32_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:181]
-INFO: [Synth 8-4471] merging register 'Ti33_reg[31:0]' into 'T33_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:182]
-INFO: [Synth 8-4471] merging register 'Ti34_reg[31:0]' into 'T34_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:183]
-INFO: [Synth 8-4471] merging register 'Ti52_reg[31:0]' into 'T52_reg[31:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:184]
-INFO: [Synth 8-256] done synthesizing module 'cr_dct' (2#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:48]
-INFO: [Synth 8-638] synthesizing module 'cr_quantizer' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_quantizer.v:41]
+INFO: [Synth 8-638] synthesizing module 'top' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/new/top.v:4]
+INFO: [Synth 8-638] synthesizing module 'jpegencode' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/jpegencode.v:46]
+INFO: [Synth 8-638] synthesizing module 'fifo_out' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/fifo_out.v:42]
+INFO: [Synth 8-638] synthesizing module 'pre_fifo' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/pre_fifo.v:40]
+INFO: [Synth 8-638] synthesizing module 'RGB2YCBCR' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/rgb2ycbcr.v:44]
+INFO: [Synth 8-256] done synthesizing module 'RGB2YCBCR' (1#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/rgb2ycbcr.v:44]
+INFO: [Synth 8-638] synthesizing module 'crd_q_h' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/crd_q_h.v:38]
+INFO: [Synth 8-638] synthesizing module 'cr_dct' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:48]
+INFO: [Synth 8-4471] merging register 'Ti1_reg[31:0]' into 'T1_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:171]
+INFO: [Synth 8-4471] merging register 'Ti21_reg[31:0]' into 'T21_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:172]
+INFO: [Synth 8-4471] merging register 'Ti22_reg[31:0]' into 'T22_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:173]
+INFO: [Synth 8-4471] merging register 'Ti23_reg[31:0]' into 'T23_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:174]
+INFO: [Synth 8-4471] merging register 'Ti24_reg[31:0]' into 'T24_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:175]
+INFO: [Synth 8-4471] merging register 'Ti25_reg[31:0]' into 'T25_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:176]
+INFO: [Synth 8-4471] merging register 'Ti26_reg[31:0]' into 'T26_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:177]
+INFO: [Synth 8-4471] merging register 'Ti27_reg[31:0]' into 'T27_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:178]
+INFO: [Synth 8-4471] merging register 'Ti28_reg[31:0]' into 'T28_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:179]
+INFO: [Synth 8-4471] merging register 'Ti31_reg[31:0]' into 'T31_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:180]
+INFO: [Synth 8-4471] merging register 'Ti32_reg[31:0]' into 'T32_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:181]
+INFO: [Synth 8-4471] merging register 'Ti33_reg[31:0]' into 'T33_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:182]
+INFO: [Synth 8-4471] merging register 'Ti34_reg[31:0]' into 'T34_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:183]
+INFO: [Synth 8-4471] merging register 'Ti52_reg[31:0]' into 'T52_reg[31:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:184]
+INFO: [Synth 8-256] done synthesizing module 'cr_dct' (2#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:48]
+INFO: [Synth 8-638] synthesizing module 'cr_quantizer' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_quantizer.v:41]
 	Parameter Q1_1 bound to: 1 - type: integer 
 	Parameter Q1_2 bound to: 1 - type: integer 
 	Parameter Q1_3 bound to: 1 - type: integer 
@@ -171,176 +171,176 @@ INFO: [Synth 8-638] synthesizing module 'cr_quantizer' [/home/sean/vivado_worksp
 	Parameter QQ8_6 bound to: 4096 - type: integer 
 	Parameter QQ8_7 bound to: 4096 - type: integer 
 	Parameter QQ8_8 bound to: 4096 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'cr_quantizer' (3#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_quantizer.v:41]
-INFO: [Synth 8-638] synthesizing module 'cr_huff' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:42]
-INFO: [Synth 8-4471] merging register 'Cr_DC_code_length_reg[1][3:0]' into 'Cr_DC_code_length_reg[2][3:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1406]
-INFO: [Synth 8-4471] merging register 'Cr_DC_code_length_reg[0][3:0]' into 'Cr_DC_code_length_reg[2][3:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1406]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[160][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[159][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[158][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[157][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[156][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[155][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[154][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[153][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[152][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[151][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[150][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[149][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[148][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[147][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[146][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[145][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[144][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[143][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[142][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[141][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[140][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[139][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[138][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[137][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[136][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[135][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[134][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[133][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[132][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[131][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[130][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[129][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[128][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[127][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[126][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[125][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[124][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[123][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[122][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[121][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[120][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[119][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[118][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[117][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[116][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[115][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[114][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[113][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[112][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[111][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[110][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[109][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[108][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[107][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[106][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[105][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[104][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[103][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[102][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[101][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[100][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[99][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[98][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[97][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[96][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[95][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[94][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[93][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[92][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[91][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[90][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[89][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[88][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[87][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[86][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[85][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[84][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[83][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[82][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[81][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[80][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[79][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[78][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
-INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[77][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-256] done synthesizing module 'cr_quantizer' (3#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_quantizer.v:41]
+INFO: [Synth 8-638] synthesizing module 'cr_huff' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:42]
+INFO: [Synth 8-4471] merging register 'Cr_DC_code_length_reg[1][3:0]' into 'Cr_DC_code_length_reg[2][3:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1406]
+INFO: [Synth 8-4471] merging register 'Cr_DC_code_length_reg[0][3:0]' into 'Cr_DC_code_length_reg[2][3:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1406]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[160][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[159][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[158][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[157][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[156][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[155][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[154][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[153][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[152][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[151][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[150][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[149][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[148][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[147][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[146][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[145][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[144][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[143][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[142][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[141][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[140][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[139][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[138][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[137][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[136][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[135][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[134][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[133][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[132][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[131][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[130][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[129][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[128][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[127][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[126][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[125][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[124][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[123][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[122][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[121][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[120][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[119][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[118][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[117][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[116][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[115][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[114][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[113][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[112][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[111][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[110][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[109][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[108][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[107][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[106][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[105][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[104][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[103][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[102][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[101][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[100][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[99][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[98][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[97][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[96][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[95][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[94][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[93][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[92][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[91][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[90][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[89][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[88][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[87][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[86][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[85][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[84][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[83][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[82][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[81][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[80][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[79][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[78][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
+INFO: [Synth 8-4471] merging register 'Cr_AC_code_length_reg[77][4:0]' into 'Cr_AC_code_length_reg[161][4:0]' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:1430]
 INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[239] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[238] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[237] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[236] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[235] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[223] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[222] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[221] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[220] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[219] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[207] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[206] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[205] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[204] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[203] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[191] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[190] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[189] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[188] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[187] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[175] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[174] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[173] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[172] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[171] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[159] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[158] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[157] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[156] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[155] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[143] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[142] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[141] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[140] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[139] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[127] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[126] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[125] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[124] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[123] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[111] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[110] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[109] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[108] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[107] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[95] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[94] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[93] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[92] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[91] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[79] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[78] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[77] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[76] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[75] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[63] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[62] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[61] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[60] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[59] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[47] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[46] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[45] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[44] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[43] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[31] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[30] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[29] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[28] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[27] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[15] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[14] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[13] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[12] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-WARNING: [Synth 8-3848] Net Cr_AC_run_code[11] in module/entity cr_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:136]
-INFO: [Synth 8-256] done synthesizing module 'cr_huff' (4#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:42]
-INFO: [Synth 8-256] done synthesizing module 'crd_q_h' (5#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/crd_q_h.v:38]
-INFO: [Synth 8-638] synthesizing module 'cbd_q_h' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cbd_q_h.v:39]
-INFO: [Synth 8-638] synthesizing module 'cb_dct' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_dct.v:48]
-INFO: [Synth 8-256] done synthesizing module 'cb_dct' (6#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_dct.v:48]
-INFO: [Synth 8-638] synthesizing module 'cb_quantizer' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_quantizer.v:41]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[239] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[238] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[237] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[236] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[235] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[223] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[222] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[221] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[220] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[219] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[207] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[206] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[205] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[204] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[203] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[191] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[190] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[189] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[188] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[187] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[175] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[174] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[173] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[172] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[171] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[159] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[158] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[157] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[156] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[155] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[143] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[142] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[141] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[140] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[139] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[127] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[126] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[125] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[124] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[123] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[111] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[110] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[109] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[108] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[107] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[95] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[94] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[93] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[92] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[91] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[79] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[78] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[77] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[76] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[75] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[63] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[62] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[61] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[60] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[59] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[47] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[46] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[45] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[44] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[43] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[31] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[30] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[29] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[28] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[27] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[15] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[14] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[13] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[12] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+WARNING: [Synth 8-3848] Net Cr_AC_run_code[11] in module/entity cr_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:136]
+INFO: [Synth 8-256] done synthesizing module 'cr_huff' (4#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:42]
+INFO: [Synth 8-256] done synthesizing module 'crd_q_h' (5#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/crd_q_h.v:38]
+INFO: [Synth 8-638] synthesizing module 'cbd_q_h' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cbd_q_h.v:39]
+INFO: [Synth 8-638] synthesizing module 'cb_dct' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_dct.v:48]
+INFO: [Synth 8-256] done synthesizing module 'cb_dct' (6#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_dct.v:48]
+INFO: [Synth 8-638] synthesizing module 'cb_quantizer' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_quantizer.v:41]
 	Parameter Q1_1 bound to: 1 - type: integer 
 	Parameter Q1_2 bound to: 1 - type: integer 
 	Parameter Q1_3 bound to: 1 - type: integer 
@@ -469,40 +469,40 @@ INFO: [Synth 8-638] synthesizing module 'cb_quantizer' [/home/sean/vivado_worksp
 	Parameter QQ8_6 bound to: 4096 - type: integer 
 	Parameter QQ8_7 bound to: 4096 - type: integer 
 	Parameter QQ8_8 bound to: 4096 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'cb_quantizer' (7#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_quantizer.v:41]
-INFO: [Synth 8-638] synthesizing module 'cb_huff' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:42]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[239] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[238] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[237] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[236] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[235] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[223] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[222] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[221] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[220] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[219] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[207] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[206] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[205] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[204] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[203] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[191] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[190] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[189] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[188] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[187] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[175] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[174] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[173] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[172] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
-WARNING: [Synth 8-3848] Net Cb_AC_run_code[171] in module/entity cb_huff does not have driver. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:136]
+INFO: [Synth 8-256] done synthesizing module 'cb_quantizer' (7#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_quantizer.v:41]
+INFO: [Synth 8-638] synthesizing module 'cb_huff' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:42]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[239] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[238] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[237] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[236] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[235] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[223] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[222] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[221] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[220] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[219] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[207] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[206] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[205] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[204] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[203] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[191] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[190] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[189] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[188] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[187] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[175] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[174] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[173] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[172] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
+WARNING: [Synth 8-3848] Net Cb_AC_run_code[171] in module/entity cb_huff does not have driver. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:136]
 INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-256] done synthesizing module 'cb_huff' (8#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:42]
-INFO: [Synth 8-256] done synthesizing module 'cbd_q_h' (9#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cbd_q_h.v:39]
-INFO: [Synth 8-638] synthesizing module 'yd_q_h' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/yd_q_h.v:38]
-INFO: [Synth 8-638] synthesizing module 'y_dct' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_dct.v:47]
-INFO: [Synth 8-256] done synthesizing module 'y_dct' (10#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_dct.v:47]
-INFO: [Synth 8-638] synthesizing module 'y_quantizer' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_quantizer.v:41]
+INFO: [Synth 8-256] done synthesizing module 'cb_huff' (8#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:42]
+INFO: [Synth 8-256] done synthesizing module 'cbd_q_h' (9#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cbd_q_h.v:39]
+INFO: [Synth 8-638] synthesizing module 'yd_q_h' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/yd_q_h.v:38]
+INFO: [Synth 8-638] synthesizing module 'y_dct' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_dct.v:47]
+INFO: [Synth 8-256] done synthesizing module 'y_dct' (10#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_dct.v:47]
+INFO: [Synth 8-638] synthesizing module 'y_quantizer' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_quantizer.v:41]
 	Parameter Q1_1 bound to: 1 - type: integer 
 	Parameter Q1_2 bound to: 1 - type: integer 
 	Parameter Q1_3 bound to: 1 - type: integer 
@@ -631,22 +631,22 @@ INFO: [Synth 8-638] synthesizing module 'y_quantizer' [/home/sean/vivado_workspa
 	Parameter QQ8_6 bound to: 4096 - type: integer 
 	Parameter QQ8_7 bound to: 4096 - type: integer 
 	Parameter QQ8_8 bound to: 4096 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'y_quantizer' (11#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_quantizer.v:41]
-INFO: [Synth 8-638] synthesizing module 'y_huff' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_huff.v:42]
-INFO: [Synth 8-256] done synthesizing module 'y_huff' (12#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_huff.v:42]
-INFO: [Synth 8-256] done synthesizing module 'yd_q_h' (13#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/yd_q_h.v:38]
-INFO: [Synth 8-256] done synthesizing module 'pre_fifo' (14#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/pre_fifo.v:40]
-INFO: [Synth 8-638] synthesizing module 'sync_fifo_32' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/sync_fifo_32.v:36]
-INFO: [Synth 8-256] done synthesizing module 'sync_fifo_32' (15#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/sync_fifo_32.v:36]
-INFO: [Synth 8-256] done synthesizing module 'fifo_out' (16#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/fifo_out.v:42]
-INFO: [Synth 8-638] synthesizing module 'ff_checker' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/ff_checker.v:42]
-INFO: [Synth 8-638] synthesizing module 'sync_fifo_ff' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/sync_fifo_ff.v:38]
-INFO: [Synth 8-256] done synthesizing module 'sync_fifo_ff' (17#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/sync_fifo_ff.v:38]
-INFO: [Synth 8-256] done synthesizing module 'ff_checker' (18#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/ff_checker.v:42]
-INFO: [Synth 8-256] done synthesizing module 'jpegencode' (19#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/jpegencode.v:46]
-WARNING: [Synth 8-689] width (1) of port connection 'JPEG_bitstream' does not match port width (32) of module 'jpegencode' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/new/top.v:32]
-WARNING: [Synth 8-689] width (1) of port connection 'end_of_file_bitstream_count' does not match port width (5) of module 'jpegencode' [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/new/top.v:34]
-INFO: [Synth 8-256] done synthesizing module 'top' (20#1) [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/new/top.v:4]
+INFO: [Synth 8-256] done synthesizing module 'y_quantizer' (11#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_quantizer.v:41]
+INFO: [Synth 8-638] synthesizing module 'y_huff' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_huff.v:42]
+INFO: [Synth 8-256] done synthesizing module 'y_huff' (12#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_huff.v:42]
+INFO: [Synth 8-256] done synthesizing module 'yd_q_h' (13#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/yd_q_h.v:38]
+INFO: [Synth 8-256] done synthesizing module 'pre_fifo' (14#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/pre_fifo.v:40]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_32' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/sync_fifo_32.v:36]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_32' (15#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/sync_fifo_32.v:36]
+INFO: [Synth 8-256] done synthesizing module 'fifo_out' (16#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/fifo_out.v:42]
+INFO: [Synth 8-638] synthesizing module 'ff_checker' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/ff_checker.v:42]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_ff' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/sync_fifo_ff.v:38]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_ff' (17#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/sync_fifo_ff.v:38]
+INFO: [Synth 8-256] done synthesizing module 'ff_checker' (18#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/ff_checker.v:42]
+INFO: [Synth 8-256] done synthesizing module 'jpegencode' (19#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/jpegencode.v:46]
+WARNING: [Synth 8-689] width (1) of port connection 'JPEG_bitstream' does not match port width (32) of module 'jpegencode' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/new/top.v:32]
+WARNING: [Synth 8-689] width (1) of port connection 'end_of_file_bitstream_count' does not match port width (5) of module 'jpegencode' [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/new/top.v:34]
+INFO: [Synth 8-256] done synthesizing module 'top' (20#1) [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/new/top.v:4]
 WARNING: [Synth 8-3331] design top has unconnected port LEDs[6]
 WARNING: [Synth 8-3331] design top has unconnected port LEDs[5]
 WARNING: [Synth 8-3331] design top has unconnected port LEDs[4]
@@ -656,7 +656,7 @@ WARNING: [Synth 8-3331] design top has unconnected port rst
 WARNING: [Synth 8-3331] design top has unconnected port switches[13]
 WARNING: [Synth 8-3331] design top has unconnected port switches[12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1273.691 ; gain = 381.715 ; free physical = 23981 ; free virtual = 94038
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1263.090 ; gain = 374.715 ; free physical = 4469 ; free virtual = 14800
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -666,55 +666,55 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1273.691 ; gain = 381.715 ; free physical = 23981 ; free virtual = 94038
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1263.090 ; gain = 374.715 ; free physical = 4466 ; free virtual = 14798
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/constrs_1/imports/opencores/top.xdc]
-Finished Parsing XDC File [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/constrs_1/imports/opencores/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/constrs_1/imports/opencores/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/constrs_1/imports/opencores/top.xdc]
+Finished Parsing XDC File [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/constrs_1/imports/opencores/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/constrs_1/imports/opencores/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1727.480 ; gain = 0.000 ; free physical = 23698 ; free virtual = 93755
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1679.035 ; gain = 0.000 ; free physical = 4149 ; free virtual = 14481
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1727.480 ; gain = 835.504 ; free physical = 23697 ; free virtual = 93754
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1679.035 ; gain = 790.660 ; free physical = 4146 ; free virtual = 14477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1727.480 ; gain = 835.504 ; free physical = 23697 ; free virtual = 93754
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1679.035 ; gain = 790.660 ; free physical = 4145 ; free virtual = 14477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1727.480 ; gain = 835.504 ; free physical = 23697 ; free virtual = 93754
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1679.035 ; gain = 790.660 ; free physical = 4145 ; free virtual = 14477
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "count_1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_huff.v:234]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_huff.v:234]
 INFO: [Synth 8-5546] ROM "enable_latch_7" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enable_latch_7" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "JPEG_ro_bs0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Cr11_bits_neg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Cr12_bits_neg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "count_1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_huff.v:234]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_huff.v:234]
 INFO: [Synth 8-5546] ROM "enable_latch_7" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enable_latch_7" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "JPEG_ro_bs0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Cb11_bits_neg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Cb12_bits_neg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "count_1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_huff.v:235]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_huff.v:235]
 INFO: [Synth 8-5546] ROM "enable_latch_7" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enable_latch_7" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "JPEG_ro_bs0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -729,7 +729,7 @@ INFO: [Synth 8-5546] ROM "JPEG_40" won't be mapped to RAM because it is too spar
 INFO: [Synth 8-5546] ROM "JPEG_30" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "JPEG_30" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 1727.480 ; gain = 835.504 ; free physical = 23686 ; free virtual = 93742
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 1679.035 ; gain = 790.660 ; free physical = 4140 ; free virtual = 14472
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1191,7 +1191,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1727.480 ; gain = 835.504 ; free physical = 23686 ; free virtual = 93742
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 1679.035 ; gain = 790.660 ; free physical = 4144 ; free virtual = 14476
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -1230,13 +1230,13 @@ INFO: [Synth 8-5546] ROM "JPEG_70" won't be mapped to RAM because it is too spar
 WARNING: [Synth 8-3331] design top has unconnected port rst
 WARNING: [Synth 8-3331] design top has unconnected port switches[13]
 WARNING: [Synth 8-3331] design top has unconnected port switches[12]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb5_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:635]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb8_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:677]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb6_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:649]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb4_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:621]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb2_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:593]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb7_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:663]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb3_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cr_dct.v:607]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb5_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:635]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb8_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:677]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb6_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:649]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb4_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:621]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb2_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:593]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb7_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:663]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb3_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cr_dct.v:607]
 DSP Report: Generating DSP Cb_temp_11_reg, operation Mode is: (C or 0)+(A:0xb50)'*B.
 DSP Report: register A is absorbed into DSP Cb_temp_11_reg.
 DSP Report: register Cb_temp_11_reg is absorbed into DSP Cb_temp_11_reg.
@@ -2939,13 +2939,13 @@ DSP Report: register A is absorbed into DSP Z_temp_88_reg.
 DSP Report: register Z_temp_88_reg is absorbed into DSP Z_temp_88_reg.
 DSP Report: operator Z_temp_880 is absorbed into DSP Z_temp_88_reg.
 DSP Report: operator Z_temp_880 is absorbed into DSP Z_temp_88_reg.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb5_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_dct.v:635]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb8_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_dct.v:677]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb6_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_dct.v:649]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb4_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_dct.v:621]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb2_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_dct.v:593]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb7_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_dct.v:663]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Cb3_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/cb_dct.v:607]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb5_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_dct.v:635]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb8_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_dct.v:677]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb6_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_dct.v:649]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb4_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_dct.v:621]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb2_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_dct.v:593]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb7_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_dct.v:663]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Cb3_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/cb_dct.v:607]
 DSP Report: Generating DSP Cb_temp_11_reg, operation Mode is: (C or 0)+(A:0xb50)'*B.
 DSP Report: register A is absorbed into DSP Cb_temp_11_reg.
 DSP Report: register Cb_temp_11_reg is absorbed into DSP Cb_temp_11_reg.
@@ -4648,13 +4648,13 @@ DSP Report: register A is absorbed into DSP Z_temp_88_reg.
 DSP Report: register Z_temp_88_reg is absorbed into DSP Z_temp_88_reg.
 DSP Report: operator Z_temp_880 is absorbed into DSP Z_temp_88_reg.
 DSP Report: operator Z_temp_880 is absorbed into DSP Z_temp_88_reg.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Y5_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_dct.v:633]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Y8_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_dct.v:675]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Y6_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_dct.v:647]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Y4_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_dct.v:619]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Y2_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_dct.v:591]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Y7_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_dct.v:661]
-WARNING: [Synth 8-3936] Found unconnected internal register 'Y3_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/sean/vivado_workspace/jpegencode_simple/jpegencode_simple.srcs/sources_1/imports/hdl/y_dct.v:605]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y5_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_dct.v:633]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y8_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_dct.v:675]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y6_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_dct.v:647]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y4_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_dct.v:619]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y2_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_dct.v:591]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y7_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_dct.v:661]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y3_mul_input_reg' and it is trimmed from '32' to '25' bits. [/home/jgoeders/ipassurance/base/jpegencode_base/jpegencode_base.srcs/sources_1/imports/hdl/y_dct.v:605]
 DSP Report: Generating DSP Y_temp_11_reg, operation Mode is: (C or 0)+(A:0xb50)'*B.
 DSP Report: register A is absorbed into DSP Y_temp_11_reg.
 DSP Report: register Y_temp_11_reg is absorbed into DSP Y_temp_11_reg.
@@ -6358,9 +6358,9 @@ DSP Report: register Z_temp_88_reg is absorbed into DSP Z_temp_88_reg.
 DSP Report: operator Z_temp_880 is absorbed into DSP Z_temp_88_reg.
 DSP Report: operator Z_temp_880 is absorbed into DSP Z_temp_88_reg.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 1727.480 ; gain = 835.504 ; free physical = 21806 ; free virtual = 91868
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:09 . Memory (MB): peak = 1679.035 ; gain = 790.660 ; free physical = 2251 ; free virtual = 12588
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 1727.480 ; gain = 835.504 ; free physical = 21806 ; free virtual = 91868
+Finished Parallel Reinference  : Time (s): cpu = 00:00:55 ; elapsed = 00:01:09 . Memory (MB): peak = 1679.035 ; gain = 790.660 ; free physical = 2251 ; free virtual = 12588
 
 Report RTL Partitions: 
 +------+--------------+------------+----------+
@@ -7958,15 +7958,15 @@ Block RAM: Preliminary Mapping  Report (see note below)
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
-+------------+-------------+-----------+----------------------+--------------+
-|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
-+------------+-------------+-----------+----------------------+--------------+
-|top         | u15/mem_reg | Implied   | 16 x 32              | RAM32M x 6   | 
-|top         | u25/mem_reg | Implied   | 16 x 32              | RAM32M x 6   | 
-|top         | u16/mem_reg | Implied   | 16 x 32              | RAM32M x 6   | 
-|top         | u24/mem_reg | Implied   | 16 x 32              | RAM32M x 6   | 
-|top         | u17/mem_reg | Implied   | 16 x 32              | RAM32M x 6   | 
-+------------+-------------+-----------+----------------------+--------------+
++-------------+------------+-----------+----------------------+--------------+
+|Module Name  | RTL Object | Inference | Size (Depth x Width) | Primitives   | 
++-------------+------------+-----------+----------------------+--------------+
+|sync_fifo_32 | mem_reg    | Implied   | 16 x 32              | RAM32M x 6   | 
+|sync_fifo_32 | mem_reg    | Implied   | 16 x 32              | RAM32M x 6   | 
+|sync_fifo_32 | mem_reg    | Implied   | 16 x 32              | RAM32M x 6   | 
+|sync_fifo_32 | mem_reg    | Implied   | 16 x 32              | RAM32M x 6   | 
+|sync_fifo_32 | mem_reg    | Implied   | 16 x 32              | RAM32M x 6   | 
++-------------+------------+-----------+----------------------+--------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 
@@ -8817,7 +8817,7 @@ INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/u14/u4/CR1_product_reg[1
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/u14/u4/CR1_product_reg[11]' (FDRE) to 'jpegencode_0/u19/u14/u4/CR1_product_reg[12]'
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/u14/u4/CR1_product_reg[12]' (FDRE) to 'jpegencode_0/u19/u14/u4/CR1_product_reg[21]'
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/u14/u4/CR3_product_reg[1]' (FDRE) to 'jpegencode_0/u19/u14/u4/CR1_product_reg[21]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\jpegencode_0/u19/u14/u4 /\CR1_product_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpegencode_0/u19/u14/u4/\CR1_product_reg[21] )
 WARNING: [Synth 8-3332] Sequential element (CB_temp_reg[12]) is unused and will be removed from module RGB2YCBCR.
 WARNING: [Synth 8-3332] Sequential element (CB_temp_reg[11]) is unused and will be removed from module RGB2YCBCR.
 WARNING: [Synth 8-3332] Sequential element (CB_temp_reg[10]) is unused and will be removed from module RGB2YCBCR.
@@ -8893,26 +8893,26 @@ WARNING: [Synth 8-3332] Sequential element (CR1_product_reg[11]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (CR1_product_reg[12]) is unused and will be removed from module RGB2YCBCR.
 WARNING: [Synth 8-3332] Sequential element (CR1_product_reg[21]) is unused and will be removed from module RGB2YCBCR.
 WARNING: [Synth 8-3332] Sequential element (CR3_product_reg[1]) is unused and will be removed from module RGB2YCBCR.
-INFO: [Synth 8-3886] merging instance 'u19i_3/orc_reg_delay_reg[0]' (FDRE) to 'u19i_3/orc_1_reg[0]'
-INFO: [Synth 8-3886] merging instance 'u19i_3/orc_reg_delay_reg[1]' (FDRE) to 'u19i_3/orc_1_reg[1]'
-INFO: [Synth 8-3886] merging instance 'u19i_3/orc_reg_delay_reg[3]' (FDRE) to 'u19i_3/orc_1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'u19i_3/orc_reg_delay_reg[2]' (FDRE) to 'u19i_3/orc_1_reg[2]'
-INFO: [Synth 8-3886] merging instance 'u19i_3/edge_ro_1_reg[1]' (FDRE) to 'u19i_3/orc_2_reg[1]'
-INFO: [Synth 8-3886] merging instance 'u19i_3/edge_ro_1_reg[0]' (FDRE) to 'u19i_3/orc_2_reg[0]'
-INFO: [Synth 8-3886] merging instance 'u19i_3/edge_ro_1_reg[2]' (FDRE) to 'u19i_3/orc_2_reg[2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (u19i_3/\orc_1_reg[4] )
-INFO: [Synth 8-3886] merging instance 'u19i_3/edge_ro_2_reg[1]' (FDRE) to 'u19i_3/orc_3_reg[1]'
-INFO: [Synth 8-3886] merging instance 'u19i_3/edge_ro_2_reg[0]' (FDRE) to 'u19i_3/orc_3_reg[0]'
-INFO: [Synth 8-3886] merging instance 'u19i_3/edge_ro_3_reg[0]' (FDRE) to 'u19i_3/orc_4_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\jpegencode_0/u20 /\JPEG_eof_reg[0] )
+INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/i_0/orc_reg_delay_reg[0]' (FDRE) to 'jpegencode_0/u19/i_0/orc_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/i_0/orc_reg_delay_reg[1]' (FDRE) to 'jpegencode_0/u19/i_0/orc_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/i_0/orc_reg_delay_reg[3]' (FDRE) to 'jpegencode_0/u19/i_0/orc_1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/i_0/orc_reg_delay_reg[2]' (FDRE) to 'jpegencode_0/u19/i_0/orc_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/i_0/edge_ro_1_reg[1]' (FDRE) to 'jpegencode_0/u19/i_0/orc_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/i_0/edge_ro_1_reg[0]' (FDRE) to 'jpegencode_0/u19/i_0/orc_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/i_0/edge_ro_1_reg[2]' (FDRE) to 'jpegencode_0/u19/i_0/orc_2_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpegencode_0/u19/i_0/\orc_1_reg[4] )
+INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/i_0/edge_ro_2_reg[1]' (FDRE) to 'jpegencode_0/u19/i_0/orc_3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/i_0/edge_ro_2_reg[0]' (FDRE) to 'jpegencode_0/u19/i_0/orc_3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/i_0/edge_ro_3_reg[0]' (FDRE) to 'jpegencode_0/u19/i_0/orc_4_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpegencode_0/u20/\JPEG_eof_reg[0] )
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u20/JPEG_out_reg[85]' (FDRE) to 'jpegencode_0/u20/JPEG_out_reg[86]'
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u20/JPEG_out_reg[86]' (FDRE) to 'jpegencode_0/u20/JPEG_out_reg[87]'
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u20/JPEG_out_reg[87]' (FDRE) to 'jpegencode_0/u20/JPEG_out_reg[81]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\jpegencode_0/u20 /\JPEG_out_reg[80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpegencode_0/u20/\JPEG_out_reg[80] )
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u20/JPEG_out_reg[81]' (FDRE) to 'jpegencode_0/u20/JPEG_out_reg[82]'
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u20/JPEG_out_reg[82]' (FDRE) to 'jpegencode_0/u20/JPEG_out_reg[83]'
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u20/JPEG_out_reg[83]' (FDRE) to 'jpegencode_0/u20/JPEG_out_reg[84]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\jpegencode_0/u20 /\JPEG_out_reg[84] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpegencode_0/u20/\JPEG_out_reg[84] )
 WARNING: [Synth 8-3332] Sequential element (JPEG_eof_reg[0]) is unused and will be removed from module ff_checker.
 WARNING: [Synth 8-3332] Sequential element (JPEG_eof_1_reg[0]) is unused and will be removed from module ff_checker.
 WARNING: [Synth 8-3332] Sequential element (JPEG_eof_2_reg[0]) is unused and will be removed from module ff_checker.
@@ -8935,10 +8935,10 @@ WARNING: [Synth 8-3332] Sequential element (Y3_product_reg[0]) is unused and wil
 WARNING: [Synth 8-3332] Sequential element (CB1_product_reg[0]) is unused and will be removed from module RGB2YCBCR.
 WARNING: [Synth 8-3332] Sequential element (CB2_product_reg[1]) is unused and will be removed from module RGB2YCBCR.
 WARNING: [Synth 8-3332] Sequential element (CR3_product_reg[0]) is unused and will be removed from module RGB2YCBCR.
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\jpegencode_0/u20 /end_of_file_enable_hold_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\jpegencode_0/u20 /eof_dpr_2_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\jpegencode_0/u20 /eof_data_ready_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\jpegencode_0/u20 /eof_bits_2_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (jpegencode_0/u20/end_of_file_enable_hold_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpegencode_0/u20/eof_dpr_2_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpegencode_0/u20/eof_data_ready_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpegencode_0/u20/eof_bits_2_reg)
 WARNING: [Synth 8-3332] Sequential element (end_of_file_enable_reg) is unused and will be removed from module ff_checker.
 WARNING: [Synth 8-3332] Sequential element (end_of_file_enable_hold_reg) is unused and will be removed from module ff_checker.
 WARNING: [Synth 8-3332] Sequential element (eof_count_enable_reg) is unused and will be removed from module ff_checker.
@@ -8955,7 +8955,7 @@ INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/u14/u4/CB3_product_reg[1
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/u14/u4/CB3_product_reg[16]' (FDRE) to 'jpegencode_0/u19/u14/u4/CR1_product_reg[20]'
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/u14/u4/CR1_product_reg[17]' (FDRE) to 'jpegencode_0/u19/u14/u4/CR3_product_reg[2]'
 INFO: [Synth 8-3886] merging instance 'jpegencode_0/u19/u14/u4/CR1_product_reg[18]' (FDRE) to 'jpegencode_0/u19/u14/u4/CR3_product_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\jpegencode_0/u19/u14/u4 /\CR2_product_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpegencode_0/u19/u14/u4/\CR2_product_reg[1] )
 INFO: [Synth 8-3886] merging instance 'B[15]__13' (FDRE) to 'A[17]__14'
 INFO: [Synth 8-3886] merging instance 'A[17]__14' (FDRE) to 'A[17]__12'
 INFO: [Synth 8-3886] merging instance 'B[15]__11' (FDRE) to 'A[17]__12'
@@ -9098,9 +9098,9 @@ INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instan
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:01:53 . Memory (MB): peak = 1876.148 ; gain = 984.172 ; free physical = 20921 ; free virtual = 90984
+Finished Area Optimization : Time (s): cpu = 00:02:52 ; elapsed = 00:03:14 . Memory (MB): peak = 1809.695 ; gain = 921.320 ; free physical = 1590 ; free virtual = 11928
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:01:41 ; elapsed = 00:01:53 . Memory (MB): peak = 1876.148 ; gain = 984.172 ; free physical = 20921 ; free virtual = 90984
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:52 ; elapsed = 00:03:14 . Memory (MB): peak = 1809.695 ; gain = 921.320 ; free physical = 1590 ; free virtual = 11928
 
 Report RTL Partitions: 
 +------+--------------+------------+----------+
@@ -9113,8 +9113,8 @@ Report RTL Partitions:
 |5     |y_dct         |           1|     40316|
 |6     |yd_q_h__GB1   |           1|     10517|
 |7     |RGB2YCBCR     |           1|      1469|
-|8     |fifo_out__GC0 |           1|      2555|
-|9     |ff_checker    |           1|      1134|
+|8     |fifo_out__GC0 |           1|      2592|
+|9     |ff_checker    |           1|      1102|
 |10    |top__GC0      |           1|        32|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -9124,10 +9124,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:47 ; elapsed = 00:01:59 . Memory (MB): peak = 1876.148 ; gain = 984.172 ; free physical = 20922 ; free virtual = 90984
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:02 ; elapsed = 00:03:23 . Memory (MB): peak = 1809.695 ; gain = 921.320 ; free physical = 1454 ; free virtual = 11793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:10 . Memory (MB): peak = 2000.090 ; gain = 1108.113 ; free physical = 20794 ; free virtual = 90857
+Finished Timing Optimization : Time (s): cpu = 00:03:19 ; elapsed = 00:03:41 . Memory (MB): peak = 1951.637 ; gain = 1063.262 ; free physical = 1288 ; free virtual = 11627
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9141,17 +9141,18 @@ Report RTL Partitions:
 |5     |y_dct         |           1|     40312|
 |6     |yd_q_h__GB1   |           1|     10467|
 |7     |RGB2YCBCR     |           1|      1469|
-|8     |fifo_out__GC0 |           1|      2555|
-|9     |ff_checker    |           1|      1134|
+|8     |fifo_out__GC0 |           1|      2592|
+|9     |ff_checker    |           1|      1102|
 |10    |top__GC0      |           1|        32|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:12 ; elapsed = 00:02:29 . Memory (MB): peak = 2012.020 ; gain = 1120.043 ; free physical = 20271 ; free virtual = 90336
+Finished Technology Mapping : Time (s): cpu = 00:03:49 ; elapsed = 00:04:19 . Memory (MB): peak = 1963.566 ; gain = 1075.191 ; free physical = 701 ; free virtual = 11041
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:02:12 ; elapsed = 00:02:29 . Memory (MB): peak = 2012.020 ; gain = 1120.043 ; free physical = 20271 ; free virtual = 90336
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:03:49 ; elapsed = 00:04:19 . Memory (MB): peak = 1963.566 ; gain = 1075.191 ; free physical = 701 ; free virtual = 11041
 
 Report RTL Partitions: 
 +------+--------------+------------+----------+
@@ -9164,27 +9165,22 @@ Report RTL Partitions:
 |5     |y_dct         |           1|     24025|
 |6     |yd_q_h__GB1   |           1|      7584|
 +------+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:13 ; elapsed = 00:02:29 . Memory (MB): peak = 2012.020 ; gain = 1120.043 ; free physical = 20271 ; free virtual = 90336
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:03:49 ; elapsed = 00:04:19 . Memory (MB): peak = 1963.566 ; gain = 1075.191 ; free physical = 701 ; free virtual = 11041
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5365] Flop jpegencode_0/u19/u14/u4/CR2_product_reg[6] is being inverted and renamed to jpegencode_0/u19/u14/u4/CR2_product_reg[6]_inv.
-INFO: [Synth 8-5365] Flop jpegencode_0/u19/u14/u4/CR2_product_reg[7] is being inverted and renamed to jpegencode_0/u19/u14/u4/CR2_product_reg[7]_inv.
-INFO: [Synth 8-5365] Flop jpegencode_0/u19/u14/u4/CR3_product_reg[4] is being inverted and renamed to jpegencode_0/u19/u14/u4/CR3_product_reg[4]_inv.
+INFO: [Synth 8-4480] The timing for the instance mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-5365] Flop CR2_product_reg[6] is being inverted and renamed to CR2_product_reg[6]_inv.
+INFO: [Synth 8-5365] Flop CR2_product_reg[7] is being inverted and renamed to CR2_product_reg[7]_inv.
+INFO: [Synth 8-5365] Flop CR3_product_reg[4] is being inverted and renamed to CR3_product_reg[4]_inv.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:21 ; elapsed = 00:02:38 . Memory (MB): peak = 2032.359 ; gain = 1140.383 ; free physical = 20250 ; free virtual = 90314
+Finished IO Insertion : Time (s): cpu = 00:04:02 ; elapsed = 00:04:32 . Memory (MB): peak = 1963.566 ; gain = 1075.191 ; free physical = 708 ; free virtual = 11048
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -9197,7 +9193,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:22 ; elapsed = 00:02:38 . Memory (MB): peak = 2032.359 ; gain = 1140.383 ; free physical = 20250 ; free virtual = 90314
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:03 ; elapsed = 00:04:32 . Memory (MB): peak = 1963.566 ; gain = 1075.191 ; free physical = 710 ; free virtual = 11051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -9209,56 +9205,56 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:34 ; elapsed = 00:02:51 . Memory (MB): peak = 2032.359 ; gain = 1140.383 ; free physical = 20250 ; free virtual = 90314
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:19 ; elapsed = 00:04:49 . Memory (MB): peak = 1963.566 ; gain = 1075.191 ; free physical = 708 ; free virtual = 11048
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|top         | jpegencode_0/u19/u14/u11/u10/Cr12_bits_3_reg[3]      | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
-|top         | jpegencode_0/u19/u14/u11/u10/orc_7_reg[4]            | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u11/u10/orc_7_reg[3]            | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u11/u10/orc_7_reg[2]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u11/u10/Cr12_JPEG_LSBs_1_reg[9] | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
-|top         | jpegencode_0/u19/u14/u11/u10/Cr12_Huff_2_reg[14]     | 3      | 15    | NO           | NO                 | YES               | 15     | 0       | 
-|top         | jpegencode_0/u19/u14/u11/u10/Cr12_JPEG_bits_reg[25]  | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u11/u10/JPEG_bitstream_reg[0]   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u11/u10/Cr12_et_zero_5_reg      | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u11/u10/rollover_6_reg          | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u11/u10/orc_5_reg[1]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/Cb12_bits_3_reg[3]       | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/orc_7_reg[4]             | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/orc_7_reg[3]             | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/orc_7_reg[2]             | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/Cb12_JPEG_LSBs_1_reg[9]  | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/Cb12_Huff_2_reg[14]      | 3      | 15    | NO           | NO                 | YES               | 15     | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/Cb12_JPEG_bits_reg[25]   | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/JPEG_bitstream_reg[0]    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/Cb12_et_zero_5_reg       | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/rollover_6_reg           | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u12/u7/orc_5_reg[1]             | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/Y12_bits_3_reg[3]        | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/orc_7_reg[4]             | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/orc_7_reg[3]             | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/orc_7_reg[2]             | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/Y12_JPEG_LSBs_1_reg[9]   | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/Y12_Huff_2_reg[14]       | 3      | 15    | NO           | NO                 | YES               | 15     | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/Y12_JPEG_bits_reg[25]    | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/JPEG_bitstream_reg[0]    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/Y12_et_zero_5_reg        | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/rollover_6_reg           | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u13/u3/orc_5_reg[1]             | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/u14/u4/enable_out_reg               | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/static_orc_5_reg[4]                 | 5      | 5     | NO           | NO                 | YES               | 5      | 0       | 
-|top         | jpegencode_0/u19/enable_17_reg                       | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/enable_33_reg                       | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u19/rollover_3_reg                      | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|top         | jpegencode_0/u20/rollover_5_reg                      | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-+------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|RGB2YCBCR   | enable_out_reg          | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cr_huff     | Cr12_bits_3_reg[3]      | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|cr_huff     | orc_7_reg[4]            | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cr_huff     | orc_7_reg[3]            | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cr_huff     | orc_7_reg[2]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cr_huff     | Cr12_JPEG_LSBs_1_reg[9] | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|cr_huff     | Cr12_Huff_2_reg[14]     | 3      | 15    | NO           | NO                 | YES               | 15     | 0       | 
+|cr_huff     | Cr12_JPEG_bits_reg[25]  | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cr_huff     | JPEG_bitstream_reg[0]   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cr_huff     | Cr12_et_zero_5_reg      | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cr_huff     | rollover_6_reg          | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cr_huff     | orc_5_reg[1]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cb_huff     | Cb12_bits_3_reg[3]      | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|cb_huff     | orc_7_reg[4]            | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cb_huff     | orc_7_reg[3]            | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cb_huff     | orc_7_reg[2]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cb_huff     | Cb12_JPEG_LSBs_1_reg[9] | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|cb_huff     | Cb12_Huff_2_reg[14]     | 3      | 15    | NO           | NO                 | YES               | 15     | 0       | 
+|cb_huff     | Cb12_JPEG_bits_reg[25]  | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cb_huff     | JPEG_bitstream_reg[0]   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cb_huff     | Cb12_et_zero_5_reg      | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cb_huff     | rollover_6_reg          | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|cb_huff     | orc_5_reg[1]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|y_huff      | Y12_bits_3_reg[3]       | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|y_huff      | orc_7_reg[4]            | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|y_huff      | orc_7_reg[3]            | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|y_huff      | orc_7_reg[2]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|y_huff      | Y12_JPEG_LSBs_1_reg[9]  | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|y_huff      | Y12_Huff_2_reg[14]      | 3      | 15    | NO           | NO                 | YES               | 15     | 0       | 
+|y_huff      | Y12_JPEG_bits_reg[25]   | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|y_huff      | JPEG_bitstream_reg[0]   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|y_huff      | Y12_et_zero_5_reg       | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|y_huff      | rollover_6_reg          | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|y_huff      | orc_5_reg[1]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fifo_out    | static_orc_5_reg[4]     | 5      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|fifo_out    | enable_17_reg           | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fifo_out    | enable_33_reg           | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fifo_out    | rollover_3_reg          | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|ff_checker  | rollover_5_reg          | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -9279,44 +9275,67 @@ Report Cell Usage:
 +------+----------+------+
 |1     |BUFG      |     1|
 |2     |CARRY4    |  8297|
-|3     |DSP48E1_1 |    21|
-|4     |DSP48E1_2 |    21|
-|5     |DSP48E1_3 |   111|
-|6     |DSP48E1_4 |    87|
-|7     |LUT1      |  4416|
-|8     |LUT2      | 17454|
-|9     |LUT3      |  8889|
-|10    |LUT4      |  7827|
-|11    |LUT5      |  5477|
-|12    |LUT6      |  5676|
-|13    |MUXF7     |    39|
-|14    |MUXF8     |    18|
-|15    |RAM32M    |    30|
-|16    |RAMB36E1  |     1|
-|17    |SRL16E    |   118|
-|18    |XORCY     |    40|
-|19    |FDRE      | 32685|
-|20    |IBUF      |    14|
-|21    |OBUF      |     3|
-|22    |OBUFT     |     5|
+|3     |DSP48E1   |     3|
+|4     |DSP48E1_1 |    21|
+|5     |DSP48E1_2 |    21|
+|6     |DSP48E1_3 |   108|
+|7     |DSP48E1_4 |    87|
+|8     |LUT1      |  4419|
+|9     |LUT2      | 17455|
+|10    |LUT3      |  8891|
+|11    |LUT4      |  7904|
+|12    |LUT5      |  5465|
+|13    |LUT6      |  5617|
+|14    |MUXF7     |    39|
+|15    |MUXF8     |    18|
+|16    |RAM32M    |    30|
+|17    |RAMB36E1  |     1|
+|18    |SRL16E    |   118|
+|19    |XORCY     |    40|
+|20    |FDRE      | 32686|
+|21    |IBUF      |    14|
+|22    |OBUF      |     3|
+|23    |OBUFT     |     5|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       | 91230|
-+------+---------+-------+------+
++------+---------------+----------------+------+
+|      |Instance       |Module          |Cells |
++------+---------------+----------------+------+
+|1     |top            |                | 91243|
+|2     |  jpegencode_0 |jpegencode      | 91219|
+|3     |    u19        |fifo_out        | 90400|
+|4     |      u14      |pre_fifo        | 88869|
+|5     |        u4     |RGB2YCBCR       |   881|
+|6     |        u11    |crd_q_h         | 28089|
+|7     |          u8   |cr_dct          | 20552|
+|8     |          u9   |cr_quantizer    |  2820|
+|9     |          u10  |cr_huff         |  4717|
+|10    |        u12    |cbd_q_h         | 28089|
+|11    |          u5   |cb_dct          | 20552|
+|12    |          u6   |cb_quantizer    |  2820|
+|13    |          u7   |cb_huff         |  4717|
+|14    |        u13    |yd_q_h          | 31810|
+|15    |          u1   |y_dct           | 24273|
+|16    |          u2   |y_quantizer     |  2820|
+|17    |          u3   |y_huff          |  4717|
+|18    |      u15      |sync_fifo_32__1 |    62|
+|19    |      u25      |sync_fifo_32__2 |    62|
+|20    |      u16      |sync_fifo_32__3 |    62|
+|21    |      u24      |sync_fifo_32__4 |    62|
+|22    |      u17      |sync_fifo_32    |    62|
+|23    |    u20        |ff_checker      |   819|
+|24    |      u18      |sync_fifo_ff    |    26|
++------+---------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:34 ; elapsed = 00:02:51 . Memory (MB): peak = 2032.359 ; gain = 1140.383 ; free physical = 20250 ; free virtual = 90314
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:19 ; elapsed = 00:04:49 . Memory (MB): peak = 1963.566 ; gain = 1075.191 ; free physical = 708 ; free virtual = 11049
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3468 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:26 ; elapsed = 00:02:43 . Memory (MB): peak = 2036.273 ; gain = 603.367 ; free physical = 20250 ; free virtual = 90314
-Synthesis Optimization Complete : Time (s): cpu = 00:02:34 ; elapsed = 00:02:51 . Memory (MB): peak = 2036.273 ; gain = 1144.297 ; free physical = 20252 ; free virtual = 90314
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:07 ; elapsed = 00:04:38 . Memory (MB): peak = 1963.566 ; gain = 572.105 ; free physical = 708 ; free virtual = 11049
+Synthesis Optimization Complete : Time (s): cpu = 00:04:19 ; elapsed = 00:04:49 . Memory (MB): peak = 1963.566 ; gain = 1075.191 ; free physical = 711 ; free virtual = 11049
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 8622 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -9325,9 +9344,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 30 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-410 Infos, 236 Warnings, 0 Critical Warnings and 0 Errors encountered.
+412 Infos, 235 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:47 ; elapsed = 00:03:02 . Memory (MB): peak = 2088.387 ; gain = 1121.855 ; free physical = 23310 ; free virtual = 93372
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2120.402 ; gain = 32.016 ; free physical = 23301 ; free virtual = 93373
-report_utilization: Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2120.402 ; gain = 0.000 ; free physical = 23301 ; free virtual = 93372
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 13:59:22 2018...
+synth_design: Time (s): cpu = 00:04:36 ; elapsed = 00:05:05 . Memory (MB): peak = 2015.668 ; gain = 1052.738 ; free physical = 3773 ; free virtual = 14112
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2047.684 ; gain = 32.016 ; free physical = 3759 ; free virtual = 14107
+report_utilization: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.37 . Memory (MB): peak = 2047.684 ; gain = 0.000 ; free physical = 3756 ; free virtual = 14104
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 14:59:04 2020...

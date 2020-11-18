@@ -1,0 +1,33 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 15:58:04 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/hight_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-3
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------+------------------+------------+------------+---------+------+------+--------+--------+--------------+
+|       Instance       |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++----------------------+------------------+------------+------------+---------+------+------+--------+--------+--------------+
+| top                  |            (top) |       3230 |       3220 |       0 |   10 | 1071 |      0 |      0 |           43 |
+|   (top)              |            (top) |          8 |          8 |       0 |    0 |    0 |      0 |      0 |            0 |
+|   cpu8080_0          |          cpu8080 |       1020 |       1020 |       0 |    0 |  244 |      0 |      0 |            0 |
+|   fixed_point_sqrt_0 | fixed_point_sqrt |        460 |        460 |       0 |    0 |   32 |      0 |      0 |           24 |
+|   graphiti_0         |         graphiti |       1368 |       1358 |       0 |   10 |  689 |      0 |      0 |           19 |
+|   hight_0            |            hight |        372 |        372 |       0 |    0 |  102 |      0 |      0 |            0 |
+|   lfsr_randgen_0     |     lfsr_randgen |          2 |          2 |       0 |    0 |    4 |      0 |      0 |            0 |
++----------------------+------------------+------------+------------+---------+------+------+--------+--------+--------------+
+
+

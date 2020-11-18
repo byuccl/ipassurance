@@ -1,0 +1,33 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Nov 17 13:10:31 2020
+| Host         : Desktop running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 1 -file base/pci_mini_base/utilization.txt
+| Design       : top
+| Device       : 7a100tcsg324-3
+| Design State : Synthesized
+-----------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------+----------------+------------+------------+---------+------+------+--------+--------+--------------+
+|      Instance      |     Module     | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
++--------------------+----------------+------------+------------+---------+------+------+--------+--------+--------------+
+| top                |          (top) |       3235 |       3131 |     104 |    0 | 2239 |      2 |      0 |            2 |
+|   (top)            |          (top) |         34 |         34 |       0 |    0 |    0 |      0 |      0 |            0 |
+|   pci_mini_0       |       pci_mini |        216 |        216 |       0 |    0 |  291 |      0 |      0 |            0 |
+|   pic_0            |            pic |        248 |        248 |       0 |    0 |  114 |      0 |      0 |            0 |
+|   potato_0         |         potato |       2400 |       2296 |     104 |    0 | 1665 |      2 |      0 |            0 |
+|   pwm_0            |            pwm |        228 |        228 |       0 |    0 |  145 |      0 |      0 |            0 |
+|   quadratic_func_0 | quadratic_func |        109 |        109 |       0 |    0 |   24 |      0 |      0 |            2 |
++--------------------+----------------+------------+------------+---------+------+------+--------+--------+--------------+
+
+
